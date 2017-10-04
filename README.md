@@ -17,7 +17,7 @@ You have to make hidden files visible to see ".mozilla" folder.</br>
 <code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
 <code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
 </br>
-<b>2.</b> User styles belong into "chrome" subolder</br>. Create it, if there is none yet.</br>
+<b>2.</b> User styles belong into "chrome" subolder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
 </br>
 <b>3.</b> Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
