@@ -7,7 +7,7 @@ The only way to use custom CSS code is browser userChrome.css file inside browse
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
-<code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ <c/ode></br>
+<code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </code></br>
 </br>
 You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
 </br>
