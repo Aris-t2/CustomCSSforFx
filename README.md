@@ -4,7 +4,7 @@ The only way to use custom CSS code is browser userChrome.css file inside browse
 </br>
 <b>Where to find Firefox profile folder and where do custom user styles belong?</b></br>
 </br>
-<b>1.</b>Find your profile folder ('profile names are different for everyone').</br>
+<b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
 <i> C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
@@ -19,9 +19,9 @@ You have to make hidden files visible to see \.mozilla\ folder.</br>
 <i> \Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i> or</br>
 <i> \Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
 </br>
-<b>2.</b>Create a \chrome\ subfolder, if there is none yet (\ PROFILENAME \chrome\).</br>
+<b>2.</b> Create a \chrome\ subfolder, if there is none yet (\ PROFILENAME \chrome\).</br>
 </br>
-<b>3.</b>Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
+<b>3.</b> Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
 </br>
 </br>
 <b>How to use custom user styles?</b></br>
@@ -29,12 +29,12 @@ The <i>userChrome.css</i> file works like an options\configurations file. All ma
 Edit <i>userChrome.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
 Restart browser after every change for changes to take effect.</br>
 </br>
-<b>Example (attend to " /* " and " */ ")</b></br>
+<b>Example (attend to <code>/*</code> and <code>*/</code>)</b></br>
 If you <u>want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
-<i>@import url(./css/buttons/classic_button_appearance_on_navbar.css);</i></br>
+<code>@import url(./css/buttons/classic_button_appearance_on_navbar.css);</code></br>
 </br>
 If you <u>do not want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
-<i>/* @import url(./css/buttons/classic_button_appearance_on_navbar.css); */</i></br>
+<code>/* @import url(./css/buttons/classic_button_appearance_on_navbar.css); */</code></br>
 </br>
 </br>
 <b>How to modify custom user styles?</b></br>
