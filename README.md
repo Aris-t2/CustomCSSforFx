@@ -1,9 +1,7 @@
-<h1>Firefox 57+ does not allow to modify browsers appearance through WebExtensions</h1></br>
-The only way to use custom CSS code is browser userChrome.css file inside browsers profile folder.</br>
-</br>
+<h2>Firefox 57+ does not allow to modify browsers appearance through WebExtensions</h2></br>
+The only way modify ui with custom CSS code is <b>userChrome.css</b> file inside browsers profile folder.</br>
 </br>
 <h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
-</br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
@@ -23,7 +21,6 @@ You have to make hidden files visible to see ".mozilla" folder.</br>
 </br>
 <b>3.</b> Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
 </br>
-</br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> file works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
 Edit <i>userChrome.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
@@ -35,16 +32,16 @@ If you <u>want</u> "classic button appearance" for navigation toolbar buttons, t
 </br>
 If you <u>do not want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
 <code>/* @import url(./css/buttons/classic_button_appearance_on_navbar.css); */</code></br>
-<code>/* Code between these symbols will be ignored / outcommented */</code></br>
 </br>
+Note</br>
+<code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
 </br>
 <h2>How to modify custom user styles?</h2></br>
 Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
 Some files contain additional instructions to tweak the ui for individual cases.</br>
 Restart Firefox for changes to take effect.</br>
 </br>
-</br>
-<h2>Default 'about:config' tweaks present on CTRs prefwindow</h2></br>
+<h2>Default 'about:config' tweaks present on CTRs prefwindow</h2>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
 Audio icon</br>
