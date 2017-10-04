@@ -1,4 +1,4 @@
-<h2>Firefox 57+ does not allow modifying browsers appearance through WebExtensions</h2></br>
+<h2>WebExtensions can not modify browsers appearance in Firefox 57+</h2></br>
 The only way modify ui with custom CSS code is <b>userChrome.css</b> file inside browsers profile folder.</br>
 </br>
 <h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
