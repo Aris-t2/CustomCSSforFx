@@ -1,23 +1,23 @@
 <b>Firefox 57 and newer does not allow to modify browsers appearance through WebExtensions</b></br>
-The only way to use custom CSS code is browser userChrome.css file inside browsers profile folder.
+The only way to use custom CSS code is browser userChrome.css file inside browsers profile folder.</br>
 </br>
 </br>
 <b>Where to find Firefox profile folder and where do custom user styles belong?</b></br>
 </br>
-<b>1.</b>Find your profile folder ('profile names are different for everyone').
+<b>1.</b>Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
-<i>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\</i></br>
+<i> C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
 </br>
-You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</i></br>
+You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
 </br>
 <b>Linux</b></br>
-<i>~\.mozilla\firefox\ PROFILENAME \chrome\</i></br>
+<i> \.mozilla\firefox\ PROFILENAME \chrome\ </i></br>
 You have to make hidden files visible to see \.mozilla\ folder.</br>
 </br>
 <b>Mac OS X</b></br>
-<i>\Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\</i> or</br>
-<i>\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\</i></br>
+<i> \Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i> or</br>
+<i> \Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
 </br>
 <b>2.</b>Create a \chrome\ subfolder, if there is none yet (\ PROFILENAME \chrome\).</br>
 </br>
