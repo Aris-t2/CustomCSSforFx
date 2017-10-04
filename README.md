@@ -1,4 +1,4 @@
-<h1>Firefox 57 and newer does not allow to modify browsers appearance through WebExtensions</h1></br>
+<h1>Firefox 57+ does not allow to modify browsers appearance through WebExtensions</h1></br>
 The only way to use custom CSS code is browser userChrome.css file inside browsers profile folder.</br>
 </br>
 </br>
@@ -12,12 +12,12 @@ The only way to use custom CSS code is browser userChrome.css file inside browse
 You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
 </br>
 <b>Linux</b></br>
-<code> \.mozilla\firefox\ PROFILENAME \chrome\ </code></br>
+<code>\.mozilla\firefox\ PROFILENAME \chrome\ </code></br>
 You have to make hidden files visible to see ".mozilla" folder.</br>
 </br>
 <b>Mac OS X</b></br>
-<code> ~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ <c/ode> or</br>
-<code> ~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </code></br>
+<code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </code> or</br>
+<code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </code></br>
 </br>
 <b>2.</b> Create a \chrome\ subfolder, if there is none yet (\ PROFILENAME \chrome\).</br>
 </br>
