@@ -1,49 +1,50 @@
-<b>Firefox 57 and newer does not allow to modify browsers appearance through WebExtensions</b></br>
+<h1>Firefox 57 and newer does not allow to modify browsers appearance through WebExtensions</h1></br>
 The only way to use custom CSS code is browser userChrome.css file inside browsers profile folder.</br>
 </br>
 </br>
-<b>Where to find Firefox profile folder and where do custom user styles belong?</b></br>
+<h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
 </br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
-<i> C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
+<code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ <c/ode></br>
 </br>
 You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
 </br>
 <b>Linux</b></br>
-<i> \.mozilla\firefox\ PROFILENAME \chrome\ </i></br>
-You have to make hidden files visible to see \.mozilla\ folder.</br>
+<code> \.mozilla\firefox\ PROFILENAME \chrome\ </code></br>
+You have to make hidden files visible to see ".mozilla" folder.</br>
 </br>
 <b>Mac OS X</b></br>
-<i> \Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i> or</br>
-<i> \Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </i></br>
+<code> ~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ <c/ode> or</br>
+<code> ~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \chrome\ </code></br>
 </br>
 <b>2.</b> Create a \chrome\ subfolder, if there is none yet (\ PROFILENAME \chrome\).</br>
 </br>
 <b>3.</b> Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
 </br>
 </br>
-<b>How to use custom user styles?</b></br>
+<h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> file works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
 Edit <i>userChrome.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
 Restart browser after every change for changes to take effect.</br>
 </br>
-<b>Example (attend to <code>/*</code> and <code>*/</code>)</b></br>
+<b>Example</b></br>
 If you <u>want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
 <code>@import url(./css/buttons/classic_button_appearance_on_navbar.css);</code></br>
 </br>
 If you <u>do not want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
 <code>/* @import url(./css/buttons/classic_button_appearance_on_navbar.css); */</code></br>
+<code>/* Code between these symbols will be ignored / outcommented */</code></br>
 </br>
 </br>
-<b>How to modify custom user styles?</b></br>
+<h2>How to modify custom user styles?</h2></br>
 Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
 Some files contain additional instructions to tweak the ui for individual cases.</br>
 Restart Firefox for changes to take effect.</br>
 </br>
 </br>
-<b>Default 'about:config' tweaks present on CTRs prefwindow</b></br>
+<h2>Default 'about:config' tweaks present on CTRs prefwindow</h2></br>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
 Audio icon</br>
