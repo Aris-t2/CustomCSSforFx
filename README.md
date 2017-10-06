@@ -1,5 +1,6 @@
 <h2>WebExtensions can not modify browsers appearance in Firefox 57+</h2></br>
 The only way to modify ui with custom CSS code is adding code to <b>userChrome.css</b> file inside browsers profile folder.</br>
+Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items</br>
 </br>
 <h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
@@ -69,7 +70,7 @@ Restart Firefox for changes to take effect.</br>
 <b>RSS icon in location bar</b></br>
 <i>Install <a href=https://addons.mozilla.org/addon/awesome-rss/>Awesome RSS</a> WebExtension</i></br>
 </br>
-<h2>Default 'about:config' tweaks present on CTRs prefwindow</h2>
+<h2>'about:config' tweaks (partly present on CTRs prefwindow)</h2>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
 <b>Tab audio icon</b></br>
