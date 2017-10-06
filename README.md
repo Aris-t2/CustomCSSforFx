@@ -63,8 +63,11 @@ Restart Firefox for changes to take effect.</br>
 <b>Searchbar</b> (suggestion: placed after lacation bar)</br>
 <i>Customize mode &gt; Search(bar) &gt; move to navigation toolbar</i></br>
 </br>
-<b>Flexible spaces</b> (suggestion: remove space after/before location bar)</br>
+<b>Flexible spaces</b> (suggestion: remove spaces after and before location bar)</br>
 <i>Customize mode &gt; grab and drag flexible space into palette</i></br>
+</br>
+<b>RSS icon in location bar</b></br>
+<i>Install <a href=https://addons.mozilla.org/addon/awesome-rss/>Awesome RSS</a> WebExtension</i></br>
 </br>
 <h2>Default 'about:config' tweaks present on CTRs prefwindow</h2>
 (To revert changes right-click entry and select 'reset')</br>
@@ -72,8 +75,8 @@ Restart Firefox for changes to take effect.</br>
 <b>Tab audio icon</b></br>
 <i>browser.tabs.showAudioPlayingIcon</i></br>
 </br>
-<b>Insert related tab after current tab</b> (suggestion: enabled)
-<i>browser.tabs.insertRelatedAfterCurrent</i>
+<b>Insert related tab after current tab</b> (suggestion: enabled)</br>
+<i>browser.tabs.insertRelatedAfterCurrent</i></br>
 </br>
 <b>Preview tabs using 'Ctrl + Tab'</b></br>
 <i>browser.ctrlTab.previews</i></br>
