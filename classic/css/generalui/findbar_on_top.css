@@ -1,0 +1,80 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* short findbar on contents top */
+
+:-moz-any(.browserContainer, #viewSource) .findbar-container :-moz-any(spacer, .findbar-find-fast[anonid="match-case-status"]) {
+  visibility: collapse;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton {
+  position: relative !important;
+  top: 4px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  -moz-margin-end: 2px !important;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton  .toolbarbutton-icon{
+  width: 16px !important;
+  height: 16px !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-textbox {
+  font-size: 14px !important;
+}
+
+.browserContainer findbar,
+#viewSource #FindToolbar {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  margin-top:-1px !important;
+  left: 5px;
+  box-shadow: unset !important;
+  border: 1px solid #aabccf !important;
+  border-top: 0px solid transparent !important;
+  border-radius: 0 0 3px 3px;
+  transition-property: margin-top, opacity, visibility !important;
+  opacity: 0.95 !important;
+}
+  
+/*default aeroblue toolbars on Windows 7 & Vista*/
+@media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
+  @media not all and (-moz-windows-classic) {
+	.browserContainer findbar, #viewSource #FindToolbar {
+	  background: linear-gradient(#ddebf9,#ddebf9) !important;
+	}
+  }
+}
+
+#viewSource #FindToolbar {
+  background-color: -moz-dialog;
+  color: -moz-dialogtext;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  -moz-box-ordinal-group: 0;
+  margin: 0 !important;
+  -moz-margin-start: -4px !important;
+  -moz-margin-end: 2px !important;
+  color: inherit !important;
+}
+  
+@media not all and (-moz-windows-classic) {
+  .browserContainer findbar .findbar-button,
+  #viewSource #FindToolbar .findbar-button {
+	-moz-appearance: toolbarbutton !important;
+	background: unset !important;
+	box-shadow: unset !important;
+  }
+  .browserContainer findbar toolbarbutton * {
+	background: unset !important;
+	box-shadow: unset !important;
+  }
+}
+

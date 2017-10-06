@@ -1,0 +1,39 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide toolbar shadow */
+#nav-bar:not(:-moz-lwtheme),
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+  box-shadow: unset !important;
+}
+
+/* default toolbar colors */
+#nav-bar:not(:-moz-lwtheme) {
+  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+}
+
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+}
+
+/*default aeroblue toolbars on Windows 7 & Vista*/
+@media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
+  @media not all and (-moz-windows-classic) {
+	#nav-bar:not(:-moz-lwtheme) {
+	  background-image: linear-gradient(#eaf2fb,#ddebf9) !important;
+	}
+
+	toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+	  background-image: linear-gradient(#ddebf9,#ddebf9) !important;
+	}
+  }
+}
+
+/**/

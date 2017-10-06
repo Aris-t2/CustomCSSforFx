@@ -1,0 +1,26 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************
+******* LOCATION BAR ********
+****************************/
+
+/* identity box */
+#identity-box {
+  padding-inline-start: 4px !important;
+}
+
+/* adjust icons for compact mode */
+#main-window[uidensity="compact"] .urlbar-icon {
+  width: 22px !important;
+  height: 22px !important;
+  padding: 3px !important;
+}
+
+/**/

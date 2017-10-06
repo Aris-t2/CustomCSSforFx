@@ -1,0 +1,32 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide search engines */
+#PopupSearchAutoComplete .search-one-offs,
+#PopupSearchAutoComplete .search-panel-header{
+  display: none !important;
+}
+
+/* hide tree scrollbar *//*
+#PopupSearchAutoComplete .tree-scrollbar{
+  display: none !important;
+}
+
+/* hide history icon and remove space before results *//*
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory),
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory, selected) {
+  list-style-image: unset !important;
+}
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image {
+  padding-inline-start: unset !important;
+  width: unset !important;
+  height: unset !important;
+}
+
+/**/

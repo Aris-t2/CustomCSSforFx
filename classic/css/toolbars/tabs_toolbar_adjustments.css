@@ -1,0 +1,40 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  display: none !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  -moz-margin-start: 2px !important;
+}
+
+/* tab toolbar postion */
+#TabsToolbar{
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+  min-height: unset !important;
+}
+
+/* make sure toolbar buttons do not increase toolbar height */
+#TabsToolbar > toolbarpaletteitem,
+#TabsToolbar > toolbarbutton {
+  min-height: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
+#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
+  min-width: unset !important;
+  width: 24px !important;
+}
+
+/**/

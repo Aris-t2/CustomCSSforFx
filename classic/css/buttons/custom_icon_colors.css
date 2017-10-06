@@ -1,0 +1,96 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+
+/******* button icon colors ******/
+/* red */
+#containers-panelmenu,
+#pocket-button:not([open]),
+#PanelUI-quit:not(:hover),
+#web-apps-button,
+#e10s-button,
+#panic-button,
+.tabs-closebutton:hover,
+.tab-close-button:hover,
+#cut-button,
+#zoom-out-button,
+#stop-button,
+#stop-button .toolbarbutton-animatable-image,
+#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image{
+  fill: red !important;
+}
+
+ /*ROYAL BLUE*/
+#save-page-button ,
+#back-button,
+#forward-button,
+#new-window-button,
+#new-tab-button,
+.search-go-button,
+#downloads-button,
+#downloads-button[indicator="true"]:not([attention="success"]) #downloads-indicator-icon,
+#zoom-in-button,
+#copy-button,
+#find-button,
+#sidebar-button,
+#fullscreen-button,
+#PanelUI-customize,
+#password-notification-icon,
+#PanelUI-fxa-status,
+#sync-button,
+#tabview-button,
+#social-share-button{
+  fill: #4169e1 !important;
+}
+
+/*green*/
+#search-go-button,
+.search-go-button,
+#urlbar-go-button,
+.urlbar-go-button,
+#paste-button,
+#email-link-button,
+#reload-button,
+#reload-button .toolbarbutton-animatable-image,
+#add-ons-button{
+  fill: green !important;
+}
+
+/*orange*/
+#open-file-button,
+#home-button,
+#feed-button{
+  fill: orange !important;
+}
+
+ /*PURPLE*/
+#history-button,
+#history-panelmenu,
+#library-button,
+#privatebrowsing-button,
+#print-button{
+  fill: #800080 !important;
+}
+
+ /*AZURE*/
+#webide-button,
+#PanelUI-menu-button,
+#nav-bar-overflow-button,
+#bookmarks-menu-button,
+#bookmarks-button,
+#bookmarks-menu-button > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon{
+  fill: #336699 !important;
+}
+
+/* gray*/
+#developer-button,
+#preferences-button,
+#characterencoding-button {
+  fill: gray !important;
+}

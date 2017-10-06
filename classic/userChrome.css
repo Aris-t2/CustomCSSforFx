@@ -1,0 +1,128 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* TOOLBAR BUTTONS **********************************************************************/
+/****************************************************************************************/
+
+@import url(./css/buttons/classic_button_appearance_on_navbar.css);
+@import url(./css/buttons/custom_icon_colors.css);
+/*@import url(./css/buttons/custom_icons.css);*/
+@import url(./css/buttons/bookmarks_toolbar_button_size.css);
+@import url(./css/buttons/classic_bookmarks_menu_button_popup.css);
+/*@import url(./css/buttons/appbutton_popup_hide_sync.css);*/
+/*@import url(./css/buttons/bookmarks_popup_hide_items.css);*/
+/*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
+/*@import url(./css/buttons/appbutton_at_navbars_start.css);*/
+
+
+/****************************************************************************************/
+/* Custom back & forward buttons appearance *********************************************/
+/****************************************************************************************/
+
+/*@import url(./css/buttons/custom_backforward_large_ff2.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ff3.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ff3_strata.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ff3_strata_orange.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ff3_strata_red.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ie8.css);*/
+/*@import url(./css/buttons/custom_backforward_large_ie9.css);*/
+/*@import url(./css/buttons/custom_backforward_large_kempelton.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff3_strata.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff2.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff3.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff3_strata.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff3_strata_orange.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ff3_strata_red.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ie8.css);*/
+/*@import url(./css/buttons/custom_backforward_small_ie9.css);*/
+/*@import url(./css/buttons/custom_backforward_small_kempelton.css);*/
+
+
+/****************************************************************************************/
+/* Application/hamburger button in Firefox titlebar *************************************/
+/****************************************************************************************/
+
+@import url(./css/buttons/appbutton_in_titlebar.css);
+/*@import url(./css/buttons/appbutton_in_titlebar_transparent.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_aurora.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_nightly.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_deved57p.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_nightly57p.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_palemoon.css);*/
+
+
+/****************************************************************************************/
+/* Application/hamburger button on navigation toolbar ***********************************/
+/****************************************************************************************/
+
+/*@import url(./css/buttons/appbutton_on_navbar_orange.css);*/
+
+
+/****************************************************************************************/
+/* TABS - appearance and position *******************************************************/
+/****************************************************************************************/
+
+@import url(./css/tabs/classic_squared_tabs.css);
+/*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
+/*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
+/*@import url(./css/tabs/smaller_tab_width_in_overflow_mode.css);*/
+
+
+/****************************************************************************************/
+/* GENERAL UI ***************************************************************************/
+/****************************************************************************************/
+
+@import url(./css/generalui/hide_private_mode_indicator.css);
+@import url(./css/generalui/searchbar_hide_glassplus_indicator.css);
+@import url(./css/generalui/findbar_on_top.css);
+@import url(./css/generalui/bookmark_icons_colorized.css);
+/*@import url(./css/generalui/searchbar_popup_hide_engines.css);*/
+@import url(./css/generalui/context_labels_bfrsb_without_icons.css);
+/*@import url(./css/generalui/context_labels_bfrsb_with_icons.css);*/
+
+
+/****************************************************************************************/
+/* Toolbars *****************************************************************************/
+/****************************************************************************************/
+
+@import url(./css/toolbars/general_toolbar_colors.css);
+@import url(./css/toolbars/tabs_toolbar_adjustments.css);
+@import url(./css/toolbars/bookmarks_toolbar_old_height.css);
+@import url(./css/toolbars/toolbars_old_padding.css);
+/*@import url(./css/toolbars/navbar_more_compact_mode.css);*/
+/*@import url(./css/toolbars/toolbars_in_fullscreen_mode.css);*/
+
+
+/****************************************************************************************/
+/* LOCATION BAR *************************************************************************/
+/****************************************************************************************/
+
+@import url(./css/locationbar/locationbar_adjustments.css);
+@import url(./css/locationbar/fontsize_in_compact_mode.css);
+@import url(./css/locationbar/dropmarker_at_the_end.css);
+@import url(./css/locationbar/dropmarker_visible.css);
+@import url(./css/locationbar/colorized_icons.css);
+@import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css);
+@import url(./css/locationbar/identitybox_colors.css);
+@import url(./css/locationbar/identitybox_padlock_icon.css);
+@import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
+
+
+/****************************************************************************************/
+/* Location bars autocomplete popup appearance ******************************************/
+/****************************************************************************************/
+
+@import url(./css/locationbar/ac_popup_title_and_url_in_2_lines.css);
+/*@import url(./css/locationbar/ac_popup_classic.css);*/
+/*@import url(./css/locationbar/ac_popup_hide_item_title.css);*/
+/*@import url(./css/locationbar/ac_popup_show_item_title_only_on_hover.css);*/
+
+
+/**/

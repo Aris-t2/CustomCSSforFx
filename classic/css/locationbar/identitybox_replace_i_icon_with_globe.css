@@ -1,0 +1,19 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* globe icon instead of 'i'-icon */
+*:not(.chromeUI) > #identity-icon,
+*:not(.chromeUI):not(.verifiedDomain):not(.verifiedIdentity) > #page-proxy-favicon {
+  list-style-image:url('./../../image/globe.png') !important;
+  filter: unset !important;
+  fill: unset !important;
+  opacity: 1.0 !important;
+}
+	
+/**/

@@ -1,0 +1,22 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* more compact navigation toolbar */
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target #stop-reload-button > toolbarbutton {
+  margin: 1px 0.5px !important;
+  padding: 0 !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem{
+  margin: 0 !important;
+  padding: 0 !important;
+}

@@ -1,0 +1,15 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import url(./custom_backforward_large.css);
+
+/* custom large back-forward buttons */
+#main-window toolbox toolbar :-moz-any(#back-button, #forward-button) .toolbarbutton-icon {
+  list-style-image: url("./../../image/bf_ff3_strata.png") !important;
+}

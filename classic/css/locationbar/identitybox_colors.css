@@ -1,0 +1,111 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* colorize identity box based on level of security */
+#urlbar[pageproxystate="valid"] .verifiedDomain {
+  background: linear-gradient(hsl(215,60%,92%), hsl(215,58%,88%)) !important;
+  box-shadow: 0 1px 0 hsla(215,54%,33%,.05) inset !important;
+  -moz-border-end-color: hsla(215,54%,33%,.2) !important;
+  color: hsl(215,54%,33%) !important;
+}
+
+#urlbar[pageproxystate="valid"] .verifiedDomain:hover {
+  background: linear-gradient(hsl(215,85%,85%), hsl(215,70%,68%)) !important;
+}
+
+#urlbar[pageproxystate="valid"] .verifiedDomain:-moz-any([open="true"],:hover:active) {
+  background: linear-gradient(hsl(215,80%,80%), hsl(215,67%,65%)) !important;
+  box-shadow: 0 1px 1px hsla(215,54%,33%,.7) inset,
+			0 1px 3px 1px hsla(215,54%,33%,.5) inset !important;
+}
+
+#urlbar[pageproxystate="valid"] .verifiedIdentity {
+  background: linear-gradient(hsl(91,70%,90%), hsl(93,60%,81%)) !important;
+  box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
+  -moz-border-end-color: hsla(92,81%,16%,.2) !important;
+  color: #2f6600 !important;
+  font-weight:bold !important;
+}
+
+#urlbar[pageproxystate="valid"] .verifiedIdentity:hover {
+  background: linear-gradient(hsl(92,69%,77%), hsl(92,44%,51%)) !important;
+}
+
+#urlbar[pageproxystate="valid"] .verifiedIdentity:-moz-any([open="true"],:hover:active) {
+  background: linear-gradient(hsl(92,65%,70%), hsl(92,40%,48%)) !important;
+  box-shadow: 0 1px 1px hsla(92,81%,16%,.6) inset,
+			0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) {
+  background: linear-gradient(hsl(6,35%,88%), hsl(0,53%,82%)) !important;
+  box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
+  -moz-border-end-color: hsla(92,81%,16%,.2) !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):hover {
+  background: linear-gradient(hsl(6,65%,88%), hsl(0,73%,82%)) !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):-moz-any([open="true"],:hover:active) {
+  background: linear-gradient(hsl(6,70%,88%), hsl(0,78%,82%)) !important;
+  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
+			0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
+}
+
+
+#urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
+  background: linear-gradient(hsl(48,100%,93%), hsl(49,97%,85%)) !important;
+  box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
+  -moz-border-end-color: hsla(92,81%,16%,.2) !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):hover {
+  background: linear-gradient(hsl(54,85%,67%), hsl(54,90%,50%)) !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):-moz-any([open="true"],:hover:active) {
+  background: linear-gradient(hsl(54,95%,67%), hsl(54,100%,50%)) !important;
+  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
+			0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
+}
+
+#urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked), 
+#urlbar[pageproxystate="valid"] .chromeUI {
+  background: linear-gradient(#fcfcfc,#d4d4d4) !important;
+  border-image-source: none !important;
+  color: black !important;
+}
+	
+#urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked) #identity-icon, 
+#urlbar[pageproxystate="valid"] .chromeUI #identity-icon{
+  background-color: unset !important;
+}
+	
+#urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked):hover,
+#urlbar[pageproxystate="valid"] .chromeUI:hover {
+  background: linear-gradient(#f2f2f2,#c0c0c0) !important;
+}
+
+#urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked):-moz-any([open="true"],:hover:active),
+#urlbar[pageproxystate="valid"] .chromeUI:-moz-any([open="true"],:hover:active) {
+  background: linear-gradient(#f0f0f0,#c0c0c0) !important;
+  box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
+			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
+}
+
+#urlbar[pageproxystate="valid"]  :-moz-any(.urlbar-input-box, #urlbar-display-box) {
+  border-image: unset !important;
+}
+
+#connection-icon {
+  filter: unset !important;
+}
+
+/**/

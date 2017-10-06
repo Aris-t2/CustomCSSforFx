@@ -1,0 +1,31 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Palemoon */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button {
+  background-image: linear-gradient(rgb(82,182,247), rgb(10,98,215) 95%) !important;
+  border-color: rgba(6,42,83,.9) !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset,
+			  0 0 0 1px rgba(255,255,255,.25) inset !important;
+}
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at bottom, rgba(89,240,252,.5) 10%, rgba(89,240,252,0) 70%),
+					radial-gradient(farthest-side at bottom, rgb(60,68,236), rgba(172,229,255,0)),
+					linear-gradient(rgb(69,170,246), rgb(30,40,209) 95%) !important;
+  border-color: rgba(6,42,83,.9) !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,
+			  0 0 2px 1px rgba(169,234,250,.7) inset,
+			  0 -1px 0 rgba(169,234,250,.5) inset !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+  background-image: linear-gradient(rgb(69,170,246), rgb(0,74,209) 95%) !important;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
+			  0 1px 1px rgba(0,0,0,.2) inset !important;
+}

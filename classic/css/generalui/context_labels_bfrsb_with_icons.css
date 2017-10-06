@@ -1,0 +1,48 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/***********************************************************/
+/* context menu items and icons instead of just huge icons */
+/***********************************************************/
+#context-sep-navigation,
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) .menu-iconic-highlightable-text {
+  display: none !important;
+}
+
+#context-navigation{
+  -moz-box-orient: vertical !important;
+  -moz-appearance:none !important;
+  background:unset !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: unset !important;
+  margin-bottom: unset !important;
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 12px !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  -moz-appearance: menuitem !important;
+  min-height: unset !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  content: attr(aria-label) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+#context-navigation > .menuitem-iconic{
+  -moz-box-pack: start !important;
+} 

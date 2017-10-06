@@ -1,0 +1,299 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************
+******* TABS ****************
+****************************/
+
+/* adjust tab toolbars buttons for squared tabs */
+#TabsToolbar #alltabs-button .toolbarbutton-icon,
+#TabsToolbar > #new-tab-button .toolbarbutton-icon,
+#TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
+  padding: 3px !important;
+}
+
+/* remove tab fog *//*
+#TabsToolbar:not(:-moz-lwtheme):-moz-any(::after,::before) {
+  box-shadow: none !important;
+}
+
+/*******************************************/
+/**** default themes tab colors [start] ****/
+/*******************************************/
+
+/* black tab text color *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
+  color: #000000 !important;
+}
+
+/* default grey tabs */
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
+  background-image: linear-gradient(to top,transparent,transparent) !important;
+}
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
+  background-image: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa) !important;
+}
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
+  background-image: linear-gradient(to top,transparent,transparent) !important;
+}
+
+/* unloaded tab *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[pending] .tab-content {
+  background: red !important;
+}
+
+/* unread tab *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[unread] .tab-content {
+  background: purple !important;
+}
+
+/* bold text on selected tab *//*
+.tabbrowser-tab[selected="true"] {
+  font-weight: bold !important;
+}
+*/
+
+/* default aeroblue tabs on Windows 7 & Vista */
+@media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
+  @media not all and (-moz-windows-classic) {
+	#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
+	  background-image: linear-gradient(to top,transparent,transparent) !important;
+	}
+	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
+	  background-image: linear-gradient(to top,#eaf2fb,#eef5fc,#fbfdff) !important;
+	}
+	#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
+	  background-image: linear-gradient(to top,transparent,transparent) !important;
+	}
+  }
+}
+
+/* tab border color */
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
+  border-top: 1px solid #5f7181 !important;
+  border-left: 1px solid #5f7181 !important;
+  border-right: 1px solid #5f7181 !important;
+}
+
+#TabsToolbar .tabs-newtab-button {
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid transparent !important; 
+  border-right: 1px solid transparent !important;
+}
+
+#TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]):not(:hover) .tab-content {
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid transparent !important; 
+  border-right: 1px solid transparent !important;
+}
+
+/* new tab icon color *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+#TabsToolbar:not(:-moz-lwtheme) > #new-tab-button,
+#TabsToolbar:not(:-moz-lwtheme) > toolbarpaletteitem > #new-tab-button {
+  fill: black !important;
+  color: black !important;
+}
+/*******************************************/
+/***** default themes tab colors [end] *****/
+/*******************************************/
+
+/********************************************/
+/******* lw-themes tab colors [start] *******/
+/********************************************/
+
+/* lightweight theme tab colors*/
+.tabs-newtab-button:-moz-lwtheme-darktext,
+.tabbrowser-tab:not([selected]):-moz-lwtheme-darktext .tab-content {
+  background-image: linear-gradient(transparent, transparent) !important;
+}
+.tabs-newtab-button:hover:-moz-lwtheme-darktext,
+.tabbrowser-tab:not([selected]):hover:-moz-lwtheme-darktext .tab-content {
+  background-image: linear-gradient(transparent, transparent) !important;
+}
+.tabs-newtab-button:-moz-lwtheme-brighttext,
+.tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
+  background-image: linear-gradient(transparent, transparent) !important;
+}
+.tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+.tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
+  background-image: linear-gradient(transparent, transparent) !important;
+}
+
+.tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
+  border-top: 1px solid rgba(0,0,0,.5) !important;
+  border-left: 1px solid rgba(0,0,0,.4) !important; 
+  border-right: 1px solid rgba(0,0,0,.4) !important;
+}
+.tabbrowser-tab[selected]:-moz-lwtheme-brighttext .tab-content {
+  border-top: 1px solid rgba(255,255,255,.6) !important;
+  border-left: 1px solid rgba(255,255,255,.2) !important; 
+  border-right: 1px solid rgba(255,255,255,.2) !important; 
+}
+#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-darktext:hover,
+.tabbrowser-tab .tab-content:-moz-lwtheme-darktext:hover {
+  border-top: 1px solid rgba(0,0,0,.2) !important;
+  border-left: 1px solid rgba(0,0,0,.2) !important; 
+  border-right: 1px solid rgba(0,0,0,.2) !important; 
+}
+#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext:hover,
+.tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:hover {
+  border-top: 1px solid rgba(255,255,255,.6) !important;
+  border-left: 1px solid rgba(255,255,255,.2) !important; 
+  border-right: 1px solid rgba(255,255,255,.2) !important; 
+}
+#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-darktext:not([selected]):not(:hover),
+.tabbrowser-tab .tab-content:-moz-lwtheme-darktext:not([selected]):not(:hover),
+#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext:not([selected]):not(:hover),
+.tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:not([selected]):not(:hover) {
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid transparent !important; 
+  border-right: 1px solid transparent !important; 
+}
+/********************************************/
+/******** lw-themes tab colors [end] ********/
+/********************************************/
+
+/* tab line & tab background*/
+.tabbrowser-tab:-moz-lwtheme[selected] .tab-line[selected=true] {
+  height: 0px !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
+  background-color: rgba(0,0,0,.2);
+  opacity: 0px !important;
+}
+
+.tabbrowser-tab .tab-background[selected=true] {
+  border-image: unset !important;
+  border-image-slice: 0 !important;
+}
+
+.tabbrowser-tab:not([selected]) .tab-background{
+  display: none !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
+  background-color: rgba(0,0,0,.0) !important;
+}
+
+/* tab top border roundness */
+.tabs-newtab-button,.tabbrowser-tab,
+.tab-stack,
+.tab-background,
+.tabbrowser-tab .tab-content {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+/* loading animation */
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected=true]) {
+  --tab-loading-fill: #0A84FF !important;
+}
+
+/* space between tabs */
+.tabs-newtab-button,
+.tabbrowser-tab {
+  -moz-margin-start: 0px !important;
+}
+
+/* show favicon for tabs without favicons */
+.tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+  display: inline !important;
+}
+.tabbrowser-tab:not([pinned])[busy] .tab-throbber + .tab-icon-image:not([src]) {
+  display:none !important;
+}
+
+/* width of new tab tab */
+#TabsToolbar .tabs-newtab-button{
+  min-width: 0px !important;
+  width: 28px !important;
+  margin-bottom: -1px !important;
+}
+
+/* size of new tab tabs '+' icon */
+.tabs-newtab-button .toolbarbutton-icon{
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+/* tab close icon size and position */
+.tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-margin-end:-4px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
+  margin-top: -8px !important;
+  margin-bottom: -8px !important;
+}
+
+/* tab close - always visible*/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected]) .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected])[faviconized="true"] .tab-close-button {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/*tab favicon position*/
+.tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
+.tabbrowser-tab:not([pinned]) .tab-icon-image{
+  -moz-margin-start:-6px !important;
+}
+
+/* reduce minimum tab height */
+#tabbrowser-tabs,
+#tabbrowser-tabs > .tabbrowser-arrowscrollbox,
+.tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
+  min-height: 26px !important;
+}
+
+/*pinned tabs*/
+#TabsToolbar .tab-content[pinned] {
+  padding: 0 6px !important;
+}
+
+/* remove top line above tabs for lw-themes */
+#main-window:-moz-lwtheme #browser-panel{
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* hide tab separators */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  opacity: 0 !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  width: unset !important;
+}
+#tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
+.tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
+#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
+  content: unset !important;
+  display: unset !important;
+}
+/**/
