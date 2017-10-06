@@ -42,71 +42,107 @@ Open CSS files with a text editor. Look through the code and change/remove value
 Some files contain additional instructions to tweak the ui for individual cases.</br>
 Restart Firefox for changes to take effect.</br>
 </br>
+<h2>Suggested ui tweaks</h2>
+</br>
+<b>Toolbar modes (suggestion: compact mode)</b></br>
+<i>Customize mode &gt; Density &gt; Compact / Normal / Touch</i></br>
+</br>
+<b>Titlebar modes</b> (suggestion: Firefox titlebar [application/hamburger button in titlebar only works in Firefox titlebar])</br>
+<i>Customize mode &gt; Title Bar &gt; uncheck checkbox</i></br>
+</br>
+<b>Drag space above tabs toolbar</b> (suggestion: disable drag space [application/hamburger button in titlebar works best without drag space])</br>
+<i>Customize mode &gt; Drag Space &gt; uncheck checkbox </i></br>
+</br>
+<b>Bookmarks menu button on bookmarks toolbar</b></br>
+<i>Customize mode &gt; Toolbars &gt; Bookmarks Toolbar </i></br>
+<i>Customize mode &gt; move 'bookmarks menu' button to bookmark toolbars end </i></br>
+</br>
+<b>Downloads button always visible</b></br>
+<i>Customize mode &gt; downloads button &gt; click on button and uncheck 'Auto-hide'</i></br>
+</br>
+<b>Searchbar</b> (suggestion: placed after lacation bar)</br>
+<i>Customize mode &gt; Search(bar) &gt; move to navigation toolbar</i></br>
+</br>
+<b>Flexible spaces</b> (suggestion: remove space after/before location bar)</br>
+<i>Customize mode &gt; grab and drag flexible space into palette</i></br>
+</br>
 <h2>Default 'about:config' tweaks present on CTRs prefwindow</h2>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
-Audio icon</br>
+<b>Tab audio icon</b></br>
 <i>browser.tabs.showAudioPlayingIcon</i></br>
 </br>
-Insert related tab after current tab
+<b>Insert related tab after current tab</b> (suggestion: enabled)
 <i>browser.tabs.insertRelatedAfterCurrent</i>
 </br>
-Preview tabs using 'Ctrl+Tab'</br>
+<b>Preview tabs using 'Ctrl + Tab'</b></br>
 <i>browser.ctrlTab.previews</i></br>
 </br>
-Close window with last visible tab</br>
+<b>Close window with last visible tab</b> (suggestion: disabled)</br>
 <i>browser.tabs.closeWindowWithLastTab</i></br>
 </br>
-Titlebar</br>
+<b>Titlebar</b></br>
 <i>browser.tabs.drawInTitlebar</i></br>
 </br>
-HTML5 fullscreen warning</br>
-<i>full-screen-api.warning.delay</i> > 0 (reduces delay)</br>
-<i>full-screen-api.warning.timeout</i> > 0 (reduces delay)</br>
+<b>HTML5 fullscreen warning</b></br>
+<i>full-screen-api.warning.delay</i> &gt; 0 (reduces delay)</br>
+<i>full-screen-api.warning.timeout</i> &gt; 0 (reduces delay)</br>
 </br>
-Recently added bookmarks</br>
+<b>Recently added bookmarks</b></br>
 <i>browser.bookmarks.showRecentlyBookmarked</i></br>
 </br>
-General animations</br>
+<b>General animations</b></br>
 <i>toolkit.cosmeticAnimations.enabled</i></br>
 </br>
-Fullscreen animations for HTML5 content</br>
-<i>full-screen-api.transition-duration.enter</i> > 0 0 (reduces animation time)</br>
-<i>full-screen-api.transition-duration.leave</i> > 0 0 (reduces animation time)</br>
+<b>Fullscreen animations for HTML5 content</b></br>
+<i>full-screen-api.transition-duration.enter</i> &gt; 0 0 (reduces animation time)</br>
+<i>full-screen-api.transition-duration.leave</i> &gt; 0 0 (reduces animation time)</br>
 </br>
-Findbar: animate result highlighting</br>
+<b>Findbar: animated result highlighting</b></br>
 <i>findbar.modalHighlight</i></br>
 </br>
-Searchbar in 'about:preferences'</br>
+<b>Searchbar in 'about:preferences'</b></br>
 <i>browser.preferences.search</i></br>
 </br>
-Search engines in location bar popup</br>
+<b>Location Bar: search engines at popups bottom</b></br>
 <i>browser.urlbar.oneOffSearches</i></br>
 </br>
-Open search results in new tab</br>
+<b>Searchbar: open search results in new tab</b></br>
 <i>browser.search.openintab</i></br>
 </br>
-Reader mode</br>
+<b>Reader mode</b></br>
 <i>reader.parse-on-load.enabled</i></br>
 </br>
-Geolocation</br>
+<b>Geolocation (suggestion: disabled)</b></br>
 <i>geo.enabled</i></br>
 </br>
-Pocket</br>
+<b>Pocket</b> (suggestion: disabled)</br>
 <i>extensions.pocket.enabled</i></br>
 </br>
-Container tabs</br>
+<b>Container tabs</b></br>
 <i>privacy.userContext.enabled</i></br>
 </br>
-Flyweb</br>
+<b>Flyweb</b></br>
 <i>dom.flyweb.enabled</i></br>
 </br>
-Font rendering</br>
-<i>gfx.canvas.azure.backends</i> > direct2d1.1,cairo,skia (old font rendering)</br>
-<i>gfx.content.azure.backends</i> > direct2d1.1,cairo,skia (old font rendering)</br>
+<b>Font rendering</b></br>
+<i>gfx.canvas.azure.backends</i> &gt; direct2d1.1,cairo,skia (old font rendering)</br>
+<i>gfx.content.azure.backends</i> &gt; direct2d1.1,cairo,skia (old font rendering)</br>
 </br>
-Anti fingerprinting</br>
+<b>Anti fingerprinting</b></br>
 <i>privacy.resistFingerprinting</i></br>
-
-
+</br>
+<b>Telemetry settings</b> (suggestion: disabled)</br>
+<i>browser.ping-centre.telemetry</i></br>
+<i>toolkit.telemetry.archive.enabled</i></br>
+<i>toolkit.telemetry.bhrPing.enabled</i></br>
+<i>toolkit.telemetry.enabled</i></br>
+<i>toolkit.telemetry.firstShutdownPing.enabled</i></br>
+<i>toolkit.telemetry.newProfilePing.enabled</i></br>
+<i>toolkit.telemetry.reportingpolicy.firstRun</i></br>
+<i>toolkit.telemetry.shutdownPingSender.enabled</i></br>
+<i>toolkit.telemetry.unified</i></br>
+<i>toolkit.telemetry.updatePing.enabled</i></br>
+<i>browser.selfsupport.enabled</i></br>
+<i>browser.selfsupport.url &gt; ""</i></br>
 
