@@ -27,8 +27,7 @@
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
-  min-height: 0px !important;
-  height: 25px !important;
+  min-height: 25px !important;
 }
 
 #print-preview-toolbar,
@@ -52,6 +51,7 @@
 #navigator-toolbox toolbar {
   -moz-box-ordinal-group: 10 !important;
 }
+/**/
 #navigator-toolbox #TabsToolbar {
   -moz-box-ordinal-group: 100 !important;
 }
@@ -103,3 +103,18 @@
   border-top: none !important;
   border-bottom: none !important;
 }
+
+/* remove 'dragging tab' margin/padding nonsense */
+#TabsToolbar[movingtab] {
+  padding-bottom: unset !important;
+}
+
+#TabsToolbar[movingtab] > .tabbrowser-tabs {
+  padding-bottom: unset !important;
+  margin-bottom: unset !important;
+}
+
+#TabsToolbar[movingtab] + #nav-bar {
+  margin-top: unset !important;
+}
+/**/

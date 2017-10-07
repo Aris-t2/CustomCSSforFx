@@ -1,0 +1,46 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import url(./ac_popup_title_and_url_50percent_width.css);
+
+/* To hide seach engines at popups bottom open 'about:config' and set ************
+** browser.urlbar.oneOffSearches to 'false' *************************************/
+
+
+/* reorder content to switch title and url posions */
+
+.ac-type-icon{
+  -moz-box-ordinal-group: 0 !important;
+}
+.ac-site-icon{
+  -moz-box-ordinal-group: 1 !important;
+}
+.ac-title{
+  -moz-box-ordinal-group: 5 !important;
+  -moz-margin-start: 10px !important;
+  -moz-margin-end: 0px !important;
+}
+.ac-tags{
+  -moz-box-ordinal-group: 3 !important;
+}
+.ac-separator{
+  -moz-box-ordinal-group: 4 !important;
+}
+.ac-url{
+  -moz-box-ordinal-group: 2 !important;
+}
+.ac-action{
+  -moz-box-ordinal-group: 6 !important;
+}
+
+/* prevent url/title overlapping */
+#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="searchengine"]) .ac-title {
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 10px !important;
+}
+/**/

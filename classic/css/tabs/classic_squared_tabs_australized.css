@@ -297,3 +297,29 @@
   display: unset !important;
 }
 /**/
+/* remove crap set by Firefox 58+ */
+.tabbrowser-tab,
+.tab-stack,
+.tab-background {
+  border: unset !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left:  unset !important;
+  border-image:  unset !important;
+  border-image-slice:  unset !important;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::before,
+.tabbrowser-tab:hover::before,
+.tabbrowser-tab[last-visible-tab]:hover::after,
+#tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
+  border-image:  unset !important;
+  border-image-slice:  unset !important;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}

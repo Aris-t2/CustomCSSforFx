@@ -1,0 +1,41 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* To hide seach engines at popups bottom open 'about:config' and set ************
+** browser.urlbar.oneOffSearches to 'false' *************************************/
+
+/* remove unneeded padding around results */
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+  padding: 0 !important;
+}
+
+/* make sure there is not unneded space before results (Fx58+) */
+#PopupAutoCompleteRichResult .autocomplete-richlistitem {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+
+/* make sure there is not unneded space before results (Fx57+) */
+#PopupAutoCompleteRichResult .autocomplete-richlistitem spacer{
+  display: none !important;
+}
+
+/* remove separator between title and url */
+#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-separator {
+  display: none !important;
+}
+
+/* calculate width of title and url: width = 1/2 * (window size - 100px) */
+#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-title-text, 
+#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-url-text {
+  min-width: calc((100vw - 100px)/2) !important;
+  width: calc((100vw - 100px)/2) !important;
+}
+
+/**/

@@ -1,0 +1,61 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* Aero-like appearance */
+#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"],
+#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"][current="true"],
+#PopupAutoCompleteRichResult .autocomplete-richlistitem:hover {
+  color: inherit !important;
+  background-color: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+  border-radius: 6px !important;
+  outline: 1px solid rgba(124,163,206,0.7) !important;
+  -moz-outline-radius: 3px !important;
+  outline-offset: -1px !important;
+}
+
+/* replace inverted text colors with default ones */
+#PopupAutoCompleteRichResult .ac-title-text[selected] .ac-emphasize-text,
+#PopupAutoCompleteRichResult .ac-title[selected=true] {
+  color: hsl(0, 0%, 0%) !important;
+}
+#PopupAutoCompleteRichResult .ac-url-text[selected] .ac-emphasize-text,
+#PopupAutoCompleteRichResult .ac-url[selected=true] {
+  color: hsl(210, 77%, 47%) !important;
+}
+#PopupAutoCompleteRichResult .ac-action-text[selected] .ac-emphasize-text,
+#PopupAutoCompleteRichResult .ac-action[selected=true] {
+  color: hsl(178, 100%, 28%) !important;
+}
+
+/* replace inverted icons with default ones */
+#PopupAutoCompleteRichResult .ac-type-icon[type=keyword][selected],
+#PopupAutoCompleteRichResult .ac-site-icon[type=searchengine][selected],
+#PopupAutoCompleteRichResult .ac-type-icon[type=switchtab][selected],
+#PopupAutoCompleteRichResult .ac-type-icon[type=remotetab][selected],
+#PopupAutoCompleteRichResult .ac-type-icon[type=bookmark][selected][current] {
+  fill: #b2b2b2 !important;
+}
+
+#PopupAutoCompleteRichResult richlistitem[selected="true"]:not([collapse="true"]) {
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+#PopupAutoCompleteRichResult richlistitem[selected="true"] + richlistitem:not([collapse="true"]) {
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+  padding: 1px !important;
+}

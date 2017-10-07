@@ -23,10 +23,7 @@
 }
 
 /* Hide "Visit/Search" items */
-#PopupAutoCompleteRichResult richlistitem:first-of-type[type*="heuristic"],
-#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"],
-#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="visiturl"],
-#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="keyword"],
+#PopupAutoCompleteRichResult richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="searchengine"]),
 #PopupAutoCompleteRichResult richlistitem[anonid="type-icon-spacer"] {
   display: none !important;
 }
