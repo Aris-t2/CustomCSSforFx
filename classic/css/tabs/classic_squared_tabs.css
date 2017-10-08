@@ -162,9 +162,10 @@
   height: 0px !important;
 }
 
+.tabbrowser-tab > .tab-stack > .tab-background > .tab-line[selected=true],
 .tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
   background-color: rgba(0,0,0,.2);
-  opacity: 0px !important;
+  opacity: 0 !important;
 }
 
 .tabbrowser-tab .tab-background[selected=true] {

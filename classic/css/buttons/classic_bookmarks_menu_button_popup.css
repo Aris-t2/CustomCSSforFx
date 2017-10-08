@@ -18,8 +18,8 @@
   content: "Bookmarks" !important;
 }
 
-/* Create custom button label (German): 'Lesezeichen' *//*
-#PersonalToolbar #bookmarks-menu-button::after {
+/* Create custom button label (German): 'Lesezeichen' */
+#main-window[titlemodifier_privatebrowsing*="Privater Modus"] #PersonalToolbar #bookmarks-menu-button::after {
   content: "Lesezeichen" !important;
 }
 
@@ -93,8 +93,8 @@
 #BMB_bookmarksPopup {
   -moz-margin-end: -40px !important;
 }
-/* for button label: 'Lesezeichen' *//*
-#BMB_bookmarksPopup {
+/* for button label: 'Lesezeichen' */
+#main-window[titlemodifier_privatebrowsing*="Privater Modus"] #bookmarks-menu-button #BMB_bookmarksPopup {
   -moz-margin-end: -42px !important;
 }
 
@@ -119,8 +119,8 @@
 	#BMB_bookmarksPopup {
 	  -moz-margin-end: -24px !important;
 	}
-	/* for button label: 'Lesezeichen' *//*
-	#BMB_bookmarksPopup {
+	/* for button label: 'Lesezeichen' */
+	#main-window[titlemodifier_privatebrowsing*="Privater Modus"] #bookmarks-menu-button #BMB_bookmarksPopup {
 	  -moz-margin-end: -28px !important;
 	}
 	/**/

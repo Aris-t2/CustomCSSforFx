@@ -11,18 +11,6 @@
 /* cheat main menu button into tabs toolbar */
 /********************************************/
 
-/* experimental: remove arrow from panel popup */
-/*
-#main-window[tabsintitlebar] #appMenu-popup .panel-arrowbox {
-  visibility: collapse !important;
-}
-#main-window[tabsintitlebar] #appMenu-popup{
-  -moz-margin-start: 0px !important;
-  -moz-margin-end: -204px !important;
-  margin-top:2px !important;
-}
-*/
-
 /* gain space before tabs toolbar */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 95px !important;
@@ -47,9 +35,11 @@
   top: -26px !important;
   height: 22px !important;
   margin: 0 !important;
-  -moz-margin-start: -3px !important;
+  -moz-margin-start: -1px !important;
   border: unset !important;
   box-shadow: unset !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {

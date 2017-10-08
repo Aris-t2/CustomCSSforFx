@@ -56,6 +56,9 @@
 /*@import url(./css/buttons/appbutton_in_titlebar_deved57p.css);*/
 /*@import url(./css/buttons/appbutton_in_titlebar_nightly57p.css);*/
 /*@import url(./css/buttons/appbutton_in_titlebar_palemoon.css);*/
+@import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
+/*@import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css);*/
+@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);
 
 
 /****************************************************************************************/
@@ -71,6 +74,7 @@
 
 @import url(./css/tabs/classic_squared_tabs.css);
 /*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
+/*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
 /*@import url(./css/tabs/smaller_tab_width_in_overflow_mode.css);*/
 

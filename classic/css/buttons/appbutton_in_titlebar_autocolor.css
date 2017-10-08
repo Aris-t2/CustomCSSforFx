@@ -1,0 +1,54 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Aurora */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"] {
+  background-image: linear-gradient(hsl(208,99%,37%), hsl(214,90%,23%) 95%) !important;
+  border-color: hsla(214,89%,21%,.9) !important;
+  box-shadow: 0 1px 0 hsla(205,100%,72%,.2) inset,
+			  0 0 2px 1px hsla(205,100%,72%,.25) inset !important;
+}
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(202,100%,85%,.5) 10%, hsla(202,100%,85%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(205,100%,72%,.7), hsla(205,100%,72%,0)),
+					linear-gradient(hsl(208,98%,34%), hsl(213,87%,20%) 95%) !important;
+  border-color: hsla(214,89%,21%,.9) !important;
+  box-shadow: 0 1px 0 hsla(205,100%,72%,.15) inset,
+			  0 0 2px 1px hsla(205,100%,72%,.5) inset,
+			  0 -1px 0 hsla(205,100%,72%,.2) inset !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:-moz-any(:hover:active,[open]) {
+  background-image: linear-gradient(hsl(208,95%,30%), hsl(214,85%,17%) 95%) !important;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
+			  0 1px 1px rgba(0,0,0,.2) inset !important;
+}
+
+/* Nightly */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]) {
+  background-image: linear-gradient(hsl(211,33%,32%), hsl(209,53%,10%) 95%) !important;
+  border-color: hsla(210,59%,13%,.9) !important;
+  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,
+			  0 0 2px 1px hsla(211,65%,85%,.15) inset !important;
+}
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),
+					linear-gradient(hsl(211,33%,32%), hsl(209,53%,10%) 95%) !important;
+  border-color: hsla(210,59%,13%,.9) !important;
+  box-shadow: 0 1px 0 hsla(210,48%,90%,.15) inset,
+			  0 0 2px 1px hsla(210,48%,90%,.4) inset,
+			  0 -1px 0 hsla(210,48%,90%,.2) inset !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):-moz-any(:hover:active,[open]) {
+  background-image: linear-gradient(hsl(211,33%,26%), hsl(209,53%,6%) 95%) !important;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
+			  0 1px 1px rgba(0,0,0,.2) inset !important;
+}
