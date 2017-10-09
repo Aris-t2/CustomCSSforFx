@@ -77,6 +77,36 @@
 	  background: #dbeaf9 !important;
 	}
   }
+  @media all and (-moz-windows-classic) {
+	#nav-bar:not(:-moz-lwtheme),
+	#PersonalToolbar:not(:-moz-lwtheme),
+	#main-window:not([tabsintitlebar])  #TabsToolbar:not(:-moz-lwtheme) {
+	  border-left:  unset !important;
+	  border-right:  unset !important;
+	  background: unset !important;
+	}
+
+	#main-window:not([tabsintitlebar]) #toolbar-menubar:not(:-moz-lwtheme) {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	  border-bottom: unset !important;
+	}
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #navigator-toolbox,
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #nav-bar,
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #navigator-toolbox::before,
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #nav-bar::before,
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #navigator-toolbox::after,
+	#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #nav-bar::after {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	  border: unset !important;
+	  border-image: unset !important;
+	}
+
+	#main-window:not([tabsintitlebar]) toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+	  background: unset !important;
+	}
+  }
 }
 
 #main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
@@ -102,6 +132,13 @@
   box-shadow: none !important;
   border-top: none !important;
   border-bottom: none !important;
+}
+
+/* remove tab fog */
+#TabsToolbar:not(:-moz-lwtheme),
+#TabsToolbar:not(:-moz-lwtheme)::before,
+#TabsToolbar:not(:-moz-lwtheme)::after {
+  box-shadow: unset !important;
 }
 
 /* remove 'dragging tab' margin/padding nonsense */

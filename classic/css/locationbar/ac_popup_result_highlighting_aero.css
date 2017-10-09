@@ -46,6 +46,11 @@
   fill: #b2b2b2 !important;
 }
 
+#PopupAutoCompleteRichResult richlistitem:not([collapse="true"]) {
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
 #PopupAutoCompleteRichResult richlistitem[selected="true"]:not([collapse="true"]) {
   border-top: 1px solid transparent !important;
   border-bottom: 1px solid transparent !important;

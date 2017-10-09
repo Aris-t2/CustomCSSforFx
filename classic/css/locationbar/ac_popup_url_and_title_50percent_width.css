@@ -39,7 +39,7 @@
 }
 
 /* prevent url/title overlapping */
-#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="searchengine"]) .ac-title {
+#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
   -moz-margin-start: 0px !important;
   -moz-margin-end: 10px !important;
 }
@@ -47,13 +47,13 @@
 /* calculate width for action type menuitems like this, *
 ** if not using 50% widths for title and url. ***********
 ** 60% url, 40% title in this example ******************//*
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="searchengine"]) .ac-url-text,
+#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-url-text,
 #PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-title-text {
   min-width: calc((100vw - 100px)*0.4) !important;
   width: calc((100vw - 100px)*0.4) !important;
 }
 
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="searchengine"]) .ac-title-text,
+#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title-text,
 #PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-url-text {
   min-width: calc((100vw - 100px)*0.6) !important;
   width: calc((100vw - 100px)*0.6) !important;

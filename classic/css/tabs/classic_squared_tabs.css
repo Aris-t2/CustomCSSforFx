@@ -19,8 +19,10 @@
 }
 
 /* remove tab fog */
-#TabsToolbar:not(:-moz-lwtheme):-moz-any(::after,::before) {
-  box-shadow: none !important;
+#TabsToolbar:not(:-moz-lwtheme),
+#TabsToolbar:not(:-moz-lwtheme)::before,
+#TabsToolbar:not(:-moz-lwtheme)::after {
+  box-shadow: unset !important;
 }
 
 /*******************************************/

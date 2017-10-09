@@ -32,6 +32,7 @@
 	}
 
 	#addons-page .alert,
+	#addons-page #legacy-view,
 	#addons-page #detail-view,
 	#addons-page #addon-list,
 	#addons-page #search-list,
