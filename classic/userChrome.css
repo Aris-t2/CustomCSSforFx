@@ -19,7 +19,8 @@
 /*@import url(./css/buttons/appbutton_popup_hide_sync.css);*/
 /*@import url(./css/buttons/bookmarks_popup_hide_items.css);*/
 /*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
-/*@import url(./css/buttons/appbutton_at_navbars_start.css);*/
+@import url(./css/buttons/appbutton_at_navbars_start.css);
+@import url(./css/buttons/separated_history_popups_for_back_and_forward.css);
 
 
 /****************************************************************************************/
@@ -58,7 +59,7 @@
 /*@import url(./css/buttons/appbutton_in_titlebar_palemoon.css);*/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
 /*@import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css);*/
-@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);
+/*@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);*/
 
 
 /****************************************************************************************/
@@ -123,15 +124,15 @@
 /* Location bars autocomplete popup appearance ******************************************/
 /****************************************************************************************/
 
+@import url(./css/locationbar/ac_popup_classic_with_two_lines.css);
 /*@import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css);*/
-@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css);
-/*@import url(./css/locationbar/ac_popup_title_and_url_in_2_lines.css);*/
-/*@import url(./css/locationbar/ac_popup_classic.css);*/
+/*@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css);*/
 /*@import url(./css/locationbar/ac_popup_hide_item_title.css);*/
 /*@import url(./css/locationbar/ac_popup_show_item_title_only_on_hover.css);*/
-/*@import url(./css/locationbar/ac_popup_result_highlighting_aero.css);*/
+@import url(./css/locationbar/ac_popup_result_highlighting_aero.css);
 /*@import url(./css/locationbar/ac_popup_keysearch_bold.css);*/
 /*@import url(./css/locationbar/ac_popup_keysearch_underline.css);*/
 /*@import url(./css/locationbar/ac_popup_result_separator.css);*/
+/*@import url(./css/locationbar/ac_popup_hide_searchwith_and_visit_items.css);*/
 
 /**/

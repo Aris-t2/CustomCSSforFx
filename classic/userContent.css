@@ -1,0 +1,29 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* about:addons *************************************************************************/
+/****************************************************************************************/
+
+@import url(./css/aboutaddons/addons_manager_alternative_appearance.css);
+@import url(./css/aboutaddons/addonlists_show_addon_version.css);
+/*@import url(./css/aboutaddons/addonlists_compact.css);*/
+/*@import url(./css/aboutaddons/addonlists_compact_more_compact.css);*/
+/*@import url(./css/aboutaddons/addonlists_only_show_buttons_on_hover.css);*/
+/*@import url(./css/aboutaddons/addonlists_replace_button_labels_with_icons.css);*/
+@import url(./css/aboutaddons/recentupdates_category_always_visible.css);
+
+
+/****************************************************************************************/
+/* about:preferences ********************************************************************/
+/****************************************************************************************/
+
+@import url(./css/aboutpreferences/preferences_alternative_appearance.css);
+
+/**/

@@ -6,16 +6,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
 
-/* hide 'disabled' forward button */
-#forward-button[disabled="true"] {
-  visibility: collapse !important;
-  transition: visibility 150ms ease-out !important;
+	#category-recentUpdates[disabled] {
+	  opacity: 1 !important;
+	  min-height: 40px !important;
+	}
+
 }
-
-#forward-button:not([disabled="true"]) {
-  visibility: visible !important;
-  transition: visibility 150ms ease-out !important;
-}
-
-/**/

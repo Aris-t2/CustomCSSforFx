@@ -8,8 +8,4 @@
 
 #PopupAutoCompleteRichResult richlistitem :-moz-any(.ac-emphasize-text-title, .ac-emphasize-text-tag, .ac-emphasize-text-url,.ac-emphasize-text) {
   font-weight: bold !important;
-  /*box-shadow: unset !important;
-  background-color: unset !important;
-  border-radius: unset !important;
-  text-shadow: unset !important;*/
 }

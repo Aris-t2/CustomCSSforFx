@@ -1,0 +1,248 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+	.category {
+	  margin-inline-start: 0px !important;
+	}
+
+ 	page,
+	.dialogBox .groupbox-title {
+	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	}
+
+	@media (-moz-os-version: windows-win7), (-moz-os-version: windows-vista){
+	  @media (-moz-windows-theme:aero) {
+	    page,
+		page .dialogBox .groupbox-title{
+		  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	    }
+	  }
+	}
+	
+	#searchInput {
+      margin-top: 0px !important;
+	}
+
+	#categories {
+	  background: transparent !important;
+	}
+
+	.groupbox-body,
+	#dialogFrame{
+	  background-color: white !important;
+	}
+	
+	.search-container {
+	  background: transparent !important;
+	}
+
+	.header-name {
+	  visibility: collapse !important;
+	}
+	
+	/* main colors category items */
+	#categories .category[selected]{
+	  background-color: white !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):hover{
+	  background-color: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+	#categories .category:not([selected]):not(:hover){
+	  color: black !important;
+	}
+	#categories .category {
+	  transition-duration: unset !important;
+	}
+	
+	/* category icons */
+	#category-search .category-icon {
+	  list-style-image: url("./../../image/altprefs_options_search.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-general .category-icon {
+	  list-style-image: url("./../../image/altprefs_options.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-privacy .category-icon {
+	  list-style-image: url("./../../image/altprefs_options.png") !important; 
+	  -moz-image-region: rect(0, 160px, 32px, 128px) !important;
+	}
+	#category-sync .category-icon {
+	  list-style-image: url("./../../image/altprefs_options_sync.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#categories .category .category-icon {
+	  height: 32px !important;
+	  width: 32px !important;
+	}
+
+	/* alignment and text/font appearance */
+
+	#mainPrefPane {
+	  color: black !important;
+	  -moz-padding-start: 20px !important;
+	  margin-top: -35px !important;
+	  -moz-margin-start: -20px !important;
+	}
+	
+	/*#mainPrefPane textbox {
+	  font-size:80% !important;
+	}*/
+	
+	textbox {
+	  min-height: 24px !important;
+	  height: 24px !important;
+	}
+
+	/*description,
+	.main-content label{
+	  font-size:90% !important;
+	}*/
+	
+	.main-content {
+	  margin-top: 20px !important;
+	  margin-bottom: 20px !important;
+	  background-color: white !important;
+	  -moz-margin-start: -1px !important;
+	}
+
+	.header label {
+	  font-weight: bold !important;
+	  /*font-size: 130% !important;*/
+	  padding-bottom: 0 !important;
+	}
+
+	.header:not(#header-advanced){
+	  margin-bottom: 0px !important;
+	}
+
+	#advancedPrefs #tabsElement tab {
+	  min-height: 30px !important;
+	}	
+
+	/* treechildren*/
+	#handlersView richlistitem,
+	#engineList treechildren::-moz-tree-row,
+	#blocklistsTree treechildren::-moz-tree-row {
+	  min-height: 24px !important;
+	}
+	
+	treecols,
+	treecol {
+	  min-height: unset !important;
+	  height: 24px !important;
+	}
+	
+	.autocomplete-tree treecols,
+	.autocomplete-tree treecol {
+	  height: unset !important;
+	}
+
+	/* buttons / menulists */
+	button:not(.button-link):not(.close-icon),
+	menulist{
+	  min-height: unset !important;
+	  height: unset !important;
+	  /*font-size: 90% !important;*/
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	button:not(.button-link):not(.close-icon){
+	  padding:0px !important;
+	}
+	menulist{
+	  padding:2px !important;
+	}
+	
+	/*#weavePrefsDeck button {
+	  font-size: 75% !important;
+	}*/
+	
+	/* checkbox and radio items */
+	checkbox image,
+	radio image {
+	  width: 14px !important;
+	  height: 14px !important;
+	  margin: 0 !important;
+	}
+	
+	checkbox label,
+	radio label {
+	  -moz-margin-start: -10px !important;
+	}
+	
+	radio *{
+	  outline: unset !important;
+	}
+	
+}
+
+/* preference sub windows */
+
+*[subdialog="true"] button:not(.button-link),
+*[subdialog="true"] menulist{
+  min-height: unset !important;
+  height: unset !important;
+  /*font-size: 90% !important;*/
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+}
+
+*[subdialog="true"] button:not(.button-link):not(.close-icon){
+  padding:0px !important;
+}
+*[subdialog="true"] menulist{
+  padding:2px !important;
+}
+
+*[subdialog="true"] checkbox image,
+*[subdialog="true"] radio image {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+}
+
+*[subdialog="true"] checkbox label,
+*[subdialog="true"] radio label {
+  -moz-margin-start: -10px !important;
+}
+
+*[subdialog="true"] radio *{
+  outline: unset !important;
+}
+
+*[subdialog="true"] > vbox,
+*[subdialog="true"] > hbox,
+*[subdialog="true"] .prefWindow-dlgbuttons,
+*[subdialog="true"] prefpane,
+*[subdialog="true"] .contentPane,
+*[subdialog="true"] .dialog-content-box,
+*[subdialog="true"] .largeDialogContainer{
+  background-color: white !important;
+  color: black !important;
+}
+
+*[subdialog="true"] textbox {
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+*[subdialog="true"] treecols,
+*[subdialog="true"] treecol {
+  min-height: unset !important;
+  height: 26px !important;
+}
+
+*[subdialog="true"] .autocomplete-tree treecols,
+*[subdialog="true"] .autocomplete-tree treecol {
+  height: unset !important;
+}

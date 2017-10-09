@@ -1,0 +1,21 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+	#addons-page .main-content .addon:not(:hover) .control-container{
+	  min-height: 23px !important;
+	}
+	#addons-page .main-content .addon:not(:hover) .control-container button{
+	  visibility: collapse;
+	}
+	#addons-page .main-content .addon:not(:hover) .description-container .button-link {
+	  visibility: hidden !important;
+      -moz-margin-start: -30px !important;
+	}
+}

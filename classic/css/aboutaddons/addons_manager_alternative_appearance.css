@@ -1,0 +1,257 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.category {
+	  margin-inline-start: 0px !important;
+	}
+
+	/* main colors addons-page */
+	#addons-page {
+	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	}
+
+	@media (-moz-os-version: windows-win7), (-moz-os-version: windows-vista){
+	  @media (-moz-windows-theme:aero) {
+	    #addons-page {
+		  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	    }
+	  }
+	}
+
+	#addons-page #nav-header,
+	#addons-page #categories,
+	#addons-page .main-content{
+	  background-color: transparent !important;
+	}
+
+	#addons-page .alert,
+	#addons-page #detail-view,
+	#addons-page #addon-list,
+	#addons-page #search-list,
+	#addons-page #updates-list{
+	  background-color: white !important;
+	}
+	
+	#addons-page .alert {
+	  box-shadow: 2px 2px 2px rgba(200,200,200,0.5) !important;
+	  padding: 0px !important;
+	}
+	
+	/* Highlight */
+	#addons-page .main-content .addon:hover,
+	#addons-page .main-content .addon[active="false"]:hover{
+	  background: Highlight !important;
+	  color: HighlightText !important;
+	}
+	#addons-page .main-content .addon:hover .button-link label,
+	#addons-page .main-content .addon:hover .basicinfo-container label,
+	#addons-page .main-content .addon:hover .description-container label,
+	#addons-page .main-content .addon:hover .relnotes-toggle:not(:hover) label{
+	  color: HighlightText !important;
+	}
+	
+	#addons-page .main-content .addon:hover .button-link:hover label {
+	  text-decoration: underline !important;
+	  text-decoration-color: HighlightText !important;
+	}
+	
+	/* main colors category items */
+	#addons-page button.sorter[checked="true"],
+	#addons-page #categories .category[selected]{
+	  background-color: white !important;
+	  color: black !important;
+	}
+
+	#addons-page button.sorter:not([checked="true"]):hover,
+	#addons-page #categories .category:not([selected]):hover{
+	  background-color: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+	#addons-page button.sorter:not([checked="true"]):not(:hover),
+	#addons-page #categories .category:not([selected]):not(:hover){
+	  color: black !important;
+	}
+
+	/* dimensions / positioning */
+	#addons-page .main-content{
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+
+	#addons-page #header-search{
+	  min-height: unset !important;
+	}
+
+	#addons-page #header-search .textbox-input-box{
+	  height: 18px !important;
+	}
+	
+	#addons-page #addon-list {
+	  -moz-margin-start: -1px !important;
+	}
+
+	#addons-page:not(.inSidebar):not([aios-inSidebar="true"])  .view-pane > .list > scrollbox {
+	  padding-right: 0 !important;
+	  padding-left: 0 !important;
+	}
+
+	#addons-page #detail-view,
+	#addons-page #userstyle-sorting,
+	#addons-page .global-warning-container,
+	#addons-page .global-info-container{
+	  -moz-margin-start: 0px !important;
+	  -moz-margin-end: 1px !important;
+	}
+
+	#addons-page .detail-view-container {
+	  -moz-margin-start: 10px !important;
+	}
+
+	#addons-page #view-port{
+	  -moz-margin-end: 4px !important;
+	}
+
+	#addons-page #header{
+	  padding: 2px 0 !important;
+	  margin: 0 !important;
+	}
+
+	/* buttons / menulists */
+	#addons-page  #custombutons-add-new,
+	#addons-page #header button,
+	#addons-page #header #header-utils-btn,
+	#addons-page #list-view .global-info button,
+	#addons-page #list-view .discover-button,
+	#addons-page .status-control-wrapper button,
+	#addons-page #userstyle-sorting button,
+	#addons-page #update-actions button,
+	#addons-page #updates-list-empty button,
+	#addons-page .relnotes-toggle,
+	#list-view menulist,
+	#updates-list menulist{
+	  padding:2px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	  /*font-size: 90% !important;*/
+	}
+	
+	#addons-page  #custombutons-add-new,
+	#addons-page #header button:not(.button-link),
+	#addons-page #header #header-utils-btn,
+	#addons-page #list-view .global-info button:not(.button-link),
+	#addons-page #list-view .discover-button,
+	#addons-page #list-view menulist,
+	#addons-page #updates-list menulist,
+	#addons-page .status-control-wrapper button,
+	#addons-page #userstyle-sorting .addon-control,
+	#addons-page #update-actions button,
+	#addons-page #updates-list-empty button,
+	#addons-page .relnotes-toggle:hover{
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+
+	#addons-page #header-utils-btn{
+	  padding: 2px !important;
+	  height: unset !important;
+	}
+
+	#addons-page button.sorter{
+	  padding:2px !important;
+	  min-height: 26px !important;
+	  height: unset !important;
+	}
+
+	#addons-page #header-search{
+	  padding: 1px !important;
+	  height: unset !important;
+	}
+	
+	/* search */
+	#search-filter {
+	  /*font-size: 90% !important;*/
+	}
+	
+	/* add-on entry */
+	#addons-page .main-content .addon[active="false"]{
+	  opacity: .8 !important;
+	}
+	
+	#addons-page .main-content #search-list .addon[status="installed"][active="false"]{
+	  opacity: .5 !important;
+	}
+
+	/*#addons-page .addon .name-container,
+	#addons-page #addon-list .name-container {
+	  font-size: 130% !important;
+	}
+	.sort-controls,
+	#addons-page #addon-list .warning,
+	#addons-page #addon-list .pending,
+	#addons-page #addon-list .error{
+	  font-size: 90% !important;
+	}
+	
+	.addon .description-outer-container * {
+	  font-size: 100% !important;
+	}*/
+	
+	/* detail view */
+	#detail-view button:not(.button-link):not(.text-link),
+	#detail-view menulist{
+	  padding:2px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	  /*font-size: 90% !important;*/
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	#detail-view colorpicker[type="button"]{
+	  padding:2px !important;
+	  min-height: 26px !important;
+	  min-width: 40px !important;
+	  height:auto !important;
+	  width: auto !important;
+	}
+	
+	/*#detail-view label{
+	  font-size: 90% !important;
+	}
+
+	#detail-view .creator-link{
+	  font-size: 110% !important;
+	}*/
+	
+	#detail-view .box-inherit.scrollbox-innerbox {
+	  margin: 0px !important;
+	}
+	
+	/* checkbox and radio items */
+	#addons-page checkbox image,
+	#addons-page radio image {
+	  width: 16px !important;
+	  height: 16px !important;
+	  margin: 0 !important;
+	}
+	
+	/* remove navigation buttons */
+	#nav-header #back-btn,
+	#nav-header #forward-btn {
+	  visibility: hidden !important;
+	}
+
+}
+
+/* get add-ons discovery page */
+html[data-reactid][data-reactroot] head[data-reactid] + body[data-reactid]{
+  background: white !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}

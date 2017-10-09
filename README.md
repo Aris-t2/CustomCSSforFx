@@ -1,5 +1,5 @@
 <h2>WebExtensions can not modify browsers appearance in Firefox 57+</h2></br>
-The only way to modify ui with custom CSS code is adding code to <b>userChrome.css</b> file inside browsers profile folder.</br>
+The only way to modify ui is adding custom CSS code to <b>userChrome.css</b> and <b>userContent.css</b> files inside browsers profile folder.</br>
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.</br>
 </br>
 <h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
@@ -21,11 +21,11 @@ You have to make hidden files visible to see ".mozilla" folder.</br>
 <b>2.</b> User styles belong into "chrome" subolder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
 </br>
-<b>3.</b> Copy userChrome.css and subfolders into \chrome\ subfolder.</br>
+<b>3.</b> Copy userChrome.css, userContent.css and subfolders into \chrome\ subfolder.</br>
 </br>
 <h2>How to use custom user styles?</h2></br>
-The <i>userChrome.css</i> file works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
-Edit <i>userChrome.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
+The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
+Edit <i>userChrome.css</i> and <i>userContent.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
 Restart browser after every change for changes to take effect.</br>
 </br>
 <b>Example</b></br>
