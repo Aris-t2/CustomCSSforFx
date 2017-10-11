@@ -6,8 +6,13 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
-/* remove search indicators '+' sign */
-.searchbar-search-button[addengines=true] > .searchbar-search-icon-overlay {
-  visibility: hidden !important;
+toolbar #zoom-controls > separator,
+toolbar #zoom-controls > #zoom-reset-button{
+  visibility: collapse !important;
+}
+#nav-bar #zoom-in-button{
+  -moz-padding-start:2px !important;
+}
+#nav-bar #zoom-out-button{
+  -moz-padding-end:2px !important;
 }

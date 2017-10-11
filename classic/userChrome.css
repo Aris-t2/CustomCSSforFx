@@ -21,6 +21,7 @@
 /*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
 @import url(./css/buttons/appbutton_at_navbars_start.css);
 @import url(./css/buttons/separated_history_popups_for_back_and_forward.css);
+@import url(./css/buttons/zoom_buttons_hide_reset.css);
 
 
 /****************************************************************************************/
@@ -78,6 +79,12 @@
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
 /*@import url(./css/tabs/smaller_tab_width_in_overflow_mode.css);*/
+@import url(./css/tabs/tab_close_always_visible.css);
+/*@import url(./css/tabs/tab_titles_remove_blur.css);*/
+/*@import url(./css/tabs/tab_throbber_fx56.css);*/
+/*@import url(./css/tabs/show_alltabs_button.css);*/
+/*@import url(./css/tabs/pinnedtab_hide_empty_icon.css);*/
+/*@import url(./css/tabs/custom_text_settings.css);*/
 
 
 /****************************************************************************************/
@@ -118,6 +125,7 @@
 @import url(./css/locationbar/identitybox_colors.css);
 @import url(./css/locationbar/identitybox_padlock_icon.css);
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
+/*@import url(./css/locationbar/go_button_in_location_bar_hidden.css);*/
 
 
 /****************************************************************************************/
@@ -135,9 +143,4 @@
 /*@import url(./css/locationbar/ac_popup_result_separator.css);*/
 /*@import url(./css/locationbar/ac_popup_hide_searchwith_and_visit_items.css);*/
 
-
-/* TESTS*/
-
-
 /**/
-

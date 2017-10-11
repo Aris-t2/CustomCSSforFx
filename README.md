@@ -79,6 +79,12 @@ Restart Firefox for changes to take effect.</br>
 <b>Insert related tab after current tab</b> (suggestion: enabled)</br>
 <i>browser.tabs.insertRelatedAfterCurrent</i></br>
 </br>
+<b>Hide 'http://' from url</b> (suggestion: disabled)</br>
+<i>browser.urlbar.trimURLs</i></br>
+</br>
+<b>Open links in new tab/window</b></br>
+<i>browser.link.open_newwindow.restriction</i> &gt; 0 (new tab instead window)</br>
+</br>
 <b>Preview tabs using 'Ctrl + Tab'</b></br>
 <i>browser.ctrlTab.previews</i></br>
 </br>
@@ -147,6 +153,4 @@ Restart Firefox for changes to take effect.</br>
 <i>toolkit.telemetry.shutdownPingSender.enabled</i></br>
 <i>toolkit.telemetry.unified</i></br>
 <i>toolkit.telemetry.updatePing.enabled</i></br>
-<i>browser.selfsupport.enabled</i></br>
-<i>browser.selfsupport.url &gt; ""</i></br>
-
+</br>

@@ -6,8 +6,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
-/* remove search indicators '+' sign */
-.searchbar-search-button[addengines=true] > .searchbar-search-icon-overlay {
-  visibility: hidden !important;
+/* hide urlbars go button */
+#urlbar-container .urlbar-go-button{
+  visibility: collapse !important;
 }

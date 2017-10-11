@@ -34,34 +34,30 @@
   color: #000000 !important;
 }
 
-/* default grey tabs */
+/* default tabs color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   background-image: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be) !important;
 }
+/* selected tabs color */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
   background-image: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa) !important;
 }
+/* hovered tabs color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: linear-gradient(to top,#cac7c1,#d5d2cc,#e8e6e2) !important;
 }
 
-/* unloaded tab *//*
+/* unloaded/pending tabs color *//*
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[pending] .tab-content {
   background: red !important;
 }
 
-/* unread tab *//*
+/* unread tabs color *//*
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[unread] .tab-content {
   background: purple !important;
 }
-
-/* bold text on selected tab *//*
-.tabbrowser-tab[selected="true"] {
-  font-weight: bold !important;
-}
-*/
 
 /* default aeroblue tabs on Windows 7 & Vista */
 @media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
@@ -242,16 +238,6 @@
 :root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   margin-top: -8px !important;
   margin-bottom: -8px !important;
-}
-
-/* tab close - always visible*/
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected]) .tab-close-button {
-  visibility: visible !important;
-  display: block !important;
-}
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected])[faviconized="true"] .tab-close-button {
-  visibility: collapse !important;
-  display: none !important;
 }
 
 /*tab favicon position*/

@@ -249,16 +249,6 @@
   margin-bottom: -8px !important;
 }
 
-/* tab close - always visible*/
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected]) .tab-close-button {
-  visibility: visible !important;
-  display: block !important;
-}
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected])[faviconized="true"] .tab-close-button {
-  visibility: collapse !important;
-  display: none !important;
-}
-
 /*tab favicon position*/
 .tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
 .tabbrowser-tab:not([pinned]) .tab-icon-image{

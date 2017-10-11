@@ -9,6 +9,7 @@
 
 	.category {
 	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
 	}
 
  	page,
@@ -25,14 +26,14 @@
 	  }
 	}
 	
-	#searchInput {
+	/*#searchInput {
       margin-top: 0px !important;
-	}
+	}*/
 
 	#categories {
 	  background: transparent !important;
 	}
-
+	
 	.groupbox-body,
 	#dialogFrame{
 	  background-color: white !important;
@@ -40,8 +41,10 @@
 	
 	.search-container {
 	  background: transparent !important;
+	  position: absolute !important;
+	  top: 20px !important;
 	}
-
+	
 	.header-name {
 	  visibility: collapse !important;
 	}
@@ -185,6 +188,21 @@
 	  outline: unset !important;
 	}
 	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
 }
 
 /* preference sub windows */
@@ -246,3 +264,4 @@
 *[subdialog="true"] .autocomplete-tree treecol {
   height: unset !important;
 }
+

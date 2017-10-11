@@ -6,8 +6,14 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
-/* remove search indicators '+' sign */
-.searchbar-search-button[addengines=true] > .searchbar-search-icon-overlay {
-  visibility: hidden !important;
+/* tab close - always visible*/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected]) .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
 }
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([protected])[faviconized="true"] .tab-close-button {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/**/
