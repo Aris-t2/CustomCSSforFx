@@ -32,6 +32,11 @@
   color: #000000 !important;
 }
 
+/* remove default tab colors */
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
+	background: unset !important;
+}
+
 /* default grey tabs */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {

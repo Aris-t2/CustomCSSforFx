@@ -11,7 +11,6 @@
 #urlbar[pageproxystate="valid"] .verifiedDomain {
   background: linear-gradient(hsl(215,60%,92%), hsl(215,58%,88%)) !important;
   box-shadow: 0 1px 0 hsla(215,54%,33%,.05) inset !important;
-  /*-moz-border-end-color: hsla(215,54%,33%,.2) !important;*/
   color: hsl(215,54%,33%) !important;
   border-inline-end: 1px solid hsla(215,54%,33%,.2) !important;
   border-image: unset !important;
@@ -31,7 +30,6 @@
 #urlbar[pageproxystate="valid"] .verifiedIdentity {
   background: linear-gradient(hsl(91,70%,90%), hsl(93,60%,81%)) !important;
   box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
-  /*-moz-border-end-color: hsla(92,81%,16%,.2) !important;*/
   color: #2f6600 !important;
   font-weight:bold !important;
   border-inline-end: 1px solid hsla(92,81%,16%,.2) !important;
@@ -52,7 +50,6 @@
 #urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) {
   background: linear-gradient(hsl(6,35%,88%), hsl(0,53%,82%)) !important;
   box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
-  /*-moz-border-end-color: hsla(92,81%,16%,.2) !important;*/
   border-inline-end: 1px solid hsla(92,81%,16%,.2) !important;
   border-image: unset !important;
   border-image-slice: unset !important;
@@ -72,7 +69,6 @@
 #urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
   background: linear-gradient(hsl(48,100%,93%), hsl(49,97%,85%)) !important;
   box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
-  /*-moz-border-end-color: hsla(92,81%,16%,.2) !important;*/
   border-inline-end: 1px solid hsla(92,81%,16%,.2) !important;
   border-image: unset !important;
   border-image-slice: unset !important;
@@ -89,9 +85,8 @@
 }
 
 #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked), 
-#urlbar[pageproxystate="valid"] .chromeUI {
+#urlbar[pageproxystate="valid"] :-moz-any(.chromeUI,.extensionPage) {
   background: linear-gradient(#fcfcfc,#d4d4d4) !important;
-  /*border-image-source: none !important;*/
   color: black !important;
   border-inline-end: 1px solid #bebebe !important;
   border-image: unset !important;
@@ -99,17 +94,17 @@
 }
 	
 #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked) #identity-icon, 
-#urlbar[pageproxystate="valid"] .chromeUI #identity-icon{
+#urlbar[pageproxystate="valid"] :-moz-any(.chromeUI,.extensionPage) #identity-icon{
   background-color: unset !important;
 }
 	
 #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked):hover,
-#urlbar[pageproxystate="valid"] .chromeUI:hover {
+#urlbar[pageproxystate="valid"] :-moz-any(.chromeUI,.extensionPage):hover {
   background: linear-gradient(#f2f2f2,#c0c0c0) !important;
 }
 
 #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked):-moz-any([open="true"],:hover:active),
-#urlbar[pageproxystate="valid"] .chromeUI:-moz-any([open="true"],:hover:active) {
+#urlbar[pageproxystate="valid"] :-moz-any(.chromeUI,.extensionPage):-moz-any([open="true"],:hover:active) {
   background: linear-gradient(#f0f0f0,#c0c0c0) !important;
   box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
 			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
