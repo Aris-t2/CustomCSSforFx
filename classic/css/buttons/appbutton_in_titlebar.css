@@ -191,3 +191,21 @@
 #main-window[privatebrowsingmode=temporary][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
+
+
+/* fix for squared_button_appearance_for_classic_buttons_on_navbar.css */
+#main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
+  padding: 5px !important;
+}
+#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
+  padding: 6px !important;
+}
+#main-window[tabsintitlebar][uidensity=touch] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
+  padding: 9px !important;
+}
+
+#main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon,
+#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon,
+#main-window[tabsintitlebar][uidensity=touch] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
+  padding: 0 !important;
+}

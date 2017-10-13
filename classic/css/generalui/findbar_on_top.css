@@ -34,13 +34,30 @@
   -moz-box-ordinal-group: 0;
   position: fixed !important;
   margin-top:-1px !important;
-  left: 5px;
   box-shadow: unset !important;
   border: 1px solid #aabccf !important;
   border-top: 0px solid transparent !important;
   border-radius: 0 0 3px 3px;
   transition-property: margin-top, opacity, visibility !important;
   opacity: 0.95 !important;
+}
+
+.browserContainer findbar:-moz-locale-dir(ltr),
+#viewSource #FindToolbar:-moz-locale-dir(ltr) {
+  left: 5px;
+}
+
+.browserContainer findbar:-moz-locale-dir(rtl),
+#viewSource #FindToolbar:-moz-locale-dir(rtl) {
+  right: 5px;
+}
+
+/* increase width to full window size *//*
+.browserContainer findbar,
+#viewSource #FindToolbar {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
 }
   
 /*default aeroblue toolbars on Windows 7 & Vista*/

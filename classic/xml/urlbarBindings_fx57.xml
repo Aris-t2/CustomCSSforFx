@@ -38,28 +38,6 @@
                 align="center"
                 role="alert"
                 selectedIndex="0">
-        <!-- OPT-IN -->
-        <xul:hbox flex="1" align="center" anonid="search-suggestions-opt-in">
-          <xul:description flex="1" id="search-suggestions-question">
-            &urlbar.searchSuggestionsNotification.question;
-
-            <xul:label id="search-suggestions-learn-more"
-                      class="text-link"
-                      role="link"
-                      value="&urlbar.searchSuggestionsNotification.learnMore;"
-                      accesskey="&urlbar.searchSuggestionsNotification.learnMore.accesskey;"
-                      onclick="document.getBindingParent(this).openSearchSuggestionsNotificationLearnMoreURL();"
-                      control="search-suggestions-learn-more"/>
-          </xul:description>
-          <xul:button anonid="search-suggestions-notification-disable"
-                      label="&urlbar.searchSuggestionsNotification.disable;"
-                      accesskey="&urlbar.searchSuggestionsNotification.disable.accesskey;"
-                      onclick="document.getBindingParent(this).dismissSearchSuggestionsNotification(false);"/>
-          <xul:button anonid="search-suggestions-notification-enable"
-                      label="&urlbar.searchSuggestionsNotification.enable;"
-                      accesskey="&urlbar.searchSuggestionsNotification.enable.accesskey;"
-                      onclick="document.getBindingParent(this).dismissSearchSuggestionsNotification(true);"/>
-        </xul:hbox>
         <!-- OPT-OUT -->
         <xul:hbox flex="1" align="center" anonid="search-suggestions-opt-out">
           <xul:image class="ac-site-icon" type="searchengine"/>
@@ -77,7 +55,7 @@
                      role="link"
                      value="&urlbar.searchSuggestionsNotification.changeSettingsWin;"
                      accesskey="&urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey;"
-                     onclick="openPreferences('general-search');"
+                     onclick="openPreferences('paneSearch');"
                      control="search-suggestions-change-settings"/>
         </xul:hbox>
       </xul:deck>
@@ -136,7 +114,6 @@
           if (aEvent.button == 2) {
             return;
           }
-
           let controller = this.view.QueryInterface(Components.interfaces.nsIAutoCompleteController);
           controller.handleEnter(true, aEvent);
         ]]></body>
@@ -147,49 +124,18 @@
         <body><![CDATA[
           this._oneOffSearchesEnabled = enable;
           if (enable) {
-            this.oneOffSearchButtons.telemetryOrigin = null;
+            this.oneOffSearchButtons.telemetryOrigin = "urlbar";
             this.oneOffSearchButtons.style.display = "-moz-box";
-            this.oneOffSearchButtons.popup = this;
             this.oneOffSearchButtons.textbox = this.input;
+            this.oneOffSearchButtons.popup = this;
           } else {
             this.oneOffSearchButtons.telemetryOrigin = null;
             this.oneOffSearchButtons.style.display = "none";
-            this.oneOffSearchButtons.popup = null;
             this.oneOffSearchButtons.textbox = null;
+            this.oneOffSearchButtons.popup = null;
           }
         ]]></body>
       </method>
-
-      <method name="openSearchSuggestionsNotificationLearnMoreURL">
-        <body><![CDATA[
-        let url = Services.urlFormatter.formatURL(
-          Services.prefs.getCharPref("app.support.baseURL") + "suggestions"
-        );
-        openUILinkIn(url, "tab");
-        ]]></body>
-      </method>
-
-      <method name="dismissSearchSuggestionsNotification">
-        <parameter name="enableSuggestions"/>
-        <body><![CDATA[
-
-          this.input.mIgnoreFocus = true;
-          this.input.focus();
-          this.input.mIgnoreFocus = false;
-
-          Services.prefs.setBoolPref(
-            "browser.urlbar.suggest.searches", enableSuggestions
-          );
-          Services.prefs.setBoolPref(
-            "browser.urlbar.userMadeSearchSuggestionsChoice", true
-          );
-
-          this.searchSuggestionsNotificationWasDismissed(
-            Services.prefs.getBoolPref("browser.urlbar.suggest.searches")
-          );
-        ]]></body>
-      </method>
-
       <method name="getNextIndex">
         <parameter name="reverse"/>
         <parameter name="amount"/>
@@ -237,10 +183,7 @@
         <getter>
           <![CDATA[
             if (!this._maxResults) {
-              var prefService =
-                Components.classes["@mozilla.org/preferences-service;1"]
-                          .getService(Components.interfaces.nsIPrefBranch);
-              this._maxResults = prefService.getIntPref("browser.urlbar.maxRichResults");
+              this._maxResults = Services.prefs.getIntPref("browser.urlbar.maxRichResults");
             }
             return this._maxResults;
           ]]>
@@ -262,7 +205,7 @@
           this._openAutocompletePopup(aInput, aElement);
           ]]>
         </body>
-      </method> 
+      </method>
 
       <method name="_openAutocompletePopup">
         <parameter name="aInput"/>
@@ -271,58 +214,15 @@
           if (this.mPopupOpen) {
             return;
           }
-
-          this.mInput = aInput;
-          aInput.controller.setInitiallySelectedIndex(this._isFirstResultHeuristic ? 0 : -1);
-          this.view = aInput.controller.QueryInterface(Components.interfaces.nsITreeView);
-          this._invalidate();
   
-		  var width = 300;
+		  width = 300;
 
 		  try{
 			width = Math.round(document.getElementById("urlbar").getBoundingClientRect().width);
 		  } catch(e){}
 		  
 		  this.setAttribute("width", width);
-		  
-		  /*if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("urlresults")
-			|| Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("cresultshcb")) {
-		  
-		    var height = 400;
-			var cheight = Services.prefs.getBranch("extensions.classicthemerestorer.").getIntPref("cresultsh");
-			
-			// urlbars bottom position
-			var urlbbotpos = document.getElementById("urlbar").boxObject.screenY + document.getElementById("urlbar").boxObject.height - window.screen.top;
-		
-			try{
-			  if(document.getElementById("main-window").hasAttribute("inFullscreen"))
-			    height = screen.height - urlbbotpos - 3;
-			  else
-			    height = screen.availHeight - urlbbotpos - 3;
-				
-			  if(document.getElementById('urlbar-container').parentNode.parentNode.id=="browser-bottombox")
-			    height = document.getElementById("main-window").boxObject.height
-						 - document.getElementById("navigator-toolbox").boxObject.height
-						 - document.getElementById("browser-bottombox").boxObject.height;
-	
-			} catch(e){}
-			
-			this.removeAttribute("height");
-			
-			if (Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("cresultshcb")) {
-				if (cheight < height) {
-				  this.setAttribute("maxheight", cheight);
-				} else {
-				  this.setAttribute("maxheight", height);
-				}
-			} else {
 
-
-			  this.setAttribute("maxheight", height);
-			}
-			  
-		  }*/
-		  
           try {
             let whichNotification = aInput.whichSearchSuggestionsNotification;
             if (whichNotification != "none") {
@@ -336,15 +236,11 @@
               this._hideSearchSuggestionsNotification();
             }
           } catch (ex) {
+
             Components.utils.reportError(ex);
           }
-	  
-		  // if CTRs movable location bar is on a bottom toolbar, open autocomplete popup above location bar
-		  if(document.getElementById('urlbar-container').parentNode.parentNode.id=="browser-bottombox")
-		    this.openPopup(aElement, "before_end", 0, 0, false, false);
-		  else
-            this.openPopup(aElement, "after_start", 0, -1, false, false);
 
+          this.openPopup(aElement, "after_start", 0, -1, false, false);
         ]]></body>
       </method>
 
@@ -353,15 +249,10 @@
         <parameter name="popupDirection"/>
         <body>
           <![CDATA[
-          let deckIndex = 0;
           if (whichNotification == "opt-out") {
-            deckIndex = 1;
-
             if (this.siteIconStart) {
-              let rect = this.DOMWindowUtils.getBoundsWithoutFlushing(window.document.documentElement);
-              let padding = popupDirection == "rtl" ? rect.right - this.siteIconStart
-                                                    : this.siteIconStart;
-              this.searchSuggestionsNotification.style.paddingInlineStart = padding + "px";
+              this.searchSuggestionsNotification.style.paddingInlineStart =
+                this.siteIconStart + "px";
             } else {
               this.searchSuggestionsNotification.style.removeProperty("padding-inline-start");
             }
@@ -371,43 +262,23 @@
               this.searchSuggestionsNotification.setAttribute("animate", "true");
             }
           }
-          this.searchSuggestionsNotification.setAttribute("selectedIndex", deckIndex);
 
-          let ariaDescElt = whichNotification == "opt-in" ?
-            "search-suggestions-question" : "search-suggestions-hint";
 
-          this.searchSuggestionsNotification.setAttribute("aria-describedby", ariaDescElt);
+          this.searchSuggestionsNotification.setAttribute("aria-describedby",
+                                                          "search-suggestions-hint");
+
           this.richlistbox.flex = 0;
           this.setAttribute("dontanimate", "true");
 
           this.classList.add("showSearchSuggestionsNotification");
-
           this.footer.collapsed = this._matchCount == 0;
-
+          this.input.tabScrolling = this._matchCount != 0;
 
           if (!this.popupOpen) {
             let event = document.createEvent("Events");
             event.initEvent("AlertActive", true, true);
             this.searchSuggestionsNotification.dispatchEvent(event);
           }
-          ]]>
-        </body>
-      </method>
-
-      <method name="searchSuggestionsNotificationWasDismissed">
-        <parameter name="enableSuggestions"/>
-        <body>
-          <![CDATA[
-          if (!this.popupOpen) {
-            this._hideSearchSuggestionsNotification();
-            return;
-          }
-          this._hideSearchSuggestionsNotificationWithAnimation().then(() => {
-            if (enableSuggestions && this.input.textValue) {
-
-              this.input.controller.startSearch(this.input.textValue);
-            }
-          });
           ]]>
         </body>
       </method>
@@ -429,36 +300,8 @@
         </body>
       </method>
 
-      <method name="_hideSearchSuggestionsNotificationWithAnimation">
-        <body>
-          <![CDATA[
-          return new Promise(resolve => {
-            let notificationHeight = this.searchSuggestionsNotification
-                                         .getBoundingClientRect()
-                                         .height;
-            this.searchSuggestionsNotification.style.marginTop =
-              "-" + notificationHeight + "px";
-
-            let popupHeightPx =
-              (this.getBoundingClientRect().height - notificationHeight) + "px";
-            this.style.height = popupHeightPx;
-
-            let onTransitionEnd = () => {
-              this.removeEventListener("transitionend", onTransitionEnd, true);
-              this.searchSuggestionsNotification.style.marginTop = "0px";
-              this.style.removeProperty("height");
-              this._hideSearchSuggestionsNotification();
-              resolve();
-            };
-            this.addEventListener("transitionend", onTransitionEnd, true);
-          });
-          ]]>
-        </body>
-      </method>
-
       <method name="_selectedOneOffChanged">
         <body><![CDATA[
-
           for (let item of this.richlistbox.childNodes) {
             if (item.collapsed) {
               break;
@@ -530,13 +373,23 @@
             let types = item.getAttribute("type").split(/\s+/);
             let type = types.find(t => t != "action" && t != "heuristic");
             try {
-
               parts.push(this._bundle.GetStringFromName(type + "ResultLabel"));
             } catch (e) {}
 
             return parts.filter(str => str).join(" ");
           ]]>
         </body>
+      </method>
+
+      <method name="maybeSetupSpeculativeConnect">
+        <parameter name="aUriString"/>
+        <body><![CDATA[
+          try {
+            let uri = makeURI(aUriString);
+            Services.io.speculativeConnect2(uri, gBrowser.contentPrincipal, null);
+          } catch (ex) {
+          }
+        ]]></body>
       </method>
 
       <method name="onResultsAdded">
@@ -547,10 +400,31 @@
               this.input.controller.setInitiallySelectedIndex(0);
               this.richlistbox.suppressMenuItemEvent = false;
             }
+            if (!this.input.gotResultForCurrentQuery &&
+                this.input.speculativeConnectEnabled &&
+                !this.input.inPrivateContext &&
+                this.input.mController.matchCount > 0) {
+              let firstStyle = this.input.mController.getStyleAt(0);
+              if (firstStyle.includes("autofill")) {
+                let uri = this.input.mController.getFinalCompleteValueAt(0);
 
+                if (!uri.includes("://")) {
+                  uri = "http://" + uri;
+                }
+                this.maybeSetupSpeculativeConnect(uri);
+              } else if (firstStyle.includes("searchengine") &&
+                         this.input.browserSearchSuggestEnabled &&
+                         this.input.urlbarSearchSuggestEnabled) {
+
+                let engine = Services.search.currentEngine;
+                engine.speculativeConnect({window,
+                                           originAttributes: gBrowser.contentPrincipal.originAttributes});
+              }
+            }
 
 
             this.footer.collapsed = false;
+            this.input.tabScrolling = true;
 
             this.input.gotResultForCurrentQuery = true;
             this.input.maybeReplayDeferredKeyEvents();
@@ -560,8 +434,9 @@
 
       <method name="_onSearchBegin">
         <body><![CDATA[
-
           this.input.controller.setInitiallySelectedIndex(0);
+
+          this.oneOffSearchButtons.selectedButton = null;
         ]]></body>
       </method>
 
@@ -587,7 +462,7 @@
           if (this._addonIframeOwner) {
             return null;
           }
-          // Make sure all overrides are provided before doing anything.
+
           for (let name of this._addonIframeOverrideFunctionNames) {
             if (typeof(overrides[name]) != "function") {
               throw new Error(
@@ -595,7 +470,7 @@
               );
             }
           }
-          // OK, insert the iframe.
+
           this._addonIframeOwner = owner;
           this._addonIframe = this._makeAddonIframe();
           this._addonIframeOverriddenFunctionsByName = {};
@@ -660,12 +535,50 @@
       ]]></handler>
 
       <handler event="mousedown"><![CDATA[
+
         event.preventDefault();
+
+        if (!this.input.speculativeConnectEnabled) {
+          return;
+        }
+        if (event.button == 2) {
+
+          return;
+        }
+
+        let elt = event.originalTarget;
+        while (elt && elt.localName != "richlistitem" && elt != this) {
+          elt = elt.parentNode;
+        }
+        if (!elt || elt.localName != "richlistitem") {
+          return;
+        }
+
+        if (this.input.controller.matchCount <= this.selectedIndex) {
+          return;
+        }
+
+        let url = this.input.controller.getFinalCompleteValueAt(this.selectedIndex);
+
+        if (url.startsWith("http") && this.selectedIndex > 0) {
+          this.maybeSetupSpeculativeConnect(url);
+        } else if (url.startsWith("moz-action:remotetab")) {
+
+          const MOZ_ACTION_REGEX = /^moz-action:([^,]+),(.*)$/;
+          if (!MOZ_ACTION_REGEX.test(url))
+            return;
+
+          let params = JSON.parse(url.match(MOZ_ACTION_REGEX)[2]);
+          if (params.url) {
+            this.maybeSetupSpeculativeConnect(decodeURIComponent(params.url));
+          }
+        }
+
       ]]></handler>
 
     </handlers>
   </binding>
-
+  
   <binding id="autocomplete-richlistitem" extends="chrome://global/content/bindings/richlistbox.xml#richlistitem">
 
     <content align="start"
@@ -909,7 +822,7 @@
             return;
           }
           while (aDescriptionElement.hasChildNodes())
-            aDescriptionElement.removeChild(aDescriptionElement.firstChild);
+            aDescriptionElement.firstChild.remove();
 
           if (aNoEmphasis) {
             aDescriptionElement.appendChild(document.createTextNode(aText));
@@ -936,7 +849,6 @@
           let next;
           let start = 0;
           let len = indices.length;
-
           for (let i = indices[0] == 0 ? 1 : 0; i < len; i++) {
             next = indices[i];
             let spanText = text.substr(start, next - start);
@@ -1059,7 +971,7 @@
               let span = aDescriptionElement.appendChild(
                 document.createElementNS("http://www.w3.org/1999/xhtml", "span"));
               span.textContent = text;
-              switch(emphasise) {
+              switch (emphasise) {
                 case "match":
                   this._setUpEmphasisSpan(span, aDescriptionElement);
                   break;
@@ -1087,19 +999,6 @@
         </body>
       </method>
 
-      <method name="_onChanged">
-        <body>
-          <![CDATA[
-            let popup = this.parentNode.parentNode;
-            let iconChanged = this.adjustSiteIconStart(popup._siteIconStart);
-
-            if (iconChanged) {
-              this.handleOverUnderflow();
-            }
-          ]]>
-        </body>
-      </method>
-
 
       <method name="_reuseAcItem">
         <body>
@@ -1113,8 +1012,13 @@
                 action.params.engineName == popup.overrideSearchEngineName) {
 
               this.collapsed = false;
-              this.adjustSiteIconStart(popup._siteIconStart);
-              this.handleOverUnderflow();
+
+              let dwu = window.getInterface(Ci.nsIDOMWindowUtils);
+              let popupWidth = dwu.getBoundsWithoutFlushing(this.parentNode).width;
+              if (!this._previousPopupWidth || this._previousPopupWidth != popupWidth) {
+                this._previousPopupWidth = popupWidth;
+                this.handleOverUnderflow();
+              }
 
               return true;
             }
@@ -1128,26 +1032,22 @@
       <method name="_adjustAcItem">
         <body>
           <![CDATA[
-          this.setAttribute("url", this.getAttribute("ac-value"));
+          let originalUrl = this.getAttribute("ac-value");
+          let title = this.getAttribute("ac-comment");
+          this.setAttribute("url", originalUrl);
           this.setAttribute("image", this.getAttribute("ac-image"));
-          this.setAttribute("title", this.getAttribute("ac-comment"));
+          this.setAttribute("title", title);
           this.setAttribute("text", this.getAttribute("ac-text"));
 
           let popup = this.parentNode.parentNode;
-          if (!popup.popupOpen) {
-            this._removeMaxWidths();
-          }
-
-          let title = this.getAttribute("title");
           let titleLooksLikeUrl = false;
-
           let displayUrl;
-          let originalUrl = this.getAttribute("url");
           let emphasiseUrl = true;
 
           let type = this.getAttribute("originaltype");
           let types = new Set(type.split(/\s+/));
           let initialTypes = new Set(types);
+
           types.delete("action");
           types.delete("autofill");
           types.delete("heuristic");
@@ -1247,6 +1147,7 @@
                       originalUrl;
             displayUrl = this._unescapeUrl(url);
           }
+
           if (popup.textRunsMaxLen) {
             displayUrl = displayUrl.substr(0, popup.textRunsMaxLen);
           }
@@ -1257,6 +1158,7 @@
             titleLooksLikeUrl = true;
             try {
               let uri = Services.io.newURI(originalUrl);
+
               if (uri.host)
                 title = uri.host;
             } catch (e) {}
@@ -1265,6 +1167,7 @@
           this._tags.setAttribute("empty", "true");
 
           if (type == "tag" || type == "bookmark-tag") {
+
             let tags;
             [, title, tags] = title.match(/^(.+) \u2013 (.+)$/);
 
@@ -1280,9 +1183,11 @@
               type = "bookmark";
             }
           } else if (type == "keyword") {
+
             emphasiseUrl = false;
             let keywordArg = this.getAttribute("text").replace(/^[^\s]+\s*/, "");
             if (!keywordArg) {
+
               type = "visiturl";
               this.setAttribute("actiontype", "visiturl");
               let visitStr = this._stringBundle.GetStringFromName("visit");
@@ -1292,6 +1197,7 @@
               let interpStr =
                 this._stringBundle.GetStringFromName("bookmarkKeywordSearch");
               title = this._generateEmphasisPairs(interpStr, pairs);
+
               this._setUpDescription(this._actionText, "", false);
             }
           }
@@ -1305,11 +1211,13 @@
           }
 
           if (Array.isArray(title)) {
+
             if (popup.textRunsMaxLen) {
               title = title.map(t => t.substr(0, popup.textRunsMaxLen));
             }
             this._setUpEmphasisedSections(this._titleText, title);
           } else {
+
             if (popup.textRunsMaxLen) {
               title = title.substr(0, popup.textRunsMaxLen);
             }
@@ -1317,7 +1225,9 @@
           }
           this._setUpDescription(this._urlText, displayUrl, !emphasiseUrl);
 
-          if (this._inOverflow) {
+          let wasInOverflow = this._inOverflow;
+          this._removeMaxWidths();
+          if (wasInOverflow && this._inOverflow) {
             this._handleOverflow();
           }
           ]]>
@@ -1327,34 +1237,13 @@
       <method name="_removeMaxWidths">
         <body>
           <![CDATA[
-          this._titleText.style.removeProperty("max-width");
-          this._tagsText.style.removeProperty("max-width");
-          this._urlText.style.removeProperty("max-width");
-          this._actionText.style.removeProperty("max-width");
-          ]]>
-        </body>
-      </method>
-
-      <method name="adjustSiteIconStart">
-        <parameter name="newStart"/>
-        <body>
-          <![CDATA[
-          if (typeof(newStart) != "number") {
-            this._typeIcon.style.removeProperty("margin-inline-start");
-            return true;
+          if (this._hasMaxWidths) {
+            this._titleText.style.removeProperty("max-width");
+            this._tagsText.style.removeProperty("max-width");
+            this._urlText.style.removeProperty("max-width");
+            this._actionText.style.removeProperty("max-width");
+            this._hasMaxWidths = false;
           }
-          let rect = this._siteIcon.getBoundingClientRect();
-          let dir = this.getAttribute("dir");
-          let delta = dir == "rtl" ? rect.right - newStart
-                                   : newStart - rect.left;
-          let px = this._typeIcon.style.marginInlineStart;
-          if (!px) {
-            let style = window.getComputedStyle(this._typeIcon);
-            px = dir == "rtl" ? style.marginRight : style.marginLeft;
-          }
-          let typeIconStart = Number(px.substr(0, px.length - 2));
-          this._typeIcon.style.marginInlineStart = (typeIconStart + delta) + "px";
-          return delta > 0;
           ]]>
         </body>
       </method>
@@ -1370,12 +1259,12 @@
           let separatorURLActionWidth =
             separatorRect.width + Math.max(urlRect.width, actionRect.width);
 
-		  let extraPadding = 30;
           let dir = this.getAttribute("dir");
           let titleStart = dir == "rtl" ? itemRect.right - titleRect.right
                                         : titleRect.left - itemRect.left;
 
-          let itemWidth = itemRect.width - titleStart - extraPadding;
+          let popup = this.parentNode.parentNode;
+          let itemWidth = itemRect.width - titleStart - popup.overflowPadding;
 
           if (this._tags.hasAttribute("empty")) {
             tagsRect.width = 0;
@@ -1392,6 +1281,7 @@
               itemWidth * titleTagsPct
             );
             if (titleTagsWidth > titleTagsMaxWidth) {
+
               let titlePct = 0.33;
 
               let titleAvailable = titleTagsMaxWidth - tagsRect.width;
@@ -1404,16 +1294,17 @@
                 tagsAvailable,
                 titleTagsMaxWidth * (1 - titlePct)
               );
-              this._titleText.style.maxWidth = (-62 + itemRect.width) + "px";
+              this._titleText.style.maxWidth = titleMaxWidth + "px";
               this._tagsText.style.maxWidth = tagsMaxWidth + "px";
             }
-            let titleMaxWidth = Math.max(
-              (titleTagsMaxWidth - tagsRect.width),
-              titleTagsMaxWidth * 0.33
+            let urlActionMaxWidth = Math.max(
+              itemWidth - titleTagsWidth,
+              itemWidth * (1 - titleTagsPct)
             );
-			
-            this._urlText.style.maxWidth = (-62 + itemRect.width) + "px";
-            this._actionText.style.maxWidth = (-62 + itemRect.width) + "px";
+            urlActionMaxWidth -= separatorRect.width;
+            this._urlText.style.maxWidth = urlActionMaxWidth + "px";
+            this._actionText.style.maxWidth = urlActionMaxWidth + "px";
+            this._hasMaxWidths = true;
           }
         ]]></body>
       </method>
@@ -1445,6 +1336,7 @@
               action.params[key] = decodeURIComponent(action.params[key]);
             }
           } catch (e) {
+
             action.params = {
               url: params,
             }
@@ -1454,6 +1346,37 @@
         ]]></body>
       </method>
     </implementation>
+
+    <handlers>
+
+      <handler event="mousedown"><![CDATA[
+
+        let control = this.control;
+        if (!control || control.disabled) {
+          return;
+        }
+        if (!this.selected) {
+          control.selectItem(this);
+        }
+        control.currentItem = this;
+      ]]></handler>
+
+      <handler event="mouseover"><![CDATA[
+        let mouseDown = event.buttons & 0b111;
+        if (!mouseDown) {
+          return;
+        }
+
+        let control = this.control;
+        if (!control || control.disabled) {
+          return;
+        }
+        if (!this.selected) {
+          control.selectItem(this);
+        }
+        control.currentItem = this;
+      ]]></handler>
+    </handlers>
   </binding>
- 
-  </bindings>
+
+</bindings>
