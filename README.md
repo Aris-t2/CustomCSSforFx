@@ -2,7 +2,10 @@
 The only way to modify ui is adding custom CSS code to <b>userChrome.css</b> and <b>userContent.css</b> files inside browsers profile folder.</br>
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.</br>
 </br>
-<h2>Where to find Firefox profile folder and where do custom user styles belong?</h2></br>
+<h2>Want to support me?</h2></br>
+<b><a href=https://www.paypal.me/tkpay>Paypal Me</a></b></br>
+</br>
+<h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
@@ -48,10 +51,10 @@ Restart Firefox for changes to take effect.</br>
 <b>Toolbar modes (suggestion: compact mode)</b></br>
 <i>Customize mode &gt; Density &gt; Compact / Normal / Touch</i></br>
 </br>
-<b>Titlebar modes</b> (suggestion: Firefox titlebar [application/hamburger button in titlebar only works in Firefox titlebar])</br>
+<b>Titlebar modes</b> (suggestion: Firefox titlebar ['application/hamburger button in titlebar' only works in Firefox titlebar])</br>
 <i>Customize mode &gt; Title Bar &gt; uncheck checkbox</i></br>
 </br>
-<b>Drag space above tabs toolbar</b> (suggestion: disable drag space [application/hamburger button in titlebar works best without drag space])</br>
+<b>Drag space above tabs toolbar</b> (suggestion: disable drag space ['application/hamburger button in titlebar' works best without drag space])</br>
 <i>Customize mode &gt; Drag Space &gt; uncheck checkbox </i></br>
 </br>
 <b>Bookmarks menu button on bookmarks toolbar</b></br>
@@ -61,7 +64,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Downloads button always visible</b></br>
 <i>Customize mode &gt; downloads button &gt; click on button and uncheck 'Auto-hide'</i></br>
 </br>
-<b>Searchbar</b> (suggestion: placed after lacation bar)</br>
+<b>Searchbar</b> (suggestion: placed after location bar)</br>
 <i>Customize mode &gt; Search(bar) &gt; move to navigation toolbar</i></br>
 </br>
 <b>Flexible spaces</b> (suggestion: remove spaces after and before location bar)</br>
@@ -70,7 +73,7 @@ Restart Firefox for changes to take effect.</br>
 <b>RSS icon in location bar</b></br>
 <i>Install <a href=https://addons.mozilla.org/addon/awesome-rss/>Awesome RSS</a> WebExtension</i></br>
 </br>
-<h2>'about:config' tweaks (partly present on CTRs prefwindow)</h2>
+<h2>'about:config' tweaks (partly from CTRs prefwindow)</h2>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
 <b>Tab audio icon</b></br>
@@ -79,10 +82,10 @@ Restart Firefox for changes to take effect.</br>
 <b>Tab min width</b> (suggestion: 100)</br>
 <i>browser.tabs.tabMinWidth</i></br>
 </br>
-<b>Insert related tab after current tab</b> (suggestion: enabled)</br>
+<b>Insert related tab after current tab</b> (suggestion: enable preference > true)</br>
 <i>browser.tabs.insertRelatedAfterCurrent</i></br>
 </br>
-<b>Hide 'http://' from url</b> (suggestion: disabled)</br>
+<b>Hide 'http://' from url</b> (suggestion: disable preference > false)</br>
 <i>browser.urlbar.trimURLs</i></br>
 </br>
 <b>Open links in new tab/window</b></br>
@@ -91,7 +94,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Preview tabs using 'Ctrl + Tab'</b></br>
 <i>browser.ctrlTab.previews</i></br>
 </br>
-<b>Close window with last visible tab</b> (suggestion: disabled)</br>
+<b>Close window with last visible tab</b> (suggestion: disable preference > false)</br>
 <i>browser.tabs.closeWindowWithLastTab</i></br>
 </br>
 <b>Titlebar</b></br>
@@ -126,10 +129,10 @@ Restart Firefox for changes to take effect.</br>
 <b>Reader mode</b></br>
 <i>reader.parse-on-load.enabled</i></br>
 </br>
-<b>Geolocation (suggestion: disabled)</b></br>
+<b>Geolocation</b> (suggestion: disable preference > false)</br>
 <i>geo.enabled</i></br>
 </br>
-<b>Pocket</b> (suggestion: disabled)</br>
+<b>Pocket</b> (suggestion: disable preference > false)</br>
 <i>extensions.pocket.enabled</i></br>
 </br>
 <b>Container tabs</b></br>
@@ -145,7 +148,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Anti fingerprinting</b></br>
 <i>privacy.resistFingerprinting</i></br>
 </br>
-<b>Telemetry settings</b> (suggestion: disabled)</br>
+<b>Telemetry settings</b> (suggestion: disable preference > false)</br>
 <i>browser.ping-centre.telemetry</i></br>
 <i>toolkit.telemetry.archive.enabled</i></br>
 <i>toolkit.telemetry.bhrPing.enabled</i></br>
