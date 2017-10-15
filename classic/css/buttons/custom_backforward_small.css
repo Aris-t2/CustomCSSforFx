@@ -70,15 +70,7 @@
   -moz-image-region: rect(0px 46px 23px 23px) !important;
   width: 23px !important;
 }
-/*
-#main-window #navigator-toolbox #nav-bar #forward-button {
-  -moz-margin-start: -2px !important;
-}
 
-#main-window[uidensity=compact] #navigator-toolbox toolbar #forward-button {
-  -moz-margin-start: -4px !important;
-}
-*/
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > :-moz-any(#back-button, #forward-button) {
   margin: unset !important;
   padding: unset !important;

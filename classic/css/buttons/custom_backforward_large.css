@@ -70,14 +70,7 @@
   width: 30px !important;
   height: 32px !important;
 }
-/*
-#main-window #navigator-toolbox #nav-bar #forward-button {
-  -moz-margin-start: -2px !important;
-}
 
-#main-window[uidensity=compact] #navigator-toolbox toolbar #forward-button {
-  -moz-margin-start: -4px !important;
-}*/
 
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > :-moz-any(#back-button, #forward-button) {
   margin: unset !important;

@@ -11,8 +11,8 @@
 /* TOOLBAR BUTTONS **********************************************************************/
 /****************************************************************************************/
 
-@import url(./css/buttons/classic_button_appearance_on_navbar.css);
-/*@import url(./css/buttons/squared_button_appearance_for_classic_buttons_on_navbar.css);*/  /* <--- experimental */
+/*@import url(./css/buttons/classic_button_appearance_on_navbar.css);*/
+/*@import url(./css/buttons/squared_button_appearance_for_classic_buttons_on_navbar.css);*/ /* <--- experimental */
 @import url(./css/buttons/custom_icon_colors.css);
 /*@import url(./css/buttons/custom_icons.css);*/
 @import url(./css/buttons/bookmarks_toolbar_button_size.css);
@@ -109,6 +109,7 @@
 /*@import url(./css/generalui/close_icon_gchrome.css);*/
 /*@import url(./css/generalui/close_icon_red.css);*/
 
+
 /****************************************************************************************/
 /* Toolbars *****************************************************************************/
 /****************************************************************************************/
@@ -119,6 +120,8 @@
 @import url(./css/toolbars/toolbars_old_padding.css);
 /*@import url(./css/toolbars/navbar_more_compact_mode.css);*/
 /*@import url(./css/toolbars/toolbars_in_fullscreen_mode.css);*/
+/*@import url(./css/toolbars/toolbar_mode_icons_and_text.css);*/ /* <--- experimental */
+/*@import url(./css/toolbars/toolbar_mode_text.css);*/ /* <--- experimental */
 
 
 /****************************************************************************************/
@@ -134,7 +137,9 @@
 @import url(./css/locationbar/identitybox_colors.css);
 @import url(./css/locationbar/identitybox_padlock_icon.css);
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
-/*@import url(./css/locationbar/go_button_in_location_bar_hidden.css);*/
+/*@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css);*/
+@import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css);
+@import url(./css/locationbar/go_button_in_location_bar_hidden.css);
 /*@import url(./css/locationbar/dark_background.css);*/
 
 

@@ -1,0 +1,69 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+toolbar:not(#TabsToolbar) .toolbarbutton-1 .toolbarbutton-badge-stack,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-moz-any(.toolbarbutton-icon, .toolbarbutton-text){
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  -moz-appearance: toolbarbutton !important;
+}
+
+@media (-moz-windows-classic) {
+  toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+  toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+  toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+	box-shadow:	1px 0 0 0 white inset,
+				0 1px 0 0 white inset,
+				-1px 0 0 0 gray inset,
+				0 -1px 0 0 gray inset !important;
+	}
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
+  display: -moz-box !important;
+  padding:0 !important;
+}
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  -moz-box-orient: vertical !important;
+  min-width: 57px !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  padding-top: 4px !important;
+}
+
+toolbar:not(#TabsToolbar)  #bookmarks-menu-button::after {
+  visibility: collapse !important;
+}
+
+/* remove load/stop button animations */
+toolbar:not(#TabsToolbar) #stop-button .toolbarbutton-animatable-image,
+toolbar:not(#TabsToolbar) #reload-button .toolbarbutton-animatable-image {
+  visibility: collapse !important;
+}
+
+#stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
+#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
+  fill: unset !important;
+}

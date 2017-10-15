@@ -209,3 +209,29 @@
 #main-window[tabsintitlebar][uidensity=touch] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
   padding: 0 !important;
 }
+
+/* fix for toolbar + text mode */
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button,
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button,
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
+  -moz-appearance: unset !important;
+}
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button .toolbarbutton-text,
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]) .toolbarbutton-text,
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button .toolbarbutton-text{
+  display: none !important;
+}
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not([type="menu-button"]),
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]),
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
+  -moz-box-orient: unset !important;
+  min-width: unset !important;
+}
+
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)/*,
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button[type="menu-button"]:not(#nav-bar-overflow-button):not(#PlacesChevron) toolbarbutton :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)*/{
+  opacity: 1.0 !important;
+  margin-bottom: unset !important;
+}
+

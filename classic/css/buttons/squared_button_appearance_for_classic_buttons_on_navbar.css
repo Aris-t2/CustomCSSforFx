@@ -6,7 +6,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* this won't work for all buttons the same */
+/* This code won't work for all buttons the same way. There are way too many different ***
+** types and button variations out there to catch all of them with genereal code. *******/
 
 #main-window #nav-bar #downloads-indicator-progress-outer,
 #main-window #nav-bar #downloads-indicator-icon,

@@ -158,9 +158,9 @@
   -moz-image-region: rect(1px, 647px, 17px, 631px) !important;
 }
 
-
 /* remove load/stop button animations */
 #stop-button .toolbarbutton-animatable-image,
 #reload-button .toolbarbutton-animatable-image {
   display: none !important;
 }
+/**/
