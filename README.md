@@ -76,6 +76,9 @@ Restart Firefox for changes to take effect.</br>
 <b>Tab audio icon</b></br>
 <i>browser.tabs.showAudioPlayingIcon</i></br>
 </br>
+<b>Tab min width</b> (suggestion: 100)</br>
+<i>browser.tabs.tabMinWidth</i></br>
+</br>
 <b>Insert related tab after current tab</b> (suggestion: enabled)</br>
 <i>browser.tabs.insertRelatedAfterCurrent</i></br>
 </br>
