@@ -253,6 +253,12 @@
   min-height: 26px !important;
 }
 
+@media (-moz-os-version: windows-win10) {
+	.titlebar-button {
+	  padding: 0px 17px !important;
+	}
+}
+
 /*pinned tabs*/
 #TabsToolbar .tab-content[pinned] {
   padding: 0 6px !important;
