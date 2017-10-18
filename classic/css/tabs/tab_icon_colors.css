@@ -6,8 +6,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+.tabbrowser-tab .tab-icon-image[src="chrome://mozapps/skin/extensions/extensionGeneric-16.svg"]{
+  fill: green !important;
+}
 
-.tabbrowser-tab:not([pinned]) {
-  min-width: 50px !important;
-  clip-width: 50px !important;
+.tabbrowser-tab .tab-icon-image[src="chrome://browser/skin/settings.svg"]{
+  fill: gray !important;
 }

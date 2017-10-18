@@ -74,14 +74,7 @@
   color: -moz-dialogtext;
 }
 
-:-moz-any(.browserContainer, #viewSource) .findbar-find-status {
-  -moz-box-ordinal-group: 0;
-  margin: 0 !important;
-  -moz-margin-start: -4px !important;
-  -moz-margin-end: 2px !important;
-  color: inherit !important;
-}
-  
+/* tweaks excluded from Windows Classic theme */
 @media not all and (-moz-windows-classic) {
   .browserContainer findbar .findbar-button,
   #viewSource #FindToolbar .findbar-button {
@@ -93,5 +86,25 @@
 	background: unset !important;
 	box-shadow: unset !important;
   }
+} 
+
+:-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 4px !important;
+  font-weight: bold !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  color: red !important;
+  font-style: italic !important;
+}
+:-moz-any(.browserContainer, #viewSource) .found-matches {
+  color: green !important;
 }
 
+/* status at findbars start *//*
+:-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  -moz-box-ordinal-group: 0;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 6px !important;
+}
+/**/

@@ -1,0 +1,79 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+#appMenu-fxa-status image {
+  fill: #4169e1 !important;
+}
+
+#appMenu-new-window-button .toolbarbutton-icon {
+  fill: #4169e1 !important;
+}
+
+#appMenu-private-window-button .toolbarbutton-icon {
+  fill: #800080 !important;
+}
+
+#appMenuRestoreLastSession .toolbarbutton-icon {
+  fill: orange !important;
+}
+
+#appMenu-zoomReduce-button .toolbarbutton-icon {
+  fill: red !important;
+}
+
+#appMenu-zoomEnlarge-button .toolbarbutton-icon {
+  fill: #4169e1 !important;
+}
+
+#appMenu-fullscreen-button .toolbarbutton-icon {
+  fill: #4169e1 !important;
+}
+
+#appMenu-cut-button .toolbarbutton-icon {
+  fill: red !important;
+}
+
+#appMenu-copy-button .toolbarbutton-icon {
+  fill: #4169e1 !important;
+}
+
+#appMenu-paste-button .toolbarbutton-icon {
+  fill: green !important;
+}
+
+#appMenu-library-button .toolbarbutton-icon {
+  fill: #800080 !important;
+}
+
+#appMenu-addons-button .toolbarbutton-icon {
+  fill: green !important;
+}
+
+#appMenu-preferences-button .toolbarbutton-icon {
+  fill: gray !important;
+}
+
+#appMenu-customize-button .toolbarbutton-icon {
+  fill: #336699 !important;
+}
+
+#appMenu-print-button .toolbarbutton-icon {
+  fill: #800080 !important;
+}
+
+#appMenu-find-button .toolbarbutton-icon {
+  fill: #4169e1 !important;
+}
+
+#appMenu-help-button .toolbarbutton-icon {
+  fill: #336699 !important;
+}
+
+#appMenu-quit-button .toolbarbutton-icon {
+  fill: red !important;
+}

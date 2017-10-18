@@ -262,6 +262,56 @@
 	  }
 
 	}
+	
+	/* colorize category icons */
+	#category-search .category-icon {
+	  fill: #8aa8cc !important;
+	}
+
+	#category-discover .category-icon {
+	  fill: #8b8b8b !important;
+	}
+
+	#category-extension .category-icon {
+	  fill: #63c54f !important;
+	}
+
+	#category-theme .category-icon {
+	  fill: #ffba2f !important;
+	}
+
+	#category-plugin .category-icon {
+	  fill: #2b63c1 !important;
+	}
+
+	#category-dictionary .category-icon {
+	  fill: purple !important;
+	}
+
+	#category-legacy .category-icon {
+	  fill: red !important;
+	}
+
+	#category-availableUpdates .category-icon {
+	  fill: orange !important;
+	}
+
+	#category-recentUpdates .category-icon {
+	  fill: #b99c16 !important;
+	}
+
+	.category:not([selected="true"]):hover .category-icon {
+	  filter: brightness(2.00) !important;
+	}
+	
+	#category-discover:not([selected="true"]):hover .category-icon,
+	#category-theme:not([selected="true"]):hover .category-icon{
+	  filter: brightness(1.5) !important;
+	}
+	
+	#category-plugin:not([selected="true"]):hover .category-icon{
+	  filter: brightness(2.25) !important;
+	}
 
 }
 

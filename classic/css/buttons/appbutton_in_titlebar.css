@@ -192,6 +192,14 @@
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
+/* disable extra dragspace, if enabled to ensure proper titlebarbutton position */
+#main-window[extradragspace][tabsintitlebar]:not([inFullscreen]) {
+  --space-above-tabbar: 0px !important;
+}
+/*#main-window[sizemode="normal"][chromehidden~="menubar"] #toolbar-menubar ~ #TabsToolbar,
+#main-window[sizemode="normal"] #toolbar-menubar[autohide="true"][inactive] ~ #TabsToolbar {
+  padding-top: 0px !important;
+}*/
 
 /* fix for squared_button_appearance_for_classic_buttons_on_navbar.css */
 #main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {

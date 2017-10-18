@@ -22,7 +22,7 @@
 /*@import url(./css/buttons/bookmarks_popup_hide_items.css);*/
 /*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
 /*@import url(./css/buttons/appbutton_at_navbars_start.css);*/
-/*@import url(./css/buttons/separated_history_popups_for_back_and_forward.css);*/
+/*@import url(./css/buttons/back_and_forward_separated_history_popups.css);*/
 /*@import url(./css/buttons/zoom_buttons_hide_reset.css);*/
 
 
@@ -63,7 +63,7 @@
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
 /*@import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css);*/
 /*@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);*/    /* <--- experimental */
-/*@import url(./css/buttons/appbutton_hide_separator.css);*/
+@import url(./css/buttons/appbutton_popup_icons_colorized.css);
 
 
 /****************************************************************************************/
@@ -71,6 +71,7 @@
 /****************************************************************************************/
 
 /*@import url(./css/buttons/appbutton_on_navbar_orange.css);*/
+/*@import url(./css/buttons/appbutton_on_navbar_hide_separator.css);*/
 
 
 /****************************************************************************************/
@@ -83,7 +84,7 @@
 /*@import url(./css/tabs/custom_colors_for_squared_tabs_australized.css);*/
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
-/*@import url(./css/tabs/smaller_tab_width_in_overflow_mode.css);*/
+@import url(./css/tabs/tab_icon_colors.css);
 @import url(./css/tabs/tab_close_always_visible.css);
 /*@import url(./css/tabs/tab_titles_remove_blur.css);*/
 /*@import url(./css/tabs/tab_throbber_fx56.css);*/
@@ -101,8 +102,9 @@
 @import url(./css/generalui/bookmark_icons_colorized.css);
 @import url(./css/generalui/searchbar_hide_glassplus_indicator.css);
 /*@import url(./css/generalui/searchbar_popup_hide_engines.css);*/
-@import url(./css/generalui/context_labels_bfrsb_without_icons.css);
-/*@import url(./css/generalui/context_labels_bfrsb_with_icons.css);*/
+@import url(./css/generalui/context_bfrsb_labels_without_icons.css);
+/*@import url(./css/generalui/context_bfrsb_labels_with_icons.css);*/
+/*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
 /*@import url(./css/generalui/increase_ui_font_size.css);*/
 /*@import url(./css/generalui/close_icon_windows7.css);*/
 /*@import url(./css/generalui/close_icon_windows7inverted.css);*/
@@ -161,3 +163,4 @@
 /*@import url(./css/locationbar/ac_popup_hide_searchwith_and_visit_items.css);*/
 
 /**/
+

@@ -1,0 +1,32 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/***********************************************************/
+/* context menu items and icons instead of just huge icons */
+/***********************************************************/
+
+#context-back .menu-iconic-icon {
+  fill: #4169e1 !important;
+}
+
+#context-forward .menu-iconic-icon {
+  fill: #4169e1 !important;
+}
+
+#context-reload .menu-iconic-icon {
+  fill: green !important;
+}
+
+#context-stop .menu-iconic-icon {
+  fill: red !important;
+}
+
+#context-bookmarkpage .menu-iconic-icon {
+  fill: #336699 !important;
+}
