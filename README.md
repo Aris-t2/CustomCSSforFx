@@ -8,6 +8,9 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
+</br>
+or</br>
+</br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
