@@ -6,6 +6,20 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+/* back button tweaks */
+#main-window:not([uidensity=compact]) toolbar:not(#TabsToolbar) #back-button > .toolbarbutton-text {
+  margin-top: -2px !important;
+}
+#main-window:not([uidensity=compact]) toolbar:not(#TabsToolbar) #back-button > .toolbarbutton-icon {
+  border: 1px solid transparent !important;
+  padding: 7px !important;
+}
+#main-window[uidensity=touch] toolbar:not(#TabsToolbar) #back-button > .toolbarbutton-icon {
+  padding: 10px !important;
+  margin-top: -1px !important;
+}
+
 toolbar:not(#TabsToolbar) .toolbarbutton-1 .toolbarbutton-badge-stack,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,
@@ -38,7 +52,7 @@ toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
   display: -moz-box !important;
-  padding:0 !important;
+  padding: 0 !important;
 }
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
@@ -63,7 +77,7 @@ toolbar:not(#TabsToolbar) #reload-button .toolbarbutton-animatable-image {
   visibility: collapse !important;
 }
 
-#stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
-#stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
   fill: unset !important;
 }

@@ -44,6 +44,15 @@
   border: 0 !important;
 }
 
+/* adjust zoom reset and copy buttons position */
+#nav-bar :-moz-any(#copy-button,#zoom-reset-button) {
+  -moz-margin-start: -1px !important;
+  -moz-margin-end: -1px !important;
+}
+:-moz-any(#edit-controls, #zoom-controls) separator {
+  visibility: collapse !important;
+}
+
 /* classic button style */
 #main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
 #main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-text,

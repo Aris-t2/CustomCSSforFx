@@ -1,0 +1,105 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* This code won't work for all buttons the same way. There are way too many different ***
+** types and button variations out there to catch all of them with genereal code. *******/
+
+
+#main-window[uidensity=compact] #nav-bar  toolbarbutton .toolbarbutton-icon {
+  width: 32px !important;
+  height: 26px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+#main-window[uidensity=compact] #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+  width: 32px !important;
+  height: 26px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #downloads-button #downloads-indicator-anchor {
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+#main-window[uidensity=compact] #nav-bar .webextension-browser-action .toolbarbutton-icon {
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+#main-window[uidensity=compact] #nav-bar :-moz-any(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar  toolbarbutton .toolbarbutton-icon {
+  width: 40px !important;
+  height: 30px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+  width: 40px !important;
+  height: 30px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #downloads-button #downloads-indicator-anchor {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .webextension-browser-action .toolbarbutton-icon {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button .toolbarbutton-icon{
+  padding: 9px !important;
+  height: 34px !important;
+  width: 34px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch])  #nav-bar :-moz-any(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar  toolbarbutton .toolbarbutton-icon {
+  width: 46px !important;
+  height: 32px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+#main-window[uidensity=touch] #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+  width: 46px !important;
+  height: 32px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+#main-window[uidensity=touch] #nav-bar #downloads-button #downloads-indicator-anchor {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+#main-window[uidensity=touch] #nav-bar .webextension-browser-action .toolbarbutton-icon {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button .toolbarbutton-icon{
+  padding: 12px !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+#main-window[uidensity=touch]  #nav-bar :-moz-any(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+/**/

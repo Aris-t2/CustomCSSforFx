@@ -12,8 +12,8 @@
 /****************************************************************************************/
 
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css);
-/*@import url(./css/buttons/buttons_on_navbar_squared_buttons_for_classic_appearance.css);*/ /* <--- experimental */
-/*@import url(./css/buttons/buttons_on_navbar_button_roundness_for_classic_appearance.css);*/
+/*@import url(./css/buttons/buttons_on_navbar_squared_buttons.css);*/
+/*@import url(./css/buttons/buttons_on_navbar_button_roundness.css);*/
 @import url(./css/buttons/custom_icon_colors.css);
 /*@import url(./css/buttons/custom_icons.css);*/
 @import url(./css/buttons/bookmarks_toolbar_button_size.css);
@@ -50,7 +50,7 @@
 
 
 /****************************************************************************************/
-/* Application/hamburger button in Firefox titlebar *************************************/
+/* Application/hamburger button in Firefox titlebar (Windows only) **********************/
 /****************************************************************************************/
 
 @import url(./css/buttons/appbutton_in_titlebar.css);
@@ -62,8 +62,8 @@
 /*@import url(./css/buttons/appbutton_in_titlebar_palemoon.css);*/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
 /*@import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css);*/
-/*@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);*/    /* <--- experimental */
 @import url(./css/buttons/appbutton_popup_icons_colorized.css);
+/*@import url(./css/buttons/appbutton_popup_hide_panelarrow.css);*/    /* <--- experimental */
 
 
 /****************************************************************************************/
@@ -97,11 +97,11 @@
 /* GENERAL UI ***************************************************************************/
 /****************************************************************************************/
 
-@import url(./css/generalui/hide_private_mode_indicator.css);
+@import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/findbar_on_top.css);
 @import url(./css/generalui/bookmark_icons_colorized.css);
-@import url(./css/generalui/searchbar_hide_glassplus_indicator.css);
-/*@import url(./css/generalui/searchbar_popup_hide_engines.css);*/
+@import url(./css/generalui/searchbar_glassplus_indicator_hidden.css);
+/*@import url(./css/generalui/searchbar_popup_engines_hidden.css);*/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css);
 /*@import url(./css/generalui/context_bfrsb_labels_with_icons.css);*/
 /*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
@@ -132,17 +132,17 @@
 /****************************************************************************************/
 
 @import url(./css/locationbar/locationbar_adjustments.css);
-@import url(./css/locationbar/fontsize_in_compact_mode.css);
+@import url(./css/locationbar/compact_mode_recuce_fontsize.css);
 @import url(./css/locationbar/dropmarker_at_the_end.css);
 @import url(./css/locationbar/dropmarker_visible.css);
-@import url(./css/locationbar/colorized_icons.css);
+@import url(./css/locationbar/icons_colorized.css);
 @import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css);
 @import url(./css/locationbar/identitybox_colors.css);
 @import url(./css/locationbar/identitybox_padlock_icon.css);
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
 /*@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css);*/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css);
-@import url(./css/locationbar/go_button_in_location_bar_hidden.css);
+/*@import url(./css/locationbar/go_button_in_location_bar_hidden.css);*/
 /*@import url(./css/locationbar/dark_background.css);*/
 /*@import url(./css/locationbar/locationbar_border_roundness.css);*/
 
@@ -163,4 +163,3 @@
 /*@import url(./css/locationbar/ac_popup_hide_searchwith_and_visit_items.css);*/
 
 /**/
-

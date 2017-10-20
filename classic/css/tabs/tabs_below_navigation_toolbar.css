@@ -7,6 +7,7 @@
 /****************************************************************************************/
 
 
+/* tabs toolbar adjustment */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
@@ -14,28 +15,29 @@
 #TabsToolbar{
   -moz-padding-start: 2px !important;
 }
+#main-window[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar {
+  margin-top: 0px !important;
+}
 
+/* fix for application/hamburger button in titlebar */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button,
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
   top: -23px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar {
-  margin-top: 0px !important;
-}
-
+/* tab height */
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
   min-height: 25px !important;
 }
 
+/* toolbar order (start) ************************************/
 #print-preview-toolbar,
 #printedit-toolbar,
 #titlebar {
   -moz-box-ordinal-group: 0 !important;
 }
-
 #navigator-toolbox #toolbar-menubar {
   -moz-box-ordinal-group: 1 !important;
 }
@@ -51,24 +53,32 @@
 #navigator-toolbox toolbar {
   -moz-box-ordinal-group: 10 !important;
 }
-/**/
+/* tabs toolbar */
 #navigator-toolbox #TabsToolbar {
   -moz-box-ordinal-group: 100 !important;
 }
+/* toolbar order (end) **************************************/
 
+/* toolbar colors */
+#TabsToolbar:not(:-moz-lwtheme){
+  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+}
+#TabsToolbar:-moz-lwtheme{
+  background: rgba(255,255,255,0.4) !important;
+}
+
+/* toolbar borders */
+#main-window #navigator-toolbox::after {
+  /*border-bottom: unset !important;*/
+  opacity: 0 !important;
+}
 #TabsToolbar{
   margin-bottom: 0px !important;
   border-bottom: 1px solid #5f7181 !important;
 }
-
-#TabsToolbar:not(:-moz-lwtheme){
+#main-window[sizemode="normal"]  #TabsToolbar:not(:-moz-lwtheme){
   border-left: 1px solid #5f7181 !important;
   border-right: 1px solid #5f7181 !important;
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
-}
-
-#TabsToolbar:-moz-lwtheme{
-  background: rgba(255,255,255,0.4) !important;
 }
 
 @media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {

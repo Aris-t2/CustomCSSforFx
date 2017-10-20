@@ -75,8 +75,6 @@
 
 #main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button .toolbarbutton-icon {
   -moz-margin-end: -90px !important;
-  margin-top: -3px !important;
-  margin-bottom: -3px !important;
 }
 
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button::after {
@@ -147,7 +145,6 @@
   margin-top: -4px !important;
 }
 
-
 /* button color/border */
 
 /* orange (default) */
@@ -192,7 +189,7 @@
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
-/* disable extra dragspace, if enabled to ensure proper titlebarbutton position */
+/* remove extra dragspace even, if enabled, to ensure proper position on titlebar */
 #main-window[extradragspace][tabsintitlebar]:not([inFullscreen]) {
   --space-above-tabbar: 0px !important;
 }
@@ -201,21 +198,22 @@
   padding-top: 0px !important;
 }*/
 
-/* fix for squared_button_appearance_for_classic_buttons_on_navbar.css */
-#main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
-  padding: 5px !important;
-}
-#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
-  padding: 6px !important;
-}
+/* fix for 'buttons_on_navbar_squared_buttons.css' */
+#main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack,
 #main-window[tabsintitlebar][uidensity=touch] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack {
-  padding: 9px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  width: unset !important;
+  height: 22px !important;
 }
 
 #main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon,
 #main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon,
 #main-window[tabsintitlebar][uidensity=touch] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
-  padding: 0 !important;
+  padding: 6px !important;
+  width: 9px !important;
+  height: 7px !important;
 }
 
 /* fix for toolbar + text mode */
