@@ -164,4 +164,11 @@
 #TabsToolbar[movingtab] + #nav-bar {
   margin-top: unset !important;
 }
+
+/* scroll buttons */
+#TabsToolbar:not(:-moz-lwtheme) #alltabs-button,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-arrowscrollbox > .scrollbutton-up,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-arrowscrollbox > .scrollbutton-down {
+  fill: black !important;
+}
 /**/

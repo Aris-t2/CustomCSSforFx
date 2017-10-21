@@ -6,12 +6,13 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 <b><a href=https://www.paypal.me/tkpay>Paypal Me</a></b></br>
 </br>
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
+</br>
+<b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
+</br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
 </br>
 or</br>
-</br>
-<b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
 </br>
 <b>Windows</b></br>
 <code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>

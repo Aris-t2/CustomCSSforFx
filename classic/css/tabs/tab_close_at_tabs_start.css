@@ -6,14 +6,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* tab close - always visible*/
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
-  visibility: visible !important;
-  display: block !important;
+  -moz-box-ordinal-group: 0 !important;
+  -moz-margin-start: -4px !important;
+  -moz-margin-end: 12px !important;
 }
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned])[faviconized="true"] .tab-close-button {
-  visibility: collapse !important;
-  display: none !important;
-}
-
-/**/

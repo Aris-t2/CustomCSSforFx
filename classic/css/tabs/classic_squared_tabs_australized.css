@@ -210,7 +210,7 @@
 
 /* space between tabs */
 .tabs-newtab-button,
-.tabbrowser-tab {
+.tabbrowser-tab:not([pinned]) {
   -moz-margin-start: 0px !important;
 }
 
@@ -265,6 +265,10 @@
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
   min-height: 26px !important;
+}
+#TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+  min-height: 25px !important;
+  max-height: 25px !important;
 }
 
 @media (-moz-os-version: windows-win10) {

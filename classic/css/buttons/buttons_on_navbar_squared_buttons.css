@@ -10,13 +10,13 @@
 ** types and button variations out there to catch all of them with genereal code. *******/
 
 
-#main-window[uidensity=compact] #nav-bar  toolbarbutton .toolbarbutton-icon {
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 32px !important;
   height: 26px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
-#main-window[uidensity=compact] #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 32px !important;
   height: 26px !important;
   padding-top: 0px !important;
@@ -38,13 +38,13 @@
   padding-right: 7px !important;
 }
 
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar  toolbarbutton .toolbarbutton-icon {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 40px !important;
   height: 30px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
 }
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 40px !important;
   height: 30px !important;
   padding-top: 0px !important;
@@ -70,13 +70,13 @@
   padding-right: 11px !important;
 }
 
-#main-window[uidensity=touch] #nav-bar  toolbarbutton .toolbarbutton-icon {
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 46px !important;
   height: 32px !important;
   padding-top: 8px !important;
   padding-bottom: 8px !important;
 }
-#main-window[uidensity=touch] #nav-bar  toolbarbutton .toolbarbutton-badge-stack {
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 46px !important;
   height: 32px !important;
   padding-top: 0px !important;

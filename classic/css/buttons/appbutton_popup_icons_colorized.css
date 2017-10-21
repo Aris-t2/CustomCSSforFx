@@ -6,15 +6,18 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-#appMenu-fxa-status image {
+#appMenu-fxa-status image,
+#appMenu-new-window-button .toolbarbutton-icon,
+#appMenu-zoomEnlarge-button .toolbarbutton-icon,
+#appMenu-fullscreen-button .toolbarbutton-icon,
+#appMenu-copy-button .toolbarbutton-icon,
+#appMenu-find-button .toolbarbutton-icon {
   fill: #4169e1 !important;
 }
 
-#appMenu-new-window-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
-}
-
-#appMenu-private-window-button .toolbarbutton-icon {
+#appMenu-private-window-button .toolbarbutton-icon,
+#appMenu-library-button .toolbarbutton-icon,
+#appMenu-print-button .toolbarbutton-icon {
   fill: #800080 !important;
 }
 
@@ -22,34 +25,13 @@
   fill: orange !important;
 }
 
-#appMenu-zoomReduce-button .toolbarbutton-icon {
+#appMenu-zoomReduce-button .toolbarbutton-icon,
+#appMenu-cut-button .toolbarbutton-icon,
+#appMenu-quit-button .toolbarbutton-icon {
   fill: red !important;
 }
 
-#appMenu-zoomEnlarge-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
-}
-
-#appMenu-fullscreen-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
-}
-
-#appMenu-cut-button .toolbarbutton-icon {
-  fill: red !important;
-}
-
-#appMenu-copy-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
-}
-
-#appMenu-paste-button .toolbarbutton-icon {
-  fill: green !important;
-}
-
-#appMenu-library-button .toolbarbutton-icon {
-  fill: #800080 !important;
-}
-
+#appMenu-paste-button .toolbarbutton-icon,
 #appMenu-addons-button .toolbarbutton-icon {
   fill: green !important;
 }
@@ -58,22 +40,35 @@
   fill: gray !important;
 }
 
-#appMenu-customize-button .toolbarbutton-icon {
-  fill: #336699 !important;
-}
-
-#appMenu-print-button .toolbarbutton-icon {
-  fill: #800080 !important;
-}
-
-#appMenu-find-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
-}
-
+#appMenu-customize-button .toolbarbutton-icon,
 #appMenu-help-button .toolbarbutton-icon {
   fill: #336699 !important;
 }
 
-#appMenu-quit-button .toolbarbutton-icon {
-  fill: red !important;
+
+/* library */
+#appMenu-library-bookmarks-button .toolbarbutton-icon,
+#panelMenuBookmarkThisPage .toolbarbutton-icon,
+#panelMenu_bookmarkingTools .toolbarbutton-icon,
+#panelMenu_searchBookmarks .toolbarbutton-icon,
+#panelMenu_toggleBookmarksMenu .toolbarbutton-icon,
+#panelMenu_viewBookmarksSidebar .toolbarbutton-icon,
+#panelMenu_viewBookmarksToolbar .toolbarbutton-icon{
+  fill: #336699 !important;
+}
+
+#appMenu-library-history-button .toolbarbutton-icon,
+#appMenuViewHistorySidebar .toolbarbutton-icon,
+#appMenuClearRecentHistory .toolbarbutton-icon,
+#appMenuRecentlyClosedTabs .toolbarbutton-icon,
+#appMenuRecentlyClosedWindows .toolbarbutton-icon{
+  fill: #800080 !important;
+}
+
+#appMenu-library-downloads-button .toolbarbutton-icon,
+#appMenu-library-remotetabs-button .toolbarbutton-icon,
+#PanelUI-remotetabs-view-sidebar .toolbarbutton-icon,
+#PanelUI-remotetabs-view-managedevices .toolbarbutton-icon,
+#PanelUI-remotetabs-syncnow .toolbarbutton-icon{
+  fill: #4169e1 !important;
 }

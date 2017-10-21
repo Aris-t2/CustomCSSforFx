@@ -6,11 +6,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
-/****************************
-******* TABS ****************
-****************************/
-
 /* adjust tab toolbars buttons for squared tabs */
 #TabsToolbar #alltabs-button .toolbarbutton-icon,
 #TabsToolbar > #new-tab-button .toolbarbutton-icon,
@@ -196,7 +191,7 @@
 
 /* space between tabs */
 .tabs-newtab-button,
-.tabbrowser-tab {
+.tabbrowser-tab:not([pinned]) {
   -moz-margin-start: 0px !important;
 }
 
@@ -253,6 +248,12 @@
   min-height: 26px !important;
 }
 
+#TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+  min-height: 25px !important;
+  max-height: 25px !important;
+}
+
+/**/
 @media (-moz-os-version: windows-win10) {
 	.titlebar-button {
 	  padding: 0px 17px !important;
