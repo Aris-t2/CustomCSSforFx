@@ -6,8 +6,8 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 <b><a href=https://www.paypal.me/tkpay>[ Paypal Me ]</a></b></br>
 </br>
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
-</br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
+</br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
 </br>
@@ -47,9 +47,9 @@ Note</br>
 <code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
 </br>
 <h2>How to find ids and attributes?</h2></br>
-Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
-Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
-Tools > WebDeveloper > Browser Toolbox</br>
+1. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
+2. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
+3. Tools > WebDeveloper > Browser Toolbox</br>
 </br>
 <h2>How to modify custom user styles?</h2></br>
 Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
