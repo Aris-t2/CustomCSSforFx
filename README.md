@@ -3,12 +3,11 @@ The only way to modify ui is adding custom CSS code to <b>userChrome.css</b> and
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.</br>
 </br>
 <h2>Want to support me?</h2></br>
-<b><a href=https://www.paypal.me/tkpay>Paypal Me</a></b></br>
+<b><a href=https://www.paypal.me/tkpay>[ Paypal Me ]</a></b></br>
 </br>
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
 </br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
-</br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
 </br>
@@ -47,6 +46,11 @@ If you <u>do not want</u> "classic button appearance" for navigation toolbar but
 Note</br>
 <code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
 </br>
+<h2>How to find ids and attributes?</h2></br>
+Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
+Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
+Tools > WebDeveloper > Browser Toolbox</br>
+</br>
 <h2>How to modify custom user styles?</h2></br>
 Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
 Some files contain additional instructions to tweak the ui for individual cases.</br>
@@ -79,7 +83,7 @@ Restart Firefox for changes to take effect.</br>
 <b>RSS icon in location bar</b></br>
 <i>Install <a href=https://addons.mozilla.org/addon/awesome-rss/>Awesome RSS</a> WebExtension</i></br>
 </br>
-<h2>'about:config' tweaks (partly from CTRs prefwindow)</h2>
+<h2>'about:config' tweaks</h2>
 (To revert changes right-click entry and select 'reset')</br>
 </br>
 <b>Tab audio icon</b></br>
@@ -88,10 +92,10 @@ Restart Firefox for changes to take effect.</br>
 <b>Tab min width</b> (suggestion: 100)</br>
 <i>browser.tabs.tabMinWidth</i></br>
 </br>
-<b>Insert related tab after current tab</b> (suggestion: enable preference > true)</br>
+<b>Insert related tab after current tab</b> (suggestion: enable / set to 'true')</br>
 <i>browser.tabs.insertRelatedAfterCurrent</i></br>
 </br>
-<b>Hide 'http://' from url</b> (suggestion: disable preference > false)</br>
+<b>Hide 'http://' from url</b> (suggestion: disable / set to 'false')</br>
 <i>browser.urlbar.trimURLs</i></br>
 </br>
 <b>Open links in new tab/window</b></br>
@@ -100,7 +104,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Preview tabs using 'Ctrl + Tab'</b></br>
 <i>browser.ctrlTab.previews</i></br>
 </br>
-<b>Close window with last visible tab</b> (suggestion: disable preference > false)</br>
+<b>Close window with last visible tab</b> (suggestion: disable / set to 'false')</br>
 <i>browser.tabs.closeWindowWithLastTab</i></br>
 </br>
 <b>Titlebar</b></br>
@@ -135,10 +139,10 @@ Restart Firefox for changes to take effect.</br>
 <b>Reader mode</b></br>
 <i>reader.parse-on-load.enabled</i></br>
 </br>
-<b>Geolocation</b> (suggestion: disable preference > false)</br>
+<b>Geolocation</b> (suggestion: disable / set to 'false')</br>
 <i>geo.enabled</i></br>
 </br>
-<b>Pocket</b> (suggestion: disable preference > false)</br>
+<b>Pocket</b> (suggestion: disable / set to 'false')</br>
 <i>extensions.pocket.enabled</i></br>
 </br>
 <b>Container tabs</b></br>
@@ -154,7 +158,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Anti fingerprinting</b></br>
 <i>privacy.resistFingerprinting</i></br>
 </br>
-<b>Telemetry settings</b> (suggestion: disable preference > false)</br>
+<b>Telemetry settings</b> (suggestion: disable / set to 'false')</br>
 <i>browser.ping-centre.telemetry</i></br>
 <i>toolkit.telemetry.archive.enabled</i></br>
 <i>toolkit.telemetry.bhrPing.enabled</i></br>
