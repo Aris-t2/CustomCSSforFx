@@ -102,4 +102,9 @@
   padding-right: 14px !important;
 }
 
+/* fix for toolbar button badges */
+#nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -1px !important;
+}
+
 /**/

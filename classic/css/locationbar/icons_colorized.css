@@ -59,12 +59,8 @@
   filter: brightness(1.05) !important;
 }
 
-/* alternative 'awesome rss' button color */
-#urlbar  #_97d566da-42c5-4ef4-a03b-5a2e5f7cbcb2_-page-action{
-  fill: orange !important;
-}
-#urlbar  #_97d566da-42c5-4ef4-a03b-5a2e5f7cbcb2_-page-action:-moz-any(:hover,:hover:active,[open]){
-  fill: orange !important;
+/* WE page action button */
+#urlbar  .webextension-page-action:-moz-any(:hover,:hover:active,[open]) {
   filter: brightness(1.75) !important;
 }
 

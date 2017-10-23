@@ -1,0 +1,87 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#personal-bookmarks {
+  display: block;
+}
+
+#personal-bookmarks #PlacesToolbar {
+  display: block;
+  min-height: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 999px;
+}
+
+#personal-bookmarks #PlacesToolbar > hbox {
+  display: -moz-stack !important;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+#personal-bookmarks #PlacesToolbar #PlacesToolbarItems {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+#personal-bookmarks #PlacesToolbar #PlacesToolbarItems > box {
+  display: block;
+}
+
+#personal-bookmarks #PlacesToolbar > .bookmark-item{
+  visibility: visible !important;
+}
+
+#personal-bookmarks #PlacesToolbar .chevron{
+  display: none;
+}
+
+#personal-bookmarks #PlacesToolbar > hbox > hbox{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#personal-bookmarks #PlacesToolbar #PlacesToolbarDropIndicator[collapsed="true"],
+#personal-bookmarks #PlacesToolbar #PlacesToolbarDropIndicator{
+  display: none;
+}
+
+#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /*margin-left: -4px !important;
+  padding-right: 9.5px !important;*/
+}
+
+#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item:hover:active:not([disabled="true"]),
+#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  /*-moz-padding-start: 4px;
+  -moz-padding-end: 2px;*/
+}
+
+#personal-bookmarks #PlacesToolbar toolbarseparator{
+  -moz-appearance: none !important;
+  visibility: visible !important;
+  display: inline;
+  text-shadow: none !important;
+  border-left: 3px solid ThreeDShadow !important;
+  border-right: 3px solid ThreeDHighlight !important;
+  vertical-align: middle;
+}
+
+#personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
+  -moz-appearance: toolbarbutton;
+}
+
+#navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar):not(#TabsToolbar) { 
+  max-height: 999px !important;
+}

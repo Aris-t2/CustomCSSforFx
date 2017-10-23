@@ -1,0 +1,25 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar,
+.searchbar-textbox {
+  margin: 1px !important;
+  min-height: 0px !important;
+  height: 24px !important;
+}
+
+/* reduce button height (this will cause major glitches) *//*
+#nav-bar .toolbarbutton-1 {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  min-height: 0px !important;
+  height: 24px !important;
+}
+
+/**/

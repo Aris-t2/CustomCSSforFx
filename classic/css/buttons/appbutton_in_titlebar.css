@@ -7,9 +7,9 @@
 /****************************************************************************************/
 
 
-/********************************************/
-/* cheat main menu button into tabs toolbar */
-/********************************************/
+/*************************************************/
+/* cheat main menu button into title bar toolbar */
+/************************************************/
 
 /* gain space before tabs toolbar */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
@@ -89,15 +89,6 @@
   box-shadow: unset !important;
 }
 
-/* custom title *//*
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button::after{
-  content: "MyTitle" !important;
-  -moz-margin-start: -6px !important;
-}
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button::after {
-  -moz-margin-start: -12px !important;
-}
-
 /* 'Firefox' title */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button[label="Firefox"]::after,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
@@ -110,7 +101,7 @@
   -moz-margin-start: -12px !important;
 }
 
-/* title 'DevFox' */
+/* 'DevFox' title */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
   content: "DevFox" !important;
   -moz-margin-start: -9px !important;
@@ -119,7 +110,7 @@
   -moz-margin-start: -15px !important;
 }
 
-/* title 'Nightly' */
+/* 'Nightly' title */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button[label="Nightly"]::after,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-menu-button[label="Firefox Nightly"]::after {
   content: "Nightly" !important;
@@ -130,7 +121,16 @@
   -moz-margin-start: -12px !important;
 }
 
-/* adjust button badge */
+/* custom button title (remove Firefox/DevFox/Nightly) *//*
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button::after{
+  content: "MyTitle" !important;
+  -moz-margin-start: -6px !important;
+}
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button::after {
+  -moz-margin-start: -12px !important;
+}
+
+/* adjust button badge stack */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
@@ -140,9 +140,10 @@
   box-shadow: unset !important;
 }
 
+/* adjust button badge */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
   -moz-margin-end: 2px !important;
-  margin-top: -4px !important;
+  margin-top: 0px !important;
 }
 
 /* button color/border */
