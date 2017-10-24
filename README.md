@@ -47,9 +47,11 @@ Note</br>
 <code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
 </br>
 <h2>How to find ids and attributes?</h2></br>
+Enable once:</br>
 1. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
 2. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
-3. Tools > WebDeveloper > Browser Toolbox</br>
+</br>
+Hit 'Ctrl+Alt+Shift+I' or open 'Tools > WebDeveloper > Browser Toolbox'.</br>
 </br>
 <h2>How to modify custom user styles?</h2></br>
 Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
