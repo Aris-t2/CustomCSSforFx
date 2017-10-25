@@ -6,13 +6,17 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+/****************/
+/**** v1.1.4 ****/
+/****************/
+
 
 /****************************************************************************************/
 /* about:addons *************************************************************************/
 /****************************************************************************************/
 
 @import url(./css/aboutaddons/addons_manager_alternative_appearance.css);
-@import url(./css/aboutaddons/addonlists_show_addon_version.css);
+@import url(./css/aboutaddons/addonlists_show_addon_version_number.css);
 /*@import url(./css/aboutaddons/addonlists_compact.css);*/
 /*@import url(./css/aboutaddons/addonlists_compact_more_compact.css);*/
 /*@import url(./css/aboutaddons/addonlists_only_show_buttons_on_hover.css);*/
@@ -24,4 +28,6 @@
 /* about:preferences ********************************************************************/
 /****************************************************************************************/
 
+/* only use one at a time */
 @import url(./css/aboutpreferences/preferences_alternative_appearance.css);
+/*@import url(./css/aboutpreferences/preferences_alternative_appearance_v2.css);*/

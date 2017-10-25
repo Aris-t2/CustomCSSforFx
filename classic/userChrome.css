@@ -6,6 +6,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+/****************/
+/**** v1.1.4 ****/
+/****************/
+
 
 /****************************************************************************************/
 /* TOOLBAR BUTTONS **********************************************************************/
@@ -13,19 +17,26 @@
 
 /* navigation toolbar buttons*/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css);
-@import url(./css/buttons/buttons_on_navbar_squared_buttons.css);
+/*@import url(./css/buttons/buttons_on_navbar_squared_buttons.css);*/
 /*@import url(./css/buttons/buttons_on_navbar_button_roundness.css);*/
 
 /* icon appearance - only use one at a time */
-@import url(./css/buttons/custom_icon_colors.css);
-/*@import url(./css/buttons/custom_icons.css);*/
+@import url(./css/buttons/icons_colorized.css);
+/*@import url(./css/buttons/icons_custom_icons.css);*/
+/*@import url(./css/buttons/icons_white_icons.css);*/
 
-@import url(./css/buttons/bookmarks_toolbar_button_size.css);
-@import url(./css/buttons/classic_bookmarks_menu_button_popup.css);
+/* appbutton popup */
 @import url(./css/buttons/appbutton_popup_icons_colorized.css);
 /*@import url(./css/buttons/appbutton_popup_sync_hidden.css);*/
 /*@import url(./css/buttons/appbutton_popup_panelarrow_hidden.css);*/  /* <--- experimental */
-/*@import url(./css/buttons/bookmarks_popup_sb_tb_unsorted_items_hidden.css);*/
+
+/* bookmarks menu button and popup appearance */
+/*@import url(./css/buttons/bookmarks_menu_button_localized_label_and_classic_popup.css);
+/*@import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css);*/
+/*@import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css);*/
+/*@import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css);*/
+
+@import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css);
 /*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
 /*@import url(./css/buttons/back_and_forward_separated_history_popups.css);*/
 /*@import url(./css/buttons/zoom_buttons_hide_reset.css);*/
@@ -142,7 +153,6 @@
 
 /* back, forward, reload, stop, bookmarks in page context menu */
 /*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
-
 /* only use one at a time */
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css);
 /*@import url(./css/generalui/context_bfrsb_labels_with_icons.css);*/

@@ -12,16 +12,4 @@
   display: none !important;
 }
 
-/* bookmarks toolbar */
-#BMB_bookmarksToolbar{
-  display: none !important;
-}
-
-/* other bookmarks */
-#BMB_unsortedBookmarks,
-#BMB_unsortedBookmarks + #BMB_mobileBookmarks,
-#BMB_unsortedBookmarks + #BMB_mobileBookmarks + menuseparator{
-  display: none !important;
-}
-
 /**/
