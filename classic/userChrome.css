@@ -31,7 +31,7 @@
 /*@import url(./css/buttons/appbutton_popup_panelarrow_hidden.css);*/  /* <--- experimental */
 
 /* bookmarks menu button and popup appearance */
-/*@import url(./css/buttons/bookmarks_menu_button_localized_label_and_classic_popup.css);
+@import url(./css/buttons/bookmarks_menu_button_localized_label_and_classic_popup.css);
 /*@import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css);*/
 /*@import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css);*/
 /*@import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css);*/
