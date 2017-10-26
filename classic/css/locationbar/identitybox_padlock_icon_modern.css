@@ -1,0 +1,30 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* alternative padlock icons */
+#urlbar[pageproxystate="valid"] :-moz-any(.verifiedDomain,.verifiedIdentity) #connection-icon {
+  list-style-image: url(./../../image/padlock_modern.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+	
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) #connection-icon {
+  list-style-image: url(./../../image/padlock_modern_mal.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+
+#urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) #connection-icon {
+  list-style-image: url(./../../image/padlock_modern_mpl.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+	
+#urlbar[pageproxystate="valid"] .mixedActiveBlocked #connection-icon {
+  list-style-image: url(./../../image/padlock_modern_mab.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+/**/

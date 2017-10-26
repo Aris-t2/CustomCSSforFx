@@ -1,0 +1,87 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url(about:newtab),
+               url(about:home),
+			   url(about:blank) {
+	body{
+      background-color: #323234 !important;
+      color: #D1D1D1 !important;
+    }
+	#newtab-customize-overlay {
+      background: #323234 !important;
+	}
+	.card,
+	.prefs-pane .sidebar {
+      background-color: #2c2c2c !important; /*202020*/
+      color: #C4C4C4 !important;
+	}
+	.prefs-pane .actions {
+      background-color: #2c2c2c !important;
+      border-left: 1px solid #D7D7DB;
+	}
+	.prefs-pane .prefs-modal-inner-wrapper .options {
+      background-color: #2c2c2c !important; /*202020*/
+      color: #C4C4C4 !important;
+	}
+	.prefs-pane-button button {
+      border: 1px solid #525A6D !important;
+      fill: #EEE !important;
+	}
+	.prefs-pane-button button:hover {
+      background-color: #444444 !important;
+      border: 1px solid #525A6D !important;
+	}
+	.prefs-pane-button button:active {
+      background-color: #323234 !important;
+      border: 1px solid #525A6D !important;
+	}
+	.search-wrapper input {
+      background: #474749 !important;
+      color: #FFF !important;
+	}
+	.contentSearchHeader,
+	.contentSearchSuggestionTable,
+	.contentSearchSettingButton,
+	.contentSearchHeaderRow   {
+      background: #2c2c2c !important;
+      color: #FFF !important;
+      -moz-appearance: none !important;
+      border-color: transparent !important;
+	}
+	.search-wrapper .search-label,
+	.search-wrapper .search-button {
+      fill: #EEE !important; 
+	}
+	.search-wrapper .search-button:focus,
+	.search-wrapper .search-button:hover {
+      background-color: #444444 !important;
+	}
+	.search-wrapper .search-button:active {
+      background-color: #323234 !important;
+	}
+	.section-top-bar .info-option {
+      background: #2c2c2c !important;
+      color: #FFF !important;
+      -moz-appearance: none !important;
+      border-color: transparent !important;
+	}
+	.context-menu {
+      background: #2c2c2c !important;
+      color: #C4C4C4 !important;
+      -moz-appearance: none !important;
+      border-color: transparent !important;
+	}
+	.separator {
+      border: 1px solid #525A6D !important;
+	}
+	.icon {
+      fill: #C4C4C4 !important;
+	}
+}

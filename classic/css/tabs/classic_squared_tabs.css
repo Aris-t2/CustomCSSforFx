@@ -195,14 +195,6 @@
   -moz-margin-start: 0px !important;
 }
 
-/* show favicon for tabs without favicons */
-.tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
-  display: inline !important;
-}
-.tabbrowser-tab:not([pinned])[busy] .tab-throbber + .tab-icon-image:not([src]) {
-  display:none !important;
-}
-
 /* width of new tab tab */
 #TabsToolbar .tabs-newtab-button{
   min-width: 0px !important;

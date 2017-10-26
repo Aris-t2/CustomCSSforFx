@@ -138,10 +138,9 @@
 	#addons-page .relnotes-toggle,
 	#list-view menulist,
 	#updates-list menulist{
-	  padding:2px !important;
+	  padding: 2px !important;
 	  min-height: unset !important;
 	  height: unset !important;
-	  /*font-size: 90% !important;*/
 	}
 	
 	#addons-page  #custombutons-add-new,
@@ -175,11 +174,6 @@
 	  height: unset !important;
 	}
 	
-	/* search */
-	#search-filter {
-	  /*font-size: 90% !important;*/
-	}
-	
 	/* add-on entry */
 	#addons-page .main-content .addon[active="false"]{
 	  opacity: .8 !important;
@@ -189,47 +183,24 @@
 	  opacity: .5 !important;
 	}
 
-	/*#addons-page .addon .name-container,
-	#addons-page #addon-list .name-container {
-	  font-size: 130% !important;
-	}
-	.sort-controls,
-	#addons-page #addon-list .warning,
-	#addons-page #addon-list .pending,
-	#addons-page #addon-list .error{
-	  font-size: 90% !important;
-	}
-	
-	.addon .description-outer-container * {
-	  font-size: 100% !important;
-	}*/
-	
+
 	/* detail view */
 	#detail-view button:not(.button-link):not(.text-link),
 	#detail-view menulist{
-	  padding:2px !important;
+	  padding: 2px !important;
 	  min-height: unset !important;
 	  height: unset !important;
-	  /*font-size: 90% !important;*/
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	
 	#detail-view colorpicker[type="button"]{
-	  padding:2px !important;
+	  padding: 2px !important;
 	  min-height: 26px !important;
 	  min-width: 40px !important;
 	  height:auto !important;
 	  width: auto !important;
 	}
-	
-	/*#detail-view label{
-	  font-size: 90% !important;
-	}
 
-	#detail-view .creator-link{
-	  font-size: 110% !important;
-	}*/
-	
 	#detail-view .box-inherit.scrollbox-innerbox {
 	  margin: 0px !important;
 	}

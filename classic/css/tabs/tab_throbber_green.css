@@ -7,13 +7,13 @@
 /****************************************************************************************/
 
 .tab-throbber[busy]::before,
-.tab-throbber[progress]::before,
-.tab-loading-burst[bursting]::before {
+.tab-throbber[progress]::before {
   width: 16px !important;
   height: 16px !important;
   animation: unset !important;
   -moz-context-properties: unset !important;
-  fill: animation: unset !important;
+  fill: unset !important;
+  animation: unset !important;
   opacity: unset !important;
   animation: unset !important;
 }
@@ -22,9 +22,8 @@
   background-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
 }
 
-.tab-loading-burst[bursting]::before,
 .tab-throbber[progress]::before{
-  background-image: url("./../../image/tabthrobber_fx56_loading.png") !important;
+  background-image: url("./../../image/tabthrobber_loading-fx39.png") !important;
 }
 
 /**/

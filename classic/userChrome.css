@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.4 ****/
+/**** v1.1.5 ****/
 /****************/
 
 
@@ -110,25 +110,34 @@
 @import url(./css/tabs/classic_squared_tabs.css);
 /*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
 
-/* custom tab colors - only use one at a time */
+/* custom tab colors for default/active/hovered/unread/unloaded tabs */
+/* only use one at a time */
 /*@import url(./css/tabs/custom_colors_for_squared_tabs.css);*/
 /*@import url(./css/tabs/custom_colors_for_squared_tabs_australized.css);*/
+
+/* text colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs */
+/*@import url(./css/tabs/custom_text_settings.css);*/
 
 /* remove top corner roundness */
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 
-/* tabs not on top */
+/* tabs not on top - tabs below navigation and bookmarks toolbars */
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/ 
 
-/*@import url(./css/tabs/tab_maxwidth.css);*/
-@import url(./css/tabs/tab_icon_colors.css);
-/*@import url(./css/tabs/tab_titles_remove_blur.css);*/
-/*@import url(./css/tabs/tab_throbber_fx56.css);*/
-/*@import url(./css/tabs/show_alltabs_button.css);*/
-/*@import url(./css/tabs/pinnedtab_hide_empty_icon.css);*/
-/*@import url(./css/tabs/custom_text_settings.css);*/
+/* restore empty/missing ta favicon - only use one at a time */
+@import url(./css/tabs/missing_tab_favicon_restored_default.css);
+/*@import url(./css/tabs/missing_tab_favicon_restored_sheet.css);*/
+/*@import url(./css/tabs/missing_tab_favicon_restored_dotted.css);*/
+/*@import url(./css/tabs/missing_tab_favicon_restored_dotted_white.css);*/
 
-/* tab close settings - only use one at a time */
+/* custom tab loading animation - only use one at a time */
+/*@import url(./css/tabs/tab_throbber_blue_fx56.css);*/
+/*@import url(./css/tabs/tab_throbber_blue.css);*/
+/*@import url(./css/tabs/tab_throbber_grey_classic.css);*/
+/*@import url(./css/tabs/tab_throbber_green.css);*/
+/*@import url(./css/tabs/tab_throbber_orange_ubuntu.css);*/
+
+/* tab close icon settings - only use one at a time */
 @import url(./css/tabs/tab_close_always_visible.css);
 /*@import url(./css/tabs/tab_close_on_active_tab_only.css);*/
 /*@import url(./css/tabs/tab_close_show_on_hover_only.css);*/
@@ -136,10 +145,17 @@
 /*@import url(./css/tabs/tab_close_hidden_for_only_one_visible_tab.css);*/
 /*@import url(./css/tabs/tab_close_at_tabs_start.css);*/
 
-/* tab close icon size - only use one at a time */
+/* tab close icon size override - only use one at a time */
 /*@import url(./css/tabs/tab_close_icon_size_16x16px.css);*/
 /*@import url(./css/tabs/tab_close_icon_size_18x18px.css);*/
 /*@import url(./css/tabs/tab_close_icon_size_20x20px.css);*/
+
+/* other tab settings */
+@import url(./css/tabs/tab_icon_colors.css);
+/*@import url(./css/tabs/tab_maxwidth.css);*/
+/*@import url(./css/tabs/tab_titles_remove_blur.css);*/
+/*@import url(./css/tabs/alltabs_button_always_visible.css);*/
+/*@import url(./css/tabs/pinnedtab_empty_favicon_hidden.css);*/
 
 
 /****************************************************************************************/
@@ -153,7 +169,7 @@
 
 /* back, forward, reload, stop, bookmarks in page context menu */
 /*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
-/* only use one at a time */
+/* labels - only use one at a time */
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css);
 /*@import url(./css/generalui/context_bfrsb_labels_with_icons.css);*/
 
@@ -210,12 +226,18 @@
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
 /*@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css);*/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css);
+/*@import url(./css/locationbar/zoom_button_hidden.css);*/
 /*@import url(./css/locationbar/go_button_in_location_bar_hidden.css);*/
 
 /* identity box */
 @import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css);
 @import url(./css/locationbar/identitybox_colors.css);
-@import url(./css/locationbar/identitybox_padlock_icon.css);
+
+/* padlock icons - only use one at a time */
+@import url(./css/locationbar/identitybox_padlock_icon_classic.css);
+/*@import url(./css/locationbar/identitybox_padlock_icon_classic2.css);*/
+/*@import url(./css/locationbar/identitybox_padlock_icon_modern.css);*/
+/*@import url(./css/locationbar/identitybox_padlock_icon_modern2.css);*/
 
 
 /****************************************************************************************/

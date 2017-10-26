@@ -26,10 +26,6 @@
 	  }
 	}
 	
-	/*#searchInput {
-      margin-top: 0px !important;
-	}*/
-
 	#categories {
 	  background: transparent !important;
 	}
@@ -69,19 +65,19 @@
 	
 	/* category icons */
 	#category-search .category-icon {
-	  list-style-image: url("./../../image/altprefs_options_search.png") !important;
+	  list-style-image: url("./../../image/prefs_search.png") !important;
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-general .category-icon {
-	  list-style-image: url("./../../image/altprefs_options.png") !important;
+	  list-style-image: url("./../../image/prefs_general.png") !important;
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-privacy .category-icon {
-	  list-style-image: url("./../../image/altprefs_options.png") !important; 
-	  -moz-image-region: rect(0, 160px, 32px, 128px) !important;
+	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-sync .category-icon {
-	  list-style-image: url("./../../image/altprefs_options_sync.png") !important;
+	  list-style-image: url("./../../image/prefs_sync.png") !important;
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#categories .category .category-icon {
@@ -98,20 +94,11 @@
 	  -moz-margin-start: -20px !important;
 	}
 	
-	/*#mainPrefPane textbox {
-	  font-size:80% !important;
-	}*/
-	
 	textbox {
 	  min-height: 24px !important;
 	  height: 24px !important;
 	}
 
-	/*description,
-	.main-content label{
-	  font-size:90% !important;
-	}*/
-	
 	.main-content {
 	  margin-top: 20px !important;
 	  margin-bottom: 20px !important;
@@ -121,7 +108,6 @@
 
 	.header label {
 	  font-weight: bold !important;
-	  /*font-size: 130% !important;*/
 	  padding-bottom: 0 !important;
 	}
 
@@ -156,7 +142,6 @@
 	menulist{
 	  min-height: unset !important;
 	  height: unset !important;
-	  /*font-size: 90% !important;*/
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	
@@ -166,10 +151,6 @@
 	menulist{
 	  padding:2px !important;
 	}
-	
-	/*#weavePrefsDeck button {
-	  font-size: 75% !important;
-	}*/
 	
 	/* checkbox and radio items */
 	checkbox image,
@@ -211,7 +192,6 @@
 *[subdialog="true"] menulist{
   min-height: unset !important;
   height: unset !important;
-  /*font-size: 90% !important;*/
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 }
 
@@ -264,4 +244,3 @@
 *[subdialog="true"] .autocomplete-tree treecol {
   height: unset !important;
 }
-

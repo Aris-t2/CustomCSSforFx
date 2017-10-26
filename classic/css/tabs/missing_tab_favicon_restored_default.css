@@ -1,0 +1,17 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* show favicon for tabs without favicons */
+.tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+  display: inline !important;
+}
+.tabbrowser-tab:not([pinned])[busy] .tab-throbber + .tab-icon-image:not([src]) {
+  display: none !important;
+}
+
+/**/

@@ -1,0 +1,29 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+.tab-throbber[busy]::before,
+.tab-throbber[progress]::before {
+  width: 16px !important;
+  height: 16px !important;
+  animation: unset !important;
+  -moz-context-properties: unset !important;
+  fill: unset !important;
+  animation: unset !important;
+  opacity: unset !important;
+  animation: unset !important;
+}
+
+.tab-throbber[busy]::before {
+  background-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+}
+
+.tab-throbber[progress]::before{
+  background-image: url("./../../image/tabthrobber_classic_loading.png") !important;
+}
+
+/**/
