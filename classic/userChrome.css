@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.5 ****/
+/**** v1.1.6 ****/
 /****************/
 
 
@@ -88,8 +88,10 @@
 /* Application/hamburger button in Firefox titlebar (Windows only) **********************/
 /****************************************************************************************/
 
-/* cheat appbutton into titlebar (if menubar is disabled) */
+/* appbutton in titlebar (if menubar is disabled) */
+/* only use one at a time */
 @import url(./css/buttons/appbutton_in_titlebar.css);
+/*@import url(./css/buttons/appbutton_in_titlebar_icon_only.css);*/
 
 /* button color - only use one at a time */
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
@@ -122,7 +124,7 @@
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 
 /* tabs not on top - tabs below navigation and bookmarks toolbars */
-/*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/ 
+/*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
 
 /* restore empty/missing ta favicon - only use one at a time */
 @import url(./css/tabs/missing_tab_favicon_restored_default.css);

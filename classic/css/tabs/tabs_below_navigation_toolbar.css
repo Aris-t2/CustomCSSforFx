@@ -20,9 +20,8 @@
 }
 
 /* fix for application/hamburger button in titlebar */
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button,
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
-  top: -23px !important;
+#main-window[tabsintitlebar][inFullscreen] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
+  visibility: collapse !important;
 }
 
 /* tab height */
