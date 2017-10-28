@@ -17,15 +17,6 @@
 	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
 	}
 
-	@media (-moz-os-version: windows-win7), (-moz-os-version: windows-vista){
-	  @media (-moz-windows-theme:aero) {
-	    page,
-		page .dialogBox .groupbox-title{
-		  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
-	    }
-	  }
-	}
-	
 	#categories {
 	  background: transparent !important;
 	}

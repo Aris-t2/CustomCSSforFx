@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.6 ****/
+/**** v1.1.7 ****/
 /****************/
 
 
@@ -31,12 +31,16 @@
 /*@import url(./css/buttons/appbutton_popup_panelarrow_hidden.css);*/  /* <--- experimental */
 
 /* bookmarks menu button and popup appearance */
-@import url(./css/buttons/bookmarks_menu_button_localized_label_and_classic_popup.css);
+@import url(./css/buttons/bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css);
+@import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css);
 /*@import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css);*/
 /*@import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css);*/
 /*@import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css);*/
 
+/* old bookmarks toolbar button appearance - 'disable' for Windows Classic OS theme*/
 @import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css);
+
+/* other button settings */
 /*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
 /*@import url(./css/buttons/back_and_forward_separated_history_popups.css);*/
 /*@import url(./css/buttons/zoom_buttons_hide_reset.css);*/
@@ -110,7 +114,9 @@
 
 /* custom tab appearance - only use one at a time */
 @import url(./css/tabs/classic_squared_tabs.css);
+/*@import url(./css/tabs/classic_squared_tabs_aero.css);*/	/* <-- AERO colors */
 /*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
+/*@import url(./css/tabs/classic_squared_tabs_australized_aero.css);*/	/* <-- AERO colors */
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs */
 /* only use one at a time */
@@ -123,8 +129,10 @@
 /* remove top corner roundness */
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 
-/* tabs not on top - tabs below navigation and bookmarks toolbars */
+/**** tabs below navigation and bookmarks toolbars **************************/
+/* tabs not on top - only use one at a time */
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
+/*@import url(./css/tabs/tabs_below_navigation_toolbar_aero.css);*/	/* <-- AERO colors */
 
 /* restore empty/missing ta favicon - only use one at a time */
 @import url(./css/tabs/missing_tab_favicon_restored_default.css);
@@ -164,8 +172,8 @@
 /* GENERAL UI ***************************************************************************/
 /****************************************************************************************/
 
-@import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/findbar_on_top.css);
+@import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/bookmark_icons_colorized.css);
 /*@import url(./css/generalui/increase_ui_font_size.css);*/
 
@@ -195,13 +203,16 @@
 /* Toolbars *****************************************************************************/
 /****************************************************************************************/
 
-@import url(./css/toolbars/general_toolbar_colors.css);
 @import url(./css/toolbars/toolbars_old_padding.css);
 @import url(./css/toolbars/tabs_toolbar_adjustments.css);
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
 /*@import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css);*/ /* <--- experimental */
 /*@import url(./css/toolbars/navbar_more_compact_mode.css);*/
 /*@import url(./css/toolbars/toolbars_in_fullscreen_mode.css);*/
+
+/* toolbar colors grey/aero - only use one at a time */
+@import url(./css/toolbars/general_toolbar_colors.css);
+/*@import url(./css/toolbars/general_toolbar_colors_aero.css);*/	/* <-- AERO colors */
 
 /* toolbar text mode - not compatible with 'buttons on nav-bar classic appearance' */
 /* only use one at a time */

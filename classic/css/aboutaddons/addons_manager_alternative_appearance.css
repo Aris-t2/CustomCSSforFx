@@ -6,7 +6,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+				url-prefix(about:addons) {
 
 	.category {
 	  margin-inline-start: 0px !important;
@@ -15,14 +16,6 @@
 	/* main colors addons-page */
 	#addons-page {
 	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
-	}
-
-	@media (-moz-os-version: windows-win7), (-moz-os-version: windows-vista){
-	  @media (-moz-windows-theme:aero) {
-	    #addons-page {
-		  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
-	    }
-	  }
 	}
 
 	#addons-page #nav-header,

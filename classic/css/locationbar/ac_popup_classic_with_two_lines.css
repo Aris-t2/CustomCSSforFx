@@ -80,21 +80,7 @@
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action[actiontype=searchengine]:not([selected]) {
 	  display: block !important;
 	}
-	
-	
-	@media all and (-moz-windows-classic) {
-	  panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-title,
-	  #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
-		padding-top: 2px !important;
-		padding-bottom: 2px !important;
-	  }
 
-	  panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistbox,
-	  #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
-		padding: 0 !important;
-	  }
-	}
-	
 	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem #ibox-spacer,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem #ibox-spacer {
 	  width: 100000px !important;
@@ -110,10 +96,24 @@
 	  display: none !important;
 	}
 	
-	/* Fx 56 tweaks */
+	/* show scrollbar */
 	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) scrollbox,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
 	  overflow-y: auto !important;
 	}
+	
+	/* for Windows Classic theme *//*
+	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-title,
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
+	  padding-top: 2px !important;
+	  padding-bottom: 2px !important;
+	}
+
+	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistbox,
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+	  padding: 0 !important;
+	}
+	
+	/**/
 
 }

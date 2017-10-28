@@ -15,11 +15,16 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 #nav-bar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background-image: linear-gradient(#eaf2fb,#ddebf9) !important;
 }
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background-image: linear-gradient(#ddebf9,#ddebf9) !important;
+}
+
+/* findbar */
+.browserContainer findbar, #viewSource #FindToolbar {
+  background: linear-gradient(#ddebf9,#ddebf9) !important;
 }
 
 /**/

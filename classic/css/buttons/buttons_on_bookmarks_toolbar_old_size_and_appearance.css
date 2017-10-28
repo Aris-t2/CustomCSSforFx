@@ -11,10 +11,8 @@
 /* old appearance for toolbarbuttons and bookmarks on bookmarks toolbar */
 /************************************************************************/
 
-/* tweak button appearance */
-@media not all and (-moz-windows-classic) {
-  #PersonalToolbar toolbarbutton,
-  #PlacesToolbar toolbarbutton {
+#PersonalToolbar toolbarbutton,
+#PlacesToolbar toolbarbutton {
 	-moz-appearance: toolbarbutton !important;
 	background: unset !important;
 	box-shadow: unset !important;
@@ -22,15 +20,16 @@
 	padding-right: 3px !important;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
-  }
-  #PersonalToolbar .toolbarbutton-badge-stack,
-  #PersonalToolbar toolbarbutton .toolbarbutton-icon {
+}
+
+#PersonalToolbar .toolbarbutton-badge-stack,
+#PersonalToolbar toolbarbutton .toolbarbutton-icon {
 	background: unset !important;
 	box-shadow: unset !important;
-  }
-  #PersonalToolbar toolbarbutton .toolbarbutton-icon {
+}
+
+#PersonalToolbar toolbarbutton .toolbarbutton-icon {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 	width: 16px !important;
-  }
 }

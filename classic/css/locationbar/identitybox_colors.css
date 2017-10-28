@@ -112,21 +112,24 @@
 /* for dark lw-theme */
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedDomain {
   background: linear-gradient(hsl(215,85%,85%), hsl(215,70%,68%)) !important;
-  box-shadow: 0 1px 0 hsla(215,54%,33%,.05) inset !important;
+  box-shadow: 0 1px 1px hsla(215,54%,33%,.7) inset,
+			  0 1px 3px 1px hsla(215,54%,33%,.5) inset !important;
   color: white !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedDomain:hover,
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedDomain:-moz-any([open="true"],:hover:active) {
-  box-shadow: 0 1px 1px hsla(215,54%,33%,.7) inset,
-			  0 1px 3px 1px hsla(215,54%,33%,.5) inset !important;
+  box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
+			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedIdentity {
   background: linear-gradient(hsl(92,69%,77%), hsl(92,44%,51%)) !important;
   color: #00771f !important;
   border-inline-end: 1px solid #262627 !important;
+  box-shadow: 0 1px 1px hsla(92,81%,16%,.6) inset,
+			  0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
 }
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels:-moz-lwtheme-brighttext {
   color: #00771f !important;
@@ -134,32 +137,34 @@
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedIdentity:hover,
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedIdentity:-moz-any([open="true"],:hover:active) {
-  box-shadow: 0 1px 1px hsla(92,81%,16%,.6) inset,
-			  0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
+  box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
+			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) {
   background: linear-gradient(hsl(6,65%,88%), hsl(0,73%,82%)) !important;
-  box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
+  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
+			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):hover,
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):-moz-any([open="true"],:hover:active) {
-  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
-			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
+  box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
+			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
   background: linear-gradient(hsl(54,85%,67%), hsl(54,90%,50%)) !important;
-  box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
+  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
+			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):hover,
 #main-window:-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):-moz-any([open="true"],:hover:active) {
-  box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
-			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
+  box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
+			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
 #main-window:-moz-lwtheme-brighttext #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) .unknownIdentity:not(.mixedDisplayContentLoadedActiveBlocked), 

@@ -37,16 +37,17 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   -moz-appearance: toolbarbutton !important;
 }
 
-@media (-moz-windows-classic) {
-  toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
-  toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
-  toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
-	box-shadow:	1px 0 0 0 white inset,
-				0 1px 0 0 white inset,
-				-1px 0 0 0 gray inset,
-				0 -1px 0 0 gray inset !important;
-	}
+/* tweaks for Windows Classic theme *//*
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+  box-shadow: 1px 0 0 0 white inset,
+			  0 1px 0 0 white inset,
+			  -1px 0 0 0 gray inset,
+			  0 -1px 0 0 gray inset !important;
 }
+
+/**/
 
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,

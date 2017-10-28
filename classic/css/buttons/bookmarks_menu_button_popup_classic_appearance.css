@@ -1,0 +1,89 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* bookmarks menu button popup*/
+#BMB_bookmarksPopup  #BMB_bookmarksShowAll,
+#BMB_bookmarksPopup  .panel-arrowbox {
+  display: none !important;
+}
+
+#BMB_bookmarksPopup,
+#BMB_bookmarksPopup menupopup *,
+#BMB_bookmarksPopup .panel-arrowcontent *{
+  -moz-appearance: none !important;
+  box-shadow: unset !important;
+}
+
+#BMB_bookmarksPopup menupopup .arrowscrollbox-scrollbox,
+#BMB_bookmarksPopup menupopup,
+#BMB_bookmarksPopup .panel-arrowcontent {
+  background: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  border-radius: 0 !important;
+}
+
+#BMB_bookmarksPopup menupopup,
+#BMB_bookmarksPopup .panel-arrowcontent {
+  -moz-appearance: menupopup !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+#BMB_bookmarksPopup menupopup > hbox {
+  background: unset !important;
+  border: unset !important;
+}
+
+#BMB_bookmarksPopup menu,
+#BMB_bookmarksPopup menuitem {
+  -moz-appearance: menuitem !important;
+  padding: 0 7px !important;
+  margin: unset !important;
+  min-height: unset !important;
+  height: 23px !important;
+}
+
+#BMB_bookmarksPopup menuseparator {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  -moz-margin-start: 28px !important;
+  -moz-margin-end: 0px !important;
+  border-bottom: 1px solid white !important;
+}
+#BMB_bookmarksPopup .menu-iconic-left {
+  -moz-margin-start: -3px !important;
+  -moz-margin-end: 9px !important;
+}
+#BMB_bookmarksPopup .menu-text {
+  -moz-margin-start: 25px !important;
+}
+
+/* popup position */
+#BMB_bookmarksPopup {
+  margin-top: 0px !important;
+}
+
+/* additional tweaks for Windows classic theme *//*
+
+#BMB_bookmarksPopup menupopup,
+#BMB_bookmarksPopup .panel-arrowcontent {
+  background: -moz-Dialog !important;
+}
+#BMB_bookmarksPopup .menu-iconic-left {
+  -moz-margin-start: 3px !important;
+  -moz-margin-end: 3px !important;
+}
+#BMB_bookmarksPopup :-moz-any(menu,menuitem):-moz-any(:hover,:active) {
+  color: HighlightText !important;
+}
+
+/**/

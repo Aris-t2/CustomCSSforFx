@@ -6,20 +6,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@import url(./tabs_below_navigation_toolbar.css);
 
-/* hide toolbar shadow */
-#nav-bar:not(:-moz-lwtheme),
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  -moz-appearance: none !important;
-  box-shadow: unset !important;
-}
-
-#nav-bar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
-}
-
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+#TabsToolbar:not(:-moz-lwtheme) {
+  background: #dbeaf9 !important;
 }
 
 /**/

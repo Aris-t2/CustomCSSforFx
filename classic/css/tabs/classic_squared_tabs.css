@@ -54,23 +54,6 @@
   background: purple !important;
 }
 
-/* default aeroblue tabs on Windows 7 & Vista */
-@media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
-  @media not all and (-moz-windows-classic) {
-	#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
-	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-	  background-image: linear-gradient(to top,#b4c0cc,#c8d4e1,#d1deec) !important;
-	}
-	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
-	  background-image: linear-gradient(to top,#eaf2fb,#eef5fc,#fbfdff) !important;
-	}
-	#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
-	#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
-	  background-image: linear-gradient(to top,#d0dce8,#dce7f3,#e5effa) !important;
-	}
-  }
-}
-
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {

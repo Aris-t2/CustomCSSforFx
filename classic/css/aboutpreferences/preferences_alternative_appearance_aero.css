@@ -6,20 +6,13 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@import url(./preferences_alternative_appearance.css);
 
-/* hide toolbar shadow */
-#nav-bar:not(:-moz-lwtheme),
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  -moz-appearance: none !important;
-  box-shadow: unset !important;
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+	page,
+	page .dialogBox .groupbox-title{
+	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	}
+
 }
-
-#nav-bar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
-}
-
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
-}
-
-/**/

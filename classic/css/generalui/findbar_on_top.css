@@ -60,33 +60,23 @@
   width: 100% !important;
 }
   
-/*default aeroblue toolbars on Windows 7 & Vista*/
-@media (-moz-os-version: windows-win7),(-moz-os-version: windows-vista) {
-  @media not all and (-moz-windows-classic) {
-	.browserContainer findbar, #viewSource #FindToolbar {
-	  background: linear-gradient(#ddebf9,#ddebf9) !important;
-	}
-  }
-}
-
 #viewSource #FindToolbar {
   background-color: -moz-dialog;
   color: -moz-dialogtext;
 }
 
-/* tweaks excluded from Windows Classic theme */
-@media not all and (-moz-windows-classic) {
-  .browserContainer findbar .findbar-button,
-  #viewSource #FindToolbar .findbar-button {
-	-moz-appearance: toolbarbutton !important;
-	background: unset !important;
-	box-shadow: unset !important;
-  }
-  .browserContainer findbar toolbarbutton * {
-	background: unset !important;
-	box-shadow: unset !important;
-  }
-} 
+/* exclude these from Windows Classic theme */
+.browserContainer findbar .findbar-button,
+#viewSource #FindToolbar .findbar-button {
+  -moz-appearance: toolbarbutton !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+.browserContainer findbar toolbarbutton * {
+  background: unset !important;
+  box-shadow: unset !important;
+}
+/**/
 
 :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
   -moz-margin-start: 4px !important;

@@ -19,4 +19,8 @@
   border-inline-end: 1px solid !important;
 }
 
+#main-window[chromehidden="menubar toolbar directories extrachrome "] #nav-bar-customization-target {
+  -moz-padding-end: 2px !important;
+}
+
 /**/

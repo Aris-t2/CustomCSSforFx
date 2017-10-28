@@ -26,40 +26,6 @@
 	  transform: rotate(-90deg);
 	}
 	
-	/*@media (min-resolution: 1.1dppx) {
-	  richlistitem[type="userstyle"] .control-container button[oncommand="document.getBindingParent(document.getBindingParent(this)).openEdit();"] image {
-		list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-		-moz-image-region: rect(0, 900px, 36px, 864px);
-		width: 18px !important;
-	  }
-	  button[anonid="preferences-btn"].addon-control image {
-		list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-		-moz-image-region: rect(0, 936px, 36px, 900px);
-		width: 18px !important;
-	  }
-	  button[anonid="install-remote-btn"].addon-control image,
-	  button[anonid="enable-btn"].addon-control image{
-		list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-		-moz-image-region: rect(0, 1152px, 36px, 1116px);
-		width: 18px !important;
-	  }
-	  button[anonid="disable-btn"].addon-control image{
-		list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-		-moz-image-region: rect(0, 1116px, 36px, 1080px);
-		width: 18px !important;
-	  }
-	  button[anonid="remove-btn"].addon-control image{
-	    list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-	    -moz-image-region: rect(0, 216px, 36px, 180px);
-		width: 18px !important;
-	  }
-	  button[anonid="update-btn"].addon-control image{
-	    list-style-image: url("chrome://classic_theme_restorer/content/images/Toolbar@2x.png");
-	    -moz-image-region: rect(0, 1224px, 36px, 1188px);
-		width: 18px !important;
-	  }
-	}*/
-
 	button[anonid].addon-control{
 	  min-width: unset !important;
 	}

@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.6 ****/
+/**** v1.1.7 ****/
 /****************/
 
 
@@ -16,6 +16,7 @@
 /****************************************************************************************/
 
 @import url(./css/aboutaddons/addons_manager_alternative_appearance.css);
+/*@import url(./css/aboutaddons/addons_manager_alternative_appearance_aero.css);*/	/* <-- AERO colors */
 @import url(./css/aboutaddons/addonlists_show_addon_version_number.css);
 /*@import url(./css/aboutaddons/addonlists_compact.css);*/
 /*@import url(./css/aboutaddons/addonlists_compact_more_compact.css);*/
@@ -31,10 +32,21 @@
 
 /* only use one at a time */
 @import url(./css/aboutpreferences/preferences_alternative_appearance.css);
+/*@import url(./css/aboutpreferences/preferences_alternative_appearance_aero.css);*/	/* <-- AERO colors */
 /*@import url(./css/aboutpreferences/preferences_alternative_appearance_v2.css);*/
 
 
 /****************************************************************************************/
 /* about:newtab / about:blank / about:home **********************************************/
 /****************************************************************************************/
+
 /*@import url(./css/aboutnewtab/dark_appearance.css);*/
+
+
+/****************************************************************************************/
+/* web content - top level image on white background (can cause issues on some sites) ***/
+/****************************************************************************************/
+
+/* only use one at a time */
+/*@import url(./css/webcontent/toplevel_image_classic_v1.css);*/
+/*@import url(./css/webcontent/toplevel_image_classic_v2.css);*/
