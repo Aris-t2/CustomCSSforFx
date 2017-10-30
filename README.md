@@ -160,7 +160,7 @@ Restart Firefox for changes to take effect.</br>
 <b>Anti fingerprinting</b></br>
 <i>privacy.resistFingerprinting</i></br>
 </br>
-<b>Telemetry settings</b> (suggestion: disable / set to 'false')</br>
+<b>Telemetry / data collection</b> (suggestion: disable / set to 'false')</br>
 <i>browser.ping-centre.telemetry</i></br>
 <i>toolkit.telemetry.archive.enabled</i></br>
 <i>toolkit.telemetry.bhrPing.enabled</i></br>
@@ -171,4 +171,7 @@ Restart Firefox for changes to take effect.</br>
 <i>toolkit.telemetry.shutdownPingSender.enabled</i></br>
 <i>toolkit.telemetry.unified</i></br>
 <i>toolkit.telemetry.updatePing.enabled</i></br>
+<i>experiments.enabled</i></br>
+<i>experiments.activeExperiment</i></br>
+<i>experiments.supported</i></br>
 </br>
