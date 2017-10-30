@@ -1,0 +1,28 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* alternative reader icon*/
+#reader-mode-button {
+  list-style-image: url("./../../image/reader.png") !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+#reader-mode-button[readeractive] {
+  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+}
+#reader-mode-button:hover  {
+  filter: brightness(1.25) !important;
+}
+
+/* colorize reader, page action and dropmarker icons */
+#urlbar #reader-mode-button,
+#urlbar #reader-mode-button:-moz-any(:hover,:hover:active,[open]) {
+  fill: unset !important;
+}
+
+/**/

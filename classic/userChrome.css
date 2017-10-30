@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.7 ****/
+/**** v1.1.8 ****/
 /****************/
 
 
@@ -236,6 +236,7 @@
 
 /* additional icons/buttons and third party page action buttons */
 @import url(./css/locationbar/icons_colorized.css);
+@import url(./css/locationbar/reader_alternative_icon.css);
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
 /*@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css);*/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css);

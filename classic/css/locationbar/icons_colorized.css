@@ -19,49 +19,44 @@
   box-shadow: unset !important;
 }
 
-/* increase brightness for hover/active states*/
-#urlbar .urlbar-page-action:-moz-any(:hover,:hover:active,[open]),
-#urlbar #pageAction-panel-bookmark:-moz-any(:hover,:hover:active,[open]),
-#urlbar #star-button:-moz-any(:hover,:hover:active,[open]),
-#urlbar #star-button-animatable-box:-moz-any(:hover,:hover:active,[open]),
-#urlbar .urlbar-icon:-moz-any(:hover,:hover:active,[open]),
-#searchbar .search-go-button:-moz-any(:hover,:hover:active,[open])  {
-  filter: brightness(1.25) !important;
-}
-
-/* alternative reader icon*/
-#reader-mode-button {
-  list-style-image: url("./../../image/reader.png") !important;
-  -moz-image-region: rect(0, 16px, 16px, 0) !important;
-}
-#reader-mode-button[readeractive] {
-  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
-}
-
-/* alternative page action and dropmarker color */
+/* colorize reader, page action and dropmarker icons */
+#urlbar #reader-mode-button,
 #urlbar #pageActionButton,
 #urlbar .urlbar-history-dropmarker {
   fill: blue !important;
 }
+#urlbar #reader-mode-button:-moz-any(:hover,:hover:active,[open]),
 #urlbar #pageActionButton:-moz-any(:hover,:hover:active,[open]),
 #urlbar .urlbar-history-dropmarker:-moz-any(:hover,:hover:active,[open]) {
   fill: #2558ff !important;
 }
 
-/* alternative star button color */
+/* colorize star button color */
 #urlbar #pageAction-panel-bookmark:not([starred]),
 #urlbar #star-button:not([starred]) {
   fill: orange !important;
   opacity: 1.0 !important;
 }
+#urlbar #star-button:-moz-any(:hover,:hover:active,[open]),
+#urlbar #star-button-animatable-box:-moz-any(:hover,:hover:active,[open]) {
+  filter: brightness(1.5) !important;
+}
 #urlbar #pageAction-panel-bookmark:not([starred]):-moz-any(:hover,:hover:active,[open]),
 #urlbar #star-button:not([starred]):-moz-any(:hover,:hover:active,[open]) {
-  filter: brightness(1.05) !important;
+  filter: brightness(1.25) !important;
 }
 
-/* WE page action button */
-#urlbar  .webextension-page-action:-moz-any(:hover,:hover:active,[open]) {
-  filter: brightness(1.75) !important;
+/* increase brightness for search bars go button */
+#searchbar .search-go-button:-moz-any(:hover,:hover:active,[open])  {
+  filter: brightness(1.25) !important;
+}
+
+/* change opacity for WE page action buttons */
+#urlbar #page-action-buttons > .urlbar-icon {
+  opacity: 1.0 !important;
+}
+#urlbar #page-action-buttons > .urlbar-icon:-moz-any(:hover,:hover:active,[open]){
+  opacity: 0.6 !important;
 }
 
 /**/

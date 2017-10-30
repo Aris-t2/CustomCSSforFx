@@ -53,14 +53,14 @@
 
 
 /*******************************************/
-/* hovered new tab *************************/
+/* new tab *********************************/
 #TabsToolbar #tabbrowser-tabs .tabs-newtab-button {
   background: linear-gradient(to bottom,#FFCC99,#CCCCCC) !important;
 }
 
 
 /*******************************************/
-/* new tab *********************************/
+/* hovered new tab *************************/
 #TabsToolbar #tabbrowser-tabs .tabs-newtab-button:hover {
   background: linear-gradient(to bottom,#FF9900,#FF6600) !important;
 }
