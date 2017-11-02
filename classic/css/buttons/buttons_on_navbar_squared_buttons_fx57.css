@@ -6,8 +6,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* This code won't work for all buttons the same way. There are way too many different ***
-** types and button variations out there to catch all of them with genereal code. *******/
+/* This code won't work for all buttons the same way. There are still too many different *
+** types and button variations out there to catch all of them with general code. ********/
 
 
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-icon {

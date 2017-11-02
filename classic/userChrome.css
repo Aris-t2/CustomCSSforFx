@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.8 ****/
+/**** v1.1.9 ****/
 /****************/
 
 
@@ -17,8 +17,11 @@
 
 /* navigation toolbar buttons*/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css);
-/*@import url(./css/buttons/buttons_on_navbar_squared_buttons.css);*/
 /*@import url(./css/buttons/buttons_on_navbar_button_roundness.css);*/
+
+/* squared buttons - only use one at a time based on Firefox version */
+/*@import url(./css/buttons/buttons_on_navbar_squared_buttons_fx57.css);*/
+/*@import url(./css/buttons/buttons_on_navbar_squared_buttons_fx58.css);*/
 
 /* icon appearance - only use one at a time */
 @import url(./css/buttons/icons_colorized.css);

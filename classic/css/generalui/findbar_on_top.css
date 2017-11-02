@@ -33,13 +33,13 @@
 #viewSource #FindToolbar {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
-  margin-top:-1px !important;
+  margin-top: -1px !important;
   box-shadow: unset !important;
-  border: 1px solid #aabccf !important;
+  border: 1px solid #e1e1e2 !important;
   border-top: 0px solid transparent !important;
   border-radius: 0 0 3px 3px;
   transition-property: margin-top, opacity, visibility !important;
-  opacity: 0.95 !important;
+  background-image: unset !important;
 }
 
 .browserContainer findbar:-moz-locale-dir(ltr),

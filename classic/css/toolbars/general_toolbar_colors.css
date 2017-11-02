@@ -22,4 +22,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
 }
 
+/* findbar */
+.browserContainer findbar, #viewSource #FindToolbar {
+  background: linear-gradient(#f9f9fa,#f9f9fa) !important;
+}
+
 /**/
