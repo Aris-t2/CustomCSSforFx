@@ -174,4 +174,7 @@ Restart Firefox for changes to take effect.</br>
 <i>experiments.enabled</i></br>
 <i>experiments.activeExperiment</i></br>
 <i>experiments.supported</i></br>
+<i>datareporting.healthreport.uploadEnabled</i></br>
+<i>nsITelemetry.canRecordBase</i></br>
+<i>nsITelemetry.canRecordExtended</i></br>
 </br>
