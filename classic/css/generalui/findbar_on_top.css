@@ -52,6 +52,12 @@
   right: 5px;
 }
 
+/* adjust for lw-themes excl. browsers compact themes */
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme .browserContainer findbar,
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme #viewSource #FindToolbar {
+  margin-top: 0px !important;
+}
+
 /* increase width to full window size *//*
 .browserContainer findbar,
 #viewSource #FindToolbar {

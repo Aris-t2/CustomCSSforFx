@@ -13,10 +13,6 @@
   box-shadow: unset !important;
 }
 
-#PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton-inv.svg") !important;
-}
-
 /* force roundness known from CTR *//*
 #PanelUI-menu-button  .toolbarbutton-badge-stack {
   border-radius: 2.5px !important;

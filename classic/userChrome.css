@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.1.9 ****/
+/**** v1.2.0 ****/
 /****************/
 
 
@@ -90,6 +90,11 @@
 /*@import url(./css/buttons/appbutton_on_navbar_color_nightly57p.css);*/
 /*@import url(./css/buttons/appbutton_on_navbar_color_palemoon.css);*/
 
+/* button icon - only use one at a time */
+/*@import url(./css/buttons/appbutton_on_navbar_icon_white.css);*/
+/*@import url(./css/buttons/appbutton_on_navbar_icon_dark.css);*/
+/*@import url(./css/buttons/appbutton_on_navbar_icon_grey.css);*/
+
 
 /****************************************************************************************/
 /* Application/hamburger button in Firefox titlebar (Windows only) **********************/
@@ -99,6 +104,8 @@
 /* only use one at a time */
 @import url(./css/buttons/appbutton_in_titlebar.css);
 /*@import url(./css/buttons/appbutton_in_titlebar_icon_only.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css);*/
+/*@import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css);*/
 
 /* button color - only use one at a time */
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);

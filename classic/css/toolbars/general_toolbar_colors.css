@@ -23,7 +23,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* findbar */
-.browserContainer findbar, #viewSource #FindToolbar {
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) .browserContainer findbar,
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) #viewSource #FindToolbar {
   background: linear-gradient(#f9f9fa,#f9f9fa) !important;
 }
 
