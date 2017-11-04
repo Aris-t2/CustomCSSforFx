@@ -1,10 +1,18 @@
-<h1>Instructions / Howto / Readme</h1></br>
+<h2>Instructions / Howto / Readme</h2></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#webextensions-can-not-modify-browsers-appearance-in-firefox-57>WebExtensions can not modify browsers appearance in Firefox 57+</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#where-to-find-firefox-profile-folder-and-what-is-the-correct-location-for-user-styles>Where to find Firefox profile folder and what is the correct location for user styles?</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-use-custom-user-styles>How to use custom user styles?</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-find-ids-and-attributes>How to find ids and attributes?</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-modify-custom-user-styles>How to modify custom user styles?</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#suggested-ui-tweaks>Suggested ui tweaks</a></br>
+<a href=https://github.com/Aris-t2/CustomCSSforFx/#aboutconfig-tweaks>'about:config' tweaks</a></br>
+</br>
+<h2>Want to support this project?</h2></br>
+<b><a href=https://www.paypal.me/tkpay>[ Paypal Me ]</a></b></br>
+</br>
 <h2>WebExtensions can not modify browsers appearance in Firefox 57+</h2></br>
 The only way to modify ui is adding custom CSS code to <b>userChrome.css</b> and <b>userContent.css</b> files inside browsers profile folder.</br>
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.</br>
-</br>
-<h2>Want to support me?</h2></br>
-<b><a href=https://www.paypal.me/tkpay>[ Paypal Me ]</a></b></br>
 </br>
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
