@@ -59,6 +59,22 @@ Open CSS files with a text editor. Look through the code and change/remove value
 Some files contain additional instructions to tweak the ui for individual cases.</br>
 Restart Firefox for changes to take effect.</br>
 </br>
+<i>Example</i></br>
+Open <code>./css/tabs/classic_squared_tabs.css</code> file</br>
+Look for the following part
+<code>
+/* unloaded/pending tabs color *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[pending] .tab-content {
+  background: red !important;
+}
+
+/* unread tabs color *//*
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[unread] .tab-content {
+  background: purple !important;
+}
+</code></br>
+Remove <code>/*</code>at <code>/* unloaded/pending tabs color *//*</code> lines end to make that part of the code active. Save the file and restart Firefox.</br>
+</br>
 <h2>Suggested ui tweaks</h2>
 </br>
 <b>Toolbar modes (suggestion: compact mode)</b></br>
