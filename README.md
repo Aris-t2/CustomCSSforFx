@@ -1,3 +1,4 @@
+<h1>Instructions / Howto / Readme</h1></br>
 <h2>WebExtensions can not modify browsers appearance in Firefox 57+</h2></br>
 The only way to modify ui is adding custom CSS code to <b>userChrome.css</b> and <b>userContent.css</b> files inside browsers profile folder.</br>
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.</br>
@@ -38,10 +39,10 @@ Restart browser after every change for changes to take effect.</br>
 </br>
 <b>Example</b></br>
 If you <u>want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
-<code>@import url(./css/buttons/classic_button_appearance_on_navbar.css);</code></br>
+<code>@import url(./css/buttons/buttons_on_navbar_classic_appearance.css);</code></br>
 </br>
 If you <u>do not want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
-<code>/* @import url(./css/buttons/classic_button_appearance_on_navbar.css); */</code></br>
+<code>/* @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); */</code></br>
 </br>
 Note</br>
 <code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
