@@ -61,9 +61,15 @@ Restart Firefox for changes to take effect.</br>
 </br>
 <i>Example</i></br>
 Open <code>./css/tabs/classic_squared_tabs.css</code> file</br>
-Look for the following part
-<code>/* unloaded/pending tabs color *//*</code></br>
+Look for <code>/* unloaded/pending tabs color *//*</code></br>
 Remove <code>/*</code> at lines end to make that part of the code active. Save the file and restart Firefox.</br>
+</br>
+<i>Example 2</i></br>
+Open <code>./userChrome.css</code> file</br>
+Look for <code>@import url(./css/locationbar/ac_popup_classic_with_two_lines.css);</code></br>
+Add <code>/*</code> at lines start and <code>*/</code> at lines end to remove classic popup.</br>
+Look for <code>/*@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css);*/</code></br>
+Remove <code>/*</code> at lines start and <code>*/</code> at lines end to enable this popup appearance.</br>
 </br>
 <h2>Suggested ui tweaks</h2>
 </br>
