@@ -126,7 +126,7 @@ Remove <code>/*</code> at lines start and <code>*/</code> at lines end to enable
 <i>browser.tabs.drawInTitlebar</i></br>
 </br>
 <b>HTML5 fullscreen warning</b></br>
-<i>full-screen-api.warning.delay</i> &gt; 0 (reduces delay)</br>
+<i>full-screen-api.warning.delay</i> &gt; 0 or -1 (reduces delay / hides warning)</br>
 <i>full-screen-api.warning.timeout</i> &gt; 0 (reduces delay)</br>
 </br>
 <b>Recently added bookmarks</b></br>
