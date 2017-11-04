@@ -34,7 +34,7 @@
 
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
-	background: unset !important;
+  background: unset !important;
 }
 
 /* default grey tabs */
@@ -287,9 +287,9 @@
 
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
-  border-left:  unset !important;
-  border-image:  unset !important;
-  border-image-slice:  unset !important;
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
   border-top-left-radius: 3px !important;
   border-top-right-radius: 3px !important;
 }
@@ -299,8 +299,8 @@
 .tabbrowser-tab:hover::before,
 .tabbrowser-tab[last-visible-tab]:hover::after,
 #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
-  border-image:  unset !important;
-  border-image-slice:  unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
   border-top-left-radius: 3px !important;
   border-top-right-radius: 3px !important;
 }

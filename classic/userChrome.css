@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.2.0 ****/
+/**** v1.2.1 ****/
 /****************/
 
 
@@ -17,6 +17,7 @@
 
 /* navigation toolbar buttons*/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css);
+/*@import url(./css/buttons/buttons_on_navbar_glass_appearance.css);*/
 /*@import url(./css/buttons/buttons_on_navbar_button_roundness.css);*/
 
 /* squared buttons - only use one at a time based on Firefox version */
@@ -125,8 +126,12 @@
 /* custom tab appearance - only use one at a time */
 @import url(./css/tabs/classic_squared_tabs.css);
 /*@import url(./css/tabs/classic_squared_tabs_aero.css);*/	/* <-- AERO colors */
+/*@import url(./css/tabs/classic_squared_tabs_transparent.css);*/
+/*@import url(./css/tabs/classic_squared_tabs_aeroglass.css);*/
 /*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
 /*@import url(./css/tabs/classic_squared_tabs_australized_aero.css);*/	/* <-- AERO colors */
+/*@import url(./css/tabs/classic_squared_tabs_australized_transparent.css);*/
+/*@import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css);*/
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs */
 /* only use one at a time */
@@ -143,6 +148,8 @@
 /* tabs not on top - only use one at a time */
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar_aero.css);*/	/* <-- AERO colors */
+/*@import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css);*/
+/*@import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css);*/
 
 /* restore empty/missing ta favicon - only use one at a time */
 @import url(./css/tabs/missing_tab_favicon_restored_default.css);
@@ -223,6 +230,8 @@
 /* toolbar colors grey/aero - only use one at a time */
 @import url(./css/toolbars/general_toolbar_colors.css);
 /*@import url(./css/toolbars/general_toolbar_colors_aero.css);*/	/* <-- AERO colors */
+/*@import url(./css/toolbars/general_toolbar_colors_transparent.css);*/
+/*@import url(./css/toolbars/general_toolbar_colors_aeroglass.css);*/
 
 /* toolbar text mode - not compatible with 'buttons on nav-bar classic appearance' */
 /* only use one at a time */

@@ -106,6 +106,9 @@
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
 }
+.tabbrowser-tab:not([selected]):not(:hover):-moz-lwtheme-brighttext {
+  background: unset !important;
+}
 
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
   border-top: 1px solid rgba(0,0,0,.5) !important;
