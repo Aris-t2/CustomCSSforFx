@@ -19,6 +19,7 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 </br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
+<code>Shift+F2</code> to open Firefox's command line, then enter the command <code>folder openprofile</code></br>
 </br>
 or</br>
 </br>
