@@ -29,8 +29,7 @@
   font-size: 14px !important;
 }
 
-.browserContainer findbar,
-#viewSource #FindToolbar {
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
   margin-top: -1px !important;
@@ -42,38 +41,40 @@
   background-image: unset !important;
 }
 
-.browserContainer findbar:-moz-locale-dir(ltr),
-#viewSource #FindToolbar:-moz-locale-dir(ltr) {
-  left: 5px;
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  border: 1px solid var(--tabs-border-color) !important;
+  border-top: 0px solid transparent !important;
 }
 
-.browserContainer findbar:-moz-locale-dir(rtl),
-#viewSource #FindToolbar:-moz-locale-dir(rtl) {
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  background-color: var(--toolbar-bgcolor) !important;
+  -moz-margin-end: -18px !important;
+  -moz-padding-end: 18px !important;
+}
+
+/* space before findbar */
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):-moz-locale-dir(ltr) {
+  left: 5px;
+}
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):-moz-locale-dir(rtl) {
   right: 5px;
 }
 
-/* adjust for lw-themes excl. browsers compact themes */
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme .browserContainer findbar,
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme #viewSource #FindToolbar {
-  margin-top: 0px !important;
-}
-
 /* increase width to full window size *//*
-.browserContainer findbar,
-#viewSource #FindToolbar {
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
 }
-  
+ 
+/**//*
 #viewSource #FindToolbar {
   background-color: -moz-dialog;
   color: -moz-dialogtext;
 }
 
 /* exclude these from Windows Classic theme */
-.browserContainer findbar .findbar-button,
-#viewSource #FindToolbar .findbar-button {
+:-moz-any(.browserContainer,#viewSource) .findbar-button {
   -moz-appearance: toolbarbutton !important;
   background: unset !important;
   box-shadow: unset !important;
@@ -90,11 +91,16 @@
   font-weight: bold !important;
 }
 :-moz-any(.browserContainer, #viewSource) .findbar-find-status {
-  color: red !important;
   font-style: italic !important;
 }
-:-moz-any(.browserContainer, #viewSource) .found-matches {
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  color: red !important;
+}
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .found-matches {
   color: green !important;
+}
+#main-window:-moz-lwtheme-brighttext :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  color: white !important;
 }
 
 /* status at findbars start *//*

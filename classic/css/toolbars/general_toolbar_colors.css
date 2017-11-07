@@ -23,9 +23,20 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* findbar */
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) .browserContainer findbar,
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) #viewSource #FindToolbar {
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   background: linear-gradient(#f9f9fa,#f9f9fa) !important;
+}
+
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  background: var(--lwt-header-image) !important;
+}
+
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) :-moz-any(.toolbarbutton-icon,.toolbarbutton-text) {
+  color: var(--lwt-text-color) !important;
+  fill: var(--lwt-text-color) !important;
+}
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme-brighttext :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) :-moz-any(.toolbarbutton-icon,.toolbarbutton-text) {
+  text-shadow: 1px 1px 1px black !important;
 }
 
 /**/
