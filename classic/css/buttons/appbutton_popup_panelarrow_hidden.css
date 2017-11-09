@@ -6,8 +6,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* experimental: remove arrow from panel popup */
 
+/* remove arrow from panel popup */
 #main-window[tabsintitlebar] #appMenu-popup .panel-arrowbox {
   visibility: collapse !important;
 }

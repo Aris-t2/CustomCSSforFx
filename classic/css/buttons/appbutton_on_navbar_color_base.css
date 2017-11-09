@@ -18,6 +18,7 @@
   border-radius: 2.5px !important;
 }
 */
+
 /* private mode color */
 #main-window[privatebrowsingmode=temporary] #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack{
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
@@ -40,4 +41,5 @@
 			  0 0 2px hsla(210,54%,20%,0),
 			  0 0 0 1px rgba(0,0,0,.8) inset !important;
 }
+
 /**/

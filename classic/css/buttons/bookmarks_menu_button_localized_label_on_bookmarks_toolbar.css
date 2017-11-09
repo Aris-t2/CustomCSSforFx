@@ -6,21 +6,31 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 /***************************************************************/
 /* localize bookmarks menu button label on bookmarks toolbar ***/
 /***************************************************************/
 
-/* Create custom button label **********************************/
-#PersonalToolbar #bookmarks-menu-button::after {
+/* show default button label ***********************************/
+#PersonalToolbar #bookmarks-menu-button .toolbarbutton-text {
+  display: block !important;
+}
+
+/* Create Fx56-like button label for supported locales *********/
+#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"]) .toolbarbutton-text {
+  display: none !important;
+}
+
+#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"])::after {
   visibility: visible !important;
   display: block !important;
 }
 
 /* English: 'Bookmarks' ****************************************/
-#PersonalToolbar #bookmarks-menu-button::after {
+#PersonalToolbar #bookmarks-menu-button[label="Bookmarks Menu"]::after {
   content: "Bookmarks" !important;
 }
-#PersonalToolbar #BMB_bookmarksPopup {
+#PersonalToolbar #bookmarks-menu-button[label="Bookmarks Menu"] #BMB_bookmarksPopup {
   -moz-margin-end: -40px !important;
 }
 

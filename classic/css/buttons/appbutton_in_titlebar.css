@@ -202,15 +202,6 @@
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
-/* remove extra dragspace even, if enabled, to ensure proper position on titlebar */
-#main-window[extradragspace][tabsintitlebar]:not([inFullscreen]) {
-  --space-above-tabbar: 0px !important;
-}
-/*#main-window[sizemode="normal"][chromehidden~="menubar"] #toolbar-menubar ~ #TabsToolbar,
-#main-window[sizemode="normal"] #toolbar-menubar[autohide="true"][inactive] ~ #TabsToolbar {
-  padding-top: 0px !important;
-}*/
-
 /* fix for 'buttons_on_navbar_squared_buttons.css' */
 #main-window[tabsintitlebar][uidensity=compact] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack,
 #main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #PanelUI-menu-button .toolbarbutton-badge-stack,
@@ -248,8 +239,7 @@
 }
 
 #main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)/*,
-#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button[type="menu-button"]:not(#nav-bar-overflow-button):not(#PlacesChevron) toolbarbutton :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)*/{
+#main-window[tabsintitlebar] toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   opacity: 1.0 !important;
   margin-bottom: unset !important;
 }
