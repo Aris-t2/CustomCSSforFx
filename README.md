@@ -1,3 +1,4 @@
+<b><a href=https://github.com/Aris-t2/CustomCSSforFx/releases>Classic Theme Restorer / Classic Toolbar Button / GlassMyFox</a> <a href=https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons> / NoiaButtons</a> (for Fx 57+)</b>
 <h2>Instructions / Howto / Readme</h2>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#want-to-support-this-project>Want to support this project?</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#webextensions-can-not-modify-browsers-appearance-in-firefox-57>WebExtensions can not modify browsers appearance in Firefox 57+</a></br>
