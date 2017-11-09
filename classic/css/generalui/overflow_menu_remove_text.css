@@ -1,0 +1,24 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.widget-overflow-list .subviewbutton-nav::after,
+#overflowMenu-customize-button,
+#widget-overflow-mainView .toolbarbutton-text {
+  display: none !important;
+}
+
+#widget-overflow-mainView toolbarbutton {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#widget-overflow-mainView {
+  min-width: 0 !important;
+  width: 30px !important;
+}

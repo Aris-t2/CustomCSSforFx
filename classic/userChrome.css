@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.2.2 ****/
+/**** v1.2.3 ****/
 /****************/
 
 
@@ -63,8 +63,6 @@
 /*@import url(./css/buttons/custom_backforward_large_ie8.css);*/
 /*@import url(./css/buttons/custom_backforward_large_ie9.css);*/
 /*@import url(./css/buttons/custom_backforward_large_kempelton.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff3_strata.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff2.css);*/
 /*@import url(./css/buttons/custom_backforward_small_ff3.css);*/
 /*@import url(./css/buttons/custom_backforward_small_ff3_strata.css);*/
 /*@import url(./css/buttons/custom_backforward_small_ff3_strata_orange.css);*/
@@ -177,6 +175,11 @@
 /*@import url(./css/tabs/tab_close_icon_size_18x18px.css);*/
 /*@import url(./css/tabs/tab_close_icon_size_20x20px.css);*/
 
+/* tab title - only use one at a time */
+/*@import url(./css/tabs/tab_title_left.css);*/
+/*@import url(./css/tabs/tab_title_centered.css);*/
+/*@import url(./css/tabs/tab_title_right.css);*/
+
 /* other tab settings */
 @import url(./css/tabs/tab_icon_colors.css);
 /*@import url(./css/tabs/tab_maxwidth.css);*/
@@ -192,7 +195,9 @@
 @import url(./css/generalui/findbar_on_top.css);
 @import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/bookmark_icons_colorized.css);
+/*@import url(./css/generalui/popup_animation_fade_time_reduced.css);*/
 /*@import url(./css/generalui/increase_ui_font_size.css);*/
+@import url(./css/generalui/overflow_menu_remove_text.css);
 
 /* back, forward, reload, stop, bookmarks in page context menu */
 /*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
@@ -265,6 +270,7 @@
 /* identity box */
 @import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css);
 @import url(./css/locationbar/identitybox_colors.css);
+/*@import url(./css/locationbar/identitybox_labels_hidden.css);*/
 
 /* padlock icons - only use one at a time */
 @import url(./css/locationbar/identitybox_padlock_icon_classic.css);

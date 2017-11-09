@@ -55,6 +55,10 @@
   border-radius: unset !important;
 }
 
+#main-window #navigator-toolbox #nav-bar #back-button  {
+  -moz-padding-start: 2px !important;
+}
+
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
 #main-window[uidensity=compact] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
