@@ -46,4 +46,9 @@
 
 #context-navigation > .menuitem-iconic{
   -moz-box-pack: start !important;
-} 
+}
+
+/* fix for German locale */
+#context-bookmarkpage[aria-label*="Lesezeichen"] {
+  -moz-padding-end: 10px !important;
+}

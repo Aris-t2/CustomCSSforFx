@@ -60,6 +60,7 @@
 
 /* toolbar colors */
 #TabsToolbar:not(:-moz-lwtheme){
+  -moz-appearance: none !important;
   background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
 }
 #TabsToolbar:-moz-lwtheme{

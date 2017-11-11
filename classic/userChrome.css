@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 /****************/
-/**** v1.2.4 ****/
+/**** v1.2.5 ****/
 /****************/
 
 
@@ -142,8 +142,11 @@
 /* remove top corner roundness */
 /*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
 
-/**** tabs below navigation and bookmarks toolbars **************************/
-/* tabs not on top - only use one at a time */
+/**** tabs toolbar position (not in titlebar / not on top)********************************/
+/* only use one at a time */
+/**** tabs below titlebar (Fx56-like) ****************************************************/
+/*@import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css);*/
+/**** tabs below navigation and bookmarks toolbars (tabs not on top) *********************/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
 /*@import url(./css/tabs/tabs_below_navigation_toolbar_aero.css);*/	/* <-- AERO colors */
 /*@import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css);*/
@@ -197,7 +200,7 @@
 @import url(./css/generalui/bookmark_icons_colorized.css);
 /*@import url(./css/generalui/popup_animation_fade_time_reduced.css);*/
 /*@import url(./css/generalui/increase_ui_font_size.css);*/
-@import url(./css/generalui/overflow_menu_remove_text.css);
+/*@import url(./css/generalui/overflow_menu_remove_text.css);*/
 
 /* back, forward, reload, stop, bookmarks in page context menu */
 /*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
