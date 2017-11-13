@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 
-#nav-bar .toolbarbutton-icon,
-#nav-bar .toolbarbutton-badge-stack {
-  border-radius: 20px !important;
+/* menubar visibility in fullscreen mode */
+#main-window[inFullscreen] #toolbar-menubar {
+  visibility: visible !important;
 }

@@ -7,14 +7,7 @@
 /****************************************************************************************/
 
 
-/* menubar visibility in fullscreen mode */
-#main-window[inFullscreen] #toolbar-menubar {
-  visibility: visible !important;
-}
-
 /* bookmarks toolbar visibility in fullscreen mode */
 #main-window[inFullscreen] #PersonalToolbar {
   visibility: visible !important;
 }
-
-/**/

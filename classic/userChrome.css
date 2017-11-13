@@ -1,302 +1,307 @@
 /*AGENT_SHEET*/
 
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx ************************************/
-/****************************************************************************************/
+/* Firefox 57+ userChrome.css tweaks ************************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* by Aris (aris-addons@gmx.net)*****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
 
-/****************/
-/**** v1.2.5 ****/
-/****************/
+/************************************************************************************************/
+/* Custom CSS for Firefox ***********************************************************************/
+/* version 1.2.6 ********************************************************************************/
+/************************************************************************************************/
 
+/************************************************************************************************/
+/* TOOLBAR BUTTONS ******************************************************************************/
+/************************************************************************************************/
 
-/****************************************************************************************/
-/* TOOLBAR BUTTONS **********************************************************************/
-/****************************************************************************************/
-
-/* navigation toolbar buttons*/
+/* navigation toolbar buttons appearance - only use one at a time *******************************/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css);
-/*@import url(./css/buttons/buttons_on_navbar_glass_appearance.css);*/
-/*@import url(./css/buttons/buttons_on_navbar_button_roundness.css);*/
+/* @import url(./css/buttons/buttons_on_navbar_glass_appearance.css); */
 
-/* squared buttons - only use one at a time based on Firefox version */
-/*@import url(./css/buttons/buttons_on_navbar_squared_buttons_fx57.css);*/
-/*@import url(./css/buttons/buttons_on_navbar_squared_buttons_fx58.css);*/
+/* navigation toolbar buttons - button roundness (edit file to set different roundness) *********/
+/* @import url(./css/buttons/buttons_on_navbar_button_roundness.css); */
 
-/* icon appearance - only use one at a time */
+/* squared buttons - only use one at a time (based on Firefox version) **************************/
+/* @import url(./css/buttons/buttons_on_navbar_squared_buttons_fx57.css); */
+/* @import url(./css/buttons/buttons_on_navbar_squared_buttons_fx58.css); */
+
+/* icon appearance - only use one at a time *****************************************************/
 @import url(./css/buttons/icons_colorized.css);
-/*@import url(./css/buttons/icons_custom_icons.css);*/
-/*@import url(./css/buttons/icons_white_icons.css);*/
+/* @import url(./css/buttons/icons_white_icons.css); */
+/* @import url(./css/buttons/icons_custom_icons.css); */
 
-/* appbutton popup */
-@import url(./css/buttons/appbutton_popup_icons_colorized.css);
-/*@import url(./css/buttons/appbutton_popup_sync_hidden.css);*/
-/*@import url(./css/buttons/appbutton_popup_panelarrow_hidden.css);*/  /* <--- experimental */
-
-/* bookmarks menu button and popup appearance */
+/* bookmarks menu button - 'button & popup' appearance ******************************************/
 @import url(./css/buttons/bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css);
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css);
-/*@import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css);*/
-/*@import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css);*/
-/*@import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css);*/
+/* @import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css); */
+/* @import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css); */
+/* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); */
 
-/* old bookmarks toolbar button appearance - 'disable' for Windows Classic OS theme*/
+/* old bookmarks toolbar button appearance - 'disable' for Windows 7s classic OS theme **********/
 @import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css);
 
-/* other button settings */
-/*@import url(./css/buttons/forward_button_hide_when_disabled.css);*/
-/*@import url(./css/buttons/back_and_forward_separated_history_popups.css);*/
-/*@import url(./css/buttons/zoom_buttons_hide_reset.css);*/
+/* other button settings ************************************************************************/
+/* @import url(./css/buttons/forward_button_hide_when_disabled.css); */
+/* @import url(./css/buttons/back_and_forward_separated_history_popups.css); */
+/* @import url(./css/buttons/zoom_buttons_hide_reset.css); */
+
+/* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
+/* @import url(./css/buttons/custom_backforward_large_ff2.css); */
+/* @import url(./css/buttons/custom_backforward_large_ff3.css); */
+/* @import url(./css/buttons/custom_backforward_large_ff3_strata.css); */
+/* @import url(./css/buttons/custom_backforward_large_ff3_strata_orange.css); */
+/* @import url(./css/buttons/custom_backforward_large_ff3_strata_red.css); */
+/* @import url(./css/buttons/custom_backforward_large_ie8.css); */
+/* @import url(./css/buttons/custom_backforward_large_ie9.css); */
+/* @import url(./css/buttons/custom_backforward_large_kempelton.css); */
+/* @import url(./css/buttons/custom_backforward_small_ff3.css); */
+/* @import url(./css/buttons/custom_backforward_small_ff3_strata.css); */
+/* @import url(./css/buttons/custom_backforward_small_ff3_strata_orange.css); */
+/* @import url(./css/buttons/custom_backforward_small_ff3_strata_red.css); */
+/* @import url(./css/buttons/custom_backforward_small_ie8.css); */
+/* @import url(./css/buttons/custom_backforward_small_ie9.css); */
+/* @import url(./css/buttons/custom_backforward_small_kempelton.css); */
 
 
-/****************************************************************************************/
-/* Custom back & forward buttons appearance *********************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* APPLICATION/HAMBURGER BUTTON *****************************************************************/
+/************************************************************************************************/
 
-/* only use one at a time */
-/*@import url(./css/buttons/custom_backforward_large_ff2.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ff3.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ff3_strata.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ff3_strata_orange.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ff3_strata_red.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ie8.css);*/
-/*@import url(./css/buttons/custom_backforward_large_ie9.css);*/
-/*@import url(./css/buttons/custom_backforward_large_kempelton.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff3.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff3_strata.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff3_strata_orange.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ff3_strata_red.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ie8.css);*/
-/*@import url(./css/buttons/custom_backforward_small_ie9.css);*/
-/*@import url(./css/buttons/custom_backforward_small_kempelton.css);*/
+/* application/hamburger button popup ***********************************************************/
+@import url(./css/buttons/appbutton_popup_icons_colorized.css);
+/* @import url(./css/buttons/appbutton_popup_sync_hidden.css); */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden.css); */  /* <--- experimental */
 
 
-/****************************************************************************************/
-/* Application/hamburger button on navigation toolbar ***********************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* button on navigation toolbar *****************************************************************/
+/************************************************************************************************/
 
-/*@import url(./css/buttons/appbutton_on_navbar_start_position.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_separator_hidden.css);*/
+/* @import url(./css/buttons/appbutton_on_navbar_start_position.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_separator_hidden.css); */
 
-/* button color - only use one at a time */
-/*@import url(./css/buttons/appbutton_on_navbar_color_autocolor.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_autocolor57p.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_orange.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_aurora.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_nightly.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_deved57p.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_nightly57p.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_color_palemoon.css);*/
+/* button color - only use one at a time ********************************************************/
+/* @import url(./css/buttons/appbutton_on_navbar_color_autocolor.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_autocolor57p.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_orange.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_aurora.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_nightly.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_deved57p.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_nightly57p.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_color_palemoon.css); */
 
-/* button icon - only use one at a time */
-/*@import url(./css/buttons/appbutton_on_navbar_icon_white.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_icon_dark.css);*/
-/*@import url(./css/buttons/appbutton_on_navbar_icon_grey.css);*/
+/* button icon - only use one at a time *********************************************************/
+/* @import url(./css/buttons/appbutton_on_navbar_icon_white.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_icon_dark.css); */
+/* @import url(./css/buttons/appbutton_on_navbar_icon_grey.css); */
 
 
-/****************************************************************************************/
-/* Application/hamburger button in Firefox titlebar (Windows only) **********************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* button in Firefox titlebar - if menubar is disabled (Windows only) ***************************/
+/************************************************************************************************/
 
-/* appbutton in titlebar (if menubar is disabled) */
-/* only use one at a time */
+/* only use one at a time ***********************************************************************/
 @import url(./css/buttons/appbutton_in_titlebar.css);
-/*@import url(./css/buttons/appbutton_in_titlebar_icon_only.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css);*/
+/* @import url(./css/buttons/appbutton_in_titlebar_icon_only.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css); */
 
-/* button color - only use one at a time */
+/* button color - only use one at a time ********************************************************/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css);
-/*@import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_transparent.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_aurora.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_nightly.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_deved57p.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_nightly57p.css);*/
-/*@import url(./css/buttons/appbutton_in_titlebar_palemoon.css);*/
+/* @import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_transparent.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_aurora.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_nightly.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_deved57p.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_nightly57p.css); */
+/* @import url(./css/buttons/appbutton_in_titlebar_palemoon.css); */
 
 
-/****************************************************************************************/
-/* TABS - appearance and position *******************************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* TABS - appearance and position ***************************************************************/
+/************************************************************************************************/
 
-/* custom tab appearance - only use one at a time */
+/* custom tab appearance - only use one at a time ***********************************************/
 @import url(./css/tabs/classic_squared_tabs.css);
-/*@import url(./css/tabs/classic_squared_tabs_aero.css);*/	/* <-- AERO colors */
-/*@import url(./css/tabs/classic_squared_tabs_transparent.css);*/
-/*@import url(./css/tabs/classic_squared_tabs_aeroglass.css);*/
-/*@import url(./css/tabs/classic_squared_tabs_australized.css);*/
-/*@import url(./css/tabs/classic_squared_tabs_australized_aero.css);*/	/* <-- AERO colors */
-/*@import url(./css/tabs/classic_squared_tabs_australized_transparent.css);*/
-/*@import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css);*/
+/* @import url(./css/tabs/classic_squared_tabs_aero.css); */	/* <-- AERO colors */
+/* @import url(./css/tabs/classic_squared_tabs_transparent.css); */
+/* @import url(./css/tabs/classic_squared_tabs_aeroglass.css); */
+/* @import url(./css/tabs/classic_squared_tabs_australized.css); */
+/* @import url(./css/tabs/classic_squared_tabs_australized_aero.css); */	/* <-- AERO colors */
+/* @import url(./css/tabs/classic_squared_tabs_australized_transparent.css); */
+/* @import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css); */
 
-/* custom tab colors for default/active/hovered/unread/unloaded tabs */
-/* only use one at a time */
-/*@import url(./css/tabs/custom_colors_for_squared_tabs.css);*/
-/*@import url(./css/tabs/custom_colors_for_squared_tabs_australized.css);*/
+/* custom tab colors for default/active/hovered/unread/unloaded tabs - only use one at a time ***/
+/* @import url(./css/tabs/custom_colors_for_squared_tabs.css); */
+/* @import url(./css/tabs/custom_colors_for_squared_tabs_australized.css); */
 
-/* text colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs */
-/*@import url(./css/tabs/custom_text_settings.css);*/
+/* text colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **************/
+/* @import url(./css/tabs/custom_text_settings.css); */
 
-/* remove top corner roundness */
-/*@import url(./css/tabs/classic_squared_tabs_fully_squared.css);*/
+/* remove top corner roundness ******************************************************************/
+/* @import url(./css/tabs/classic_squared_tabs_fully_squared.css); */
 
-/**** tabs toolbar position (not in titlebar / not on top)********************************/
-/* only use one at a time */
-/**** tabs below titlebar (Fx56-like) ****************************************************/
-/*@import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css);*/
-/**** tabs below navigation and bookmarks toolbars (tabs not on top) *********************/
-/*@import url(./css/tabs/tabs_below_navigation_toolbar.css);*/
-/*@import url(./css/tabs/tabs_below_navigation_toolbar_aero.css);*/	/* <-- AERO colors */
-/*@import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css);*/
-/*@import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css);*/
+/* TABS TOOLBAR POSITION (not in titlebar / not on top) - only use one at a time ****************/
+/* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
+/* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); */
+/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar.css); */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_aero.css); */	/* <-- AERO colors */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); */
 
-/* restore empty/missing ta favicon - only use one at a time */
+/* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css);
-/*@import url(./css/tabs/missing_tab_favicon_restored_sheet.css);*/
-/*@import url(./css/tabs/missing_tab_favicon_restored_dotted.css);*/
-/*@import url(./css/tabs/missing_tab_favicon_restored_dotted_white.css);*/
+/* @import url(./css/tabs/missing_tab_favicon_restored_sheet.css); */
+/* @import url(./css/tabs/missing_tab_favicon_restored_dotted.css); */
+/* @import url(./css/tabs/missing_tab_favicon_restored_dotted_white.css); */
 
-/* custom tab loading animation - only use one at a time */
-/*@import url(./css/tabs/tab_throbber_blue_fx56.css);*/
-/*@import url(./css/tabs/tab_throbber_blue.css);*/
-/*@import url(./css/tabs/tab_throbber_grey_classic.css);*/
-/*@import url(./css/tabs/tab_throbber_green.css);*/
-/*@import url(./css/tabs/tab_throbber_orange_ubuntu.css);*/
+/* custom tab loading animation - only use one at a time ****************************************/
+/* @import url(./css/tabs/tab_throbber_blue_fx56.css); */
+/* @import url(./css/tabs/tab_throbber_blue.css); */
+/* @import url(./css/tabs/tab_throbber_grey_classic.css); */
+/* @import url(./css/tabs/tab_throbber_green.css); */
+/* @import url(./css/tabs/tab_throbber_orange_ubuntu.css); */
 
-/* tab close icon settings - only use one at a time */
+/* tab close icon settings - only use one at a time *********************************************/
 @import url(./css/tabs/tab_close_always_visible.css);
-/*@import url(./css/tabs/tab_close_on_active_tab_only.css);*/
-/*@import url(./css/tabs/tab_close_show_on_hover_only.css);*/
-/*@import url(./css/tabs/tab_close_hidden.css);*/
-/*@import url(./css/tabs/tab_close_hidden_for_only_one_visible_tab.css);*/
-/*@import url(./css/tabs/tab_close_at_tabs_start.css);*/
+/* @import url(./css/tabs/tab_close_on_active_tab_only.css); */
+/* @import url(./css/tabs/tab_close_show_on_hover_only.css); */
+/* @import url(./css/tabs/tab_close_hidden.css); */
+/* @import url(./css/tabs/tab_close_hidden_for_only_one_visible_tab.css); */
+/* @import url(./css/tabs/tab_close_at_tabs_start.css); */
 
-/* tab close icon size override - only use one at a time */
-/*@import url(./css/tabs/tab_close_icon_size_16x16px.css);*/
-/*@import url(./css/tabs/tab_close_icon_size_18x18px.css);*/
-/*@import url(./css/tabs/tab_close_icon_size_20x20px.css);*/
+/* tab close icon size override - only use one at a time ****************************************/
+/* @import url(./css/tabs/tab_close_icon_size_16x16px.css); */
+/* @import url(./css/tabs/tab_close_icon_size_18x18px.css); */
+/* @import url(./css/tabs/tab_close_icon_size_20x20px.css); */
 
-/* tab title - only use one at a time */
-/*@import url(./css/tabs/tab_title_left.css);*/
-/*@import url(./css/tabs/tab_title_centered.css);*/
-/*@import url(./css/tabs/tab_title_right.css);*/
+/* tab title - only use one at a time ***********************************************************/
+/* @import url(./css/tabs/tab_title_left.css); */
+/* @import url(./css/tabs/tab_title_centered.css); */
+/* @import url(./css/tabs/tab_title_right.css); */
 
-/* other tab settings */
+/* other tab settings ***************************************************************************/
 @import url(./css/tabs/tab_icon_colors.css);
-/*@import url(./css/tabs/tab_maxwidth.css);*/
-/*@import url(./css/tabs/tab_titles_remove_blur.css);*/
-/*@import url(./css/tabs/alltabs_button_always_visible.css);*/
-/*@import url(./css/tabs/pinnedtab_empty_favicon_hidden.css);*/
+/* @import url(./css/tabs/tab_maxwidth.css); */
+/* @import url(./css/tabs/tab_titles_remove_blur.css); */
+/* @import url(./css/tabs/alltabs_button_always_visible.css); */
+/* @import url(./css/tabs/pinnedtab_empty_favicon_hidden.css); */
 
 
-/****************************************************************************************/
-/* GENERAL UI ***************************************************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* GENERAL UI ***********************************************************************************/
+/************************************************************************************************/
 
 @import url(./css/generalui/findbar_on_top.css);
 @import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/bookmark_icons_colorized.css);
-/*@import url(./css/generalui/popup_animation_fade_time_reduced.css);*/
-/*@import url(./css/generalui/increase_ui_font_size.css);*/
-/*@import url(./css/generalui/overflow_menu_remove_text.css);*/
+/* @import url(./css/generalui/popup_animation_fade_time_reduced.css); */
+/* @import url(./css/generalui/increase_ui_font_size.css); */
+/* @import url(./css/generalui/overflow_menu_remove_text.css); */
 
-/* back, forward, reload, stop, bookmarks in page context menu */
-/*@import url(./css/generalui/context_bfrsb_icons_colorized.css);*/
-/* labels - only use one at a time */
+/* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
+/* @import url(./css/generalui/context_bfrsb_icons_colorized.css); */
+/* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css);
-/*@import url(./css/generalui/context_bfrsb_labels_with_icons.css);*/
+/* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); */
 
-/* searchbar */
+/* close icons for general ui and tabs - only use one at a time *********************************/
+/* @import url(./css/generalui/close_icon_windows7.css); */
+/* @import url(./css/generalui/close_icon_windows7inverted.css); */
+/* @import url(./css/generalui/close_icon_windows7v2.css); */
+/* @import url(./css/generalui/close_icon_gchrome.css); */
+/* @import url(./css/generalui/close_icon_red.css); */
+/* @import url(./css/generalui/close_icon_windows10.css); */
+/* @import url(./css/generalui/close_icon_windows10inverted.css); */
+/* @import url(./css/generalui/close_icon_windows10red.css); */
+/* @import url(./css/generalui/close_icon_windows10redv2.css); */
+
+/* SEARCHBAR ************************************************************************************/
 @import url(./css/generalui/searchbar_glassplus_indicator_hidden.css);
-/*@import url(./css/generalui/searchbar_popup_engines_hidden.css);*/
+/* @import url(./css/generalui/searchbar_popup_engines_hidden.css); */
 
-/* close icons for general ui and tabs - only use one at a time */
-/*@import url(./css/generalui/close_icon_windows7.css);*/
-/*@import url(./css/generalui/close_icon_windows7inverted.css);*/
-/*@import url(./css/generalui/close_icon_windows7v2.css);*/
-/*@import url(./css/generalui/close_icon_gchrome.css);*/
-/*@import url(./css/generalui/close_icon_red.css);*/
-/*@import url(./css/generalui/close_icon_windows10.css);*/
-/*@import url(./css/generalui/close_icon_windows10inverted.css);*/
-/*@import url(./css/generalui/close_icon_windows10red.css);*/
-/*@import url(./css/generalui/close_icon_windows10redv2.css);*/
-
-
-/****************************************************************************************/
-/* Toolbars *****************************************************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* TOOLBARS *************************************************************************************/
+/************************************************************************************************/
 
 @import url(./css/toolbars/toolbars_old_padding.css);
 @import url(./css/toolbars/tabs_toolbar_adjustments.css);
+/* @import url(./css/toolbars/navbar_more_compact_mode.css); */
+/* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); */
+
+/* bookmarks toolbar  ***************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
-/*@import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css);*/ /* <--- experimental */
-/*@import url(./css/toolbars/navbar_more_compact_mode.css);*/
-/*@import url(./css/toolbars/toolbars_in_fullscreen_mode.css);*/
+/* @import url(./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css); */
+/* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); */ /* <--- experimental */
 
-/* toolbar colors grey/aero - only use one at a time */
+/* toolbar colors - only use one at a time ******************************************************/
 @import url(./css/toolbars/general_toolbar_colors.css);
-/*@import url(./css/toolbars/general_toolbar_colors_aero.css);*/	/* <-- AERO colors */
-/*@import url(./css/toolbars/general_toolbar_colors_transparent.css);*/
-/*@import url(./css/toolbars/general_toolbar_colors_aeroglass.css);*/
+/* @import url(./css/toolbars/general_toolbar_colors_aero.css); */	/* <-- AERO colors */
+/* @import url(./css/toolbars/general_toolbar_colors_transparent.css); */
+/* @import url(./css/toolbars/general_toolbar_colors_aeroglass.css); */
 
-/* toolbar text mode - not compatible with 'buttons on nav-bar classic appearance' */
-/* only use one at a time */
-/*@import url(./css/toolbars/toolbar_mode_icons_and_text.css);*/ /* <--- experimental */
-/*@import url(./css/toolbars/toolbar_mode_text.css);*/ /* <--- experimental */
+/* TOOLBAR TEXT MODES - only use one at a time **************************************************/
+/* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); */  /* <--- experimental */
+/* @import url(./css/toolbars/toolbar_mode_text.css); */  /* <--- experimental */
 
 
-/****************************************************************************************/
-/* LOCATION BAR *************************************************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* LOCATION BAR *********************************************************************************/
+/************************************************************************************************/
 
 @import url(./css/locationbar/locationbar_adjustments.css);
 @import url(./css/locationbar/compact_mode_reduce_fontsize.css);
-/*@import url(./css/locationbar/background_color_dark.css);*/
-/*@import url(./css/locationbar/locationbar_border_roundness.css);*/
-/*@import url(./css/locationbar/locationbar_reduce_height.css);*/ /* <--- experimental */
+/* @import url(./css/locationbar/background_color_dark.css); */
+/* @import url(./css/locationbar/locationbar_border_roundness.css); */
+/* @import url(./css/locationbar/locationbar_reduce_height.css); */ /* <--- experimental */
 
-/* autocomplete/history dropmarker */
+/* autocomplete/history dropmarker **************************************************************/
 @import url(./css/locationbar/dropmarker_at_the_end.css);
 @import url(./css/locationbar/dropmarker_visible.css);
 
-/* additional icons/buttons and third party page action buttons */
+/* additional icons/buttons and third party page action buttons *********************************/
 @import url(./css/locationbar/icons_colorized.css);
 @import url(./css/locationbar/reader_alternative_icon.css);
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css);
-/*@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css);*/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css);
-/*@import url(./css/locationbar/zoom_button_hidden.css);*/
-/*@import url(./css/locationbar/go_button_in_location_bar_hidden.css);*/
+/* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); */
+/* @import url(./css/locationbar/popup_blocked_button_hidden.css); */
+/* @import url(./css/locationbar/zoom_button_hidden.css); */
+/* @import url(./css/locationbar/go_button_in_location_bar_hidden.css); */
 
-/* identity box */
+/* identity box / page identity button **********************************************************/
 @import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css);
 @import url(./css/locationbar/identitybox_colors.css);
-/*@import url(./css/locationbar/identitybox_labels_hidden.css);*/
+/* @import url(./css/locationbar/identitybox_labels_hidden.css); */
 
-/* padlock icons - only use one at a time */
+/* padlock icons in identity box / page identity button - only use one at a time ****************/
 @import url(./css/locationbar/identitybox_padlock_icon_classic.css);
-/*@import url(./css/locationbar/identitybox_padlock_icon_classic2.css);*/
-/*@import url(./css/locationbar/identitybox_padlock_icon_modern.css);*/
-/*@import url(./css/locationbar/identitybox_padlock_icon_modern2.css);*/
+/* @import url(./css/locationbar/identitybox_padlock_icon_classic2.css); */
+/* @import url(./css/locationbar/identitybox_padlock_icon_modern.css); */
+/* @import url(./css/locationbar/identitybox_padlock_icon_modern2.css); */
 
 
-/****************************************************************************************/
-/* Location bars autocomplete popup appearance ******************************************/
-/****************************************************************************************/
+/************************************************************************************************/
+/* LOCATION BAR - 'autocomplete popup' appearance ***********************************************/
+/************************************************************************************************/
 
-/* popup content order/appearance - only use one at a time */
+/* popup content order/appearance - only use one at a time **************************************/
 @import url(./css/locationbar/ac_popup_classic_with_two_lines.css);
-/*@import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css);*/
-/*@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css);*/
-/*@import url(./css/locationbar/ac_popup_item_title_hidden.css);*/
-/*@import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css);*/
+/* @import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css); */
+/* @import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css); */
+/* @import url(./css/locationbar/ac_popup_item_title_hidden.css); */
+/* @import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css); */
 
-/*@import url(./css/locationbar/ac_popup_result_highlighting_aero.css);*/
-/*@import url(./css/locationbar/ac_popup_keysearch_bold.css);*/
-/*@import url(./css/locationbar/ac_popup_keysearch_underline.css);*/
-/*@import url(./css/locationbar/ac_popup_result_separator.css);*/
-/*@import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css);*/
+/* result settings/appearance *******************************************************************/
+/* @import url(./css/locationbar/ac_popup_result_highlighting_aero.css); */
+/* @import url(./css/locationbar/ac_popup_keysearch_bold.css); */
+/* @import url(./css/locationbar/ac_popup_keysearch_underline.css); */
+/* @import url(./css/locationbar/ac_popup_result_separator.css); */
+/* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); */
 
-/**/
+
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
