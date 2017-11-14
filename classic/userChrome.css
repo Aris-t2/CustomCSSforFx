@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.2.7 ********************************************************************************/
+/* version 1.2.8 ********************************************************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
@@ -199,6 +199,7 @@
 @import url(./css/generalui/findbar_on_top.css);
 @import url(./css/generalui/private_mode_indicator_hidden.css);
 @import url(./css/generalui/bookmark_icons_colorized.css);
+/* @import url(./css/generalui/send_to_device_menuitems_hidden.css); */
 /* @import url(./css/generalui/popup_animation_fade_time_reduced.css); */
 /* @import url(./css/generalui/increase_ui_font_size.css); */
 /* @import url(./css/generalui/overflow_menu_remove_text.css); */

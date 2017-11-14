@@ -6,11 +6,13 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 /* show favicon for tabs without favicons */
 .tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
   display: inline !important;
 }
-.tabbrowser-tab:not([pinned])[busy] .tab-throbber + .tab-icon-image:not([src]) {
+
+.tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
   display: none !important;
 }
 

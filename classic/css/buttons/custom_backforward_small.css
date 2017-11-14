@@ -91,3 +91,7 @@
   opacity: 1.0 !important;
   filter: grayscale(50%) !important;
 }
+
+#main-window #navigator-toolbox #nav-bar :-moz-any(#back-button, #forward-button)[disabled] {
+  opacity: 1.0 !important;
+}

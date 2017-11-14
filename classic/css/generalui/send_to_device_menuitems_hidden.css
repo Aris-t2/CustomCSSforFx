@@ -6,18 +6,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* show favicon for tabs without favicons */
-.tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
-  display: inline !important;
-}
 
-#main-window .tabbrowser-tab[pinned] .tab-icon-image:not([src]),
-#main-window .tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
-  list-style-image:url('./../../image/tab_favicon_dotted_white.png') !important;
-}
-
-.tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
+#context-sep-sendpagetodevice,
+#context-sendpagetodevice,
+#context-sep-sendlinktodevice,
+#context-sendlinktodevice,
+#pageAction-panel-sendToDevice {
   display: none !important;
 }
-
-/**/

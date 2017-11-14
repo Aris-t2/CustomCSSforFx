@@ -106,3 +106,7 @@
 #nav-bar toolbarbutton[disabled=true] > .toolbarbutton-icon {
   opacity: .6 !important;
 }
+
+#nav-bar toolbarbutton[disabled=true]{
+  opacity: 1.0 !important;
+}

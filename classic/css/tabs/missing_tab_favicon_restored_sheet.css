@@ -16,7 +16,7 @@
   list-style-image:url('./../../image/tab_favicon_sheet.png') !important;
 }
 
-.tabbrowser-tab:not([pinned])[busy] .tab-throbber + .tab-icon-image:not([src]) {
+.tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
   display: none !important;
 }
 
