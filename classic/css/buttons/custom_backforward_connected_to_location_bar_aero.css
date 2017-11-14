@@ -1,0 +1,19 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import url(./custom_backforward_connected_to_location_bar.css);
+
+/* color has to be adjusted depending toolbar color */
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before,
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before,
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before {
+  background: #ddebf9 !important;
+}

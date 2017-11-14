@@ -1,0 +1,117 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* toolbar contents order has to be '... back button, forward button, location bar ...' */
+
+
+/* hide disabled forward button in normal and touch modes */
+#main-window:not([customizing=true]):not([uidensity=compact]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] {
+  visibility: collapse !important;
+}
+
+/* back button opacity */
+#main-window:not([uidensity=compact]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button {
+  opacity: 1.0 !important;
+}
+
+/* compact mode */
+#main-window[uidensity=compact] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button  {
+  -moz-margin-end: 0px !important;
+  -moz-padding-end: 0px !important;
+}
+#main-window[uidensity=compact] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button {
+  -moz-margin-start: -1px !important;
+  -moz-padding-start: 0px !important;
+}
+
+/* normal mode */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -16px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled]){
+  -moz-margin-start: -12px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button:not([disabled]) + #urlbar-container {
+  -moz-margin-start: -8px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 14px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before {
+  display: block !important;
+  content: "" !important;
+  width: 32px !important;
+  height: 32px !important;
+  -moz-margin-start: -17px !important;
+  -moz-margin-end: -15px !important;
+  border-radius: 20px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before {
+  display: block !important;
+  content: "" !important;
+  width: 32px !important;
+  height: 32px !important;
+  -moz-margin-start: -23px !important;
+  -moz-margin-end: -9px !important;
+  border-radius: 20px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled]) .toolbarbutton-icon {
+  width: 38px !important;
+  height: 30px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  -moz-padding-start: 14px !important;
+}
+
+/* touch mode */
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -20px !important;
+}
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled]){
+  -moz-margin-start: -12px !important;
+}
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button:not([disabled]) + #urlbar-container {
+  -moz-margin-start: -8px !important;
+}
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 18px !important;
+}
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before {
+  display: block !important;
+  content: "" !important;
+  width: 40px !important;
+  height: 40px !important;
+  -moz-margin-start: -20px !important;
+  -moz-margin-end: -20px !important;
+  border-radius: 20px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window[uidensity=touch] #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before {
+  display: block !important;
+  content: "" !important;
+  width: 40px !important;
+  height: 40px !important;
+  -moz-margin-start: -30px !important;
+  -moz-margin-end: -10px !important;
+  border-radius: 20px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window[uidensity=touch]  #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled]) .toolbarbutton-icon {
+  width: 40px !important;
+  height: 32px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  -moz-padding-start: 15px !important;
+}

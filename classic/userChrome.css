@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.2.6 ********************************************************************************/
+/* version 1.2.7 ********************************************************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
@@ -47,6 +47,8 @@
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); */
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
+/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); */   /* <--- experimental */
+/* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); */	/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); */
 /* @import url(./css/buttons/custom_backforward_large_ff3.css); */
 /* @import url(./css/buttons/custom_backforward_large_ff3_strata.css); */

@@ -110,6 +110,17 @@
   background: unset !important;
 }
 
+/* compact dark lw-theme */
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] .tabs-newtab-button:-moz-lwtheme-brighttext,
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
+  background-image: linear-gradient(rgba(71,71,71,.99), rgba(71,71,71,.99)) !important;
+}
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] .tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
+  background-image: linear-gradient(rgba(91,91,91,.99), rgba(91,91,91,.99)) !important;
+}
+
+
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
   border-top: 1px solid rgba(0,0,0,.5) !important;
   border-left: 1px solid rgba(0,0,0,.4) !important; 
