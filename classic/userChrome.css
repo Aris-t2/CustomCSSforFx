@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.2.8 ********************************************************************************/
+/* version 1.2.9 ********************************************************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
@@ -69,6 +69,9 @@
 /************************************************************************************************/
 /* APPLICATION/HAMBURGER BUTTON *****************************************************************/
 /************************************************************************************************/
+
+/* application/hamburger button hidden - don't use any other appbutton options in that case *****/
+/* @import url(./css/buttons/appbutton_hidden.css); */
 
 /* application/hamburger button popup ***********************************************************/
 @import url(./css/buttons/appbutton_popup_icons_colorized.css);
@@ -209,6 +212,8 @@
 /* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css);
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); */
+/* adjustment for Windows Classic OS theme ******************************************************/
+/* @import url(./css/generalui/context_bfrsb_labels_adjustment_windows_classic.css); */
 
 /* close icons for general ui and tabs - only use one at a time *********************************/
 /* @import url(./css/generalui/close_icon_windows7.css); */
@@ -223,7 +228,18 @@
 
 /* SEARCHBAR ************************************************************************************/
 @import url(./css/generalui/searchbar_glassplus_indicator_hidden.css);
+/* @import url(./css/generalui/searchbar_go_button_hidden.css); */
+
+/* search engine settings - only use one at a time **********************************************/
 /* @import url(./css/generalui/searchbar_popup_engines_hidden.css); */
+/* @import url(./css/generalui/searchbar_popup_engines_show_labels.css); */
+
+/* MENUBAR - bookmarks popup (not compatible to macOS/Linux) ************************************/
+/* @import url(./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css); */
+/* @import url(./css/generalui/menubar_bookmarks_popup_subscribe_item_hidden.css); */
+/* @import url(./css/generalui/menubar_bookmarks_popup_toolbar_item_hidden.css); */
+/* @import url(./css/generalui/menubar_bookmarks_popup_other_item_hidden.css); */
+
 
 /************************************************************************************************/
 /* TOOLBARS *************************************************************************************/
@@ -302,9 +318,14 @@
 /* @import url(./css/locationbar/ac_popup_keysearch_bold.css); */
 /* @import url(./css/locationbar/ac_popup_keysearch_underline.css); */
 /* @import url(./css/locationbar/ac_popup_result_separator.css); */
-/* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); */
+
+/* hide 'Search with...' and 'Visit...' results *************************************************/
+/* - disable 'show search suggestions inside address bar results' inside browser preferences ****/
+/* - hide bottom search engines: about:config > browser.urlbar.oneOffSearches > false ***********/
+ @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); 
 
 
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/
+

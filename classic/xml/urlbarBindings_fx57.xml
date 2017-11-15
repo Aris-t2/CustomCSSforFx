@@ -135,6 +135,7 @@
           }
         ]]></body>
       </method>
+
       <method name="getNextIndex">
         <parameter name="reverse"/>
         <parameter name="amount"/>
@@ -194,6 +195,34 @@
         </setter>
       </property>
 
+      <property name="margins"
+                onget="return this._margins;">
+        <setter>
+          <![CDATA[
+          this._margins = val;
+
+          if (val) {
+            /* eslint-disable no-multi-spaces */
+            let paddingInCSS =
+                3   // .autocomplete-richlistbox padding-left/right
+              + 6   // .ac-site-icon margin-inline-start
+              + 16  // .ac-site-icon width
+              + 6;  // .ac-site-icon margin-inline-end
+            /* eslint-enable no-multi-spaces */
+            let actualVal = Math.round(val.start) - paddingInCSS;
+            let actualValEnd = Math.round(val.end);
+            this.style.setProperty("--item-padding-start", actualVal + "px");
+            this.style.setProperty("--item-padding-end", actualValEnd + "px");
+          } else {
+            this.style.removeProperty("--item-padding-start");
+            this.style.removeProperty("--item-padding-end");
+          }
+
+          return val;
+          ]]>
+        </setter>
+      </property>
+
       <method name="openAutocompletePopup">
         <parameter name="aInput"/>
         <parameter name="aElement"/>
@@ -213,7 +242,7 @@
           if (this.mPopupOpen) {
             return;
           }
-  
+
 		  var width = 300;
 
 		  try{
@@ -235,9 +264,10 @@
               this._hideSearchSuggestionsNotification();
             }
           } catch (ex) {
-
             Components.utils.reportError(ex);
           }
+		  
+		  this._invalidate();
 
           this.openPopup(aElement, "after_start", 0, -1, false, false);
         ]]></body>
@@ -249,9 +279,9 @@
         <body>
           <![CDATA[
           if (whichNotification == "opt-out") {
-            if (this.siteIconStart) {
+            if (this.margins) {
               this.searchSuggestionsNotification.style.paddingInlineStart =
-                this.siteIconStart + "px";
+                this.margins.start + "px";
             } else {
               this.searchSuggestionsNotification.style.removeProperty("padding-inline-start");
             }
@@ -404,7 +434,6 @@
               let firstStyle = this.input.mController.getStyleAt(0);
               if (firstStyle.includes("autofill")) {
                 let uri = this.input.mController.getFinalCompleteValueAt(0);
-
                 if (!uri.includes("://")) {
                   uri = "http://" + uri;
                 }
@@ -412,7 +441,6 @@
               } else if (firstStyle.includes("searchengine") &&
                          this.input.browserSearchSuggestEnabled &&
                          this.input.urlbarSearchSuggestEnabled) {
-
                 let engine = Services.search.currentEngine;
                 engine.speculativeConnect({window,
                                            originAttributes: gBrowser.contentPrincipal.originAttributes});
@@ -574,9 +602,9 @@
 
     </handlers>
   </binding>
+
   
   <binding id="autocomplete-richlistitem" extends="chrome://global/content/bindings/richlistbox.xml#richlistitem">
-
     <content align="start"
              onoverflow="this._onOverflow();"
              onunderflow="this._onUnderflow();">

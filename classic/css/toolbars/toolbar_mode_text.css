@@ -10,19 +10,20 @@
 
 
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)/*,
-toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"]:not(#nav-bar-overflow-button):not(#PlacesChevron) toolbarbutton :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)*/{
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   opacity: 0.01 !important;
 }
 
 #nav-bar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-#nav-bar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)/*,
-#nav-bar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)*/{
+#nav-bar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   margin-bottom: -22px !important;
 }
 
 toolbar:not(#nav-bar):not(#TabsToolbar) toolbaritem .toolbarbutton-1 > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)/*,
-#nav-bar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack)*/{
+toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   margin-bottom: -15px !important;
+}
+
+#PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
+  visibility: collapse !important;
 }

@@ -6,8 +6,13 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./context_bfrsb_labels_with_icons.css);
+
+/***********************************************************/
+/* context menu items adjustment for Windows Classic theme */
+/***********************************************************/
 
 :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
-  opacity: 0 !important;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 2px !important;
 }
+

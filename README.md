@@ -26,12 +26,11 @@ or</br>
 </br>
 <b>Windows</b></br>
 <code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
-</br>
-You have to make hidden files visible to see "AppData" folder or open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
+Hidden files must be visible to see "AppData" folder. Alternatively open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
 </br>
 <b>Linux</b></br>
 <code>\.mozilla\firefox\ PROFILENAME \ </code></br>
-You have to make hidden files visible to see ".mozilla" folder.</br>
+Hidden files must be visible to see ".mozilla" folder.</br>
 </br>
 <b>Mac OS X</b></br>
 <code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
@@ -45,28 +44,33 @@ You have to make hidden files visible to see ".mozilla" folder.</br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
 Edit <i>userChrome.css</i> and <i>userContent.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
-Restart browser after every change for changes to take effect.</br>
+Restart Firefox after every modification for changes to take effect.</br>
 </br>
 <b>Example</b></br>
-If you <u>want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
+If "classic button appearance for navigation toolbar buttons" should be <u>enabled</u>, the corresponding line has to look like this:</br>
 <code>@import url(./css/buttons/buttons_on_navbar_classic_appearance.css);</code></br>
 </br>
-If you <u>do not want</u> "classic button appearance" for navigation toolbar buttons, the corresponding line has to look like this:</br>
+If "classic button appearance for navigation toolbar buttons" should be <u>disabled</u>, the corresponding line has to look like this:</br>
 <code>/* @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); */</code></br>
 </br>
 Note</br>
-<code>/* Code between this lines start and end symbols will be "ignored" btw. "outcommented" */</code></br>
+<code>Code between /* and */ won't be used by Firefox.</code></br>
 </br>
-<h2>How to find ids and attributes?</h2></br>
+<h2>How to find item ids and attributes?</h2></br>
 Enable once:</br>
 1. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
 2. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
 </br>
 Hit 'Ctrl+Alt+Shift+I' or open 'Tools > WebDeveloper > Browser Toolbox'.</br>
 </br>
+Inspect ui or web content.</br>
+</br>
+Force popups to stay open for inspection:</br>
+Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.</br>
+</br>
 <h2>How to modify custom user styles?</h2></br>
-Open CSS files with a text editor. Look through the code and change/remove values the way you like.</br>
-Some files contain additional instructions to tweak the ui for individual cases.</br>
+Open CSS files with a text editor. Look through the code and change values the way you need.</br>
+Some files contain additional instructions about how to tweak the ui for individual cases.</br>
 Restart Firefox for changes to take effect.</br>
 </br>
 <i>Example</i></br>
@@ -149,6 +153,9 @@ Remove <code>/*</code> at lines start and <code>*/</code> at lines end to enable
 <i>full-screen-api.transition-duration.enter</i> &gt; 0 0 (reduces animation time)</br>
 <i>full-screen-api.transition-duration.leave</i> &gt; 0 0 (reduces animation time)</br>
 </br>
+<b>Add-on manager: remove 'Get Add-ons' category</b></br>
+<i>extensions.getAddons.showPane</i></br>
+</br>
 <b>Findbar: animated result highlighting</b></br>
 <i>findbar.modalHighlight</i></br>
 </br>
@@ -170,6 +177,9 @@ Remove <code>/*</code> at lines start and <code>*/</code> at lines end to enable
 <b>Pocket</b> (suggestion: disable / set to 'false')</br>
 <i>extensions.pocket.enabled</i></br>
 </br>
+<b>Screenshots</b> (suggestion: disable / set to 'true')</br>
+<i>extensions.screenshots.disabled</i></br>
+</br>
 <b>Container tabs</b></br>
 <i>privacy.userContext.enabled</i></br>
 </br>
@@ -180,8 +190,9 @@ Remove <code>/*</code> at lines start and <code>*/</code> at lines end to enable
 <i>gfx.canvas.azure.backends</i> &gt; direct2d1.1,cairo,skia (old font rendering)</br>
 <i>gfx.content.azure.backends</i> &gt; direct2d1.1,cairo,skia (old font rendering)</br>
 </br>
-<b>Anti fingerprinting</b></br>
+<b>Anti fingerprinting (Caution: browser might behave in unforseen ways!)</b></br>
 <i>privacy.resistFingerprinting</i></br>
+<a href=https://wiki.mozilla.org/Security/Fingerprinting>Fingerprinting info at Mozilla Wiki tweaks</a></br>
 </br>
 <b>Telemetry / data collection</b> (suggestion: disable / set to 'false')</br>
 <i>browser.ping-centre.telemetry</i></br>

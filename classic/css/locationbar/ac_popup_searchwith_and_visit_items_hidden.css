@@ -15,6 +15,7 @@
 
 /* Hide "Visit/Search" items */
 #PopupAutoCompleteRichResult richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
 #PopupAutoCompleteRichResult richlistitem[anonid="type-icon-spacer"] {
   display: none !important;
 }

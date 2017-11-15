@@ -96,9 +96,9 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
 }
 
 /* remove min-width to get shorter buttons - button width = text-width */
-toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
-toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
-toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+#nav-bar toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+#nav-bar .toolbarbutton-1:not([type="menu-button"]),
+#nav-bar .toolbarbutton-1[type="menu-button"] toolbarbutton{
   min-width: 57px !important;
 }
 

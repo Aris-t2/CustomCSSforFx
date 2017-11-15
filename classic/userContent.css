@@ -25,8 +25,9 @@
 /* other settings *******************************************************************************/
 /* @import url(./css/aboutaddons/addonlists_only_show_buttons_on_hover.css); */
 /* @import url(./css/aboutaddons/addonlists_replace_button_labels_with_icons.css); */
-@import url(./css/aboutaddons/recentupdates_category_always_visible.css);
 @import url(./css/aboutaddons/description_page_alternative_content_order.css);
+@import url(./css/aboutaddons/recentupdates_category_always_visible.css);
+/* @import url(./css/aboutaddons/search_category_always_visible.css); */
 
 
 /************************************************************************************************/
@@ -53,3 +54,8 @@
 /* top level image on white background (can sometimes cause glitches) - only use one at a time **/
 /* @import url(./css/webcontent/toplevel_image_classic_v1.css); */
 /* @import url(./css/webcontent/toplevel_image_classic_v2.css); */
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/

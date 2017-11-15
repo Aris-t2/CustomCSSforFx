@@ -32,6 +32,12 @@
   -moz-margin-end: 12px !important;
 }
 
+@media (min-resolution: 120dpi) {
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image  {
+	  -moz-margin-end: 8px !important;
+	}
+}
+
 :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
   -moz-appearance: menuitem !important;
   min-height: unset !important;

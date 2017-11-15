@@ -63,8 +63,18 @@
   -moz-appearance: none !important;
   background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
 }
-#TabsToolbar:-moz-lwtheme{
-  background: rgba(255,255,255,0.4) !important;
+
+/* remove color overlay for lw-themes */
+#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
+  background: unset !important;
+}
+
+/* adjust compact themes */
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] :-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  background-image: linear-gradient(#323234,#323234) !important;
+}
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] :-moz-lwtheme-darktext #TabsToolbar:-moz-lwtheme {
+  background-image: linear-gradient(#f5f6f7,#f5f6f7) !important;
 }
 
 /* toolbar borders */
