@@ -7,9 +7,42 @@
 /****************************************************************************************/
 
 
-#PopupSearchAutoComplete .search-panel-tree {
+/*
+#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) {
   min-height: 180px !important;
-  height: 180px !important;
+  height: auto !important;
+}*/
+
+/* catch all cases 'manually' */
+#PopupSearchAutoComplete .search-panel-tree[height="180"]:not([collapsed="true"]) {
+  min-height: 180px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="162"]:not([collapsed="true"]) {
+  min-height: 162px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="144"]:not([collapsed="true"]) {
+  min-height: 144px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="126"]:not([collapsed="true"]) {
+  min-height: 126px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="108"]:not([collapsed="true"]) {
+  min-height: 108px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="90"]:not([collapsed="true"]) {
+  min-height: 90px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="72"]:not([collapsed="true"]) {
+  min-height: 72px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="54"]:not([collapsed="true"]) {
+  min-height: 54px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="36"]:not([collapsed="true"]) {
+  min-height: 36px !important;
+}
+#PopupSearchAutoComplete .search-panel-tree[height="18"]:not([collapsed="true"]) {
+  min-height: 18px !important;
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item {

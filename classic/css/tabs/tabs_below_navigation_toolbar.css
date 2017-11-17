@@ -69,17 +69,16 @@
   background: unset !important;
 }
 
-/* adjust compact themes */
-#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] :-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+/* adjust compact themes background color */
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
   background-image: linear-gradient(#323234,#323234) !important;
 }
-#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'] :-moz-lwtheme-darktext #TabsToolbar:-moz-lwtheme {
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-darktext #TabsToolbar:-moz-lwtheme {
   background-image: linear-gradient(#f5f6f7,#f5f6f7) !important;
 }
 
 /* toolbar borders */
 #main-window #navigator-toolbox::after {
-  /*border-bottom: unset !important;*/
   opacity: 0 !important;
 }
 #TabsToolbar{
@@ -90,6 +89,17 @@
   border-left: 1px solid #5f7181 !important;
   border-right: 1px solid #5f7181 !important;
 }
+
+/* adjust compact themes borders color */
+#main-window[sizemode="normal"][style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-darktext #TabsToolbar:-moz-lwtheme {
+  border-left: 1px solid #5f7181 !important;
+  border-right: 1px solid #5f7181 !important;
+}
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  border-bottom: 1px solid #323234 !important;
+}
+
+/**/
 
 #main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
   -moz-margin-end: 0px !important;

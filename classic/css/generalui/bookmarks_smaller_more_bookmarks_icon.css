@@ -7,12 +7,9 @@
 /****************************************************************************************/
 
 
-#context-sep-sendpagetodevice,
-#context-sendpagetodevice,
-#context-sep-sendlinktodevice,
-#context-sendlinktodevice,
-#pageAction-panel-sendToDevice,
-#context_sendTabToDevice,
-#context_sendTabToDevice + menuseparator {
-  display: none !important;
+#PlacesChevron .toolbarbutton-icon {
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
 }

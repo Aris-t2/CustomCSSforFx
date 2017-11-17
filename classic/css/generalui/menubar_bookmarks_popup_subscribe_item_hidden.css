@@ -8,8 +8,7 @@
 
 
 /* subscribe page item */
+#subscribeToPageMenupopup,
 #subscribeToPageMenuitem{
   display: none !important;
 }
-
-/**/

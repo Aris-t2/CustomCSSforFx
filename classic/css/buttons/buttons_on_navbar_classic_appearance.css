@@ -49,7 +49,7 @@
   -moz-margin-start: -1px !important;
   -moz-margin-end: -1px !important;
 }
-:-moz-any(#edit-controls, #zoom-controls) separator {
+#nav-bar :-moz-any(#edit-controls, #zoom-controls) separator {
   visibility: collapse !important;
 }
 
