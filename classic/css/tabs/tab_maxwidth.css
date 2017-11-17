@@ -10,6 +10,7 @@
 .tabbrowser-tab:not([pinned]) {
   min-width: 50px !important;
   clip-width: 50px !important;
+}
 */
 
 /* tab max-width */
