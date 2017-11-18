@@ -20,21 +20,7 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 </br>
 <b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
-<code>Shift+F2</code> to open Firefox's command line, then enter the command <code>folder openprofile</code></br>
-</br>
-or</br>
-</br>
-<b>Windows</b></br>
-<code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
-Hidden files must be visible to see <code>AppData</code> folder. Alternatively open <code>%APPDATA%\Mozilla\Firefox\Profiles\</code> from explorers location bar.</br>
-</br>
-<b>Linux</b></br>
-<code>\.mozilla\firefox\ PROFILENAME \ </code></br>
-Hidden files must be visible to see <code>.mozilla</code> folder.</br>
-</br>
-<b>Mac OS X</b></br>
-<code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
-<code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
+or <code>Shift+F2</code> to open Firefox's command line, then enter the command <code>folder openprofile</code></br>
 </br>
 <b>2.</b> User styles belong into <code>\chrome\</code> folder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
@@ -45,6 +31,17 @@ Hidden files must be visible to see <code>.mozilla</code> folder.</br>
 <code>\ PROFILENAME \chrome\xml\</code></br>
 <code>\ PROFILENAME \chrome\userChrome.css</code></br>
 <code>\ PROFILENAME \chrome\userContent.css</code></br>
+</br>
+(Optional) Profile folders location on drive:</br>
+<b>Windows</b></br>
+<code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
+Hidden files must be visible to see <code>AppData</code> folder. Alternatively open <code>%APPDATA%\Mozilla\Firefox\Profiles\</code> from explorers location bar.</br>
+<b>Linux</b></br>
+<code>\.mozilla\firefox\ PROFILENAME \ </code></br>
+Hidden files must be visible to see <code>.mozilla</code> folder.</br>
+<b>Mac OS X</b></br>
+<code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
+<code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
 </br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
