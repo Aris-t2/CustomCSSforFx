@@ -4,7 +4,7 @@
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#webextensions-can-not-modify-browsers-appearance-in-firefox-57>WebExtensions can not modify browsers appearance in Firefox 57+</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#where-to-find-firefox-profile-folder-and-what-is-the-correct-location-for-user-styles>Where to find Firefox profile folder and what is the correct location for user styles?</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-use-custom-user-styles>How to use custom user styles?</a></br>
-- <a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-find-item-ids-and-attributes>How to find ids and attributes?</a></br>
+- <a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-find-item-ids-and-attributes>How to find item ids and attributes?</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#how-to-modify-custom-user-styles>How to modify custom user styles?</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#suggested-ui-tweaks>Suggested ui tweaks</a></br>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#aboutconfig-tweaks>'about:config' tweaks</a></br>
@@ -39,7 +39,7 @@ Hidden files must be visible to see ".mozilla" folder.</br>
 <b>2.</b> User styles belong into "chrome" subolder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
 </br>
-<b>3.</b> Copy userChrome.css, userContent.css and subfolders into \chrome\ subfolder so the results look like this.</br>
+<b>3.</b> Copy userChrome.css, userContent.css and the folders into <code>\chrome\</code> subfolder so the results look like this.</br>
 <code>\ PROFILENAME \chrome\css\</code></br>
 <code>\ PROFILENAME \chrome\image\</code></br>
 <code>\ PROFILENAME \chrome\xml\</code></br>
