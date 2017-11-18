@@ -26,17 +26,17 @@ or</br>
 </br>
 <b>Windows</b></br>
 <code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
-Hidden files must be visible to see "AppData" folder. Alternatively open "%APPDATA%\Mozilla\Firefox\Profiles\" from explorers location bar.</br>
+Hidden files must be visible to see <code>AppData</code> folder. Alternatively open <code>%APPDATA%\Mozilla\Firefox\Profiles\</code> from explorers location bar.</br>
 </br>
 <b>Linux</b></br>
 <code>\.mozilla\firefox\ PROFILENAME \ </code></br>
-Hidden files must be visible to see ".mozilla" folder.</br>
+Hidden files must be visible to see <code>.mozilla</code> folder.</br>
 </br>
 <b>Mac OS X</b></br>
 <code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
 <code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
 </br>
-<b>2.</b> User styles belong into "chrome" subolder. Create it, if there is none yet.</br>
+<b>2.</b> User styles belong into <code>\chrome\</code> folder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
 </br>
 <b>3.</b> Copy userChrome.css, userContent.css and the folders into <code>\chrome\</code> subfolder so the results look like this.</br>
@@ -48,7 +48,7 @@ Hidden files must be visible to see ".mozilla" folder.</br>
 </br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
-Edit <i>userChrome.css</i> and <i>userContent.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available "@import..." strings.</br>
+Edit <i>userChrome.css</i> and <i>userContent.css</i> with any text editor (<b><a href=https://notepad-plus-plus.org/download/>Notepad++</a></b> recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available <code>@import</code> strings.</br>
 Restart Firefox after every modification for changes to take effect.</br>
 </br>
 <b>Example</b></br>
@@ -59,14 +59,14 @@ If "classic button appearance for navigation toolbar buttons" should be <u>disab
 <code>/* @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); */</code></br>
 </br>
 Note</br>
-<code>Code between /* and */ won't be used by Firefox.</code></br>
+Code between <code>/*</code> and <code>*/</code> won't be used by Firefox unless there are other <code>/*</code> or <code>*/</code> inbetween.</br>
 </br>
 <h2>How to find item ids and attributes?</h2></br>
 Enable once:</br>
 1. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes</br>
 2. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging</br>
 </br>
-Hit 'Ctrl+Alt+Shift+I' or open 'Tools > WebDeveloper > Browser Toolbox'.</br>
+Hit <code>Ctrl+Alt+Shift+I</code> or open 'Tools > WebDeveloper > Browser Toolbox'.</br>
 </br>
 Inspect ui or web content.</br>
 </br>
