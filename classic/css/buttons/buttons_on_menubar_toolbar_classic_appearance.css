@@ -28,11 +28,18 @@
 #toolbar-menubar :-moz-any(#edit-controls, #zoom-controls) separator {
   visibility: collapse !important;
 }
+
 /* unset default button appearance first */
 #toolbar-menubar .toolbarbutton-1,
 #toolbar-menubar .toolbarbutton-1 .toolbarbutton-icon{
   -moz-appearance: none !important;
   background: unset !important;
+}
+
+/* button spacing */
+#toolbar-menubar .toolbarbutton-1{
+  margin-left: 1px !important;
+  margin-right: 1px !important;
 }
 
 /* classic button style */

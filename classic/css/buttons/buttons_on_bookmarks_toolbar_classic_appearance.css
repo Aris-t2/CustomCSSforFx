@@ -29,6 +29,12 @@
   visibility: collapse !important;
 }
 
+/* button spacing */
+#PersonalToolbar .toolbarbutton-1{
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+
 /* classic button style */
 #main-window:not([customizing]) #PersonalToolbar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active),
 #PersonalToolbar toolbarbutton[type="menu-button"],

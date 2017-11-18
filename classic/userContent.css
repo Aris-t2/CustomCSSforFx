@@ -8,10 +8,12 @@
 
 /*************************************************************************************************
 
-  ENABLING options: remove the combination of / and * before the @import
-  DISABLING options: add the combination of / and * before the @import
+  ENABLING options: remove the combination of / and * before @import
+  DISABLING options: add the combination of / and * before @import
   
   Some @import features might not work properly on macOS and Linux -> Firefox bug
+  
+  CSS tweaks won't work, if @namespace references are used inside .css files!
 
 *************************************************************************************************/
 

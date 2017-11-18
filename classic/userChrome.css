@@ -8,15 +8,20 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.0 ********************************************************************************/
+/* version 1.3.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
-  ENABLING options: remove the combination of / and * before the @import
-  DISABLING options: add the combination of / and * before the @import
+  Finding profile folder: about:support > Profile Folder > Open Folder
+  files and folders belong into \PROFILEFOLDER\chrome\ directory
+  
+  ENABLING options: remove the combination of / and * before @import
+  DISABLING options: add the combination of / and * before @import
   
   Some @import features might not work properly on macOS and Linux -> Firefox bug
+  
+  CSS tweaks won't work, if @namespace references are used inside .css files!
 
 *************************************************************************************************/
 
@@ -63,10 +68,12 @@
 
 /* bookmarks menu button - 'button & popup' appearance ******************************************/
 @import url(./css/buttons/bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css); /**/
-@import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
+/* popup appearance - only use one at a time (use 'Windows Classic' file for that OS theme ******/
+@import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
+/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import url(./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css); /**/
@@ -106,7 +113,8 @@
 /* application/hamburger button popup ***********************************************************/
 @import url(./css/buttons/appbutton_popup_icons_colorized.css); /**/
 /* @import url(./css/buttons/appbutton_popup_sync_hidden.css); /**/
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden.css); /**/  /* <--- experimental */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/  /* <--- experimental */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/  /* <--- experimental */
 
 
 /************************************************************************************************/
@@ -219,13 +227,20 @@
 /* @import url(./css/tabs/tab_title_centered.css); /**/
 /* @import url(./css/tabs/tab_title_right.css); /**/
 
+/* DEFAULT TABS - use only, if aboves 'classic squared tabs' are disabled ********************************/
+/* @import url(./css/tabs/default_tabs_tab_border.css); /**/
+/* tab line settings - only use one at a time ***************************************************/
+/* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
+/* @import url(./css/tabs/default_tabs_tab_line_purple_in_private_mode.css); /**/
+
 /* other tab settings ***************************************************************************/
 @import url(./css/tabs/tab_icon_colors.css); /**/
-/* @import url(./css/tabs/tab_context_menuitems_visibility.css); /**/
 /* @import url(./css/tabs/tab_maxwidth.css); /**/
 /* @import url(./css/tabs/tab_titles_remove_blur.css); /**/
 /* @import url(./css/tabs/alltabs_button_always_visible.css); /**/
 /* @import url(./css/tabs/pinnedtab_empty_favicon_hidden.css); /**/
+/* edit target file to select which items to hide ***********************************************/
+/* @import url(./css/tabs/tab_context_menuitems_visibility.css); /**/
 
 
 /************************************************************************************************/
@@ -283,6 +298,8 @@
 @import url(./css/toolbars/tabs_toolbar_adjustments.css); /**/
 /* @import url(./css/toolbars/navbar_more_compact_mode.css); /**/
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
+/* edit target file to select which items to hide ***********************************************/
+/* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/
 
 /* bookmarks toolbar  ***************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
