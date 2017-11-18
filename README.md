@@ -39,7 +39,12 @@ Hidden files must be visible to see ".mozilla" folder.</br>
 <b>2.</b> User styles belong into "chrome" subolder. Create it, if there is none yet.</br>
 <code>\ PROFILENAME \chrome\ </code></br>
 </br>
-<b>3.</b> Copy userChrome.css, userContent.css and subfolders into \chrome\ subfolder.</br>
+<b>3.</b> Copy userChrome.css, userContent.css and subfolders into \chrome\ subfolder so the results look like this.</br>
+<code>\ PROFILENAME \chrome\css\</code></br>
+<code>\ PROFILENAME \chrome\image\</code></br>
+<code>\ PROFILENAME \chrome\xml\</code></br>
+<code>\ PROFILENAME \chrome\userChrome.css</code></br>
+<code>\ PROFILENAME \chrome\userContent.css</code></br>
 </br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
