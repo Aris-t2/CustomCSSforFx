@@ -1,7 +1,10 @@
-This is a support area for content available in this project.
-It mainly focuses on restoring features, that were previously part of my legacy add-ons on AMO and are possible to restore with CSS.
+This is a SUPPORT AREA for content available in this project. It mainly focuses on features, that can be replicated with CSS (and known from my legacy add-ons on AMO).
 
-This is not a "request" area! Join the discussion thread to talk and ask questions about what is or could be possible.
+This is not a "request" area for new stuff or legacy add-on features this project does not cover!
+Do not open new issues for something add-ons offered, but this project doesn't.
+Do not open new issues to ask 'is this or that possible?'
+
+Instead join the discussion thread to talk and ask questions about what is or could be possible there.
 --> General discussions, feedback, questions belong here (v2)
 --> https://github.com/Aris-t2/CustomCSSforFx/issues/41
 
@@ -12,3 +15,29 @@ Read the 'how to report issues properly' before filing an issue report.
 
 By filing an issue report you confirm to have read and understood the above and all 'how to report an issue' instructions.
 False/invalid issue reports might get closed without further notice. Thanks for your understanding.
+
+----------------------------------
+
+Fill everything as asked and and delete this line and everything above it.
+
+
+Describe the issue
+
+
+What should have happened instead?
+
+
+Steps to reproduce the issue?
+
+
+Screenshots (drag and drop images into this post)
+
+
+System information
+OS: 
+OS version: 
+OS theme: 
+DPI / HiDPI resolution: 
+Firefox version: 
+Firefox theme: 
+Settings this issue occurs with: 
