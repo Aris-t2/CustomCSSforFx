@@ -16,7 +16,6 @@
   -moz-padding-start: 2px !important;
 }
 
-
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar:-moz-lwtheme, 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar:-moz-lwtheme,
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar:-moz-lwtheme,
@@ -127,6 +126,10 @@
   border-right: 0px !important;
 }
 
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  border-bottom: 1px solid #323234 !important;
+}
+
 #main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
   -moz-margin-end: 0px !important;
 }
@@ -184,8 +187,8 @@
 #nav-bar:not(:-moz-lwtheme),
 #PersonalToolbar:not(:-moz-lwtheme),
 #main-window:not([tabsintitlebar])  #TabsToolbar:not(:-moz-lwtheme) {
-  border-left:  unset !important;
-  border-right:  unset !important;
+  border-left: unset !important;
+  border-right: unset !important;
   background: unset !important;
 }
 
