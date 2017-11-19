@@ -1,0 +1,46 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+#sidebar-close .toolbarbutton-icon,
+* > .close-icon{
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+  list-style-image: url("./../../image/close_fx3.png") !important;
+}
+#sidebar-close:hover .toolbarbutton-icon,
+* > .close-icon:hover{
+  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+}
+#sidebar-close:hover:active .toolbarbutton-icon,
+* > .close-icon:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+}
+
+@media (min-resolution: 1.1dppx) {
+  #sidebar-close .toolbarbutton-icon,
+  * > .close-icon {
+	list-style-image: url("./../../image/close_fx3_2x.png") !important;
+	-moz-image-region: rect(0, 32px, 32px, 0) !important;
+  }
+  #sidebar-close:hover .toolbarbutton-icon,
+  * > .close-icon:hover{
+	-moz-image-region: rect(0, 64px, 32px, 32px) !important;
+  }
+  #sidebar-close:hover:active .toolbarbutton-icon,
+  * > .close-icon:hover:active {
+	-moz-image-region: rect(0, 96px, 32px, 64px) !important;
+  }
+}
+
+#sidebar-close .toolbarbutton-icon,
+* > .close-icon > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+#sidebar-close {
+  background: unset !important;
+}
