@@ -10,6 +10,7 @@
 .tab-throbber[progress]::before {
   width: 16px !important;
   height: 16px !important;
+  background-size: contain;
   animation: unset !important;
   -moz-context-properties: unset !important;
   fill: unset !important;
@@ -21,9 +22,31 @@
 .tab-throbber[busy]::before {
   background-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
 }
+.tab-throbber-fallback[busy] {
+  list-style-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+}
 
 .tab-throbber[progress]::before{
   background-image: url("./../../image/tabthrobber_fx56_loading.png") !important;
+}
+.tab-throbber-fallback[progress] {
+  list-style-image: url("./../../image/tabthrobber_fx56_loading.png") !important;
+}
+
+@media (min-resolution: 1.1dppx) {
+  .tab-throbber[busy]::before {
+    background-image: url("./../../image/tabthrobber_fx56_connecting@2x.png") !important;
+  }
+  .tab-throbber-fallback[busy] {
+    list-style-image: url("./../../image/tabthrobber_fx56_connecting@2x.png") !important;
+  }
+
+  .tab-throbber[progress]::before{
+    background-image: url("./../../image/tabthrobber_fx56_loading@2x.png") !important;
+  }
+  .tab-throbber-fallback[progress] {
+    list-style-image: url("./../../image/tabthrobber_fx56_loading@2x.png") !important;
+  }
 }
 
 /**/
