@@ -148,7 +148,7 @@
 
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"],
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
-  margin-top: 21px !important;
+  margin-top: 25px !important;
 }
 
 #tabbrowser-tabs .tab-drop-indicator {
