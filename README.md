@@ -1,5 +1,5 @@
-<b><a href=https://github.com/Aris-t2/CustomCSSforFx/issues/2>Download CSS tweaks from Classic Theme Restorer / Classic Toolbar Button / GlassMyFox for Firefox 57+</a></b></br>
-<b><a href=https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons>Download CSS tweaks from NoiaButtons for Firefox 57+</a></b></br>
+<b><a href=https://github.com/Aris-t2/CustomCSSforFx/issues/2>Download Firefox 57+ CSS tweaks known from Classic Theme Restorer / Classic Toolbar Button / GlassMyFox</a></b></br>
+<b><a href=https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons>Download Firefox 57+ CSS tweaks known from NoiaButtons</a></b></br>
 </br>
 <h2>Instructions / Howto / Readme</h2>
 - <a href=https://github.com/Aris-t2/CustomCSSforFx/#want-to-support-this-project>Want to support this project?</a></br>
@@ -19,8 +19,6 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 </br>
 <h2>Where to find Firefox profile folder and what is the correct location for user styles?</h2></br>
 <b>1.</b> Find your profile folder ('profile names are different for everyone').</br>
-</br>
-<b>All OS</b></br>
 <code>about:support > Profile Folder > Open Folder</code></br>
 or <code>Shift+F2</code> to open Firefox's command line, then enter the command <code>folder openprofile</code></br>
 </br>
