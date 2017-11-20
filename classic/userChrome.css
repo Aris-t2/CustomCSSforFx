@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.2.1 ******************************************************************************/
+/* version 1.3.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -187,14 +187,24 @@
 /* remove top corner roundness ******************************************************************/
 /* @import url(./css/tabs/classic_squared_tabs_fully_squared.css); /**/
 
-/* TABS TOOLBAR POSITION (not in titlebar / not on top) - only use one at a time ****************/
+/************************************************************************************************/
+/* TABS TOOLBAR POSITION (not in titlebar / not on top) *****************************************/
+/************************************************************************************************/
+
+/* only use one at a time - below titlebar or below navigation and bookmarks toolbar ************/
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); /**/
-/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
+/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/ 	/* <-- tabs not on top */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
+/************************************************************************************************/
+/* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- experimental */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- experimental */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- experimental */
+/************************************************************************************************/
 
 /* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/

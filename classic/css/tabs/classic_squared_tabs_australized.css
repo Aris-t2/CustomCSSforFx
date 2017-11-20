@@ -249,8 +249,8 @@
 /* Windows 10 fix ['@media (-moz-os-version: windows-win10)' currently broken on Windows 10FCU] */
 /*@media (-moz-os-version: windows-win10) {*/
   .titlebar-button {
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
   }
 /*}*/
 
