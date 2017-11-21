@@ -42,6 +42,7 @@ Hidden files must be visible to see <code>.mozilla</code> folder.</br>
 <b>Mac OS X</b></br>
 <code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>
 <code>~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
+<code>\Users\ USERNAME \Library\Application\Support\Firefox\Profiles\ </code></br>
 </br>
 <h2>How to use custom user styles?</h2></br>
 The <i>userChrome.css</i> and <i>userContent.css</i> files works like an options\configurations file. All main "features" can be enabled and disabled there.</br>
