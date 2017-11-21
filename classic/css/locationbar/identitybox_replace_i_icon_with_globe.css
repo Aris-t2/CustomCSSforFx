@@ -10,7 +10,7 @@
 /* globe icon instead of 'i'-icon */
 *:not(.chromeUI) > #identity-icon,
 *:not(.chromeUI):not(.verifiedDomain):not(.verifiedIdentity) > #page-proxy-favicon {
-  list-style-image:url('./../../image/globe.png') !important;
+  list-style-image:url('./../../image/globe.svg') !important;
   filter: unset !important;
   fill: unset !important;
   opacity: 1.0 !important;

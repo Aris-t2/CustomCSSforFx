@@ -25,6 +25,11 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   box-shadow: unset !important;
 }
 
+#main-window[sizemode="normal"] #navigator-toolbox #nav-bar {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
 #PersonalToolbar #bookmarks-menu-button::after,
 toolbar > toolbarbutton > .toolbarbutton-text,
 #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,

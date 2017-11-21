@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.3 ********************************************************************************/
+/* version 1.3.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -59,6 +59,8 @@
 /* @import url(./css/buttons/icons_custom_icons_old_chrome.css); /**/
 /* @import url(./css/buttons/icons_custom_icons_old_osx.css); /**/
 /* @import url(./css/buttons/icons_custom_icons_tango.css); /**/
+/* @import url(./css/buttons/icons_custom_icons_fx45.css); /**/
+/* @import url(./css/buttons/icons_custom_icons_fx45_inverted.css); /**/
 
 /* bookmarks toolbar - buttons appearance - only use one at a time ******************************/
 /* old bookmarks toolbar button appearance - 'disable' for Windows 7s classic OS theme **********/
@@ -71,7 +73,7 @@
 /* @import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
-/* popup appearance - only use one at a time (use 'Windows Classic' file for that OS theme ******/
+/* popup appearance - only use one at a time (use 'Windows Classic' file for classic OS theme ***/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/
 
@@ -115,7 +117,6 @@
 /* @import url(./css/buttons/appbutton_popup_sync_hidden.css); /**/
 /* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/  /* <--- experimental */
 /* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/  /* <--- experimental */
-
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
@@ -227,7 +228,7 @@
 /* @import url(./css/tabs/tab_close_hidden_for_only_one_visible_tab.css); /**/
 /* @import url(./css/tabs/tab_close_at_tabs_start.css); /**/
 
-/* tab close icon size override - only use one at a time ****************************************/
+/* tab close icon size override - only use one at a time (may look blurry) **********************/
 /* @import url(./css/tabs/tab_close_icon_size_16x16px.css); /**/
 /* @import url(./css/tabs/tab_close_icon_size_18x18px.css); /**/
 /* @import url(./css/tabs/tab_close_icon_size_20x20px.css); /**/
@@ -344,7 +345,7 @@
 
 /* additional icons/buttons and third party page action buttons *********************************/
 @import url(./css/locationbar/icons_colorized.css); /**/
-@import url(./css/locationbar/reader_alternative_icon.css); /**/
+/* @import url(./css/locationbar/reader_alternative_icon.css); /**/
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
 /* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/

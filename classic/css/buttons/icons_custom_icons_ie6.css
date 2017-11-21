@@ -22,7 +22,9 @@
   list-style-image: url("../../image/toolbar_fx_ie6.png") !important;
 }
 
-#downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer{
+#downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
+#downloads-button:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
+#downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon {
   background: -moz-image-rect(url("../../image/toolbar_fx_ie6.png"), 0, 198, 18, 180) center no-repeat !important;
 }
 

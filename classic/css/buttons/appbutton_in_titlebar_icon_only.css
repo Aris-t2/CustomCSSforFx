@@ -82,6 +82,11 @@
 }
 
 /* dropmarker icon / arrow */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button #PanelUI-menu-button {
+  list-style-image: unset !important;
+  -moz-image-region: unset !important;
+}
+
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton-inv.svg") !important;
   background: unset !important;
