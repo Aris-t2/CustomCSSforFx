@@ -1,0 +1,40 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* this is an experiment not meant for every day use */
+/* value might need adjustment for many different cases */
+#TabsToolbar {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 100% !important;
+}
+#TabsToolbar #tabbrowser-tabs:not([overflow="true"]) {
+  width: 90% !important;
+}
+#TabsToolbar #tabbrowser-tabs[overflow="true"] {
+  width: 90% !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs:not([overflow="true"]){
+  width: calc(100% - 2px) !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs[overflow="true"] {
+  width: calc(100% - 50px) !important;
+}
+
+#TabsToolbar > toolbarpaletteitem,
+#TabsToolbar > .toolbarbutton-1 {
+  position: relative !important;
+  bottom: -5px !important;
+}
+#customization-footer,
+#browser {
+  margin-bottom: 27px !important;
+}

@@ -1,0 +1,61 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original author: https://00.bulog.jp/archives/1476 *************/
+/****************************************************************************************/
+
+/* titlebar buttons */
+#titlebar-buttonbox {
+  vertical-align: top !important;
+  display: block !important;
+}
+
+.tabbrowser-arrowscrollbox scrollbox {
+  overflow: visible !important;
+}
+
+.tabbrowser-arrowscrollbox scrollbox > box {
+  display: block !important;
+}
+
+/* titlebar button height */
+toolbarbutton.titlebar-button {
+  min-height: 31px !important;
+}
+
+/* tabs end position */
+.tabbrowser-tabs {
+  -moz-margin-end: -41px !important;
+}
+
+/* tab size */
+.tabbrowser-tab[pinned] {
+  min-height: 26px !important;
+  max-height: 26px !important;
+}
+
+.tabbrowser-tab:not([pinned]) {
+  min-height: 26px !important;
+  max-height: 26px !important;
+}
+
+.tabbrowser-tabs .tabbrowser-tab {
+  vertical-align: top !important;
+  -moz-box-sizing: border-box !important;
+  min-height: 26px !important;
+  max-height: 26px !important;
+}
+
+/* 'new tab' tab size */
+.tabs-newtab-button {
+  vertical-align: bottom !important;
+  height: 27px !important;
+}

@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.4 ********************************************************************************/
+/* version 1.3.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -22,6 +22,8 @@
   Some @import features might not work properly on macOS and Linux -> Firefox bug
   
   CSS tweaks won't work, if @namespace references are used inside .css files!
+  
+  Do not report issues with EXPERIMENTAL settings! Use them for testing only!
 
 *************************************************************************************************/
 
@@ -86,7 +88,7 @@
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
-/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- experimental */
+/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); /**/
 /* @import url(./css/buttons/custom_backforward_large_ff3.css); /**/
@@ -115,8 +117,8 @@
 /* application/hamburger button popup ***********************************************************/
 @import url(./css/buttons/appbutton_popup_icons_colorized.css); /**/
 /* @import url(./css/buttons/appbutton_popup_sync_hidden.css); /**/
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/  /* <--- experimental */
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/  /* <--- experimental */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/  /* <--- EXPERIMENTAL */
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
@@ -201,11 +203,18 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
 /************************************************************************************************/
-/* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- experimental */
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- experimental */
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- experimental */
+/* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL - DO NOT REPORT ISSUES! ************/
+/* - requires one of the above 'tabs not on top' settings ***************************************/
+/*  @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
+/* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- EXPERIMENTAL */
+/************************************************************************************************/
+
+/* multirow / multi lined tabs (see https://00.bulog.jp/archives/1476 ) *************************/
+/* @import url(./css/tabs/tabs_multiple_lines.css); /**/  /* <--- EXPERIMENTAL */
 
 /* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/
@@ -309,14 +318,17 @@
 @import url(./css/toolbars/toolbars_old_padding.css); /**/
 @import url(./css/toolbars/tabs_toolbar_adjustments.css); /**/
 /* @import url(./css/toolbars/navbar_more_compact_mode.css); /**/
+
+/* menubar **************************************************************************************/
+/* @import url(./css/toolbars/menubar_fog_hidden.css); /**/
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
 /* edit target file to select which items to hide ***********************************************/
 /* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/
 
-/* bookmarks toolbar  ***************************************************************************/
+/* bookmarks toolbar ****************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
 /* @import url(./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css); /**/
-/* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); /**/ /* <--- experimental */
+/* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); /**/ /* <--- EXPERIMENTAL */
 
 /* toolbar colors - only use one at a time ******************************************************/
 @import url(./css/toolbars/general_toolbar_colors.css); /**/
@@ -324,9 +336,16 @@
 /* @import url(./css/toolbars/general_toolbar_colors_transparent.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_aeroglass.css); /**/
 
+/* AeroGlass toolbars - seperated - set per toolbar *********************************************/
+/* @import url(./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css); /**/
+/* @import url(./css/toolbars/general_toolbar_colors_bookmarks_toolbar_aeroglass.css); /**/
+/* @import url(./css/toolbars/general_toolbar_colors_tabs_toolbar_aeroglass.css); /**/
+/* Windows 10 fix for Glass8 - Glass8 required for 'Windows 7'-like window transparency */
+/* @import url(./css/toolbars/general_toolbar_colors_aeroglass_windows10_glass8.css); /**/  /* <--- EXPERIMENTAL */
+
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
-/* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/  /* <--- experimental */
-/* @import url(./css/toolbars/toolbar_mode_text.css); /**/  /* <--- experimental */
+/* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/toolbars/toolbar_mode_text.css); /**/  /* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/
@@ -337,7 +356,7 @@
 @import url(./css/locationbar/compact_mode_reduce_fontsize.css); /**/
 /* @import url(./css/locationbar/background_color_dark.css); /**/
 /* @import url(./css/locationbar/locationbar_border_roundness.css); /**/
-/* @import url(./css/locationbar/locationbar_reduce_height.css); /**/ /* <--- experimental */
+/* @import url(./css/locationbar/locationbar_reduce_height.css); /**/ /* <--- EXPERIMENTAL */
 
 /* autocomplete/history dropmarker **************************************************************/
 @import url(./css/locationbar/dropmarker_at_the_end.css); /**/

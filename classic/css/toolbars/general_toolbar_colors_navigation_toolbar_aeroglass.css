@@ -6,15 +6,12 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./tabs_below_navigation_toolbar.css);
 
-#main-window[sizemode="normal"]  #TabsToolbar:not(:-moz-lwtheme){
-  border-left: unset !important;
-  border-right: unset !important;
-}
-
-#TabsToolbar:not(:-moz-lwtheme) {
+/* navigation toolbar background */
+#main-window #navigator-toolbox #nav-bar:not(:-moz-lwtheme),
+#main-window #navigator-toolbox #nav-bar:-moz-lwtheme,
+#main-window #navigator-toolbox #nav-bar {
   background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
 }
-
-/**/

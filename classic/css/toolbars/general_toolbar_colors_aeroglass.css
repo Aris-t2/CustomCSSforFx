@@ -13,23 +13,27 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-color: rgba(255,255,255,.0) !important;
 }
 
+/* navigation toolbar background */
 #nav-bar:not(:-moz-lwtheme) {
-  background-color: rgba(255,255,255,.0) !important;
+  background: unset !important;
   border: unset !important;
   box-shadow: unset !important;
 }
 
+/* toolbar background */
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-color: rgba(255,255,255,.0) !important;
+  background: unset !important;
   border: unset !important;
   box-shadow: unset !important;
 }
 
+/* hide navigation toolbar borders */
 #main-window[sizemode="normal"] #navigator-toolbox #nav-bar {
   border-left: 0 !important;
   border-right: 0 !important;
 }
 
+/* set white text for toolbar items */
 #PersonalToolbar #bookmarks-menu-button::after,
 toolbar > toolbarbutton > .toolbarbutton-text,
 #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,

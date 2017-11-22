@@ -20,3 +20,8 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+/* fix for toolbar button badges */
+#nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  -moz-margin-end: -5px !important;
+}

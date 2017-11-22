@@ -1,0 +1,28 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ************************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* by Aris (aris-addons@gmx.net)*****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+/* Glass8 ( http://www.glass8.eu/ ) required for 'Windows 7'-like window transparency */
+#main-window {
+  background-color: transparent !important;
+  -moz-appearance: -moz-win-glass !important;
+}
+
+#main-window:not([customizing]) .titlebar-button,
+#main-window:not([customizing]) .titlebar-button:not(#titlebar-close) > .toolbarbutton-icon{
+  opacity: 0.01 !important;
+}
+
+#main-window:not([customizing]) .titlebar-button:hover {
+  opacity: 1 !important;
+}
+
+#main-window:not([customizing]) .titlebar-button:not(#titlebar-close):hover {
+  opacity: 0.1 !important;
+  background: black !important;
+}
