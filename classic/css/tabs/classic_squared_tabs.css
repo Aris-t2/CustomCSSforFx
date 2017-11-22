@@ -6,6 +6,12 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+/* tabs height for "classic tabs" */
+:root {
+  --tab-min-height: 26px !important;
+}
+
 /* adjust tab toolbars buttons for squared tabs */
 #TabsToolbar #alltabs-button .toolbarbutton-icon,
 #TabsToolbar > #new-tab-button .toolbarbutton-icon,
@@ -120,7 +126,6 @@
   background-image: linear-gradient(rgba(91,91,91,.99), rgba(91,91,91,.99)) !important;
 }
 
-
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
   border-top: 1px solid rgba(0,0,0,.5) !important;
   border-left: 1px solid rgba(0,0,0,.4) !important; 
@@ -234,12 +239,12 @@
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
-  min-height: 26px !important;
+  min-height: var(--tab-min-height) !important;
 }
 
 #TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
-  min-height: 25px !important;
-  max-height: 25px !important;
+  min-height: calc( var(--tab-min-height) - 1px ) !important;
+  max-height: calc( var(--tab-min-height) - 1px ) !important;
 }
 
 /* Windows 10 fix ['@media (-moz-os-version: windows-win10)' currently broken on Windows 10FCU] */

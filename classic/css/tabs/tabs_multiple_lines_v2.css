@@ -1,0 +1,57 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original author: ***********************************************/
+/* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/****************************************************************************************/
+
+/* tabs height for "classic tabs" */
+:root {
+  --tab-min-height: 26px !important;
+}
+
+.tabbrowser-tab:not([pinned]) {
+  flex-grow: 1;
+  min-width: 100px !important;
+  max-width: 100px !important;
+}
+
+.tabbrowser-tab,.tab-background {
+  min-height: var(--tab-min-height);
+}
+
+.tab-stack {
+  width: 100%;
+}
+
+#tabbrowser-tabs .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto !important;
+  min-height: var(--tab-min-height);
+  max-height: calc(3*var(--tab-min-height)) !important; /* 3 rows */
+}
+
+#tabbrowser-tabs .arrowscrollbox-scrollbox {
+  overflow: visible; 
+  display: block;
+}
+
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+#alltabs-button,
+.tabbrowser-tab:not([fadein]){
+  display: none;
+}
+
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+  -moz-window-dragging: no-drag;
+}	

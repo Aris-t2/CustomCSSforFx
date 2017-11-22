@@ -14,8 +14,13 @@
 
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar:not(:-moz-lwtheme),
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar {
-  -moz-padding-end: 145px !important;
+  -moz-margin-end: 145px !important;
   -moz-appearance: none !important;  
   background: transparent !important;
   border-top: unset !important;
+}
+
+#main-window[sizemode="normal"] #navigator-toolbox #nav-bar {
+  border-left: 0px !important;
+  border-right: 0px !important;
 }
