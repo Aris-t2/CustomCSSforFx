@@ -1,0 +1,32 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+label.findbar-find-fast{
+  visibility: collapse !important;
+}
+
+label.found-matches,
+.findbar-find-status,
+.findbar-find-previous,
+.findbar-find-next,
+.findbar-button {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.findbar-find-previous[disabled]:active,
+.findbar-find-next[disabled]:active {
+  background: rgba(23,50,76,.2) !important;
+  box-shadow: 0 1px 2px rgba(10,31,51,.2) inset !important;
+}
+
+.findbar-find-previous,
+.findbar-find-previous[disabled]:active {
+  border: 1px solid ThreeDShadow !important;
+}

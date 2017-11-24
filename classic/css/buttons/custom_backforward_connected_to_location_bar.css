@@ -115,3 +115,11 @@
   padding-bottom: 7px !important;
   -moz-padding-start: 15px !important;
 }
+
+/* Dark theme */
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme-brighttext #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme-brighttext #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before,
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'][uidensity=touch]:-moz-lwtheme-brighttext #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");'][uidensity=touch]:-moz-lwtheme-brighttext #nav-bar[currentset*="back-button,forward-button,urlbar-container"] #back-button + #forward-button:not([disabled])::before  {
+  background: #323234 !important;
+}

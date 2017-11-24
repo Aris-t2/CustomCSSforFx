@@ -8,12 +8,21 @@
 
 /*************************************************************************************************
 
-  ENABLING options: remove the combination of / and * before @import
-  DISABLING options: add the combination of / and * before @import
+  README
   
-  Some @import features might not work properly on macOS and Linux -> Firefox bug
+  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
+  CSS files and subfolders belong into \PROFILEFOLDER\chrome\ directory.
   
-  CSS tweaks won't work, if @namespace references are used inside .css files!
+  ENABLING options: remove the combination of / and * before '@import'.
+  DISABLING options: add the combination of / and * before '@import'.
+  
+  Some '@import' features might not work properly on macOS and Linux -> Firefox bug
+  
+  CSS tweaks won't work, if '@namespace' references are used inside .css files!
+  
+  Do not report issues with EXPERIMENTAL settings! They are for testing only!
+  
+  All options have signigicant categories & names. Read whole file to get an overview.
 
 *************************************************************************************************/
 
@@ -21,8 +30,8 @@
 /* about:addons *********************************************************************************/
 /************************************************************************************************/
 
-/* NOTE: 'Version number for add-ons' will stop working soon, because Mozilla is going ***********
-		 to drop XBL support: see https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 **********/
+/* NOTE: 'Version number for add-ons' will soon stop working when Mozilla drops XBL support. *****
+		 See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************************/
 
 /* version number for add-ons *******************************************************************/
 @import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/

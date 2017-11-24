@@ -8,22 +8,26 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.5 ********************************************************************************/
+/* version 1.3.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
-  Finding profile folder: about:support > Profile Folder > Open Folder
-  files and folders belong into \PROFILEFOLDER\chrome\ directory
+  README
   
-  ENABLING options: remove the combination of / and * before @import
-  DISABLING options: add the combination of / and * before @import
+  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
+  CSS files and subfolders belong into \PROFILEFOLDER\chrome\ directory.
   
-  Some @import features might not work properly on macOS and Linux -> Firefox bug
+  ENABLING options: remove the combination of / and * before '@import'.
+  DISABLING options: add the combination of / and * before '@import'.
   
-  CSS tweaks won't work, if @namespace references are used inside .css files!
+  Some '@import' features might not work properly on macOS and Linux -> Firefox bug
   
-  Do not report issues with EXPERIMENTAL settings! Use them for testing only!
+  CSS tweaks won't work, if '@namespace' references are used inside .css files!
+  
+  Do not report issues with EXPERIMENTAL settings! They are for testing only!
+  
+  All options have signigicant categories & names. Read whole file to get an overview.
 
 *************************************************************************************************/
 
@@ -88,7 +92,7 @@
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
-/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
+ @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); /**/
 /* @import url(./css/buttons/custom_backforward_large_ff3.css); /**/
@@ -271,6 +275,7 @@
 /************************************************************************************************/
 
 @import url(./css/generalui/findbar_on_top.css); /**/
+/* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
 @import url(./css/generalui/private_mode_indicator_hidden.css); /**/
 @import url(./css/generalui/bookmark_icons_colorized.css); /**/
 /* @import url(./css/generalui/bookmarks_smaller_more_bookmarks_icon.css); /**/
@@ -278,6 +283,7 @@
 /* @import url(./css/generalui/popup_animation_fade_time_reduced.css); /**/
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
+/* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
 /* @import url(./css/generalui/context_bfrsb_icons_colorized.css); /**/
@@ -391,8 +397,8 @@
 /* LOCATION BAR - 'autocomplete popup' appearance ***********************************************/
 /************************************************************************************************/
 
-/* NOTE: 'Classic popup with two lined resuls' will stop working soon, because Mozilla is going **
-		 to drop XBL support: see https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 **********/
+/* NOTE: 'Classic popup with two lined resuls' will soon stop working when Mozilla drops XBL *****
+		 support. See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 **********************/
 
 /* popup content order/appearance - only use one at a time **************************************/
 @import url(./css/locationbar/ac_popup_classic_with_two_lines.css); /**/
