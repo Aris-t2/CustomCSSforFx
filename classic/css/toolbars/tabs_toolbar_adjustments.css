@@ -10,7 +10,10 @@
 /* Fx58+ titlebar placeholders */
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"],
 #TabsToolbar .titlebar-placeholder[type="post-tabs"]{
-  display: none !important;
+  /*display: none !important;*/
+  min-width: 0 !important;
+  width: 0 !important;
+  max-width: 0 !important;
 }
 
 #TabsToolbar .titlebar-placeholder[type="caption-buttons"] {

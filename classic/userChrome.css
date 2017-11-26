@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.6 ********************************************************************************/
+/* version 1.3.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -92,7 +92,7 @@
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
- @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); /**/
 /* @import url(./css/buttons/custom_backforward_large_ff3.css); /**/
@@ -355,6 +355,8 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/  /* <--- EXPERIMENTAL */
+/* TOOLBAR TEXT MODES - EXTRA for Windows Classic OS theme **************************************/
+/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css); /**/  /* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/

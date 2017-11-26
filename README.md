@@ -37,7 +37,7 @@ or <code>Shift+F2</code> to open Firefox's command line, then enter the command 
 <code>C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \ </code></br>
 Hidden files must be visible to see <code>AppData</code> folder. Alternatively open <code>%APPDATA%\Mozilla\Firefox\Profiles\</code> from explorers location bar.</br>
 <b>Linux</b></br>
-<code>\.mozilla\firefox\ PROFILENAME \ </code></br>
+<code>\home\ USERNAME \.mozilla\firefox\ PROFILENAME \ </code></br>
 Hidden files must be visible to see <code>.mozilla</code> folder.</br>
 <b>Mac OS X</b></br>
 <code>~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \ </code> or</br>

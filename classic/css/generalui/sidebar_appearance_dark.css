@@ -1,0 +1,50 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* #D1D1D1 = light grey */
+/* #474749 = dark grey */
+/* #323234 = very dark grey */
+
+
+#sidebar,
+#sidebar-header,
+#bookmarksPanel,
+#bookmarks-view,
+#history-panel,
+#historyTree {
+  background: #323234 !important;
+  color: #D1D1D1 !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(hover),
+.sidebar-placesTreechildren::-moz-tree-row(selected),
+.sidebar-placesTreechildren::-moz-tree-cell-text(hover),
+.sidebar-placesTreechildren::-moz-tree-cell-text(selected) {
+ background: #474749 !important;
+ color: #D1D1D1 !important;
+}
+   
+/* Fix for remaining hovering borders */
+.sidebar-placesTreechildren::-moz-tree-row {
+ outline: none !important;
+ border: none !important;
+}
+
+/* Hide white splitter (also appears on top right of scrollbar) *//*
+#sidebar-splitter {
+  opacity: 0 !important;
+}
+ 
+/* Add custom splitter between sidebar and content *//*
+#sidebar,
+#sidebar-header {
+  -moz-border-end: 3px solid #474749 !important;
+}
+
+/**/
