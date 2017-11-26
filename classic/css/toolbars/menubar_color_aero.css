@@ -1,0 +1,19 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#toolbar-menubar:not(:-moz-lwtheme) {
+  background-image: linear-gradient(#ddebf9,#ddebf9) !important;
+  border: 1px solid var(--tabs-border-color) !important;
+  border-bottom: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#nav-bar {
+  border-top: 0px !important;
+}

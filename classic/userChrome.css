@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.7 ********************************************************************************/
+/* version 1.3.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -161,6 +161,7 @@
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_transparent.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_semi_transparent.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_aurora.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_nightly.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_deved57p.css); /**/
@@ -177,10 +178,12 @@
 /* @import url(./css/tabs/classic_squared_tabs_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/tabs/classic_squared_tabs_transparent.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_aeroglass.css); /**/
+/* @import url(./css/tabs/classic_squared_tabs_classic_grey.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/tabs/classic_squared_tabs_australized_transparent.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css); /**/
+/* @import url(./css/tabs/classic_squared_tabs_australized_classic_grey.css); /**/
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
 /* only use one at a time - edit target file to set own custom colors ***************************/
@@ -206,6 +209,7 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_grey.css); /**/
 /************************************************************************************************/
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL - DO NOT REPORT ISSUES! ************/
 /* - requires one of the above 'tabs not on top' settings ***************************************/
@@ -274,8 +278,6 @@
 /* GENERAL UI ***********************************************************************************/
 /************************************************************************************************/
 
-@import url(./css/generalui/findbar_on_top.css); /**/
-/* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
 @import url(./css/generalui/private_mode_indicator_hidden.css); /**/
 @import url(./css/generalui/bookmark_icons_colorized.css); /**/
 /* @import url(./css/generalui/bookmarks_smaller_more_bookmarks_icon.css); /**/
@@ -284,6 +286,14 @@
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
+
+/* findbar **************************************************************************************/
+@import url(./css/generalui/findbar_on_top.css); /**/
+/* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
+/* findbar - close icon position - only use one at a time ***************************************/
+/* @import url(./css/generalui/findbar_on_top_close_at_findbars_start.css); /**/
+/* @import url(./css/generalui/findbar_on_bottom_close_at_findbars_start.css); /**/
+
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
 /* @import url(./css/generalui/context_bfrsb_icons_colorized.css); /**/
@@ -333,6 +343,9 @@
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
 /* edit target file to select which items to hide ***********************************************/
 /* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/
+/* menubar color - only use one at a time *******************************************************/
+/* @import url(./css/toolbars/menubar_color_aero.css); /**/
+/* @import url(./css/toolbars/menubar_color_classic_grey.css); /**/
 
 /* bookmarks toolbar ****************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
@@ -344,6 +357,7 @@
 /* @import url(./css/toolbars/general_toolbar_colors_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/toolbars/general_toolbar_colors_transparent.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_aeroglass.css); /**/
+/* @import url(./css/toolbars/general_toolbar_colors_classic_grey.css); /**/
 
 /* AeroGlass toolbars - separated - set per toolbar *********************************************/
 /* @import url(./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css); /**/

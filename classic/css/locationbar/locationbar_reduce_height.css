@@ -14,6 +14,21 @@
   height: 24px !important;
 }
 
+#urlbar .urlbar-icon,
+#main-window[uidensity=compact] #urlbar .urlbar-icon,
+#main-window[uidensity=touch] #urlbar .urlbar-icon  {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0px 1px !important;
+  margin: 0 !important;
+}
+
+#urlbar #reader-mode-button,
+#main-window[uidensity=compact] #urlbar #reader-mode-button,
+#main-window[uidensity=touch] #urlbar #reader-mode-button{
+  padding: 1px !important;
+}
+
 /* reduce button height (this will cause major glitches) *//*
 #nav-bar .toolbarbutton-1 {
   padding-top: 1px !important;

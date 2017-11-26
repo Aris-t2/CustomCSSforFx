@@ -1,0 +1,15 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import url(./tabs_below_navigation_toolbar.css);
+
+#TabsToolbar:not(:-moz-lwtheme) {
+  background: #d4d0c8 !important;
+}
+
+/**/
