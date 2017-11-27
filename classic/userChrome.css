@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.8 ********************************************************************************/
+/* version 1.3.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -81,6 +81,7 @@
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
 /* popup appearance - only use one at a time (use 'Windows Classic' file for classic OS theme ***/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
+/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx59.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/
 
 /* menubar - toolbar button appearance **********************************************************/
@@ -92,7 +93,7 @@
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
-/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); /**/
 /* @import url(./css/buttons/custom_backforward_large_ff3.css); /**/
@@ -121,8 +122,8 @@
 /* application/hamburger button popup ***********************************************************/
 @import url(./css/buttons/appbutton_popup_icons_colorized.css); /**/
 /* @import url(./css/buttons/appbutton_popup_sync_hidden.css); /**/
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/ 
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
@@ -179,11 +180,13 @@
 /* @import url(./css/tabs/classic_squared_tabs_transparent.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_aeroglass.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_classic_grey.css); /**/
+/* @import url(./css/tabs/classic_squared_tabs_classic_fx3.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/tabs/classic_squared_tabs_australized_transparent.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized_classic_grey.css); /**/
+/* @import url(./css/tabs/classic_squared_tabs_australized_classic_fx3.css); /**/
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
 /* only use one at a time - edit target file to set own custom colors ***************************/
@@ -210,6 +213,7 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_grey.css); /**/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_fx3.css); /**/
 /************************************************************************************************/
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL - DO NOT REPORT ISSUES! ************/
 /* - requires one of the above 'tabs not on top' settings ***************************************/
@@ -288,12 +292,11 @@
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
 
 /* findbar **************************************************************************************/
-@import url(./css/generalui/findbar_on_top.css); /**/
+/* @import url(./css/generalui/findbar_on_top.css); /**/
 /* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
 /* findbar - close icon position - only use one at a time ***************************************/
 /* @import url(./css/generalui/findbar_on_top_close_at_findbars_start.css); /**/
 /* @import url(./css/generalui/findbar_on_bottom_close_at_findbars_start.css); /**/
-
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
 /* @import url(./css/generalui/context_bfrsb_icons_colorized.css); /**/
@@ -346,6 +349,7 @@
 /* menubar color - only use one at a time *******************************************************/
 /* @import url(./css/toolbars/menubar_color_aero.css); /**/
 /* @import url(./css/toolbars/menubar_color_classic_grey.css); /**/
+/* @import url(./css/toolbars/menubar_color_classic_fx3.css); /**/
 
 /* bookmarks toolbar ****************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
@@ -358,6 +362,7 @@
 /* @import url(./css/toolbars/general_toolbar_colors_transparent.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_aeroglass.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_classic_grey.css); /**/
+/* @import url(./css/toolbars/general_toolbar_colors_classic_fx3.css); /**/
 
 /* AeroGlass toolbars - separated - set per toolbar *********************************************/
 /* @import url(./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css); /**/
@@ -367,10 +372,10 @@
 /* @import url(./css/toolbars/general_toolbar_colors_aeroglass_windows10_glass8.css); /**/  /* <--- EXPERIMENTAL */
 
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
-/* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/toolbars/toolbar_mode_text.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
+/* @import url(./css/toolbars/toolbar_mode_text.css); /**/
 /* TOOLBAR TEXT MODES - EXTRA for Windows Classic OS theme **************************************/
-/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css); /**/
 
 
 /************************************************************************************************/
@@ -381,7 +386,7 @@
 @import url(./css/locationbar/compact_mode_reduce_fontsize.css); /**/
 /* @import url(./css/locationbar/background_color_dark.css); /**/
 /* @import url(./css/locationbar/locationbar_border_roundness.css); /**/
-/* @import url(./css/locationbar/locationbar_reduce_height.css); /**/ /* <--- EXPERIMENTAL */
+/* @import url(./css/locationbar/locationbar_reduce_height.css); /**/
 
 /* autocomplete/history dropmarker **************************************************************/
 @import url(./css/locationbar/dropmarker_at_the_end.css); /**/

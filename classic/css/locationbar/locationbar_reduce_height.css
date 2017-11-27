@@ -14,9 +14,9 @@
   height: 24px !important;
 }
 
-#urlbar .urlbar-icon,
-#main-window[uidensity=compact] #urlbar .urlbar-icon,
-#main-window[uidensity=touch] #urlbar .urlbar-icon  {
+.urlbar-icon,
+#main-window[uidensity=compact] .urlbar-icon,
+#main-window[uidensity=touch] .urlbar-icon  {
   width: 18px !important;
   height: 18px !important;
   padding: 0px 1px !important;
@@ -29,7 +29,12 @@
   padding: 1px !important;
 }
 
-/* reduce button height (this will cause major glitches) *//*
+.searchbar-search-icon {
+  margin-inline-start: 4px !important;
+  margin-inline-end: 4px !important;
+}
+
+/* reduce toolbar button height to match location bars button height (this will cause major glitches) *//*
 #nav-bar .toolbarbutton-1 {
   padding-top: 1px !important;
   padding-bottom: 1px !important;
