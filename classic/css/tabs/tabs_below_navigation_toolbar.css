@@ -191,6 +191,15 @@
   fill: black !important;
 }
 
+/* tab text colors */
+#TabsToolbar .tabbrowser-tab {
+  color: #000000 !important;
+}
+
+#TabsToolbar:-moz-lwtheme-brighttext .tabbrowser-tab {
+  color: #ffffff !important;
+}
+
 /* tweaks for Windows Classic theme *//*
 #nav-bar:not(:-moz-lwtheme),
 #PersonalToolbar:not(:-moz-lwtheme),

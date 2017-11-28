@@ -47,7 +47,7 @@
 }
 
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
-  background-color: var(--toolbar-bgcolor) !important;
+  background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),transparent) !important;
   -moz-margin-end: -18px !important;
   -moz-padding-end: 18px !important;
 }

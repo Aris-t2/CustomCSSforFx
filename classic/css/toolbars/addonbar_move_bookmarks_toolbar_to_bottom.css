@@ -1,0 +1,56 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]  {
+  padding-bottom: 28px !important;
+}
+
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks{
+  position: absolute !important;
+  bottom: 1px !important;
+}
+
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+  min-height: 24px !important;
+}
+
+#main-window:not([customizing="true"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+  display: block !important;
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 100% !important;
+  height: 28px !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  border-top: 1px solid var(--toolbox-border-bottom-color) !important;
+}
+
+#main-window:not([customizing="true"]) #browser-panel > #fullscr-toggler[hidden=true] + #content-deck {
+  margin-bottom: 27px;
+}
+
+#main-window:not([customizing="true"]) #browser-panel > #navigator-toolbox[inFullscreen=true] + #fullscr-toggler[hidden=true] + #content-deck {
+  margin-bottom: unset;
+}
+
+#main-window:not([customizing="true"])[inFullscreen=true] #PersonalToolbar #bookmarks-menu-button::after {
+  visibility: collapse !important;
+  display: none !important;
+}

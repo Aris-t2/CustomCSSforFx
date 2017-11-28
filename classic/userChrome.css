@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.3.9 ********************************************************************************/
+/* version 1.4.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -193,10 +193,6 @@
 /* @import url(./css/tabs/custom_colors_for_squared_tabs.css); /**/
 /* @import url(./css/tabs/custom_colors_for_squared_tabs_australized.css); /**/
 
-/* text colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **************/
-/* edit target file to set own custom colors ****************************************************/
-/* @import url(./css/tabs/custom_text_settings.css); /**/
-
 /* remove top corner roundness ******************************************************************/
 /* @import url(./css/tabs/classic_squared_tabs_fully_squared.css); /**/
 
@@ -224,6 +220,10 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
+
+/* TAB TEXT colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **********/
+/* edit target file to set own custom colors ****************************************************/
+/* @import url(./css/tabs/custom_text_settings.css); /**/
 
 /* multirow / multi lined tabs - see https://00.bulog.jp/archives/1476 for v1 and ***************/
 /* for v2 https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ************/
@@ -337,15 +337,22 @@
 /* TOOLBARS *************************************************************************************/
 /************************************************************************************************/
 
+/* ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom ********************/
+/* - move 'Bookmarks Toolbar Items' to navigation bar to 'create' a bookmarks toolbar on top ****/
+/* - not compatible to 'bookmarks toolbar - multiple lines' option ******************************/
+/* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/
+
+/* general toolbar settings *********************************************************************/
 @import url(./css/toolbars/toolbars_old_padding.css); /**/
 @import url(./css/toolbars/tabs_toolbar_adjustments.css); /**/
 /* @import url(./css/toolbars/navbar_more_compact_mode.css); /**/
 
+/* edit target file to select which items to hide ***********************************************/
+/* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/
+
 /* menubar **************************************************************************************/
 /* @import url(./css/toolbars/menubar_fog_hidden.css); /**/
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
-/* edit target file to select which items to hide ***********************************************/
-/* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/
 /* menubar color - only use one at a time *******************************************************/
 /* @import url(./css/toolbars/menubar_color_aero.css); /**/
 /* @import url(./css/toolbars/menubar_color_classic_grey.css); /**/
