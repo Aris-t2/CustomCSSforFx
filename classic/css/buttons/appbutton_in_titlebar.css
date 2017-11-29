@@ -42,7 +42,7 @@
 }
 
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
-  top: 1px !important;
+  top: 0px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
