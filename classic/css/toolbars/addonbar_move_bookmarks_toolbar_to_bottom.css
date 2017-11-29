@@ -16,7 +16,7 @@
   bottom: 1px !important;
 }
 
-#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
+#nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
   min-width: 0px !important;
   min-height: 0px !important;
   width: 16px !important;
@@ -27,11 +27,11 @@
   box-shadow: unset !important;
 }
 
-#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+#nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   min-height: 24px !important;
 }
 
-#main-window:not([customizing="true"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+#browser-panel > #navigator-toolbox > #PersonalToolbar {
   display: block !important;
   position: fixed !important;
   bottom: 0px !important;
@@ -42,15 +42,11 @@
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
 }
 
-#main-window:not([customizing="true"]) #browser-panel > #fullscr-toggler[hidden=true] + #content-deck {
+#main-window:not([inFullscreen=true]) #browser-bottombox  {
   margin-bottom: 27px;
 }
 
-#main-window:not([customizing="true"]) #browser-panel > #navigator-toolbox[inFullscreen=true] + #fullscr-toggler[hidden=true] + #content-deck {
-  margin-bottom: unset;
-}
-
-#main-window:not([customizing="true"])[inFullscreen=true] #PersonalToolbar #bookmarks-menu-button::after {
+#main-window[inFullscreen=true] #PersonalToolbar #bookmarks-menu-button::after {
   visibility: collapse !important;
   display: none !important;
 }

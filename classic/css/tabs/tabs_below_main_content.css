@@ -34,7 +34,22 @@
   position: relative !important;
   bottom: -5px !important;
 }
-#customization-footer,
-#browser {
+#TabsToolbar #window-controls {
+  position: fixed !important;
+  bottom: 4px !important;
+}
+
+#TabsToolbar #window-controls:-moz-locale-dir(ltr) {
+  right: 0 !important;
+}
+#TabsToolbar #window-controls:-moz-locale-dir(rtl) {
+  left: 0 !important;
+}
+
+#main-window[inFullscreen=true] #TabsToolbar {
+  -moz-padding-end: 50px !important;
+}
+
+#browser-bottombox{
   margin-bottom: 27px !important;
 }
