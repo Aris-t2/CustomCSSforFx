@@ -17,7 +17,8 @@
 #bookmarksPanel,
 #bookmarks-view,
 #history-panel,
-#historyTree {
+#historyTree,
+#viewButton {
   background: #323234 !important;
   color: #D1D1D1 !important;
 }
@@ -25,7 +26,8 @@
 .sidebar-placesTreechildren::-moz-tree-cell(hover),
 .sidebar-placesTreechildren::-moz-tree-row(selected),
 .sidebar-placesTreechildren::-moz-tree-cell-text(hover),
-.sidebar-placesTreechildren::-moz-tree-cell-text(selected) {
+.sidebar-placesTreechildren::-moz-tree-cell-text(selected),
+#viewButton:hover {
  background: #474749 !important;
  color: #D1D1D1 !important;
 }
