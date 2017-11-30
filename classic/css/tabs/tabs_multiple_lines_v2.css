@@ -13,11 +13,6 @@
 /* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /****************************************************************************************/
 
-/* tabs height for "classic tabs" */
-:root {
-  --tab-min-height: 26px !important;
-}
-
 .tabbrowser-tab:not([pinned]) {
   flex-grow: 1;
   min-width: 100px !important;
@@ -37,7 +32,7 @@
   flex-wrap: wrap;
   overflow-y: auto !important;
   min-height: var(--tab-min-height);
-  max-height: calc(3*var(--tab-min-height)) !important; /* 3 rows */
+  max-height: calc(3*var(--tab-min-height)) !important; /* 3 rows, increase for more */
 }
 
 #tabbrowser-tabs .arrowscrollbox-scrollbox {

@@ -7,6 +7,11 @@
 /****************************************************************************************/
 
 
+/* reduce default tab height by 1px */
+:root {
+  --tab-min-height_tnot: calc( var(--tab-min-height) - 1px ) !important;
+}
+
 /* tabs toolbar adjustment */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
@@ -45,7 +50,7 @@
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
-  min-height: 25px !important;
+  min-height: var(--tab-min-height_tnot) !important;
 }
 
 /* toolbar order (start) ************************************/
@@ -148,7 +153,7 @@
 
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"],
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
-  margin-top: 25px !important;
+  margin-top: var(--tab-min-height_tnot) !important;
 }
 
 #tabbrowser-tabs .tab-drop-indicator {
@@ -198,7 +203,19 @@
 }
 
 /* tab text colors */
-#TabsToolbar .tabbrowser-tab {
+.tabbrowser-tab {
+  color: #000000 !important;
+}
+
+@media (-moz-os-version: windows-win7) {
+  @media (-moz-windows-default-theme) {
+	.tabbrowser-tab:not([selected]) {
+	  color: #ffffff !important;
+	}
+  }
+}
+
+#TabsToolbar:-moz-lwtheme-darktext .tabbrowser-tab {
   color: #000000 !important;
 }
 

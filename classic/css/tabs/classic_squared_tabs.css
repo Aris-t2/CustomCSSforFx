@@ -10,6 +10,7 @@
 /* tabs height for "classic tabs" */
 :root {
   --tab-min-height: 26px !important;
+  --tab-min-height_ntml: 27px !important;
 }
 
 /* adjust tab toolbars buttons for squared tabs */

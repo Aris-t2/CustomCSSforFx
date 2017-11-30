@@ -12,10 +12,15 @@
 /* all credits go to the original author: https://00.bulog.jp/archives/1476 *************/
 /****************************************************************************************/
 
+
+/* 'new tab' tab size */
+:root {
+  --tab-min-height_ntml: var(--tab-min-height);
+}
+
 /* titlebar buttons */
 #titlebar-buttonbox {
   vertical-align: top !important;
-  display: block !important;
 }
 
 .tabbrowser-arrowscrollbox scrollbox {
@@ -27,35 +32,35 @@
 }
 
 /* titlebar button height */
-toolbarbutton.titlebar-button {
+/*toolbarbutton.titlebar-button {
   min-height: 31px !important;
-}
-
-/* tabs end position */
-.tabbrowser-tabs {
-  -moz-margin-end: -41px !important;
-}
+}*/
 
 /* tab size */
 .tabbrowser-tab[pinned] {
-  min-height: 26px !important;
-  max-height: 26px !important;
+  min-height: var(--tab-min-height) !important;
 }
 
 .tabbrowser-tab:not([pinned]) {
-  min-height: 26px !important;
-  max-height: 26px !important;
+  min-height: var(--tab-min-height) !important;
 }
 
 .tabbrowser-tabs .tabbrowser-tab {
   vertical-align: top !important;
   -moz-box-sizing: border-box !important;
-  min-height: 26px !important;
-  max-height: 26px !important;
+  min-height: var(--tab-min-height) !important;
 }
 
 /* 'new tab' tab size */
 .tabs-newtab-button {
   vertical-align: bottom !important;
-  height: 27px !important;
+  min-height: var(--tab-min-height_ntml) !important;
+}
+
+
+/* Button for scrolling tabs to the left */
+.scrollbutton-up ,
+.scrollbutton-down,
+#TabsToolbar #alltabs-button{
+  display: none;
 }

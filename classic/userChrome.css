@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.4.2 ********************************************************************************/
+/* version 1.4.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -16,7 +16,7 @@
   README
   
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
-  CSS files and subfolders belong into \PROFILEFOLDER\chrome\ directory.
+  CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   
   ENABLING options: remove the combination of / and * before '@import'.
   DISABLING options: add the combination of / and * before '@import'.
@@ -27,7 +27,7 @@
   
   Do not report issues with EXPERIMENTAL settings! They are for testing only!
   
-  All options have signigicant categories & names. Read whole file to get an overview.
+  All options have significant categories & names. Read whole file to get an overview.
 
 *************************************************************************************************/
 
@@ -213,7 +213,7 @@
 /************************************************************************************************/
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL - DO NOT REPORT ISSUES! ************/
 /* - requires one of the above 'tabs not on top' settings ***************************************/
-/*  @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
 /* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- EXPERIMENTAL */
@@ -225,9 +225,11 @@
 /* edit target file to set own custom colors ****************************************************/
 /* @import url(./css/tabs/custom_text_settings.css); /**/
 
-/* multirow / multi lined tabs - see https://00.bulog.jp/archives/1476 for v1 and ***************/
-/* for v2 https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ************/
-/* only use one at a time ***********************************************************************/
+/* MULTIROW / multi lined tabs - only use one at a time *****************************************/
+/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 ************************/
+/* - BUG: dragging tabs does not work properly with multi lined tabs ****************************/
+/* - for v1 see https://00.bulog.jp/archives/1476 ***********************************************/
+/* - for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ******/
 /* @import url(./css/tabs/tabs_multiple_lines.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_multiple_lines_v2.css); /**/  /* <--- EXPERIMENTAL */
 
@@ -340,7 +342,8 @@
 /* ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom ********************/
 /* - move 'Bookmarks Toolbar Items' to navigation bar to 'create' a bookmarks toolbar on top ****/
 /* - not compatible to 'bookmarks toolbar - multiple lines' option ******************************/
-/* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/
+/* - not compatible to 'tabs toolbar - below main content' option *******************************/
+ @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/
 
 /* general toolbar settings *********************************************************************/
 @import url(./css/toolbars/toolbars_old_padding.css); /**/

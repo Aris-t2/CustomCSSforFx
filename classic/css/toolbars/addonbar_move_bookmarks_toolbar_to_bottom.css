@@ -7,15 +7,25 @@
 /****************************************************************************************/
 
 
+/* create an empty space below navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]  {
   padding-bottom: 28px !important;
 }
 
+/* reduce maximum width of location bar and search bar on navigaiton toolbar */
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] :-moz-any(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+  min-width: 50px !important;
+}
+
+/* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks{
   position: absolute !important;
   bottom: 1px !important;
+  min-width: 0 !important;
+  max-width: 100vw !important;
 }
 
+/* reduce size of bookmarks 'more bookmarks' menu chevron and remove its background color on navigation toolbar */
 #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
   min-width: 0px !important;
   min-height: 0px !important;
@@ -27,26 +37,41 @@
   box-shadow: unset !important;
 }
 
+/* set minimum height for bookmarks, when on navigation toolbar */
 #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   min-height: 24px !important;
 }
 
+/* move bookmarks toolbar to bottom + style bookmarks toolbar */
 #browser-panel > #navigator-toolbox > #PersonalToolbar {
   display: block !important;
   position: fixed !important;
   bottom: 0px !important;
   width: 100% !important;
-  height: 28px !important;
+  height: 27px !important;
   padding-left: 1px !important;
   padding-right: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
 }
 
-#main-window:not([inFullscreen=true]) #browser-bottombox  {
-  margin-bottom: 27px;
+#PersonalToolbar > *  {
+  min-height: 24px !important;
 }
 
+/* free some space below content */
+#main-window:not([inFullscreen=true]) #browser-bottombox  {
+  margin-bottom: 26px;
+}
+
+/* hide the projects custom bookmarks label, if used */
 #main-window[inFullscreen=true] #PersonalToolbar #bookmarks-menu-button::after {
   visibility: collapse !important;
   display: none !important;
+}
+
+/* adjust flexible spaces visible rectangle in customizing mode */
+#PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] toolbarspring {
+  height: 18px !important;
+  padding: unset !important;
+  margin: -13px 0 13px 0 !important;
 }

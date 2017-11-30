@@ -53,3 +53,9 @@
 #browser-bottombox{
   margin-bottom: 27px !important;
 }
+
+/* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  display: none !important;
+}
