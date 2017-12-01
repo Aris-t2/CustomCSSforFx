@@ -53,7 +53,12 @@
   padding-right: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
 }
-
+#browser-panel > #navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
+  background-repeat: no-repeat !important;
+  background-position: bottom left !important;
+  background-color: var(--lwt-accent-color) !important;
+  background-image: var(--lwt-header-image) !important;
+}
 #PersonalToolbar > *  {
   min-height: 24px !important;
 }
@@ -71,7 +76,7 @@
 
 /* adjust flexible spaces visible rectangle in customizing mode */
 #PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] toolbarspring {
-  height: 18px !important;
+  height: 14px !important;
   padding: unset !important;
-  margin: -13px 0 13px 0 !important;
+  margin: -15px 0 15px 0 !important;
 }

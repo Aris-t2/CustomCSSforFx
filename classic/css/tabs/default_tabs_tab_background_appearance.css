@@ -1,0 +1,23 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tabbrowser-tab > .tab-stack > .tab-background:not([selected=true]) {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+
+#TabsToolbar[brighttext] .tabbrowser-tab > .tab-stack > .tab-background:not([selected=true]) {
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+#TabsToolbar[brighttext] .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
+  background-color: rgba(255,255,255,0.2) !important;
+}

@@ -41,6 +41,18 @@ treechildren::-moz-tree-image(title, query) {
  -moz-image-region: auto !important;
 }
 
+treechildren::-moz-tree-image(title, query, dayContainer) {
+  list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+
+treechildren::-moz-tree-image(query, OrganizerQuery_History) {
+  list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+
 .bookmark-item[container] {
   list-style-image: url("./../../image/folder-item.png") !important;
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;

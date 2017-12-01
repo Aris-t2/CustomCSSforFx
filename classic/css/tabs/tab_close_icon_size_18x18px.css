@@ -7,6 +7,8 @@
 /****************************************************************************************/
 
 
+#main-window #navigator-toolbox #TabsToolbar #closetab_fmarin_com-browser-action .toolbarbutton-icon,
+#main-window #navigator-toolbox #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
 #main-window #navigator-toolbox #TabsToolbar .close-icon > .toolbarbutton-icon {
   min-width: 18px !important;
   width: 18px !important;
