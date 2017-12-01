@@ -13,11 +13,13 @@
 /****************************************************************************************/
 
 
-/* 'new tab' tab size */
 :root {
   --tab-min-height_ntml: var(--tab-min-height);
+  --mlt_pinned_tab-min-height: calc(var(--tab-min-height) - 4px);
 }
-
+:root[uidensity=touch] {
+  --mlt_pinned_tab-min-height: calc(var(--tab-min-height) - 14px);
+}
 /* titlebar buttons */
 #titlebar-buttonbox {
   vertical-align: top !important;
@@ -38,7 +40,7 @@
 
 /* tab size */
 .tabbrowser-tab[pinned] {
-  min-height: var(--tab-min-height) !important;
+  min-height: var(--mlt_pinned_tab-min-height) !important;
 }
 
 .tabbrowser-tab:not([pinned]) {
