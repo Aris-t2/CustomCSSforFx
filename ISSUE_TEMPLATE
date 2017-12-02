@@ -1,27 +1,27 @@
-This is a SUPPORT AREA for content available in this project. It mainly focuses on features, that can be replicated with CSS (and known from my legacy add-ons on AMO).
-
-This is not a "request" area for new stuff or legacy add-on features this project does not cover!
-Do not open new issues for something add-ons offered, but this project doesn't.
-Do not open new issues to ask 'is this or that possible?'
-
-Instead join the discussion thread to talk and ask questions about what is or could be possible there.
---> General discussions, feedback, questions belong here (v2)
---> https://github.com/Aris-t2/CustomCSSforFx/issues/41
-
-Make sure there are no @namespace references anywhere in your code. Not only are they useless, they also cause CSS code not to work at all.
+This is a SUPPORT AREA for features this project provides. This is not a "request" area for new stuff or legacy add-on features this project does not cover!
+- Do not open a new issue for something this project doesn't offer or to ask 'is this or that possible?'
+- Instead join the discussion thread to talk and ask questions about what is or could be possible there.
+--> https://github.com/Aris-t2/CustomCSSforFx/issues/41 (General discussions, feedback, questions belong here (v2))
 
 Read the 'how to report issues properly' before filing an issue report.
 --> https://github.com/Aris-t2/CustomCSSforFx/issues/4
 
-By filing an issue report you confirm to have read and understood the above and all 'how to report an issue' instructions.
-False/invalid issue reports might get closed without further notice. Thanks for your understanding.
+Make sure there are no '@namespace' references anywhere in your code. They cause CSS code not to work.
+
+Firefox bugs (join general discussion thread to talk about Firefox bugs):
+- CSS code might not work, if multi-process mode (e10s) is disabled
+- CSS code might not work on macOS/Liinux in userContent.css 
+
+By filing a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
+Invalid issue reports might get closed without further notice to keep this projects support area clean.
+Thanks for your understanding.
 
 ----------------------------------
 
 Fill everything as asked and and delete this line and everything above it.
 
 
-Describe the issue
+Describe the issue:
 
 
 What should have happened instead?
@@ -30,12 +30,11 @@ What should have happened instead?
 Steps to reproduce the issue?
 
 
-Screenshots (drag and drop images into this post)
+Screenshots (drag and drop images into this post):
 
 
 System information
-OS: 
-OS version: 
+OS & OS version: 
 OS theme: 
 DPI / HiDPI resolution: 
 Firefox version: 
