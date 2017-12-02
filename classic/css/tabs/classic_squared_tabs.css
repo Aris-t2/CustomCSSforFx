@@ -10,11 +10,7 @@
 /* tabs height for "classic tabs" */
 :root {
   --tab-min-height: 26px !important;
-  --tab-min-height_ntml: 27px !important;
-  --mlt_pinned_tab-min-height: 26px !important;
-}
-:root[uidensity=touch] {
-  --mlt_pinned_tab-min-height: 24px !important;
+  --mltabs-newtab-height: 27px !important;
 }
 
 /* adjust tab toolbars buttons for squared tabs */
@@ -22,13 +18,6 @@
 #TabsToolbar > #new-tab-button .toolbarbutton-icon,
 #TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
   padding: 3px !important;
-}
-
-/* remove tab fog */
-#TabsToolbar:not(:-moz-lwtheme),
-#TabsToolbar:not(:-moz-lwtheme)::before,
-#TabsToolbar:not(:-moz-lwtheme)::after {
-  box-shadow: unset !important;
 }
 
 /*******************************************/

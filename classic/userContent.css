@@ -16,7 +16,9 @@
   ENABLING options: remove the combination of / and * before '@import'.
   DISABLING options: add the combination of / and * before '@import'.
   
-  Some '@import' features might not work properly on macOS and Linux -> Firefox bug
+  FIREFOX BUGS (nothing CSS code can do about):
+  - some '@import' features might not work properly on macOS and Linux
+  - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
   
   CSS tweaks won't work, if '@namespace' references are used inside .css files!
   

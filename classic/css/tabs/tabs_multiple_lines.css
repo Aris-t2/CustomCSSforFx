@@ -12,17 +12,16 @@
 /* all credits go to the original author: https://00.bulog.jp/archives/1476 *************/
 /****************************************************************************************/
 
-
 :root {
-  --tab-min-height_ntml: var(--tab-min-height);
-  --mlt_pinned_tab-min-height: calc(var(--tab-min-height) - 4px);
+  --tabs-end-position: 50px;
+  --tab-min-height: var(--tab-min-height);
+  --mltabs-newtab-height: var(--tab-min-height);
 }
-:root[uidensity=touch] {
-  --mlt_pinned_tab-min-height: calc(var(--tab-min-height) - 14px);
-}
+
 /* titlebar buttons */
 #titlebar-buttonbox {
   vertical-align: top !important;
+  display: block !important;
 }
 
 .tabbrowser-arrowscrollbox scrollbox {
@@ -33,34 +32,28 @@
   display: block !important;
 }
 
-/* titlebar button height */
-/*toolbarbutton.titlebar-button {
-  min-height: 31px !important;
-}*/
+/* additional space after tabs */
+/*
+.tabbrowser-tabs {
+  -moz-margin-end: var(--tabs-end-position) !important;
+}
+*/
 
 /* tab size */
-.tabbrowser-tab[pinned] {
-  min-height: var(--mlt_pinned_tab-min-height) !important;
-}
-
-.tabbrowser-tab:not([pinned]) {
+.tabbrowser-tab {
   min-height: var(--tab-min-height) !important;
-}
-
-.tabbrowser-tabs .tabbrowser-tab {
+  max-height: var(--tab-min-height) !important;
   vertical-align: top !important;
   -moz-box-sizing: border-box !important;
-  min-height: var(--tab-min-height) !important;
 }
 
 /* 'new tab' tab size */
 .tabs-newtab-button {
   vertical-align: bottom !important;
-  min-height: var(--tab-min-height_ntml) !important;
+  height: var(--mltabs-newtab-height) !important;
 }
 
-
-/* Button for scrolling tabs to the left */
+/* hide unneeded buttons */
 .scrollbutton-up ,
 .scrollbutton-down,
 #TabsToolbar #alltabs-button{
