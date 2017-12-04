@@ -10,7 +10,12 @@ SUPPORT AREA for features this project provides
 
 Firefox bugs (join general discussion thread to talk about Firefox bugs):
 - CSS code might not work, if multi-process mode (e10s) is disabled
-- CSS code might not work on macOS/Liinux in userContent.css 
+- CSS code might not work on macOS/Liinux in userContent.css
+
+Anything releated to multirow tabs, tabs below content or simulated add-on bar should go into:
+- TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
+- MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/39
+- ADD-ON BAR SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/73
 
 By filing a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
 Invalid issue reports might get closed without further notice to keep this projects support area clean.
