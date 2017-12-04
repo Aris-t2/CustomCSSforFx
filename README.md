@@ -151,8 +151,8 @@ _browser.tabs.closeWindowWithLastTab_
 **Titlebar**  
 _browser.tabs.drawInTitlebar_  
 
-**Old about:newtab and about:home pages**
-_browser.newtabpage.activity-stream.enabled_
+**Old about:newtab and about:home pages**  
+_browser.newtabpage.activity-stream.enabled_  
 _browser.newtabpage.activity-stream.aboutHome.enabled_
 
 **HTML5 fullscreen warning**  
