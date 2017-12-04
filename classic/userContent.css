@@ -67,7 +67,9 @@
 /************************************************************************************************/
 /* about:newtab / about:home ********************************************************************/
 /************************************************************************************************/
-
+ 
+/* 'about:config > browser.newtabpage.activity-stream.enabled > false' enables old appearance ***/
+/* @import url(./css/aboutnewtab/bottom_launcher_visible.css); /**/
 /* @import url(./css/aboutnewtab/dark_appearance.css); /**/
 
 

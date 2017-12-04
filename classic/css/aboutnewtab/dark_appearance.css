@@ -8,7 +8,7 @@
 
 
 @-moz-document url(about:newtab), url(about:home) {
-	body{
+	body {
       background-color: #323234 !important;
       color: #D1D1D1 !important;
     }
@@ -40,6 +40,8 @@
       background-color: #323234 !important;
       border: 1px solid #525A6D !important;
 	}
+	#searchWrapper input,
+	#newtab-search-container input,
 	.search-wrapper input {
       background: #474749 !important;
       color: #FFF !important;
@@ -79,7 +81,25 @@
 	.separator {
       border: 1px solid #525A6D !important;
 	}
+	#searchIcon,
+	#searchSubmit,
+	#newtab-search-icon,
+	#newtab-customize-button,
+	#newtab-search-submit,
 	.icon {
       fill: #C4C4C4 !important;
 	}
+	#newtab-customize-button {
+      background-color: #323234 !important;
+	}
+	#snippets,
+	#monthly-checkbox-container,
+	#block-snippet-overlay {
+	  color: #FFF !important;
+	}
+	#searchSuggestionTable{
+      background: #474749 !important;
+      color: #FFF !important;
+	}
+
 }

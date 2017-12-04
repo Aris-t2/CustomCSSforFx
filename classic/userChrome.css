@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.4.5 ********************************************************************************/
+/* version 1.4.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -237,6 +237,7 @@
 
 /* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/
+/* @import url(./css/tabs/missing_tab_favicon_restored_globe_v2.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_sheet.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_dotted.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_dotted_white.css); /**/
@@ -266,7 +267,7 @@
 /* @import url(./css/tabs/tab_title_centered.css); /**/
 /* @import url(./css/tabs/tab_title_right.css); /**/
 
-/* DEFAULT TABS - use only, if aboves 'classic squared tabs' are disabled ***********************/
+/* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
@@ -294,7 +295,10 @@
 /* @import url(./css/generalui/popup_animation_fade_time_reduced.css); /**/
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
+
+/* sidebar **************************************************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
+/* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
 
 /* findbar **************************************************************************************/
 /* @import url(./css/generalui/findbar_on_top.css); /**/
