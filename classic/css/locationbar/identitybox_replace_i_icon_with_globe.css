@@ -15,5 +15,9 @@
   fill: unset !important;
   opacity: 1.0 !important;
 }
-	
-/**/
+
+#main-window:-moz-lwtheme-brighttext *:not(.chromeUI) > #identity-icon,
+#main-window:-moz-lwtheme-brighttext *:not(.chromeUI):not(.verifiedDomain):not(.verifiedIdentity) > #page-proxy-favicon {
+  box-shadow: inset 0 0 0 8px rgba(255,255,255,1.0) !important;
+  border-radius: 1000px !important;
+}

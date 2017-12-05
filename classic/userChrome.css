@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.4.6 ********************************************************************************/
+/* version 1.4.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -199,10 +199,10 @@
 /* @import url(./css/tabs/classic_squared_tabs_fully_squared.css); /**/
 
 /************************************************************************************************/
-/* TABS TOOLBAR POSITION (not in titlebar / not on top) *****************************************/
+/* TABS TOOLBAR POSITION (below titlebar / below navigation toolbar / below main content) *******/
 /************************************************************************************************/
 
-/* only use one at a time - below titlebar or below navigation and bookmarks toolbar ************/
+/* only use one at a time - below titlebar OR below navigation bar OR below main content ********/
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/ 	/* <-- tabs not on top */
@@ -212,10 +212,14 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_grey.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_fx3.css); /**/
-/************************************************************************************************/
-/* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL - DO NOT REPORT ISSUES! ************/
-/* - requires one of the above 'tabs not on top' settings ***************************************/
+/* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
+/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content_aero.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content_transparent.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content_aeroglass.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content_classic_grey.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_below_main_content_classic_fx3.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
 /* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- EXPERIMENTAL */
@@ -269,10 +273,10 @@
 
 /* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
+/* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
 /* @import url(./css/tabs/default_tabs_tab_line_purple_in_private_mode.css); /**/
-/* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
 
 /* other tab settings ***************************************************************************/
 @import url(./css/tabs/tab_icon_colors.css); /**/
@@ -350,6 +354,7 @@
 /* - move 'Bookmarks Toolbar Items' to navigation bar to 'create' a bookmarks toolbar on top ****/
 /* - not compatible to 'bookmarks toolbar - multiple lines' option ******************************/
 /* - not compatible to 'tabs toolbar - below main content' option *******************************/
+/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 ************************/
 /* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/
 
 /* general toolbar settings *********************************************************************/
@@ -409,9 +414,10 @@
 @import url(./css/locationbar/dropmarker_at_the_end.css); /**/
 @import url(./css/locationbar/dropmarker_visible.css); /**/
 
-/* additional icons/buttons and third party page action buttons *********************************/
+/* additional icons/buttons and tweaks for third party page action buttons **********************/
 @import url(./css/locationbar/icons_colorized.css); /**/
 /* @import url(./css/locationbar/reader_alternative_icon.css); /**/
+/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
 @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
 /* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/

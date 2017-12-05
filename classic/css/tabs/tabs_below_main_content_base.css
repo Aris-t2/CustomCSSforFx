@@ -1,0 +1,80 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* this is an experiment not meant for every day use */
+/* value might need adjustment for many different cases */
+#TabsToolbar {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 100% !important;
+}
+#TabsToolbar #tabbrowser-tabs:not([overflow="true"]) {
+  width: 90% !important;
+}
+#TabsToolbar #tabbrowser-tabs[overflow="true"] {
+  width: 90% !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs:not([overflow="true"]){
+  width: calc(100% - 2px) !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs[overflow="true"] {
+  width: calc(100% - 50px) !important;
+}
+
+#main-window #navigator-toolbox #TabsToolbar > toolbarpaletteitem,
+#main-window #navigator-toolbox #TabsToolbar > .toolbarbutton-1 {
+  position: relative !important;
+  bottom: -5px !important;
+  width: unset !important;
+  height: unset !important;
+}
+
+#main-window #navigator-toolbox #TabsToolbar > .toolbarbutton-1 .toolbarbutton-icon {
+  padding: 0px !important;
+  margin: 0px !important;
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+#TabsToolbar #window-controls {
+  position: fixed !important;
+  bottom: 4px !important;
+}
+
+#TabsToolbar #window-controls:-moz-locale-dir(ltr) {
+  right: 0 !important;
+}
+#TabsToolbar #window-controls:-moz-locale-dir(rtl) {
+  left: 0 !important;
+}
+
+#main-window[inFullscreen=true] #TabsToolbar {
+  -moz-padding-end: 50px !important;
+}
+
+#browser-bottombox{
+  margin-bottom: 27px !important;
+}
+
+/* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  display: none !important;
+}
+
+/* lw-theme */
+#browser-panel > #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+  background-repeat: no-repeat !important;
+  background-position: bottom left !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--lwt-header-image) !important;
+}
