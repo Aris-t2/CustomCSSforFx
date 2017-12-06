@@ -7,17 +7,15 @@
 /****************************************************************************************/
 
 
-#toolbar-menubar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(#d4d0c8,#d4d0c8) !important;
-  border: 1px solid var(--tabs-border-color) !important;
-  border-bottom: 0px !important;
-  margin-bottom: -1px !important;
+/* move content to the right */
+#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+  direction: rtl !important;
+}
+#PersonalToolbar > * {
+  -moz-box-direction: reverse !important;
 }
 
-#nav-bar {
-  border-top: 0px !important;
-}
-
-#main-menubar > menu {
-  color: black !important;
+#PersonalToolbar > * menupopup{
+  -moz-box-direction: normal !important;
+  direction: ltr !important;
 }

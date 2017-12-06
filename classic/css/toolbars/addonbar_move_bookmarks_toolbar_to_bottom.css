@@ -18,7 +18,7 @@
 }
 
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks{
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks {
   position: absolute !important;
   bottom: 1px !important;
   min-width: 0 !important;
@@ -49,8 +49,8 @@
   bottom: 0px !important;
   width: 100% !important;
   height: 27px !important;
-  padding-left: 1px !important;
-  padding-right: 1px !important;
+  -moz-padding-start: 1px !important;
+  -moz-padding-end: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
 }
 #browser-panel > #navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
@@ -79,6 +79,21 @@
   height: 14px !important;
   padding: unset !important;
   margin: -15px 0 15px 0 !important;
+}
+
+/* create bigger spaces */
+#PersonalToolbar  toolbarspring + toolbarspring {
+  min-width: 128px !important;
+}
+
+/* remove load/stop button animations */
+#reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image,
+#reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  animation-duration: 0ms !important;
+}
+#reload-button > .toolbarbutton-animatable-box,
+#stop-button > .toolbarbutton-animatable-box {
+  visibility: hidden !important;
 }
 
 /* icon shadows for dark and light themes */ /*

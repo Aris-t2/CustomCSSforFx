@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.4.7 ********************************************************************************/
+/* version 1.4.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -52,7 +52,7 @@
 /* icon appearance - only use one at a time (custom icons do not scale in HiDPI modes) **********/
 @import url(./css/buttons/icons_colorized.css); /**/
 /* @import url(./css/buttons/icons_white_icons.css); /**/
-/* @import url(./css/buttons/icons_custom_icons.css); /**/
+/* @import url(./css/buttons/icons_custom_icons.css); /**/  /* aka "Mozilla Mix" from CTB */
 /* @import url(./css/buttons/icons_custom_icons_fx1.css); /**/
 /* @import url(./css/buttons/icons_custom_icons_fx2.css); /**/
 /* @import url(./css/buttons/icons_custom_icons_fx3.css); /**/
@@ -212,6 +212,7 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_grey.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_fx3.css); /**/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_extra_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
@@ -355,8 +356,10 @@
 /* - not compatible to 'bookmarks toolbar - multiple lines' option ******************************/
 /* - not compatible to 'tabs toolbar - below main content' option *******************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 ************************/
-/* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/
-
+/* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/toolbars/addonbar_status_in_addonbar.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/toolbars/addonbar_content_on_the_right.css); /**/  /* <--- EXPERIMENTAL */
+ 
 /* general toolbar settings *********************************************************************/
 @import url(./css/toolbars/toolbars_old_padding.css); /**/
 @import url(./css/toolbars/tabs_toolbar_adjustments.css); /**/

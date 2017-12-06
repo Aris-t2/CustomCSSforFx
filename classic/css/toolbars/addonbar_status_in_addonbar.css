@@ -1,0 +1,29 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* move below findbar, if present */
+statuspanel{
+  -moz-box-ordinal-group: 3 !important;
+}
+
+statuspanel .statuspanel-label {
+  -moz-appearance: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  margin-bottom: -24px !important; 
+  min-width: 400px !important;
+  width: 400px !important;
+  max-width: 400px !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+  -moz-padding-start: 400px !important;  /* add space for status text on add-on bar */
+}
