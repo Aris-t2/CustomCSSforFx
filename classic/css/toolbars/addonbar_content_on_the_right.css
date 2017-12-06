@@ -11,11 +11,11 @@
 #main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
   direction: rtl !important;
 }
-#PersonalToolbar > * {
+#PersonalToolbar toolbarbutton {
   -moz-box-direction: reverse !important;
 }
 
-#PersonalToolbar > * menupopup{
+#PersonalToolbar toolbarbutton menupopup{
   -moz-box-direction: normal !important;
   direction: ltr !important;
 }

@@ -7,9 +7,17 @@
 /****************************************************************************************/
 
 
-/* move below findbar, if present */
 statuspanel{
   -moz-box-ordinal-group: 3 !important;
+  position: fixed !important;
+  bottom: 2px !important;
+}
+
+statuspanel:-moz-locale-dir(ltr) {
+  left: 0px;
+}
+statuspanel:-moz-locale-dir(rtl) {
+  right: 0px;
 }
 
 statuspanel .statuspanel-label {
@@ -18,12 +26,19 @@ statuspanel .statuspanel-label {
   border: 0 !important;
   box-shadow: none !important;
   pointer-events: none !important;
-  margin-bottom: -24px !important; 
   min-width: 400px !important;
   width: 400px !important;
   max-width: 400px !important;
 }
 
+statuspanel:-moz-lwtheme-brighttext .statuspanel-label {
+  color: white !important;
+}
+
+/* add space for status text on add-on bar */
 #main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
-  -moz-padding-start: 400px !important;  /* add space for status text on add-on bar */
+  padding-left: 400px !important;
+}
+#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) {
+  padding-right: 400px !important;
 }
