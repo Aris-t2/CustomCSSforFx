@@ -22,6 +22,7 @@
   position: absolute !important;
   bottom: 1px !important;
   min-width: 0 !important;
+  width: auto !important;
   max-width: 100vw !important;
 }
 
@@ -83,7 +84,9 @@
 
 /* create bigger spaces */
 #PersonalToolbar  toolbarspring + toolbarspring {
-  min-width: 128px !important;
+  min-width: 84px !important;
+  width: auto !important;
+  max-width: 128px !important;
 }
 
 /* remove load/stop button animations */
@@ -95,6 +98,19 @@
 #stop-button > .toolbarbutton-animatable-box {
   visibility: hidden !important;
 }
+
+/* bookmarks item box width */
+#PersonalToolbar[currentset="personal-bookmarks"] #personal-bookmarks {
+  min-width: 40px !important;
+  width: auto !important;
+  max-width: 100vw !important;
+}
+#PersonalToolbar:not([currentset="personal-bookmarks"]) #personal-bookmarks {
+  min-width: 40px !important;
+  width: auto !important;
+  max-width: 50vw !important;
+}
+
 
 /* icon shadows for dark and light themes */ /*
 #main-window[lwthemetextcolor=bright] #browser-panel > #navigator-toolbox > #PersonalToolbar > .webextension-browser-action > .toolbarbutton-badge-stack {

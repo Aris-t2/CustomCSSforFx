@@ -352,9 +352,9 @@
 /************************************************************************************************/
 
 /* ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom ********************/
-/* - move 'Bookmarks Toolbar Items' to navigation bar to 'create' a bookmarks toolbar on top ****/
-/* - not compatible to 'bookmarks toolbar - multiple lines' option ******************************/
-/* - not compatible to 'tabs toolbar - below main content' option *******************************/
+/* [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks *****/
+/* [!] not compatible to 'bookmarks toolbar - multiple lines' option ****************************/
+/* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 ************************/
 /* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/toolbars/addonbar_status_in_addonbar.css); /**/  /* <--- EXPERIMENTAL */
