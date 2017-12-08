@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.4.8 ********************************************************************************/
+/* version 1.4.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -148,6 +148,7 @@
 /* @import url(./css/buttons/appbutton_on_navbar_icon_white.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_icon_dark.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_icon_grey.css); /**/
+/* @import url(./css/buttons/appbutton_on_navbar_icon_browser_logo.css); /**/
 
 
 /************************************************************************************************/
@@ -159,6 +160,7 @@
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_icon_only_browser_logo.css); /**/
 
 /* button color - only use one at a time ********************************************************/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css); /**/
@@ -413,17 +415,22 @@
 /* @import url(./css/locationbar/locationbar_border_roundness.css); /**/
 /* @import url(./css/locationbar/locationbar_reduce_height.css); /**/
 
-/* autocomplete/history dropmarker **************************************************************/
+/* autocomplete / history dropmarker ************************************************************/
 @import url(./css/locationbar/dropmarker_at_the_end.css); /**/
 @import url(./css/locationbar/dropmarker_visible.css); /**/
+
+/* page action button (three dots) / separator **************************************************/
+@import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
+/* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/
+/* @import url(./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css); /**/
+
+/* star button **********************************************************************************/
+/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
+@import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
 
 /* additional icons/buttons and tweaks for third party page action buttons **********************/
 @import url(./css/locationbar/icons_colorized.css); /**/
 /* @import url(./css/locationbar/reader_alternative_icon.css); /**/
-/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
-@import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
-@import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
-/* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/
 /* @import url(./css/locationbar/popup_blocked_button_hidden.css); /**/
 /* @import url(./css/locationbar/zoom_button_hidden.css); /**/
 /* @import url(./css/locationbar/go_button_in_location_bar_hidden.css); /**/
@@ -445,7 +452,7 @@
 /* LOCATION BAR - 'autocomplete popup' appearance ***********************************************/
 /************************************************************************************************/
 
-/* NOTE: 'Classic popup with two lined resuls' will soon stop working when Mozilla drops XBL *****
+/* NOTE: 'Classic popup with two lined results' will stop working soon when Mozilla drops XBL ****
 		 support. See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 **********************/
 
 /* popup content order/appearance - only use one at a time **************************************/

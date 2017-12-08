@@ -11,7 +11,8 @@
 
 /* dropmarker icon / arrow */
 #main-window[tabsintitlebar] #navigator-toolbox /*#toolbar-menubar[autohide="true"][inactive="true"] ~*/ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton_grey.svg") !important;
+  list-style-image: url("chrome://branding/content/about-logo.png") !important;
+  width: 18px !important;
 }
 
 

@@ -7,11 +7,15 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
-
-/* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox /*#toolbar-menubar[autohide="true"][inactive="true"] ~*/ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton_grey.svg") !important;
+#PanelUI-button #PanelUI-menu-button {
+  list-style-image: unset !important;
+  -moz-image-region: unset !important;
 }
 
+#PanelUI-button .toolbarbutton-icon {
+  list-style-image: url("chrome://branding/content/about-logo.png") !important;
+  width: 16px !important;
+  height: 16px !important;
+}
 
+/**/

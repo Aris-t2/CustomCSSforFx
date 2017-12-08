@@ -300,3 +300,8 @@
   border-top-left-radius: 3px !important;
   border-top-right-radius: 3px !important;
 }
+
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  opacity: 0 !important;
+}
