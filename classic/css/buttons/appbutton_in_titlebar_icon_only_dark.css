@@ -10,7 +10,7 @@
 @import url(./appbutton_in_titlebar_icon_only.css);
 
 /* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox /*#toolbar-menubar[autohide="true"][inactive="true"] ~*/ #nav-bar  #PanelUI-button .toolbarbutton-icon {
+#main-window[tabsintitlebar] #navigator-toolbox #nav-bar  #PanelUI-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton_dark.svg") !important;
 }
 
