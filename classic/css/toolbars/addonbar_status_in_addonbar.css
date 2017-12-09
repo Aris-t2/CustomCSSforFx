@@ -29,6 +29,7 @@ statuspanel .statuspanel-label {
   min-width: 400px !important;
   width: 400px !important;
   max-width: 400px !important;
+  color: black !important;
 }
 
 statuspanel:-moz-lwtheme-brighttext .statuspanel-label {

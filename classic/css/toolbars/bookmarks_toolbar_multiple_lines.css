@@ -7,6 +7,11 @@
 /****************************************************************************************/
 
 
+:root {
+  --bookmark_items_height: 26px; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3; /* <- maximum amount of lines */
+}
+
 #personal-bookmarks {
   display: block;
 }
@@ -16,7 +21,8 @@
   min-height: 0px;
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: 999px;
+  min-height: var(--bookmark_items_height);
+  max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) );
 }
 
 #personal-bookmarks #PlacesToolbar > hbox {
@@ -82,6 +88,6 @@
   -moz-appearance: toolbarbutton;
 }
 
-#navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar):not(#TabsToolbar) { 
-  max-height: 999px !important;
+#navigator-toolbox #PersonalToolbar { 
+  max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) ) !important;
 }

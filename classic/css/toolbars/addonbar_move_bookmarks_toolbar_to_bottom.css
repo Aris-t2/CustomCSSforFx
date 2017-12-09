@@ -45,6 +45,7 @@
 
 /* move bookmarks toolbar to bottom + style bookmarks toolbar */
 #main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+  -moz-window-dragging: no-drag;
   display: block !important;
   position: fixed !important;
   bottom: 0px !important;

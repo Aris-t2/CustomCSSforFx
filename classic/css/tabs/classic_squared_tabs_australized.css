@@ -11,6 +11,7 @@
 :root {
   --tab-min-height: 26px !important;
   --mltabs-newtab-height: 27px !important;
+  --tab-loading-fill_st: #0A84FF !important;
 }
 
 /* adjust tab toolbars buttons for squared tabs */
@@ -183,9 +184,14 @@
   border-top-right-radius: 3px !important;
 }
 
-/* loading animation */
+/* loading animation color */
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected=true]) {
-  --tab-loading-fill: #0A84FF !important;
+  --tab-loading-fill: var(--tab-loading-fill_st) !important;
+}
+.tab-throbber[busy]::before,
+.tab-throbber[progress]::before {
+  fill: var(--tab-loading-fill_st) !important;
 }
 
 /* space between tabs */
