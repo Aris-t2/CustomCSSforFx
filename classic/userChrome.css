@@ -81,10 +81,10 @@
 /* @import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
-/* popup appearance - only use one at a time (use 'Windows Classic' file for classic OS theme ***/
+/* popup appearance - only use one at a time ****************************************************/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx59.css); /**/
-/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/
+/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import url(./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css); /**/
@@ -319,8 +319,7 @@
 /* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
-/* adjustment for Windows Classic OS theme ******************************************************/
-/* @import url(./css/generalui/context_bfrsb_labels_adjustment_windows_classic.css); /**/
+/* @import url(./css/generalui/context_bfrsb_labels_adjustment_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 /* close icons for general ui and tabs - only use one at a time *********************************/
 /* @import url(./css/generalui/close_icon_windows7.css); /**/
@@ -401,39 +400,19 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
-/* TOOLBAR TEXT MODES - EXTRA for Windows Classic OS theme **************************************/
-/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css); /**/
+/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css);  /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 
 /************************************************************************************************/
 /* LOCATION BAR *********************************************************************************/
 /************************************************************************************************/
 
+/* general location bar tweaks ******************************************************************/
 @import url(./css/locationbar/locationbar_adjustments.css); /**/
 @import url(./css/locationbar/compact_mode_reduce_fontsize.css); /**/
 /* @import url(./css/locationbar/background_color_dark.css); /**/
 /* @import url(./css/locationbar/locationbar_border_roundness.css); /**/
 /* @import url(./css/locationbar/locationbar_reduce_height.css); /**/
-
-/* autocomplete / history dropmarker ************************************************************/
-@import url(./css/locationbar/dropmarker_at_the_end.css); /**/
-@import url(./css/locationbar/dropmarker_visible.css); /**/
-
-/* page action button (three dots) / separator **************************************************/
-@import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
-/* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/
-/* @import url(./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css); /**/
-
-/* star button **********************************************************************************/
-/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
-@import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
-
-/* additional icons/buttons and tweaks for third party page action buttons **********************/
-@import url(./css/locationbar/icons_colorized.css); /**/
-/* @import url(./css/locationbar/reader_alternative_icon.css); /**/
-/* @import url(./css/locationbar/popup_blocked_button_hidden.css); /**/
-/* @import url(./css/locationbar/zoom_button_hidden.css); /**/
-/* @import url(./css/locationbar/go_button_in_location_bar_hidden.css); /**/
 
 /* identity box / page identity button **********************************************************/
 @import url(./css/locationbar/identitybox_replace_i_icon_with_globe.css); /**/
@@ -446,6 +425,26 @@
 /* @import url(./css/locationbar/identitybox_padlock_icon_modern.css); /**/
 /* @import url(./css/locationbar/identitybox_padlock_icon_modern2.css); /**/
 /* @import url(./css/locationbar/identitybox_padlock_icon_hidden.css); /**/
+
+/* additional icons/buttons and tweaks for third party page action buttons **********************/
+@import url(./css/locationbar/icons_colorized.css); /**/
+/* @import url(./css/locationbar/reader_alternative_icon.css); /**/
+/* @import url(./css/locationbar/popup_blocked_button_hidden.css); /**/
+/* @import url(./css/locationbar/zoom_button_hidden.css); /**/
+/* @import url(./css/locationbar/go_button_in_location_bar_hidden.css); /**/
+
+/* page action button (three dots) / separator **************************************************/
+@import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
+/* @import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/
+/* @import url(./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css); /**/
+
+/* star button **********************************************************************************/
+/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
+@import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
+
+/* autocomplete / history dropmarker ************************************************************/
+@import url(./css/locationbar/dropmarker_at_the_end.css); /**/
+@import url(./css/locationbar/dropmarker_visible.css); /**/
 
 
 /************************************************************************************************/
