@@ -7,29 +7,25 @@
 /****************************************************************************************/
 
 
-/************************************************************************/
-/* old appearance for toolbarbuttons and bookmarks on bookmarks toolbar */
-/************************************************************************/
-
 #PersonalToolbar toolbarbutton,
 #PlacesToolbar toolbarbutton {
-	-moz-appearance: toolbarbutton !important;
-	background: unset !important;
-	box-shadow: unset !important;
-	padding-left: 3px !important;
-	padding-right: 3px !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
+  -moz-appearance: toolbarbutton !important;
+  background: unset !important;
+  box-shadow: unset !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 #PersonalToolbar .toolbarbutton-badge-stack,
 #PersonalToolbar toolbarbutton .toolbarbutton-icon {
-	background: unset !important;
-	box-shadow: unset !important;
+  background: unset !important;
+  box-shadow: unset !important;
 }
 
 #PersonalToolbar toolbarbutton .toolbarbutton-icon {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-	width: 16px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 16px !important;
 }

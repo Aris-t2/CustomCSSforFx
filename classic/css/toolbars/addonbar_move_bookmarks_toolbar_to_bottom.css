@@ -6,6 +6,9 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+:root {
+  --bookmark_items_lines: 1 !important; /* override multiple bookmark lines option */
+}
 
 /* create an empty space below navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]  {
@@ -78,9 +81,15 @@
 
 /* adjust flexible spaces visible rectangle in customizing mode */
 #PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] toolbarspring {
-  height: 14px !important;
+  height: 20px !important;
   padding: unset !important;
   margin: -15px 0 15px 0 !important;
+}
+/* workaround to make grabbing easier */
+#PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] {
+  margin-top: -30px !important;
+  margin-bottom: 30px !important;
+  padding-top: 20px !important;
 }
 
 /* create bigger spaces */
@@ -110,6 +119,11 @@
   min-width: 40px !important;
   width: auto !important;
   max-width: 50vw !important;
+}
+
+ /* override multiple bookmark lines option */
+#personal-bookmarks #PlacesToolbar .chevron{
+  visibility: visible !important;
 }
 
 

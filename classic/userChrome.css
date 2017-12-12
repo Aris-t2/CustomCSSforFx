@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.0 ********************************************************************************/
+/* version 1.5.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -30,6 +30,8 @@
   Do not report issues with EXPERIMENTAL settings! They are for testing only!
   
   All options have significant categories & names. Read whole file to get an overview.
+  
+  GENERAL SUPPORT / DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/88
 
 *************************************************************************************************/
 
@@ -301,7 +303,10 @@
 /* @import url(./css/generalui/send_to_device_menuitems_hidden.css); /**/
 /* @import url(./css/generalui/popup_animation_fade_time_reduced.css); /**/
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
+
+/* overflow menu - only use one at a time *******************************************************/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
+/* @import url(./css/generalui/overflow_menu_horizontal_remove_text.css); /**/
 
 /* sidebar **************************************************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/

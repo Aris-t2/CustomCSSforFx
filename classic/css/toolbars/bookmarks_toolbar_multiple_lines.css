@@ -7,6 +7,9 @@
 /****************************************************************************************/
 
 
+/* import old button/bookmark size code */
+@import url(./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css);
+
 :root {
   --bookmark_items_height: 26px; /* <- bookmark items - line height */
   --bookmark_items_lines: 3; /* <- maximum amount of lines */
@@ -18,10 +21,9 @@
 
 #personal-bookmarks #PlacesToolbar {
   display: block;
-  min-height: 0px;
+  min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  min-height: var(--bookmark_items_height);
   max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) );
 }
 
@@ -46,7 +48,7 @@
 }
 
 #personal-bookmarks #PlacesToolbar .chevron{
-  display: none;
+  visibility: collapse;
 }
 
 #personal-bookmarks #PlacesToolbar > hbox > hbox{
@@ -62,16 +64,12 @@
 #personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item{
   padding-top: 2px;
   padding-bottom: 2px;
-  /*margin-left: -4px !important;
-  padding-right: 9.5px !important;*/
 }
 
 #personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item:hover:active:not([disabled="true"]),
 #personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-  /*-moz-padding-start: 4px;
-  -moz-padding-end: 2px;*/
 }
 
 #personal-bookmarks #PlacesToolbar toolbarseparator{
