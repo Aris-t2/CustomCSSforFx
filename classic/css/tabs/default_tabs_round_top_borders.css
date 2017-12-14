@@ -6,10 +6,13 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./tabs_below_navigation_toolbar.css);
 
-#TabsToolbar:not(:-moz-lwtheme) {
-  background: #d4d0c8 !important;
+/* tab top border roundness */
+#TabsToolbar .tabs-newtab-button,
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
 }
-
-/**/

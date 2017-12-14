@@ -1,0 +1,34 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx3 colors */
+:root {
+  --general_toolbar_color_toolbars: linear-gradient(#d3daed,#d3daed) !important;
+  --general_toolbar_color_navbar: linear-gradient(#d3daed,#d3daed) !important;
+  --general_toolbar_text_color: black !important;
+  --general_toolbar_text_shadow: unset !important;
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(to top, #e9ecfa,#d0d7ec,#e3e8f4,#ffffff) !important;
+  --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color) !important;
+  --menubar_color: linear-gradient(to top,#d3daed,#d3daed,#e5eaf5,#fefeff) !important;
+  --classic_squared_tabs_active_tab: linear-gradient(to top,#ededed,#e8e8e8,#efefef,#fafafa) !important;
+  --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#e7e9f5,#d3d7e5,#e6e9f1,#fdfdfe) !important;
+  --classic_squared_tabs_other_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
+  --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
+  --classic_squared_tabs_unread_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
+  --classic_squared_tabs-border1: 1px solid #5f7181 !important;
+  --classic_squared_tabs-border2: 1px solid rgba(0,0,0,.2) !important;
+  --classic_squared_tabs-border3: 1px solid rgba(0,0,0,.5) !important;
+  --classic_squared_tabs_new_tab_icon_color: grey !important;
+  --classic_squared_tabs_tab_text_color: black !important;
+  --classic_squared_tabs_tab_text_shadow: unset !important;
+  --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
+}

@@ -49,6 +49,27 @@
   font-style: italic !important;
 }
 
+/*******************************************/
+/* busy/loading tab ************************/
+
+/* text color *//*
+.tabbrowser-tab[busy] .tab-label {
+  color: #9933CC !important;
+}
+/* text shadow *//*
+.tabbrowser-tab[busy] .tab-label {
+  text-shadow:	0px 1px 0px #FFCCFF,
+				0px 1px 4px #FFCCFF !important;
+}
+/*bold*//*
+.tabbrowser-tab[busy] .tab-label {
+  font-weight: initial !important;
+}
+/* italic *//*
+.tabbrowser-tab[busy] .tab-label {
+  font-style: italic !important;
+}
+
 
 /*******************************************/
 /* hovered tab ****************************/

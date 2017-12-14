@@ -7,9 +7,12 @@
 /****************************************************************************************/
 
 
-/* reduce default tab height by 1px */
 :root {
-  --tab-min-height_tnot: calc( var(--tab-min-height) - 1px ) !important;
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
+  --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color);
+  --tabs_toolbar-border_tnot: var(--tabs_toolbar_border-tnot_normal_mode);
+  --classic_squared_tabs_tab_height: var(--tab-min-height);
+  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px );
 }
 
 /* tabs toolbar adjustment */
@@ -83,7 +86,7 @@
 /* toolbar colors */
 #TabsToolbar:not(:-moz-lwtheme){
   -moz-appearance: none !important;
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 }
 
 /* remove color overlay for lw-themes */
@@ -122,8 +125,8 @@
 }
 
 #main-window[sizemode="normal"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar) {
-  border-left: 1px solid var(--tabs-border-color) !important;
-  border-right: 1px solid var(--tabs-border-color) !important;
+  border-left: var(--tabs_toolbar-border_tnot) !important;
+  border-right: var(--tabs_toolbar-border_tnot) !important;
   background-clip: padding-box !important;
 }
 

@@ -7,6 +7,27 @@
 /****************************************************************************************/
 
 
+:root {
+  --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_text_color: black;
+  --general_toolbar_text_shadow: unset;
+}
+
+/* navigation toolbar background */
+#nav-bar:not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* toolbar background */
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
 /* hide toolbar shadow */
 #nav-bar:not(:-moz-lwtheme),
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
@@ -15,16 +36,26 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 #nav-bar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background-image: var(--general_toolbar_color_navbar) !important;
 }
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background-image: var(--general_toolbar_color_toolbars) !important;
+}
+
+/* set white text for toolbar items */
+#main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
+#main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
+#main-window:not(:-moz-lwtheme) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description),
+#main-window:not(:-moz-lwtheme) #PlacesToolbarItems toolbarbutton > :-moz-any(label,description) {
+  color: var(--general_toolbar_text_color) !important;
+  text-shadow: var(--general_toolbar_text_shadow) !important;
 }
 
 /* findbar */
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
-  background: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  background: var(--general_toolbar_color_toolbars) !important;
 }
 
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {

@@ -7,13 +7,9 @@
 /****************************************************************************************/
 
 
-#toolbar-menubar:not(:-moz-lwtheme) {
-  background-image: linear-gradient(to top,#d3daed,#d3daed,#e5eaf5,#fefeff) !important;
-  border: 1px solid var(--tabs-border-color) !important;
-  border-bottom: 0px !important;
-  margin-bottom: -1px !important;
-}
-
-#nav-bar {
-  border-top: 0px !important;
+/* general settings */
+:root {
+  --classic_squared_tabs_tab_height: 26px !important;
+  --classic_squared_tabs-border-radius: 3px;
+  --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
 }

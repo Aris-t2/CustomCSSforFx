@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.1 ********************************************************************************/
+/* version 1.5.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -34,6 +34,23 @@
   GENERAL SUPPORT / DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/88
 
 *************************************************************************************************/
+
+
+/************************************************************************************************/
+/* CONFIGURATION FILES - edit target files to change general values *****************************/
+/************************************************************************************************/
+
+/* GENERAL VARIABLES ****************************************************************************/
+@import url(./config/general_variables.css); /**/
+
+/* COLOR VARIABLES - only use one at a time *****************************************************/
+@import url(./config/color_variables.css); /**/  /* <- default 'grey' colors */
+/* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors */
+/* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
+/* @import url(./config/color_variables_fx3.css); /**/  /* <- 'Firefox 3-like' colors */
+/* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
+/* @import url(./config/color_variables_transparent.css); /**/  /* <- 'transparent' colors */
+/* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10 Glass8 fix is in 'toolbar' area */
 
 
 /************************************************************************************************/
@@ -182,17 +199,7 @@
 
 /* custom tab appearance - only use one at a time ***********************************************/
 @import url(./css/tabs/classic_squared_tabs.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_aero.css); /**/	/* <-- AERO colors */
-/* @import url(./css/tabs/classic_squared_tabs_transparent.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_aeroglass.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_classic_grey.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_classic_fx3.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_australized_aero.css); /**/	/* <-- AERO colors */
-/* @import url(./css/tabs/classic_squared_tabs_australized_transparent.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_australized_aeroglass.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_australized_classic_grey.css); /**/
-/* @import url(./css/tabs/classic_squared_tabs_australized_classic_fx3.css); /**/
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
 /* only use one at a time - edit target file to set own custom colors ***************************/
@@ -211,20 +218,10 @@
 /* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/ 	/* <-- tabs not on top */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar.css); /**/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_aero.css); /**/	/* <-- AERO colors */
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_transparent.css); /**/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_aeroglass.css); /**/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_grey.css); /**/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_classic_fx3.css); /**/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_extra_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tabs_below_main_content_aero.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tabs_below_main_content_transparent.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tabs_below_main_content_aeroglass.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tabs_below_main_content_classic_grey.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tabs_below_main_content_classic_fx3.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
 /* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- EXPERIMENTAL */
@@ -278,6 +275,7 @@
 
 /* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
+/* @import url(./css/tabs/default_tabs_round_top_borders.css); /**/
 /* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
@@ -309,8 +307,11 @@
 /* @import url(./css/generalui/overflow_menu_horizontal_remove_text.css); /**/
 
 /* sidebar **************************************************************************************/
-/* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
 /* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
+/* sidebar appearance - only use one at a time **************************************************/
+/* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
+/* @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
+/* @import url(./css/generalui/sidebar_appearance_lwtheme_dark.css); /**/
 
 /* findbar **************************************************************************************/
 /* @import url(./css/generalui/findbar_on_top.css); /**/
@@ -377,25 +378,18 @@
 /* menubar **************************************************************************************/
 /* @import url(./css/toolbars/menubar_fog_hidden.css); /**/
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
-/* menubar color - only use one at a time *******************************************************/
-/* @import url(./css/toolbars/menubar_color_aero.css); /**/
-/* @import url(./css/toolbars/menubar_color_classic_grey.css); /**/
-/* @import url(./css/toolbars/menubar_color_classic_fx3.css); /**/
+/* menubar color - ******************************************************************************/
+/* @import url(./css/toolbars/menubar_color.css); /**/
 
 /* bookmarks toolbar ****************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
 /* @import url(./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css); /**/
 /* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); /**/ /* <--- EXPERIMENTAL */
 
-/* toolbar colors - only use one at a time ******************************************************/
+/* toolbar colors - *****************************************************************************/
 @import url(./css/toolbars/general_toolbar_colors.css); /**/
-/* @import url(./css/toolbars/general_toolbar_colors_aero.css); /**/	/* <-- AERO colors */
-/* @import url(./css/toolbars/general_toolbar_colors_transparent.css); /**/
-/* @import url(./css/toolbars/general_toolbar_colors_aeroglass.css); /**/
-/* @import url(./css/toolbars/general_toolbar_colors_classic_grey.css); /**/
-/* @import url(./css/toolbars/general_toolbar_colors_classic_fx3.css); /**/
 
-/* AeroGlass toolbars - separated - set per toolbar *********************************************/
+/* AeroGlass toolbars - separated - set per toolbar / WIN10 fix for GLASS8 **********************/
 /* @import url(./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_bookmarks_toolbar_aeroglass.css); /**/
 /* @import url(./css/toolbars/general_toolbar_colors_tabs_toolbar_aeroglass.css); /**/

@@ -26,18 +26,3 @@
   padding-left: 2px !important;
   min-height: unset !important;
 }
-
-/* make sure toolbar buttons do not increase toolbar height */
-#TabsToolbar > toolbarpaletteitem,
-#TabsToolbar > toolbarbutton {
-  min-height: unset !important;
-  padding: unset !important;
-  margin: unset !important;
-}
-#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
-#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
-  min-width: unset !important;
-  width: 24px !important;
-}
-
-/**/

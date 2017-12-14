@@ -55,3 +55,8 @@
 #urlbar #star-button {
   list-style-image: url("./../../image/star_button.svg") !important;
 }
+
+/* popup image */
+#editBookmarkPanelStarIcon {
+  list-style-image: url("./../../image/star_button48.png") !important;
+}

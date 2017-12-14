@@ -7,5 +7,21 @@
 /****************************************************************************************/
 
 
-@import url(./tabs_below_navigation_toolbar_transparent.css);
-@import url(./tabs_below_main_content_base.css);
+:root {
+  --menubar_color: linear-gradient(#f9f9fa,#f9f9fa);
+}
+
+#toolbar-menubar:not(:-moz-lwtheme) {
+  background-image: var(--menubar_color) !important;
+  border: 1px solid var(--tabs-border-color) !important;
+  border-bottom: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#nav-bar {
+  border-top: 0px !important;
+}
+
+#main-menubar > menu {
+  color: black !important;
+}

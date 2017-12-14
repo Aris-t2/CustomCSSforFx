@@ -1,0 +1,32 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebar-box:-moz-lwtheme {
+  background-image: var(--lwt-header-image) !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  /*background-position: 100vw 100vh !important;*/
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#main-window:-moz-lwtheme-darktext #sidebar-box,
+#main-window:-moz-lwtheme-darktext #sidebar-box * {
+  color: black !important;
+}
+
+#main-window:-moz-lwtheme-brighttext #sidebar-box,
+#main-window:-moz-lwtheme-brighttext #sidebar-box * {
+  color: white !important;
+}
+
+/* Fix for remaining hovering borders */
+.sidebar-placesTreechildren::-moz-tree-row {
+  outline: none !important;
+  border: none !important;
+}
