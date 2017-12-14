@@ -25,6 +25,7 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 
 **1.** Find your profile folder ('profile names are different for everyone').  
 `about:support > Profile Folder > Open Folder`  
+or `about:profiles > Root Directory > Open Folder`  
 or `Shift+F2` to open Firefox's command line, then enter the command `folder openprofile`  
 
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet.  
