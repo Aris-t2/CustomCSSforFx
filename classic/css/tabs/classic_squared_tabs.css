@@ -27,7 +27,7 @@
   --classic_squared_tabs_tab_text_color: black;
   --classic_squared_tabs_tab_text_shadow: unset;
   
-  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px );
+  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
   
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
 }

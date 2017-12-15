@@ -47,7 +47,7 @@
 			  0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
 }
 
-#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) {
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure) {
   background: linear-gradient(hsl(6,35%,88%), hsl(0,53%,82%)) !important;
   box-shadow: 0 1px 0 hsla(92,81%,16%,.05) inset !important;
   border-inline-end: 1px solid hsla(92,81%,16%,.2) !important;
@@ -55,11 +55,11 @@
   border-image-slice: unset !important;
 }
 
-#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):hover {
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure):hover {
   background: linear-gradient(hsl(6,65%,88%), hsl(0,73%,82%)) !important;
 }
 
-#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent):-moz-any([open="true"],:hover:active) {
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure):-moz-any([open="true"],:hover:active) {
   background: linear-gradient(hsl(6,70%,88%), hsl(0,78%,82%)) !important;
   box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
 			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;

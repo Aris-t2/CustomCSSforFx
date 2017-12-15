@@ -6,16 +6,21 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 /* set a custom font size here ***********************************
 **(some items will look broken with too hight font size values) */
+:root{
+  --general_ui_font_size: 12pt;
+}
+
 * {
-  font-size: 12pt !important;
+  font-size: var(--general_ui_font_size) !important;
 }
 
 /* do not change these items font values ************************/
 #PanelUI-button,
 #PanelUI-button * {
-  font-size: 12px !important;
+  font-size: var(--general_ui_font_size) !important;
 }
 .toolbarbutton-badge-stack .toolbarbutton-badge{
   font-size: 10px !important;

@@ -6,16 +6,21 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+:root {
+  --tab_min_width: 50px;
+  --tab_max_width: 120px;
+}
+
 /* use 'about:config > browser.tabs.tabMinWidth' for tab min-width *//*
 .tabbrowser-tab:not([pinned]) {
-  min-width: 50px !important;
-  clip-width: 50px !important;
+  min-width: var(--tab_min_width) !important;
+  clip-width: var(--tab_min_width) !important;
 }
 */
 
 /* tab max-width */
 .tabbrowser-tab[fadein]:not([pinned]) {
-  max-width: 120px !important;
+  max-width: var(--tab_max_width) !important;
   overflow: hidden !important;
 }
 

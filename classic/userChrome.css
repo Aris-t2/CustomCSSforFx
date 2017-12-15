@@ -262,11 +262,7 @@
 /* @import url(./css/tabs/tab_close_hidden.css); /**/
 /* @import url(./css/tabs/tab_close_hidden_for_only_one_visible_tab.css); /**/
 /* @import url(./css/tabs/tab_close_at_tabs_start.css); /**/
-
-/* tab close icon size override - only use one at a time (may look blurry) **********************/
-/* @import url(./css/tabs/tab_close_icon_size_16x16px.css); /**/
-/* @import url(./css/tabs/tab_close_icon_size_18x18px.css); /**/
-/* @import url(./css/tabs/tab_close_icon_size_20x20px.css); /**/
+/* @import url(./css/tabs/tab_close_icon_size.css); /**/
 
 /* tab title - only use one at a time ***********************************************************/
 /* @import url(./css/tabs/tab_title_left.css); /**/

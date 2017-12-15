@@ -9,7 +9,29 @@
 
 /* general settings */
 :root {
+  /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 26px !important;
-  --classic_squared_tabs-border-radius: 3px;
+  
+   /* set to '0px' for fully classic squared tabs */
+  --classic_squared_tabs-border-radius: 3px !important;
+ 
+  /* for default icon only */
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
+  
+  /* for tab_close_icon_size.css */
+  --tab_close_icons_size: 16px !important; /* set 14x14 - 20x20px */
+  
+  /* for 'tab_maxwidth.css'- unlock 'min width' code inside first for '--tab_min_width' to work */
+  --tab_min_width: 50px !important; 
+  --tab_max_width: 120px !important;
+  
+  /* for 'tabs_multiple_lines_v2.css' only */
+  --tabs-lines: 3 !important; 
+
+  /* for bookmarks_toolbar_multiple_lines.css */
+  --bookmark_items_height: 26px !important; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
+  
+  /* for increase_ui_font_size.css */
+  --general_ui_font_size: 12pt !important; 
 }

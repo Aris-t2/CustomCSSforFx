@@ -13,7 +13,7 @@
   -moz-image-region: rect(0, 16px, 16px, 0) !important;
 }
 	
-#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent) #connection-icon {
+#urlbar[pageproxystate="valid"] :-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure) #connection-icon {
   list-style-image: url(./../../image/padlock_classic_mal.png) !important;
   -moz-image-region: rect(0, 16px, 16px, 0) !important;
 }
