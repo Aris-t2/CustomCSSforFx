@@ -16,6 +16,7 @@
 }
 
 #main-window #navigator-toolbox #TabsToolbar {
+  -moz-appearance: none !important;
   background: linear-gradient(#000000,#444444,#000000) !important;
 }
 
