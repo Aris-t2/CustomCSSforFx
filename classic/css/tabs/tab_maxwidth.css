@@ -11,7 +11,8 @@
   --tab_max_width: 120px;
 }
 
-/* use 'about:config > browser.tabs.tabMinWidth' for tab min-width *//*
+/* use 'about:config > browser.tabs.tabMinWidth' for tab min-width */
+/*
 .tabbrowser-tab:not([pinned]) {
   min-width: var(--tab_min_width) !important;
   clip-width: var(--tab_min_width) !important;

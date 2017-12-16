@@ -302,9 +302,10 @@
 
 /* sidebar **************************************************************************************/
 /* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
+/* @import url(./css/generalui/sidebar_header_icons_colorized.css); /**/
 /* sidebar appearance - only use one at a time **************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
- @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
+/* @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_lwtheme_dark.css); /**/
 
 /* findbar **************************************************************************************/
@@ -471,3 +472,5 @@
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/
+
+

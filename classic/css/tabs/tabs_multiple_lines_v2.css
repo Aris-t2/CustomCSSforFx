@@ -16,12 +16,14 @@
 
 :root {
   --tabs-lines: 3; /* 3 rows, increase for more */
+  --tab_min_width_mlt: 80px;
+  --tab_max_width_mlt: 200px;
 }
 
 .tabbrowser-tab:not([pinned]) {
   flex-grow: 1;
-  min-width: 100px !important;
-  max-width: 100px !important;
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
 }
 
 .tabbrowser-tab,.tab-background {

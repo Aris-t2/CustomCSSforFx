@@ -16,6 +16,8 @@
   --tabs-end-position: 50px;
   --tab-min-height: var(--tab-min-height);
   --mltabs-newtab-height: var(--tab-min-height);
+  --tab_min_width_mlt: 60px;
+  --tab_max_width_mlt: 100px;
 }
 
 /* titlebar buttons */
@@ -45,6 +47,11 @@
   max-height: var(--tab-min-height) !important;
   vertical-align: top !important;
   -moz-box-sizing: border-box !important;
+}
+
+.tabbrowser-tab:not([pinned]) {
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
 }
 
 /* 'new tab' tab size */
