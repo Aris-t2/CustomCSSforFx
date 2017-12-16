@@ -71,3 +71,21 @@
 #BMB_bookmarksPopup {
   margin-top: 0px !important;
 }
+
+@media (-moz-windows-classic) {
+
+	/* additional tweaks for Windows classic theme */
+	#BMB_bookmarksPopup menupopup,
+	#BMB_bookmarksPopup .panel-arrowcontent {
+	  background: -moz-Dialog !important;
+	}
+	#BMB_bookmarksPopup .menu-iconic-left {
+	  -moz-margin-start: 3px !important;
+	  -moz-margin-end: 3px !important;
+	}
+	#BMB_bookmarksPopup :-moz-any(menu,menuitem):-moz-any(:hover,:active) {
+	  color: HighlightText !important;
+	}
+
+}
+

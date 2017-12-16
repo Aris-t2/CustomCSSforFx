@@ -57,3 +57,12 @@
 #context-bookmarkpage[aria-label*="Lesezeichen"] {
   -moz-padding-end: 10px !important;
 }
+
+@media (-moz-windows-classic) {
+
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	  -moz-margin-start: 0px !important;
+	  -moz-margin-end: 2px !important;
+	}
+
+}

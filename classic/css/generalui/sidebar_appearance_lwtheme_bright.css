@@ -7,12 +7,12 @@
 /****************************************************************************************/
 
 
-#sidebar-box:-moz-lwtheme {
-  background-image: var(--lwt-header-image) !important;
+#sidebar-header:-moz-lwtheme {
   background-color: var(--toolbar-bgcolor) !important;
-  /*background-position: 100vw 100vh !important;*/
-  background-size: cover !important;
+  background-image: var(--lwt-header-image) !important;
+  background-position: bottom left !important;
   background-repeat: no-repeat !important;
+  border-bottom: 0 !important;
 }
 
 #main-window:-moz-lwtheme-darktext #sidebar-box,
@@ -30,3 +30,17 @@
   outline: none !important;
   border: none !important;
 }
+
+/*
+#sidebar:-moz-lwtheme {
+  background-image: var(--lwt-header-image) !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}*/
+
+/*
+.sidebar-placesTreechildren::-moz-tree-cell-text {
+  color: black !important;
+}
+*/

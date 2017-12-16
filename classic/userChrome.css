@@ -103,7 +103,6 @@
 /* popup appearance - only use one at a time ****************************************************/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx59.css); /**/
-/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import url(./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css); /**/
@@ -216,9 +215,8 @@
 /* only use one at a time - below titlebar OR below navigation bar OR below main content ********/
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); /**/
-/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/ 	/* <-- tabs not on top */
-/* @import url(./css/tabs/tabs_below_navigation_toolbar.css); /**/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_extra_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
+/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar.css); /**/ 									/* <-- tabs not on top */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
@@ -306,7 +304,7 @@
 /* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
 /* sidebar appearance - only use one at a time **************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
-/* @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
+ @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_lwtheme_dark.css); /**/
 
 /* findbar **************************************************************************************/
@@ -321,7 +319,6 @@
 /* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
-/* @import url(./css/generalui/context_bfrsb_labels_adjustment_windows_classic.css); /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 /* close icons for general ui and tabs - only use one at a time *********************************/
 /* @import url(./css/generalui/close_icon_windows7.css); /**/
@@ -395,7 +392,6 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
-/* @import url(./css/toolbars/toolbar_mode_text_extra_windows_classic.css);  /**/ /* <-- ADDITION FOR WINDOWS CLASSIC THEME*/
 
 
 /************************************************************************************************/

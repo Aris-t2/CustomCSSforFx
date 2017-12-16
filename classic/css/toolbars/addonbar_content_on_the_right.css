@@ -15,6 +15,10 @@
   -moz-box-direction: reverse !important;
 }
 
+#PersonalToolbar #PlacesToolbar #PlacesChevron{
+  transform: rotate(180deg) !important;
+}
+
 #PersonalToolbar toolbarbutton menupopup{
   -moz-box-direction: normal !important;
   direction: ltr !important;
