@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.2 ********************************************************************************/
+/* version 1.5.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -295,6 +295,7 @@
 /* @import url(./css/generalui/send_to_device_menuitems_hidden.css); /**/
 /* @import url(./css/generalui/popup_animation_fade_time_reduced.css); /**/
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
+/* @import url(./css/generalui/flex_space_on_navbar_replace_with_separator.css); /**/
 
 /* overflow menu - only use one at a time *******************************************************/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
@@ -303,6 +304,7 @@
 /* sidebar **************************************************************************************/
 /* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
 /* @import url(./css/generalui/sidebar_header_icons_colorized.css); /**/
+/* @import url(./css/generalui/sidebar_header_lwtheme.css); /**/
 /* sidebar appearance - only use one at a time **************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
@@ -472,5 +474,3 @@
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/
-
-

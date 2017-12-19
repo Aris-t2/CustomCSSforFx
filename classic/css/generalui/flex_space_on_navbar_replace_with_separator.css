@@ -7,22 +7,9 @@
 /****************************************************************************************/
 
 
-:root {
-  --menubar_color: linear-gradient(#f9f9fa,#f9f9fa);
-  --menubar_text_color: black;
-}
-
-#toolbar-menubar:not(:-moz-lwtheme) {
-  background-image: var(--menubar_color) !important;
-  border: 1px solid var(--tabs-border-color) !important;
-  border-bottom: 0px !important;
-  margin-bottom: -1px !important;
-}
-
-#nav-bar {
-  border-top: 0px !important;
-}
-
-#main-menubar > menu {
-  color: var(--menubar_text_color) !important;
+#main-window:not([customizing]) #nav-bar toolbarspring {
+  -moz-appearance: separator !important;
+  min-width: 1px !important;
+  max-width: 1px !important;
+  -moz-margin-start: 1px !important;
 }

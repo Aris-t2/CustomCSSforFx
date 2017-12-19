@@ -81,6 +81,7 @@
 	.separator {
       border: 1px solid #525A6D !important;
 	}
+	
 	#searchIcon,
 	#searchSubmit,
 	#newtab-search-icon,
@@ -92,7 +93,7 @@
 	#newtab-customize-button {
       background-color: #323234 !important;
 	}
-	#snippets,
+
 	#monthly-checkbox-container,
 	#block-snippet-overlay {
 	  color: #FFF !important;
@@ -100,6 +101,18 @@
 	#searchSuggestionTable{
       background: #474749 !important;
       color: #FFF !important;
+	}
+	#snippets-container,
+	#snippets,
+	#snippet,
+	#snippet section{
+      background-color: #323234 !important;
+      color: #FFF !important;
+    }
+	
+	.block-snippet-button {
+	  background-color: #C4C4C4 !important;
+	  opacity: 1.0 !important;
 	}
 
 }

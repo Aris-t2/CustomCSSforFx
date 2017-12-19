@@ -39,7 +39,6 @@
   padding: 3px !important;
 }
 
-
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab[visuallyselected="true"],
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab,
