@@ -1,9 +1,12 @@
 **[Download Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
 **[Download NoiaButtons CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
 
+## Want to support this project?
+
+**[[ Paypal Me ]](https://www.paypal.me/tkpay)**  
+
 ## Instructions / Howto / Readme
 
-- [Want to support this project?](#want-to-support-this-project)  
 - [WebExtensions can not modify browsers appearance in Firefox 57+](#webextensions-can-not-modify-browsers-appearance-in-firefox-57)  
 - [Where to find Firefox profile folder and what is the correct location for user styles?](#where-to-find-firefox-profile-folder-and-what-is-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
@@ -11,10 +14,6 @@
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
 - [Suggested ui tweaks](#suggested-ui-tweaks)  
 - ['about:config' tweaks](#aboutconfig-tweaks)  
-
-## Want to support this project?
-
-**[[ Paypal Me ]](https://www.paypal.me/tkpay)**  
 
 ## WebExtensions can not modify browsers appearance in Firefox 57+
 
