@@ -15,8 +15,8 @@
   --general_toolbar_text_shadow: 1px 1px 1px black !important;
   --tabs_toolbar_color_tabs_not_on_top: unset !important;
   --tabs_toolbar_border-tnot_normal_mode: 0px !important;
-  --menubar_color: unset !important;
-  --menubar_text_color: white !important;
+  --colored_menubar_background_image: unset !important;
+  --colored_menubar_text_color: white !important;
   --classic_squared_tabs_active_tab: linear-gradient(to top,rgba(255,255,255,.0),rgba(255,255,255,.7)) !important;
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,rgba(255,255,255,.1),rgba(255,255,255,.3)) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,rgba(255,255,255,.0),rgba(255,255,255,.2)) !important;

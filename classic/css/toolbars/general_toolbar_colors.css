@@ -10,7 +10,7 @@
 :root {
   --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
-  --general_toolbar_text_color: black;
+  --general_toolbar_text_color: inherit;
   --general_toolbar_text_shadow: unset;
 }
 

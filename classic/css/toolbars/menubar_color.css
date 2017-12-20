@@ -8,12 +8,12 @@
 
 
 :root {
-  --menubar_color: linear-gradient(#f9f9fa,#f9f9fa);
-  --menubar_text_color: black;
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
+  --colored_menubar_text_color: inherit;
 }
 
 #toolbar-menubar:not(:-moz-lwtheme) {
-  background-image: var(--menubar_color) !important;
+  background-image: var(--colored_menubar_background_image) !important;
   border: 1px solid var(--tabs-border-color) !important;
   border-bottom: 0px !important;
   margin-bottom: -1px !important;
@@ -23,6 +23,6 @@
   border-top: 0px !important;
 }
 
-#main-menubar > menu {
-  color: var(--menubar_text_color) !important;
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description) {
+  color: var(--colored_menubar_text_color) !important;
 }

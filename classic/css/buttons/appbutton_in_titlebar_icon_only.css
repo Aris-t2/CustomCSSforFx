@@ -58,6 +58,39 @@
   top: 8px !important;
 }
 
+@media (min-resolution: 110dpi) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 6px !important;
+	}
+}
+
+@media (min-resolution: 120dpi) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 5px !important;
+	}
+}
+
+@media (min-resolution: 140dpi) {
+	#main-window[tabsintitlebar][sizemode="normal"] #nav-bar  #PanelUI-button {
+	  top: 0px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 4px !important;
+	}
+}
+
+@media (min-resolution: 160dpi) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 2px !important;
+	}
+}
+
+@media (-moz-windows-classic) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 2px !important;
+	}
+}
+
 #main-window[tabsintitlebar][inFullscreen] #nav-bar  #PanelUI-button {
   top: 0px !important;
 }

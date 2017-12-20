@@ -80,6 +80,12 @@
 	}
 }
 
+@media (-moz-windows-classic) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+	  top: 2px !important;
+	}
+}
+
 #main-window[tabsintitlebar][inFullscreen] #nav-bar  #PanelUI-button {
   top: 0px !important;
 }

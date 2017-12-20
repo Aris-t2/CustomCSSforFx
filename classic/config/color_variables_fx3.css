@@ -15,8 +15,8 @@
   --general_toolbar_text_shadow: unset !important;
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(to top, #e9ecfa,#d0d7ec,#e3e8f4,#ffffff) !important;
   --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color) !important;
-  --menubar_color: linear-gradient(to top,#d3daed,#d3daed,#e5eaf5,#fefeff) !important;
-  --menubar_text_color: black !important;
+  --colored_menubar_background_image: linear-gradient(to top,#d3daed,#d3daed,#e5eaf5,#fefeff) !important;
+  --colored_menubar_text_color: black !important;
   --classic_squared_tabs_active_tab: linear-gradient(to top,#ededed,#e8e8e8,#efefef,#fafafa) !important;
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#e7e9f5,#d3d7e5,#e6e9f1,#fdfdfe) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;

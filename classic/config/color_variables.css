@@ -11,12 +11,12 @@
 :root {
   --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa) !important;
   --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa) !important;
-  --general_toolbar_text_color: black !important;
+  --general_toolbar_text_color: inherit !important;
   --general_toolbar_text_shadow: unset !important;
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa) !important;
   --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color) !important;
-  --menubar_color: linear-gradient(#f9f9fa,#f9f9fa) !important;
-  --menubar_text_color: black !important;
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa) !important;
+  --colored_menubar_text_color: black !important;
   --classic_squared_tabs_active_tab: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa) !important;
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#cac7c1,#d5d2cc,#e8e6e2) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be) !important;

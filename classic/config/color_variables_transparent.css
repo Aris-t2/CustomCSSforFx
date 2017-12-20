@@ -9,14 +9,14 @@
 
 /* 'Transparent' colors */
 :root {
-  --general_toolbar_color_toolbars: rgba(255,255,255,.4) !important;
-  --general_toolbar_color_navbar: rgba(255,255,255,.4) !important;
+  --general_toolbar_color_toolbars: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --general_toolbar_color_navbar: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
   --general_toolbar_text_color: white !important;
   --general_toolbar_text_shadow: 1px 1px 1px black !important;
-  --tabs_toolbar_color_tabs_not_on_top: rgba(255,255,255,.4)) !important;
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
   --tabs_toolbar_border-tnot_normal_mode: 0px !important;
-  --menubar_color: rgba(255,255,255,.4) !important;
-  --menubar_text_color: white !important;
+  --colored_menubar_background_image: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --colored_menubar_text_color: white !important;
   --classic_squared_tabs_active_tab: linear-gradient(to top,rgba(255,255,255,.4),rgba(255,255,255,.9)) !important;
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,rgba(255,255,255,.3),rgba(255,255,255,.6)) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,rgba(255,255,255,.1),rgba(255,255,255,.4)) !important;
