@@ -13,7 +13,7 @@ SUPPORT AREA for features THIS project provides
 
 Firefox bugs (join general discussion thread to talk about Firefox bugs):
 - CSS code might not work, if multi-process mode (e10s) is disabled
-- CSS code might not work on macOS/Liinux in userContent.css
+- CSS code might not work on macOS/Linux in userContent.css
 
 Anything releated to multirow tabs, tabs below content or simulated add-on bar should go into:
 - TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
@@ -21,31 +21,31 @@ Anything releated to multirow tabs, tabs below content or simulated add-on bar s
 - ADD-ON BAR SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/73
 
 !!! IMPORTANT !!!  
-By filing a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
+By submitting a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
 Invalid issue reports might get closed without further notice to keep this projects support area clean.
 Thanks for your understanding.
 
 ----------------------------------
 
-Fill the form below and delete this line and everything above it before submitting.
+Fill 1-5 below and delete this line and everything above it before submitting.
 
 
-Describe the issue
+1. Describe the issue
 
 
-What should have happened instead?
+2. What should have happened instead?
 
 
-Steps to reproduce the issue?
+3. Steps to reproduce the issue?
 
 
-Screenshots (drag and drop images into this post)
+4. SCREENSHOTS with/without this projects files (drag & drop images into this post)
 
 
-System information
-OS & OS version: 
-OS theme: 
-DPI / HiDPI resolution: 
-Firefox version: 
-Firefox theme: 
-Settings this issue occurs with: 
+5. System information
+  - OS & OS version: 
+  - OS theme name: 
+  - DPI / HiDPI resolution: 
+  - Firefox version: 
+  - Firefox lw-theme: 
+  - This projects settings the issue occurs with: 
