@@ -32,7 +32,8 @@ or `Shift+F2` to open Firefox's command line, then enter the command `folder ope
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet.  
 `\ PROFILENAME \chrome\`  
 
-**3.** Copy userChrome.css, userContent.css and the folders into `\chrome\` subfolder so the results look like this.  
+**3.** Copy userChrome.css, userContent.css and folders into `\chrome\` sub-folder so results look like this:  
+`\ PROFILENAME \chrome\config\`  
 `\ PROFILENAME \chrome\css\`  
 `\ PROFILENAME \chrome\image\`  
 `\ PROFILENAME \chrome\xml\`  
