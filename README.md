@@ -29,27 +29,27 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 or `about:profiles > Root Directory > Open Folder`  
 or `Shift+F2` to open Firefox's command line, then enter the command `folder openprofile`  
 
-**2.** User styles belong into `\chrome\` folder. Create it, if there is none yet.  
-`\ PROFILENAME \chrome\`  
+**2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
+`\ PROFILE FOLDER NAME \chrome\`  
 
-**3.** Copy userChrome.css, userContent.css and folders into `\chrome\` sub-folder so results look like this:  
-`\ PROFILENAME \chrome\config\`  
-`\ PROFILENAME \chrome\css\`  
-`\ PROFILENAME \chrome\image\`  
-`\ PROFILENAME \chrome\xml\`  
-`\ PROFILENAME \chrome\userChrome.css`  
-`\ PROFILENAME \chrome\userContent.css`  
+**3.** Copy `userChrome.css`, `userContent.css` and `\config\`, `\css\`, `\image\`, `\xml\` folders into `\chrome\` folder. It should look like this afterwards:  
+`\chrome\config\`  
+`\chrome\css\`  
+`\chrome\image\`  
+`\chrome\xml\`  
+`\chrome\userChrome.css`  
+`\chrome\userContent.css`  
 
 (Optional) Profile folders location on drive:  
 **Windows**  
-`C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILENAME \`  
+`C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILE FOLDER NAME \`  
 Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Mozilla\Firefox\Profiles\` from explorers location bar.  
 **Linux**  
-`\home\ USERNAME \.mozilla\firefox\ PROFILENAME \`  
+`\home\ USERNAME \.mozilla\firefox\ PROFILE FOLDER NAME \`  
 Hidden files must be visible to see `.mozilla` folder.  
 **Mac OS X**  
-`~\Library\Mozilla\Firefox\Profiles\ PROFILENAME \` or  
-`~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILENAME \`  
+`~\Library\Mozilla\Firefox\Profiles\ PROFILE FOLDER NAME \` or  
+`~\Library\Application Support\Mozilla\Firefox\Profiles\ PROFILE FOLDER NAME \`  
 `\Users\ USERNAME \Library\Application\Support\Firefox\Profiles\`  
 
 ## How to use custom user styles?
