@@ -248,10 +248,12 @@
   max-height: calc( var(--tab-min-height) - 1px ) !important;
 }
 
-/* Windows 10 fix ['@media (-moz-os-version: windows-win10)' currently broken on Windows 10FCU] */
-.titlebar-button {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+/* Windows 10 fix */
+@media (-moz-os-version: windows-win10) {
+	.titlebar-button {
+	  padding-top: 7px !important;
+	  padding-bottom: 7px !important;
+	}
 }
 
 /*pinned tabs*/

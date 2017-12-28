@@ -234,6 +234,15 @@
   color: #ffffff !important;
 }
 
+@media (-moz-os-version: windows-win10) {
+	#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] {
+	  margin-top: 30px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
+	  margin-top: 30px !important;
+	}
+}
+
 @media (-moz-windows-classic) {
 
 	/* tweaks for Windows Classic theme */
