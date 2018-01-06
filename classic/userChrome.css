@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.4 ********************************************************************************/
+/* version 1.5.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -65,7 +65,9 @@
 
 /* navigation toolbar buttons appearance - only use one at a time *******************************/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); /**/
+/* @import url(./css/buttons/buttons_on_navbar_classic_appearance_v2.css); /**/
 /* @import url(./css/buttons/buttons_on_navbar_glass_appearance.css); /**/
+/* @import url(./css/buttons/buttons_on_navbar_osx_appearance.css); /**/
 
 /* navigation toolbar buttons - button roundness (edit file to set different roundness) *********/
 /* @import url(./css/buttons/buttons_on_navbar_button_roundness.css); /**/
@@ -386,6 +388,9 @@
 /* bookmarks toolbar ****************************************************************************/
 @import url(./css/toolbars/bookmarks_toolbar_old_height.css);
 /* @import url(./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css); /**/
+/* bookmarks toolbar - multiple lines ***********************************************************/
+/* [!] Note: the amount of visible bookmark items is limited internally to ~90-110 bookmarks ****/
+/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 ************************/
 /* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); /**/ /* <--- EXPERIMENTAL */
 
 /* toolbar colors - *****************************************************************************/
