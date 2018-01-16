@@ -2,6 +2,7 @@
 
 **[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
 **[NoiaButtons CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
+**[Custom Scrollbars for Firefox 57+](https://github.com/Aris-t2/Scrollbars)**  
 
 ## Want to support this project?
 
