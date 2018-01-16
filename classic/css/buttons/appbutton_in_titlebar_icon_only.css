@@ -43,7 +43,7 @@
   position: fixed !important;
   height: 22px !important;
   margin: 0 !important;
-  -moz-margin-start: -1px !important;
+  -moz-margin-start: 0px !important;
   border: unset !important;
   box-shadow: unset !important;
   padding-left: 0px !important;
