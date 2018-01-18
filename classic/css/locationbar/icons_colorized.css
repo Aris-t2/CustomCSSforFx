@@ -19,14 +19,12 @@
   box-shadow: unset !important;
 }
 
-/* colorize reader, page action and dropmarker icons */
-#urlbar #reader-mode-button,
-#urlbar #pageActionButton,
+/* colorize location bar icons (except star button) */
+#urlbar :-moz-any(#reader-mode-button,#pageActionButton, #pageAction-urlbar-emailLink,#pageAction-urlbar-sendToDevice,#pageAction-urlbar-screenshots,#pageAction-urlbar-copyURL),
 #urlbar .urlbar-history-dropmarker {
   fill: blue !important;
 }
-#urlbar #reader-mode-button:-moz-any(:hover,:hover:active,[open]),
-#urlbar #pageActionButton:-moz-any(:hover,:hover:active,[open]),
+#urlbar :-moz-any(#reader-mode-button,#pageActionButton, #pageAction-urlbar-emailLink,#pageAction-urlbar-sendToDevice,#pageAction-urlbar-screenshots,#pageAction-urlbar-copyURL):-moz-any(:hover,:hover:active,[open]),
 #urlbar .urlbar-history-dropmarker:-moz-any(:hover,:hover:active,[open]) {
   fill: #2558ff !important;
 }

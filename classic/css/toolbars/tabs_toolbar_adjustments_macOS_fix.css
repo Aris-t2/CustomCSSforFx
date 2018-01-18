@@ -7,19 +7,6 @@
 /****************************************************************************************/
 
 
-/* move content to the right */
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
-  direction: rtl !important;
-}
-#PersonalToolbar toolbarbutton {
-  -moz-box-direction: reverse !important;
-}
-
-#PersonalToolbar #PlacesToolbar #PlacesChevron{
-  transform: rotate(180deg) !important;
-}
-
-#PersonalToolbar toolbarbutton menupopup{
-  -moz-box-direction: normal !important;
-  direction: ltr !important;
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  -moz-margin-start: 20px !important;
 }

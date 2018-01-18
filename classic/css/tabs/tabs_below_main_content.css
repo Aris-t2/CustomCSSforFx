@@ -79,7 +79,7 @@
 }
 
 /* lw-theme */
-#browser-panel > #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+#navigator-toolbox > #TabsToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;

@@ -248,12 +248,24 @@
 .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   width: 16px !important;
   height: 16px !important;
-  -moz-margin-end:-4px !important;
 }
 
+.tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
+:root[uidensity=touch]  .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-margin-end: -6px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
 :root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   margin-top: -8px !important;
   margin-bottom: -8px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-close-button {
+  margin-inline-end: unset !important;
+  padding: unset !important;
 }
 
 /*tab favicon position*/

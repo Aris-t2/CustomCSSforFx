@@ -47,7 +47,7 @@
 }
 
 /* move bookmarks toolbar to bottom + style bookmarks toolbar */
-#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
   -moz-window-dragging: no-drag;
   display: block !important;
   position: fixed !important;
@@ -58,7 +58,7 @@
   -moz-padding-end: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
 }
-#browser-panel > #navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
+#navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;
@@ -128,10 +128,10 @@
 
 
 /* icon shadows for dark and light themes */ /*
-#main-window[lwthemetextcolor=bright] #browser-panel > #navigator-toolbox > #PersonalToolbar > .webextension-browser-action > .toolbarbutton-badge-stack {
+#main-window[lwthemetextcolor=bright] #navigator-toolbox > #PersonalToolbar > .webextension-browser-action > .toolbarbutton-badge-stack {
   filter: drop-shadow(1px 1px 0.5px #bbb) drop-shadow(-1px -1px 0.5px #bbb) drop-shadow(-1px 1px 0.5px #bbb) drop-shadow(1px -1px 0.5px #bbb);
 }
-#main-window[lwthemetextcolor=dark] #browser-panel > #navigator-toolbox > #PersonalToolbar > .webextension-browser-action > .toolbarbutton-badge-stack {
+#main-window[lwthemetextcolor=dark] #navigator-toolbox > #PersonalToolbar > .webextension-browser-action > .toolbarbutton-badge-stack {
   filter: drop-shadow(1px 1px 1px #222);
 }
 /**/

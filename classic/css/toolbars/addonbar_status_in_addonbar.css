@@ -37,9 +37,9 @@ statuspanel:-moz-lwtheme-brighttext .statuspanel-label {
 }
 
 /* add space for status text on add-on bar */
-#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
   padding-left: 400px !important;
 }
-#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) {
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) {
   padding-right: 400px !important;
 }
