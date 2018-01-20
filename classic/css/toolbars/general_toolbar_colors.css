@@ -11,7 +11,7 @@
   --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_text_color: inherit;
-  --general_toolbar_text_shadow: unset;
+  --general_toolbar_text_shadow: transparent;
 }
 
 /* navigation toolbar background */
@@ -43,14 +43,13 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-image: var(--general_toolbar_color_toolbars) !important;
 }
 
-/* set white text for toolbar items */
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
 #main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description),
 #main-window:not(:-moz-lwtheme) #PlacesToolbarItems toolbarbutton > :-moz-any(label,description) {
   color: var(--general_toolbar_text_color) !important;
-  text-shadow: var(--general_toolbar_text_shadow) !important;
+  text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow) !important;
 }
 
 /* findbar */

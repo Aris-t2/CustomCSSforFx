@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.7 ********************************************************************************/
+/* version 1.5.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -38,6 +38,11 @@
   All options have significant categories & names. Read whole file to get an overview.
   
   GENERAL SUPPORT / DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/88
+  
+  FIREFOX 58 BUG: https://bugzilla.mozilla.org/show_bug.cgi?id=1431933
+  - DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/101
+  - some @media rules get ignored so some options required temporal fixes
+  - look for "TEMPORAL FIX FOR FIREFOX 58" / "TEMPORAL FX58 fix" additions
 
 *************************************************************************************************/
 
@@ -111,6 +116,8 @@
 /* popup appearance - only use one at a time ****************************************************/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx59.css); /**/
+/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
+/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import url(./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css); /**/
@@ -188,6 +195,9 @@
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_browser_logo.css); /**/
 
+/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
+/* @import url(./css/buttons/appbutton_in_titlebar_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
+
 /* button color - only use one at a time ********************************************************/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css); /**/
@@ -207,6 +217,8 @@
 /* custom tab appearance - only use one at a time ***********************************************/
 @import url(./css/tabs/classic_squared_tabs.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
+/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS 10 *****************************************************/
+/* @import url(./css/tabs/classic_squared_tabs_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
 /* only use one at a time - edit target file to set own custom colors ***************************/
@@ -228,6 +240,13 @@
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
+/* TEMPORAL FIX FOR FIREFOX 58 & TABS BELOW NAVIGATION TOOLBAR and MAIN CONTENT *****************/
+/* - for Windows 7s default theme ***************************************************************/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win7_default_theme.css); /**/	/* <-- TEMPORAL FX58 fix */
+/* - for Windows 7s classic theme ***************************************************************/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win7_classic_theme.css); /**/	/* <-- TEMPORAL FX58 fix */
+/* - for Windows 10 *****************************************************************************/
+/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win10.css); /**/	/* <-- TEMPORAL FX58 fix */
 /************************************************************************************************/
 /* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/  /* <--- EXPERIMENTAL */
@@ -330,6 +349,8 @@
 /* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
+/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
+/* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 
 /* close icons for general ui and tabs - only use one at a time *********************************/
 /* @import url(./css/generalui/close_icon_windows7.css); /**/
@@ -407,6 +428,8 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
+/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
+/* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 
 
 /************************************************************************************************/

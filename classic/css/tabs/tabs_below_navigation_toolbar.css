@@ -9,7 +9,8 @@
 
 :root {
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
-  --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color);
+  --tabs_toolbar_border-tnot_normal_mode_size: 1px;
+  --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color);
   
   --tab-min-height_tnot: calc( var(--tab-min-height) - 1px );
 }
@@ -131,8 +132,8 @@
 }
 
 #main-window[sizemode="normal"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar) {
-  border-left: var(--tabs_toolbar_border-tnot_normal_mode) !important;
-  border-right: var(--tabs_toolbar_border-tnot_normal_mode) !important;
+  border-left: var(--tabs_toolbar_border-tnot_normal_mode_size) solid var(--tabs_toolbar_border-tnot_normal_mode) !important;
+  border-right: var(--tabs_toolbar_border-tnot_normal_mode_size) solid var(--tabs_toolbar_border-tnot_normal_mode) !important;
   background-clip: padding-box !important;
 }
 

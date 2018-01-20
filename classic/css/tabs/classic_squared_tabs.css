@@ -19,13 +19,14 @@
   --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%);
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%);
   --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%);
-  --classic_squared_tabs-border1: 1px solid #5f7181;
-  --classic_squared_tabs-border2: 1px solid rgba(0,0,0,.2);
-  --classic_squared_tabs-border3: 1px solid rgba(0,0,0,.5);
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: #5f7181;
+  --classic_squared_tabs-border2: rgba(0,0,0,.2);
+  --classic_squared_tabs-border3: rgba(0,0,0,.5);
   --classic_squared_tabs-border-radius: 3px;
   --classic_squared_tabs_new_tab_icon_color: black;
   --classic_squared_tabs_tab_text_color: black;
-  --classic_squared_tabs_tab_text_shadow: unset;
+  --classic_squared_tabs_tab_text_shadow: transparent;
   
   --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
   
@@ -54,7 +55,7 @@
 /* black tab text color */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
   color: var(--classic_squared_tabs_tab_text_color) !important;
-  text-shadow: var(--classic_squared_tabs_tab_text_shadow) !important;
+  text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
 }
 
 /* default tabs color */
@@ -85,21 +86,21 @@
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-  border-top: var(--classic_squared_tabs-border1) !important;
-  border-left: var(--classic_squared_tabs-border1) !important;
-  border-right: var(--classic_squared_tabs-border1) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
-  border-top: var(--classic_squared_tabs-border2) !important;
-  border-left: var(--classic_squared_tabs-border2) !important; 
-  border-right: var(--classic_squared_tabs-border2) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
 }
 
 #TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]) .tab-content {
-  border-top: var(--classic_squared_tabs-border3) !important;
-  border-left: var(--classic_squared_tabs-border3) !important; 
-  border-right: var(--classic_squared_tabs-border3) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
 }
 
 /* new tab icon color */

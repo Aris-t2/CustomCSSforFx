@@ -11,7 +11,8 @@
   --classic_squared_tabs_tab_height: 26px;
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF;
   --classic_squared_tabs_active_tab: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa);
-  --classic_squared_tabs-border1: 1px solid #5f7181;
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: #5f7181;
   --classic_squared_tabs-border-radius: 3px;
   
   --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px );
@@ -72,21 +73,21 @@
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-  border-top: var(--classic_squared_tabs-border1) !important;
-  border-left: var(--classic_squared_tabs-border1) !important;
-  border-right: var(--classic_squared_tabs-border1) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
-  border-top: 1px solid transparent !important;
-  border-left: 1px solid transparent !important; 
-  border-right: 1px solid transparent !important;
+  border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
+  border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
+  border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
 }
 
 #TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]):not(:hover) .tab-content {
-  border-top: 1px solid transparent !important;
-  border-left: 1px solid transparent !important; 
-  border-right: 1px solid transparent !important;
+  border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
+  border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
+  border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
 }
 
 

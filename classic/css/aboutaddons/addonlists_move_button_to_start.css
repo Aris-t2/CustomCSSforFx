@@ -1,0 +1,23 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.content-container .icon-container{
+	  -moz-box-ordinal-group: 0 !important;
+	}
+
+	.content-container .status-control-wrapper{
+	  -moz-box-ordinal-group: 1 !important;
+	}
+
+	.content-container .content-inner-container{
+	  -moz-box-ordinal-group: 2 !important;
+	}
+
+}
