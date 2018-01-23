@@ -8,13 +8,13 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.5.8 ********************************************************************************/
+/* version 1.5.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
   README
-  
+
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
@@ -23,29 +23,28 @@
   \chrome\xml\
   \chrome\userChrome.css
   \chrome\userContent.css
-  
+
   ENABLING options: remove the combination of / and * before '@import'.
   DISABLING options: add the combination of / and * before '@import'.
-  
+
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' features might not work properly on macOS and Linux
   - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
-  
-  CSS tweaks won't work, if '@namespace' references are used inside .css files!
-  
-  Do not report issues with EXPERIMENTAL settings! They are for testing only!
-  
-  All options have significant categories & names. Read whole file to get an overview.
-  
-  GENERAL SUPPORT / DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/88
-  
-  FIREFOX 58 BUG: https://bugzilla.mozilla.org/show_bug.cgi?id=1431933
-  - DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/101
+
+   FIREFOX 58 BUG: bugzilla.mozilla.org/show_bug.cgi?id=1431933
+  - DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/101
   - some @media rules get ignored so some options required temporal fixes
-  - look for "TEMPORAL FIX FOR FIREFOX 58" / "TEMPORAL FX58 fix" additions
+  - look for TEMPORAL FIX FOR FIREFOX 58 TEMPORAL FX58 fix additions
+
+  CSS tweaks won't work, if @namespace references are used inside .css files!
+
+  Do not report issues with EXPERIMENTAL settings! They are for testing only!
+
+  All options have significant categories & names. Read whole file to get an overview.
+
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/88
 
 *************************************************************************************************/
-
 
 /************************************************************************************************/
 /* CONFIGURATION FILES - edit target files to change general values *****************************/
@@ -113,9 +112,8 @@
 /* @import url(./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css); /**/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
-/* popup appearance - only use one at a time ****************************************************/
+/* popup appearance *****************************************************************************/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
-/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx59.css); /**/
 /* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
 /* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 

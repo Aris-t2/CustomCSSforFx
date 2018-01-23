@@ -56,6 +56,10 @@
   visibility: collapse !important;
 }
 
+#main-window[inDOMFullscreen="true"] #TabsToolbar {
+  visibility: hidden !important;
+}
+
 /* tab height */
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
