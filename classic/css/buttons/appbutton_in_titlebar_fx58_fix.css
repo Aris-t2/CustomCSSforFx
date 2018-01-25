@@ -6,6 +6,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar  #PanelUI-button {
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
   top: 2px !important;
 }

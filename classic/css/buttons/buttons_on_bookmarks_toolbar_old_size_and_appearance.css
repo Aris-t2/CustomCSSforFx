@@ -7,25 +7,29 @@
 /****************************************************************************************/
 
 
-#PersonalToolbar toolbarbutton,
-#PlacesToolbar toolbarbutton {
-  -moz-appearance: toolbarbutton !important;
-  background: unset !important;
-  box-shadow: unset !important;
-  padding-left: 3px !important;
-  padding-right: 3px !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
+@media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
+  @media not all and (-moz-windows-classic) {
+	#PersonalToolbar toolbarbutton,
+	#PlacesToolbar toolbarbutton {
+	  -moz-appearance: toolbarbutton !important;
+	  background: unset !important;
+	  box-shadow: unset !important;
+	  padding-left: 3px !important;
+	  padding-right: 3px !important;
+	  margin-left: 0px !important;
+	  margin-right: 0px !important;
+	}
 
-#PersonalToolbar .toolbarbutton-badge-stack,
-#PersonalToolbar toolbarbutton .toolbarbutton-icon {
-  background: unset !important;
-  box-shadow: unset !important;
-}
+	#PersonalToolbar .toolbarbutton-badge-stack,
+	#PersonalToolbar toolbarbutton .toolbarbutton-icon {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}
 
-#PersonalToolbar toolbarbutton .toolbarbutton-icon {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  width: 16px !important;
+	#PersonalToolbar toolbarbutton .toolbarbutton-icon {
+	  padding-left: 0px !important;
+	  padding-right: 0px !important;
+	  width: 16px !important;
+	}
+  }
 }

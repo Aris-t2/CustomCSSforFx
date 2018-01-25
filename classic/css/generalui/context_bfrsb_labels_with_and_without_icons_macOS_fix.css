@@ -7,11 +7,7 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
-
-/* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton_grey.svg") !important;
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  -moz-margin-start: 2px !important;
+  -moz-margin-end: 3px !important;
 }
-
-

@@ -7,11 +7,9 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
-
-/* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton_grey.svg") !important;
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] {
+  margin-top: 24px !important;
 }
-
-
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
+  margin-top: 24px !important;
+}

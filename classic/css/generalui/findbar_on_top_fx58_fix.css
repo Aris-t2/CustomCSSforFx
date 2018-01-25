@@ -7,11 +7,18 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
-
-/* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("../../image/appbutton_grey.svg") !important;
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton {
+  position: relative !important;
+  top: 4px !important;
 }
 
+:-moz-any(.browserContainer,#viewSource) .findbar-button {
+  -moz-appearance: toolbarbutton !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
 
+.browserContainer findbar toolbarbutton * {
+  background: unset !important;
+  box-shadow: unset !important;
+}

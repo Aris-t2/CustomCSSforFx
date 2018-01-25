@@ -15,6 +15,7 @@
   background: linear-gradient(to bottom,#FF8800,#FFCC99) !important;
 }
 /* background color on toolbars */
+#main-window :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar),
 #main-window * #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar) {
   background: linear-gradient(to bottom,#FFCC99,#FFCC99) !important;
 }
