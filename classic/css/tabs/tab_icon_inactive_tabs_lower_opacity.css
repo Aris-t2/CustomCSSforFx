@@ -7,14 +7,6 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
-
-/* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
-  list-style-image: url("chrome://branding/content/about-logo.png") !important;
-  width: 18px !important;
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
+.tabbrowser-tab:not([selected="true"]) .tab-icon-image {
+  opacity: 0.5 !important;
 }
-
-

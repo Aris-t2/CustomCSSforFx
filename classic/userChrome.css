@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.6.0 ********************************************************************************/
+/* version 1.6.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -194,11 +194,15 @@
 /************************************************************************************************/
 
 /* button in titlebar - only use one at a time **************************************************/
-@import url(./css/buttons/appbutton_in_titlebar.css); /**/
+@import url(./css/buttons/appbutton_in_titlebar.css); /**/ /* <-- label only */
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_grey.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_browser_logo.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_dark.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_grey.css); /**/
+/* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_browser_logo.css); /**/
 
 /* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
 /* @import url(./css/buttons/appbutton_in_titlebar_fx58_fix.css); /**/								/* <-- TEMPORAL FX58 fix */
@@ -310,6 +314,7 @@
 
 /* other tab settings ***************************************************************************/
 @import url(./css/tabs/tab_icon_colors.css); /**/
+/* @import url(./css/tabs/tab_icon_inactive_tabs_lower_opacity.css); /**/
 /* @import url(./css/tabs/tab_maxwidth.css); /**/
 /* @import url(./css/tabs/tab_titles_remove_blur.css); /**/
 /* @import url(./css/tabs/alltabs_button_always_visible.css); /**/
