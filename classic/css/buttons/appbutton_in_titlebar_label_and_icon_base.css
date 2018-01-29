@@ -70,3 +70,8 @@
 #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button::after{
   content: "MyTitle" !important;
 }
+
+/* support for tab title in Firefox titlebar option*/
+#main-window[tabsintitlebar]::after {
+  -moz-margin-start: 95px !important;
+}

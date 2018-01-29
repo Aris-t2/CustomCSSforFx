@@ -240,3 +240,8 @@
   opacity: 1.0 !important;
   margin-bottom: unset !important;
 }
+
+/* support for tab title in Firefox titlebar option*/
+#main-window[tabsintitlebar]::after {
+  -moz-margin-start: 45px !important;
+}

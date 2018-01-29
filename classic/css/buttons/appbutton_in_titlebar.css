@@ -239,15 +239,15 @@
 }
 
 /*private browsing - purple */
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button{
+#main-window[privatebrowsingmode=temporary][tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button{
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+#main-window[privatebrowsingmode=temporary][tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
 					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
 					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+#main-window[privatebrowsingmode=temporary][tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
@@ -293,3 +293,7 @@
   margin-bottom: unset !important;
 }
 
+/* support for tab title in Firefox titlebar option*/
+#main-window[tabsintitlebar]::after {
+  -moz-margin-start: 95px !important;
+}
