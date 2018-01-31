@@ -7,12 +7,37 @@
 /****************************************************************************************/
 
 
+:root {
+  --default_tab_border_roundness: 5px;
+}
+
 /* tab top border roundness */
 #TabsToolbar .tabs-newtab-button,
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
 #TabsToolbar .tabbrowser-tab .tab-content {
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
+  border-top-left-radius: var(--default_tab_border_roundness) !important;
+  border-top-right-radius: var(--default_tab_border_roundness) !important;
+}
+
+/* tab line */
+.tab-line {
+  margin-left: calc( var(--default_tab_border_roundness) - 3px ) !important;
+  margin-right: calc( var(--default_tab_border_roundness) - 3px ) !important;
+}
+
+/* hide tab separators */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  opacity: 0 !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  width: unset !important;
+}
+#tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
+.tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
+#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
+  content: unset !important;
+  display: unset !important;
 }

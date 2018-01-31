@@ -66,3 +66,8 @@
 #TabsToolbar #alltabs-button{
   display: none;
 }
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+  opacity: 0 !important;
+}

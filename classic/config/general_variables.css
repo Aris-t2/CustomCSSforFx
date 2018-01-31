@@ -12,8 +12,11 @@
   /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 26px !important;
   
-   /* set to '0px' for fully classic squared tabs */
+  /* set to '0px' for fully classic squared tabs */
   --classic_squared_tabs-border-radius: 3px !important;
+  
+  /* set to '0px' for fully squared tabs */
+  --default_tab_border_roundness: 5px !important;
  
   /* for default icon only */
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
