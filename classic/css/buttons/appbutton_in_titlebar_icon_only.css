@@ -11,7 +11,7 @@
 /* cheat main menu button into title bar ********/
 /************************************************/
 
-/* gain space before tabs toolbar */
+/* tabs toolbar adjustments */
 #main-window[tabsintitlebar] #toolbar-menubar,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 43px !important;
@@ -37,6 +37,12 @@
   -moz-padding-start: 47px !important;
 }
 
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+  margin-top: 4px !important;
+}
+
+/* appbutton */
 #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
   -moz-appearance: none !important;
   -moz-box-ordinal-group: 0 !important;

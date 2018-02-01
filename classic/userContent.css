@@ -25,6 +25,7 @@
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' features might not work properly on macOS and Linux
   - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
+  - in both cases CSS code has to be added to userContent.css file manually
 
   FIREFOX 58 BUG: bugzilla.mozilla.org/show_bug.cgi?id=1431933
   - DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/101

@@ -35,3 +35,24 @@
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
   --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
 }
+
+/* navigation toolbar background */
+#nav-bar:not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* toolbar background */
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* hide toolbar shadow */
+#nav-bar:not(:-moz-lwtheme),
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+  box-shadow: unset !important;
+}
