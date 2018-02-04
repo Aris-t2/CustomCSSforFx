@@ -51,7 +51,6 @@
   display: none !important;
 }
 
-
 #main-window[tabsintitlebar]::after {
   -moz-appearance: none !important;
   position: fixed !important;

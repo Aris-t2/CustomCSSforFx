@@ -76,6 +76,11 @@
   padding: unset !important;
 }
 
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-customization-target > #forward-button,
+#main-window[uidensity=touch] #nav-bar #nav-bar-customization-target > #forward-button {
+  -moz-margin-start: -2px !important;
+}
+
 #main-window #navigator-toolbox #nav-bar :-moz-any(#back-button, #forward-button):not([disabled]):hover .toolbarbutton-icon {
   filter: brightness(1.3) !important;
 }

@@ -51,6 +51,28 @@
   padding-top: 0px !important;
 }
 
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+  margin-top: 0px !important;
+}
+
+/* tab title in titlebar support */
+#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  margin-top: 0px !important;
+}
+
+/* titlebar button support */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar{
+  margin-top: 2px !important;
+}
+
 /* fix for application/hamburger button in titlebar */
 #main-window[tabsintitlebar][inFullscreen] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
   visibility: collapse !important;
@@ -126,10 +148,6 @@
 /* toolbar borders */
 #main-window #navigator-toolbox::after {
   opacity: 0 !important;
-}
-
-#nav-bar {
-  border-top: 1px solid var(--tabs-border-color) !important;
 }
 
 #TabsToolbar{
