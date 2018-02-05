@@ -1,0 +1,128 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ************************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* by Aris (aris-addons@gmx.net)*****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+searchbar {
+  -moz-binding: url("./../../xml/ctr_oldsearch57.xml#searchbar") !important;
+}
+
+searchbar .searchbar-textbox {
+  -moz-binding: url("./../../xml/ctr_oldsearch57.xml#searchbar-textbox") !important;
+}
+
+.searchbar-engine-button {
+  -moz-appearance: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 2px !important;
+  -moz-box-align: center !important;
+  background: none !important;
+  border: none !important;
+}
+
+.searchbar-engine-image {
+  list-style-image: unset !important;
+}
+
+#navigator-toolbox #nav-bar  .searchbar-engine-button {
+  min-height: unset !important;
+}
+
+.searchbar-engine-button > .button-box {
+  -moz-appearance: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.searchbar-dropmarker-image {
+  list-style-image: url("./../../image/searchbar-dropdown-arrow.png") !important;
+  -moz-image-region: rect(0, 13px, 11px, 0) !important;
+}
+
+.searchbar-engine-button[open="true"] > .searchbar-dropmarker-image {
+  -moz-image-region: rect(0, 26px, 11px, 13px) !important;
+}
+
+.search-go-button {
+  display: block !important;
+  list-style-image: url("./../../image/search-glass.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0) !important;
+  margin: 4px 0px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.search-go-button:hover {
+  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+
+.search-go-button:active {
+  -moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+
+.search-go-button:-moz-locale-dir(rtl) {
+  transform: scaleX(-1);
+}
+
+@media (min-resolution: 1.1dppx) {
+	.search-go-button {
+	  list-style-image: url("./../../image/search-glass32.png") !important;
+	  -moz-image-region: rect(0px, 32px, 32px, 0) !important;
+	}
+
+	.search-go-button:hover {
+	  -moz-image-region: rect(0px, 64px, 32px, 32px) !important;
+	}
+
+	.search-go-button:active {
+	  -moz-image-region: rect(0px, 96px, 32px, 64px) !important;
+	}
+}
+
+.searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
+  font-weight: bold !important;
+}
+
+.searchbar-popup {
+  -moz-margin-start: -1px !important;
+}
+
+/* location bars footer */
+#urlbar-search-footer{
+  display: none !important;
+}
+
+#PopupSearchAutoComplete .tree-scrollbar,
+#PopupSearchAutoComplete .search-one-offs,
+#PopupSearchAutoComplete .search-panel-header{
+  display: none !important;
+}
+ 
+#PopupSearchAutoComplete {
+  min-width: unset !important;
+  margin-inline-start: unset !important;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory),
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory, selected) {
+  list-style-image: unset !important;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image {
+  padding-inline-start: unset !important;
+  width: unset !important;
+  height: unset !important;;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody {
+  margin-bottom: -4px !important;
+}

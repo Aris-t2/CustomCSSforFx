@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.6.5 ********************************************************************************/
+/* version 1.6.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -400,6 +400,16 @@
 /* @import url(./css/generalui/menubar_bookmarks_popup_subscribe_item_hidden.css); /**/
 /* @import url(./css/generalui/menubar_bookmarks_popup_toolbar_item_hidden.css); /**/
 /* @import url(./css/generalui/menubar_bookmarks_popup_other_item_hidden.css); /**/
+
+/* OLD SEARCH ***********************************************************************************/
+/* NOTE: 'Old search' will stop working soon when Mozilla drops XBL support. *********************
+		  See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 ******************************/
+/* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
+/* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
+/* [!] Shift + click on search glass: search opens in a new window ******************************/
+/* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
+/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 ***********************/
+/* @import url(./css/generalui/oldsearch.css); /**/  /* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/
