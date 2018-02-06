@@ -1,14 +1,5 @@
 <?xml version="1.0"?>
 
-<!--
-	This is a clone of 'ctr_oldsearch.xml' with only one difference:
-    inside xul:textbox
-				autocompletepopup="PopupAutoComplete"
-	was repaced by	
-				autocompletepopup="PopupSearchAutoComplete"
-	to use default searches popup as base.
--->
-
 <!DOCTYPE bindings [
 <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
 %browserDTD;

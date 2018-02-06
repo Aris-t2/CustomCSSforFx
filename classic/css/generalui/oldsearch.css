@@ -8,11 +8,11 @@
 
 
 searchbar {
-  -moz-binding: url("./../../xml/ctr_oldsearch57.xml#searchbar") !important;
+  -moz-binding: url("./../../xml/oldsearch_fx57.xml#searchbar") !important;
 }
 
 searchbar .searchbar-textbox {
-  -moz-binding: url("./../../xml/ctr_oldsearch57.xml#searchbar-textbox") !important;
+  -moz-binding: url("./../../xml/oldsearch_fx57.xml#searchbar-textbox") !important;
 }
 
 .searchbar-engine-button {
