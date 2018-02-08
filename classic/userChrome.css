@@ -442,9 +442,11 @@
 /* @import url(./css/toolbars/menubar_color.css); /**/
 
 /* BOOKMARKS TOOLBAR ****************************************************************************/
-@import url(./css/toolbars/bookmarks_toolbar_old_height.css);
-/* @import url(./css/toolbars/bookmarks_toolbar_autohide.css);
+@import url(./css/toolbars/bookmarks_toolbar_old_height.css); /**/
+/* @import url(./css/toolbars/bookmarks_toolbar_autohide.css); /**/
+/* @import url(./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css); /**/
 /* @import url(./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css); /**/
+
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
