@@ -61,3 +61,7 @@
 
 /**/
 
+/* fix large space issue at items end */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]  .autocomplete-richlistitem {
+  border-inline-end: 0px solid transparent !important;
+}

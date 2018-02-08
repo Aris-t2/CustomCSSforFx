@@ -37,7 +37,6 @@
                 align="center"
                 role="alert"
                 selectedIndex="0">
-
         <xul:hbox flex="1" align="center" anonid="search-suggestions-opt-out">
           <xul:image class="ac-site-icon" type="searchengine"/>
           <xul:hbox anonid="search-suggestions-hint-typing">
@@ -54,7 +53,7 @@
                      role="link"
                      value="&urlbar.searchSuggestionsNotification.changeSettingsWin;"
                      accesskey="&urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey;"
-                     onclick="openPreferences('paneSearch');"
+                     onclick="openPreferences('paneSearch', {origin: 'searchChangeSettings'});"
                      control="search-suggestions-change-settings"/>
         </xul:hbox>
       </xul:deck>
@@ -243,13 +242,18 @@
             return;
           }
 
-		  var width = 300;
-
+		  let width = 300;
+		  
 		  try{
 			width = Math.round(document.getElementById("urlbar").getBoundingClientRect().width);
 		  } catch(e){}
-		  
+	  
 		  this.setAttribute("width", width);
+
+          this.mInput = aInput;
+          aInput.controller.setInitiallySelectedIndex(this._isFirstResultHeuristic ? 0 : -1);
+          this.view = aInput.controller.QueryInterface(Components.interfaces.nsITreeView);
+          this._invalidate();
 
           try {
             let whichNotification = aInput.whichSearchSuggestionsNotification;
@@ -264,12 +268,15 @@
               this._hideSearchSuggestionsNotification();
             }
           } catch (ex) {
+
             Components.utils.reportError(ex);
           }
 		  
-		  this._invalidate();
+		  var x_position = document.getElementById("urlbar").getBoundingClientRect().x;
+		  var y_position = -1;
 
-          this.openPopup(aElement, "after_start", 0, -1, false, false);
+          this.openPopup(aElement, "after_start", x_position, y_position, false, false);
+
         ]]></body>
       </method>
 
@@ -299,8 +306,8 @@
           this.setAttribute("dontanimate", "true");
 
           this.classList.add("showSearchSuggestionsNotification");
-          this.footer.collapsed = this._matchCount == 0;
-          this.input.tabScrolling = this._matchCount != 0;
+          this.footer.collapsed = this.matchCount == 0;
+          this.input.tabScrolling = this.matchCount != 0;
 
           if (!this.popupOpen) {
             let event = document.createEvent("Events");
@@ -318,7 +325,7 @@
           this.richlistbox.flex = 1;
           this.removeAttribute("dontanimate");
           this.searchSuggestionsNotification.removeAttribute("animate");
-          if (this._matchCount) {
+          if (this.matchCount) {
             this._invalidate();
           } else {
             this.closePopup();
@@ -347,7 +354,7 @@
       <method name="handleKeyPress">
         <parameter name="aEvent"/>
         <body><![CDATA[
-          this.oneOffSearchButtons.handleKeyPress(aEvent, this._matchCount,
+          this.oneOffSearchButtons.handleKeyPress(aEvent, this.matchCount,
                                                   !this._isFirstResultHeuristic,
                                                   gBrowser.userTypedValue);
           return aEvent.defaultPrevented && !aEvent.urlbarDeferred;
@@ -458,7 +465,9 @@
 
       <method name="_onSearchBegin">
         <body><![CDATA[
-          this.input.controller.setInitiallySelectedIndex(0);
+          try {
+		    this.input.controller.setInitiallySelectedIndex(0);
+		  } catch(e) {}
 
           this.oneOffSearchButtons.selectedButton = null;
         ]]></body>
@@ -486,7 +495,6 @@
           if (this._addonIframeOwner) {
             return null;
           }
-
           for (let name of this._addonIframeOverrideFunctionNames) {
             if (typeof(overrides[name]) != "function") {
               throw new Error(
@@ -494,7 +502,6 @@
               );
             }
           }
-
           this._addonIframeOwner = owner;
           this._addonIframe = this._makeAddonIframe();
           this._addonIframeOverriddenFunctionsByName = {};
@@ -559,17 +566,14 @@
       ]]></handler>
 
       <handler event="mousedown"><![CDATA[
-
         event.preventDefault();
 
         if (!this.input.speculativeConnectEnabled) {
           return;
         }
         if (event.button == 2) {
-
           return;
         }
-
         let elt = event.originalTarget;
         while (elt && elt.localName != "richlistitem" && elt != this) {
           elt = elt.parentNode;
@@ -577,7 +581,6 @@
         if (!elt || elt.localName != "richlistitem") {
           return;
         }
-
         if (this.input.controller.matchCount <= this.selectedIndex) {
           return;
         }
@@ -587,7 +590,6 @@
         if (url.startsWith("http") && this.selectedIndex > 0) {
           this.maybeSetupSpeculativeConnect(url);
         } else if (url.startsWith("moz-action:remotetab")) {
-
           const MOZ_ACTION_REGEX = /^moz-action:([^,]+),(.*)$/;
           if (!MOZ_ACTION_REGEX.test(url))
             return;
@@ -603,13 +605,14 @@
     </handlers>
   </binding>
 
-  
   <binding id="autocomplete-richlistitem" extends="chrome://global/content/bindings/richlistbox.xml#richlistitem">
+
     <content align="start"
              onoverflow="this._onOverflow();"
              onunderflow="this._onUnderflow();">
 	<xul:hbox>
 		<xul:hbox align="center">
+													   
 		  <xul:image anonid="site-icon"
 					 class="ac-site-icon"
 					 xbl:inherits="src=image,selected,type"/>
@@ -621,6 +624,7 @@
 							   class="ac-title-text"
 							   xbl:inherits="selected"/>
 			</xul:description>
+				 
 			<xul:hbox anonid="tags"
 					class="ac-tags"
 					align="center"
@@ -714,11 +718,12 @@
       <property name="label" readonly="true">
         <getter>
           <![CDATA[
+
             let parts = [
               this.getAttribute("title"),
               this.getAttribute("displayurl"),
             ];
-            let label = parts.filter(str => str).join(" ")
+            let label = parts.filter(str => str).join(" ");
 
             let panel = this.parentNode.parentNode;
             if (panel.createResultLabel) {
@@ -1023,7 +1028,6 @@
         </body>
       </method>
 
-
       <method name="_reuseAcItem">
         <body>
           <![CDATA[
@@ -1071,7 +1075,6 @@
           let type = this.getAttribute("originaltype");
           let types = new Set(type.split(/\s+/));
           let initialTypes = new Set(types);
-
           types.delete("action");
           types.delete("autofill");
           types.delete("heuristic");
@@ -1169,7 +1172,6 @@
                       originalUrl;
             displayUrl = this._unescapeUrl(url);
           }
-
           if (popup.textRunsMaxLen) {
             displayUrl = displayUrl.substr(0, popup.textRunsMaxLen);
           }
@@ -1180,7 +1182,6 @@
             titleLooksLikeUrl = true;
             try {
               let uri = Services.io.newURI(originalUrl);
-
               if (uri.host)
                 title = uri.host;
             } catch (e) {}
@@ -1189,7 +1190,6 @@
           this._tags.setAttribute("empty", "true");
 
           if (type == "tag" || type == "bookmark-tag") {
-
             let tags;
             [, title, tags] = title.match(/^(.+) \u2013 (.+)$/);
 
@@ -1205,11 +1205,9 @@
               type = "bookmark";
             }
           } else if (type == "keyword") {
-
             emphasiseUrl = false;
             let keywordArg = this.getAttribute("text").replace(/^[^\s]+\s*/, "");
             if (!keywordArg) {
-
               type = "visiturl";
               this.setAttribute("actiontype", "visiturl");
               let visitStr = this._stringBundle.GetStringFromName("visit");
@@ -1219,7 +1217,6 @@
               let interpStr =
                 this._stringBundle.GetStringFromName("bookmarkKeywordSearch");
               title = this._generateEmphasisPairs(interpStr, pairs);
-
               this._setUpDescription(this._actionText, "", false);
             }
           }
@@ -1233,13 +1230,11 @@
           }
 
           if (Array.isArray(title)) {
-
             if (popup.textRunsMaxLen) {
               title = title.map(t => t.substr(0, popup.textRunsMaxLen));
             }
             this._setUpEmphasisedSections(this._titleText, title);
           } else {
-
             if (popup.textRunsMaxLen) {
               title = title.substr(0, popup.textRunsMaxLen);
             }
@@ -1286,7 +1281,10 @@
                                         : titleRect.left - itemRect.left;
 
           let popup = this.parentNode.parentNode;
-          let itemWidth = itemRect.width - titleStart - popup.overflowPadding;
+          /*let itemWidth = itemRect.width - titleStart - popup.overflowPadding -
+                          (popup.margins ? popup.margins.end : 0);*/
+		  /*let itemWidth = itemRect.width - titleStart - popup.overflowPadding;*/
+		  let itemWidth = itemRect.width;
 
           if (this._tags.hasAttribute("empty")) {
             tagsRect.width = 0;
@@ -1294,7 +1292,6 @@
 
           let titleTagsWidth = titleRect.width + tagsRect.width;
           if (titleTagsWidth + separatorURLActionWidth > itemWidth) {
-
             let titleTagsPct = 0.66;
 
             let titleTagsAvailable = itemWidth - separatorURLActionWidth;
@@ -1303,7 +1300,6 @@
               itemWidth * titleTagsPct
             );
             if (titleTagsWidth > titleTagsMaxWidth) {
-
               let titlePct = 0.33;
 
               let titleAvailable = titleTagsMaxWidth - tagsRect.width;
@@ -1358,10 +1354,9 @@
               action.params[key] = decodeURIComponent(action.params[key]);
             }
           } catch (e) {
-
             action.params = {
               url: params,
-            }
+            };
           }
 
           return action;
@@ -1370,9 +1365,7 @@
     </implementation>
 
     <handlers>
-
       <handler event="mousedown"><![CDATA[
-
         let control = this.control;
         if (!control || control.disabled) {
           return;
@@ -1388,7 +1381,6 @@
         if (!mouseDown) {
           return;
         }
-
         let control = this.control;
         if (!control || control.disabled) {
           return;

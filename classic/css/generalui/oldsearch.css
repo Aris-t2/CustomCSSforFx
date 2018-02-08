@@ -54,11 +54,22 @@ searchbar .searchbar-textbox {
   display: block !important;
   list-style-image: url("./../../image/search-glass.png") !important;
   -moz-image-region: rect(0px, 16px, 16px, 0) !important;
-  margin: 4px 0px !important;
   min-width: 0 !important;
   min-height: 0 !important;
   width: 16px !important;
   height: 16px !important;
+}
+
+#main-window[uidensity=compact] .search-go-button {
+  margin: 4px 0px !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) .search-go-button {
+  margin: 6px 0px !important;
+}
+
+#main-window[uidensity=touch] .search-go-button {
+  margin: 8px 0px !important;
 }
 
 .search-go-button:hover {
