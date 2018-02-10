@@ -56,7 +56,7 @@ Hidden files must be visible to see `.mozilla` folder.
 ## How to use custom user styles?
 
 The _userChrome.css_ and _userContent.css_ files works like an options\configurations file. All main "features" can be enabled and disabled there.  
-Edit _userChrome.css_ and _userContent.css_ with any text editor (**[Notepad++](https://notepad-plus-plus.org/download/)** recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available `@import` strings.  
+Edit _userChrome.css_ and _userContent.css_ with any text editor (**[Notepad++](https://notepad-plus-plus.org/download/)** recommended on Windows) and enable or disable any feature you like by modifying, removing or outcommenting available `@import` strings.  
 Restart Firefox after every modification for changes to take effect.  
 
 **Example**  
