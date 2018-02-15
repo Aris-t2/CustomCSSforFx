@@ -14,8 +14,8 @@
 
 :root {
   --tabs-end-position: 50px;
-  --tab-min-height: var(--tab-min-height);
-  --mltabs-newtab-height: var(--tab-min-height);
+  --tab-min-height_mlt: var(--tab-min-height,32px);
+  --mltabs-newtab-height: var(--tab-min-height,32px);
   --tab_min_width_mlt: 60px;
   --tab_max_width_mlt: 100px;
 }
@@ -43,8 +43,8 @@
 
 /* tab size */
 .tabbrowser-tab {
-  min-height: var(--tab-min-height) !important;
-  max-height: var(--tab-min-height) !important;
+  min-height: var(--tab-min-height_mlt) !important;
+  max-height: var(--tab-min-height_mlt) !important;
   vertical-align: top !important;
   -moz-box-sizing: border-box !important;
 }

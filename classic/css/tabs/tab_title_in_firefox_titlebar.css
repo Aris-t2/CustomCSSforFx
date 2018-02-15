@@ -7,51 +7,51 @@
 /****************************************************************************************/
 
 
-#main-window[tabsintitlebar][sizemode="normal"] #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #TabsToolbar{
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #TabsToolbar,
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #TabsToolbar{
   -moz-padding-start: 2px !important;
   margin-top: 3px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #TabsToolbar{
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #TabsToolbar,
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #TabsToolbar{
   -moz-padding-start: 0px !important;
   margin-top: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 2px !important;
   margin-top: 19px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 0px !important;
   margin-top: 24px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
   -moz-padding-start: 0px !important;
   margin-top: 24px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
   -moz-padding-start: 0px !important;
   margin-top: 24px !important;
 }
 
-#main-window[tabsintitlebar] #TabsToolbar .titlebar-placeholder[type="caption-buttons"]{
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar] #TabsToolbar .titlebar-placeholder[type="caption-buttons"]{
   display: none !important;
 }
 
-#main-window[tabsintitlebar]::after {
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar]::after {
   -moz-appearance: none !important;
   position: fixed !important;
   display: block !important;
@@ -72,6 +72,6 @@
 				
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"]::after {
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"]::after {
   top: 10px !important;
 }

@@ -18,6 +18,7 @@
   --tabs-lines: 3; /* 3 rows, increase for more */
   --tab_min_width_mlt: 80px;
   --tab_max_width_mlt: 200px;
+  --tab-min-height_mlt: var(--tab-min-height,32px);
 }
 
 .tabbrowser-tab:not([pinned]) {
@@ -27,7 +28,7 @@
 }
 
 .tabbrowser-tab,.tab-background {
-  min-height: var(--tab-min-height);
+  min-height: var(--tab-min-height_mlt);
 }
 
 .tab-stack {
@@ -37,25 +38,27 @@
 #tabbrowser-tabs .scrollbox-innerbox {
   display: flex;
   flex-wrap: wrap;
+  overflow-x: collapse !important;
   overflow-y: auto !important;
-  min-height: var(--tab-min-height);
-  max-height: calc( var(--tabs-lines) * var(--tab-min-height) ) !important;
+  min-height: var(--tab-min-height_mlt);
+  max-height: calc( var(--tabs-lines) * var(--tab-min-height_mlt) ) !important;
 }
 
 #tabbrowser-tabs .arrowscrollbox-scrollbox {
+  overflow-x: collapse;
   overflow: visible; 
   display: block;
 }
 
 #tabbrowser-tabs .scrollbutton-up,
 #tabbrowser-tabs .scrollbutton-down,
-#alltabs-button,
+#TabsToolbar #alltabs-button,
 .tabbrowser-tab:not([fadein]){
   display: none;
 }
 
 #main-window[tabsintitlebar] #tabbrowser-tabs {
-  -moz-window-dragging: no-drag;
+  -moz-window-dragging: no-drag !important;
 }
 
 .tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),

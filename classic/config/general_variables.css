@@ -29,7 +29,7 @@
   --tab_max_width: 120px !important;
   
   /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
-  --tab_min_width_mlt: 60px !important;
+  --tab_min_width_mlt: 100px !important;
   --tab_max_width_mlt: 200px !important;
   
   /* for 'tabs_multiple_lines_v2.css' only */

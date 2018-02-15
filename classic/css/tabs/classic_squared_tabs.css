@@ -365,4 +365,6 @@
 #TabsToolbar > toolbarbutton  .toolbarbutton-icon{
   min-width: unset !important;
   width: 24px !important;
+  min-height: unset !important;
+  height: 24px !important;
 }

@@ -137,3 +137,17 @@ searchbar .searchbar-textbox {
 #PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody {
   margin-bottom: -4px !important;
 }
+
+/* custom width for engines popup *//*
+#searchbar .searchbar-popup {
+  min-width: 300px !important;
+  max-width: 300px !important;
+}
+
+/* custom width for suggestions popup *//*
+#PopupSearchAutoComplete {
+  min-width: 300px !important;
+  max-width: 300px !important;
+}
+
+/**/
