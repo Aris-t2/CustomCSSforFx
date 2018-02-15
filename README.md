@@ -230,6 +230,6 @@ _experiments.activeExperiment_
 _experiments.supported_  
 _datareporting.healthreport.uploadEnabled_  
 _nsITelemetry.canRecordBase_  
-_nsITelemetry.canRecordExtended_
-_browser.newtabpage.activity-stream.feeds.telemetry_
+_nsITelemetry.canRecordExtended_  
+_browser.newtabpage.activity-stream.feeds.telemetry_  
 _browser.newtabpage.activity-stream.telemetry_
