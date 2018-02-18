@@ -21,7 +21,7 @@
   --tab-min-height_mlt: var(--tab-min-height,32px);
 }
 
-.tabbrowser-tab:not([pinned]) {
+.tabbrowser-tab[fadein]:not([pinned]) {
   flex-grow: 1;
   min-width: var(--tab_min_width_mlt) !important;
   max-width: var(--tab_max_width_mlt) !important;

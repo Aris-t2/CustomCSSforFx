@@ -33,13 +33,13 @@
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 
-/* adjust tab toolbars buttons for squared tabs */
+/* adjust tab toolbars buttons for squared tabs *//*
 #TabsToolbar #alltabs-button .toolbarbutton-icon,
 #TabsToolbar > #new-tab-button .toolbarbutton-icon,
 #TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
   padding: 3px !important;
 }
-
+*/
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab[visuallyselected="true"],
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab,
@@ -355,16 +355,20 @@
 }
 
 /* make sure toolbar buttons do not increase toolbar height */
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
 #TabsToolbar > toolbarpaletteitem,
 #TabsToolbar > toolbarbutton {
   min-height: unset !important;
   padding: unset !important;
-  margin: unset !important;
+  margin: 0 2px !important;
 }
-#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
-#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
-  min-width: unset !important;
-  width: 24px !important;
-  min-height: unset !important;
-  height: 24px !important;
+
+#TabsToolbar > toolbarpaletteitem .toolbarbutton-icon,
+#TabsToolbar > toolbarbutton .toolbarbutton-icon {
+  min-width: 18px !important;
+  width: 18px !important;
+  min-height: 18px !important;
+  height: 18px !important;
+  padding: unset !important;
+  margin: unset !important;
 }

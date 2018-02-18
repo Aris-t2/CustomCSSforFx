@@ -49,7 +49,7 @@
   -moz-box-sizing: border-box !important;
 }
 
-.tabbrowser-tab:not([pinned]) {
+.tabbrowser-tab[fadein]:not([pinned]) {
   min-width: var(--tab_min_width_mlt) !important;
   max-width: var(--tab_max_width_mlt) !important;
 }
