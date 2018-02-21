@@ -72,10 +72,25 @@
 
           if (Components.isSuccessCode(aStatus)) {
             this.updateDisplay();
-          } else {
+
+			/* check, if current search engine changes and update searchbars search engine */
+			
+			var current_search_engine = Services.search.defaultEngine.name;
+
+			setInterval(function() {
+			  var current_search_engine2 = Services.search.defaultEngine.name;
+			  if(current_search_engine != current_search_engine2) {
+				current_search_engine = current_search_engine2;
+				document.getElementById("searchbar").updateDisplay();
+			  }
+			}, 1000);
+
+		  
+		  } else {
             Components.utils.reportError("Cannot initialize search service, bailing out: " + aStatus);
           }
         }).bind(this));
+		
       ]]></constructor>
 
       <destructor><![CDATA[
@@ -418,7 +433,6 @@
 			where = whereToOpenLink(aEvent, false, true);
 			
 			if (aEvent.button == 1) {
-              if(!Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("osearch_meoit2"))
 			    where = "tab-background";
 			}
 
@@ -431,10 +445,7 @@
 			  
             if ((aEvent instanceof MouseEvent) && (aEvent.button == 1 ||
                                                    aEvent.ctrlKey)) {
-              if(Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("osearch_meoit"))
-			    where = "tab";
-			  else
-			    where = "tab-background";
+              where = "tab-background";
 			}
           }
 		  
@@ -452,9 +463,7 @@
 	  
 		  // revert to default engine after search
 		  /*
-		  var back_to_default_search = Components.classes["@mozilla.org/browser/search-service;1"]
-										.getService(Components.interfaces.nsIBrowserSearchService);
-		  back_to_default_search.defaultEngine = back_to_default_search.getVisibleEngines()[0];
+		  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
 		  
 		  this.updateDisplay();	
 		  */
@@ -469,9 +478,6 @@
         <body><![CDATA[
           var textBox = this._textbox;
 		  
-          if(aWhere == "tab-background" && Services.prefs.getBranch("extensions.classicthemerestorer.").getBoolPref("osearch_meoit"))
-			aWhere = "tab";
-
           // Save the current value in the form history
           if (aData && !PrivateBrowsingUtils.isWindowPrivate(window)) {
             this.FormHistory.update(
@@ -634,9 +640,9 @@
       ]]></constructor>
 
       <destructor><![CDATA[
-          var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+         /* var prefs = Components.classes["@mozilla.org/preferences-service;1"]
                               .getService(Components.interfaces.nsIPrefBranch);
-          prefs.removeObserver("browser.search.suggest.enabled", this);
+          prefs.removeObserver("browser.search.suggest.enabled", this);*/
 
         // Because XBL and the customize toolbar code interacts poorly,
         // there may not be anything to remove here

@@ -7,7 +7,7 @@
 /****************************************************************************************/
 
 
-/* To hide seach engines at popups bottom open 'about:config' and set ************
+/* To hide search engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
 /* remove unneeded padding around results */
@@ -21,7 +21,7 @@
   -moz-padding-start: 0 !important;
 }
 
-/* make sure there is not unneded space before results (Fx57+) */
+/* make sure there is no unneeded space before results (Fx57+) */
 #PopupAutoCompleteRichResult .autocomplete-richlistitem spacer{
   display: none !important;
 }
@@ -37,8 +37,6 @@
   min-width: calc((100vw - 100px)/2) !important;
   width: calc((100vw - 100px)/2) !important;
 }
-
-/**/
 
 /* fix large space issue at items end */
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]  .autocomplete-richlistitem {
