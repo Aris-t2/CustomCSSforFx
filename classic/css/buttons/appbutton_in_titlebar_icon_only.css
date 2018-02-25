@@ -101,6 +101,15 @@
 	}
 }
 
+/* code for Linux/macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
+	  top: 0px !important;
+	}  
+}}}
+
 #main-window[tabsintitlebar][inFullscreen] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
   top: 0px !important;
 }
@@ -119,6 +128,15 @@
   border-left: 1px solid !important;
   border-bottom: 1px solid !important;
 }
+
+/* code for Linux/macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+  #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button {
+	max-width: 40px !important;
+  }	  
+}}}
 
 /* hide button in fullscreen mode, if toolbars get automatically hidden */
 #main-window[tabsintitlebar] #navigator-toolbox[inFullscreen="true"][style*="margin-top: -"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {

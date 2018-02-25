@@ -38,6 +38,11 @@
   box-shadow: unset !important;
 }
 
+#BMB_bookmarksPopup menupopup {
+  background: -moz-Dialog !important;
+  color: -moz-DialogText !important;
+}
+
 #BMB_bookmarksPopup menupopup > hbox {
   background: unset !important;
   border: unset !important;
@@ -89,3 +94,17 @@
 
 }
 
+/* code for Linux/macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+  #BMB_bookmarksPopup menupopup,
+  #BMB_bookmarksPopup .panel-arrowcontent {
+	background: -moz-Dialog !important;
+	color: inherit !important;
+  }
+  #BMB_bookmarksPopup menu:-moz-any(:hover,:active,[_moz-menuactive],[open]) > label,
+  #BMB_bookmarksPopup menuitem:-moz-any(:hover,:active) > label {
+	color: HighlightText !important;
+  }
+}}}

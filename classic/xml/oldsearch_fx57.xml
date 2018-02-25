@@ -139,7 +139,6 @@
         ]]></setter>
         <getter><![CDATA[
           var currentEngine = this.searchService.currentEngine;
-          // Return a dummy engine if there is no currentEngine
           return currentEngine || {name: "", uri: null};
         ]]></getter>
       </property>
@@ -188,20 +187,14 @@
               this.hideNewEngine(aEngine);
               break;
             case "engine-current":
-              // The current engine was changed.  Rebuilding the menu appears to
-              // confuse its idea of whether it should be open when it's just
-              // been clicked, so we force it to close now.
               this._popup.hidePopup();
               break;
             case "engine-changed":
-              // An engine was removed (or hidden) or added, or an icon was
-              // changed.  Do nothing special.
+
             }
 
-            // Make sure the engine list is refetched next time it's needed
             this._engines = null;
 			
-            // Rebuild the popup and update the display after any modification.
             this.rebuildPopup();
             this.updateDisplay();
 
@@ -308,8 +301,6 @@
             const kXULNS =
                "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-            // Find the (first) separator in the remaining menu, or the first item
-            // if no separators are present.
             var insertLocation = popup.firstChild;
             while (insertLocation.nextSibling &&
                    insertLocation.localName != "menuseparator") {
@@ -322,7 +313,6 @@
             separator.setAttribute("class", "addengine-separator");
             popup.insertBefore(separator, insertLocation);
 
-            // Insert the "add this engine" items.
             for (var i = 0; i < addengines.length; i++) {
               var menuitem = document.createElement("menuitem");
               var engineInfo = addengines[i];
@@ -347,7 +337,6 @@
         <body><![CDATA[
           var popup = this._popup;
 
-          // Clear the popup, down to the first separator
           while (popup.firstChild && popup.firstChild.localName != "menuseparator")
             popup.removeChild(popup.firstChild);
 
@@ -425,7 +414,6 @@
 		    where = "tab";
 		  }
 		  
-          // Open ctrl/cmd clicks on one-off buttons in a new background tab.
           if (aEvent && aEvent.originalTarget.getAttribute("anonid") == "search-go-button") {
             if (aEvent.button == 2)
               return;
@@ -478,7 +466,6 @@
         <body><![CDATA[
           var textBox = this._textbox;
 		  
-          // Save the current value in the form history
           if (aData && !PrivateBrowsingUtils.isWindowPrivate(window)) {
             this.FormHistory.update(
               { op : "bump",
@@ -492,7 +479,6 @@
           let engine = aEngine || this.currentEngine;
           var submission = engine.getSubmission(aData, null, "searchbar");
 
-          // null parameter below specifies HTML response for search
           let params = {
             postData: submission.postData,
             inBackground: aWhere == "tab-background"
@@ -549,381 +535,90 @@
   </binding>
   
  <binding id="searchbar-textbox"
-      extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
-    <implementation implements="nsIObserver">
-      <constructor><![CDATA[
-        const kXULNS =
-          "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
-        if (document.getBindingParent(this).parentNode.parentNode.localName ==
-            "toolbarpaletteitem")
-          return;
-
-        // Initialize fields
-        this._stringBundle = document.getBindingParent(this)._stringBundle;
-        this._prefBranch =
-                  Components.classes["@mozilla.org/preferences-service;1"]
-                            .getService(Components.interfaces.nsIPrefBranch);
-        this._suggestEnabled =
-            this._prefBranch.getBoolPref("browser.search.suggest.enabled");
-
-        if (this._prefBranch.getBoolPref("browser.urlbar.clickSelectsAll"))
-          this.setAttribute("clickSelectsAll", true);
-
-        // Add items to context menu and attach controller to handle them
-        var textBox = document.getAnonymousElementByAttribute(this,
-                                              "anonid", "textbox-input-box");
-        var cxmenu = document.getAnonymousElementByAttribute(textBox,
-                                          "anonid", "input-box-contextmenu");
-        var pasteAndSearch;
-        cxmenu.addEventListener("popupshowing", function() {
-          BrowserSearch.searchBar._textbox.closePopup();
-          if (!pasteAndSearch)
-            return;
-          var controller = document.commandDispatcher.getControllerForCommand("cmd_paste");
-          var enabled = controller.isCommandEnabled("cmd_paste");
-          if (enabled)
-            pasteAndSearch.removeAttribute("disabled");
-          else
-            pasteAndSearch.setAttribute("disabled", "true");
-        }, false);
-
-        var element, label, akey;
-
-        element = document.createElementNS(kXULNS, "menuseparator");
-        cxmenu.appendChild(element);
-
-        this.setAttribute("aria-owns", this.popup.id);
-
-        var insertLocation = cxmenu.firstChild;
-        while (insertLocation.nextSibling &&
-               insertLocation.getAttribute("cmd") != "cmd_paste")
-          insertLocation = insertLocation.nextSibling;
-        if (insertLocation) {
-          element = document.createElementNS(kXULNS, "menuitem");
-          label = this._stringBundle.getString("cmd_pasteAndSearch");
-          element.setAttribute("label", label);
-          element.setAttribute("anonid", "paste-and-search");
-          element.setAttribute("oncommand", "BrowserSearch.pasteAndSearch(event)");
-          cxmenu.insertBefore(element, insertLocation.nextSibling);
-          pasteAndSearch = element;
-        }
-
-        element = document.createElementNS(kXULNS, "menuitem");
-        label = this._stringBundle.getString("cmd_clearHistory");
-        akey = this._stringBundle.getString("cmd_clearHistory_accesskey");
-        element.setAttribute("label", label);
-        element.setAttribute("accesskey", akey);
-        element.setAttribute("cmd", "cmd_clearhistory");
-        cxmenu.appendChild(element);
-
-        element = document.createElementNS(kXULNS, "menuitem");
-        label = this._stringBundle.getString("cmd_showSuggestions");
-        akey = this._stringBundle.getString("cmd_showSuggestions_accesskey");
-        element.setAttribute("anonid", "toggle-suggest-item");
-        element.setAttribute("label", label);
-        element.setAttribute("accesskey", akey);
-        element.setAttribute("cmd", "cmd_togglesuggest");
-        element.setAttribute("type", "checkbox");
-        element.setAttribute("checked", this._suggestEnabled);
-        element.setAttribute("autocheck", "false");
-        this._suggestMenuItem = element;
-        cxmenu.appendChild(element);
-
-        this.controllers.appendController(this.searchbarController);
-        document.getBindingParent(this)._textboxInitialized = true;
-
-        // Add observer for suggest preference
-        /*var prefs = Components.classes["@mozilla.org/preferences-service;1"]
-                            .getService(Components.interfaces.nsIPrefBranch);
-        prefs.addObserver("browser.search.suggest.enabled", this, false);*/
-      ]]></constructor>
-
-      <destructor><![CDATA[
-         /* var prefs = Components.classes["@mozilla.org/preferences-service;1"]
-                              .getService(Components.interfaces.nsIPrefBranch);
-          prefs.removeObserver("browser.search.suggest.enabled", this);*/
-
-        // Because XBL and the customize toolbar code interacts poorly,
-        // there may not be anything to remove here
-        try {
-          this.controllers.removeController(this.searchbarController);
-        } catch (ex) { }
-      ]]></destructor>
-
-      <field name="_stringBundle"/>
-      <field name="_prefBranch"/>
-      <field name="_suggestMenuItem"/>
-      <field name="_suggestEnabled"/>
-
-      <property name="searchParam"
-                onget="return this.getAttribute('autocompletesearchparam') +
-                       (PrivateBrowsingUtils.isWindowPrivate(window) ? '|private' : '');"
-                onset="this.setAttribute('autocompletesearchparam', val); return val;"/>
+      extends="chrome://browser/content/search/search.xml#searchbar-textbox">
+    <implementation>
 
       <method name="openPopup">
         <body><![CDATA[
+
+          if (document.documentElement.getAttribute("customizing") == "true") {
+            return;
+          }
+
           var popup = this.popup;
           if (!popup.mPopupOpen) {
-
             popup.hidden = false;
 
-            // Don't roll up on mouse click in the anchor for the search UI.
-           /* if (popup.id == "PopupSearchAutoComplete") {
-              popup.setAttribute("norolluponanchor", "true");
-            }*/
+			if(parseInt(Services.appinfo.version)>=60) {
 
-            popup.mInput = this;
-            popup.view = this.controller.QueryInterface(Components.interfaces.nsITreeView);
-            popup.invalidate();
+				if (popup.id == "PopupSearchAutoComplete") {
+				  popup.setAttribute("norolluponanchor", "true");
+				}
 
-            popup.showCommentColumn = this.showCommentColumn;
-            popup.showImageColumn = this.showImageColumn;
+				popup.mInput = this;
 
-            document.popupNode = null;
-			
-			var isRTL = getComputedStyle(this, "").direction == "rtl";
-            var outerRect = this.getBoundingClientRect();
-            var innerRect = this.inputField.getBoundingClientRect();
-		
-			
-			var width = 100;
+				popup.selectedIndex = -1;
+
+				document.popupNode = null;
+
+				const isRTL = getComputedStyle(this, "").direction == "rtl";
+
+				var outerRect = this.getBoundingClientRect();
+				var innerRect = this.inputField.getBoundingClientRect();
+				let width = isRTL ?
+							innerRect.right - outerRect.left :
+							outerRect.right - innerRect.left;
+				/*popup.setAttribute("width", width > 100 ? width : 100);*/
 				
-			width = isRTL ? Math.round(outerRect.left - outerRect.right) : Math.round(outerRect.right - outerRect.left);
+				if(Services.appinfo.OS=="Darwin") {
+				  width = width - 1; // MacOSX
+				}
+								
+				popup.setAttribute("width", outerRect.width);
+				
+				popup._invalidate();
+				
+				var y_position = -1;
+			
+			} else {
+				popup.mInput = this;
+				popup.view = this.controller.QueryInterface(Components.interfaces.nsITreeView);
+				popup.invalidate();
 
-			if(Services.appinfo.OS=="Darwin") {
-			  width = width - 1; // MacOSX
+				popup.showCommentColumn = this.showCommentColumn;
+				popup.showImageColumn = this.showImageColumn;
+
+				document.popupNode = null;
+				
+				var isRTL = getComputedStyle(this, "").direction == "rtl";
+				var outerRect = this.getBoundingClientRect();
+				var innerRect = this.inputField.getBoundingClientRect();
+			
+				var width = 100;
+					
+				width = isRTL ? Math.round(outerRect.left - outerRect.right) : Math.round(outerRect.right - outerRect.left);
+
+				if(Services.appinfo.OS=="Darwin") {
+				  width = width - 1; // MacOSX
+				}
+					
+				popup.setAttribute("width", width > 100 ? width : 100);
+				
+				var y_position = 0;
+			
 			}
-				
-			popup.setAttribute("width", width > 100 ? width : 100);
 
-            popup.openPopup(this, "after_start", 0, -1, false, false);
+		    var x_position = outerRect.x - innerRect.x;
+		    
+						
+            popup.openPopup(this.inputField, "after_start", x_position, y_position, false, false);
           }
+
         ]]></body>
       </method>
-
-      <method name="observe">
-        <parameter name="aSubject"/>
-        <parameter name="aTopic"/>
-        <parameter name="aData"/>
-        <body><![CDATA[
-          if (aTopic == "nsPref:changed") {
-            this._suggestEnabled =
-              this._prefBranch.getBoolPref("browser.search.suggest.enabled");
-            this._suggestMenuItem.setAttribute("checked", this._suggestEnabled);
-          }
-        ]]></body>
-      </method>
-
-      <method name="openSearch">
-        <body>
-          <![CDATA[
-            // Don't open search popup if history popup is open
-            if (!this.popupOpen) {
-              let searchBox = document.getBindingParent(this);
-              searchBox.searchButton.open = true;
-              return false;
-            }
-            return true;
-          ]]>
-        </body>
-      </method>
-
-      <method name="onTextEntered">
-        <parameter name="aEvent"/>
-        <body><![CDATA[
-          var evt = aEvent || this.mEnterEvent;
-
-          let engine;
-
-          if (this.mEnterEvent && this._selectionDetails &&
-              this._selectionDetails.currentIndex != -1) {
-            this._selectionDetails = null;
-          }
-          document.getBindingParent(this).handleSearchCommand(evt, engine);
-
-          this.mEnterEvent = null;
-        ]]></body>
-      </method>
-
-      <method name="advanceSelection">
-        <parameter name="aForward"/>
-        <parameter name="aSkipSuggestions"/>
-        <parameter name="aCycleEngines"/>
-        <body><![CDATA[
-          let popup = this.popup;
-          
-		  let selectedButton = this.selectedButton;
-
-          let suggestionsHidden;
-          if (!aSkipSuggestions) {
-            let suggestions = document.getAnonymousElementByAttribute(popup, "anonid", "tree");
-            suggestionsHidden = suggestions.getAttribute("collapsed") == "true";
-            aSkipSuggestions = suggestionsHidden;
-          }
-
-          // If the last suggestion is selected, DOWN selects the first button.
-          if (!aSkipSuggestions && aForward &&
-              popup.selectedIndex + 1 == popup.view.rowCount) {
-            return false;
-          }
-
-          if (!selectedButton) {
-            // If no selection, select the first button or ...
-            if (aForward && aSkipSuggestions) {
-              return true;
-            }
-
-            if (!aForward && (aCycleEngines || suggestionsHidden ||
-                              (!aSkipSuggestions && popup.selectedIndex == -1))) {
-              // the last button.
-              return true;
-            }
-          }
-
-          return false;
-        ]]></body>
-      </method>
-
-      <method name="handleKeyboardNavigation">
-        <parameter name="aEvent"/>
-        <body><![CDATA[
-          let popup = this.popup;
-          if (!popup.popupOpen)
-            return;
-
-          let list = document.getAnonymousElementByAttribute(popup, "anonid",
-                                                             "search-panel-one-offs");
-          if (!list) // remove this check when removing the old search UI.
-            return;
-          // accel + up/down changes the default engine and shouldn't affect
-          // the selection on the one-off buttons.
-          if (aEvent.ctrlKey)
-            return;
-
-          let stopEvent = false;
-
-          // Alt + up/down is very similar to (shift +) tab but differs in that
-          // it loops through the list, whereas tab will move the focus out.
-          if (aEvent.altKey &&
-              (aEvent.keyCode == KeyEvent.DOM_VK_DOWN ||
-               aEvent.keyCode == KeyEvent.DOM_VK_UP)) {
-            stopEvent =
-              this.advanceSelection(aEvent.keyCode == KeyEvent.DOM_VK_DOWN,
-                                    true, true);
-          }
-          else if (aEvent.keyCode == KeyEvent.DOM_VK_DOWN ||
-                   aEvent.keyCode == KeyEvent.DOM_VK_UP) {
-            stopEvent = this.advanceSelection(aEvent.keyCode == KeyEvent.DOM_VK_DOWN);
-          }
-          else if (aEvent.keyCode == KeyEvent.DOM_VK_TAB) {
-            stopEvent = this.advanceSelection(!aEvent.shiftKey, true);
-          }
-
-          if (stopEvent) {
-            aEvent.preventDefault();
-            aEvent.stopPropagation();
-          }
-        ]]></body>
-      </method>
-
-      <field name="searchbarController" readonly="true"><![CDATA[({
-        _self: this,
-        supportsCommand: function(aCommand) {
-          return aCommand == "cmd_clearhistory" ||
-                 aCommand == "cmd_togglesuggest";
-        },
-
-        isCommandEnabled: function(aCommand) {
-          return true;
-        },
-
-        doCommand: function (aCommand) {
-          switch (aCommand) {
-            case "cmd_clearhistory":
-              var param = this._self.getAttribute("autocompletesearchparam");
-
-              let searchBar = this._self.parentNode;
-
-              BrowserSearch.searchBar.FormHistory.update({ op : "remove", fieldname : param }, null);
-              this._self.value = "";
-              break;
-            case "cmd_togglesuggest":
-              // The pref observer will update _suggestEnabled and the menu
-              // checkmark.
-              this._self._prefBranch.setBoolPref("browser.search.suggest.enabled",
-                                                 !this._self._suggestEnabled);
-              break;
-            default:
-              // do nothing with unrecognized command
-          }
-        }
-      })]]></field>
-    </implementation>
-
-    <handlers>
-      <handler event="keypress" phase="capturing"
-               action="return this.handleKeyboardNavigation(event);"/>
-
-      <handler event="keypress" keycode="VK_UP" modifiers="accel"
-               phase="capturing"
-               action="document.getBindingParent(this).selectEngine(event, false);"/>
-
-      <handler event="keypress" keycode="VK_DOWN" modifiers="accel"
-               phase="capturing"
-               action="document.getBindingParent(this).selectEngine(event, true);"/>
-
-      <handler event="keypress" keycode="VK_DOWN" modifiers="alt"
-               phase="capturing"
-               action="return this.openSearch();"/>
-
-      <handler event="keypress" keycode="VK_UP" modifiers="alt"
-               phase="capturing"
-               action="return this.openSearch();"/>
-
-      <handler event="keypress" keycode="VK_F4"
-               phase="capturing"
-               action="return this.openSearch();"/>
-
-      <handler event="dragover">
-      <![CDATA[
-        var types = event.dataTransfer.types;
-        if (types.contains("text/plain") || types.contains("text/x-moz-text-internal"))
-          event.preventDefault();
-      ]]>
-      </handler>
-
-      <handler event="drop">
-      <![CDATA[
-        var dataTransfer = event.dataTransfer;
-        var data = dataTransfer.getData("text/plain");
-        if (!data)
-          data = dataTransfer.getData("text/x-moz-text-internal");
-        if (data) {
-          event.preventDefault();
-          this.value = data;
-		  document.getBindingParent(this).handleSearchCommand();
-        }
-      ]]>
-      </handler>
 	  
-      <handler event="click"><![CDATA[
-        if (event.button == 2)
-          return; // ignore right clicks.
-		else if (event.button == 1) { // middle click
+	</implementation>
 
-          let button = event.originalTarget;
-          let engine = button.engine || button.parentNode.engine;
-
-          if (!engine) return;
-
-          let searchbar = document.getElementById("searchbar");
-		  searchbar.searchButton.open = false;
-          searchbar.handleSearchCommand(event, engine);
-		}
-      ]]></handler>
-
-    </handlers>
   </binding>
 
 </bindings>

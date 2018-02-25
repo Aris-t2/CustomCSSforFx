@@ -66,3 +66,13 @@
 	}
 
 }
+
+/* code for Linux/macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	  -moz-margin-start: 2px !important;
+	  -moz-margin-end: 3px !important;
+	} 
+}}}

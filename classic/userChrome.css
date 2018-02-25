@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.0 ********************************************************************************/
+/* version 1.7.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -372,7 +372,8 @@
 /* menuitem labels - only use one at a time *****************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
-/* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_macOS_fix.css); /**/		/* <-- macOS fix */
+/* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOS.css); /**/		/* <-- Lin/macOS fix v1 */
+/* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOSv2.css); /**/		/* <-- Lin/macOS fix v2 */
 /* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
 /* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_fx58_fix.css); /**/		/* <-- TEMPORAL FX58 fix */
 
@@ -524,10 +525,9 @@
 		 
 /* [!] 'Classic popup with two lined results' removes 'oneoff' searches at popups bottom ********/
 /* popup content order/appearance - only use one at a time **************************************/
-/* @import url(./css/locationbar/ac_popup_classic_with_two_lines_fx57.css); /**/
-/* @import url(./css/locationbar/ac_popup_classic_with_two_lines_fx60.css); /**/
+@import url(./css/locationbar/ac_popup_classic_with_two_lines.css); /**/
 /* @import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css); /**/
-@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css); /**/
+/* @import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css); /**/
 /* @import url(./css/locationbar/ac_popup_item_title_hidden.css); /**/
 /* @import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css); /**/
  
