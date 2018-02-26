@@ -7,6 +7,22 @@
 /************************************************************************************************/
 
 
+/* custom settings for 'old search'
+ Open about:config, right-click on any item, select New > Boolean or Integer >
+ browser.oldsearch.customwidth > true    (enables custom popup width)
+ browser.oldsearch.customwidthvalue > 300    (example width value)
+ browser.oldsearch.clearinput > true    (clear textbox after search)
+ browser.oldsearch.reverttodefault > true     (revert to first engine after search)
+*/
+
+:root {
+  --search_dropdown: url(chrome://global/skin/icons/arrow-dropdown-12.svg);
+  --search_searchglass: url(chrome://browser/skin/search-glass.svg);
+  /* fallback variables */
+  --search_dropdown_fb: url("../../image/search_searchglass_dropdown.svg");
+  --search_searchglass_fb: url("../../image/search_searchglass.svg");
+}
+
 searchbar {
   -moz-binding: url("./../../xml/oldsearch_fx57.xml#searchbar") !important;
 }
@@ -42,61 +58,36 @@ searchbar .searchbar-textbox {
 }
 
 .searchbar-dropmarker-image {
-  list-style-image: url("./../../image/searchbar-dropdown-arrow.png") !important;
-  -moz-image-region: rect(0, 13px, 11px, 0) !important;
+  list-style-image: var(--search_dropdown,var(--search_dropdown_fb)) !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  width: 8px !important;
+  height: 8px !important;
+  fill-opacity: 1.0 !important;
+  fill: #5b5b5b !important;
 }
 
 .searchbar-engine-button[open="true"] > .searchbar-dropmarker-image {
-  -moz-image-region: rect(0, 26px, 11px, 13px) !important;
+  fill: #658dd7 !important;
+  background: radial-gradient(rgba(91,91,91,0.2), transparent, transparent) !important;
 }
 
 .search-go-button {
-  display: block !important;
-  list-style-image: url("./../../image/search-glass.png") !important;
-  -moz-image-region: rect(0px, 16px, 16px, 0) !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
+  list-style-image: var(--search_searchglass,var(--search_searchglass_fb)) !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  margin-inline-start: 8px !important;
+  margin-inline-end: 6px !important;
   width: 16px !important;
-  height: 16px !important;
-}
-
-#main-window[uidensity=compact] .search-go-button {
-  margin: 4px 0px !important;
-}
-
-#main-window:not([uidensity=compact]):not([uidensity=touch]) .search-go-button {
-  margin: 6px 0px !important;
-}
-
-#main-window[uidensity=touch] .search-go-button {
-  margin: 8px 0px !important;
+  fill-opacity: 1.0 !important;
+  fill: #3683ba !important;
+  transform: scaleX(-1) !important;
 }
 
 .search-go-button:hover {
-  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+  fill: #1d518c !important;
 }
 
 .search-go-button:active {
-  -moz-image-region: rect(0px, 48px, 16px, 32px) !important;
-}
-
-.search-go-button:-moz-locale-dir(rtl) {
-  transform: scaleX(-1);
-}
-
-@media (min-resolution: 1.1dppx) {
-	.search-go-button {
-	  list-style-image: url("./../../image/search-glass32.png") !important;
-	  -moz-image-region: rect(0px, 32px, 32px, 0) !important;
-	}
-
-	.search-go-button:hover {
-	  -moz-image-region: rect(0px, 64px, 32px, 32px) !important;
-	}
-
-	.search-go-button:active {
-	  -moz-image-region: rect(0px, 96px, 32px, 64px) !important;
-	}
+  fill: #00095d !important;
 }
 
 .searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
@@ -105,11 +96,6 @@ searchbar .searchbar-textbox {
 
 .searchbar-popup {
   -moz-margin-start: -1px !important;
-}
-
-/* location bars footer */
-#urlbar-search-footer{
-  display: none !important;
 }
 
 #PopupSearchAutoComplete .tree-scrollbar,
@@ -136,18 +122,6 @@ searchbar .searchbar-textbox {
 
 #PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody {
   margin-bottom: -4px !important;
-}
-
-/* custom width for engines popup *//*
-#searchbar .searchbar-popup {
-  min-width: 300px !important;
-  max-width: 300px !important;
-}
-
-/* custom width for suggestions popup *//*
-#PopupSearchAutoComplete {
-  min-width: 300px !important;
-  max-width: 300px !important;
 }
 
 /**/

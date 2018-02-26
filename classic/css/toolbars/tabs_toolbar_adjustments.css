@@ -26,3 +26,13 @@
   padding-left: 2px !important;
   min-height: unset !important;
 }
+
+/* code for macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	#TabsToolbar .titlebar-placeholder[type="caption-buttons"]:not([ordinal="1000"]) {
+	  -moz-margin-start: 24px !important;
+	}
+}}}
+

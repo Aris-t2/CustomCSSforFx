@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.1 ********************************************************************************/
+/* version 1.7.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -397,11 +397,15 @@
 /* @import url(./css/generalui/searchbar_popup_engines_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels.css); /**/
 
-/* OLD SEARCH ***********************************************************************************/
-/* NOTE: 'Old search' will stop working soon when Mozilla drops XBL support. *********************
+/* OLD SEARCH ***********************************************************************************/	/* <--- OLD SEARCH */
+/* NOTE: 'Old search' will stop working when Mozilla drops XBL support. **************************
 		  See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 ******************************/
 /* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
 /* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
+/* [!] 'about:config > browser.oldsearch.customwidth': enables custom popup width ***************/
+/* [!] 'about:config > browser.oldsearch.customwidthvalue': custom popup width value ************/
+/* [!] 'about:config > browser.oldsearch.clearinput': clear searchbox after search **************/
+/* [!] 'about:config > browser.oldsearch.reverttodefault': revert to first engine after search **/
 /* [!] Shift + click on search glass: search opens in a new window ******************************/
 /* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 ***********************/

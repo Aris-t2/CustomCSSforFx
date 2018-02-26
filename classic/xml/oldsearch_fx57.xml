@@ -285,13 +285,16 @@
           }
 		  
 		  var searchtextbox = document.getAnonymousElementByAttribute(document.getElementById("searchbar"), "anonid", "searchbar-textbox");
-		  var isRTL = getComputedStyle(searchtextbox, "").direction == "rtl";
 		  var outerRect = searchtextbox.getBoundingClientRect();
 		  var innerRect = searchtextbox.inputField.getBoundingClientRect();
 		  
+		  var width = outerRect.width;
+			
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("customwidth"))
+			  width = Services.prefs.getBranch("browser.oldsearch.").getIntPref("customwidthvalue");
+		  } catch(e) {}
 
-		  var width = 100; 
-		  width = isRTL ? Math.round(outerRect.left - outerRect.right) : Math.round(outerRect.right - outerRect.left);
 		  popup.setAttribute("width", width > 100 ? width : 100);
 
 
@@ -441,20 +444,25 @@
 
           if (where == "tab-background")
             this.focus();
-
+			
 		  // clear input after search
-		  /*
-		  setTimeout(function(){
-			textBox.value="";
-		  },200);
-		  */
-	  
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("clearinput")) {
+			  setTimeout(function(){
+				textBox.value="";
+			  },200);
+			}
+		  } catch(e) {}
+
+
 		  // revert to default engine after search
-		  /*
-		  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
-		  
-		  this.updateDisplay();	
-		  */
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("reverttodefault")) {
+			  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
+			  this.updateDisplay();	
+			}
+
+		  } catch(e) {}
 
         ]]></body>
       </method>
@@ -546,7 +554,8 @@
           }
 
           var popup = this.popup;
-          if (!popup.mPopupOpen) {
+          
+		  if (!popup.mPopupOpen) {
             popup.hidden = false;
 
 			if(parseInt(Services.appinfo.version)>=60) {
@@ -556,31 +565,15 @@
 				}
 
 				popup.mInput = this;
-
 				popup.selectedIndex = -1;
-
 				document.popupNode = null;
 
-				const isRTL = getComputedStyle(this, "").direction == "rtl";
-
-				var outerRect = this.getBoundingClientRect();
-				var innerRect = this.inputField.getBoundingClientRect();
-				let width = isRTL ?
-							innerRect.right - outerRect.left :
-							outerRect.right - innerRect.left;
-				/*popup.setAttribute("width", width > 100 ? width : 100);*/
-				
-				if(Services.appinfo.OS=="Darwin") {
-				  width = width - 1; // MacOSX
-				}
-								
-				popup.setAttribute("width", outerRect.width);
-				
 				popup._invalidate();
 				
 				var y_position = -1;
 			
 			} else {
+				
 				popup.mInput = this;
 				popup.view = this.controller.QueryInterface(Components.interfaces.nsITreeView);
 				popup.invalidate();
@@ -590,27 +583,23 @@
 
 				document.popupNode = null;
 				
-				var isRTL = getComputedStyle(this, "").direction == "rtl";
-				var outerRect = this.getBoundingClientRect();
-				var innerRect = this.inputField.getBoundingClientRect();
-			
-				var width = 100;
-					
-				width = isRTL ? Math.round(outerRect.left - outerRect.right) : Math.round(outerRect.right - outerRect.left);
-
-				if(Services.appinfo.OS=="Darwin") {
-				  width = width - 1; // MacOSX
-				}
-					
-				popup.setAttribute("width", width > 100 ? width : 100);
-				
 				var y_position = 0;
 			
 			}
 
-		    var x_position = outerRect.x - innerRect.x;
+			var outerRect = this.getBoundingClientRect();
+			var innerRect = this.inputField.getBoundingClientRect();
+			var width = outerRect.width;
+			
+			try {
+			  if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("customwidth"))
+				width = Services.prefs.getBranch("browser.oldsearch.").getIntPref("customwidthvalue");
+			} catch(e) {}
+
+			popup.setAttribute("width", width > 100 ? width : 100);
+			
+			var x_position = outerRect.x - innerRect.x;
 		    
-						
             popup.openPopup(this.inputField, "after_start", x_position, y_position, false, false);
           }
 
