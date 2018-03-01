@@ -28,9 +28,10 @@
   --classic_squared_tabs_tab_text_color: black;
   --classic_squared_tabs_tab_text_shadow: transparent;
   
-  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
-  
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
+  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
+  --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
 }
 
 /* adjust tab toolbars buttons for squared tabs *//*

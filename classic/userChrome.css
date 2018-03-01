@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.2 ********************************************************************************/
+/* version 1.7.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -535,7 +535,7 @@
 /* @import url(./css/locationbar/ac_popup_item_title_hidden.css); /**/
 /* @import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css); /**/
  
-/* result settings/appearance *******************************************************************/
+/* result menuitem settings/appearance **********************************************************/
 /* @import url(./css/locationbar/ac_popup_result_highlighting_aero.css); /**/
 /* @import url(./css/locationbar/ac_popup_keysearch_bold.css); /**/
 /* @import url(./css/locationbar/ac_popup_keysearch_underline.css); /**/

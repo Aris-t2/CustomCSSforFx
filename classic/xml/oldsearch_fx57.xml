@@ -85,7 +85,6 @@
 			  }
 			}, 1000);
 
-		  
 		  } else {
             Components.utils.reportError("Cannot initialize search service, bailing out: " + aStatus);
           }
@@ -444,25 +443,6 @@
 
           if (where == "tab-background")
             this.focus();
-			
-		  // clear input after search
-		  try {
-			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("clearinput")) {
-			  setTimeout(function(){
-				textBox.value="";
-			  },200);
-			}
-		  } catch(e) {}
-
-
-		  // revert to default engine after search
-		  try {
-			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("reverttodefault")) {
-			  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
-			  this.updateDisplay();	
-			}
-
-		  } catch(e) {}
 
         ]]></body>
       </method>
@@ -495,6 +475,23 @@
           openUILinkIn(submission.uri.spec,
                        aWhere == "tab-background" ? "tab" : aWhere,
                        params);
+					   
+					   
+		  // clear input after search
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("clearinput")) {
+				textBox.value="";
+			}
+		  } catch(e) {}
+
+		  // revert to default engine after search
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("reverttodefault")) {
+			  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
+			  this.updateDisplay();	
+			}
+
+		  } catch(e) {}
         ]]></body>
       </method>
     </implementation>

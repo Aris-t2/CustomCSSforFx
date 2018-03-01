@@ -12,7 +12,7 @@
   --tabs_toolbar_border-tnot_normal_mode_size: 1px;
   --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color);
   
-  --tab-min-height_tnot: calc( var(--tab-min-height) - 1px );
+  --tab-min-height_tnot: 31px ;
 }
 
 /* tabs toolbar adjustment */

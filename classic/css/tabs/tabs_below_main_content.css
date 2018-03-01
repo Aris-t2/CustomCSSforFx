@@ -10,7 +10,7 @@
 @import url(./tabs_below_navigation_toolbar.css);
 
 :root {
-  --space_below_content: calc( var(--tab-min-height) + 1px );
+  --space_below_content: 33px;
 }
 
 /* this is an experiment not meant for every day use */
