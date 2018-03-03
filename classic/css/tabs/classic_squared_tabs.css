@@ -34,13 +34,7 @@
   --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
 }
 
-/* adjust tab toolbars buttons for squared tabs *//*
-#TabsToolbar #alltabs-button .toolbarbutton-icon,
-#TabsToolbar > #new-tab-button .toolbarbutton-icon,
-#TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
-  padding: 3px !important;
-}
-*/
+
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab[visuallyselected="true"],
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab,

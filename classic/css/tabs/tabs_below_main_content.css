@@ -13,6 +13,14 @@
   --space_below_content: 33px;
 }
 
+:root[uidensity=compact]  {
+  --space_below_content: 29px;
+}
+
+:root[uidensity=touch] {
+  --space_below_content: 41px;
+}
+
 /* this is an experiment not meant for every day use */
 /* values might need adjustment in many different cases */
 

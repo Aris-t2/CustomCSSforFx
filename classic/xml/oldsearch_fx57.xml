@@ -90,6 +90,15 @@
           }
         }).bind(this));
 		
+		try {
+			var prefs = Services.prefs.getDefaultBranch("browser.oldsearch.");
+			
+			prefs.setBoolPref("clearinput",false);
+			prefs.setBoolPref("customwidth",false);
+			prefs.setIntPref("customwidthvalue",300);
+			prefs.setBoolPref("reverttodefault",false);
+		} catch(e) {}
+		
       ]]></constructor>
 
       <destructor><![CDATA[
