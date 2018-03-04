@@ -1,0 +1,15 @@
+/*AGENT_SHEET*/
+
+/* Firefox 57+ userChrome.css tweaks ****************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
+/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar]::after {
+  max-width: unset !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}

@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.4 ********************************************************************************/
+/* version 1.7.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -131,6 +131,7 @@
 /* other button settings ************************************************************************/
 /* @import url(./css/buttons/forward_button_hide_when_disabled.css); /**/
 /* @import url(./css/buttons/back_and_forward_separated_history_popups.css); /**/
+/* @import url(./css/buttons/back_and_forward_leftclick_history_popup_hidden.css); /**/
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
@@ -285,6 +286,7 @@
 /* [!] some internal pages only show default browser title **************************************/
 /* [!] might not always work correctly **********************************************************/
 /* @import url(./css/tabs/tab_title_in_firefox_titlebar.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tab_title_in_firefox_titlebar_centered.css); /**/  /* <--- EXPERIMENTAL */
 
 /* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/

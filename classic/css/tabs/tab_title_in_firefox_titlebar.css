@@ -68,8 +68,7 @@
   font-weight: bold !important;
   text-shadow:  rgba(255,255,255,0.99) 3px -1px 6px, rgba(255,255,255,0.5) 5px -1px 9px,
 				rgba(255,255,255,0.99) -3px -1px 6px, rgba(255,255,255,0.5) -5px -1px 9px !important;
-  /*white-space: nowrap !important;*/
-				
+  max-width: calc(100vw - 250px) !important;
 }
 
 #main-window:not([inFullscreen]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"]::after {
