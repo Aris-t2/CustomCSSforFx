@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.5 ********************************************************************************/
+/* version 1.7.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -271,7 +271,7 @@
 
 /* TAB TEXT colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **********/
 /* edit target file to set own custom colors ****************************************************/
-/* @import url(./css/tabs/custom_text_settings.css); /**/
+/* @import url(./config/custom_tab_text_settings.css); /**/
 
 /* MULTIROW / multi lined tabs - only use one at a time *****************************************/
 /* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 ************************/
@@ -474,6 +474,8 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
+/* FIX FOR macOS / alternative appearance for Linux *********************************************/
+/* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_macOS_fix.css); /**/	/* <-- macOS fix */
 /* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 

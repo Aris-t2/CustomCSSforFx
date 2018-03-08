@@ -11,7 +11,8 @@
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
   --tabs_toolbar_border-tnot_normal_mode_size: 1px;
   --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color);
-  
+  --classic_squared_tabs_tab_text_color: black;
+  --classic_squared_tabs_tab_text_shadow: transparent;
   --tab-min-height_tnot: 32px;
 }
 
@@ -315,3 +316,10 @@
 	}
 
 }
+
+/* black tab text color */
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
+  color: var(--classic_squared_tabs_tab_text_color) !important;
+  text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
+}
+

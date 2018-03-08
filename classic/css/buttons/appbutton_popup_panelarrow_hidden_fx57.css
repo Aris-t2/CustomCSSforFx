@@ -16,3 +16,7 @@
   -moz-margin-end: -205px !important;
   margin-top: -2px !important;
 }
+
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+  border-radius: 0 0 0 0 !important;
+}
