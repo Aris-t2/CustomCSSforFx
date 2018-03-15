@@ -1,8 +1,8 @@
-## Download
+## Downloads for Firefox Photon (57+)
 
-**[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
-**[NoiaButtons CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
-**[Custom Scrollbars for Firefox 57+](https://github.com/Aris-t2/Scrollbars)**  
+**[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
+**[NoiaButtons CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
+**[Custom Scrollbars](https://github.com/Aris-t2/Scrollbars)**  
 
 ## Want to support this project?
 
