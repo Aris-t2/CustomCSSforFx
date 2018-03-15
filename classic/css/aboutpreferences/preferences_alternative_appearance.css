@@ -20,12 +20,13 @@
 	#categories {
 	  background: transparent !important;
 	}
-	
+
 	.groupbox-body,
 	#dialogFrame{
 	  background-color: white !important;
 	}
 	
+	.sticky-container,
 	.search-container {
 	  background: transparent !important;
 	  position: absolute !important;

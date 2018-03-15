@@ -40,5 +40,8 @@
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */
-  --general_ui_font_size: 12pt !important; 
+  --general_ui_font_size: 12pt !important;
+  
+  /* for ac_popup_custom_height.css */
+  --ac_popup_max_height: 300px !important;
 }

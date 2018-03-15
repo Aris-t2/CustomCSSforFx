@@ -37,6 +37,7 @@
 	  margin: 2px !important;
 	}
 	
+	.sticky-container,
 	.search-container {
 	  background: transparent !important;
 	  position: absolute !important;

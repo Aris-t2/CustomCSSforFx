@@ -8,7 +8,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.6 ********************************************************************************/
+/* version 1.7.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -32,11 +32,6 @@
   - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
   - in both cases CSS code has to be added to userChrome.css file manually
 
-  FIREFOX 58 BUG: bugzilla.mozilla.org/show_bug.cgi?id=1431933
-  - DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/101
-  - some @media rules get ignored -> temporal fixes required
-  - look for TEMPORAL FIX FOR FIREFOX 58 or TEMPORAL FX58 fix additions
-  
   MACOS issues / glitches / fixes -> look for 'macOS fix'
   - tabs toolbar spaces in 'toolbars' category
   - tabs not on top mode in 'tabs toolbar position' category
@@ -110,8 +105,6 @@
 /* bookmarks toolbar - buttons appearance - only use one at a time ******************************/
 /* old bookmarks toolbar button appearance ******************************************************/
 @import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css); /**/
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS DEFAULT OS THEME ***************************************/
-/* @import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 /* @import url(./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css); /**/
 /* @import url(./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_items.css); /**/
 
@@ -122,8 +115,6 @@
 /* @import url(./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css); /**/
 /* popup appearance *****************************************************************************/
 @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance.css); /**/
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
-/* @import url(./css/buttons/bookmarks_menu_button_popup_classic_appearance_fx58_fix.css); /**/		/* <-- TEMPORAL FX58 fix */
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import url(./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css); /**/
@@ -195,7 +186,7 @@
 
 
 /************************************************************************************************/
-/* button in Firefox titlebar - if menubar is disabled (Windows only) ***************************/
+/* button in Firefox titlebar *******************************************************************/
 /************************************************************************************************/
 
 /* button in titlebar - only use one at a time **************************************************/
@@ -208,9 +199,6 @@
 /* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_dark.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_grey.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_browser_logo.css); /**/
-
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
-/* @import url(./css/buttons/appbutton_in_titlebar_fx58_fix.css); /**/								/* <-- TEMPORAL FX58 fix */
 
 /* button color - only use one at a time ********************************************************/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css); /**/
@@ -231,8 +219,6 @@
 /* custom tab appearance - only use one at a time ***********************************************/
 @import url(./css/tabs/classic_squared_tabs.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS 10 *****************************************************/
-/* @import url(./css/tabs/classic_squared_tabs_fx58_fix.css); /**/									/* <-- TEMPORAL FX58 fix */
 
 /* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
 /* only use one at a time - edit target file to set own custom colors ***************************/
@@ -253,17 +239,11 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar.css); /**/ 									/* <-- tabs not on top */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css); /**/ 						/* <-- macOS fix */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
-/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 ************************/
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
+/* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
+/* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
-/* TEMPORAL FIX FOR FIREFOX 58 & TABS BELOW NAVIGATION TOOLBAR and MAIN CONTENT *****************/
-/* - for Windows 7s default theme ***************************************************************/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win7_default_theme.css); /**/		/* <-- TEMPORAL FX58 fix */
-/* - for Windows 7s classic theme ***************************************************************/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win7_classic_theme.css); /**/		/* <-- TEMPORAL FX58 fix */
-/* - for Windows 10 *****************************************************************************/
-/* @import url(./css/tabs/tabs_below_navigation_toolbar_fx58_fix_win10.css); /**/					/* <-- TEMPORAL FX58 fix */
-/************************************************************************************************/
-/* - MOVE NAVIGATION TOOLBAR UP TO HIGHER POSITON (tabs not on top) - only use one at a time ****/
+/* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - only use one at a time *******/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/			/* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- EXPERIMENTAL */
@@ -274,19 +254,20 @@
 /* @import url(./config/custom_tab_text_settings.css); /**/
 
 /* MULTIROW / multi lined tabs - only use one at a time *****************************************/
-/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 ************************/
-/* - BUG: dragging tabs does not work properly with multi lined tabs ****************************/
-/* - for v1 see https://00.bulog.jp/archives/1476 ***********************************************/
-/* - for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ******/
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 ************************/
+/* [!] BUG: dragging tabs does not work properly with multi lined tabs ****************************/
+/* [!] for v1 see https://00.bulog.jp/archives/1476 ***********************************************/
+/* [!] for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ******/
 /* Recommendation: use v2 instead of v1. v1 has too many issues and glitches ********************/
+/* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* @import url(./css/tabs/tabs_multiple_lines.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_multiple_lines_v2.css); /**/  /* <--- EXPERIMENTAL */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/
 /* [!] might not always work correctly **********************************************************/
-/* @import url(./css/tabs/tab_title_in_firefox_titlebar.css); /**/  /* <--- EXPERIMENTAL */
-/* @import url(./css/tabs/tab_title_in_firefox_titlebar_centered.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tab_title_in_firefox_titlebar.css); /**/
+/* @import url(./css/tabs/tab_title_in_firefox_titlebar_centered.css); /**/
 
 /* restore empty/missing tab favicon - only use one at a time ***********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/
@@ -362,8 +343,6 @@
 
 /* findbar **************************************************************************************/
 /* @import url(./css/generalui/findbar_on_top.css); /**/
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS DEFAULT OS THEME ***************************************/
-/* @import url(./css/generalui/findbar_on_top_fx58_fix.css); /**/									/* <-- TEMPORAL FX58 fix */
 /* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
 /* findbar - close icon position - only use one at a time ***************************************/
 /* @import url(./css/generalui/findbar_on_top_close_at_findbars_start.css); /**/
@@ -376,8 +355,6 @@
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOS.css); /**/		/* <-- Lin/macOS fix v1 */
 /* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOSv2.css); /**/		/* <-- Lin/macOS fix v2 */
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
-/* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_fx58_fix.css); /**/		/* <-- TEMPORAL FX58 fix */
 
 /* close icons for general ui and tabs - only use one at a time *********************************/
 /* @import url(./css/generalui/close_icon_windows7.css); /**/
@@ -410,8 +387,8 @@
 /* [!] 'about:config > browser.oldsearch.reverttodefault': revert to first engine after search **/
 /* [!] Shift + click on search glass: search opens in a new window ******************************/
 /* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
-/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 ***********************/
-/* @import url(./css/generalui/oldsearch.css); /**/  /* <--- EXPERIMENTAL */
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 *********************/
+/* @import url(./css/generalui/oldsearch.css); /**/
 
 /* MENUBARS bookmarks popup (not compatible to macOS/Linux) *************************************/
 /* @import url(./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css); /**/
@@ -429,7 +406,7 @@
 /* [!] not compatible to 'bookmarks toolbar - multiple lines' option ****************************/
 /* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
-/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 ************************/
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 **********************/
 /* @import url(./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/toolbars/addonbar_status_in_addonbar.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/toolbars/addonbar_content_on_the_right.css); /**/  /* <--- EXPERIMENTAL */
@@ -458,7 +435,7 @@
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
-/* - SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 ************************/
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import url(./css/toolbars/bookmarks_toolbar_multiple_lines.css); /**/ /* <--- EXPERIMENTAL */
 
 /* TOOLBAR COLORS *******************************************************************************/
@@ -474,10 +451,8 @@
 /* TOOLBAR TEXT MODES - only use one at a time **************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
-/* FIX FOR macOS / alternative appearance for Linux *********************************************/
+/* [!] FIX FOR macOS / alternative appearance for Linux *****************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_macOS_fix.css); /**/	/* <-- macOS fix */
-/* TEMPORAL FIX FOR FIREFOX 58 & WINDOWS CLASSIC OS THEME ***************************************/
-/* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_fx58_fix.css); /**/	/* <-- TEMPORAL FX58 fix */
 
 
 /************************************************************************************************/
@@ -544,11 +519,14 @@
 /* @import url(./css/locationbar/ac_popup_keysearch_bold.css); /**/
 /* @import url(./css/locationbar/ac_popup_keysearch_underline.css); /**/
 /* @import url(./css/locationbar/ac_popup_result_separator.css); /**/
+/* custom amount of result items: about:config > browser.urlbar.maxRichResults ******************/
+/* @import url(./css/locationbar/ac_popup_custom_height.css); /**/
 
 /* hide 'Search with...' and 'Visit...' results *************************************************/
 /* - browser preferences: disable 'show search suggestions inside address bar results' **********/
 /* - hide bottom search engines: about:config > browser.urlbar.oneOffSearches > false ***********/
-/* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); /**/
+/* [!] Hiding will not work properly for all cases. An empty box will sometimes be visible ******/
+/* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); /**/  /* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/

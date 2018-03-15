@@ -7,7 +7,17 @@
 /****************************************************************************************/
 
 
-.titlebar-button {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+/* Set a custom amount of results: about:config > browser.urlbar.maxRichResults *********/
+
+:root {
+  --ac_popup_max_height: 300px;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  max-height: var(--ac_popup_max_height) !important;
+  height: auto !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+  overflow-y: auto !important;
 }
