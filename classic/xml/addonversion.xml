@@ -1,18 +1,21 @@
 <?xml version="1.0"?>
 
+<!--
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+-->
+
 <!DOCTYPE page [
 <!ENTITY % extensionsDTD SYSTEM "chrome://mozapps/locale/extensions/extensions.dtd">
 %extensionsDTD;
 ]>
-
-<!-- import-globals-from extensions.js -->
 
 <bindings id="addonBindings"
           xmlns="http://www.mozilla.org/xbl"
           xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
           xmlns:xbl="http://www.mozilla.org/xbl">
 
-  <!-- Addon - generic - A normal addon item, or an update to one -->
   <binding id="addon-generic"
            extends="chrome://mozapps/content/extensions/extensions.xml#addon-generic">
     <content>
@@ -22,14 +25,14 @@
         <xul:label anonid="warning" flex="1"/>
         <xul:label anonid="warning-link" class="text-link"/>
         <xul:button anonid="warning-btn" class="button-link" hidden="true"/>
-        <xul:spacer flex="5000"/> <!-- Necessary to allow the message to wrap -->
+        <xul:spacer flex="5000"/>
       </xul:hbox>
       <xul:hbox anonid="error-container"
                 class="error">
         <xul:image class="error-icon"/>
         <xul:label anonid="error" flex="1"/>
         <xul:label anonid="error-link" class="text-link" hidden="true"/>
-        <xul:spacer flex="5000"/> <!-- Necessary to allow the message to wrap -->
+        <xul:spacer flex="5000"/>
       </xul:hbox>
       <xul:hbox anonid="pending-container"
                 class="pending">
@@ -42,7 +45,7 @@
                     label="&addon.undoAction.label;"
                     tooltipText="&addon.undoAction.tooltip;"
                     oncommand="document.getBindingParent(this).undo();"/>
-        <xul:spacer flex="5000"/> <!-- Necessary to allow the message to wrap -->
+        <xul:spacer flex="5000"/>
       </xul:hbox>
 
       <xul:hbox class="content-container" align="center">
@@ -58,7 +61,7 @@
                 <xul:label anonid="legacy" class="legacy-warning text-link" value="&addon.legacy.label;"/>
                 <xul:label class="disabled-postfix" value="&addon.disabled.postfix;"/>
                 <xul:label class="update-postfix" value="&addon.update.postfix;"/>
-                <xul:spacer flex="5000"/> <!-- Necessary to make the name crop -->
+                <xul:spacer flex="5000"/>
               </xul:hbox>
             <xul:label anonid="date-updated" class="date-updated"
                        unknown="&addon.unknownDate;"/>
@@ -81,7 +84,7 @@
                             label="&addon.details.label;"
                             tooltiptext="&addon.details.tooltip;"
                             oncommand="document.getBindingParent(this).showInDetailView();"/>
-                <xul:spacer flex="5000"/> <!-- Necessary to make the description crop -->
+                <xul:spacer flex="5000"/>
               </xul:hbox>
               <xul:vbox anonid="relnotes-container" class="relnotes-container">
                 <xul:label class="relnotes-header" value="&addon.releaseNotes.label;"/>

@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -10,6 +6,7 @@
 ** types and button variations out there to catch all of them with general code. ********/
 
 
+/* compact button mode */
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 32px !important;
   height: 26px !important;
@@ -24,26 +21,33 @@
 }
 
 #main-window[uidensity=compact] #nav-bar #downloads-button #downloads-indicator-anchor {
-  margin-left: 3px !important;
-  margin-right: 3px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
 #main-window[uidensity=compact] #nav-bar .webextension-browser-action .toolbarbutton-icon {
-  margin-left: 3px !important;
-  margin-right: 3px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
 }
 
 #main-window[uidensity=compact] #nav-bar :-moz-any(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
-  padding-left: 7px !important;
-  padding-right: 7px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
 }
 
-#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
+#main-window[uidensity=compact] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box {
   margin-left: 7px !important;
   margin-right: 7px !important;
 }
 
+#main-window[uidensity=compact] #nav-bar #zoom-reset-button .toolbarbutton-text {
+  min-height: 26px !important;
+}
+
+
+/* normal button mode */
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 40px !important;
   height: 30px !important;
@@ -76,11 +80,18 @@
   padding-right: 11px !important;
 }
 
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #stop-reload-button .toolbarbutton-animatable-box {
   margin-left: 11px !important;
   margin-right: 11px !important;
 }
 
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #zoom-reset-button .toolbarbutton-text {
+  min-height: 30px !important;
+}
+
+
+/* touch button mode */
 #main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-icon {
   width: 46px !important;
   height: 32px !important;
@@ -113,9 +124,14 @@
   padding-right: 14px !important;
 }
 
+#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box ,
 #main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
   margin-left: 14px !important;
   margin-right: 14px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar #zoom-reset-button .toolbarbutton-text {
+  min-height: 32px !important;
 }
 
 /* fix for toolbar button badges */

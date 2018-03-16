@@ -1,14 +1,11 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ************************************************************/
+/* Firefox Quantum userChrome.css tweaks ********************************************************/
 /* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
-/* by Aris (aris-addons@gmx.net)*****************************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* Custom CSS for Firefox ***********************************************************************/
-/* version 1.7.7 ********************************************************************************/
+/* Custom CSS for Firefox 59+ *******************************************************************/
+/* version 1.7.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -55,13 +52,14 @@
 @import url(./config/general_variables.css); /**/
 
 /* COLOR VARIABLES - only use one at a time *****************************************************/
+/* [!] edit 'color_variables.css' to set own colors for most ui areas ***************************/
 @import url(./config/color_variables.css); /**/  /* <- default 'grey' colors */
 /* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors */
 /* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
 /* @import url(./config/color_variables_fx3.css); /**/  /* <- 'Firefox 3-like' colors */
 /* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
 /* @import url(./config/color_variables_transparent.css); /**/  /* <- 'transparent' colors */
-/* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10 Glass8 fix is in 'toolbar' area */
+/* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
 
 
 /************************************************************************************************/
@@ -77,9 +75,8 @@
 /* navigation toolbar buttons - button roundness (edit file to set different roundness) *********/
 /* @import url(./css/buttons/buttons_on_navbar_button_roundness.css); /**/
 
-/* squared buttons - only use one at a time (based on Firefox version) **************************/
-/* @import url(./css/buttons/buttons_on_navbar_squared_buttons_fx57.css); /**/
-/* @import url(./css/buttons/buttons_on_navbar_squared_buttons_fx58.css); /**/
+/* squared buttons (rectangular shape) **********************************************************/
+/* @import url(./css/buttons/buttons_on_navbar_squared_buttons.css); /**/
 
 /* icon appearance - only use one at a time (custom icons do not scale in HiDPI modes) **********/
 @import url(./css/buttons/icons_colorized.css); /**/
@@ -155,8 +152,7 @@
 /* application/hamburger button popup ***********************************************************/
 @import url(./css/buttons/appbutton_popup_icons_colorized.css); /**/
 /* @import url(./css/buttons/appbutton_popup_sync_hidden.css); /**/
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx57.css); /**/ 
-/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden_fx58.css); /**/
+/* @import url(./css/buttons/appbutton_popup_panelarrow_hidden.css); /**/ 
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
@@ -525,7 +521,8 @@
 /* hide 'Search with...' and 'Visit...' results *************************************************/
 /* - browser preferences: disable 'show search suggestions inside address bar results' **********/
 /* - hide bottom search engines: about:config > browser.urlbar.oneOffSearches > false ***********/
-/* [!] Hiding will not work properly for all cases. An empty box will sometimes be visible ******/
+/* [!] Hiding will not work properly in all cases. An empty box will sometimes be visible *******/
+/* [!] Suggested to additionally use above custom popup height and more result items ************/
 /* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); /**/  /* <--- EXPERIMENTAL */
 
 

@@ -1,10 +1,6 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ************************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
-/* by Aris (aris-addons@gmx.net)*****************************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
-/************************************************************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
 
 
 /* custom settings for 'old search'
@@ -24,11 +20,11 @@
 }
 
 searchbar {
-  -moz-binding: url("./../../xml/oldsearch_fx57.xml#searchbar") !important;
+  -moz-binding: url("./../../xml/oldsearch.xml#searchbar") !important;
 }
 
 searchbar .searchbar-textbox {
-  -moz-binding: url("./../../xml/oldsearch_fx57.xml#searchbar-textbox") !important;
+  -moz-binding: url("./../../xml/oldsearch.xml#searchbar-textbox") !important;
 }
 
 .searchbar-engine-button {

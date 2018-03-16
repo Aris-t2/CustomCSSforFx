@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 
+<!--
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+-->
+
 <!DOCTYPE bindings [
 <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
 %browserDTD;

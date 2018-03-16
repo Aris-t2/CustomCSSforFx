@@ -1,12 +1,9 @@
 <?xml version="1.0"?>
 
 <!--
-** Modified Firefox 57+ bindings offered in ***********************************************
-** chrome://global/content/bindings/autocomplete.xml#autocomplete-rich-result-popup *******
-** and ************************************************************************************
-** chrome://browser/content/urlbarBindings.xml#urlbar-rich-result-popup *******************
-** to simulate pre-Fx48 look of location bars autocomplete popup and removed all default **
-** default comments to reduce file size. **************************************************
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
 -->
 
 <!DOCTYPE bindings [
