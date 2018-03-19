@@ -10,7 +10,7 @@
 
 ## Instructions / Howto / Readme
 
-- [WebExtensions can not modify browsers appearance in Firefox 57+](#webextensions-can-not-modify-browsers-appearance-in-firefox-57)  
+- [WebExtensions can not modify Firefox Quantums appearance properly](#webextensions-can-not-modify-firefox-quantums-appearance-properly)  
 - [Where to find Firefox profile folder and what is the correct location for user styles?](#where-to-find-firefox-profile-folder-and-what-is-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
@@ -18,7 +18,7 @@
 - [Suggested ui tweaks](#suggested-ui-tweaks)  
 - ['about:config' tweaks](#aboutconfig-tweaks)  
 
-## WebExtensions can not modify browsers appearance in Firefox 57+
+## WebExtensions can not modify Firefox Quantums appearance properly
 
 The only way to modify ui is adding custom CSS code to **userChrome.css** and **userContent.css** files inside browsers profile folder.  
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.  
