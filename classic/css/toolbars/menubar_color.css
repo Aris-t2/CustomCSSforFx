@@ -10,13 +10,25 @@
 
 #toolbar-menubar:not(:-moz-lwtheme) {
   background-image: var(--colored_menubar_background_image) !important;
-  border: 1px solid var(--tabs-border-color) !important;
-  border-bottom: 0px !important;
+  /*border: 1px solid var(--tabs-border-color) !important;
+  border-bottom: 0px !important;*/
+  border: 0px !important;
   margin-bottom: -1px !important;
+}
+
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+  #main-window[tabsintitlebar] #titlebar-min .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-max .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-close:not(:hover) .toolbarbutton-icon {
+	fill: var(--colored_menubar_text_color) !important;
+	color: var(--colored_menubar_text_color) !important;
+	stroke: var(--colored_menubar_text_color) !important;
+  }
 }
 
 #nav-bar {
   border-top: 0px !important;
+  box-shadow: unset !important;
 }
 
 #main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description) {

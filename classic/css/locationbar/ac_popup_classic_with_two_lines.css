@@ -39,7 +39,7 @@
 	}
 
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
-	  display:none !important;
+	  display: none !important;
 	  visibility: collapse !important;
 	}
 

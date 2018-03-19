@@ -38,3 +38,9 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]  .autocomplete-richlistitem {
   border-inline-end: 0px solid transparent !important;
 }
+
+/* do not hide heuristic/actiontype url item */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[actiontype="searchengine"] .ac-action {
+  visibility: visible !important;
+  display: inherit !important;
+}

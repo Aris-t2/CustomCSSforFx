@@ -42,4 +42,9 @@
   display: none !important;
 }
 
+/* show scrollbar */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+  overflow-y: auto !important;
+}
+
 /**/

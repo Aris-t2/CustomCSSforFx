@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 59+ *******************************************************************/
-/* version 1.7.8 ********************************************************************************/
+/* version 1.7.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -49,6 +49,7 @@
 /************************************************************************************************/
 
 /* GENERAL VARIABLES ****************************************************************************/
+/* [!] set global variables for font size and tabs size options and more inside target file *****/
 @import url(./config/general_variables.css); /**/
 
 /* COLOR VARIABLES - only use one at a time *****************************************************/
@@ -57,7 +58,6 @@
 /* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors */
 /* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
 /* @import url(./config/color_variables_fx3.css); /**/  /* <- 'Firefox 3-like' colors */
-/* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
 /* @import url(./config/color_variables_transparent.css); /**/  /* <- 'transparent' colors */
 /* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
 
@@ -77,6 +77,9 @@
 
 /* squared buttons (rectangular shape) **********************************************************/
 /* @import url(./css/buttons/buttons_on_navbar_squared_buttons.css); /**/
+
+/* smaller buttons in 'compact' mode - Classic Toolbar button add-ons 'small buttons' mode ******/
+/* @import url(./css/buttons/buttons_on_navbar_more_compact_mode.css); /**/
 
 /* icon appearance - only use one at a time (custom icons do not scale in HiDPI modes) **********/
 @import url(./css/buttons/icons_colorized.css); /**/
@@ -412,7 +415,6 @@
 @import url(./css/toolbars/toolbars_old_padding.css); /**/
 @import url(./css/toolbars/tabs_toolbar_adjustments.css); /**/
 /* @import url(./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css); /**/							/*  <-- macOS fix */
-/* @import url(./css/toolbars/navbar_more_compact_mode.css); /**/
 
 /* edit target file to select which items to hide ***********************************************/
 /* @import url(./css/toolbars/toolbar_context_menuitems_visibility.css); /**/

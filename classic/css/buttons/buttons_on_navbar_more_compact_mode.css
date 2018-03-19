@@ -4,6 +4,10 @@
 
 
 /* more compact navigation toolbar */
+#main-window[uidensity=compact] {
+  --toolbarbutton-inner-padding: 5px !important;
+}
+
 #main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button,
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,
@@ -18,6 +22,6 @@
 }
 
 /* fix for toolbar button badges */
-#nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
   -moz-margin-end: -5px !important;
 }
