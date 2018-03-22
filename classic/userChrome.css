@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 59+ *******************************************************************/
-/* version 1.7.9 ********************************************************************************/
+/* version 1.8.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -25,8 +25,8 @@
   DISABLING options: add the combination of / and * before '@import'.
 
   FIREFOX BUGS (nothing CSS code can do about):
-  - some '@import' features might not work properly on macOS and Linux
-  - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
+  - some '@import' calls might not work properly on macOS and Linux
+  - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
   - in both cases CSS code has to be added to userChrome.css file manually
 
   MACOS issues / glitches / fixes -> look for 'macOS fix'
@@ -34,13 +34,55 @@
   - tabs not on top mode in 'tabs toolbar position' category
   - page context items in 'general ui' category
 
-  CSS tweaks won't work, if '@namespace' references are used inside .css files!
+  Some CSS tweaks won't work, if '@namespace' references are used inside .css files!
 
-  Do not report issues with EXPERIMENTAL settings! They are for testing only!
-
-  All options have significant categories and names. Read this file to get an overview.
-
+  EXPERIMENTAL settings are for testing only!
+  
   GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/109
+
+  All options have significant categories and names.
+  
+  BASIC OVERVIEW - settings this file contains:
+  CONFIGURATION FILES
+  - general variables / color variables
+  TOOLBAR BUTTONS
+  - toolbar button / icon appearance
+  - bookmarks menu button / popup
+  - other button settings
+  - custom BACK and FORWARD buttons appearance
+  - APPLICATION/HAMBURGER BUTTON
+  -- visibility / popup
+  -- buttons appearance on navigation toolbar / in Firefox titlebar
+  TABS
+  - custom tab appearance / old squared tabs
+  - TABS TOOLBAR POSITION
+  -- below titlebar / navigation and bookmarks toolbar / main content
+  - TAB TEXT - colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs
+  - MULTIROW / multi lined tabs
+  - TAB TITLE IN FIREFOX TITLEBAR
+  - empty tab favicon / custom tab loading animation / tab close icon settings
+  - settings for DEFAULT TABS / other tab settings
+  GENERAL UI
+  - general settings / close icons / page context menu items
+  - overflow menu / sidebar / findbar
+  - SEARCHBAR
+  -- general settings for default search
+  -- OLD SEARCH + old search 'about:config' settings
+  - MENUBARS bookmarks menu popup items
+  TOOLBARS
+  - ADDONS BAR (simulated bottoms toolbar)
+  - GENERAL TOOLBAR settings
+  -- toolbar context menu settings
+  - MENUBAR settings
+  - bookmarks toolbar settings
+  - BOOKMARKS TOOLBAR - MULTIPLE LINES
+  - AeroGlass TOOLBARS / WIN10 fix for GLASS8
+  - TOOLBAR TEXT MODES
+  -- icons+text / text only
+  LOCATION BAR / urlbar / awesomebar
+  - general location bar tweaks / identity box / padlock icons icon/button tweaks
+  - 'autocomplete popup' appearance / result item settings/appearance
+
 
 *************************************************************************************************/
 
@@ -49,11 +91,11 @@
 /************************************************************************************************/
 
 /* GENERAL VARIABLES ****************************************************************************/
-/* [!] set global variables for font size and tabs size options and more inside target file *****/
+/* [!] set global variables for font and tab size options and more inside target file ***********/
 @import url(./config/general_variables.css); /**/
 
 /* COLOR VARIABLES - only use one at a time *****************************************************/
-/* [!] edit 'color_variables.css' to set own colors for most ui areas ***************************/
+/* [!] edit 'color_variables.css' to set own colors for tabs and toolbars ***********************/
 @import url(./config/color_variables.css); /**/  /* <- default 'grey' colors */
 /* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors */
 /* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
@@ -219,10 +261,7 @@
 @import url(./css/tabs/classic_squared_tabs.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
 
-/* custom tab colors for default/active/hovered/unread/unloaded tabs ****************************/
-/* only use one at a time - edit target file to set own custom colors ***************************/
-/* @import url(./css/tabs/custom_colors_for_squared_tabs.css); /**/
-/* @import url(./css/tabs/custom_colors_for_squared_tabs_australized.css); /**/
+/* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
 /* remove top corner roundness ******************************************************************/
 /* @import url(./css/tabs/classic_squared_tabs_fully_squared.css); /**/

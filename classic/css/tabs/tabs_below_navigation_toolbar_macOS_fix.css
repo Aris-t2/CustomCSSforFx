@@ -3,9 +3,9 @@
 /****************************************************************************************/
 
 
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] {
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar {
   margin-top: 24px !important;
 }
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
   margin-top: 24px !important;
 }
