@@ -32,7 +32,7 @@
           if (this.mPopupOpen) {
             return;
           }
-
+		  
           if (!this.style.direction) {
             this.style.direction =
               aElement.ownerGlobal.getComputedStyle(aElement).direction;
@@ -43,7 +43,7 @@
             this.DOMWindowUtils
                 .getBoundsWithoutFlushing(window.document.documentElement);
           let width = documentRect.right - documentRect.left;
-          this.setAttribute("width", Math.round(document.getElementById("urlbar").getBoundingClientRect().width));
+          this.setAttribute("width", Math.round(aElement.getBoundingClientRect().width));
 
           let elementRect =
             this.DOMWindowUtils.getBoundsWithoutFlushing(aElement);
@@ -108,7 +108,7 @@
             this.DOMWindowUtils.getBoundsWithoutFlushing(document.getElementById("nav-bar")).bottom -
             this.DOMWindowUtils.getBoundsWithoutFlushing(aInput).bottom);
 
-		  var x_position = document.getElementById("urlbar").getBoundingClientRect().x;
+		  var x_position = aElement.getBoundingClientRect().x;
 		  var y_position = -1;
 			
           this.openPopup(aElement, "after_start", x_position, y_position, false, false);

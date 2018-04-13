@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 59+ *******************************************************************/
-/* version 1.8.0 ********************************************************************************/
+/* version 1.8.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -44,7 +44,7 @@
   
   BASIC OVERVIEW - settings this file contains:
   CONFIGURATION FILES
-  - general variables / color variables
+  - general variables / color variables (default browser theme only)
   TOOLBAR BUTTONS
   - toolbar button / icon appearance
   - bookmarks menu button / popup
@@ -94,13 +94,13 @@
 /* [!] set global variables for font and tab size options and more inside target file ***********/
 @import url(./config/general_variables.css); /**/
 
-/* COLOR VARIABLES - only use one at a time *****************************************************/
-/* [!] edit 'color_variables.css' to set own colors for tabs and toolbars ***********************/
+/* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - only use one at a time ************/
+/* [!] set own colors for tabs & toolbars inside 'color_variables.css' or use available presets */
 @import url(./config/color_variables.css); /**/  /* <- default 'grey' colors */
-/* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors */
-/* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors */
-/* @import url(./config/color_variables_fx3.css); /**/  /* <- 'Firefox 3-like' colors */
-/* @import url(./config/color_variables_transparent.css); /**/  /* <- 'transparent' colors */
+/* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors (Win 7 Aero) */
+/* @import url(./config/color_variables_classic-grey.css); /**/  /* <- 'classic grey' colors (Win Classic) */
+/* @import url(./config/color_variables_fx3.css); /**/  /* <- 'Firefox 3-like' blueish colors */
+/* @import url(./config/color_variables_transparent.css); /**/  /* <- (semi-)'transparent' colors */
 /* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
 
 

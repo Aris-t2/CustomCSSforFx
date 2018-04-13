@@ -163,6 +163,10 @@
   box-shadow: unset !important;
 }
 
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button::after {
+  margin-bottom: 0px !important;
+}
+
 /* 'Firefox' title */
 #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox"]::after,
 #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
@@ -195,7 +199,7 @@
   -moz-margin-start: -12px !important;
 }
 
-/* custom button title (remove Firefox/DevFox/Nightly) *//*
+/* custom button title (remove above Firefox/DevFox/Nightly codes) *//*
 #main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button::after{
   content: "MyTitle" !important;
   -moz-margin-start: -6px !important;

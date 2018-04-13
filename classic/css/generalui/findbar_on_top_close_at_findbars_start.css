@@ -19,3 +19,7 @@
   -moz-margin-end: 0px !important;
   -moz-padding-end: 0px !important;
 }
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  overflow: hidden !important;
+}
