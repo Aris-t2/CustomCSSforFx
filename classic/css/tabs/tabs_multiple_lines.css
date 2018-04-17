@@ -56,6 +56,13 @@
   height: var(--mltabs-newtab-height) !important;
 }
 
+@media (-moz-windows-classic) {
+	#TabsToolbar #tabbrowser-tabs .tabs-newtab-button {
+	  margin-bottom: 1px !important;
+	  height: calc(var(--mltabs-newtab-height) - 2px) !important;
+	}
+}
+
 /* hide unneeded buttons */
 .scrollbutton-up ,
 .scrollbutton-down,
@@ -66,4 +73,16 @@
 .tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
 .tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
   opacity: 0 !important;
+}
+
+#tabbrowser-tabs * {
+  overflow-x: none !important;
+}
+
+#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
+  display: block !important;
+}
+
+#TabsToolbar:not([currentset*=new-tab-button]) #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 4px !important;
 }

@@ -23,7 +23,6 @@
 	  padding-left: 0 !important;
 	}
 
-
 	#addons-page #detail-view,
 	#addons-page #userstyle-sorting,
 	#addons-page .global-warning-container,
@@ -44,7 +43,7 @@
 	  padding: 2px 0 !important;
 	  margin: 0 !important;
 	}
-
+	
 	/* buttons / menulists */
 	#addons-page #header button,
 	#addons-page #header #header-utils-btn,
@@ -170,6 +169,10 @@
 	.addon .control-container menulist .menulist-label-box {
 	  padding: unset !important;
 	  margin: unset !important;
+	}
+	
+	.addon .experiment-container {
+	  display: none !important;
 	}
 
 	.description-container spacer {

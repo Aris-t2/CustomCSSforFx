@@ -96,6 +96,10 @@
 	  list-style-image: url("./../../image/prefs_general.png") !important;
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
+	#category-home .category-icon {
+	  list-style-image: url("./../../image/prefs_home.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
 	#category-privacy .category-icon {
 	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
@@ -249,6 +253,10 @@
 		  -moz-margin-start: -10px !important;
 		}
 		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 2px !important;
+		}
+		
 		radio *{
 		  outline: unset !important;
 		}
@@ -269,6 +277,10 @@
 		radio label {
 		  -moz-margin-start: -4px !important;
 		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 8px !important;
+		}
 
 	  }
 	}
@@ -283,6 +295,10 @@
 		checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
+		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 6px !important;
 		}
 		
 	}
@@ -301,6 +317,10 @@
 		checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
+		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 6px !important;
 		}
 	  }
 		
