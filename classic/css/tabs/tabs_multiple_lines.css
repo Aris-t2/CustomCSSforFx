@@ -83,6 +83,10 @@
   display: block !important;
 }
 
-#TabsToolbar:not([currentset*=new-tab-button]) #tabbrowser-tabs .scrollbox-innerbox {
+#tabbrowser-tabs .scrollbox-innerbox {
   -moz-padding-end: 4px !important;
+}
+
+#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 0px !important;
 }

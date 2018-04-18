@@ -4,6 +4,6 @@
 
 
 /* bookmarks toolbar visibility in fullscreen mode */
-#main-window[inFullscreen]:not([inDOMFullscreen="true"]) #PersonalToolbar {
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
   visibility: visible !important;
 }

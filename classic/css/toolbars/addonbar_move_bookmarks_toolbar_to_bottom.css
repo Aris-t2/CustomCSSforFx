@@ -65,12 +65,12 @@
 }
 
 /* free some space below content */
-#main-window:not([chromehidden*="toolbar"]):not([inFullscreen=true]) #browser-bottombox  {
+#main-window:not([chromehidden*="toolbar"]):not([sizemode="fullscreen"]) #browser-bottombox  {
   margin-bottom: 26px;
 }
 
 /* hide the projects custom bookmarks label, if used */
-#main-window[inFullscreen=true] #PersonalToolbar #bookmarks-menu-button::after {
+#main-window[sizemode="fullscreen"] #PersonalToolbar #bookmarks-menu-button::after {
   visibility: collapse !important;
   display: none !important;
 }

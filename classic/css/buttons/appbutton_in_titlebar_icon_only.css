@@ -106,7 +106,7 @@
 	}  
 }}}
 
-#main-window[tabsintitlebar][inFullscreen] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
   top: 0px !important;
 }
 
@@ -135,7 +135,7 @@
 }}}
 
 /* hide button in fullscreen mode, if toolbars get automatically hidden */
-#main-window[tabsintitlebar] #navigator-toolbox[inFullscreen="true"][style*="margin-top: -"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
+#main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox[style*="margin-top: -"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button {
   visibility: collapse !important;
 }
 

@@ -45,7 +45,7 @@
   -moz-padding-start: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar {
+#main-window[tabsintitlebar][sizemode="normal"]:not([sizemode="fullscreen"]) #TabsToolbar {
   margin-top: 0px !important;
 }
 
@@ -79,7 +79,7 @@
 }
 
 /* fix for application/hamburger button in titlebar */
-#main-window[tabsintitlebar][inFullscreen] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
   visibility: collapse !important;
 }
 
@@ -182,7 +182,7 @@
   border-bottom: 1px solid #323234 !important;
 }
 
-#main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
+#main-window:not([sizemode="fullscreen"])[tabsintitlebar] #TabsToolbar{
   -moz-margin-end: 0px !important;
 }
 

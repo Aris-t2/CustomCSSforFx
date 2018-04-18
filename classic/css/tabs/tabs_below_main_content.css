@@ -70,7 +70,7 @@
   left: 0 !important;
 }
 
-#main-window[inFullscreen=true] #TabsToolbar {
+#main-window[sizemode="fullscreen"] #TabsToolbar {
   -moz-padding-end: 50px !important;
 }
 

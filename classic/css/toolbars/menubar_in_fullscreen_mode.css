@@ -4,6 +4,6 @@
 
 
 /* menubar visibility in fullscreen mode */
-#main-window[inFullscreen]:not([inDOMFullscreen="true"]) #toolbar-menubar {
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
   visibility: visible !important;
 }

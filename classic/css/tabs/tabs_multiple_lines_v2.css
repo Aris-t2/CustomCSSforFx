@@ -23,9 +23,13 @@
   max-width: var(--tab_max_width_mlt) !important;
 }
 
-.tabs-newtab-button,
 .tabbrowser-tab,.tab-background {
   min-height: var(--tab-min-height_mlt);
+}
+
+.tabs-newtab-button {
+  vertical-align: bottom !important;
+  height: var(--tab-min-height_mlt);
 }
 
 .tab-stack {
@@ -71,6 +75,10 @@
   display: block !important;
 }
 
-#TabsToolbar:not([currentset*=new-tab-button]) #tabbrowser-tabs .scrollbox-innerbox {
+#tabbrowser-tabs .scrollbox-innerbox {
   -moz-padding-end: 4px !important;
+}
+
+#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 0px !important;
 }
