@@ -1,30 +1,34 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 @-moz-document url(chrome://browser/content/browser.xul) {
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete),
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-	  -moz-binding: url("./../../xml/urlbarBindings_fx57.xml#urlbar-rich-result-popup") !important;
+	  -moz-binding: url("./../../xml/urlbarBindings.xml#urlbar-rich-result-popup") !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
-	  -moz-binding: url("./../../xml/urlbarBindings_fx57.xml#autocomplete-richlistitem") !important;
+	  -moz-binding: url("./../../xml/urlbarBindings.xml#autocomplete-richlistitem") !important;
 	}
 	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem *:not(.ac-url),
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"])) .ac-url {
+	  visibility: visible !important;
+	  display: inherit !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"])) .ac-action {
+	  visibility: collapse !important;
+	  display: none !important;
+	}
+
 	/* remove space around box */
 	#PopupAutoCompleteRichResult .autocomplete-richlistbox {
 	  padding: 0 !important;
 	}
 	
 	/* restyle popup items */
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
 	  -moz-box-orient: vertical !important;
 	  min-height: unset !important;
@@ -34,82 +38,84 @@
 	  border-radius: 0 !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-separator,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
-	  display:none !important;
+	  display: none !important;
 	  visibility: collapse !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem :-moz-any(.ac-site-icon,.ac-title,.ac-action,.ac-url),
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-site-icon,.ac-title,.ac-action,.ac-url){
 	  -moz-margin-start: unset !important;
 	  -moz-margin-end: unset !important;
 	  -moz-padding-start: unset !important;
 	  -moz-padding-end: unset !important;
 	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-title,.ac-url){
+	  min-width: unset !important;
+	  width: unset !important;
+	  max-width: unset !important;
+	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-type-icon,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-type-icon {
 	  margin-inline-start: 4px !important;
 	  margin-inline-end: 4px !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-site-icon,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-site-icon {
 	  -moz-margin-start: 4px !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-title,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title{
 	  -moz-margin-start: 5px !important;
 	  margin-top: -3px !important;
 	}
 	
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem :-moz-any(.ac-url, .ac-action),
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-url, .ac-action){
 	  -moz-margin-start: 25px !important;
 	  margin-top: 1px !important;
 	}
 	
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-url,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url{
 	  padding-bottom: 1px !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-action[actiontype=searchengine]:not([selected]),
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action[actiontype=searchengine]:not([selected]) {
 	  display: block !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem #ibox-spacer,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem #ibox-spacer {
 	  width: 100000px !important;
 	}
 	
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) hbox[anonid="search-suggestions-notification"],
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] hbox[anonid="search-suggestions-notification"] {
 	  display: none !important;
 	}
 	
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) deck[search-suggestions-notification],
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] deck[search-suggestions-notification] {
 	  display: none !important;
 	}
 	
+	/* fix large space issue at items end */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+	  border-inline-end: 0px solid transparent !important;
+	}
+	
+	/* remove search box at poups button */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .search-one-offs {
+	  display: none !important;
+	}
+	
 	/* show scrollbar */
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) scrollbox,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
 	  overflow-y: auto !important;
 	}
 	
 	/* for Windows Classic theme *//*
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistitem .ac-title,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
 	  padding-top: 2px !important;
 	  padding-bottom: 2px !important;
 	}
 
-	panel[type="autocomplete-richlistbox"]:not(#PopupAutoComplete) .autocomplete-richlistbox,
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
 	  padding: 0 !important;
 	}

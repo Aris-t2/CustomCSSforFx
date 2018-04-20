@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -10,7 +6,15 @@
 @import url(./tabs_below_navigation_toolbar.css);
 
 :root {
-  --space_below_content: calc( var(--tab-min-height) + 1px );
+  --space_below_content: 33px;
+}
+
+:root[uidensity=compact]  {
+  --space_below_content: 29px;
+}
+
+:root[uidensity=touch] {
+  --space_below_content: 41px;
 }
 
 /* this is an experiment not meant for every day use */
@@ -21,6 +25,7 @@
   bottom: 0px !important;
   width: 100% !important;
 }
+
 #TabsToolbar #tabbrowser-tabs:not([overflow="true"]) {
   width: 90% !important;
 }
@@ -29,11 +34,11 @@
 }
 
 #main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs:not([overflow="true"]){
-  width: calc(100% - 2px) !important;
+  width: calc(100% - 60px) !important;
 }
 
 #main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs[overflow="true"] {
-  width: calc(100% - 50px) !important;
+  width: calc(100% - 60px) !important;
 }
 
 #main-window #navigator-toolbox #TabsToolbar > toolbarpaletteitem,
@@ -52,6 +57,7 @@
   width: 18px !important;
   height: 18px !important;
 }
+
 #TabsToolbar #window-controls {
   position: fixed !important;
   bottom: 4px !important;
@@ -64,7 +70,7 @@
   left: 0 !important;
 }
 
-#main-window[inFullscreen=true] #TabsToolbar {
+#main-window[sizemode="fullscreen"] #TabsToolbar {
   -moz-padding-end: 50px !important;
 }
 
@@ -73,13 +79,14 @@
 }
 
 /* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"],
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"],
 #TabsToolbar .titlebar-placeholder[type="post-tabs"]{
   display: none !important;
 }
 
 /* lw-theme */
-#browser-panel > #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+#navigator-toolbox > #TabsToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;
@@ -87,16 +94,22 @@
 }
 
 /* make sure toolbar buttons do not increase toolbar height */
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
 #TabsToolbar > toolbarpaletteitem,
 #TabsToolbar > toolbarbutton {
   min-height: unset !important;
   padding: unset !important;
-  margin: unset !important;
+  margin: 0 2px !important;
 }
-#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
-#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
-  min-width: unset !important;
-  width: 24px !important;
+
+#TabsToolbar > toolbarpaletteitem .toolbarbutton-icon,
+#TabsToolbar > toolbarbutton .toolbarbutton-icon {
+  min-width: 18px !important;
+  width: 18px !important;
+  min-height: 18px !important;
+  height: 18px !important;
+  padding: unset !important;
+  margin: unset !important;
 }
 
 /* width of new tab tab */

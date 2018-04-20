@@ -1,13 +1,9 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 /* bookmarks toolbar visibility in fullscreen mode */
-#main-window[inFullscreen] #PersonalToolbar {
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
   visibility: visible !important;
 }

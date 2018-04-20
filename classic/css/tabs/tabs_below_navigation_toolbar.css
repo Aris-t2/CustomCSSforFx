@@ -1,17 +1,23 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 :root {
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
-  --tabs_toolbar_border-tnot_normal_mode: 1px solid var(--tabs-border-color);
-  
-  --tab-min-height_tnot: calc( var(--tab-min-height) - 1px );
+  --tabs_toolbar_border-tnot_normal_mode_size: 1px;
+  --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color);
+  --classic_squared_tabs_tab_text_color: black;
+  --classic_squared_tabs_tab_text_shadow: transparent;
+  --tab-min-height_tnot: 32px;
+}
+
+:root[uidensity=compact]  {
+  --tab-min-height_tnot: 28px;
+}
+
+:root[uidensity=touch] {
+  --tab-min-height_tnot: 40px;
 }
 
 /* tabs toolbar adjustment */
@@ -39,7 +45,7 @@
   -moz-padding-start: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar {
+#main-window[tabsintitlebar][sizemode="normal"]:not([sizemode="fullscreen"]) #TabsToolbar {
   margin-top: 0px !important;
 }
 
@@ -50,9 +56,35 @@
   padding-top: 0px !important;
 }
 
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+  margin-top: 0px !important;
+}
+
+/* tab title in titlebar support */
+#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  margin-top: 0px !important;
+}
+
+/* titlebar button support */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar{
+  margin-top: 2px !important;
+}
+
 /* fix for application/hamburger button in titlebar */
-#main-window[tabsintitlebar][inFullscreen] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar  #PanelUI-button {
   visibility: collapse !important;
+}
+
+#main-window[inDOMFullscreen="true"] #TabsToolbar {
+  opacity: 0 !important;
 }
 
 /* tab height */
@@ -102,10 +134,12 @@
 
 /* adjust compact themes background color */
 #main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
-  background-image: linear-gradient(#323234,#323234) !important;
+  -moz-appearance: none !important;
+  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
 #main-window[style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']:-moz-lwtheme-darktext #TabsToolbar:-moz-lwtheme {
-  background-image: linear-gradient(#f5f6f7,#f5f6f7) !important;
+  -moz-appearance: none !important;
+  background: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
 
 #main-window:not(:-moz-lwtheme) #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
@@ -121,18 +155,14 @@
   opacity: 0 !important;
 }
 
-#nav-bar {
-  border-top: 1px solid var(--tabs-border-color) !important;
-}
-
 #TabsToolbar{
   margin-bottom: 0px !important;
   border-bottom: 1px solid #5f7181 !important;
 }
 
 #main-window[sizemode="normal"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar) {
-  border-left: var(--tabs_toolbar_border-tnot_normal_mode) !important;
-  border-right: var(--tabs_toolbar_border-tnot_normal_mode) !important;
+  border-left: var(--tabs_toolbar_border-tnot_normal_mode_size) solid var(--tabs_toolbar_border-tnot_normal_mode) !important;
+  border-right: var(--tabs_toolbar_border-tnot_normal_mode_size) solid var(--tabs_toolbar_border-tnot_normal_mode) !important;
   background-clip: padding-box !important;
 }
 
@@ -152,7 +182,7 @@
   border-bottom: 1px solid #323234 !important;
 }
 
-#main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
+#main-window:not([sizemode="fullscreen"])[tabsintitlebar] #TabsToolbar{
   -moz-margin-end: 0px !important;
 }
 
@@ -282,3 +312,10 @@
 	}
 
 }
+
+/* black tab text color */
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
+  color: var(--classic_squared_tabs_tab_text_color) !important;
+  text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
+}
+

@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -14,8 +10,8 @@
 
 :root {
   --tabs-end-position: 50px;
-  --tab-min-height: var(--tab-min-height);
-  --mltabs-newtab-height: var(--tab-min-height);
+  --tab-min-height_mlt: var(--tab-min-height,32px);
+  --mltabs-newtab-height: var(--tab-min-height,32px);
   --tab_min_width_mlt: 60px;
   --tab_max_width_mlt: 100px;
 }
@@ -43,13 +39,13 @@
 
 /* tab size */
 .tabbrowser-tab {
-  min-height: var(--tab-min-height) !important;
-  max-height: var(--tab-min-height) !important;
+  min-height: var(--tab-min-height_mlt) !important;
+  max-height: var(--tab-min-height_mlt) !important;
   vertical-align: top !important;
   -moz-box-sizing: border-box !important;
 }
 
-.tabbrowser-tab:not([pinned]) {
+.tabbrowser-tab[fadein]:not([pinned]) {
   min-width: var(--tab_min_width_mlt) !important;
   max-width: var(--tab_max_width_mlt) !important;
 }
@@ -60,9 +56,37 @@
   height: var(--mltabs-newtab-height) !important;
 }
 
+@media (-moz-windows-classic) {
+	#TabsToolbar #tabbrowser-tabs .tabs-newtab-button {
+	  margin-bottom: 1px !important;
+	  height: calc(var(--mltabs-newtab-height) - 2px) !important;
+	}
+}
+
 /* hide unneeded buttons */
 .scrollbutton-up ,
 .scrollbutton-down,
 #TabsToolbar #alltabs-button{
   display: none;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+  opacity: 0 !important;
+}
+
+#tabbrowser-tabs * {
+  overflow-x: none !important;
+}
+
+#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
+  display: block !important;
+}
+
+#tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 4px !important;
+}
+
+#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 0px !important;
 }

@@ -1,15 +1,12 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ************************************************************/
+/* Firefox Quantum userChrome.css tweaks ********************************************************/
 /* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
-/* by Aris (aris-addons@gmx.net)*****************************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
   README
-  
+
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
@@ -21,18 +18,19 @@
 
   ENABLING options: remove the combination of / and * before '@import'.
   DISABLING options: add the combination of / and * before '@import'.
-  
+
   FIREFOX BUGS (nothing CSS code can do about):
-  - some '@import' features might not work properly on macOS and Linux
-  - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
-  
-  CSS tweaks won't work, if '@namespace' references are used inside .css files!
-  
-  Do not report issues with EXPERIMENTAL settings! They are for testing only!
-  
-  All options have significant categories & names. Read whole file to get an overview.
-  
-  GENERAL SUPPORT / DISCUSSION THREAD: https://github.com/Aris-t2/CustomCSSforFx/issues/88
+  - some '@import' calls might not work properly on macOS and Linux
+  - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
+  - in both cases CSS code has to be added to userContent.css file manually
+
+  Some CSS tweaks won't work, if '@namespace' references are used inside .css files!
+
+  EXPERIMENTAL settings are for testing only!
+
+  All options have significant categories and names.
+
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/109
 
 *************************************************************************************************/
 
@@ -44,10 +42,10 @@
 		 See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************************/
 
 /* version number for add-ons *******************************************************************/
-/* @import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/
+@import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/
 
 /* addons page appearance - only use one at a time **********************************************/
-/* @import url(./css/aboutaddons/addons_manager_alternative_appearance.css); /**/
+@import url(./css/aboutaddons/addons_manager_alternative_appearance.css); /**/
 /* @import url(./css/aboutaddons/addons_manager_alternative_appearance_aero.css); /**/	/* <-- AERO colors */
 
 /* compact item lists - only use one at a time **************************************************/
@@ -57,8 +55,9 @@
 /* other settings *******************************************************************************/
 /* @import url(./css/aboutaddons/addonlists_only_show_buttons_on_hover.css); /**/
 /* @import url(./css/aboutaddons/addonlists_replace_button_labels_with_icons.css); /**/
-/* @import url(./css/aboutaddons/description_page_alternative_content_order.css); /**/
-/* @import url(./css/aboutaddons/recentupdates_category_always_visible.css); /**/
+/* @import url(./css/aboutaddons/addonlists_move_button_to_start.css); /**/
+@import url(./css/aboutaddons/description_page_alternative_content_order.css); /**/
+@import url(./css/aboutaddons/recentupdates_category_always_visible.css); /**/
 /* @import url(./css/aboutaddons/search_category_always_visible.css); /**/
 
 
@@ -67,7 +66,7 @@
 /************************************************************************************************/
 
 /* preferences page appearance - only use one at a time *****************************************/
-/* @import url(./css/aboutpreferences/preferences_alternative_appearance.css); /**/
+@import url(./css/aboutpreferences/preferences_alternative_appearance.css); /**/
 /* @import url(./css/aboutpreferences/preferences_alternative_appearance_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/aboutpreferences/preferences_alternative_appearance_v2.css); /**/
 
@@ -88,6 +87,9 @@
 /* top level image on white background (can sometimes cause glitches) - only use one at a time **/
 /* @import url(./css/webcontent/toplevel_image_classic_v1.css); /**/
 /* @import url(./css/webcontent/toplevel_image_classic_v2.css); /**/
+
+/* Screenshots - internal add-on ****************************************************************/
+/* @import url(./css/webcontent/screenshots_alternative_save_ui.css); /**/
 
 
 /************************************************************************************************/

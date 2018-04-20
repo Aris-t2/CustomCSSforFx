@@ -1,10 +1,7 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
+
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 
 	.category {
@@ -37,6 +34,7 @@
 	  margin: 2px !important;
 	}
 	
+	.sticky-container,
 	.search-container {
 	  background: transparent !important;
 	  position: absolute !important;
@@ -96,6 +94,10 @@
 	}
 	#category-general .category-icon {
 	  list-style-image: url("./../../image/prefs_general.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-home .category-icon {
+	  list-style-image: url("./../../image/prefs_home.png") !important;
 	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-privacy .category-icon {
@@ -251,6 +253,10 @@
 		  -moz-margin-start: -10px !important;
 		}
 		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 2px !important;
+		}
+		
 		radio *{
 		  outline: unset !important;
 		}
@@ -271,6 +277,10 @@
 		radio label {
 		  -moz-margin-start: -4px !important;
 		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 8px !important;
+		}
 
 	  }
 	}
@@ -285,6 +295,10 @@
 		checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
+		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 6px !important;
 		}
 		
 	}
@@ -303,6 +317,10 @@
 		checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
+		}
+		
+		#homeContentsGroup checkbox label {
+		  -moz-margin-start: 6px !important;
 		}
 	  }
 		

@@ -1,18 +1,14 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 @import url(./ac_popup_title_and_url_50percent_width.css);
 
-/* To hide seach engines at popups bottom open 'about:config' and set ************
+/* To hide search engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
 
-/* reorder content to switch title and url posions */
+/* reorder content to switch title and url positions */
 
 .ac-type-icon{
   -moz-box-ordinal-group: 0 !important;
@@ -60,4 +56,3 @@
 }
 
 /**/
-

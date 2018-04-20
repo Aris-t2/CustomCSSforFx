@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -74,6 +70,11 @@
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > :-moz-any(#back-button, #forward-button) {
   margin: unset !important;
   padding: unset !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-customization-target > #forward-button,
+#main-window[uidensity=touch] #nav-bar #nav-bar-customization-target > #forward-button {
+  -moz-margin-start: -2px !important;
 }
 
 #main-window #navigator-toolbox #nav-bar :-moz-any(#back-button, #forward-button):not([disabled]):hover .toolbarbutton-icon {

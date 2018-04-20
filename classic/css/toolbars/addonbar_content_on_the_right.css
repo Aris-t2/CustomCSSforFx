@@ -1,25 +1,22 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 /* move content to the right */
-#main-window:not([chromehidden*="toolbar"]) #browser-panel > #navigator-toolbox > #PersonalToolbar {
-  direction: rtl !important;
-}
-#PersonalToolbar toolbarbutton {
-  -moz-box-direction: reverse !important;
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  text-align: right !important;
 }
 
-#PersonalToolbar #PlacesToolbar #PlacesChevron{
-  transform: rotate(180deg) !important;
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) {
+  text-align: left !important;
 }
 
-#PersonalToolbar toolbarbutton menupopup{
-  -moz-box-direction: normal !important;
-  direction: ltr !important;
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar menupopup {
+  text-align: left !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) menupopup {
+  text-align: right !important;
 }

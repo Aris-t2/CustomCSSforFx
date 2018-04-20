@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,21 +7,23 @@
   --classic_squared_tabs_tab_height: 26px;
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF;
   --classic_squared_tabs_active_tab: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa);
-  --classic_squared_tabs-border1: 1px solid #5f7181;
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: #5f7181;
   --classic_squared_tabs-border-radius: 3px;
   
-  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px );
-  
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
+  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
+  --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
 }
 
-/* adjust tab toolbars buttons for squared tabs */
+/* adjust tab toolbars buttons for squared tabs *//*
 #TabsToolbar #alltabs-button .toolbarbutton-icon,
 #TabsToolbar > #new-tab-button .toolbarbutton-icon,
 #TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
   padding: 3px !important;
 }
-
+*/
 /*******************************************/
 /**** default themes tab colors [start] ****/
 /*******************************************/
@@ -72,21 +70,21 @@
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-  border-top: var(--classic_squared_tabs-border1) !important;
-  border-left: var(--classic_squared_tabs-border1) !important;
-  border-right: var(--classic_squared_tabs-border1) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
-  border-top: 1px solid transparent !important;
-  border-left: 1px solid transparent !important; 
-  border-right: 1px solid transparent !important;
+  border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
+  border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
+  border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
 }
 
 #TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]):not(:hover) .tab-content {
-  border-top: 1px solid transparent !important;
-  border-left: 1px solid transparent !important; 
-  border-right: 1px solid transparent !important;
+  border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
+  border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
+  border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
 }
 
 
@@ -175,10 +173,11 @@
 }
 
 /* tab top border roundness */
-.tabs-newtab-button,.tabbrowser-tab,
-.tab-stack,
-.tab-background,
-.tabbrowser-tab .tab-content {
+#TabsToolbar .tabs-newtab-button,
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content  {
   border-top-left-radius: var(--classic_squared_tabs-border-radius) !important;
   border-top-right-radius: var(--classic_squared_tabs-border-radius) !important;
 }
@@ -223,12 +222,24 @@
 .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   width: 16px !important;
   height: 16px !important;
-  -moz-margin-end:-4px !important;
 }
 
+.tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
+:root[uidensity=touch]  .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-margin-end: -6px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
 :root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   margin-top: -8px !important;
   margin-bottom: -8px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-close-button {
+  margin-inline-end: unset !important;
+  padding: unset !important;
 }
 
 /*tab favicon position*/
@@ -241,11 +252,11 @@
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
-  min-height: var(--tab-min-height) !important;
+  min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 #TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
-  min-height: calc( var(--tab-min-height) - 1px ) !important;
-  max-height: calc( var(--tab-min-height) - 1px ) !important;
+  min-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
+  max-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
 }
 
 /* Windows 10 fix */
@@ -315,14 +326,25 @@
 }
 
 /* make sure toolbar buttons do not increase toolbar height */
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
 #TabsToolbar > toolbarpaletteitem,
 #TabsToolbar > toolbarbutton {
   min-height: unset !important;
   padding: unset !important;
+  margin: 0 2px !important;
+}
+
+#TabsToolbar > toolbarpaletteitem .toolbarbutton-icon,
+#TabsToolbar > toolbarbutton .toolbarbutton-icon {
+  min-width: 16px !important;
+  width: unset !important;
+  min-height: 16px !important;
+  height: unset !important;
+  padding: unset !important;
   margin: unset !important;
 }
-#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
-#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
-  min-width: unset !important;
-  width: 24px !important;
+
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
 }

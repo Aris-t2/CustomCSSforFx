@@ -1,3 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
 @-moz-document regexp("((.*\\.(png|apng|jpg|jpeg|gif|tiff|bmp))|(^data:image\\/.*))(\\?([^#]*))?(#(.*))?")  {
 
   @media not print {

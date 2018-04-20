@@ -1,13 +1,9 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-/* To hide seach engines at popups bottom open 'about:config' and set ************
+/* To hide search engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
 /* remove unneeded padding around results */
@@ -21,7 +17,7 @@
   -moz-padding-start: 0 !important;
 }
 
-/* make sure there is not unneded space before results (Fx57+) */
+/* make sure there is no unneeded space before results (Fx57+) */
 #PopupAutoCompleteRichResult .autocomplete-richlistitem spacer{
   display: none !important;
 }
@@ -38,4 +34,13 @@
   width: calc((100vw - 100px)/2) !important;
 }
 
-/**/
+/* fix large space issue at items end */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]  .autocomplete-richlistitem {
+  border-inline-end: 0px solid transparent !important;
+}
+
+/* do not hide heuristic/actiontype url item */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[actiontype="searchengine"] .ac-action {
+  visibility: visible !important;
+  display: inherit !important;
+}

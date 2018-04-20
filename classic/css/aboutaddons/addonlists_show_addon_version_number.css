@@ -1,19 +1,24 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
+
 
 @-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
 	/*  addonversion.xml contains a copy of the 'addon-generic' binding Mozilla removed from Fx40+ builds!*/
 	
-	.addon:not([type="userstyle"]):not([pending="uninstall"])[status="installed"]	{
-	  -moz-binding: url("./../../xml/addonversion_fx57.xml#addon-generic") !important;
+	.addon:not([pending="uninstall"])[status="installed"]	{
+	  -moz-binding: url("./../../xml/addonversion.xml#addon-generic") !important;
 	}
 	
-	.addon:not([type="userstyle"]):not([pending="uninstall"])[status="installed"] .name-container .version {
+	.addon:not([pending="uninstall"])[status="installed"] .name-container .version {
+	  visibility: visible !important;
+	}
+	
+	.addon:not([pending="uninstall"])[status="installing"] {
+	  -moz-binding: url("./../../xml/addonversion.xml#addon-installing");
+	}
+	
+	.addon:not([pending="uninstall"])[status="installing"] .name-container .version {
 	  visibility: visible !important;
 	}
 

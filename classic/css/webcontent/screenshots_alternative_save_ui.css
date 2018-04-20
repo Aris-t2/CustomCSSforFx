@@ -1,0 +1,130 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* rtl locales flip button boxes direction, so there is no need to use -moz-padding/margin-start/end etc. */
+
+/* Screenshots add-ons add a dir="ltr"/"rtl" to html tag. Using direction tags will cause this code to affect less sites. */
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
+  width: initial !important;
+  padding-left: 34px !important;
+  background-position: 8px center !important;
+  border: none !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img  {
+  margin-bottom: -3px !important;
+  margin-left: -28px !important;
+  margin-right: 6px !important;
+  width: 18px !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
+  background-color: #1a0 !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover {
+  background-color: #2b0 !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save {
+  background-color: #C00 !important;
+  color: #C00 !important;
+  font-size: 0 !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover {
+  background-color: #D22 !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: attr(title) !important;
+  font-weight: bold !important;
+}
+
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
+html[dir="rtl"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Cloud" !important;
+  font-size: medium !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Language settings */
+/* English US*/
+html[dir="ltr"][lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Save" !important;
+}
+html[dir="ltr"][lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Upload" !important;
+}
+
+/* German */
+html[dir="ltr"][lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Speichern" !important;
+}
+html[dir="ltr"][lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Hochladen" !important;
+}
+
+/* French */
+html[dir="ltr"][lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Sauvegarder" !important;
+}
+html[dir="ltr"][lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Télécharger" !important;
+}
+
+/* Spanish */
+html[dir="ltr"][lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Salvar" !important;
+}
+html[dir="ltr"][lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Subir" !important;
+}
+
+/* Portuguese */
+html[dir="ltr"][lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Salve" !important;
+}
+html[dir="ltr"][lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Envio" !important;
+}
+
+/* Italian */
+html[dir="ltr"][lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Salvare" !important;
+}
+html[dir="ltr"][lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Caricare" !important;
+}
+
+/* Russian */
+html[dir="ltr"][lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "Сохранить" !important;
+}
+html[dir="ltr"][lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[dir="ltr"][lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "Загрузить" !important;
+}

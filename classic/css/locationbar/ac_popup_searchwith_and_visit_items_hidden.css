@@ -1,28 +1,50 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-/* To hide seach engines at popups bottom open 'about:config' and set ************
+/* To hide search engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' **************************************
 ** The popup won't be hidden completely, if no result items are present.**********
 ** A small 'line' will be still visible ****************************************** 
 *********************************************************************************/
 
 /* Hide "Visit/Search" items */
+
+/* this creates an empty space at items place *//*
 #PopupAutoCompleteRichResult richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
 #PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
 #PopupAutoCompleteRichResult richlistitem[anonid="type-icon-spacer"] {
   display: none !important;
-}
+}*/
 
 #PopupAutoCompleteRichResult .autocomplete-richlistbox {
   min-height: 0 !important;
   height: auto !important;
+}
+
+#PopupAutoCompleteRichResult richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult richlistitem[anonid="type-icon-spacer"],
+#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="visiturl"] + richlistitem[actiontype="searchengine"],
+#PopupAutoCompleteRichResult richlistitem:first-of-type:last-of-type[actiontype="searchengine"] {
+  z-index: -1000000000 !important;
+  position: fixed !important;
+  opacity: 0 !important;
+  visibility: collapse !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+}
+
+#PopupAutoCompleteRichResult richlistitem:not([collapsed="true"]) + richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) + richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) {
+  display: none !important;
+}
+
+/* show scrollbar */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+  overflow-y: auto !important;
 }
 
 /**/

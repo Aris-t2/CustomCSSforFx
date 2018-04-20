@@ -1,0 +1,19 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.content-container .icon-container{
+	  -moz-box-ordinal-group: 0 !important;
+	}
+
+	.content-container .status-control-wrapper{
+	  -moz-box-ordinal-group: 1 !important;
+	}
+
+	.content-container .content-inner-container{
+	  -moz-box-ordinal-group: 2 !important;
+	}
+
+}

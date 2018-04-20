@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -27,7 +23,6 @@
 	  padding-left: 0 !important;
 	}
 
-
 	#addons-page #detail-view,
 	#addons-page #userstyle-sorting,
 	#addons-page .global-warning-container,
@@ -48,7 +43,7 @@
 	  padding: 2px 0 !important;
 	  margin: 0 !important;
 	}
-
+	
 	/* buttons / menulists */
 	#addons-page #header button,
 	#addons-page #header #header-utils-btn,
@@ -63,7 +58,6 @@
 	  padding:2px !important;
 	  min-height: unset !important;
 	  height: unset !important;
-	  font-size: 90% !important;
 	}
 
 	#addons-page #header-utils-btn{
@@ -83,25 +77,9 @@
 	  height: unset !important;
 	}
 	
-	#addons-page .addon .name-container,
-	#addons-page #addon-list .name-container {
-	  font-size: 130% !important;
-	}
-	.sort-controls,
-	#addons-page #addon-list .warning,
-	#addons-page #addon-list .pending,
-	#addons-page #addon-list .error{
-	  font-size: 90% !important;
-	}
-	
 	button.addon-control image{
 	  margin-top: -1.5px !important;
 	  margin-bottom: -1.5px !important;
-	}
-
-	/* search */
-	#search-filter {
-	  font-size: 90% !important;
 	}
 
 	/* detail view */
@@ -109,7 +87,7 @@
 	#detail-view menulist{
 	  padding:2px !important;
 	  height: unset !important;
-	  font-size: 90% !important;
+	  /*font-size: 90% !important;*/
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	
@@ -119,14 +97,6 @@
 	  min-width: 40px !important;
 	  height:auto !important;
 	  width: auto !important;
-	}
-	
-	#detail-view label{
-	  font-size: 90% !important;
-	}
-
-	#detail-view .creator-link{
-	  font-size: 110% !important;
 	}
 	
 	/* checkbox and radio items */
@@ -177,15 +147,10 @@
 	.addon .name-container .disabled-postfix,
 	.addon .name-container .update-postfix,
 	.addon .name-container .legacy-warning	{
-	  font-size:85% !important;
 	  -moz-margin-start: 4px !important;
 	  -moz-margin-end: 0 !important;
 	}
 	
-	.addon .content-container * {
-	  font-size: 100% !important;
-	}
-
 	.addon .update-available button,
 	.addon .control-container button,
 	.addon .control-container menulist {
@@ -205,6 +170,10 @@
 	  padding: unset !important;
 	  margin: unset !important;
 	}
+	
+	.addon .experiment-container {
+	  display: none !important;
+	}
 
 	.description-container spacer {
 	  display: none !important;
@@ -219,7 +188,55 @@
 	#addons-page #addon-list .name-container .legacy-warning {
 	  padding: 0 2px !important;
 	  margin: 2px !important;
-	  font-size: 80% !important;
+	}
+	
+	
+	.alert .alert-title {
+	  font-size: 160% !important;
 	}
 
+	.discover-title {
+	  font-size: 18px !important;
+	}
+
+	.name-container {
+	  font-size: 1.1rem !important;
+	}
+
+	.legacy-warning {
+	  font-size: 0.7rem !important;
+	}
+
+	.description-container {
+	  font-size: 1.05rem !important;
+	}
+
+	.addon[status="uninstalled"] > .container {
+	  font-size: 100% !important;
+	}
+
+	.detail-view-container {
+	  font-size: 1.05rem !important;
+	}
+
+	#detail-name-container {
+	  font-size: 2.2rem !important;
+	}
+
+	.preferences-description {
+	  font-size: 80.9% !important;
+	}
+
+	#detail-experiment-container {
+	  font-size: 70% !important;
+	}
+
+	#disabled-unsigned-addons-heading,
+	#legacy-extensions-heading {
+	  font-size: 1.1em !important;
+	}
+
+	:root > * {
+	  font-size: 1.15em !important;
+	}
 }

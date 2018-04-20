@@ -1,3 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
 @media not print {
 
 	html > head:first-child + body:not([background]):not([background-image]):not([class]):not([style]):not([id]):last-child {

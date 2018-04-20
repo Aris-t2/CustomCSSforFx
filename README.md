@@ -1,7 +1,7 @@
-## Download
+## Downloads for Firefox Quantum (57+)
 
-**[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
-**[NoiaButtons CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
+**[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
+**[NoiaButtons CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)** / **[Custom Scrollbars](https://github.com/Aris-t2/Scrollbars/releases)**  
 
 ## Want to support this project?
 
@@ -9,25 +9,25 @@
 
 ## Instructions / Howto / Readme
 
-- [WebExtensions can not modify browsers appearance in Firefox 57+](#webextensions-can-not-modify-browsers-appearance-in-firefox-57)  
-- [Where to find Firefox profile folder and what is the correct location for user styles?](#where-to-find-firefox-profile-folder-and-what-is-the-correct-location-for-user-styles)  
+- [WebExtensions can not modify Firefox Quantums appearance properly](#webextensions-can-not-modify-firefox-quantums-appearance-properly)  
+- [Where to find Firefox profile folder? The correct location for user styles.](#where-to-find-firefox-profile-folder-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
 - [Suggested ui tweaks](#suggested-ui-tweaks)  
 - ['about:config' tweaks](#aboutconfig-tweaks)  
 
-## WebExtensions can not modify browsers appearance in Firefox 57+
+## WebExtensions can not modify Firefox Quantums appearance properly
 
 The only way to modify ui is adding custom CSS code to **userChrome.css** and **userContent.css** files inside browsers profile folder.  
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.  
 
-## Where to find Firefox profile folder and what is the correct location for user styles?
+## Where to find Firefox profile folder? The correct location for user styles.
 
 **1.** Find your profile folder ('profile names are different for everyone').  
 `about:support > Profile Folder > Open Folder`  
 or `about:profiles > Root Directory > Open Folder`  
-or `Shift+F2` to open Firefox's command line, then enter the command `folder openprofile`  
+or open command line with `Shift+F2` and enter`folder openprofile`  
 
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
 `\ PROFILE FOLDER NAME \chrome\`  
@@ -55,7 +55,7 @@ Hidden files must be visible to see `.mozilla` folder.
 ## How to use custom user styles?
 
 The _userChrome.css_ and _userContent.css_ files works like an options\configurations file. All main "features" can be enabled and disabled there.  
-Edit _userChrome.css_ and _userContent.css_ with any text editor (**[Notepad++](https://notepad-plus-plus.org/download/)** recommended on Windows) and enable btw. disable any feature you like by modifying, removing or outcommenting available `@import` strings.  
+Edit _userChrome.css_ and _userContent.css_ with any text editor (**[Notepad++](https://notepad-plus-plus.org/download/)** recommended on Windows) and enable or disable any feature you like by modifying, removing or outcommenting available `@import` strings.  
 Restart Firefox after every modification for changes to take effect.  
 
 **Example**  
@@ -229,4 +229,7 @@ _experiments.activeExperiment_
 _experiments.supported_  
 _datareporting.healthreport.uploadEnabled_  
 _nsITelemetry.canRecordBase_  
-_nsITelemetry.canRecordExtended_
+_nsITelemetry.canRecordExtended_  
+_browser.newtabpage.activity-stream.feeds.telemetry_  
+_browser.newtabpage.activity-stream.telemetry_  
+_extensions.screenshots.upload-disabled_ ("true" to disable)

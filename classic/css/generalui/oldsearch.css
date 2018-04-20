@@ -1,0 +1,123 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* custom settings for 'old search'
+ Open about:config, right-click on any item, select New > Boolean or Integer >
+ browser.oldsearch.customwidth > true    (enables custom popup width)
+ browser.oldsearch.customwidthvalue > 300    (example width value)
+ browser.oldsearch.clearinput > true    (clear textbox after search)
+ browser.oldsearch.reverttodefault > true     (revert to first engine after search)
+*/
+
+:root {
+  --search_dropdown: url(chrome://global/skin/icons/arrow-dropdown-12.svg);
+  --search_searchglass: url(chrome://browser/skin/search-glass.svg);
+  /* fallback variables */
+  --search_dropdown_fb: url("../../image/search_searchglass_dropdown.svg");
+  --search_searchglass_fb: url("../../image/search_searchglass.svg");
+}
+
+searchbar {
+  -moz-binding: url("./../../xml/oldsearch.xml#searchbar") !important;
+}
+
+searchbar .searchbar-textbox {
+  -moz-binding: url("./../../xml/oldsearch.xml#searchbar-textbox") !important;
+}
+
+.searchbar-engine-button {
+  -moz-appearance: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 2px !important;
+  -moz-box-align: center !important;
+  background: none !important;
+  border: none !important;
+}
+
+.searchbar-engine-image {
+  list-style-image: unset !important;
+}
+
+#navigator-toolbox #nav-bar  .searchbar-engine-button {
+  min-height: unset !important;
+}
+
+.searchbar-engine-button > .button-box {
+  -moz-appearance: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.searchbar-dropmarker-image {
+  list-style-image: var(--search_dropdown,var(--search_dropdown_fb)) !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  width: 8px !important;
+  height: 8px !important;
+  fill-opacity: 1.0 !important;
+  fill: #5b5b5b !important;
+}
+
+.searchbar-engine-button[open="true"] > .searchbar-dropmarker-image {
+  fill: #658dd7 !important;
+  background: radial-gradient(rgba(91,91,91,0.2), transparent, transparent) !important;
+}
+
+.search-go-button {
+  list-style-image: var(--search_searchglass,var(--search_searchglass_fb)) !important;
+  -moz-context-properties: fill, fill-opacity !important;
+  margin-inline-start: 8px !important;
+  margin-inline-end: 6px !important;
+  width: 16px !important;
+  fill-opacity: 1.0 !important;
+  fill: #3683ba !important;
+  transform: scaleX(-1) !important;
+}
+
+.search-go-button:hover {
+  fill: #1d518c !important;
+}
+
+.search-go-button:active {
+  fill: #00095d !important;
+}
+
+.searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
+  font-weight: bold !important;
+}
+
+.searchbar-popup {
+  -moz-margin-start: -1px !important;
+}
+
+#PopupSearchAutoComplete .tree-scrollbar,
+#PopupSearchAutoComplete .search-one-offs,
+#PopupSearchAutoComplete .search-panel-header{
+  display: none !important;
+}
+ 
+#PopupSearchAutoComplete {
+  min-width: unset !important;
+  margin-inline-start: unset !important;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory),
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory, selected) {
+  list-style-image: unset !important;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image {
+  padding-inline-start: unset !important;
+  width: unset !important;
+  height: unset !important;;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody {
+  margin-bottom: -4px !important;
+}
+
+/**/

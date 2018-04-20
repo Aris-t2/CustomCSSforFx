@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -12,8 +8,11 @@
   /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 26px !important;
   
-   /* set to '0px' for fully classic squared tabs */
+  /* set to '0px' for fully classic squared tabs */
   --classic_squared_tabs-border-radius: 3px !important;
+  
+  /* set to '0px' for fully squared tabs */
+  --default_tab_border_roundness: 5px !important;
  
   /* for default icon only */
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
@@ -26,7 +25,7 @@
   --tab_max_width: 120px !important;
   
   /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
-  --tab_min_width_mlt: 60px !important;
+  --tab_min_width_mlt: 100px !important;
   --tab_max_width_mlt: 200px !important;
   
   /* for 'tabs_multiple_lines_v2.css' only */
@@ -37,5 +36,8 @@
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */
-  --general_ui_font_size: 12pt !important; 
+  --general_ui_font_size: 12pt !important;
+  
+  /* for ac_popup_custom_height.css */
+  --ac_popup_max_height: 300px !important;
 }

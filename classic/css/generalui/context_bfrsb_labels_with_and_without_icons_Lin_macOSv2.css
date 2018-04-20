@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  -moz-margin-start: 2px !important;
+  -moz-margin-end: -2px !important;
+}

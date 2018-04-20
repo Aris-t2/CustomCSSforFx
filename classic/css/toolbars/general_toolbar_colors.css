@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,51 +7,31 @@
   --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_text_color: inherit;
-  --general_toolbar_text_shadow: unset;
+  --general_toolbar_text_shadow: transparent;
 }
 
-/* navigation toolbar background */
 #nav-bar:not(:-moz-lwtheme) {
-  background: unset !important;
-  border: unset !important;
-  box-shadow: unset !important;
+  -moz-appearance: none !important;
+  background: var(--general_toolbar_color_navbar, inherit) !important;
 }
 
-/* toolbar background */
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background: unset !important;
-  border: unset !important;
-  box-shadow: unset !important;
-}
-
-/* hide toolbar shadow */
-#nav-bar:not(:-moz-lwtheme),
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   -moz-appearance: none !important;
-  box-shadow: unset !important;
+  background: var(--general_toolbar_color_toolbars, inherit) !important;
 }
 
-#nav-bar:not(:-moz-lwtheme) {
-  background-image: var(--general_toolbar_color_navbar) !important;
-}
-
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  background-image: var(--general_toolbar_color_toolbars) !important;
-}
-
-/* set white text for toolbar items */
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
 #main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description),
 #main-window:not(:-moz-lwtheme) #PlacesToolbarItems toolbarbutton > :-moz-any(label,description) {
-  color: var(--general_toolbar_text_color) !important;
-  text-shadow: var(--general_toolbar_text_shadow) !important;
+  color: var(--general_toolbar_text_color, inherit) !important;
+  text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow, inherit) !important;
 }
 
 /* findbar */
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']) :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
-  background: var(--general_toolbar_color_toolbars) !important;
+  background: var(--general_toolbar_color_toolbars, inherit) !important;
 }
 
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
@@ -69,6 +45,14 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 #main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme-brighttext :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) :-moz-any(.toolbarbutton-icon,.toolbarbutton-text) {
   text-shadow: 1px 1px 1px black !important;
+}
+
+
+/* fix Firefox + Windows 8.1 + lw-theme bug (occurring without custom code too) */
+@media (-moz-os-version:windows-win8) {
+	#navigator-toolbox:-moz-lwtheme {
+	  border: unset !important;
+	}
 }
 
 /**/

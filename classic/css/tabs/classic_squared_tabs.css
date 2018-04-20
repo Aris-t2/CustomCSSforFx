@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -19,25 +15,21 @@
   --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%);
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%);
   --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%);
-  --classic_squared_tabs-border1: 1px solid #5f7181;
-  --classic_squared_tabs-border2: 1px solid rgba(0,0,0,.2);
-  --classic_squared_tabs-border3: 1px solid rgba(0,0,0,.5);
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: #5f7181;
+  --classic_squared_tabs-border2: rgba(0,0,0,.2);
+  --classic_squared_tabs-border3: rgba(0,0,0,.5);
   --classic_squared_tabs-border-radius: 3px;
   --classic_squared_tabs_new_tab_icon_color: black;
   --classic_squared_tabs_tab_text_color: black;
-  --classic_squared_tabs_tab_text_shadow: unset;
-  
-  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  --classic_squared_tabs_tab_text_shadow: transparent;
   
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
+  --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
+  --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
 }
 
-/* adjust tab toolbars buttons for squared tabs */
-#TabsToolbar #alltabs-button .toolbarbutton-icon,
-#TabsToolbar > #new-tab-button .toolbarbutton-icon,
-#TabsToolbar > toolbarpaletteitem > #new-tab-button .toolbarbutton-icon {
-  padding: 3px !important;
-}
 
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab[visuallyselected="true"],
@@ -54,7 +46,7 @@
 /* black tab text color */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
   color: var(--classic_squared_tabs_tab_text_color) !important;
-  text-shadow: var(--classic_squared_tabs_tab_text_shadow) !important;
+  text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
 }
 
 /* default tabs color */
@@ -85,21 +77,21 @@
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-  border-top: var(--classic_squared_tabs-border1) !important;
-  border-left: var(--classic_squared_tabs-border1) !important;
-  border-right: var(--classic_squared_tabs-border1) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
-  border-top: var(--classic_squared_tabs-border2) !important;
-  border-left: var(--classic_squared_tabs-border2) !important; 
-  border-right: var(--classic_squared_tabs-border2) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
 }
 
 #TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]) .tab-content {
-  border-top: var(--classic_squared_tabs-border3) !important;
-  border-left: var(--classic_squared_tabs-border3) !important; 
-  border-right: var(--classic_squared_tabs-border3) !important;
+  border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
+  border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
+  border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border3) !important;
 }
 
 /* new tab icon color */
@@ -248,12 +240,24 @@
 .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   width: 16px !important;
   height: 16px !important;
-  -moz-margin-end:-4px !important;
 }
 
+.tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
+:root[uidensity=touch]  .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-margin-end: -6px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
 :root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   margin-top: -8px !important;
   margin-bottom: -8px !important;
+}
+
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-close-button {
+  margin-inline-end: unset !important;
+  padding: unset !important;
 }
 
 /*tab favicon position*/
@@ -342,14 +346,25 @@
 }
 
 /* make sure toolbar buttons do not increase toolbar height */
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
 #TabsToolbar > toolbarpaletteitem,
 #TabsToolbar > toolbarbutton {
   min-height: unset !important;
   padding: unset !important;
+  margin: 0 2px !important;
+}
+
+#TabsToolbar > toolbarpaletteitem .toolbarbutton-icon,
+#TabsToolbar > toolbarbutton .toolbarbutton-icon {
+  min-width: 16px !important;
+  width: unset !important;
+  min-height: 16px !important;
+  height: unset !important;
+  padding: unset !important;
   margin: unset !important;
 }
-#TabsToolbar > toolbarpaletteitem  .toolbarbutton-icon,
-#TabsToolbar > toolbarbutton  .toolbarbutton-icon{
-  min-width: unset !important;
-  width: 24px !important;
+
+#TabsToolbar toolbarbutton .toolbarbutton-badge-stack .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
 }

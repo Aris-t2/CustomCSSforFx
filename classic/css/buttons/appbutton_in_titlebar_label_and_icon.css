@@ -1,0 +1,6 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import url(appbutton_in_titlebar_icon_only.css);
+@import url(appbutton_in_titlebar_label_and_icon_base.css);
