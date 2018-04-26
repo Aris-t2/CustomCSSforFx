@@ -3,9 +3,9 @@
 /****************************************************************************************/
 
 /* Aero-like appearance */
-#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"],
-#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"][current="true"],
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:hover {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistitem[selected="true"],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistitem[selected="true"][current="true"],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistitem:hover {
   color: inherit !important;
   background-color: transparent !important;
   background-image:
@@ -20,43 +20,43 @@
 }
 
 /* replace inverted text colors with default ones */
-#PopupAutoCompleteRichResult .ac-title-text[selected] .ac-emphasize-text,
-#PopupAutoCompleteRichResult .ac-title[selected=true] {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-title-text[selected] .ac-emphasize-text,
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-title[selected=true] {
   color: hsl(0, 0%, 0%) !important;
 }
-#PopupAutoCompleteRichResult .ac-url-text[selected] .ac-emphasize-text,
-#PopupAutoCompleteRichResult .ac-url[selected=true] {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-url-text[selected] .ac-emphasize-text,
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-url[selected=true] {
   color: hsl(210, 77%, 47%) !important;
 }
-#PopupAutoCompleteRichResult .ac-action-text[selected] .ac-emphasize-text,
-#PopupAutoCompleteRichResult .ac-action[selected=true] {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-action-text[selected] .ac-emphasize-text,
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-action[selected=true] {
   color: hsl(178, 100%, 28%) !important;
 }
 
 /* replace inverted icons with default ones */
-#PopupAutoCompleteRichResult .ac-type-icon[type=keyword][selected],
-#PopupAutoCompleteRichResult .ac-site-icon[type=searchengine][selected],
-#PopupAutoCompleteRichResult .ac-type-icon[type=switchtab][selected],
-#PopupAutoCompleteRichResult .ac-type-icon[type=remotetab][selected],
-#PopupAutoCompleteRichResult .ac-type-icon[type=bookmark][selected][current] {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-type-icon[type=keyword][selected],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-site-icon[type=searchengine][selected],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-type-icon[type=switchtab][selected],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-type-icon[type=remotetab][selected],
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .ac-type-icon[type=bookmark][selected][current] {
   fill: #b2b2b2 !important;
 }
 
-#PopupAutoCompleteRichResult richlistitem:not([collapse="true"]) {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) richlistitem:not([collapse="true"]) {
   border-top: 1px solid transparent !important;
   border-bottom: 1px solid transparent !important;
 }
 
-#PopupAutoCompleteRichResult richlistitem[selected="true"]:not([collapse="true"]) {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) richlistitem[selected="true"]:not([collapse="true"]) {
   border-top: 1px solid transparent !important;
   border-bottom: 1px solid transparent !important;
 }
 
-#PopupAutoCompleteRichResult richlistitem[selected="true"] + richlistitem:not([collapse="true"]) {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) richlistitem[selected="true"] + richlistitem:not([collapse="true"]) {
   border-top: 1px solid transparent !important;
   border-bottom: 1px solid transparent !important;
 }
 
-#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+:-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistbox {
   padding: 1px !important;
 }
