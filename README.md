@@ -154,7 +154,7 @@ _browser.tabs.closeWindowWithLastTab_
 **Titlebar**  
 _browser.tabs.drawInTitlebar_  
 
-**Old about:newtab and about:home pages**  
+**Old about:newtab and about:home pages (Firefox 57-59 only)**  
 _browser.newtabpage.activity-stream.enabled_  
 _browser.newtabpage.activity-stream.aboutHome.enabled_
 
