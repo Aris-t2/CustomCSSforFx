@@ -56,6 +56,7 @@
 /* @import url(./css/aboutaddons/addonlists_only_show_buttons_on_hover.css); /**/
 /* @import url(./css/aboutaddons/addonlists_replace_button_labels_with_icons.css); /**/
 /* @import url(./css/aboutaddons/addonlists_move_button_to_start.css); /**/
+@import url(./css/aboutaddons/addonlists_green_dot_hidden.css); /**/
 @import url(./css/aboutaddons/description_page_alternative_content_order.css); /**/
 @import url(./css/aboutaddons/recentupdates_category_always_visible.css); /**/
 /* @import url(./css/aboutaddons/search_category_always_visible.css); /**/
@@ -74,10 +75,12 @@
 /************************************************************************************************/
 /* about:newtab / about:home ********************************************************************/
 /************************************************************************************************/
- 
+
+/* @import url(./css/aboutnewtab/dark_appearance.css); /**/
+
+/* Firefox 57-59 only ***************************************************************************/ 
 /* 'about:config > browser.newtabpage.activity-stream.enabled > false' enables old appearance ***/
 /* @import url(./css/aboutnewtab/bottom_launcher_visible.css); /**/
-/* @import url(./css/aboutnewtab/dark_appearance.css); /**/
 
 
 /************************************************************************************************/

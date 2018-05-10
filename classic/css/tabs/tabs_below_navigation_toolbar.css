@@ -182,6 +182,10 @@
   border-bottom: 1px solid #323234 !important;
 }
 
+#main-window[style*='--lwt-accent-color:rgb(0, 0, 0);'][lwtheme="true"]:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  border-bottom: 1px solid #323234 !important;
+}
+
 #main-window:not([sizemode="fullscreen"])[tabsintitlebar] #TabsToolbar{
   -moz-margin-end: 0px !important;
 }
@@ -243,27 +247,6 @@
   display: none !important;
 }
 
-/* tab text colors */
-.tabbrowser-tab {
-  color: #000000 !important;
-}
-
-@media (-moz-os-version: windows-win7) {
-  @media (-moz-windows-default-theme) {
-	.tabbrowser-tab:not([selected]) {
-	  color: #ffffff !important;
-	}
-  }
-}
-
-#TabsToolbar:-moz-lwtheme-darktext .tabbrowser-tab {
-  color: #000000 !important;
-}
-
-#TabsToolbar:-moz-lwtheme-brighttext .tabbrowser-tab {
-  color: #ffffff !important;
-}
-
 @media (-moz-os-version: windows-win10) {
 	#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] {
 	  margin-top: 30px !important;
@@ -313,9 +296,21 @@
 
 }
 
-/* black tab text color */
+/* tab text colors */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
   color: var(--classic_squared_tabs_tab_text_color) !important;
   text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
 }
 
+/* fix Windows 7s default tab background (remove dark purple bg color)*/
+@media (-moz-os-version: windows-win7) {
+  @media (-moz-windows-default-theme) {
+    .tabbrowser-tab:not([selected]):not(:hover):not(:-moz-lwtheme) {
+      background-color: #e3e4e6 !important;
+    }
+	.tabbrowser-tab:not([selected]):hover:not(:-moz-lwtheme) {
+      background-color: #cccdcf !important;
+    }
+
+  }
+}
