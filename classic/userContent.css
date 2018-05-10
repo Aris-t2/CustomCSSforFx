@@ -42,7 +42,7 @@
 		 See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************************/
 
 /* version number for add-ons *******************************************************************/
-@import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/
+/* @import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/
 
 /* addons page appearance - only use one at a time **********************************************/
 @import url(./css/aboutaddons/addons_manager_alternative_appearance.css); /**/
