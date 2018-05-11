@@ -2,58 +2,57 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+body > div.highlight > div.highlight-buttons,
 body > div.preview-overlay > div.preview-image > div.preview-buttons {
   align-items: stretch !important;
+  flex-wrap: wrap !important;
 }
 
 /* Save-Button */
+body > div.highlight > div.highlight-buttons > button.highlight-button-download,
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download  {
   background-color: #1a0 !important;
   width: initial !important;
   background-position: 8px center !important;
   border: none !important;
-}
-
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download  {
   margin-bottom: -3px !important;
   width: initial !important;
   display: flex !important;
 }
 
+body > div.highlight > div.highlight-buttons > button.highlight-button-download:hover,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download:hover {
+  background-color: #2b0 !important;
+}
+
+body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
+  content: attr(title) !important;
+  font-weight: bold !important;
+}
+
+body > div.highlight > div.highlight-buttons > button.highlight-button-download img,
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download img {
   width: 20px !important;
   padding-right: 5px !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download:hover {
-  background-color: #2b0 !important;
-}
-
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
-  content: attr(title) !important;
-  font-weight: bold !important;
-}
 
 /* Cloud-Button */
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save {
+body > div.highlight > div.highlight-buttons > button.highlight-button-save,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save {
   background-color: #C00 !important;
   color: #C00 !important;
   font-size: 0 !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save:hover,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save:hover {
+body > div.highlight > div.highlight-buttons > button.highlight-button-save:hover,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save:hover {
   background-color: #D22 !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
-  content: attr(title) !important;
-  font-weight: bold !important;
-}
-
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+body > div.highlight > div.highlight-buttons > button.highlight-button-save::after ,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Cloud" !important;
   font-size: medium !important;
   color: white !important;
@@ -62,64 +61,71 @@ body > div.preview-overlay > div.preview-image > div.preview-buttons > button.hi
 
 /* Language settings */
 /* English US*/
+html[lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="en-US"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Save" !important;
 }
-html[lang="en-US"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
+html[lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
 html[lang="en-US"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
   content: "Upload" !important;
 }
 
 /* German */
+html[lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Speichern" !important;
 }
-html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Hochladen" !important;
 }
 
 /* French */
+html[lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Sauvegarder" !important;
 }
-html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Télécharger" !important;
 }
 
 /* Spanish */
+html[lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Salvar" !important;
 }
-html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Subir" !important;
 }
 
 /* Portuguese */
+html[lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Salve" !important;
 }
-html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Envio" !important;
 }
 
 /* Italian */
+html[lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Salvare" !important;
 }
-html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Caricare" !important;
 }
 
 /* Russian */
+html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-download::after,
 html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: "Сохранить" !important;
 }
-html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after,
-html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-save::after {
+html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-save::after,
+html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Загрузить" !important;
 }
