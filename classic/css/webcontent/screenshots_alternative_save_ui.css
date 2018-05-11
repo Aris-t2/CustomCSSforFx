@@ -4,7 +4,7 @@
 
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download ,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
   width: initial !important;
@@ -14,7 +14,7 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + 
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download im,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img  {
   margin-bottom: -3px !important;
@@ -24,7 +24,7 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + 
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download ,
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
   background-color: #1a0 !important;
