@@ -15,9 +15,9 @@ body > div.preview-overlay > div.preview-image > div.preview-buttons > button.hi
   width: initial !important;
   background-position: 8px center !important;
   border: none !important;
-  margin-bottom: -3px !important;
   width: initial !important;
   display: flex !important;
+  font-size: 0 !important;
 }
 
 body > div.highlight > div.highlight-buttons > button.highlight-button-download:hover,
@@ -29,6 +29,7 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-download:
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-download::after {
   content: attr(title) !important;
   font-weight: bold !important;
+  font-size: 18px !important;
 }
 
 body > div.highlight > div.highlight-buttons > button.highlight-button-download img,
@@ -54,7 +55,7 @@ body > div.preview-overlay > div.preview-image > div.preview-buttons > button.pr
 body > div.highlight > div.highlight-buttons > button.highlight-button-save::after ,
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.preview-button-save::after {
   content: "Cloud" !important;
-  font-size: medium !important;
+  font-size: 18px !important;
   color: white !important;
   font-weight: bold !important;
 }
