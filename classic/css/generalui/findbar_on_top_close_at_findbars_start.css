@@ -15,7 +15,7 @@
   -moz-padding-start: 26px !important;
 }
 
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+#main-window[style^='--lwt-header-image']:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
   -moz-margin-end: 0px !important;
   -moz-padding-end: 0px !important;
 }

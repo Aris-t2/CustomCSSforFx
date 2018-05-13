@@ -4,10 +4,9 @@
 
 
 @-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
-	/*  addonversion.xml contains a copy of the 'addon-generic' binding Mozilla removed from Fx40+ builds!*/
 	
 	.addon:not([pending="uninstall"])[status="installed"]	{
-	  -moz-binding: url("./../../xml/addonversion.xml#addon-generic") !important;
+	  -moz-binding: url("./addonlists_show_addon_version_number.xml#addon-generic") !important;
 	}
 	
 	.addon:not([pending="uninstall"])[status="installed"] .name-container .version {
@@ -15,7 +14,7 @@
 	}
 	
 	.addon:not([pending="uninstall"])[status="installing"] {
-	  -moz-binding: url("./../../xml/addonversion.xml#addon-installing");
+	  -moz-binding: url("./addonlists_show_addon_version_number.xml#addon-installing");
 	}
 	
 	.addon:not([pending="uninstall"])[status="installing"] .name-container .version {

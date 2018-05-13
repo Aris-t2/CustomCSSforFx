@@ -5,11 +5,11 @@
 @-moz-document url(chrome://browser/content/browser.xul) {
 
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-	  -moz-binding: url("./../../xml/urlbarBindings.xml#urlbar-rich-result-popup") !important;
+	  -moz-binding: url("./ac_popup_classic_with_two_lines.xml#urlbar-rich-result-popup") !important;
 	}
 
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
-	  -moz-binding: url("./../../xml/urlbarBindings.xml#autocomplete-richlistitem") !important;
+	  -moz-binding: url("./ac_popup_classic_with_two_lines.xml#autocomplete-richlistitem") !important;
 	}
 	
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem *:not(.ac-url),

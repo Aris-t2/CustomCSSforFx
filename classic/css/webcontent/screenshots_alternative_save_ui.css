@@ -4,8 +4,6 @@
 
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
   width: initial !important;
   padding-left: 34px !important;
@@ -14,8 +12,6 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + 
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download img  {
   margin-bottom: -3px !important;
   margin-left: -28px !important;
@@ -24,59 +20,35 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + 
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download  {
   background-color: #1a0 !important;
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download:hover {
   background-color: #2b0 !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save {
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save),
+body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save) {
   background-color: #C00 !important;
   color: #C00 !important;
   font-size: 0 !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save:hover,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save:hover {
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save):hover,
+body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save):hover {
   background-color: #D22 !important;
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
   content: attr(title) !important;
   font-weight: bold !important;
 }
 
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save)::after,
+body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button:-moz-any(.preview-button-save,.highlight-button-save)::after {
   content: "Cloud" !important;
   font-size: medium !important;
   color: white !important;
@@ -85,15 +57,11 @@ body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + 
 
 /* if upload button is disabled / about:config > extensions.screenshots.upload-disabled > true */
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button img,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button img,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button img,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button img  {
   margin-right: -6px !important;
 }
 
 body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button::after,
-body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button::after,
-body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button::after,
 body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.download-only-button::after {
   display: none !important;
 }
@@ -105,8 +73,6 @@ html[lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highl
   content: "Save" !important;
 }
 html[lang="en-US"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="en-US"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="en-US"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Upload" !important;
 }
@@ -117,8 +83,6 @@ html[lang="de"] > body > div.highlight > div.highlight-buttons > button.highligh
   content: "Speichern" !important;
 }
 html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="de"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="de"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Hochladen" !important;
 }
@@ -129,8 +93,6 @@ html[lang="fr"] > body > div.highlight > div.highlight-buttons > button.highligh
   content: "Sauvegarder" !important;
 }
 html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="fr"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="fr"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Télécharger" !important;
 }
@@ -141,8 +103,6 @@ html[lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highl
   content: "Salvar" !important;
 }
 html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="es-ES"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="es-ES"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Subir" !important;
 }
@@ -153,8 +113,6 @@ html[lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highl
   content: "Salve" !important;
 }
 html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="pt-PT"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="pt-PT"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Envio" !important;
 }
@@ -165,8 +123,6 @@ html[lang="it"] > body > div.highlight > div.highlight-buttons > button.highligh
   content: "Salvare" !important;
 }
 html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="it"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="it"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Caricare" !important;
 }
@@ -177,8 +133,15 @@ html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highligh
   content: "Сохранить" !important;
 }
 html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
-html[lang="ru"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after,
-html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
 html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
   content: "Загрузить" !important;
 }
+
+
+/* test: wrapping buttons *//*
+body > div.highlight > div.highlight-buttons,
+body > div.preview-overlay > div.preview-image > div.preview-buttons {
+  align-items: stretch !important;
+  flex-wrap: wrap !important;
+}
+/**/

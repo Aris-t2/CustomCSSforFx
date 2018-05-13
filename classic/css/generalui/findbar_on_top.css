@@ -42,13 +42,13 @@
   background-image: unset !important;
 }
 
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   -moz-appearance: none !important;
   border: 1px solid var(--tabs-border-color) !important;
   border-top: 0px solid transparent !important;
 }
 
-#main-window:not([style*='--lwt-header-image:url("resource:///chrome/browser/content/browser/defaultthemes/compact.header.png");']):-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
   -moz-appearance: none !important;
   background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
   -moz-margin-end: -18px !important;

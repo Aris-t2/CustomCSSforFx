@@ -20,11 +20,11 @@
 }
 
 searchbar {
-  -moz-binding: url("./../../xml/oldsearch.xml#searchbar") !important;
+  -moz-binding: url("./oldsearch.xml#searchbar") !important;
 }
 
 searchbar .searchbar-textbox {
-  -moz-binding: url("./../../xml/oldsearch.xml#searchbar-textbox") !important;
+  -moz-binding: url("./oldsearch.xml#searchbar-textbox") !important;
 }
 
 .searchbar-engine-button {
