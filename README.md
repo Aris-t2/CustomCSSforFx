@@ -32,11 +32,10 @@ or open command line with `Shift+F2` and enter`folder openprofile`
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
 `\ PROFILE FOLDER NAME \chrome\`  
 
-**3.** Copy `userChrome.css`, `userContent.css` and `\config\`, `\css\`, `\image\`, `\xml\` folders into `\chrome\` folder. It should look like this afterwards:  
+**3.** Copy `userChrome.css`, `userContent.css` and `\config\`, `\css\`, `\image\` folders into `\chrome\` folder. It should look like this afterwards:  
 `\chrome\config\`  
 `\chrome\css\`  
 `\chrome\image\`  
-`\chrome\xml\`  
 `\chrome\userChrome.css`  
 `\chrome\userContent.css`  
 
