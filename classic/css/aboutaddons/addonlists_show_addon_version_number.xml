@@ -38,9 +38,6 @@
                 class="pending">
         <xul:image class="pending-icon"/>
         <xul:label anonid="pending" flex="1"/>
-        <xul:button anonid="restart-btn" class="button-link"
-                    label="&addon.restartNow.label;"
-                    oncommand="document.getBindingParent(this).restart();"/>
         <xul:button anonid="undo-btn" class="button-link"
                     label="&addon.undoAction.label;"
                     tooltipText="&addon.undoAction.tooltip;"
@@ -65,15 +62,6 @@
               </xul:hbox>
             <xul:label anonid="date-updated" class="date-updated"
                        unknown="&addon.unknownDate;"/>
-          </xul:hbox>
-          <xul:hbox class="experiment-container">
-            <svg width="6" height="6" viewBox="0 0 6 6" version="1.1"
-                 xmlns="http://www.w3.org/2000/svg"
-                 class="experiment-bullet-container">
-              <circle cx="3" cy="3" r="3" class="experiment-bullet"/>
-            </svg>
-            <xul:label anonid="experiment-state" class="experiment-state"/>
-            <xul:label anonid="experiment-time" class="experiment-time"/>
           </xul:hbox>
 
           <xul:hbox class="advancedinfo-container" flex="1">
@@ -215,7 +203,7 @@
               (this.mAddon.applyBackgroundUpdates == AddonManager.AUTOUPDATE_DISABLE ||
                (this.mAddon.applyBackgroundUpdates == AddonManager.AUTOUPDATE_DEFAULT &&
                 !AddonManager.autoUpdateDefault))) {
-            AddonManager.getAllInstalls(aInstallsList => {
+            AddonManager.getAllInstalls().then(aInstallsList => {
               // This can return after the binding has been destroyed,
               // so try to detect that and return early
               if (!("onNewInstall" in this))
@@ -258,105 +246,6 @@
 	  
 	</implementation>
 
-  </binding>
-
-  <!-- Addon - installing - an addon item that is currently being installed -->
-  <binding id="addon-installing"
-           extends="chrome://mozapps/content/extensions/extensions.xml#addon-installing">
-    <content>
-      <xul:hbox anonid="warning-container" class="warning">
-        <xul:image class="warning-icon"/>
-        <xul:label anonid="warning" flex="1"/>
-        <xul:button anonid="warning-link" class="button-link"
-                   oncommand="document.getBindingParent(this).retryInstall();"/>
-        <xul:spacer flex="5000"/> <!-- Necessary to allow the message to wrap -->
-      </xul:hbox>
-      <xul:hbox class="content-container">
-        <xul:vbox class="icon-outer-container">
-          <xul:vbox class="icon-container">
-            <xul:image anonid="icon" class="icon"/>
-          </xul:vbox>
-        </xul:vbox>
-        <xul:vbox class="fade name-outer-container" flex="1">
-          <xul:hbox class="name-container">
-            <xul:label anonid="name" class="name" crop="end" tooltip="addonitem-tooltip"/>
-			<xul:label anonid="version" class="version" hidden="true"/>
-          </xul:hbox>
-        </xul:vbox>
-        <xul:vbox class="install-status-container">
-          <xul:hbox anonid="install-status" class="install-status"/>
-        </xul:vbox>
-      </xul:hbox>
-    </content>
-
-    <implementation>
-
-      <field name="_version">
-        document.getAnonymousElementByAttribute(this, "anonid", "version");
-      </field>
-
-      <method name="refreshInfo">
-        <body><![CDATA[
-          this.mAddon = this.mAddon || this.mInstall.addon;
-          if (this.mAddon) {
-            this._icon.src = this.mAddon.iconURL ||
-                             (this.mInstall ? this.mInstall.iconURL : "");
-            this._name.value = this.mAddon.name;
-			
-            if (this.mAddon.version) {
-              this._version.value = this.mAddon.version;
-              this._version.hidden = false;
-            } else {
-              this._version.hidden = true;
-            }
-
-          } else {
-            this._icon.src = this.mInstall.iconURL;
-            // AddonInstall.name isn't always available - fallback to filename
-            if (this.mInstall.name) {
-              this._name.value = this.mInstall.name;
-            } else if (this.mInstall.sourceURI) {
-              var url = Components.classes["@mozilla.org/network/standard-url-mutator;1"]
-                                  .createInstance(Components.interfaces.nsIStandardURLMutator)
-                                  .init(Components.interfaces.nsIStandardURL.URLTYPE_STANDARD,
-                                        80, this.mInstall.sourceURI.spec,
-                                        null, null)
-                                  .finalize()
-                                  .QueryInterface(Components.interfaces.nsIURL);
-              this._name.value = url.fileName;
-            }
-			
-            if (this.mInstall.version) {
-              this._version.value = this.mInstall.version;
-              this._version.hidden = false;
-            } else {
-              this._version.hidden = true;
-            }
-          }
-
-          if (this.mInstall.state == AddonManager.STATE_DOWNLOAD_FAILED) {
-            this.setAttribute("notification", "warning");
-            this._warning.textContent = gStrings.ext.formatStringFromName(
-              "notification.downloadError",
-              [this._name.value], 1
-            );
-            this._warningLink.label = gStrings.ext.GetStringFromName("notification.downloadError.retry");
-            this._warningLink.tooltipText = gStrings.ext.GetStringFromName("notification.downloadError.retry.tooltip");
-          } else if (this.mInstall.state == AddonManager.STATE_INSTALL_FAILED) {
-            this.setAttribute("notification", "warning");
-            this._warning.textContent = gStrings.ext.formatStringFromName(
-              "notification.installError",
-              [this._name.value], 1
-            );
-            this._warningLink.label = gStrings.ext.GetStringFromName("notification.installError.retry");
-            this._warningLink.tooltipText = gStrings.ext.GetStringFromName("notification.downloadError.retry.tooltip");
-          } else {
-            this.removeAttribute("notification");
-          }
-        ]]></body>
-      </method>
-
-    </implementation>
   </binding>
 
 </bindings>

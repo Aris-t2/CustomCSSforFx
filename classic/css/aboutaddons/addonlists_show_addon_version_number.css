@@ -13,12 +13,4 @@
 	  visibility: visible !important;
 	}
 	
-	.addon:not([pending="uninstall"])[status="installing"] {
-	  -moz-binding: url("./addonlists_show_addon_version_number.xml#addon-installing");
-	}
-	
-	.addon:not([pending="uninstall"])[status="installing"] .name-container .version {
-	  visibility: visible !important;
-	}
-
 }

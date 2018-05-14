@@ -37,11 +37,11 @@
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[sizemode="maximized"] #TabsToolbar,
-#main-window[tabsintitlebar]:not([style^='--lwt-header-image']):-moz-lwtheme #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
-#main-window[tabsintitlebar][sizemode="maximized"]:not([style^='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar]:not([style^='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"]:not([style^='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[tabsintitlebar]:not([style^='--lwt-header-image']):-moz-lwtheme #TabsToolbar {
+#main-window[tabsintitlebar]:not([style*='--lwt-header-image']):-moz-lwtheme #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
+#main-window[tabsintitlebar][sizemode="maximized"]:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar]:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"]:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar]:not([style*='--lwt-header-image']):-moz-lwtheme #TabsToolbar {
   -moz-padding-start: 0px !important;
 }
 
@@ -128,12 +128,12 @@
 }
 
 /* remove color overlay for lw-themes */
-#main-window[style^='--lwt-header-image'] :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
+#main-window[style*='--lwt-header-image'] :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
   background: unset !important;
 }
 
 /* adjust compact themes background color */
-#main-window:not([style^='--lwt-header-image']) #TabsToolbar:-moz-lwtheme {
+#main-window:not([style*='--lwt-header-image']) #TabsToolbar:-moz-lwtheme {
   -moz-appearance: none !important;
   background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
@@ -141,8 +141,8 @@
 
 #main-window:not(:-moz-lwtheme) #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
 #main-window:not(:-moz-lwtheme) #TabsToolbar > toolbarbutton,
-#main-window:not([style^='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
-#main-window:not([style^='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar > toolbarbutton {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar > toolbarbutton {
   fill: black !important;
   color: black !important;
 }
@@ -168,18 +168,18 @@
   border-right: 0px !important;
 }
 
-#main-window[style^='--lwt-header-image'][sizemode="normal"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme,
-#main-window[style^='--lwt-header-image'][sizemode="maximized"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme {
+#main-window[style*='--lwt-header-image'][sizemode="normal"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme,
+#main-window[style*='--lwt-header-image'][sizemode="maximized"] #navigator-toolbox :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme {
   border-top: 0px !important;
   border-left: 0px !important;
   border-right: 0px !important;
 }
 
-#main-window:not([style^='--lwt-header-image']):-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
   border-bottom: 1px solid #323234 !important;
 }
 
-#main-window:not([style^='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
   border-bottom: 1px solid #323234 !important;
 }
 
