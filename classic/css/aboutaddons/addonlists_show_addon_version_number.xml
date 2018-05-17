@@ -165,7 +165,7 @@
 
       <field name="_version">
         document.getAnonymousElementByAttribute(this, "anonid", "version");
-      </field> 
+      </field>
 
       <method name="_initWithAddon">
         <parameter name="aAddon"/>

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.8.7 ********************************************************************************/
+/* version 1.8.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -338,7 +338,10 @@
 /* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
 /* @import url(./css/tabs/default_tabs_round_top_borders.css); /**/
+/* @import url(./css/tabs/default_tabs_tab_containers_full_line.css); /**/
+/* tab backgroound/color settings - only use one at a time **************************************/
 /* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
+/* @import url(./css/tabs/default_tabs_custom_colors.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
 /* @import url(./css/tabs/default_tabs_static_tab_line.css); /**/
@@ -415,6 +418,7 @@
 /* search engine settings - only use one at a time **********************************************/
 /* @import url(./css/generalui/searchbar_popup_engines_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels.css); /**/
+/* @import url(./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css); /**/
 
 /* OLD SEARCH ***********************************************************************************/	/* <--- OLD SEARCH */
 /* NOTE: 'Old search' will stop working when Mozilla drops XBL support. **************************
