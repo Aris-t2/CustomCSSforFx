@@ -1,0 +1,6 @@
+/*
+ * https://github.com/nuchi/firefox-quantum-userchromejs
+ */
+toolbarbutton#alltabs-button {
+    -moz-binding: url("../../userChrome.xml#js");
+}

@@ -300,6 +300,7 @@
 /* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* @import url(./css/tabs/tabs_multiple_lines.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_multiple_lines_v2.css); /**/  /* <--- EXPERIMENTAL */
+/* @import url(./css/tabs/tabs_multiple_lines_dnd.css); /**/  /* <--- EXPERIMENTAL */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/
