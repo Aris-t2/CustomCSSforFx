@@ -618,7 +618,52 @@
         ]]></body>
       </method>
 	  
+      <method name="openSearch">
+        <body>
+          <![CDATA[
+            // Don't open search popup if history popup is open
+            if (!this.popupOpen) {
+              let searchBox = document.getBindingParent(this);
+              searchBox.searchButton.open = true;
+              return false;
+            }
+            return true;
+          ]]>
+        </body>
+      </method>
+
 	</implementation>
+	
+    <handlers>
+      <handler event="keypress" keycode="VK_DOWN" modifiers="alt"
+               phase="capturing"
+               action="return this.openSearch();"/>
+
+      <handler event="keypress" keycode="VK_UP" modifiers="alt"
+               phase="capturing"
+               action="return this.openSearch();"/>
+
+      <handler event="keypress" keycode="VK_F4"
+               phase="capturing"
+               action="return this.openSearch();"/>
+			   
+      <handler event="click"><![CDATA[
+        if (event.button == 2)
+          return; // ignore right clicks.
+		else if (event.button == 1) { // middle click
+
+          let button = event.originalTarget;
+          let engine = button.engine || button.parentNode.engine;
+
+          if (!engine) return;
+
+          let searchbar = document.getElementById("searchbar");
+		  searchbar.searchButton.open = false;
+          searchbar.handleSearchCommand(event, engine);
+		}
+      ]]></handler>
+
+    </handlers>
 
   </binding>
 

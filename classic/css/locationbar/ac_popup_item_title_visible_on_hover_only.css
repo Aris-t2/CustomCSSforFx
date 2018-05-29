@@ -6,7 +6,12 @@
 /* To hide seach engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:not(:hover) .ac-title-text,
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:not(:hover) .ac-separator {
+#PopupAutoCompleteRichResult .autocomplete-richlistitem:not(:-moz-any(:hover,[selected])) .ac-title-text,
+#PopupAutoCompleteRichResult .autocomplete-richlistitem:not(:-moz-any(:hover,[selected])) .ac-separator {
   display: none !important;
+}
+
+/* url text color: fix for default dark theme*/
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url .ac-url-text:not([selected]) {
+  color: #00d2ff !important;
 }

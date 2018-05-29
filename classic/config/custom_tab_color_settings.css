@@ -22,9 +22,14 @@
   background: var(--default_tabs_bg_selected) !important;
 }
 /* background color on toolbars */
-#main-window #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar) {
+/*#main-window #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar) {
   background: var(--default_tabs_toolbar_background) !important;
-}
+}*/
+
+/* background color for 'tabs below navigation toolbar' option */
+/*#main-window #navigator-toolbox #TabsToolbar {
+  background: var(--default_tabs_toolbar_background) !important;
+}*/
 
 /* default tab *****************************/
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {

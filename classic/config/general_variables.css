@@ -44,13 +44,4 @@
   /* for searchbar_popup_engines_show_labels_scrollbars.css */
   --search-one-offs_lables_height: 100px !important;
   
-  /* for default_tabs_custom_colors.css */
-  --default_tabs_bg_selected: linear-gradient(to bottom,#FF8800,#FFCC99) !important;
-  --default_tabs_toolbar_background: linear-gradient(to bottom,#FFCC99,#FFCC99) !important;
-  --default_tabs_bg_default: linear-gradient(to bottom,#FFCC99,#CCCCCC) !important;
-  --default_tabs_bg_hovered: linear-gradient(to bottom,#FF9900,#FF6600) !important;
-  --default_tabs_bg_unloaded: linear-gradient(to bottom,#FFCC99,#CCCCCC) !important;
-  --default_tabs_bg_unread: linear-gradient(to bottom,#FFCC99,#CCCCCC) !important;
-  --default_tabs_bg_newtab: linear-gradient(to bottom,#FFCC99,#CCCCCC) !important;
-  --default_tabs_bg_newtab_hovered: linear-gradient(to bottom,#FF9900,#FF6600) !important;
 }

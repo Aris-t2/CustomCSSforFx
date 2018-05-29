@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.8.8 ********************************************************************************/
+/* version 1.8.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -287,15 +287,19 @@
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
 
+
+/* TAB BACKGROUND COLORS for default/active/hovered/unread/unloaded tabs and 'new tab' tab ******/
+/* edit target file to set own custom colors ****************************************************/
+/* @import url(./config/custom_tab_color_settings.css); /**/
 /* TAB TEXT colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **********/
 /* edit target file to set own custom colors ****************************************************/
 /* @import url(./config/custom_tab_text_settings.css); /**/
 
 /* MULTIROW / multi lined tabs - only use one at a time *****************************************/
-/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 ************************/
-/* [!] BUG: dragging tabs does not work properly with multi lined tabs ****************************/
-/* [!] for v1 see https://00.bulog.jp/archives/1476 ***********************************************/
-/* [!] for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ******/
+/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 **********************/
+/* [!] BUG: dragging tabs does not work properly with multi lined tabs **************************/
+/* [!] for v1 see https://00.bulog.jp/archives/1476 *********************************************/
+/* [!] for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ****/
 /* Recommendation: use v2 instead of v1. v1 has too many issues and glitches ********************/
 /* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* @import url(./css/tabs/tabs_multiple_lines.css); /**/  /* <--- EXPERIMENTAL */
@@ -341,7 +345,6 @@
 /* @import url(./css/tabs/default_tabs_tab_containers_full_line.css); /**/
 /* tab backgroound/color settings - only use one at a time **************************************/
 /* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
-/* @import url(./css/tabs/default_tabs_custom_colors.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
 /* @import url(./css/tabs/default_tabs_static_tab_line.css); /**/
@@ -558,6 +561,7 @@
 /* @import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css); /**/
  
 /* result menuitem settings/appearance **********************************************************/
+/* @import url(./css/locationbar/ac_popup_firefox_background_logo.css); /**/
 /* @import url(./css/locationbar/ac_popup_result_highlighting_aero.css); /**/
 /* @import url(./css/locationbar/ac_popup_keysearch_bold.css); /**/
 /* @import url(./css/locationbar/ac_popup_keysearch_underline.css); /**/
