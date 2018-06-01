@@ -1,0 +1,32 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#appMenu-open-file-button {
+  -moz-context-properties: fill;
+  list-style-image: url(chrome://browser/skin/open.svg);
+}
+
+#appMenu-save-file-button {
+  -moz-context-properties: fill;
+  list-style-image: url(chrome://browser/skin/save.svg);
+}
+
+#appMenu-more-button {
+  -moz-context-properties: fill;
+  list-style-image: url(chrome://browser/skin/chevron.svg);
+}
+
+#appMenu-developer-button  {
+  -moz-context-properties: fill;
+  list-style-image: url(chrome://browser/skin/developer.svg);
+}
+
+:-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) .toolbarbutton-text  {
+  padding-inline-start: 8px !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
+  fill: currentColor !important;
+}

@@ -39,6 +39,11 @@
   color: -moz-DialogText !important;
 }
 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #BMB_bookmarksPopup *,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #BMB_bookmarksPopup menupopup * {
+  color: black !important;
+}
+
 #BMB_bookmarksPopup menupopup > hbox {
   background: unset !important;
   border: unset !important;

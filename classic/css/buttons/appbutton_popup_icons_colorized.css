@@ -2,69 +2,59 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+/* blue */
 #appMenu-fxa-status image,
-#appMenu-new-window-button .toolbarbutton-icon,
-#appMenu-zoomEnlarge-button .toolbarbutton-icon,
-#appMenu-fullscreen-button .toolbarbutton-icon,
-#appMenu-copy-button .toolbarbutton-icon,
-#appMenu-find-button .toolbarbutton-icon {
-  fill: #4169e1 !important;
+:-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
+  fill: #4169e1 !important; 
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-fxa-status image,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
+  fill: #00d2ff !important; 
 }
 
-#appMenu-private-window-button .toolbarbutton-icon,
-#appMenu-library-button .toolbarbutton-icon,
-#appMenu-print-button .toolbarbutton-icon {
+/* purple */
+:-moz-any(#appMenu-private-window-button,#appMenu-library-button,#appMenu-print-button,#appMenu-library-history-button,#appMenuViewHistorySidebar,#appMenuClearRecentHistory,#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows) .toolbarbutton-icon {
   fill: #800080 !important;
 }
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-private-window-button,#appMenu-library-button,#appMenu-print-button,#appMenu-library-history-button,#appMenuViewHistorySidebar,#appMenuClearRecentHistory,#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows) .toolbarbutton-icon {
+  fill: #ff00ff !important;
+}
 
-#appMenuRestoreLastSession .toolbarbutton-icon {
+/* orange */
+:-moz-any(#appMenuRestoreLastSession,#appMenu-library-screenshots,#appMenu-open-file-button) .toolbarbutton-icon {
   fill: orange !important;
 }
 
-#appMenu-zoomReduce-button .toolbarbutton-icon,
-#appMenu-cut-button .toolbarbutton-icon,
-#appMenu-quit-button .toolbarbutton-icon {
+/* red */
+:-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button) .toolbarbutton-icon {
   fill: red !important;
 }
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button) .toolbarbutton-icon {
+  fill: #ff5a5a !important;
+}
 
-#appMenu-paste-button .toolbarbutton-icon,
-#appMenu-addons-button .toolbarbutton-icon {
+
+/* green */
+:-moz-any(#appMenu-paste-button, #appMenu-addons-button) .toolbarbutton-icon {
   fill: green !important;
 }
-
-#appMenu-preferences-button .toolbarbutton-icon {
-  fill: gray !important;
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-paste-button, #appMenu-addons-button) .toolbarbutton-icon {
+  fill: lightgreen !important;
 }
 
-#appMenu-customize-button .toolbarbutton-icon,
-#appMenu-help-button .toolbarbutton-icon {
+/* grey */
+:-moz-any(#appMenu-preferences-button,#appMenu-developer-button) .toolbarbutton-icon {
+  fill: grey !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-preferences-button,#appMenu-developer-button) .toolbarbutton-icon {
+  fill: lightgrey !important;
+}
+
+/* dark blue */
+:-moz-any(#appMenu-customize-button,#appMenu-help-button ,#appMenu-library-bookmarks-button,#panelMenuBookmarkThisPage,#panelMenu_bookmarkingTools,#panelMenu_searchBookmarks,#panelMenu_toggleBookmarksMenu,#panelMenu_viewBookmarksSidebar,#panelMenu_viewBookmarksToolbar,#appMenu-more-button) .toolbarbutton-icon{
   fill: #336699 !important;
 }
-
-
-/* library */
-#appMenu-library-bookmarks-button .toolbarbutton-icon,
-#panelMenuBookmarkThisPage .toolbarbutton-icon,
-#panelMenu_bookmarkingTools .toolbarbutton-icon,
-#panelMenu_searchBookmarks .toolbarbutton-icon,
-#panelMenu_toggleBookmarksMenu .toolbarbutton-icon,
-#panelMenu_viewBookmarksSidebar .toolbarbutton-icon,
-#panelMenu_viewBookmarksToolbar .toolbarbutton-icon{
-  fill: #336699 !important;
-}
-
-#appMenu-library-history-button .toolbarbutton-icon,
-#appMenuViewHistorySidebar .toolbarbutton-icon,
-#appMenuClearRecentHistory .toolbarbutton-icon,
-#appMenuRecentlyClosedTabs .toolbarbutton-icon,
-#appMenuRecentlyClosedWindows .toolbarbutton-icon{
-  fill: #800080 !important;
-}
-
-#appMenu-library-downloads-button .toolbarbutton-icon,
-#appMenu-library-remotetabs-button .toolbarbutton-icon,
-#PanelUI-remotetabs-view-sidebar .toolbarbutton-icon,
-#PanelUI-remotetabs-view-managedevices .toolbarbutton-icon,
-#PanelUI-remotetabs-syncnow .toolbarbutton-icon{
-  fill: #4169e1 !important;
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-customize-button,#appMenu-help-button ,#appMenu-library-bookmarks-button,#panelMenuBookmarkThisPage,#panelMenu_bookmarkingTools,#panelMenu_searchBookmarks,#panelMenu_toggleBookmarksMenu,#panelMenu_viewBookmarksSidebar,#panelMenu_viewBookmarksToolbar,#appMenu-more-button) .toolbarbutton-icon{
+  fill: #64a3e2 !important;
 }

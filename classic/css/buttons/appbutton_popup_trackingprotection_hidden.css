@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#appMenu-tp-label,
+#appMenu-tp-label + toolbarseparator,
+#appMenu-tp-toggle,
+.sync-ui-item + toolbaritem + toolbarseparator,
+#sync-ui-item + toolbaritem + toolbarseparator{
+  display: none !important;
+}
