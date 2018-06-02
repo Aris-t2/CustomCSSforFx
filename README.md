@@ -69,6 +69,8 @@ Code between `/*` and `*/` won't be used by Firefox unless there are other `/*` 
 
 ## How to find item ids and attributes?
 
+Firefox 57-60  
+
 Enable once:  
 1\. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes  
 2\. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging  
@@ -78,8 +80,20 @@ Hit `Ctrl+Alt+Shift+I` or open 'Tools > WebDeveloper > Browser Toolbox'.
 Inspect ui or web content.  
 
 Force popups to stay open for inspection:  
-Fx57-60: Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.  
-Fx61+: Click on 'Customize Tools and get help button' (= button with three dots) and select 'Disable popup auto-hide'.  
+Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.  
+
+Firefox 61+  
+
+Enable once:  
+1\. Tools > WebDeveloper > Toggle Tools > 'Customize Tools and get help button' (= button with three dots) > Settings > Enable browser chrome and add-on debugging toolboxes  
+2\. Tools > WebDeveloper > Toggle Tools > 'Customize Tools and get help button' (= button with three dots) > Settings > Enable remote debugging  
+
+Hit `Ctrl+Alt+Shift+I` or open 'Tools > WebDeveloper > Browser Toolbox'.  
+
+Inspect ui or web content.  
+
+Force popups to stay open for inspection: 
+Click on 'Customize Tools and get help button' (= button with three dots) and select 'Disable popup auto-hide'.  
 
 ## How to modify custom user styles?
 
