@@ -78,7 +78,8 @@ Hit `Ctrl+Alt+Shift+I` or open 'Tools > WebDeveloper > Browser Toolbox'.
 Inspect ui or web content.  
 
 Force popups to stay open for inspection:  
-Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.  
+Fx57-60: Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.  
+Fx61+: Click on 'Customize Tools and get help button' (= button with three dots) and select 'Disable popup auto-hide'.  
 
 ## How to modify custom user styles?
 
