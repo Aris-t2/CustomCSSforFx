@@ -25,6 +25,15 @@
   fill: #2558ff !important;
 }
 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar :-moz-any(#reader-mode-button,#pageActionButton, #pageAction-urlbar-emailLink,#pageAction-urlbar-sendToDevice,#pageAction-urlbar-screenshots,#pageAction-urlbar-copyURL),
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar .urlbar-history-dropmarker {
+  fill: #00d2ff !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar :-moz-any(#reader-mode-button,#pageActionButton, #pageAction-urlbar-emailLink,#pageAction-urlbar-sendToDevice,#pageAction-urlbar-screenshots,#pageAction-urlbar-copyURL):-moz-any(:hover,:hover:active,[open]),
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar .urlbar-history-dropmarker:-moz-any(:hover,:hover:active,[open]) {
+  fill: #00fcff !important;
+}
+
 /* colorize star button icon */
 #urlbar #pageAction-panel-bookmark:not([starred]),
 #urlbar #star-button:not([starred]) {

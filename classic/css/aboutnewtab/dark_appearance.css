@@ -39,7 +39,8 @@
   #searchWrapper input,
   #newtab-search-container input,
   .search-wrapper input {
-	background: #474749 !important;
+	background: #474749 var(--newtab-search-icon) 8px center/18px no-repeat !important;
+	fill: rgba(194, 194, 194, 0.4) !important;
 	color: #FFF !important;
   }
   .contentSearchHeader,
