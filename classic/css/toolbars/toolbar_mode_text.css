@@ -23,3 +23,9 @@ toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"
 #PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
   visibility: collapse !important;
 }
+
+#main-window #toolbar-menubar toolbaritem .toolbarbutton-1 .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
+  margin-top: -1px !important;
+}

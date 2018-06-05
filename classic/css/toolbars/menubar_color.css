@@ -10,10 +10,18 @@
 
 #toolbar-menubar:not(:-moz-lwtheme) {
   background-image: var(--colored_menubar_background_image) !important;
-  /*border: 1px solid var(--tabs-border-color) !important;
-  border-bottom: 0px !important;*/
   border: 0px !important;
   margin-bottom: -1px !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar {
+  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window #main-menubar {
+  background: none !important;
 }
 
 @media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
@@ -33,4 +41,13 @@
 
 #main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description) {
   color: var(--colored_menubar_text_color) !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #main-menubar > menu > :-moz-any(label,description) {
+  color: white !important;
+}
+
+#main-window  #toolbar-menubar,
+#main-window #main-menubar > menu,
+#main-window #main-menubar {
+  text-shadow: unset !important;
 }

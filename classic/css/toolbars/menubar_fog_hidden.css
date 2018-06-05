@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-/* menubar visibility in fullscreen mode */
+/* menubar - hide fog */
 #main-window #main-menubar {
-  background:none !important;
+  background: none !important;
 }
