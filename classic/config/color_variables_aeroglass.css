@@ -18,7 +18,6 @@
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,rgba(255,255,255,.1),rgba(255,255,255,.3)) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,rgba(255,255,255,.0),rgba(255,255,255,.2)) !important;
   --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,rgba(255,255,255,.0),rgba(255,255,255,.2)) !important;
-  --classic_squared_tabs_unread_tabs: linear-gradient(to top,rgba(255,255,255,.0),rgba(255,255,255,.2)) !important;
   --classic_squared_tabs-border_size: 1px;
   --classic_squared_tabs-border1: rgba(0,0,0,.0) !important;
   --classic_squared_tabs-border2: rgba(0,0,0,.0) !important;

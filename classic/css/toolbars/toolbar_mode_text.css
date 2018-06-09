@@ -24,8 +24,14 @@ toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"
   visibility: collapse !important;
 }
 
+/* menubar corrections */
 #main-window #toolbar-menubar toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 #main-window #toolbar-menubar .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
 #main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
   margin-top: -1px !important;
+}
+
+/* tweak for bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css */
+#main-window #navigator-toolbox #PersonalToolbar #bookmarks-menu-button::after{
+  margin-top: -4px !important;
 }

@@ -56,11 +56,6 @@
   background-image: linear-gradient(to top,transparent,transparent) !important;
 }
 
-/* unread tab */
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[unread] .tab-content {
-  background-image: linear-gradient(to top,transparent,transparent) !important;
-}
-
 /* bold text on selected tab *//*
 .tabbrowser-tab[selected="true"] {
   font-weight: bold !important;

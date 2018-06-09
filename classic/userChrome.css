@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.9.2 ********************************************************************************/
+/* version 1.9.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -57,7 +57,7 @@
   - custom tab appearance / old squared tabs
   - TABS TOOLBAR POSITION
   -- below titlebar / navigation and bookmarks toolbar / main content
-  - TAB TEXT - colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs
+  - TAB TEXT - colors/shadow/weight/style for default/active/hovered/unloaded tabs
   - MULTIROW / multi lined tabs
   - TAB TITLE IN FIREFOX TITLEBAR
   - empty tab favicon / custom tab loading animation / tab close icon settings
@@ -293,10 +293,10 @@
 /************************************************************************************************/
 
 
-/* TAB BACKGROUND COLORS for default/active/hovered/unread/unloaded tabs and 'new tab' tab ******/
+/* TAB BACKGROUND COLORS for default/active/hovered/unloaded tabs and 'new tab' tab *************/
 /* edit target file to set own custom colors ****************************************************/
 /* @import url(./config/custom_tab_color_settings.css); /**/
-/* TAB TEXT colors/shadow/weight/style for default/active/hovered/unread/unloaded tabs **********/
+/* TAB TEXT colors/shadow/weight/style for default/active/hovered/unloaded tabs *****************/
 /* edit target file to set own custom colors ****************************************************/
 /* @import url(./config/custom_tab_text_settings.css); /**/
 

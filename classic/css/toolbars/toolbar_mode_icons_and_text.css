@@ -122,7 +122,7 @@ toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
   display: -moz-box !important;
-  padding: 0 !important;
+  padding: 0 2px !important;
 }
 
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
@@ -132,9 +132,9 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
 }
 
 /* remove min-width to get shorter buttons - button width = text-width */
-#nav-bar toolbaritem .toolbarbutton-1:not([type="menu-button"]),
-#nav-bar .toolbarbutton-1:not([type="menu-button"]),
-#nav-bar .toolbarbutton-1[type="menu-button"] toolbarbutton{
+#nav-bar toolbaritem .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button),
+#nav-bar .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button),
+#nav-bar .toolbarbutton-1[type="menu-button"] toolbarbutton:not(#nav-bar-overflow-button){
   min-width: 57px !important;
 }
 
@@ -172,15 +172,15 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 	}
 }
 
+toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
+toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
+toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
+  opacity: 0.6 !important;
+}
+
 /* menubar tweaks */
 #main-window #toolbar-menubar toolbaritem .toolbarbutton-1,
 #main-window #toolbar-menubar .toolbarbutton-1,
 #main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton{
   padding: 0 3px !important;
-}
-
-#main-window #toolbar-menubar toolbaritem .toolbarbutton-1 .toolbarbutton-text,
-#main-window #toolbar-menubar .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
-#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
-  padding: 0 2px !important;
 }

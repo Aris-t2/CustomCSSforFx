@@ -110,26 +110,4 @@
   font-style: italic !important;
 }
 
-
-/*******************************************/
-/* unread tab ******************************/
-
-/* text color */
-.tabbrowser-tab[unread] .tab-label {
-  color: red !important;
-}
-/* text shadow */
-.tabbrowser-tab[unread] .tab-label {
-  text-shadow:	0px 1px 0px white,
-				0px 1px 4px white !important;
-}
-/*bold*/
-.tabbrowser-tab[unread] .tab-label {
-  font-weight: bold !important;
-}
-/* italic */
-.tabbrowser-tab[unread] .tab-label {
-  font-style: italic !important;
-}
-
 /**/

@@ -18,7 +18,6 @@
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#e7e9f5,#d3d7e5,#e6e9f1,#fdfdfe) !important;
   --classic_squared_tabs_other_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
   --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
-  --classic_squared_tabs_unread_tabs: linear-gradient(to top,#e1e3f0,#c6cddd,#dbdfe9,#ececef) !important;
   --classic_squared_tabs-border_size: 1px;
   --classic_squared_tabs-border1: #5f7181 !important;
   --classic_squared_tabs-border2: rgba(0,0,0,.2) !important;

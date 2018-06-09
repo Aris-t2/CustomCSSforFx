@@ -10,7 +10,6 @@
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#cac7c1,#d5d2cc,#e8e6e2);
   --classic_squared_tabs_other_tabs: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be);
   --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be);
-  --classic_squared_tabs_unread_tabs: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be);
   --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%);
   --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%);
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%);
@@ -69,11 +68,6 @@
   background-image: var(--classic_squared_tabs_unloaded_tabs) !important;
 }
 
-/* unread tabs color */
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[unread] .tab-content {
-  background-image: var(--classic_squared_tabs_unread_tabs) !important;
-}
-
 /* tab border color */
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
@@ -95,9 +89,7 @@
 }
 
 /* new tab icon color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button/*,
-#TabsToolbar:not(:-moz-lwtheme) > #new-tab-button,
-#TabsToolbar:not(:-moz-lwtheme) > toolbarpaletteitem > #new-tab-button*/ {
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button {
   fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
@@ -133,11 +125,11 @@
 /* compact dark lw-theme */
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
-  background-image: linear-gradient(rgba(71,71,71,.99), rgba(71,71,71,.99)) !important;
+  background-image: linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.99)) !important;
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabs-newtab-button:hover:-moz-lwtheme-brighttext,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
-  background-image: linear-gradient(rgba(91,91,91,.99), rgba(91,91,91,.99)) !important;
+  background-image: linear-gradient(rgba(71,71,71,.7), rgba(71,71,71,.7)) !important;
 }
 
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
