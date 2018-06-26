@@ -23,7 +23,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
 #main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
-#main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description),
+/*#main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description),*/
 #main-window:not(:-moz-lwtheme) #PlacesToolbarItems toolbarbutton > :-moz-any(label,description) {
   color: var(--general_toolbar_text_color, inherit) !important;
   text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow, inherit) !important;

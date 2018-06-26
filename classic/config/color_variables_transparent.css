@@ -51,3 +51,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   -moz-appearance: none !important;
   box-shadow: unset !important;
 }
+
+/* menubar */
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > :-moz-any(label,description) {
+  color: var(--general_toolbar_text_color, inherit) !important;
+  text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow, inherit) !important;
+}
