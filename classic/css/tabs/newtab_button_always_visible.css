@@ -3,10 +3,7 @@
 /****************************************************************************************/
 
 
-#tabbrowser-tabs[hasadjacentnewtabbutton]:not([overflow="true"]) ~ #new-tab-button,
-#tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
-#TabsToolbar[customizing="true"] > #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .tabs-newtab-button {
+#new-tab-button {
   visibility: visible !important;
 }
 

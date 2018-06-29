@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.9.5 ********************************************************************************/
+/* version 1.9.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -150,7 +150,7 @@
 
 /* bookmarks toolbar - buttons appearance - only use one at a time ******************************/
 /* old bookmarks toolbar button appearance ******************************************************/
-@import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css); /**/
+@import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css); /**/  /* Windows only */
 /* @import url(./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css); /**/
 /* @import url(./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_items.css); /**/
 
@@ -349,7 +349,7 @@
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
 /* @import url(./css/tabs/default_tabs_round_top_borders.css); /**/
 /* @import url(./css/tabs/default_tabs_tab_containers_full_line.css); /**/
-/* tab backgroound/color settings - only use one at a time **************************************/
+/* tab background/color settings - only use one at a time ***************************************/
 /* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
 /* tab line settings - only use one at a time ***************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/

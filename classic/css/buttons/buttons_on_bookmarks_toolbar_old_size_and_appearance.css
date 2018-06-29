@@ -27,5 +27,11 @@
 	  padding-right: 0px !important;
 	  width: 16px !important;
 	}
+	#PersonalToolbar .scrollbutton-up .toolbarbutton-icon,
+	#PersonalToolbar .scrollbutton-down .toolbarbutton-icon {
+	  padding-left: unset !important;
+	  padding-right: unset !important;
+	  width: unset !important;
+	}
   }
 }
