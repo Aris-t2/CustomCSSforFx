@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.9.6 ********************************************************************************/
+/* version 1.9.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -17,7 +17,6 @@
   \chrome\config\
   \chrome\css\
   \chrome\image\
-  \chrome\xml\
   \chrome\userChrome.css
   \chrome\userContent.css
 
@@ -94,7 +93,7 @@
 /* [!] set global variables for font and tab size options and more inside target file ***********/
 @import url(./config/general_variables.css); /**/
 
-/* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - only use one at a time ************/
+/* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - [only use one at a time] **********/
 /* [!] set own colors for tabs & toolbars inside 'color_variables.css' or use available presets */
 @import url(./config/color_variables.css); /**/  /* <- default 'grey' colors */
 /* @import url(./config/color_variables_aero.css); /**/  /* <- 'AeroBlue' colors (Win 7 Aero) */
@@ -103,7 +102,7 @@
 /* @import url(./config/color_variables_transparent.css); /**/  /* <- (semi-)'transparent' colors */
 /* @import url(./config/color_variables_aeroglass.css); /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
 
-/* Darker "Dark" default theme - only use one at a time *****************************************/
+/* Darker "Dark" default theme - [only use one at a time] ***************************************/
 /* @import url(./css/toolbars/default_dark_theme_darker.css); /**/
 /* @import url(./css/toolbars/default_dark_theme_darker_v2.css); /**/
 
@@ -112,7 +111,7 @@
 /* TOOLBAR BUTTONS ******************************************************************************/
 /************************************************************************************************/
 
-/* navigation toolbar buttons appearance - only use one at a time *******************************/
+/* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); /**/
 /* @import url(./css/buttons/buttons_on_navbar_classic_appearance_v2.css); /**/
 /* @import url(./css/buttons/buttons_on_navbar_glass_appearance.css); /**/
@@ -148,7 +147,7 @@
 /* @import url(./css/buttons/icons_custom_icons_fx45.css); /**/
 /* @import url(./css/buttons/icons_custom_icons_fx45_inverted.css); /**/
 
-/* bookmarks toolbar - buttons appearance - only use one at a time ******************************/
+/* bookmarks toolbar - buttons appearance - [only use one at a time] ****************************/
 /* old bookmarks toolbar button appearance ******************************************************/
 @import url(./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css); /**/  /* Windows only */
 /* @import url(./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css); /**/
@@ -171,7 +170,7 @@
 /* @import url(./css/buttons/back_and_forward_leftclick_history_popup_hidden.css); /**/
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
 
-/* CUSTOM BACK & FORWARD BUTTONS appearance - only use one at a time ****************************/
+/* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar_aero.css); /**/			/* <-- AERO colors */
 /* @import url(./css/buttons/custom_backforward_large_ff2.css); /**/
@@ -212,7 +211,7 @@
 /* @import url(./css/buttons/appbutton_on_navbar_start_position.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_separator_hidden.css); /**/
 
-/* button color - only use one at a time ********************************************************/
+/* button color - [only use one at a time] ******************************************************/
 /* @import url(./css/buttons/appbutton_on_navbar_color_autocolor.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_color_autocolor57p.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_color_orange.css); /**/
@@ -222,7 +221,7 @@
 /* @import url(./css/buttons/appbutton_on_navbar_color_nightly57p.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_color_palemoon.css); /**/
 
-/* button icon - only use one at a time *********************************************************/
+/* button icon - [only use one at a time] *******************************************************/
 /* @import url(./css/buttons/appbutton_on_navbar_icon_white.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_icon_dark.css); /**/
 /* @import url(./css/buttons/appbutton_on_navbar_icon_grey.css); /**/
@@ -236,7 +235,7 @@
 /* button in Firefox titlebar *******************************************************************/
 /************************************************************************************************/
 
-/* button in titlebar - only use one at a time **************************************************/
+/* button in titlebar - [only use one at a time] ************************************************/
 @import url(./css/buttons/appbutton_in_titlebar.css); /**/ /* <-- label only */
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_icon_only_dark.css); /**/
@@ -247,7 +246,7 @@
 /* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_grey.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_label_and_icon_browser_logo.css); /**/
 
-/* button color - only use one at a time ********************************************************/
+/* button color - [only use one at a time] ******************************************************/
 @import url(./css/buttons/appbutton_in_titlebar_autocolor.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_autocolor57p.css); /**/
 /* @import url(./css/buttons/appbutton_in_titlebar_transparent.css); /**/
@@ -263,7 +262,7 @@
 /* TABS - appearance and position ***************************************************************/
 /************************************************************************************************/
 
-/* custom tab appearance - only use one at a time ***********************************************/
+/* custom tab appearance - [only use one at a time] *********************************************/
 @import url(./css/tabs/classic_squared_tabs.css); /**/
 /* @import url(./css/tabs/classic_squared_tabs_australized.css); /**/
 
@@ -276,7 +275,7 @@
 /* TABS TOOLBAR POSITION (below titlebar / below navigation toolbar / below main content) *******/
 /************************************************************************************************/
 
-/* only use one at a time - below titlebar OR below navigation bar OR below main content ********/
+/* [only use one at a time] - below titlebar OR below navigation bar OR below main content ******/
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import url(./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css); /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
@@ -287,7 +286,7 @@
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import url(./css/tabs/tabs_below_main_content.css); /**/  /* <--- EXPERIMENTAL */
-/* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - only use one at a time *******/
+/* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css); /**/			/* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css); /**/  /* <--- EXPERIMENTAL */
 /* @import url(./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css); /**/  /* <--- EXPERIMENTAL */
@@ -301,7 +300,7 @@
 /* edit target file to set own custom colors ****************************************************/
 /* @import url(./config/custom_tab_text_settings.css); /**/
 
-/* MULTIROW / multi lined tabs - only use one at a time *****************************************/
+/* MULTIROW / multi lined tabs - [only use one at a time] ***************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 **********************/
 /* [!] BUG: dragging tabs does not work properly with multi lined tabs **************************/
 /* [!] for v1 see https://00.bulog.jp/archives/1476 *********************************************/
@@ -317,21 +316,21 @@
 /* @import url(./css/tabs/tab_title_in_firefox_titlebar.css); /**/
 /* @import url(./css/tabs/tab_title_in_firefox_titlebar_centered.css); /**/
 
-/* restore empty/missing tab favicon - only use one at a time ***********************************/
+/* restore empty/missing tab favicon - [only use one at a time] *********************************/
 @import url(./css/tabs/missing_tab_favicon_restored_default.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_globe_v2.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_sheet.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_dotted.css); /**/
 /* @import url(./css/tabs/missing_tab_favicon_restored_dotted_white.css); /**/
 
-/* custom tab loading animation - only use one at a time ****************************************/
+/* custom tab loading animation - [only use one at a time] **************************************/
 /* @import url(./css/tabs/tab_throbber_blue_fx56.css); /**/
 /* @import url(./css/tabs/tab_throbber_blue.css); /**/
 /* @import url(./css/tabs/tab_throbber_grey_classic.css); /**/
 /* @import url(./css/tabs/tab_throbber_green.css); /**/
 /* @import url(./css/tabs/tab_throbber_orange_ubuntu.css); /**/
 
-/* tab close icon settings - only use one at a time *********************************************/
+/* tab close icon settings - [only use one at a time] *******************************************/
 @import url(./css/tabs/tab_close_always_visible.css); /**/
 /* @import url(./css/tabs/tab_close_on_active_tab_only.css); /**/
 /* @import url(./css/tabs/tab_close_show_on_hover_only.css); /**/
@@ -340,7 +339,7 @@
 /* @import url(./css/tabs/tab_close_at_tabs_start.css); /**/
 /* @import url(./css/tabs/tab_close_icon_size.css); /**/
 
-/* tab title - only use one at a time ***********************************************************/
+/* tab title - [only use one at a time] *********************************************************/
 /* @import url(./css/tabs/tab_title_left.css); /**/
 /* @import url(./css/tabs/tab_title_centered.css); /**/
 /* @import url(./css/tabs/tab_title_right.css); /**/
@@ -349,9 +348,9 @@
 /* @import url(./css/tabs/default_tabs_tab_border.css); /**/
 /* @import url(./css/tabs/default_tabs_round_top_borders.css); /**/
 /* @import url(./css/tabs/default_tabs_tab_containers_full_line.css); /**/
-/* tab background/color settings - only use one at a time ***************************************/
+/* tab background/color settings - [only use one at a time] *************************************/
 /* @import url(./css/tabs/default_tabs_tab_background_appearance.css); /**/
-/* tab line settings - only use one at a time ***************************************************/
+/* tab line settings - [only use one at a time] *************************************************/
 /* @import url(./css/tabs/default_tabs_no_tab_line.css); /**/
 /* @import url(./css/tabs/default_tabs_static_tab_line.css); /**/
 /* @import url(./css/tabs/default_tabs_tab_line_purple_in_private_mode.css); /**/
@@ -382,7 +381,7 @@
 /* @import url(./css/generalui/increase_ui_font_size.css); /**/
 /* @import url(./css/generalui/flex_space_on_navbar_replace_with_separator.css); /**/
 
-/* overflow menu - only use one at a time *******************************************************/
+/* overflow menu - [only use one at a time] *****************************************************/
 /* @import url(./css/generalui/overflow_menu_remove_text.css); /**/
 /* @import url(./css/generalui/overflow_menu_horizontal_remove_text.css); /**/
 
@@ -390,7 +389,7 @@
 /* @import url(./css/generalui/sidebar_width_unrestricted.css); /**/
 /* @import url(./css/generalui/sidebar_header_icons_colorized.css); /**/
 /* @import url(./css/generalui/sidebar_header_lwtheme.css); /**/
-/* sidebar appearance - only use one at a time **************************************************/
+/* sidebar appearance - [only use one at a time] ************************************************/
 /* @import url(./css/generalui/sidebar_appearance_dark.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_lwtheme_bright.css); /**/
 /* @import url(./css/generalui/sidebar_appearance_lwtheme_dark.css); /**/
@@ -398,19 +397,19 @@
 /* findbar **************************************************************************************/
 /* @import url(./css/generalui/findbar_on_top.css); /**/
 /* @import url(./css/generalui/findbar_show_full_quickfindbar.css); /**/
-/* findbar - close icon position - only use one at a time ***************************************/
+/* findbar - close icon position - [only use one at a time] *************************************/
 /* @import url(./css/generalui/findbar_on_top_close_at_findbars_start.css); /**/
 /* @import url(./css/generalui/findbar_on_bottom_close_at_findbars_start.css); /**/
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
 /* @import url(./css/generalui/context_bfrsb_icons_colorized.css); /**/
-/* menuitem labels - only use one at a time *****************************************************/
+/* menuitem labels - [only use one at a time] ***************************************************/
 @import url(./css/generalui/context_bfrsb_labels_without_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_icons.css); /**/
 /* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOS.css); /**/		/* <-- Lin/macOS fix v1 */
 /* @import url(./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOSv2.css); /**/		/* <-- Lin/macOS fix v2 */
 
-/* close icons for general ui and tabs - only use one at a time *********************************/
+/* close icons for general ui and tabs - [only use one at a time] *******************************/
 /* @import url(./css/generalui/close_icon_windows7.css); /**/
 /* @import url(./css/generalui/close_icon_windows7inverted.css); /**/
 /* @import url(./css/generalui/close_icon_windows7v2.css); /**/
@@ -426,7 +425,7 @@
 @import url(./css/generalui/searchbar_glassplus_indicator_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_go_button_hidden.css); /**/
 
-/* search engine settings - only use one at a time **********************************************/
+/* search engine settings - [only use one at a time] ********************************************/
 /* @import url(./css/generalui/searchbar_popup_engines_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css); /**/
@@ -476,6 +475,7 @@
 
 /* MENUBAR **************************************************************************************/
 /* @import url(./css/toolbars/menubar_fog_hidden.css); /**/
+/* @import url(./css/toolbars/menubar_alternative_menu_hover_color.css); /**/
 /* @import url(./css/toolbars/menubar_in_fullscreen_mode.css); /**/
 /* menubar color - ******************************************************************************/
 /* @import url(./css/toolbars/menubar_color.css); /**/
@@ -502,10 +502,10 @@
 /* Windows 10 fix for Glass8 - Glass8 required for 'Windows 7'-like window transparency */
 /* @import url(./css/toolbars/general_toolbar_colors_aeroglass_windows10_glass8.css); /**/  /* <--- EXPERIMENTAL */
 
-/* TOOLBAR TEXT MODES - only use one at a time **************************************************/
+/* TOOLBAR TEXT MODES - [only use one at a time] ************************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text.css); /**/
 /* @import url(./css/toolbars/toolbar_mode_text.css); /**/
-/* [!] FIX FOR macOS / alternative appearance for Linux *****************************************/
+/* [!] FIX for macOS / alternative appearance for Linux *****************************************/
 /* @import url(./css/toolbars/toolbar_mode_icons_and_text_and_text_only_macOS_fix.css); /**/	/* <-- macOS fix */
 
 
@@ -525,7 +525,7 @@
 @import url(./css/locationbar/identitybox_colors.css); /**/
 /* @import url(./css/locationbar/identitybox_labels_hidden.css); /**/
 
-/* padlock icons in identity box / page identity button - only use one at a time ****************/
+/* padlock icons in identity box / page identity button - [only use one at a time] **************/
 @import url(./css/locationbar/identitybox_padlock_icon_classic.css); /**/
 /* @import url(./css/locationbar/identitybox_padlock_icon_classic2.css); /**/
 /* @import url(./css/locationbar/identitybox_padlock_icon_modern.css); /**/
@@ -545,8 +545,10 @@
 /* @import url(./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css); /**/
 
 /* star button **********************************************************************************/
-/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
 @import url(./css/locationbar/starbutton_is_last_pageaction_button.css); /**/
+/* alternative yellow star icon - [only use one at a time] **************************************/
+/* @import url(./css/locationbar/starbutton_alternative_icon.css); /**/
+/* @import url(./css/locationbar/starbutton_alternative_icon_v2.css); /**/
 
 /* autocomplete / history dropmarker ************************************************************/
 @import url(./css/locationbar/dropmarker_at_the_end.css); /**/
@@ -554,20 +556,20 @@
 
 
 /************************************************************************************************/
-/* LOCATION BAR - 'autocomplete popup' appearance ***********************************************/
+/* LOCATION BAR - appearance of 'autocomplete / location bar / urlbar' popup ********************/
 /************************************************************************************************/
 
-/* NOTE: 'Classic popup with two lined results' will stop working soon when Mozilla drops XBL ****
-		 support. See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 **********************/
-		 
-/* [!] 'Classic popup with two lined results' removes 'oneoff' searches at popups bottom ********/
-/* popup content order/appearance - only use one at a time **************************************/
-/* @import url(./css/locationbar/ac_popup_classic_with_two_lines.css); /**/
-/* @import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css); /**/
+/* popup content order/appearance - [only use one at a time] ************************************/
 @import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css); /**/
+/* @import url(./css/locationbar/ac_popup_title_and_url_50percent_width.css); /**/
 /* @import url(./css/locationbar/ac_popup_item_title_hidden.css); /**/
 /* @import url(./css/locationbar/ac_popup_item_title_visible_on_hover_only.css); /**/
- 
+/* [!] 'Classic popup with two lined results' removes 'oneoff' searches at popups bottom! *******/
+/* [!] It will stop working soon when Mozilla drops XBL support. ********************************/
+/* [!] See 'De-XBL' bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************/
+/* [!] 'Classic popup with two lined results' throws unfixable warnings in 'error console'. *****/
+/* @import url(./css/locationbar/ac_popup_classic_with_two_lines.css); /**/  /* <--- old autocomplete popup */
+
 /* result menuitem settings/appearance **********************************************************/
 /* @import url(./css/locationbar/ac_popup_firefox_background_logo.css); /**/
 /* @import url(./css/locationbar/ac_popup_result_highlighting_aero.css); /**/
@@ -580,8 +582,8 @@
 /* hide 'Search with...' and 'Visit...' results *************************************************/
 /* - browser preferences: disable 'show search suggestions inside address bar results' **********/
 /* - hide bottom search engines: about:config > browser.urlbar.oneOffSearches > false ***********/
-/* [!] Hiding will not work properly in all cases. An empty box will sometimes be visible *******/
-/* [!] Suggested to additionally use above custom popup height and more result items ************/
+/* [!] Hiding will not work properly in all cases. Sometimes an empty box will be visible. ******/
+/* [!] Suggested to use aboves 'custom popup height' and to increase amount of result items. ****/
 /* @import url(./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css); /**/  /* <--- EXPERIMENTAL */
 
 

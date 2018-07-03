@@ -12,7 +12,6 @@
   \chrome\config\
   \chrome\css\
   \chrome\image\
-  \chrome\xml\
   \chrome\userChrome.css
   \chrome\userContent.css
 
@@ -44,11 +43,11 @@
 /* version number for add-ons *******************************************************************/
 @import url(./css/aboutaddons/addonlists_show_addon_version_number.css); /**/
 
-/* addons page appearance - only use one at a time **********************************************/
+/* addons page appearance - [only use one at a time] ********************************************/
 @import url(./css/aboutaddons/addons_manager_alternative_appearance.css); /**/
 /* @import url(./css/aboutaddons/addons_manager_alternative_appearance_aero.css); /**/	/* <-- AERO colors */
 
-/* compact item lists - only use one at a time **************************************************/
+/* compact item lists - [only use one at a time] ************************************************/
 /* @import url(./css/aboutaddons/addonlists_compact.css); /**/
 /* @import url(./css/aboutaddons/addonlists_compact_more_compact.css); /**/
 
@@ -66,7 +65,7 @@
 /* about:preferences ****************************************************************************/
 /************************************************************************************************/
 
-/* preferences page appearance - only use one at a time *****************************************/
+/* preferences page appearance - [only use one at a time] ***************************************/
 @import url(./css/aboutpreferences/preferences_alternative_appearance.css); /**/
 /* @import url(./css/aboutpreferences/preferences_alternative_appearance_aero.css); /**/	/* <-- AERO colors */
 /* @import url(./css/aboutpreferences/preferences_alternative_appearance_v2.css); /**/
@@ -84,11 +83,12 @@
 /* WEB CONTENT **********************************************************************************/
 /************************************************************************************************/
 
-/* top level image on white background (can sometimes cause glitches) - only use one at a time **/
+/* top level image on white background - [only use one at a time] *******************************/
+/* [!] this settings can sometimes cause glitches ***********************************************/
 /* @import url(./css/webcontent/toplevel_image_classic_v1.css); /**/
 /* @import url(./css/webcontent/toplevel_image_classic_v2.css); /**/
 
-/* Screenshots - internal add-on ****************************************************************/
+/* Screenshots - internal browser add-on ********************************************************/
 /* @import url(./css/webcontent/screenshots_alternative_save_ui.css); /**/
 
 
