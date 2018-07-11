@@ -7,7 +7,7 @@ SUPPORT AREA for features THIS project provides
 --> https://github.com/Aris-t2/CustomCSSforFx/issues/4
 3. Make sure there are no '@namespace' references anywhere in your code. They cause CSS code not to work in some cases.
 4. Do not open a new issue about something this project does not offer. Instead join the 'General discussions, feedback, questions belong here' thread to chat and ask questions about what is or could be possible there.
---> https://github.com/Aris-t2/CustomCSSforFx/issues/109
+--> https://github.com/Aris-t2/CustomCSSforFx/issues/133
 5. Use available support threads:
 - TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
 - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/39
