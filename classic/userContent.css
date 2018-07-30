@@ -15,8 +15,8 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * before '@import'.
-  DISABLING options: add the combination of / and * before '@import'.
+  ENABLING options: remove the combination of / and * before '@import'
+  DISABLING options: add the combination of / and * before '@import'
 
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' calls might not work properly on macOS and Linux

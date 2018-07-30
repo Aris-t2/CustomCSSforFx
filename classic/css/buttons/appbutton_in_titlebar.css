@@ -151,7 +151,7 @@
   -moz-margin-end: -90px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button::after {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button::after {
   display: block !important;
   color: white !important;
   font-weight: bold !important;
@@ -163,39 +163,39 @@
   box-shadow: unset !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button::after {
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button::after {
   margin-bottom: 0px !important;
 }
 
 /* 'Firefox' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox"]::after,
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox"]::after,
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
   content: "Firefox" !important;
   -moz-margin-start: -6px !important;
 }
 
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox"]::after,
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox"]::after,
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
   -moz-margin-start: -12px !important;
 }
 
 /* 'DevFox' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
   content: "DevFox" !important;
   -moz-margin-start: -9px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
   -moz-margin-start: -15px !important;
 }
 
 /* 'Nightly' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Nightly"]::after,
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Nightly"]::after {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Nightly"]::after,
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox Nightly"]::after {
   content: "Nightly" !important;
   -moz-margin-start: -6px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Nightly"]::after,
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Nightly"]::after {
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Nightly"]::after,
+#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button[label="Firefox Nightly"]::after {
   -moz-margin-start: -12px !important;
 }
 

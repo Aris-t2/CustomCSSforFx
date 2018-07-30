@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.9.8 ********************************************************************************/
+/* version 1.9.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -20,20 +20,20 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * before '@import'.
-  DISABLING options: add the combination of / and * before '@import'.
+  ENABLING options: remove the combination of / and * before '@import'
+  DISABLING options: add the combination of / and * before '@import'
 
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' calls might not work properly on macOS and Linux
   - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
   - in both cases CSS code has to be added to userChrome.css file manually
 
-  MACOS issues / glitches / fixes -> look for 'macOS fix'
+  macOS issues / glitches / fixes -> look for 'macOS fix' additions inside this file
   - tabs toolbar spaces in 'toolbars' category
   - tabs not on top mode in 'tabs toolbar position' category
   - page context items in 'general ui' category
 
-  Some CSS tweaks won't work, if '@namespace' references are used inside .css files!
+  Some CSS tweaks won't work, if '@namespace' references are used inside '.css' files!
 
   EXPERIMENTAL settings are for testing only!
   
@@ -120,13 +120,20 @@
 /* navigation toolbar buttons - button roundness (edit file to set different roundness) *********/
 /* @import url(./css/buttons/buttons_on_navbar_button_roundness.css); /**/
 
-/* squared buttons (rectangular shape) **********************************************************/
+/* squared buttons / button size - [only use one at a time] *************************************/
+/* rectangular shape - normal size **************************************************************/
 /* @import url(./css/buttons/buttons_on_navbar_squared_buttons.css); /**/
+/* normal shape - large size (huge 48x48px buttons with 36x36px icons) **************************/
+/* [!] not compatible with 'custom icon' options ************************************************/
+/* [!] not compatible with 'custom back & forward buttons' appearance options *******************/
+/* [!] not compatible with 'text mode' option ***************************************************/
+/* [!] partly compatible with 'icons+text' option, if in 'compact mode' *************************/
+/* @import url(./css/buttons/butons_on_navbar_huge_48px_size.css); /**/			/* <--- EXPERIMENTAL */
 
-/* smaller buttons in 'compact' mode - Classic Toolbar button add-ons 'small buttons' mode ******/
+/* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode *****/
 /* @import url(./css/buttons/buttons_on_navbar_more_compact_mode.css); /**/
 
-/* icon appearance - only use one at a time (custom icons do not scale in HiDPI modes) **********/
+/* icon appearance - [only use one at a time] (custom icons do not scale in HiDPI modes) ********/
 @import url(./css/buttons/icons_colorized.css); /**/
 /* @import url(./css/buttons/icons_white_icons.css); /**/
 /* @import url(./css/buttons/icons_custom_icons.css); /**/  /* aka "Mozilla Mix" from CTB */
@@ -594,4 +601,3 @@
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/
-

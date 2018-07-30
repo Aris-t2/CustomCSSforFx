@@ -3,6 +3,7 @@
 /****************************************************************************************/
 
 
+#editBMPanel_chooseFolderMenuItem .menu-iconic-icon,
 treechildren::-moz-tree-image(title, container) {
  list-style-image: url("./../../image/folder-item.png")!important;
  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
@@ -17,16 +18,22 @@ treechildren::-moz-tree-image(title, container, livemark) {
  -moz-image-region: auto !important;
 }
 
+#editBMPanel_folderMenuList:-moz-any([label="Bookmarks Toolbar"],[label="Lesezeichen-Symbolleiste"]) .menulist-icon,
+#editBMPanel_toolbarFolderItem .menu-iconic-icon,
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
  list-style-image: url("./../../image/bookmarksToolbar.png") !important;
  -moz-image-region: auto !important;
 }
 
+#editBMPanel_folderMenuList:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"]) .menulist-icon,
+#editBMPanel_bmRootItem .menu-iconic-icon,
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
  list-style-image: url("./../../image/bookmarksMenu.png") !important;
  -moz-image-region: auto !important;
 }
 
+#editBMPanel_folderMenuList:-moz-any([label="Other Bookmarks"],[label="Weitere Lesezeichen"]) .menulist-icon,
+#editBMPanel_unfiledRootItem .menu-iconic-icon,
 treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
  list-style-image: url("./../../image/unsortedBookmarks.png") !important;
  -moz-image-region: auto !important;
