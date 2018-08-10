@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 1.9.9 ********************************************************************************/
+/* version 2.0.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -432,7 +432,9 @@
 @import url(./css/generalui/searchbar_glassplus_indicator_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_go_button_hidden.css); /**/
 
-/* search engine settings - [only use one at a time] ********************************************/
+/* searchbar popup ******************************************************************************/
+/* @import url(./css/generalui/searchbar_popup_current_engine_hidden.css); /**/
+/* searchbar popup - search engine settings - [only use one at a time] **************************/
 /* @import url(./css/generalui/searchbar_popup_engines_hidden.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels.css); /**/
 /* @import url(./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css); /**/
@@ -575,7 +577,9 @@
 /* [!] It will stop working soon when Mozilla drops XBL support. ********************************/
 /* [!] See 'De-XBL' bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************/
 /* [!] 'Classic popup with two lined results' throws unfixable warnings in 'error console'. *****/
+/* [!] Code changes for Firefox 63 are not backwards compatible with Fx 60+62. ******************/
 /* @import url(./css/locationbar/ac_popup_classic_with_two_lines.css); /**/  /* <--- old autocomplete popup */
+/* @import url(./css/locationbar/ac_popup_classic_with_two_lines_fx63.css); /**/  /* <--- old autocomplete popup for Fx 63+ */
 
 /* result menuitem settings/appearance **********************************************************/
 /* @import url(./css/locationbar/ac_popup_firefox_background_logo.css); /**/

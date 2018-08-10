@@ -3,42 +3,13 @@
 /****************************************************************************************/
 
 
-/*
-#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) {
-  min-height: 180px !important;
-  height: auto !important;
-}*/
+#PopupSearchAutoComplete .search-panel-tree {
+  display: block !important;
+  width: 100% !important;
+}
 
-/* catch all cases 'manually' */
-#PopupSearchAutoComplete .search-panel-tree[height="180"]:not([collapsed="true"]) {
-  min-height: 180px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="162"]:not([collapsed="true"]) {
-  min-height: 162px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="144"]:not([collapsed="true"]) {
-  min-height: 144px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="126"]:not([collapsed="true"]) {
-  min-height: 126px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="108"]:not([collapsed="true"]) {
-  min-height: 108px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="90"]:not([collapsed="true"]) {
-  min-height: 90px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="72"]:not([collapsed="true"]) {
-  min-height: 72px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="54"]:not([collapsed="true"]) {
-  min-height: 54px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="36"]:not([collapsed="true"]) {
-  min-height: 36px !important;
-}
-#PopupSearchAutoComplete .search-panel-tree[height="18"]:not([collapsed="true"]) {
-  min-height: 18px !important;
+#PopupSearchAutoComplete .search-panel-tree *[anonid="main-box"] {
+  width: 100%;
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item {
@@ -47,6 +18,8 @@
   width: 100% !important;
   border: unset !important;
   height: 22px !important;
+  background-image: unset !important;
+  -moz-padding-start: 3px !important;
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item:not([tooltiptext]) {
@@ -65,8 +38,13 @@
   content: attr(tooltiptext) !important;
   position: relative !important;
   top: -9px !important;
-  -moz-padding-start: 24px !important;
+  -moz-padding-start: 25px !important;
   min-width: 0 !important;
   width: 100% !important;
   white-space: nowrap !important;
+}
+
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-richlistitem > .ac-type-icon {
+  -moz-padding-end: 0px !important;
+  -moz-margin-end: -3px !important;
 }

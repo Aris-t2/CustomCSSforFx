@@ -13,4 +13,5 @@
   height: var(--search-one-offs_lables_height) !important;
   max-height: var(--search-one-offs_lables_height) !important;
   overflow-y: scroll !important;
+  overflow-x: hidden !important;
 }

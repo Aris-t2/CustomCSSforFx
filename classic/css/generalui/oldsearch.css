@@ -105,6 +105,7 @@ searchbar .searchbar-textbox {
   margin-inline-start: unset !important;
 }
 
+#PopupSearchAutoComplete .search-panel-tree > .autocomplete-richlistitem[originaltype="fromhistory"] > .ac-type-icon,
 #PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory),
 #PopupSearchAutoComplete .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory, selected) {
   list-style-image: unset !important;
