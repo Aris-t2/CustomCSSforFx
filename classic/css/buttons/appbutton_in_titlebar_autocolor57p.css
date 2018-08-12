@@ -4,27 +4,27 @@
 
 
 /* DeveloperEdition colors (Fx57+) [label="Firefox Developer Edition"] */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"] {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"] {
   background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
 }
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:not(:active):not([open]){
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
 					linear-gradient(#0067de, #2398ff,#03daff) !important;
 }
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:-moz-any(:hover:active,[open]){
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:-moz-any(:hover:active,[open]){
   background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
 }
 
 /* Nightly colors (Fx57+) [label="Nightly"] */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]) {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]) {
   background-image: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
 }
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):hover:not(:active):not([open]) {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):hover:not(:active):not([open]) {
   background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
 					linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
 }
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):-moz-any(:hover:active,[open]) {
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button #PanelUI-menu-button:-moz-any([label="Nightly"],[label="Firefox Nightly"]):-moz-any(:hover:active,[open]) {
   background-image: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
 }

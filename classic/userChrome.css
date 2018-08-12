@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.0 ********************************************************************************/
+/* version 2.0.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -114,7 +114,7 @@
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); /**/
 /* @import url(./css/buttons/buttons_on_navbar_classic_appearance_v2.css); /**/
-/* @import url(./css/buttons/buttons_on_navbar_glass_appearance.css); /**/
+/* @import url(./css/buttons/buttons_on_navbar_glass_appearance.css);			/* <--- good for Dark themes */
 /* @import url(./css/buttons/buttons_on_navbar_osx_appearance.css); /**/
 
 /* navigation toolbar buttons - button roundness (edit file to set different roundness) *********/
