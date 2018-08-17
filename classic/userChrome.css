@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.1 ********************************************************************************/
+/* version 2.0.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -451,7 +451,10 @@
 /* [!] Shift + click on search glass: search opens in a new window ******************************/
 /* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 *********************/
-/* @import url(./css/generalui/oldsearch.css); /**/
+/* [!] Code changes in Firefox 61-63 are not backwards compatible with Fx 60. *******************/
+/* [!] Firefox 61 and 62 are compatible with both options code wise. ****************************/
+/* @import url(./css/generalui/oldsearch60.css); /**/  /*  <--- use this for Fx 60-62 */
+/* @import url(./css/generalui/oldsearch.css); /**/  /*  <--- use this for Fx 61-63+ */
 
 /* MENUBARS bookmarks popup (not compatible to macOS/Linux) *************************************/
 /* @import url(./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css); /**/

@@ -18,7 +18,11 @@
 }
 
 /* this is an experiment not meant for every day use */
-/* values might need adjustment in many different cases */
+/* values might need adjustment for different toolbar content */
+
+#browser-bottombox {
+  margin-bottom: var(--space_below_content) !important;
+}
 
 #TabsToolbar {
   position: fixed !important;
@@ -34,11 +38,15 @@
 }
 
 #main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs:not([overflow="true"]){
-  width: calc(100% - 60px) !important;
+  width: calc(100% - 0px) !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs[overflow="true"] {
+  width: calc(100% - 20px) !important;
 }
 
 #main-window:not([customizing]) #TabsToolbar[currentset*="tabbrowser-tabs,new-tab-button,alltabs-button"] #tabbrowser-tabs[overflow="true"] {
-  width: calc(100% - 60px) !important;
+  width: calc(100% - 40px) !important;
 }
 
 #main-window #navigator-toolbox #TabsToolbar > toolbarpaletteitem,
@@ -58,30 +66,11 @@
   height: 18px !important;
 }
 
-#TabsToolbar #window-controls {
-  position: fixed !important;
-  bottom: 4px !important;
-}
-
-#TabsToolbar #window-controls:-moz-locale-dir(ltr) {
-  right: 0 !important;
-}
-#TabsToolbar #window-controls:-moz-locale-dir(rtl) {
-  left: 0 !important;
-}
-
-#main-window[sizemode="fullscreen"] #TabsToolbar {
-  -moz-padding-end: 50px !important;
-}
-
-#browser-bottombox{
-  margin-bottom: var(--space_below_content) !important;
-}
-
-/* Fx58+ titlebar placeholders */
+#TabsToolbar .private-browsing-indicator,
+#TabsToolbar #window-controls,
 #TabsToolbar .titlebar-placeholder[type="caption-buttons"],
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"],
-#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
   display: none !important;
 }
 
@@ -95,11 +84,16 @@
 
 /* make sure toolbar buttons do not increase toolbar height */
 #TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
-#TabsToolbar > toolbarpaletteitem,
-#TabsToolbar > toolbarbutton {
+#TabsToolbar > toolbarpaletteitem {
   min-height: unset !important;
   padding: unset !important;
   margin: 0 2px !important;
+}
+
+#TabsToolbar > toolbarbutton {
+  min-height: unset !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #TabsToolbar > toolbarpaletteitem .toolbarbutton-icon,
@@ -113,14 +107,14 @@
 }
 
 /* width of new tab tab */
-#TabsToolbar .tabs-newtab-button{
+#TabsToolbar .tabs-newtab-button {
   min-width: 0px !important;
   width: 28px !important;
   margin-bottom: -1px !important;
 }
 
 /* size of new tab tabs '+' icon */
-.tabs-newtab-button .toolbarbutton-icon{
+.tabs-newtab-button .toolbarbutton-icon {
   min-width: 0px !important;
   min-height: 0px !important;
   width: 14px !important;
