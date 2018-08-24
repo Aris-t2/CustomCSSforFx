@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.2 ********************************************************************************/
+/* version 2.0.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -176,6 +176,7 @@
 /* @import url(./css/buttons/back_and_forward_separated_history_popups.css); /**/
 /* @import url(./css/buttons/back_and_forward_leftclick_history_popup_hidden.css); /**/
 /* @import url(./css/buttons/zoom_buttons_hide_reset.css); /**/
+/* @import url(./css/buttons/overflow_button_rotate_on_open.css); /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import url(./css/buttons/custom_backforward_connected_to_location_bar.css); /**/

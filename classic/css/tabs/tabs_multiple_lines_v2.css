@@ -9,7 +9,6 @@
 /* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /****************************************************************************************/
 
-
 :root {
   --tabs-lines: 3; /* 3 rows, increase for more */
   --tab_min_width_mlt: 80px;
@@ -30,6 +29,7 @@
 .tabs-newtab-button {
   vertical-align: bottom !important;
   height: var(--tab-min-height_mlt);
+  margin-bottom: -1px !important;
 }
 
 .tab-stack {
@@ -81,4 +81,17 @@
 
 #TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
   -moz-padding-end: 0px !important;
+}
+
+/* remove crap set by Firefox 58+ */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  opacity: 0 !important;
 }

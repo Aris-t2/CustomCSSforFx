@@ -54,6 +54,7 @@
 .tabs-newtab-button {
   vertical-align: bottom !important;
   height: var(--mltabs-newtab-height) !important;
+  margin-bottom: -1px !important;
 }
 
 @media (-moz-windows-classic) {
@@ -89,4 +90,17 @@
 
 #TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
   -moz-padding-end: 0px !important;
+}
+
+/* remove crap set by Firefox 58+ */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  opacity: 0 !important;
 }
