@@ -58,7 +58,7 @@
           <xul:image class="search-go-button"
                      anonid="search-go-button"
                      onclick="handleSearchCommand(event);"
-                     tooltiptext=" "/>
+                     tooltiptext="&contentSearchSubmit.tooltip;"/>
         </xul:hbox>
       </xul:textbox>
     </content>

@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(ac_popup_classic_with_two_lines.css);
+@import "ac_popup_classic_with_two_lines.css";
 
 @-moz-document url(chrome://browser/content/browser.xul) {
 

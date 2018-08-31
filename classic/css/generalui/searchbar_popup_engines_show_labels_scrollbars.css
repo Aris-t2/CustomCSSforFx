@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./searchbar_popup_engines_show_labels.css);
+@import "./searchbar_popup_engines_show_labels.css";
 
 :root {
   --search-one-offs_lables_height: 200px;

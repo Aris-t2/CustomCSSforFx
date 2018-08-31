@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./tabs_below_navigation_toolbar.css);
+@import "./tabs_below_navigation_toolbar.css";
 
 :root {
   --space_below_content: 33px;

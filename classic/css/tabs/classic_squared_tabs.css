@@ -31,9 +31,9 @@
 
 
 /* remove default tab colors */
-#TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab[visuallyselected="true"],
-#TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab,
-#TabsToolbar:not(:-moz-lwtheme)  .tabbrowser-tab .tab-background {
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-background {
   background: unset !important;
   border: unset !important;
 }

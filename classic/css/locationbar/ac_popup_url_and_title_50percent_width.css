@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./ac_popup_title_and_url_50percent_width.css);
+@import "./ac_popup_title_and_url_50percent_width.css";
 
 /* To hide search engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/

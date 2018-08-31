@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(oldsearch.css);
+@import "oldsearch.css";
 
 searchbar {
   -moz-binding: url("./oldsearch60.xml#searchbar") !important;

@@ -137,6 +137,26 @@ html[lang="ru"] > body > div.highlight > div.highlight-buttons > button.highligh
   content: "Загрузить" !important;
 }
 
+/* Chinese by Crystal-RainSlide */
+html[lang="zh-CN"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
+html[lang="zh-CN"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "保存" !important;
+}
+
+html[lang="zh-CN"] > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html[lang="zh-CN"] > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "上传" !important;
+}
+
+html:-moz-any([lang="zh-TW"],[lang="zh-HK"]) > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after,
+html:-moz-any([lang="zh-TW"],[lang="zh-HK"]) > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download::after {
+  content: "保存" !important;
+}
+
+html:-moz-any([lang="zh-TW"],[lang="zh-HK"]) > body > div.preview-overlay > div.preview-image > div.preview-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.preview-button-save::after,
+html:-moz-any([lang="zh-TW"],[lang="zh-HK"]) > body > div.highlight > div.highlight-buttons > button.highlight-button-cancel + button.highlight-button-copy + button.highlight-button-download + button.highlight-button-save::after {
+  content: "上傳" !important;
+}
 
 /* test: wrapping buttons *//*
 body > div.highlight > div.highlight-buttons,

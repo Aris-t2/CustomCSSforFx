@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./custom_backforward_connected_to_location_bar.css);
+@import "./custom_backforward_connected_to_location_bar.css";
 
 /* color has to be adjusted depending toolbar color */
 

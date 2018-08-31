@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./toolbar_mode_icons_and_text.css);
+@import "./toolbar_mode_icons_and_text.css";
 
 
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),

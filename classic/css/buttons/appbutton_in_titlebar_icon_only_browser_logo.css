@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_in_titlebar_icon_only.css);
+@import "./appbutton_in_titlebar_icon_only.css";
 
 /* dropmarker icon / arrow */
 #main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {

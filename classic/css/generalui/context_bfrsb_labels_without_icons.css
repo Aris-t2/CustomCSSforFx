@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./context_bfrsb_labels_with_icons.css);
+@import "./context_bfrsb_labels_with_icons.css";
 
 :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
   opacity: 0 !important;

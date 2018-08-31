@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./preferences_alternative_appearance.css);
+@import "./preferences_alternative_appearance.css";
 
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 

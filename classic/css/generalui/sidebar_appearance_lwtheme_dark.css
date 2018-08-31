@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./css/generalui/sidebar_header_lwtheme.css);
+@import "./css/generalui/sidebar_header_lwtheme.css";
 
 /* Fix for remaining hovering borders */
 .sidebar-placesTreechildren::-moz-tree-row {

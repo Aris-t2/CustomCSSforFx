@@ -2,13 +2,12 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import "./addonlists_compact.css";
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+/* remove arrow from panel popup */
+.panel-arrowbox {
+  visibility: collapse !important;
+}
 
-	.addon{
-	  padding-top: unset !important;
-	  padding-bottom: unset !important;
-	}
-
+.panel-arrow{
+  display:none !important;
 }

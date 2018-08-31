@@ -62,9 +62,17 @@ searchbar .searchbar-textbox {
   fill: #5b5b5b !important;
 }
 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext .searchbar-dropmarker-image {
+  fill: #ffffff !important;
+}
+
 .searchbar-engine-button[open="true"] > .searchbar-dropmarker-image {
   fill: #658dd7 !important;
   background: radial-gradient(rgba(91,91,91,0.2), transparent, transparent) !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext .searchbar-engine-button[open="true"] .searchbar-dropmarker-image {
+  fill: #7de7ff !important;
 }
 
 .search-go-button {

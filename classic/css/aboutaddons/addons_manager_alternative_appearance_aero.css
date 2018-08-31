@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./addons_manager_alternative_appearance.css);
+@import "./addons_manager_alternative_appearance.css";
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
 				url-prefix(about:addons) {

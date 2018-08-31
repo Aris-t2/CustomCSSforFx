@@ -4,7 +4,7 @@
 
 
 /* import old button/bookmark size code */
-@import url(./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css);
+@import "./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css";
 
 :root {
   --bookmark_items_height: 26px; /* <- bookmark items - line height */

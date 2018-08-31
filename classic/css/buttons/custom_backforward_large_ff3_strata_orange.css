@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./custom_backforward_large.css);
+@import "./custom_backforward_large.css";
 
 /* custom large back-forward buttons */
 #main-window toolbox toolbar :-moz-any(#back-button, #forward-button) .toolbarbutton-icon {

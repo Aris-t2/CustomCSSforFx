@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import url(./tabs_below_navigation_toolbar_higher_navbar_positon.css);
+@import "./tabs_below_navigation_toolbar_higher_navbar_positon.css";
 
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar #nav-bar-customization-target {
   -moz-padding-start: 60px !important;

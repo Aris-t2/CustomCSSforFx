@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import url(./appbutton_on_navbar_color_base.css);
+@import "./appbutton_on_navbar_color_base.css";
 
 /* deved */
 #nav-bar #PanelUI-menu-button  :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text) {
