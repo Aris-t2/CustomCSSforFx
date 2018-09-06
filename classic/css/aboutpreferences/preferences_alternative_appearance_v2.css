@@ -165,15 +165,15 @@
 	}
 
 	/* buttons / menulists */
-	button:not(.button-link):not(.close-icon),
-	menulist{
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle),
+	menulist {
 	  min-height: unset !important;
 	  height: unset !important;
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	
-	button:not(.button-link):not(.close-icon){
-	  padding:0px !important;
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
+	  padding: 0px !important;
 	}
 	menulist{
 	  padding:2px !important;

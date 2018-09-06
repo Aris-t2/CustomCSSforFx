@@ -4,8 +4,8 @@
 
 
 /* bookmarks menu button popup*/
-#BMB_bookmarksPopup  #BMB_bookmarksShowAll,
-#BMB_bookmarksPopup  .panel-arrowbox {
+#BMB_bookmarksPopup #BMB_bookmarksShowAll,
+#BMB_bookmarksPopup .panel-arrowbox {
   display: none !important;
 }
 

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.4 ********************************************************************************/
+/* version 2.0.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -121,14 +121,14 @@
 /* @import "./css/buttons/buttons_on_navbar_button_roundness.css"; /**/
 
 /* squared buttons / button size - [only use one at a time] *************************************/
-/* rectangular shape - normal size **************************************************************/
+/* "rectangular shape" - normal size ************************************************************/
 /* @import "./css/buttons/buttons_on_navbar_squared_buttons.css"; /**/
-/* normal shape - large size (huge 48x48px buttons with 36x36px icons) **************************/
+/* "normal shape" - large size (huge 48x48px buttons with 36x36px icons) ************************/
 /* [!] not compatible with 'custom icon' options ************************************************/
 /* [!] not compatible with 'custom back & forward buttons' appearance options *******************/
 /* [!] not compatible with 'text mode' option ***************************************************/
 /* [!] partly compatible with 'icons+text' option, if in 'compact mode' *************************/
-/* @import "./css/buttons/butons_on_navbar_huge_48px_size.css"; /**/			/* <--- EXPERIMENTAL */
+/* @import "./css/buttons/buttons_on_navbar_huge_48px_size.css"; /**/			/* <--- EXPERIMENTAL */
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode *****/
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/

@@ -53,7 +53,7 @@
 #main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
 #main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-text,
 #main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
-#nav-bar toolbarbutton[type="menu-button"] .toolbarbutton-icon,
+#nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
@@ -80,8 +80,8 @@
 			  border-color .2s ease-in,
 			  box-shadow .2s ease-in !important;
 }
-#nav-bar toolbarbutton[type="menu"][open]:not([disabled]) .toolbarbutton-icon,
-#nav-bar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active .toolbarbutton-icon,
+#nav-bar toolbarbutton[type="menu"][open]:not([disabled]) > .toolbarbutton-icon,
+#nav-bar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):-moz-any(:hover:active,:active, [open]) > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
 #nav-bar .toolbarbutton-1:not([disabled=true]):-moz-any([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
