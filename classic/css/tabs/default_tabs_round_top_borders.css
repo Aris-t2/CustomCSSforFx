@@ -15,12 +15,7 @@
 #TabsToolbar .tabbrowser-tab .tab-content {
   border-top-left-radius: var(--default_tab_border_roundness) !important;
   border-top-right-radius: var(--default_tab_border_roundness) !important;
-}
-
-/* tab line */
-.tab-line {
-  margin-left: calc( var(--default_tab_border_roundness) - 3px ) !important;
-  margin-right: calc( var(--default_tab_border_roundness) - 3px ) !important;
+  overflow: hidden;
 }
 
 /* hide tab separators */
