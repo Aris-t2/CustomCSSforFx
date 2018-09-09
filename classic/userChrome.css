@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.5 ********************************************************************************/
+/* version 2.0.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -557,8 +557,9 @@
 /* @import "./css/locationbar/pageaction_button_in_location_bar_hidden.css"; /**/
 /* @import "./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css"; /**/
 
-/* star button **********************************************************************************/
+/* star button / bookmarks star *****************************************************************/
 @import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
+@import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
 /* alternative yellow star icon - [only use one at a time] **************************************/
 /* @import "./css/locationbar/starbutton_alternative_icon.css"; /**/
 /* @import "./css/locationbar/starbutton_alternative_icon_v2.css"; /**/

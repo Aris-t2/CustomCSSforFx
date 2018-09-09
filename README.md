@@ -27,7 +27,6 @@ Keep in mind CSS code can not create entirely new items, buttons or toolbars. It
 **1.** Find your profile folder ('profile names are different for everyone').  
 `about:support > Profile Folder > Open Folder`  
 or `about:profiles > Root Directory > Open Folder`  
-or open command line with `Shift+F2` and enter`folder openprofile`  
 
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
 `\ PROFILE FOLDER NAME \chrome\`  
@@ -59,10 +58,10 @@ Restart Firefox after every modification for changes to take effect.
 
 **Example**  
 If "classic button appearance for navigation toolbar buttons" should be <u>enabled</u>, the corresponding line has to look like this:  
-`@import url(./css/buttons/buttons_on_navbar_classic_appearance.css);`  
+`@import "./css/buttons/buttons_on_navbar_classic_appearance.css";`  
 
 If "classic button appearance for navigation toolbar buttons" should be <u>disabled</u>, the corresponding line has to look like this:  
-`/* @import url(./css/buttons/buttons_on_navbar_classic_appearance.css); */`  
+`/* @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; */`  
 
 Note  
 Code between `/*` and `*/` won't be used by Firefox unless there are other `/*` or `*/` inbetween.  
@@ -108,9 +107,9 @@ Remove `/*` at lines end to make that part of the code active. Save the file and
 
 _Example 2_  
 Open `./userChrome.css` file  
-Look for `@import url(./css/locationbar/ac_popup_classic_with_two_lines.css);`  
+Look for `@import "./css/locationbar/ac_popup_classic_with_two_lines.css";`  
 Add `/*` at lines start and `*/` at lines end to remove classic popup.  
-Look for `/*@import url(./css/locationbar/ac_popup_url_and_title_50percent_width.css);*/`  
+Look for `/*@import "./css/locationbar/ac_popup_url_and_title_50percent_width.css";*/`  
 Remove `/*` at lines start and `*/` at lines end to enable this popup appearance.  
 
 ## Suggested ui tweaks
@@ -216,14 +215,11 @@ _extensions.screenshots.disabled_
 **Container tabs**  
 _privacy.userContext.enabled_  
 
-**Flyweb**  
-_dom.flyweb.enabled_  
-
 **Font rendering**  
 _gfx.canvas.azure.backends_ > direct2d1.1,cairo,skia (old font rendering)  
 _gfx.content.azure.backends_ > direct2d1.1,cairo,skia (old font rendering)  
 
-**Anti fingerprinting (Caution: browser might behave in unforseen ways!)**  
+**Anti fingerprinting (Caution: browser might behave in unforeseen ways!)**  
 _privacy.resistFingerprinting_  
 [Fingerprinting info at Mozilla Wiki tweaks](https://wiki.mozilla.org/Security/Fingerprinting)  
 

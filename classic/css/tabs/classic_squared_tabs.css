@@ -370,3 +370,7 @@
 				inset 0 -2px 0 Highlight !important;
 }
 
+/* remove non-required icon pending */
+.tab-icon-pending {
+  display: none !important;
+}
