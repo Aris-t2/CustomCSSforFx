@@ -16,6 +16,7 @@
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
   opacity: 0 !important;
+  border: unset !important;
   border-image: unset !important;
   border-image-slice: unset !important;
   width: unset !important;
