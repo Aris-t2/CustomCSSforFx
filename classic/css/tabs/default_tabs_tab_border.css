@@ -3,9 +3,9 @@
 /****************************************************************************************/
 
 .tabbrowser-tab {
-  border-top: 1px solid var(--tabs-border) !important;
-  border-left: 1px solid var(--tabs-border) !important;
-  border-right: 1px solid var(--tabs-border) !important;
+  border-top: 1px solid var(--tabs-border-color) !important;
+  border-left: 1px solid var(--tabs-border-color) !important;
+  border-right: 1px solid var(--tabs-border-color) !important;
 }
 
 .tabbrowser-tab .tab-background {
@@ -16,6 +16,7 @@
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
   opacity: 0 !important;
+  border: unset !important;
   border-image: unset !important;
   border-image-slice: unset !important;
   width: unset !important;
