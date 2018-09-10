@@ -2,10 +2,19 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+.tabs-newtab-button,
 .tabbrowser-tab {
   border-top: 1px solid var(--tabs-border-color) !important;
   border-left: 1px solid var(--tabs-border-color) !important;
   border-right: 1px solid var(--tabs-border-color) !important;
+}
+
+#TabsToolbar:-moz-lwtheme-brighttext .tabs-newtab-button,
+#TabsToolbar:-moz-lwtheme-brighttext .tabbrowser-tab {
+  border-top: 1px solid #5a5a5c !important;
+  border-left: 1px solid #5a5a5c !important;
+  border-right: 1px solid #5a5a5c !important;
 }
 
 .tabbrowser-tab .tab-background {
