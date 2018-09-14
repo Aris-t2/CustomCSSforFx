@@ -4,6 +4,9 @@
 
 
 :root {
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
   --tabs_toolbar_border-tnot_normal_mode_size: 1px;
   --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color);
@@ -122,6 +125,21 @@
 /* toolbar order (end) **************************************/
 
 /* toolbar colors */
+#main-window:not([tabsintitlebar]) #toolbar-menubar:not(:-moz-lwtheme) {
+  background-image: var(--colored_menubar_background_image) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#nav-bar:not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+  background: var(--general_toolbar_color_navbar, inherit) !important;
+}
+
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+  background: var(--general_toolbar_color_toolbars, inherit) !important;
+}
 #TabsToolbar:not(:-moz-lwtheme){
   -moz-appearance: none !important;
   background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
