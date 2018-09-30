@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.0.8 ********************************************************************************/
+/* version 2.0.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -362,12 +362,14 @@
 /* tab line settings - [only use one at a time] *************************************************/
 /* @import "./css/tabs/default_tabs_no_tab_line.css"; /**/
 /* @import "./css/tabs/default_tabs_static_tab_line.css"; /**/
+/* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode.css"; /**/
 
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
+/* @import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
 /* @import "./css/tabs/tab_maxwidth.css"; /**/
 /* @import "./css/tabs/tab_titles_remove_blur.css"; /**/
 /* @import "./css/tabs/alltabs_button_always_visible.css"; /**/

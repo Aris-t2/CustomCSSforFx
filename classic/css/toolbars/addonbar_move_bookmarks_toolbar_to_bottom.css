@@ -7,7 +7,7 @@
 }
 
 /* create an empty space below navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]  {
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] {
   padding-bottom: 28px !important;
 }
 
