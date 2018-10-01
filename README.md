@@ -43,7 +43,7 @@ or `about:profiles > Root Directory > Open Folder`
 `C:\Users\ USERNAME \AppData\Roaming\Mozilla\Firefox\Profiles\ PROFILE FOLDER NAME \`  
 Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Mozilla\Firefox\Profiles\` from explorers location bar.  
 **Linux**  
-`\home\ USERNAME \.mozilla\firefox\ PROFILE FOLDER NAME \`  
+`/home/ username /.mozilla/firefox/ profile folder name /`  
 Hidden files must be visible to see `.mozilla` folder.  
 **Mac OS X**  
 `~\Library\Mozilla\Firefox\Profiles\ PROFILE FOLDER NAME \` or  
