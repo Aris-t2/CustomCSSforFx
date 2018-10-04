@@ -43,8 +43,3 @@
   width: 100% !important;
   white-space: nowrap !important;
 }
-
-#PopupSearchAutoComplete .search-panel-tree > .autocomplete-richlistitem > .ac-type-icon {
-  -moz-padding-end: 0px !important;
-  -moz-margin-end: -3px !important;
-}

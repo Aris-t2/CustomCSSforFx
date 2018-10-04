@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):hover {
+  opacity: 0.2 !important;
+  transition: opacity 1s !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):not(:hover) * {
+  opacity: 1.0 !important;
+  transition: opacity 1s !important;
+}

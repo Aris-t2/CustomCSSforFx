@@ -7,35 +7,35 @@
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
 /* remove unneeded padding around results */
-#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
   padding: 0 !important;
 }
 
 /* make sure there is no unneeded space before results (Fx58+) */
-#PopupAutoCompleteRichResult .autocomplete-richlistitem {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
   -moz-margin-start: 0 !important;
   -moz-padding-start: 0 !important;
 }
 
 /* make sure there is no unneeded space before results (Fx57+) */
-#PopupAutoCompleteRichResult .autocomplete-richlistitem spacer{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem spacer{
   display: none !important;
 }
 
 /* remove separator between title and url */
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-separator {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
   display: none !important;
 }
 
 /* calculate width of title and url: width = 1/2 * (window size - 100px) */
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-title-text, 
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-url-text {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
   min-width: calc((100vw - 100px)/2) !important;
   width: calc((100vw - 100px)/2) !important;
 }
 
 /* fix large space issue at items end */
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]  .autocomplete-richlistitem {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
   border-inline-end: 0px solid transparent !important;
 }
 

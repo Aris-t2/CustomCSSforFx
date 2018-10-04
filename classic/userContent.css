@@ -42,7 +42,7 @@
 @import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
 
 /* show 'last updated' date for add-ons *********************************************************/
-/* @import "./css/aboutaddons/addonlists_show_addon_date_last_updated.css"; /**/
+ @import "./css/aboutaddons/addonlists_show_addon_date_last_updated.css"; /**/
 
 /* addons page appearance - [only use one at a time] ********************************************/
 @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/

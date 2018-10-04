@@ -6,8 +6,8 @@
 /* To hide seach engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-title-text,
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-separator {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
   display: none !important;
 }
 

@@ -2,6 +2,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-#PopupAutoCompleteRichResult richlistitem :-moz-any(.ac-emphasize-text-title, .ac-emphasize-text-tag, .ac-emphasize-text-url,.ac-emphasize-text) {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem :-moz-any(.ac-emphasize-text-title, .ac-emphasize-text-tag, .ac-emphasize-text-url,.ac-emphasize-text) {
   font-weight: bold !important;
 }

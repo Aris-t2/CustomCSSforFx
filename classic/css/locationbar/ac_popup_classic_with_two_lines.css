@@ -24,7 +24,7 @@
 	}
 
 	/* remove space around box */
-	#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
 	  padding: 0 !important;
 	}
 	

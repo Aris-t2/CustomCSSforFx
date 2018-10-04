@@ -10,32 +10,32 @@
 
 /* reorder content to switch title and url positions */
 
-.ac-type-icon{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-type-icon{
   -moz-box-ordinal-group: 0 !important;
 }
-.ac-site-icon{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-site-icon{
   -moz-box-ordinal-group: 1 !important;
 }
-.ac-title{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-title{
   -moz-box-ordinal-group: 5 !important;
   -moz-margin-start: 10px !important;
   -moz-margin-end: 0px !important;
 }
-.ac-tags{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-tags{
   -moz-box-ordinal-group: 3 !important;
 }
-.ac-separator{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-separator{
   -moz-box-ordinal-group: 4 !important;
 }
-.ac-url{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url{
   -moz-box-ordinal-group: 2 !important;
 }
-.ac-action{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-action{
   -moz-box-ordinal-group: 6 !important;
 }
 
 /* prevent url/title overlapping */
-#PopupAutoCompleteRichResult richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
   -moz-margin-start: 0px !important;
   -moz-margin-end: 10px !important;
 }
@@ -43,14 +43,14 @@
 /* calculate width for action type menuitems like this, *
 ** if not using 50% widths for title and url. ***********
 ** 60% url, 40% title in this example ******************//*
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-url-text,
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-title-text {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-url-text,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text {
   min-width: calc((100vw - 100px)*0.4) !important;
   width: calc((100vw - 100px)*0.4) !important;
 }
 
-#PopupAutoCompleteRichResult .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title-text,
-#PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-url-text {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title-text,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
   min-width: calc((100vw - 100px)*0.6) !important;
   width: calc((100vw - 100px)*0.6) !important;
 }

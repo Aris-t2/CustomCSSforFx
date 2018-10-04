@@ -2,7 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-#PopupAutoCompleteRichResult richlistitem + richlistitem:not([collapse="true"]) {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem + richlistitem:not([collapse="true"]) {
   border-top: 1px solid lightgrey !important;
   border-bottom: 1px solid transparent !important;
 }

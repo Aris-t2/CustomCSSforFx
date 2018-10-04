@@ -123,12 +123,12 @@
 }
 
 /* compact dark lw-theme */
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext,
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.99)) !important;
 }
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabs-newtab-button:hover:-moz-lwtheme-brighttext,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(rgba(71,71,71,.7), rgba(71,71,71,.7)) !important;
 }
 
