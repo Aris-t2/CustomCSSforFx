@@ -272,6 +272,74 @@
 	#category-plugin:not([selected="true"]):hover .category-icon{
 	  filter: brightness(2.25) !important;
 	}
+	
+	/* Firefox 64 changes */
+	.addon {
+	  padding-top: 7px !important;
+	  padding-bottom: 7px !important;
+	}
+	
+	#list-view-heading {
+	  margin-top: unset !important;
+	  margin-bottom: unset !important;
+	  margin-inline-start: unset !important;
+	  min-width: 100% !important;
+	}
+
+	#list-view-heading .header-name {
+	  font-size: inherit !important;
+	  font-weight: unset !important;
+	}
+
+	#nav-header {
+	  min-height: unset !important;;
+	}
+
+	#header-inner {
+	  width: unset !important;
+	  margin: 2px 0 !important;
+	}
+
+	#list-view-heading {
+	  margin-top: -24px !important;
+	}
+
+	#list-view-heading-name {
+	  visibility: hidden !important;
+	}
+
+	.addon.card {
+	  max-width: unset !important;
+	  padding-inline-end: 0px !important;
+	}
+
+	.list-view-heading-inner {
+	  -moz-box-flex: 1 !important;
+	  width: unset !important;
+	}
+
+	.list > .addon {
+	  margin: unset !important;
+	}
+
+	.list > .addon,
+	.list > .addon:hover {
+	  outset: unset !important;
+	  box-shadow: unset !important;
+	  duration: unset !important;
+	  border-bottom: 1px solid var(--in-content-box-border-color) !important;
+	}
+
+	#detail-view .card {
+	  outset: unset !important;
+	  box-shadow: unset !important;
+	  duration: unset !important;
+	}
+
+	.sidebar-footer-button .text-link {
+	  margin-inline-start: 0 !important;
+	}
+
 
 }
 

@@ -18,7 +18,7 @@
 	  -moz-margin-start: -1px !important;
 	}
 
-	#addons-page:not(.inSidebar):not([aios-inSidebar="true"])  .view-pane > .list > scrollbox {
+	#addons-page:not(.inSidebar):not([aios-inSidebar="true"]) .view-pane > .list > scrollbox {
 	  padding-right: 0 !important;
 	  padding-left: 0 !important;
 	}
@@ -55,7 +55,7 @@
 	#addons-page #updates-list-empty button,
 	#addons-page .relnotes-toggle,
 	#list-view menulist{
-	  padding:2px !important;
+	  padding: 2px !important;
 	  min-height: unset !important;
 	  height: unset !important;
 	}
@@ -190,7 +190,6 @@
 	  margin: 2px !important;
 	}
 	
-	
 	.alert .alert-title {
 	  font-size: 160% !important;
 	}
@@ -238,5 +237,17 @@
 
 	:root > * {
 	  font-size: 1.15em !important;
+	}
+	
+	#addons-page .addon {
+	  padding: 5px 4px !important;
+	}
+	
+	#addons-page .addon .icon,
+	#addons-page .addon:not([pending="uninstall"])[status="installed"] .icon {
+	  min-width: unset !important;
+	  min-height: unset !important;
+	  margin: 0 !important;
+	  padding: 0 !important;
 	}
 }

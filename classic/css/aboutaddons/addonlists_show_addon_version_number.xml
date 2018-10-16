@@ -162,7 +162,11 @@
     </content>
 
     <implementation>
-
+      
+	  <field name="_description">
+        document.getAnonymousElementByAttribute(this, "anonid", "description");
+      </field>
+	  
       <field name="_version">
         document.getAnonymousElementByAttribute(this, "anonid", "version");
       </field>
