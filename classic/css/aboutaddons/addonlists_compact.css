@@ -206,6 +206,7 @@
 	  font-size: 0.7rem !important;
 	}
 
+	.description,
 	.description-container {
 	  font-size: 1.05rem !important;
 	}
@@ -249,5 +250,9 @@
 	  min-height: unset !important;
 	  margin: 0 !important;
 	  padding: 0 !important;
+	}
+	
+	#addons-page .addon .description-container {
+	  margin-inline-start: 5px !important;
 	}
 }

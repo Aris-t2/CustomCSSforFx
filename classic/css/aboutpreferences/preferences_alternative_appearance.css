@@ -181,6 +181,10 @@
 
 	}
 	
+	.sidebar-footer-button .text-link {
+	  margin-inline-start: 0 !important;
+	}
+	
 }
 
 /* preference sub windows */

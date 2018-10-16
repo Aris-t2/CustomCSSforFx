@@ -339,6 +339,13 @@
 	.sidebar-footer-button .text-link {
 	  margin-inline-start: 0 !important;
 	}
+	
+	#detail-view .detail-view-container {
+	  width: calc(100vw - 300px) !important;
+	}
+	#detail-view .detail-view-wrapper > spacer {
+	  display: none !important;
+	}
 
 
 }
