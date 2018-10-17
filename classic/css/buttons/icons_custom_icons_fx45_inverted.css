@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@import "icons_custom_icons_sizes.css";
 
 /*
    There are no icon set versions for HiDPI modes available, so icons
@@ -13,7 +14,7 @@
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button),
 #downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]) {
   list-style-image: url("../../image/toolbar_fx45inverted.png") !important;
 }
@@ -28,133 +29,3 @@
 #downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon {
   background: -moz-image-rect(url("../../image/toolbar_fx45inverted.png"), 0, 198, 18, 180) center no-repeat !important;
 }
-
-#back-button {
-  -moz-image-region: rect(1px, 53px, 17px, 37px) !important;
-}
-#forward-button	{
-  -moz-image-region: rect(1px, 71px, 17px, 55px) !important;
-}
-#home-button {
-  -moz-image-region: rect(1px, 125px, 17px, 109px) !important;
-}
-#stop-button{
-  -moz-image-region: rect(1px, 107px, 17px, 91px) !important;
-}
-#reload-button{
-  -moz-image-region: rect(1px, 89px, 17px, 73px) !important;
-}
-#bookmarks-toolbar-placeholder,
-#bookmarks-menu-button{
-  -moz-image-region: rect(1px, 161px, 17px, 145px) !important;
-}
-#library-button {
-  -moz-image-region: rect(1px, 629px, 17px, 613px) !important;
-}
-#history-panelmenu{
-  -moz-image-region: rect(1px, 179px, 17px, 163px) !important;
-}
-#downloads-button:not([indicator="true"]) {
-  -moz-image-region: rect(1px, 197px, 17px, 181px) !important;
-}
-#add-ons-button	{
-  -moz-image-region: rect(1px, 215px, 17px, 199px) !important;
-}
-#open-file-button {
-  -moz-image-region: rect(1px, 233px, 17px, 217px) !important;
-}
-#save-page-button {
-  -moz-image-region: rect(1px, 251px, 17px, 235px) !important;
-}
-#sync-button {
-  -moz-image-region: rect(1px, 269px, 17px, 253px) !important;
-}
-#feed-button {
-  -moz-image-region: rect(1px, 287px, 17px, 271px) !important;
-}
-#characterencoding-button{
-  -moz-image-region: rect(1px, 323px, 17px, 307px) !important;
-}
-#e10s-button,
-#new-window-button {
-  -moz-image-region: rect(1px, 341px, 17px, 325px) !important;
-}
-#new-tab-button {
-  -moz-image-region: rect(1px, 359px, 17px, 343px) !important;
-}
-#privatebrowsing-button {
-  -moz-image-region: rect(1px, 377px, 17px, 361px) !important;
-}
-#find-button {
-  -moz-image-region: rect(1px, 395px, 17px, 379px) !important;
-}
-#print-button {
-  -moz-image-region: rect(1px, 413px, 17px, 397px) !important;
-}
-#fullscreen-button {
-  -moz-image-region: rect(1px, 431px, 17px, 415px) !important;
-}
-#developer-button {
-  -moz-image-region: rect(1px, 449px, 17px, 433px) !important;
-}
-#preferences-button {
-  -moz-image-region: rect(1px, 467px, 17px, 451px) !important;
-}
-#PanelUI-menu-button {
-  -moz-image-region: rect(1px, 485px, 17px, 469px) !important;
-}
-#cut-button {
-  -moz-image-region: rect(1px, 503px, 17px, 487px) !important;
-}
-#copy-button {
-  -moz-image-region: rect(1px, 521px, 17px, 505px) !important;
-}
-#paste-button {
-  -moz-image-region: rect(1px, 539px, 17px, 523px) !important;
-}
-#zoom-out-button {
-  -moz-image-region: rect(1px, 557px, 17px, 541px) !important;
-}
-#zoom-in-button {
-  -moz-image-region: rect(1px, 575px, 17px, 559px) !important;
-}
-#tabview-button {
-  -moz-image-region: rect(1px, 647px, 17px, 631px) !important;
-}
-#email-link-button {
-  -moz-image-region: rect(1px, 665px, 17px, 649px) !important;
-}
-#sidebar-button {
-  -moz-image-region: rect(0px, 684px, 17px, 666px) !important;
-}
-#panic-button:not([open]) {
-  -moz-image-region: rect(1px, 701px, 17px, 685px) !important;
-}
-#web-apps-button {
-  -moz-image-region: rect(1px, 719px, 17px, 703px) !important;
-}
-#webide-button {
-  -moz-image-region: rect(1px, 738px, 17px, 721px) !important;
-}
-#developer-button {
-  -moz-image-region: rect(1px, 755px, 17px, 739px) !important;
-}
-#pocket-button:not([open]) {
-  -moz-image-region: rect(1px, 773px, 17px, 757px) !important;
-}
-#containers-panelmenu {
-  -moz-image-region: rect(1px, 809px, 17px, 793px) !important;
-}
-#nav-bar-overflow-button {
-  -moz-image-region: rect(1px, 611px, 17px, 595px) !important;
-}
-#alltabs-button {
-  -moz-image-region: rect(1px, 647px, 17px, 631px) !important;
-}
-
-/* remove load/stop button animations */
-#stop-button .toolbarbutton-animatable-image,
-#reload-button .toolbarbutton-animatable-image {
-  display: none !important;
-}
-/**/

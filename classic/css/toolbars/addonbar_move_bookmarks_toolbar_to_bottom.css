@@ -11,10 +11,20 @@
   padding-bottom: 28px !important;
 }
 
-/* reduce maximum width of location bar and search bar on navigaiton toolbar */
+/* reduce maximum width of location bar and search bar on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] :-moz-any(#urlbar-container, #urlbar, #search-container, #searchbar)  {
   min-width: 50px !important;
 }
+
+/* fix animation box miscalculation */
+#main-window[uidensity=compact]:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #tracking-protection-icon-box > #tracking-protection-icon-animatable-box {
+  top: 6px !important;
+}
+
+#main-window:not([uidensity=compact]):not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #tracking-protection-icon-box > #tracking-protection-icon-animatable-box {
+  top: 10px !important;
+}
+
 
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks {
