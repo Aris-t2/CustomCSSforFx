@@ -16,16 +16,6 @@
   min-width: 50px !important;
 }
 
-/* fix animation box miscalculation */
-#main-window[uidensity=compact]:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #tracking-protection-icon-box > #tracking-protection-icon-animatable-box {
-  top: 6px !important;
-}
-
-#main-window:not([uidensity=compact]):not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] #tracking-protection-icon-box > #tracking-protection-icon-animatable-box {
-  top: 10px !important;
-}
-
-
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks {
   position: absolute !important;
@@ -79,7 +69,7 @@
   margin-bottom: 26px;
 }
 
-/* hide the projects custom bookmarks label, if used */
+/* hide this projects custom bookmarks label, if used */
 #main-window[sizemode="fullscreen"] #PersonalToolbar #bookmarks-menu-button::after {
   visibility: collapse !important;
   display: none !important;
@@ -105,14 +95,19 @@
   max-width: 128px !important;
 }
 
-/* remove load/stop button animations */
+/* remove animations */
+#tracking-protection-icon-box[active][animate] #tracking-protection-icon-animatable-image,
 #reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image,
 #reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
   animation-duration: 0ms !important;
 }
+#tracking-protection-icon-animatable-box,
 #reload-button > .toolbarbutton-animatable-box,
 #stop-button > .toolbarbutton-animatable-box {
   visibility: hidden !important;
+}
+#tracking-protection-icon-box:not([hasException])[active][animationsenabled] > #tracking-protection-icon {
+  display: -moz-box !important;
 }
 
 /* bookmarks item box width */

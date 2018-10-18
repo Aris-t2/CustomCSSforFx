@@ -153,10 +153,10 @@
 	  margin: 0 !important;
 	}
 	
-	checkbox label,
+	/*checkbox label,
 	radio label {
 	  -moz-margin-start: -10px !important;
-	}
+	}*/
 	
 	#homeContentsGroup checkbox label {
 	  -moz-margin-start: 2px !important;
@@ -210,10 +210,10 @@
   margin: 0 !important;
 }
 
-*[subdialog="true"] checkbox label,
+/**[subdialog="true"] checkbox label,
 *[subdialog="true"] radio label {
   -moz-margin-start: -10px !important;
-}
+}*/
 
 *[subdialog="true"] radio *{
   outline: unset !important;

@@ -248,10 +248,10 @@
 		  margin: 0 !important;
 		}
 		
-		checkbox label,
+		/*checkbox label,
 		radio label {
 		  -moz-margin-start: -10px !important;
-		}
+		}*/
 		
 		#homeContentsGroup checkbox label {
 		  -moz-margin-start: 2px !important;
@@ -273,10 +273,10 @@
 		  margin-bottom: 2px !important;
 		}
 		
-		checkbox label,
+		/*checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
-		}
+		}*/
 		
 		#homeContentsGroup checkbox label {
 		  -moz-margin-start: 8px !important;
@@ -292,10 +292,10 @@
 		  height: 10px !important;
 		}
 		
-		checkbox label,
+		/*checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
-		}
+		}*/
 		
 		#homeContentsGroup checkbox label {
 		  -moz-margin-start: 6px !important;
@@ -314,10 +314,10 @@
 		  width: 10px !important;
 		}
 		
-		checkbox label,
+		/*checkbox label,
 		radio label {
 		  -moz-margin-start: -4px !important;
-		}
+		}*/
 		
 		#homeContentsGroup checkbox label {
 		  -moz-margin-start: 6px !important;
@@ -470,10 +470,10 @@
 	  margin: 0 !important;
 	}
 	
-	*[subdialog="true"] checkbox label,
+	/**[subdialog="true"] checkbox label,
 	*[subdialog="true"] radio label {
 	  -moz-margin-start: -10px !important;
-	}
+	}*/
 	
 	*[subdialog="true"] radio *{
 	  outline: unset !important;
@@ -490,10 +490,10 @@
 		  margin-bottom: 2px !important;
 		}
 		
-		*[subdialog="true"] checkbox label,
+		/**[subdialog="true"] checkbox label,
 		*[subdialog="true"] radio label {
 		  -moz-margin-start: -4px !important;
-		}
+		}*/
 
 	}
 }
@@ -505,10 +505,10 @@
 	  height: 10px !important;
 	}
 	
-	*[subdialog="true"] checkbox label,
+	/**[subdialog="true"] checkbox label,
 	*[subdialog="true"] radio label {
 	  -moz-margin-start: -4px !important;
-	}
+	}*/
 	
 	#FontsDialog checkbox image {
 	  min-width: 10px !important;
@@ -533,10 +533,10 @@
 	  width: 10px !important;
 	}
 	
-	*[subdialog="true"] checkbox label,
+	/**[subdialog="true"] checkbox label,
 	*[subdialog="true"] radio label {
 	  -moz-margin-start: -4px !important;
-	}
+	}*/
 
 	#FontsDialog checkbox image {
 	  min-width: 10px !important;

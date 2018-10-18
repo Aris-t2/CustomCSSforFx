@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.1.3 ********************************************************************************/
+/* version 2.1.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -502,10 +502,14 @@
 /* @import "./css/toolbars/bookmarks_toolbar_autohide.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
+/* [!] simulate second bookmarks toolbar while "Bookmarks Toolbar Items" element is on nav-bar **/
+/* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
 
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
+/* [!] not compatible to 'simulated second bookmars toolbar' option *****************************/
+/* [!] not compatible to 'simulated add-bar' option *********************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
 

@@ -49,6 +49,8 @@
 /* addons page appearance - [only use one at a time] ********************************************/
 @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2_aero.css"; /**/	/* <-- AERO colors */
 
 /* compact item lists - [only use one at a time] ************************************************/
 /* @import "./css/aboutaddons/addonlists_compact.css"; /**/
