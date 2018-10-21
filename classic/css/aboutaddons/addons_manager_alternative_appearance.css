@@ -355,6 +355,13 @@
 	#detail-view .detail-view-wrapper > spacer {
 	  display: none !important;
 	}
+	
+	#detail-icon {
+	  min-width: 64px !important;
+	  min-height: 64px !important;
+	  max-width: 64px !important;
+	  max-height: 64px !important;
+	}
 
 }
 

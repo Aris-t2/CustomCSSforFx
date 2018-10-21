@@ -23,9 +23,7 @@
 	#addons-page .alert,
 	#addons-page #legacy-view,
 	#addons-page #detail-view,
-	/*#addons-page #addon-list,*/
-	#addons-page #search-list/*,
-	#addons-page #updates-list*/{
+	#addons-page #search-list {
 	  background-color: white !important;
 	}
 	
@@ -340,6 +338,13 @@
 	}
 	#detail-view .detail-view-wrapper > spacer {
 	  display: none !important;
+	}
+	
+	#detail-icon {
+	  min-width: 64px !important;
+	  min-height: 64px !important;
+	  max-width: 64px !important;
+	  max-height: 64px !important;
 	}
 
 }

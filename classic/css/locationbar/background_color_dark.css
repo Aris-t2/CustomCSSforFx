@@ -2,9 +2,14 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-.searchbar-textbox, #urlbar {
+:-moz-any(#urlbar, .searchbar-textbox) {
   background-color: black !important;
   color: lightgrey !important;
+}
+
+:-moz-any(#urlbar, .searchbar-textbox) ::-moz-selection {
+  background: white !important;
+  color: black !important;
 }
 
 #identity-icon{
