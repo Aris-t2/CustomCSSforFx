@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	/* details page: move lw-themes preview banner bellow theme name */
+	.detail-view-container .card > vbox > .card-heading-image:not([src="undefined"]):not([hidden="true"]) + hbox[align="start"] {
+	  -moz-box-ordinal-group: 0 !important;
+	  padding-bottom: 20px !important;
+	}
+
+}

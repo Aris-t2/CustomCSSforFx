@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.detail-view-container .disabled-postfix,
+	richlistitem .disabled-postfix {
+	  display: none !important;
+	}
+
+}

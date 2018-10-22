@@ -191,6 +191,10 @@
 	  margin: 0px !important;
 	}
 	
+	#detail-name-container {
+	  font-size: 150% !important;
+	}
+	
 	/* checkbox and radio items */
 	#addons-page checkbox image,
 	#addons-page radio image {
