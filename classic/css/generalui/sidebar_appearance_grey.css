@@ -2,8 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
 /* #D1D1D1 = light grey */
+/* #f9f9fa = light grey v2 */
 /* #474749 = dark grey */
 /* #323234 = very dark grey */
 
@@ -16,18 +16,20 @@
 #historyTree,
 #sidebar-switcher-target,
 #viewButton {
-  background: #323234 !important;
-  color: #D1D1D1 !important;
+  background: #f9f9fa !important;
+  color: #323234 !important;
 }
 
+.sidebar-placesTreechildren::-moz-tree-twisty(hover),
+.sidebar-placesTreechildren::-moz-tree-twisty(selected),
 .sidebar-placesTreechildren::-moz-tree-cell(hover),
 .sidebar-placesTreechildren::-moz-tree-row(selected),
 .sidebar-placesTreechildren::-moz-tree-cell-text(hover),
 .sidebar-placesTreechildren::-moz-tree-cell-text(selected),
 #sidebar-switcher-target:hover,
 #viewButton:hover {
- background: #474749 !important;
- color: #D1D1D1 !important;
+ background: #D1D1D1 !important;
+ color: #323234 !important;
 }
    
 /* Fix for remaining hovering borders */

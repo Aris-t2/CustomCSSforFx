@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.1.6 ********************************************************************************/
+/* version 2.1.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -401,7 +401,10 @@
 /* @import "./css/generalui/sidebar_header_icons_colorized.css"; /**/
 /* @import "./css/generalui/sidebar_header_lwtheme.css"; /**/
 /* sidebar appearance - [only use one at a time] ************************************************/
+/* @import "./css/generalui/sidebar_appearance_grey.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_grey_v2.css"; /**/
 /* @import "./css/generalui/sidebar_appearance_dark.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_dark_v2.css"; /**/
 /* @import "./css/generalui/sidebar_appearance_lwtheme_bright.css"; /**/
 /* @import "./css/generalui/sidebar_appearance_lwtheme_dark.css"; /**/
 

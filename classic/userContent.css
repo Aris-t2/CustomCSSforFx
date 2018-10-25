@@ -43,8 +43,9 @@
 @import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
 /* @import "./css/aboutaddons/addonlists_show_addon_version_number_hide_description.css";
 
-/* show 'last updated' date for add-ons *********************************************************/
+/* show 'last updated' date for add-ons - [only use one at a time] ******************************/
 @import "./css/aboutaddons/addonlists_show_addon_date_last_updated.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_addon_date_last_updated_start_position.css"; /**/
 
 /* addons page appearance - [only use one at a time] ********************************************/
 @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
