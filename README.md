@@ -1,8 +1,7 @@
-## Downloads for Firefox Quantum (57+)
+## Downloads for Firefox Quantum (60+)
 
-**[Classic Theme Restorer / Classic Toolbar Buttons / GlassMyFox CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
-**[NoiaButtons CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
-**[Custom JavaScript for Firefox](https://github.com/Aris-t2/CustomJSforFx)**
+**[Releases & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** **[List of CTR, CTB & GMF CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
+**[Custom JavaScript for Firefox](https://github.com/Aris-t2/CustomJSforFx)** **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/NoiaButtons)**  
 
 ## Want to support this project?
 
