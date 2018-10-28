@@ -43,14 +43,14 @@
 	  visibility: collapse !important;
 	}
 
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-site-icon,.ac-title,.ac-action,.ac-url){
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-site-icon,.ac-title,.ac-action,.ac-url) {
 	  -moz-margin-start: unset !important;
 	  -moz-margin-end: unset !important;
 	  -moz-padding-start: unset !important;
 	  -moz-padding-end: unset !important;
 	}
 	
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-title,.ac-url){
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-title,.ac-url) {
 	  min-width: unset !important;
 	  width: unset !important;
 	  max-width: unset !important;
@@ -65,17 +65,17 @@
 	  -moz-margin-start: 4px !important;
 	}
 
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title{
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
 	  -moz-margin-start: 5px !important;
 	  margin-top: -3px !important;
 	}
 	
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action{
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action {
 	  -moz-margin-start: 25px !important;
 	  margin-top: 1px !important;
 	}
 	
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url{
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url {
 	  -moz-margin-start: 25px !important;
 	  margin-top: 0px !important;
 	  padding-bottom: 1px !important;
@@ -89,10 +89,7 @@
 	  width: 100000px !important;
 	}
 	
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] hbox[anonid="search-suggestions-notification"] {
-	  display: none !important;
-	}
-	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] hbox[anonid="search-suggestions-notification"],
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] deck[search-suggestions-notification] {
 	  display: none !important;
 	}
@@ -102,7 +99,7 @@
 	  border-inline-end: 0px solid transparent !important;
 	}
 	
-	/* remove search box at poups button */
+	/* remove search box at popups button */
 	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .search-one-offs {
 	  display: none !important;
 	}

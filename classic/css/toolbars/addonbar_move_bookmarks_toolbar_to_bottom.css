@@ -78,18 +78,22 @@
 /* adjust flexible spaces visible rectangle in customizing mode */
 #PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] toolbarspring {
   height: 20px !important;
-  padding: unset !important;
-  margin: -15px 0 15px 0 !important;
 }
 /* workaround to make grabbing easier */
 #PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] {
-  margin-top: -30px !important;
-  margin-bottom: 30px !important;
-  padding-top: 20px !important;
+  position: relative !important;
+  top: -14px !important;
+}
+
+/* downloads button fix */
+#PersonalToolbar #wrapper-downloads-button,
+#PersonalToolbar #downloads-button {
+  position: relative !important;
+  top: -16px !important;
 }
 
 /* create bigger spaces */
-#PersonalToolbar  toolbarspring + toolbarspring {
+#PersonalToolbar toolbarspring + toolbarspring {
   min-width: 84px !important;
   width: auto !important;
   max-width: 128px !important;

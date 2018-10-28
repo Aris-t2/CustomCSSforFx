@@ -1,0 +1,15 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url(chrome://browser/content/browser.xul) {
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox .autocomplete-richlistitem .ac-title {
+	  visibility: collapse !important;
+	}
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox .autocomplete-richlistitem .ac-action,
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox .autocomplete-richlistitem .ac-url {
+	  margin-top: -20px !important;
+	}
+
+}

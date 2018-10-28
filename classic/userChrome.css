@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.1.8 ********************************************************************************/
+/* version 2.1.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -398,6 +398,7 @@
 
 /* sidebar **************************************************************************************/
 /* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
+/* @import "./css/generalui/sidebar_items_compact.css"; /**/
 /* @import "./css/generalui/sidebar_header_icons_colorized.css"; /**/
 /* @import "./css/generalui/sidebar_header_lwtheme.css"; /**/
 /* sidebar appearance - [only use one at a time] ************************************************/
@@ -447,9 +448,10 @@
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
 
-/* OLD SEARCH ***********************************************************************************/	/* <--- OLD SEARCH */
+/* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
 /* NOTE: 'Old search' will stop working when Mozilla drops XBL support. **************************
 		  See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 ******************************/
+/* NOTE: 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes ********/
 /* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
 /* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
 /* [!] 'about:config > browser.oldsearch.customwidth': enables custom popup width ***************/
@@ -460,9 +462,9 @@
 /* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 *********************/
 /* [!] Code changes in Firefox 63 are not backwards compatible with Fx 60. **********************/
-/* [!] Firefox 61 and 62 are compatible with both options code wise. ****************************/
 /* @import "./css/generalui/oldsearch60.css"; /**/  /*  <--- use this for Fx 60-62 */
-/* @import "./css/generalui/oldsearch.css"; /**/  /*  <--- use this for Fx 61-63+ */
+/* @import "./css/generalui/oldsearch.css"; /**/  /*  <--- use this for Fx 63 */
+/* [!] Old search does not work with Firefox 64+ ! **********************************************/
 
 /* MENUBARS bookmarks popup (not compatible to macOS/Linux) *************************************/
 /* @import "./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css"; /**/
@@ -597,6 +599,9 @@
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup */
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63+ */
 
+/* Classic popup & url only: requires aboves 'Classic popup with two lined results' option ******/
+/* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/
+ 
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 /* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/

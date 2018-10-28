@@ -64,4 +64,11 @@
   opacity: 0.6 !important;
 }
 
+/* colorize feed buttons of Livemarks and Erinome RSS Detector add-on */
+#pageAction-urlbar-_c5867acc-54c9-4074-9574-04d8818d53e8_,
+#pageAction-urlbar-_e5a2b5ab-ebe8-44e5-aa53-770d21d52fa6_ {
+  --pageAction-image-16px: unset !important;
+  --pageAction-image-32px: unset !important;
+  list-style-image: url("../../image/feedIcon16.png") !important;
+}
 /**/
