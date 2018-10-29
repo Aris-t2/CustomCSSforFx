@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.1.9 ********************************************************************************/
+/* version 2.2.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -295,6 +295,7 @@
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/  /* <--- EXPERIMENTAL */
@@ -486,6 +487,8 @@
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
+/* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/
+/* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
@@ -509,6 +512,7 @@
 /* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
 /* [!] simulate second bookmarks toolbar while "Bookmarks Toolbar Items" element is on nav-bar **/
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar_fx65.css"; /**/
 
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/

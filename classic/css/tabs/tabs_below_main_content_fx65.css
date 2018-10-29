@@ -1,0 +1,20 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_main_content.css";
+
+
+#main-window:not([customizing]) #TabsToolbar #tabbrowser-tabs:not([overflow="true"]) {
+  width: calc(100% - 0px) !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar #tabbrowser-tabs[overflow="true"] {
+  width: calc(100% - 40px) !important;
+}
+
+/* hide any non-default button on tabs toolbar */
+#main-window:not([customizing]) #TabsToolbar toolbarbutton:not(:-moz-any(#new-tab-button,#alltabs-button,.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down)) {
+  visibility: collapse !important;
+}
