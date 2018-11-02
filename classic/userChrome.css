@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.0 ********************************************************************************/
+/* version 2.2.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -95,16 +95,25 @@
 
 /* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - [only use one at a time] **********/
 /* [!] set own colors for tabs & toolbars inside 'color_variables.css' or use available presets */
+/* [!] 'about:config > ui.systemUsesDarkTheme > 0' might be required in some cases **************/
 @import "./config/color_variables.css"; /**/  /* <- default 'grey' colors */
 /* @import "./config/color_variables_aero.css"; /**/  /* <- 'AeroBlue' colors (Win 7 Aero) */
 /* @import "./config/color_variables_classic-grey.css"; /**/  /* <- 'classic grey' colors (Win Classic) */
 /* @import "./config/color_variables_fx3.css"; /**/  /* <- 'Firefox 3-like' blueish colors */
 /* @import "./config/color_variables_transparent.css"; /**/  /* <- (semi-)'transparent' colors */
 /* @import "./config/color_variables_aeroglass.css"; /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
+/* @import "./config/color_variables_deved.css"; /**/  /* <- based on 'Developer Edition' colors */
 
 /* Darker "Dark" default theme - [only use one at a time] ***************************************/
 /* @import "./css/toolbars/default_dark_theme_darker.css"; /**/
 /* @import "./css/toolbars/default_dark_theme_darker_v2.css"; /**/
+
+/* CUSTOM SCROLLBARS VARIABLES (Firefox 63+ only) - EXPERIMENTAL ********************************/
+/* [!] Might not work on every page! This issue is for Mozilla to solve. ************************/
+/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ************************/
+/* [!] custom size values only compatible with 'web content' scrollbars at the moment ***********/
+/* [!] more info inside 'custom_scrollbar_appearance.css' file **********************************/
+/* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/
@@ -178,6 +187,7 @@
 /* @import "./css/buttons/zoom_buttons_hide_reset.css"; /**/
 /* @import "./css/buttons/overflow_button_rotate_on_open.css"; /**/
 /* @import "./css/buttons/button_popup_panelarrow_hidden.css"; /**/
+/* @import "./css/buttons/button_popup_panel_mozdialog.css"; /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
@@ -524,6 +534,7 @@
 
 /* TOOLBAR COLORS *******************************************************************************/
 @import "./css/toolbars/general_toolbar_colors.css"; /**/
+/* @import "./css/toolbars/tab_toolbar_colors_force_menubar_color.css"; /**/
 
 /* AeroGlass TOOLBARS - separated - set per toolbar / WIN10 fix for GLASS8 **********************/
 /* @import "./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css"; /**/

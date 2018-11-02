@@ -22,6 +22,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
 #main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
+#main-window:not(:-moz-lwtheme) toolbar #stop-reload-button toolbarbutton > .toolbarbutton-text,
+#main-window:not(:-moz-lwtheme) toolbar #PanelUI-button toolbarbutton > .toolbarbutton-text,
+#main-window:not(:-moz-lwtheme) toolbar > toolbarbutton >.toolbarbutton-badge-stack .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) #PlacesToolbarItems toolbarbutton > :-moz-any(label,description) {
   color: var(--general_toolbar_text_color, inherit) !important;

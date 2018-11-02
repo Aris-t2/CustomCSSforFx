@@ -1,0 +1,30 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* GENERAL SCROLLBAR SETTINGS (Firefox 63+) *********************************************/
+/* [!] Might not work on every page! This issue is for Mozilla to solve. ****************/
+/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ****************/
+/* [!] only background, thumb and width variables available for now *********************/
+/* [!] color names and hex/rgb(a)/hsl(a) colors supported *******************************/
+/* [!] scrollbar buttons are not visible with width value 'thin' ************************/
+/* [!] width value settings are only compatible with 'web content' at the moment ********/
+
+:root{
+  scrollbar-face-color: lightblue; /* background color (Firefox 63 only) */
+  scrollbar-track-color: lightgrey; /* thumb/slider color (Firefox 63 only) */
+  
+  /* background color [1. color] // thumb/slider color [2. color] (Firefox 64+) *********/
+  scrollbar-color: lightblue lightgrey;
+  
+  /* size/width *************************************************************************/
+  /*	scrollbar-width: auto; = default OS scrollbars
+		scrollbar-width: thin; = small scrollbars without buttons
+		scrollbar-width: none; = scrollbars are hidden
+		scrollbar-width: 17px; (not working yet, but might be supported in the future)  */
+  scrollbar-width: thin;
+}
+
+/* MDN web docs (color): https://developer.mozilla.org/docs/Web/CSS/scrollbar-color *****/
+/* MDN web docs (width): https://developer.mozilla.org/docs/Web/CSS/scrollbar-width *****/

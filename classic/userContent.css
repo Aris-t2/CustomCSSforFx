@@ -31,6 +31,7 @@
 
 *************************************************************************************************/
 
+
 /************************************************************************************************/
 /* about:addons *********************************************************************************/
 /************************************************************************************************/
@@ -102,6 +103,13 @@
 
 /* Screenshots - internal browser add-on ********************************************************/
 /* @import "./css/webcontent/screenshots_alternative_save_ui.css"; /**/
+
+/* CUSTOM SCROLLBARS VARIABLES (Firefox 63+ only) - EXPERIMENTAL ********************************/
+/* [!] Might not work on every page! This issue is for Mozilla to solve. ************************/
+/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ************************/
+/* [!] custom size values only compatible with 'web content' scrollbars at the moment ***********/
+/* [!] more info inside 'custom_scrollbar_appearance.css' file **********************************/
+/* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/

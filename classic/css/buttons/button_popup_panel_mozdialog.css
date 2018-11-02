@@ -1,0 +1,23 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#BMB_bookmarksPopup .popup-internal-box,
+.popup-internal-box > autorepeatbutton,
+.panel-subview-footer,
+*[class^=PanelUI-],
+.panel-subview-body,
+#emptyDownloads,
+#BMB_bookmarksPopup menupopup .arrowscrollbox-scrollbox,
+#BMB_bookmarksPopup menupopup,
+#BMB_bookmarksPopup .panel-arrowcontent {
+  background-color: -moz-Dialog !important;
+  color: -moz-dialogtext !important;
+}
+
+#downloadsFooterButtons,
+.panel-subview-footer {
+  background: white !important;
+  color: black !important;
+}
