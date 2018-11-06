@@ -1,0 +1,15 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[uidensity=compact] #nav-bar :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,/*#bookmarks-menu-button,*/#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,/*#PanelUI-menu-button,*/#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  padding: 4px !important;
+}

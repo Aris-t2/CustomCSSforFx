@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.1 ********************************************************************************/
+/* version 2.2.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -141,6 +141,7 @@
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode *****/
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_more_compact_mode_custom_icons_fix.css"; /**/
 
 /* icon appearance - [only use one at a time] (custom icons do not scale in HiDPI modes) ********/
 @import "./css/buttons/icons_colorized.css"; /**/
@@ -610,9 +611,10 @@
 /* [!] It will stop working soon when Mozilla drops XBL support. ********************************/
 /* [!] See 'De-XBL' bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************/
 /* [!] 'Classic popup with two lined results' throws unfixable warnings in 'error console'. *****/
-/* [!] Code changes for Firefox 63 are not backwards compatible with Fx 60+62. ******************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup */
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63+ */
+/* [!] Code changes in Firefox 63 are not backwards compatible with Fx 60+62. *******************/
+/* [!] Code changes in Firefox 65 cause the popup not to work anymore. **************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup for Fx 60-62*/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63-64 */
 
 /* Classic popup & url only: requires aboves 'Classic popup with two lined results' option ******/
 /* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/

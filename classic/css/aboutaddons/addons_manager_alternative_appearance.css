@@ -115,7 +115,7 @@
 	}
 
 	/* buttons / menulists */
-	#addons-page  #custombutons-add-new,
+	#addons-page #custombutons-add-new,
 	#addons-page #header button,
 	#addons-page #header #header-utils-btn,
 	#addons-page #list-view .global-info button,
@@ -132,7 +132,7 @@
 	  height: unset !important;
 	}
 	
-	#addons-page  #custombutons-add-new,
+	#addons-page #custombutons-add-new,
 	#addons-page #header button:not(.button-link),
 	#addons-page #header #header-utils-btn,
 	#addons-page #list-view .global-info button:not(.button-link),
@@ -277,14 +277,17 @@
 	  filter: brightness(2.25) !important;
 	}
 	
-	/* Firefox 64 changes */
+	/* Firefox 64+ changes */
+	#heading,
 	#list-view-heading {
 	  margin-top: unset !important;
 	  margin-bottom: unset !important;
 	  margin-inline-start: unset !important;
 	  min-width: 100% !important;
+	  margin-top: -30px !important;
 	}
 
+	#heading .header-name,
 	#list-view-heading .header-name {
 	  font-size: inherit !important;
 	  font-weight: unset !important;
@@ -308,10 +311,7 @@
 	  display: none !important;
 	}
 
-	#list-view-heading {
-	  margin-top: -30px !important;
-	}
-
+	#heading-name,
 	#list-view-heading-name {
 	  visibility: hidden !important;
 	}
