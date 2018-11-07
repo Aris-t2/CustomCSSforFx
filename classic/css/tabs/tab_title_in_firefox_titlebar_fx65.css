@@ -18,7 +18,7 @@
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 2px !important;
-  margin-top: 25px !important;
+  margin-top: 19px !important;
 }
 
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
@@ -28,14 +28,18 @@
 }
 
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
+#main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
+#main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="false"],
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
-  -moz-margin-start: 0px !important;
+  -moz-padding-start: 0px !important;
   margin-top: 24px !important;
 }
 
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
+#main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]),
+#main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"],
 #main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
-  -moz-margin-start: 0px !important;
+  -moz-padding-start: 0px !important;
   margin-top: 24px !important;
 }
 
@@ -70,17 +74,4 @@
 /* show menubar in fullscreen, if enabled (workaround for titlebar button overlapping) */
 #main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
   visibility: visible !important;
-}
-
-
-#main-window[tabsintitlebar] .titlebar-buttonbox-container{
-  position: fixed !important;
-  top: 0px !important;
-  right: 0 !important;
-  visibility: visible !important;
-  display: block !important;
-}
-
-#main-window[tabsintitlebar][sizemode="maximized"] .titlebar-buttonbox-container{
-  top: 8px !important;
 }

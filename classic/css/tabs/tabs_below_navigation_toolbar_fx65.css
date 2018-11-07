@@ -1,0 +1,84 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar.css";
+
+#titlebar {
+  -moz-box-ordinal-group: 100 !important;
+}
+
+#main-window[tabsintitlebar] #titlebar {
+  margin-top: -4px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] * #titlebar {
+  margin-top: -8px !important;
+}
+
+#main-window[tabsintitlebar] #nav-bar {
+  margin-top: 26px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
+  margin-top: 34px !important;
+}
+
+#main-window:not([tabsintitlebar]) #nav-bar{
+  margin-top: 18px !important;
+}
+
+#toolbar-menubar {
+  position: fixed !important;
+  width: 100vw !important;
+  top: 0 !important;
+  -moz-window-dragging: drag !important;
+}
+
+#toolbar-menubar:not([inactive="true"]) {
+  padding-bottom: 8px !important;
+}
+
+#main-window[tabsintitlebar] #navigator-toolbox,
+#main-window[tabsintitlebar] #nav-bar {
+  -moz-window-dragging: drag !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  top: 8px !important;
+}
+
+#main-window[tabsintitlebar] .titlebar-buttonbox-container{
+  position: fixed !important;
+  top: 0px !important;
+  right: 0 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] .titlebar-buttonbox-container{
+  top: 8px !important;
+}
+
+#TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
+  padding: unset !important;
+  height: unset !important;
+  width: unset !important;
+}
+
+#main-window:not(:-moz-lwtheme) #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+}
+
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+
+	#main-window[tabsintitlebar] * .titlebar-buttonbox-container {
+	  display: none !important;
+	}
+	  
+  }
+}

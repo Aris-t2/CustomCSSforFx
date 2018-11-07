@@ -5,13 +5,31 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.2 ********************************************************************************/
+/* version 2.2.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
-  README
+[!] FIREFOX 63-64:
+  - 'classic/old autocomplete popup with two-lined results' requires a different option
 
+[!] FIREFOX 64+
+  - 'old search' does not work anymore
+  
+[!] Firefox 65+
+  - 'classic/old autocomplete popup with two-lined results' does not work anymore
+  - 'tabs not on top' mode requires additional fixes and an own option to set
+  - 'higher navigation toolbar position' options require additional fixes and own options to set
+  - 'tabs below content' mode requires additional fixes and an own option to set
+  - 'additional bookmarks toolbar' requires an own option to set
+  - 'simulated add-on bar > additional bookmarks toolbar' requires an own option to set
+  
+*************************************************************************************************/
+
+/*************************************************************************************************
+
+  README
+  
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
@@ -215,40 +233,40 @@
 /************************************************************************************************/
 
 /* application/hamburger button hidden - disable all other appbutton options when using this ****/
-/* @import "./css/buttons/appbutton_hidden.css"; /**/
+/* @import "./css/appbutton/appbutton_hidden.css"; /**/
 
 /* application/hamburger button popup ***********************************************************/
-@import "./css/buttons/appbutton_popup_more_icons.css"; /**/
-@import "./css/buttons/appbutton_popup_icons_colorized.css"; /**/
-/* @import "./css/buttons/appbutton_popup_sync_hidden.css"; /**/
-/* @import "./css/buttons/appbutton_popup_trackingprotection_hidden.css"; /**/
-/* @import "./css/buttons/appbutton_popup_panelarrow_hidden.css"; /**/ 
+@import "./css/appbutton/appbutton_popup_more_icons.css"; /**/
+@import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/
+/* @import "./css/appbutton/appbutton_popup_sync_hidden.css"; /**/
+/* @import "./css/appbutton/appbutton_popup_trackingprotection_hidden.css"; /**/
+/* @import "./css/appbutton/appbutton_popup_panelarrow_hidden.css"; /**/ 
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
 /************************************************************************************************/
 
-/* @import "./css/buttons/appbutton_on_navbar_start_position.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_separator_hidden.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_start_position.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_separator_hidden.css"; /**/
 
 /* button color - [only use one at a time] ******************************************************/
-/* @import "./css/buttons/appbutton_on_navbar_color_autocolor.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_autocolor57p.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_orange.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_aurora.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_nightly.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_deved57p.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_nightly57p.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_color_palemoon.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_autocolor57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_orange.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_aurora.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_nightly.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_deved57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_nightly57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_palemoon.css"; /**/
 
 /* button icon - [only use one at a time] *******************************************************/
-/* @import "./css/buttons/appbutton_on_navbar_icon_white.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_icon_dark.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_icon_grey.css"; /**/
-/* @import "./css/buttons/appbutton_on_navbar_icon_browser_logo.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_white.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_dark.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_grey.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_browser_logo.css"; /**/
 
 /* button label (show label besides icon) *******************************************************/
-/* @import "./css/buttons/appbutton_on_navbar_icon_and_label.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_and_label.css"; /**/
 
 
 /************************************************************************************************/
@@ -256,26 +274,26 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
-@import "./css/buttons/appbutton_in_titlebar.css"; /**/ /* <-- label only */
-/* @import "./css/buttons/appbutton_in_titlebar_icon_only.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_icon_only_dark.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_icon_only_grey.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_icon_only_browser_logo.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_label_and_icon.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_label_and_icon_dark.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_label_and_icon_grey.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_label_and_icon_browser_logo.css"; /**/
+@import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_browser_logo.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_dark.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_grey.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_browser_logo.css"; /**/
 
 /* button color - [only use one at a time] ******************************************************/
-@import "./css/buttons/appbutton_in_titlebar_autocolor.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_autocolor57p.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_transparent.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_semi_transparent.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_aurora.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_nightly.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_deved57p.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_nightly57p.css"; /**/
-/* @import "./css/buttons/appbutton_in_titlebar_palemoon.css"; /**/
+@import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_transparent.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_semi_transparent.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_aurora.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_nightly.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_deved57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_nightly57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_palemoon.css"; /**/
 
 
 /************************************************************************************************/
@@ -300,6 +318,8 @@
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 									/* <-- tabs not on top */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 			/* <-- Fx65+ fixes for tabs not on top */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_ostitlebar_without_menubar.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 						/* <-- macOS fix */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
@@ -307,10 +327,14 @@
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */
+
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_fx65.css"; /**/			/* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 /************************************************************************************************/
 
 

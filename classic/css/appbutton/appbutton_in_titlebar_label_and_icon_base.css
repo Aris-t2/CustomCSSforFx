@@ -2,38 +2,51 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+/* gain space before menubar */
+#main-window[tabsintitlebar] #toolbar-menubar {
+  -moz-margin-start: 95px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  -moz-margin-start: 94px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
+  -moz-margin-start: 93px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  -moz-margin-start: 92px !important;
+}
 
 /* gain space before tabs toolbar */
-#main-window[tabsintitlebar] #toolbar-menubar,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 95px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar,
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 94px !important;
 }
 
-#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar,
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 93px !important;
 }
 
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 92px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button {
+
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
   background-clip: padding-box !important;
   width: 90px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button .toolbarbutton-icon {
+#main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon {
   -moz-margin-start: -16px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button::after {
   display: block !important;
   color: white !important;
   font-weight: bold !important;
@@ -46,24 +59,24 @@
 }
 
 /* 'Firefox' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox"]::after,
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox"]::after,
+#main-window[tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
   content: "Firefox" !important;
 }
 
 /* 'DevFox' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
   content: "DevFox" !important;
 }
 
 /* 'Nightly' title */
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Nightly"]::after,
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-menu-button[label="Firefox Nightly"]::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Nightly"]::after,
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox Nightly"]::after {
   content: "Nightly" !important;
 }
 
 /* custom button title (remove Firefox/DevFox/Nightly) *//*
-#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-menu-button::after{
+#main-window[tabsintitlebar] #PanelUI-menu-button::after{
   content: "MyTitle" !important;
 }
 

@@ -362,6 +362,12 @@
   height: 16px !important;
 }
 
+#TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
+  padding: unset !important;
+  height: unset !important;
+  width: unset !important;
+}
+
 /* indicator for multiselected tabs */
 .tabbrowser-tab[multiselected="true"] .tab-stack .tab-content {
   box-shadow:	inset 2px 0 0 Highlight,

@@ -6,7 +6,7 @@
 @import "./appbutton_on_navbar_color_base.css";
 
 /* Palemoon */
-#nav-bar #PanelUI-menu-button  :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+#nav-bar #PanelUI-menu-button :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text) {
   background: linear-gradient(rgb(82,182,247), rgb(10,98,215) 95%) !important;
   border-color: rgba(6,42,83,.9) !important;
   box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,

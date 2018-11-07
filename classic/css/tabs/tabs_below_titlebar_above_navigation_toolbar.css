@@ -19,9 +19,17 @@
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   -moz-padding-start: 2px !important;
-  margin-top: 19px !important;
+  margin-top: 24px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="normal"] #TabsToolbar .titlebar-placeholder[type="caption-buttons"]{
   display: none !important;
+}
+
+#main-window[tabsintitlebar][sizemode="normal"] .titlebar-buttonbox-container{
+  position: fixed !important;
+  top: 0px !important;
+  right: 0 !important;
+  visibility: visible !important;
+  display: block !important;
 }

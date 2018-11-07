@@ -3,7 +3,11 @@
 /****************************************************************************************/
 
 
-#nav-bar  #PanelUI-menu-button .toolbarbutton-text {
-  display: block !important;
-  -moz-margin-start: -1px !important;
+@import "./appbutton_in_titlebar_icon_only.css";
+
+/* dropmarker icon / arrow */
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button .toolbarbutton-icon {
+  list-style-image: url("../../image/appbutton_grey.svg") !important;
 }
+
+

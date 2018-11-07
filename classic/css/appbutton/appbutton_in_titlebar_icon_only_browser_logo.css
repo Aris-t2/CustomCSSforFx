@@ -6,7 +6,7 @@
 @import "./appbutton_in_titlebar_icon_only.css";
 
 /* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #navigator-toolbox #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar #PanelUI-button .toolbarbutton-icon {
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button .toolbarbutton-icon {
   list-style-image: url("chrome://branding/content/about-logo.png") !important;
   width: 16px !important;
   padding-top: 2px !important;
