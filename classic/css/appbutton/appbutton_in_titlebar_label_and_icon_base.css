@@ -36,6 +36,9 @@
   -moz-padding-start: 92px !important;
 }
 
+#main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar {
+ -moz-padding-start: 95px !important;
+}
 
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
   background-clip: padding-box !important;

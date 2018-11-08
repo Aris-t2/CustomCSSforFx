@@ -362,6 +362,7 @@
   height: 16px !important;
 }
 
+#TabsToolbar-customization-target > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
 #TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
   padding: unset !important;
   height: unset !important;

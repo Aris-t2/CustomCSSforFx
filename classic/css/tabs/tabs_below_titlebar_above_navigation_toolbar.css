@@ -26,7 +26,7 @@
   display: none !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"] .titlebar-buttonbox-container{
+#main-window[tabsintitlebar][sizemode="normal"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   position: fixed !important;
   top: 0px !important;
   right: 0 !important;

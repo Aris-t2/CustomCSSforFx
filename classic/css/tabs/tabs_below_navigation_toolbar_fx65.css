@@ -5,79 +5,153 @@
 
 @import "./tabs_below_navigation_toolbar.css";
 
+/* move titlebar and its content (menubar, tabs toolbar) below navigation/bookmarks toolbar*/
 #titlebar {
   -moz-box-ordinal-group: 100 !important;
 }
 
+/* space above tabs toolbar */
 #main-window[tabsintitlebar] #titlebar {
   margin-top: -4px !important;
 }
-
 #main-window[tabsintitlebar][sizemode="maximized"] * #titlebar {
   margin-top: -8px !important;
 }
 
-#main-window[tabsintitlebar] #nav-bar {
+/* space for menubar above navigation toolbar (Firefox titlebar) */
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 26px !important;
+}
+#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
   margin-top: 26px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
-  margin-top: 34px !important;
-}
-
-#main-window:not([tabsintitlebar]) #nav-bar{
-  margin-top: 18px !important;
-}
-
-#toolbar-menubar {
-  position: fixed !important;
-  width: 100vw !important;
-  top: 0 !important;
-  -moz-window-dragging: drag !important;
-}
-
-#toolbar-menubar:not([inactive="true"]) {
-  padding-bottom: 8px !important;
-}
-
+/* add 'drag' feature to space above navigation toolbar */
 #main-window[tabsintitlebar] #navigator-toolbox,
 #main-window[tabsintitlebar] #nav-bar {
   -moz-window-dragging: drag !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  top: 8px !important;
+/* move menubar to the top and extend its with to full window width */
+#toolbar-menubar {
+  position: fixed !important;
+  width: 100vw !important;
+  -moz-window-dragging: drag !important;
 }
 
-#main-window[tabsintitlebar] .titlebar-buttonbox-container{
+/* move menubars / tab toolbars caption buttons to windows top right position */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   position: fixed !important;
-  top: 0px !important;
   right: 0 !important;
   visibility: visible !important;
   display: block !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] .titlebar-buttonbox-container{
-  top: 8px !important;
+/* menubar postion after moving to the top */
+#toolbar-menubar {
+  top: 0px !important;
 }
 
+/* Linux/macOS */
+/* space above navigation toolbar (OS titlebar) */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar{
+  margin-top: 28px !important;
+}
+
+/* menubar postion in maximized mode after moving to the top */
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  top: 0px !important;
+}
+
+/* caption button position in maximized mode after moving to the top */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+  top: -14px !important;
+}
+
+/* Windows */
+@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 18px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 34px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+	  top: 8px !important;
+	}
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 0px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 8px !important;
+	}
+}
+
+/* hide line above navigation toolbar appearing in some cases */
+#main-window:not([tabsintitlebar]) #nav-bar,
+#main-window:not([tabsintitlebar]) #navigator-toolbox {
+  border-top: 0 !important;
+  box-shadow: unset !important;
+}
+
+/* force buttons on menubar being very small to not break the toolbar */
+#toolbar-menubar toolbaritem > toolbarbutton .toolbarbutton-icon,
+#toolbar-menubar > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
+#toolbar-menubar > toolbarbutton .toolbarbutton-icon {
+  padding: 0px 0px !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+#toolbar-menubar toolbaritem > toolbarbutton,
+#toolbar-menubar > toolbarpaletteitem toolbarbutton,
+#toolbar-menubar > toolbarbutton {
+  position: relative !important;
+  padding: 0px 0px !important;
+  margin: 0px 0px !important;
+}
+#toolbar-menubar toolbaritem > toolbarbutton .toolbarbutton-icon,
+#TabsToolbar-customization-target > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
 #TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
   padding: unset !important;
   height: unset !important;
   width: unset !important;
 }
 
+/* make sure button icon colors set correctly */
 #main-window:not(:-moz-lwtheme) #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
   fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
 
+/* tweaks for fullscreen mode */
+#main-window[tabsintitlebar][sizemode="fullscreen"] * .titlebar-buttonbox-container {
+  display: none !important;
+}
+#main-window[tabsintitlebar][sizemode="fullscreen"] * #TabsToolbar {
+ -moz-padding-start: 0px !important;
+}
+#main-window[tabsintitlebar][sizemode="fullscreen"] * #PanelUI-button {
+  display: none !important;
+}
+
+/* Windows 7 extra tweaks */
 @media (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 
-	#main-window[tabsintitlebar] * .titlebar-buttonbox-container {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) * .titlebar-buttonbox-container {
 	  display: none !important;
+	}
+	  
+  }
+  @media not all and (-moz-windows-compositor) {
+
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: -8px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 0px !important;
 	}
 	  
   }

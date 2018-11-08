@@ -46,6 +46,10 @@
   -moz-padding-start: 47px !important;
 }
 
+#main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar {
+ -moz-padding-start: 43px !important;
+}
+
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
   margin-top: 4px !important;
