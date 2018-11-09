@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.4 ********************************************************************************/
+/* version 2.2.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -318,15 +318,14 @@
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 									/* <-- tabs not on top */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 			/* <-- Fx65+ fixes for tabs not on top */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_ostitlebar_without_menubar.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 			/* <-- tabs not on top Fx65+ */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 						/* <-- macOS fix */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */ 	/* <-- tabs below main content Fx65+ */
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */

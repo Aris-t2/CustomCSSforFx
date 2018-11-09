@@ -3,31 +3,36 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_main_content.css";
+@import "./tabs_below_navigation_toolbar_fx65.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
 
 
-#main-window:not([customizing]) #TabsToolbar #tabbrowser-tabs:not([overflow="true"]) {
-  width: calc(100% - 0px) !important;
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: 1px !important;
 }
 
-#main-window:not([customizing]) #TabsToolbar #tabbrowser-tabs[overflow="true"] {
-  width: calc(100% - 40px) !important;
+#browser-bottombox {
+  margin-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
 }
 
-/* hide any non-default button on tabs toolbar */
-#main-window:not([customizing]) #TabsToolbar toolbarbutton:not(:-moz-any(#new-tab-button,#alltabs-button,.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down)) {
-  visibility: collapse !important;
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#browser-bottombox {
+	  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
+	}
+  }
 }
 
-
-#TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
-  padding: unset !important;
-  height: unset !important;
-  width: unset !important;
+#TabsToolbar {
+  position: fixed !important;
 }
 
-#main-window:not(:-moz-lwtheme) #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
-  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
-  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+/* lw-theme */
+#navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+  background-repeat: no-repeat !important;
+  background-position: bottom left !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--lwt-header-image) !important;
 }
