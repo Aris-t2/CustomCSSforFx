@@ -90,6 +90,8 @@
 
 /* a dark appearance for inbuilt 'Dark' theme is present by default in Firefox 61+ **************/
 /* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* alternative background color for about:newtab/home pages 'Dark' theme present in Firefox 61+ */
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
 
 
 /************************************************************************************************/

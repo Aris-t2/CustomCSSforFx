@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.5 ********************************************************************************/
+/* version 2.2.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -317,9 +317,10 @@
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 									/* <-- tabs not on top */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 			/* <-- tabs not on top Fx65+ */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 						/* <-- macOS fix */
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 					/* <-- tabs not on top */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 				/* <-- macOS fix */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 						/* <-- tabs not on top Fx65+ */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 					/* <-- macOS fix Fx65+ */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/

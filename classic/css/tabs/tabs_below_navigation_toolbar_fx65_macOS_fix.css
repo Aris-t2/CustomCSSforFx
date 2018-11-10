@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#browser-bottombox {
+  margin-bottom: calc(-3px + var(--tab-min-height_tnot)) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-arrowscrollbox {
+  margin-top: 5px !important;
+  margin-bottom: -5px !important;
+}
