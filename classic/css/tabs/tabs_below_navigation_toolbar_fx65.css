@@ -63,12 +63,14 @@
   }
   @media not all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
-	  top: -8px !important;
+	  top: -2px !important;
 	}
 	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
 	  top: 0px !important;
 	}
-	  
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: none !important;
+	}
   }
 }
 

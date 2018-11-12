@@ -329,3 +329,20 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
   }
 }
+
+/* Simple Close Tab button */
+#TabsToolbar:not(:-moz-lwtheme) #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action {
+  --webextension-toolbar-image-light: url("moz-extension://7904448c-2319-4f6f-aac9-a1f701258098/icons/Close-dark.svg") !important;
+}
+
+/* close tab button */
+#TabsToolbar:not(:-moz-lwtheme) #closetab_fmarin_com-browser-action {
+  --webextension-toolbar-image-light: url("moz-extension://31006e48-8e00-476f-8ea9-697e40934b02/icons/icon.svg") !important;
+  --webextension-toolbar-image-2x-light: url("moz-extension://31006e48-8e00-476f-8ea9-697e40934b02/icons/icon.svg") !important;
+}
+
+/* close window button */
+#TabsToolbar:not(:-moz-lwtheme) #close-window-button_nanpuyue_com-browser-action {
+  --webextension-toolbar-image-light: url("moz-extension://c914bd13-793f-4a2d-ab66-c655a3d75c52/icons/icon.svg") !important;
+  --webextension-toolbar-image-2x-light: url("moz-extension://c914bd13-793f-4a2d-ab66-c655a3d75c52/icons/icon.svg") !important;
+}

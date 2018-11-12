@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.6 ********************************************************************************/
+/* version 2.2.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -114,6 +114,7 @@
 /* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - [only use one at a time] **********/
 /* [!] set own colors for tabs & toolbars inside 'color_variables.css' or use available presets */
 /* [!] 'about:config > ui.systemUsesDarkTheme > 0' might be required in some cases **************/
+/* [!] enabled 'menubar_color.css' and 'statusbar_color.css' might be required in some cases ****/
 @import "./config/color_variables.css"; /**/  /* <- default 'grey' colors */
 /* @import "./config/color_variables_aero.css"; /**/  /* <- 'AeroBlue' colors (Win 7 Aero) */
 /* @import "./config/color_variables_classic-grey.css"; /**/  /* <- 'classic grey' colors (Win Classic) */
@@ -121,6 +122,9 @@
 /* @import "./config/color_variables_transparent.css"; /**/  /* <- (semi-)'transparent' colors */
 /* @import "./config/color_variables_aeroglass.css"; /**/  /* <- 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
 /* @import "./config/color_variables_deved.css"; /**/  /* <- based on 'Developer Edition' colors */
+/* @import "./config/color_variables_noia4_grey.css"; /**/  /* <- based on 'Noia 4 themes' grey colors */
+/* @import "./config/color_variables_noia4_lightgrey.css"; /**/  /* <- based on 'Noia 4 themes' lightgrey colors */
+/* @import "./config/color_variables_noia4_dark.css"; /**/  /* <- based on 'Noia 4 themes' dark colors */
 
 /* Darker "Dark" default theme - [only use one at a time] ***************************************/
 /* @import "./css/toolbars/default_dark_theme_darker.css"; /**/
@@ -427,6 +431,7 @@
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
+/* @import "./css/generalui/statusbar_color.css"; /**/
 
 /* overflow menu - [only use one at a time] *****************************************************/
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/

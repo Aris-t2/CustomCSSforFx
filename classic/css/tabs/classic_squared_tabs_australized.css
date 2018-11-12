@@ -320,6 +320,11 @@
   opacity: 0 !important;
 }
 
+#TabsToolbar .titlebar-spacer[type="pre-tabs"],
+#TabsToolbar .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+
 /* make sure toolbar buttons do not increase toolbar height */
 #TabsToolbar toolbarbutton .toolbarbutton-badge-stack,
 #TabsToolbar > toolbarpaletteitem,
