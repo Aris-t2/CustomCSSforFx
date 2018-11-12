@@ -83,12 +83,12 @@
 	#addons-page #header-search .textbox-input-box{
 	  height: 18px !important;
 	}
-	
+
 	#addons-page #addon-list {
 	  -moz-margin-start: -1px !important;
 	}
 
-	#addons-page:not(.inSidebar):not([aios-inSidebar="true"])  .view-pane > .list > scrollbox {
+	#addons-page:not(.inSidebar):not([aios-inSidebar="true"]) .view-pane > .list > scrollbox {
 	  padding-right: 0 !important;
 	  padding-left: 0 !important;
 	}
@@ -153,7 +153,7 @@
 	}
 
 	#addons-page button.sorter{
-	  padding:2px !important;
+	  padding: 2px !important;
 	  min-height: 26px !important;
 	  height: unset !important;
 	}
@@ -171,7 +171,6 @@
 	#addons-page .main-content #search-list .addon[status="installed"][active="false"]{
 	  opacity: .5 !important;
 	}
-
 
 	/* detail view */
 	#detail-view button:not(.button-link):not(.text-link),
@@ -284,7 +283,7 @@
 	  margin-bottom: unset !important;
 	  margin-inline-start: unset !important;
 	  min-width: 100% !important;
-	  margin-top: -30px !important;
+	  margin-top: -26px !important;
 	}
 
 	#heading .header-name,
@@ -298,22 +297,62 @@
 	}
 	
 	#header-utils-btn {
-	  min-height: 28px !important;
+	  min-height: 26px !important;
 	  min-width: 40px !important;
+	  -moz-box-ordinal-group: 0 !important;
 	}
 
 	#header-inner {
-	  width: unset !important;
-	  margin: 2px 0 !important;
+	  margin: unset !important;
+	  width: calc(100vw - 240px) !important;
 	}
 	
-	#header-inner #search-label {
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+		#header-inner {
+		  margin: unset !important;
+		  width: calc(100vw - 116px) !important;
+		}
+		
+		#heading #updates-container {
+		  display: none !important;
+		}
+
+	}
+	
+	#list-view-heading-name {
+	  visibility: hidden !important;
+	}
+	
+	#show-all-extensions,
+	#heading-name,
+	#header-inner #search-label{
 	  display: none !important;
 	}
 
-	#heading-name,
-	#list-view-heading-name {
-	  visibility: hidden !important;
+	#header-search {
+	  padding: 0 0px !important;
+	  min-width: 200px !important;
+	  width: unset !important;
+	}
+	
+	#header-search .textbox-input {
+	  font-size: 0.96em !important;
+	}
+	
+	#header-inner button,
+	#header-inner button .button-box {
+	  margin: 0 !important;
+	  padding: 0 !important;
+	}
+	
+	#heading .heading-inner {
+	  margin-inline-start: 0 !important;	
+	}
+	
+	.message-bar {
+	  background-color: white !important;
 	}
 	
 	.addon {
@@ -356,22 +395,26 @@
 	#detail-view .detail-view-container {
 	  width: calc(100vw - 300px) !important;
 	}
+
 	#detail-view .detail-view-wrapper > spacer {
 	  display: none !important;
 	}
 	
 	#detail-icon {
-	  min-width: 64px !important;
-	  min-height: 64px !important;
-	  max-width: 64px !important;
-	  max-height: 64px !important;
+	  min-width: 32px !important;
+	  min-height: 32px !important;
+	  max-width: 32px !important;
+	  max-height: 32px !important;
 	}
-
+	
 }
 
-/* get add-ons discovery page */
-html[data-reactid][data-reactroot] head[data-reactid] + body[data-reactid]{
-  background: white !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+@-moz-document url-prefix(https://discovery.addons.mozilla.org) {
+
+	html, html body {
+	  background: white !important;
+	  margin-left: 0px !important;
+	  margin-right: 0px !important;
+	}
+
 }
