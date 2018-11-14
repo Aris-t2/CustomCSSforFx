@@ -114,3 +114,15 @@
   border-top: 0 !important;
   box-shadow: unset !important;
 }
+
+/* disable Mozillas tab jumping nonsense when moving tabs */
+#navigator-toolbox[movingtab] > #titlebar > #TabsToolbar {
+  padding-bottom: unset !important;
+}
+#navigator-toolbox[movingtab] #tabbrowser-tabs {
+  padding-bottom: unset !important;
+  margin-bottom: unset !important;
+}
+#navigator-toolbox[movingtab] > #nav-bar {
+  margin-top: unset !important;
+}

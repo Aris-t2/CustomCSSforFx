@@ -5,24 +5,26 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.7.1 ******************************************************************************/
+/* version 2.2.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
-[!] FIREFOX 63-64:
+[!] FIREFOX 63-64 (look for '*_fx63.css'):
   - 'classic/old autocomplete popup with two-lined results' requires a different option
 
 [!] FIREFOX 64+
-  - 'old search' does not work anymore
+  - 'old search' does not work anymore and there is no workaround (yet?)
   
-[!] Firefox 65+
-  - 'classic/old autocomplete popup with two-lined results' does not work anymore
-  - 'tabs not on top' mode requires additional fixes and an own option to set
-  - 'higher navigation toolbar position' options require additional fixes and own options to set
-  - 'tabs below content' mode requires additional fixes and an own option to set
-  - 'additional bookmarks toolbar' requires an own option to set
-  - 'simulated add-on bar > additional bookmarks toolbar' requires an own option to set
+[!] Firefox 65+ (look for '*_fx65.css')
+  - 'classic/old autocomplete popup with two-lined results' uses an own new option
+  - 'classic/old autocomplete popup with url only results' uses an own new option
+  - 'tabs not on top' mode uses an own new option
+  - 'tabs not on top' mode uses another new option, if combined with 'multiple tab lines' option
+  - 'higher navigation toolbar position' options  uses an own new option
+  - 'tabs below content' mode uses an own new option
+  - 'additional bookmarks toolbar' uses an own new option
+  - 'simulated add-on bar > additional bookmarks toolbar' uses an own new option
   
 *************************************************************************************************/
 
@@ -324,6 +326,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 					/* <-- tabs not on top */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 				/* <-- macOS fix */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 						/* <-- tabs not on top Fx65+ */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi lined tabs support*/	/* <-- tabs not on top Fx65+ v2 */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 					/* <-- macOS fix Fx65+ */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
@@ -354,7 +357,9 @@
 /* [!] BUG: dragging tabs does not work properly with multi lined tabs **************************/
 /* [!] for v1 see https://00.bulog.jp/archives/1476 *********************************************/
 /* [!] for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ****/
-/* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
+/* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
+/* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
+/* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* <--- EXPERIMENTAL */
 
@@ -490,9 +495,7 @@
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
 
 /* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
-/* NOTE: 'Old search' will stop working when Mozilla drops XBL support. **************************
-		  See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 ******************************/
-/* NOTE: 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes ********/
+/* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes ********/
 /* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
 /* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
 /* [!] 'about:config > browser.oldsearch.customwidth': enables custom popup width ***************/
@@ -502,10 +505,8 @@
 /* [!] Shift + click on search glass: search opens in a new window ******************************/
 /* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 *********************/
-/* [!] Code changes in Firefox 63 are not backwards compatible with Fx 60. **********************/
-/* @import "./css/generalui/oldsearch60.css"; /**/  /*  <--- use this for Fx 60-62 */
-/* @import "./css/generalui/oldsearch.css"; /**/  /*  <--- use this for Fx 63 */
-/* [!] Old search does not work with Firefox 64+ ! **********************************************/
+/* @import "./css/generalui/oldsearch.css"; /**/  /*  <--- use this for Fx 60-62 */
+/* @import "./css/generalui/oldsearch63.css"; /**/  /*  <--- use this for Fx 63 (Fx 64+ not supported!) */
 
 /* MENUBARS bookmarks popup (not compatible to macOS/Linux) *************************************/
 /* @import "./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css"; /**/
@@ -636,16 +637,20 @@
 /* @import "./css/locationbar/ac_popup_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_visible_on_hover_only.css"; /**/
-/* [!] 'Classic popup with two lined results' removes 'oneoff' searches at popups bottom! *******/
-/* [!] It will stop working soon when Mozilla drops XBL support. ********************************/
-/* [!] See 'De-XBL' bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************/
-/* [!] 'Classic popup with two lined results' throws unfixable warnings in 'error console'. *****/
-/* [!] Code changes in Firefox 63 are not backwards compatible with Fx 60+62. *******************/
-/* [!] Code changes in Firefox 65 cause the popup not to work anymore. **************************/
+/* [!] 'Classic/old popup with two lined results' option notes **********************************/
+/* [!] - separate options for Firefox 60-62, 63-64 and 65+ **************************************/
+/* [!] - Firefox 60-64: popup code is XBL (xml) based like on older Firefox versions ************/
+/* [!] - Firefox 60-64: option removes 'oneoff' searches at popups bottom ***********************/
+/* [!] - Firefox 60-64: option throws unfixable warnings in 'error console' in ******************/
+/* [!] - Firefox 65+: popup width can not be automatically detected by the option anymore *******/
+/* [!] - Firefox 65+: popup width has to be set manually inside /config/ files ******************/
+/* [!] - Firefox 60-65+: the option for Firefox 65+ also works on Firefox 60-64 *****************/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup for Fx 60-62*/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63-64 */
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx65.css"; /**/  /* <--- old autocomplete popup for Fx 65+ */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx65.css"; /**/
 
-/* Classic popup & url only: requires aboves 'Classic popup with two lined results' option ******/
+/* Classic popup & url only: requires 'Classic popup with two lined results' option (Fx60-64!) **/
 /* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/
  
 /* result menuitem settings/appearance **********************************************************/
