@@ -126,3 +126,11 @@
 #navigator-toolbox[movingtab] > #nav-bar {
   margin-top: unset !important;
 }
+
+/* size of new tab tabs '+' icon */
+.tabs-newtab-button .toolbarbutton-icon {
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 18px !important;
+  height: 18px !important;
+}

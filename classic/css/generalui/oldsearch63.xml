@@ -550,6 +550,22 @@
             }
           }
           openTrustedLinkIn(submission.uri.spec, aWhere, params);
+		  
+		  // clear input after search
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("clearinput")) {
+				textBox.value="";
+			}
+		  } catch(e) {}
+
+		  // revert to default engine after search
+		  try {
+			if(Services.prefs.getBranch("browser.oldsearch.").getBoolPref("reverttodefault")) {
+			  Services.search.defaultEngine = Services.search.getVisibleEngines()[0];
+			  this.updateDisplay();	
+			}
+
+		  } catch(e) {}
         ]]></body>
       </method>
 	  

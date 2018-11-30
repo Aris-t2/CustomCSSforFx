@@ -51,7 +51,8 @@
 
 /* Linux/macOS */
 /* space above navigation toolbar (OS titlebar) */
-#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar{
+/* set to '0', if no menubar is used */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
   margin-top: 28px !important;
 }
 
@@ -68,9 +69,11 @@
 
 /* Windows */
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+	/* set to '0', if no menubar is used */
 	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 18px !important;
 	}
+	/* set to '0', if no menubar is used */
 	#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 34px !important;
 	}
@@ -127,6 +130,7 @@
  -moz-padding-start: 0px !important;
 }
 /* tweaks for fullscreen mode */
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button,
 #main-window #TabsToolbar #window-controls {

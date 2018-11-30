@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.8 ********************************************************************************/
+/* version 2.2.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -326,7 +326,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 					/* <-- tabs not on top */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 				/* <-- macOS fix */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 						/* <-- tabs not on top Fx65+ */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi lined tabs support*/	/* <-- tabs not on top Fx65+ v2 */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi-lined tabs support, causes glitches with disabled menubar */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 					/* <-- macOS fix Fx65+ */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
@@ -543,6 +543,7 @@
 /* @import "./css/toolbars/menubar_fog_hidden.css"; /**/
 /* @import "./css/toolbars/menubar_alternative_menu_hover_color.css"; /**/
 /* @import "./css/toolbars/menubar_in_fullscreen_mode.css"; /**/
+/* @import "./css/toolbars/menubar_in_fullscreen_mode_alt_fx65_v2.css"; /**/ /*'tabs not on top v2' + Fx65+ */
 /* menubar color - ******************************************************************************/
 /* @import "./css/toolbars/menubar_color.css"; /**/
 

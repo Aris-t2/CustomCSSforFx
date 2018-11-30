@@ -304,7 +304,7 @@
 
 	#header-inner {
 	  margin: unset !important;
-	  width: calc(100vw - 240px) !important;
+	  width: calc(100vw - 246px) !important;
 	}
 	
 	/* tweaks for small windows */
@@ -312,7 +312,7 @@
 	  
 		#header-inner {
 		  margin: unset !important;
-		  width: calc(100vw - 116px) !important;
+		  width: calc(100vw - 120px) !important;
 		}
 		
 		#heading #updates-container {
