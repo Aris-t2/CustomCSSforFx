@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.2.9 ********************************************************************************/
+/* version 2.3.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -326,8 +326,8 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 					/* <-- tabs not on top */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 				/* <-- macOS fix */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 						/* <-- tabs not on top Fx65+ */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi-lined tabs support, causes glitches with disabled menubar */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 					/* <-- macOS fix Fx65+ */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
@@ -434,6 +434,7 @@
 /* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
+/* @import "./css/generalui/popup_menupopup_with_scrollbars"; /**/
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/

@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+menupopup scrollbox {
+  overflow-y: auto !important
+}
+
+menupopup :-moz-any(.autorepeatbutton-up, .autorepeatbutton-down, .scrollbutton-up, .scrollbutton-down) {
+  display: none !important;
+}

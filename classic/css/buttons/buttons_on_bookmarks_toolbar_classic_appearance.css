@@ -39,6 +39,7 @@
 #PersonalToolbar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #PersonalToolbar .toolbarbutton-1:not([checked]):not([open]):not(:active),
 #PersonalToolbar .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+  -moz-appearance: none !important;
   background: rgba(151,152,153,.05) linear-gradient(rgba(251,252,253,.95), rgba(246,247,248,.47) 49%, 
 			  rgba(231,232,233,.45) 51%, rgba(225,226,229,.3)) !important;
   border-color: rgba(0,0,0,.12) rgba(0,0,0,.19) rgba(0,0,0,.38) !important;
