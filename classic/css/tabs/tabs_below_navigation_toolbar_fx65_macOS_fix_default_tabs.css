@@ -1,0 +1,17 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+  margin-top: calc(-3px + var(--tab-min-height_tnot)) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-arrowscrollbox {
+  margin-bottom: -3px !important;
+}
+
+#main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+  position: fixed !important;
+  top: 0 !important;
+}

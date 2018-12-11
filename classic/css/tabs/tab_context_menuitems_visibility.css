@@ -49,7 +49,7 @@
   display: none !important;
 }
 
-/* hide seperator after 'Move to New Window' menuitem */ /*
+/* hide separator after 'Move to New Window' menuitem */ /*
 #tabContextMenu #context_sendTabToDevice_separator {
   visibility: collapse !important;
   display: none !important;
@@ -61,7 +61,7 @@
   display: none !important;
 }
 
-/* hide seperator after 'Send Tab to Device' menuitem */ /*
+/* hide separator after 'Send Tab to Device' menuitem */ /*
 #tabContextMenu #context_sendTabToDevice + menuseparator {
   visibility: collapse !important;
   display: none !important;
@@ -97,6 +97,12 @@
   display: none !important;
 }
 
+/* hide 'Reload Selected Tab' menuitem */ /*
+#context_reloadSelectedTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
 /* hide 'Undo Close Tab' menuitem */ /*
 #tabContextMenu #context_undoCloseTab {
   visibility: collapse !important;
@@ -105,6 +111,24 @@
 
 /* hide 'Close Tab' menuitem */ /*
 #tabContextMenu #context_closeTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmark Tab' menuitem */ /*
+#tabContextMenu #context_bookmarkTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Select All Tabs' menuitem */ /*
+#tabContextMenu #context_selectAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Move Tab' menuitem */ /*
+#tabContextMenu #context_moveTabOptions {
   visibility: collapse !important;
   display: none !important;
 }

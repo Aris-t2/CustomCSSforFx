@@ -39,8 +39,26 @@
   display: none !important;
 }
 
-/* hide seperator after 'Undo Close Tab' menuitem */ /*
+/* hide separator after 'Undo Close Tab' menuitem */ /*
 #toolbar-context-menu #toolbar-context-undoCloseTab + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Reload Selected Tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-reloadSelectedTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmarks Selected tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-bookmarkSelectedTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Select All Tabs' menuitem */ /*
+#toolbar-context-menu  #toolbar-context-selectAllTabs {
   visibility: collapse !important;
   display: none !important;
 }
