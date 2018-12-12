@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.3.1 ********************************************************************************/
+/* version 2.3.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -13,12 +13,12 @@
 [!] FIREFOX 63-64 (look for '*_fx63.css'):
   - 'classic/old autocomplete popup with two-lined results' requires a different option
 
-[!] FIREFOX 64+
+[!] FIREFOX 64+ (look for '*_fx64.css')
+  - 'classic/old autocomplete popup with two-lined results' uses an own new option
+  - 'classic/old autocomplete popup with url only results' uses an own new option
   - 'old search' does not work anymore and there is no workaround (yet?)
   
 [!] Firefox 65+ (look for '*_fx65.css')
-  - 'classic/old autocomplete popup with two-lined results' uses an own new option
-  - 'classic/old autocomplete popup with url only results' uses an own new option
   - 'tabs not on top' mode uses an own new option
   - 'tabs not on top' mode uses another new option, if combined with 'multiple tab lines' option
   - 'higher navigation toolbar position' options  uses an own new option
@@ -642,17 +642,17 @@
 /* @import "./css/locationbar/ac_popup_item_title_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_visible_on_hover_only.css"; /**/
 /* [!] 'Classic/old popup with two lined results' option notes **********************************/
-/* [!] - separate options for Firefox 60-62, 63-64 and 65+ **************************************/
-/* [!] - Firefox 60-64: popup code is XBL (xml) based like on older Firefox versions ************/
-/* [!] - Firefox 60-64: option removes 'oneoff' searches at popups bottom ***********************/
-/* [!] - Firefox 60-64: option throws unfixable warnings in 'error console' in ******************/
-/* [!] - Firefox 65+: popup width can not be automatically detected by the option anymore *******/
-/* [!] - Firefox 65+: popup width has to be set manually inside /config/ files ******************/
-/* [!] - Firefox 60-65+: the option for Firefox 65+ also works on Firefox 60-64 *****************/
+/* [!] - separate options for Firefox 60-62, 63, and 64+ ****************************************/
+/* [!] - Firefox 60-63: popup code is XBL (xml) based like on older Firefox versions ************/
+/* [!] - Firefox 60-63: option removes 'oneoff' searches at popups bottom ***********************/
+/* [!] - Firefox 60-63: option throws unfixable warnings in 'error console' in ******************/
+/* [!] - Firefox 64+: popup width can not be automatically detected by the option anymore *******/
+/* [!] - Firefox 64+: popup width has to be set manually inside /config/ files ******************/
+/* [!] - Firefox 60-64+: the option for Firefox 64+ also works on Firefox 60-63 *****************/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup for Fx 60-62*/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63-64 */
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx65.css"; /**/  /* <--- old autocomplete popup for Fx 65+ */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx65.css"; /**/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63 */
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64.css"; /**/  /* <--- old autocomplete popup for Fx 64+ */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/
 
 /* Classic popup & url only: requires 'Classic popup with two lined results' option (Fx60-64!) **/
 /* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/

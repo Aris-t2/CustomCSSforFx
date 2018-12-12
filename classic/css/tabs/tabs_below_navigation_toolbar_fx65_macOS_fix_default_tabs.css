@@ -8,7 +8,7 @@
 }
 
 #tabbrowser-tabs .tabbrowser-arrowscrollbox {
-  margin-bottom: -3px !important;
+  margin-bottom: -1px !important;
 }
 
 #main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
