@@ -58,7 +58,25 @@
 }
 
 /* hide 'Select All Tabs' menuitem */ /*
-#toolbar-context-menu  #toolbar-context-selectAllTabs {
+#toolbar-context-menu #toolbar-context-selectAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Manage Extension' menuitem */ /*
+#toolbar-context-menu #customize-context-manageExtension {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Remove Extension' menuitem */ /*
+#toolbar-context-menu #customize-context-removeExtension {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Remove Extension' menuitem */ /*
+#toolbar-context-menu #customize-context-removeExtension + menuseparator {
   visibility: collapse !important;
   display: none !important;
 }

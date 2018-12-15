@@ -115,6 +115,16 @@
 	}
 
 	/* buttons / menulists */
+	
+	#addons-page button:not(.button-link) {
+	  background-color: rgba(0,0,0,0.1) !important;
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	#addons-page button:not(.button-link) .button-text  {
+	  padding: 0px 5px !important;
+	}
+	
 	#addons-page #custombutons-add-new,
 	#addons-page #header button,
 	#addons-page #header #header-utils-btn,
@@ -126,7 +136,7 @@
 	#addons-page #updates-list-empty button,
 	#addons-page .relnotes-toggle,
 	#list-view menulist,
-	#updates-list menulist{
+	#updates-list menulist {
 	  padding: 2px !important;
 	  min-height: unset !important;
 	  height: unset !important;
@@ -143,7 +153,7 @@
 	#addons-page #userstyle-sorting .addon-control,
 	#addons-page #update-actions button,
 	#addons-page #updates-list-empty button,
-	#addons-page .relnotes-toggle:hover{
+	#addons-page .relnotes-toggle:hover {
 	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 
