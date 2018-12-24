@@ -1,4 +1,9 @@
 !!! READ THIS BEFORE POSTING A NEW ISSUE REPORT !!!  
+
+!!! IMPORTANT !!!  
+By submitting a new issue you confirm having read and understood the below text and all 'how to report a new issue' instructions.
+Invalid issue reports will get closed without further notice to keep this projects support area clean.
+Thanks for your understanding.
 (use template at the bottom after reading everything on this page)
 
 SUPPORT AREA for features THIS project provides
@@ -18,11 +23,6 @@ Firefox bugs (join general discussion thread to talk about Firefox bugs):
 - CSS code might not work, if multi-process mode (e10s) is disabled
 - CSS code might not work on macOS/Linux in userContent.css
 
-
-!!! IMPORTANT !!!  
-By submitting a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
-Invalid issue reports will get closed without further notice to keep this projects support area clean.
-Thanks for your understanding.
 
 ----------------------------------
 
