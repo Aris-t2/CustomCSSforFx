@@ -175,6 +175,11 @@
 			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar:-moz-any([pageproxystate="invalid"],[pageproxystate="valid"]) > #identity-box:-moz-any(.mixedDisplayContentLoadedActiveBlocked,.notSecureText) {
+  background: linear-gradient(rgb(255,100,100), rgb(200,0,0)) !important;
+}
+
+
 /* other tweaks */
 #urlbar[pageproxystate="valid"]  :-moz-any(.urlbar-input-box, #urlbar-display-box) {
   border-image: unset !important;

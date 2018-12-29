@@ -26,11 +26,21 @@
 }
 
 #main-window[tabsintitlebar] #nav-bar {
-  margin-top: -30px !important;
+  margin-top: -20px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
-  margin-top: -30px !important;
+  margin-top: -20px !important;
+}
+
+@media (-moz-os-version:windows-win10) {
+	#main-window[tabsintitlebar] #nav-bar {
+	  margin-top: -28px !important;
+	}
+
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
+	  margin-top: -28x !important;
+	}
 }
 
 /* move caption buttons to windows top right position */
