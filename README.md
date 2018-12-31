@@ -58,10 +58,10 @@ Restart Firefox after every modification for changes to take effect.
 
 **Example**  
 If "classic button appearance for navigation toolbar buttons" should be <u>enabled</u>, the corresponding line has to look like this:  
-`@import "./css/buttons/buttons_on_navbar_classic_appearance.css";`  
+`@import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/`  
 
 If "classic button appearance for navigation toolbar buttons" should be <u>disabled</u>, the corresponding line has to look like this:  
-`/* @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; */`  
+`/* @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/`  
 
 Note  
 Code between `/*` and `*/` won't be used by Firefox unless there are other `/*` or `*/` inbetween.  
@@ -106,11 +106,16 @@ Look for `/* unloaded/pending tabs color *//*`
 Remove `/*` at lines end to make that part of the code active. Save the file and restart Firefox.  
 
 _Example 2_  
-Open `./userChrome.css` file  
-Look for `@import "./css/locationbar/ac_popup_classic_with_two_lines.css";`  
-Add `/*` at lines start and `*/` at lines end to remove classic popup.  
-Look for `/*@import "./css/locationbar/ac_popup_url_and_title_50percent_width.css";*/`  
-Remove `/*` at lines start and `*/` at lines end to enable this popup appearance.  
+Open `userChrome.css` file  
+Look for `@import "./css/tabs/classic_squared_tabs.css"; /**/`  
+Add `/*` at lines start to remove classic squared tabs.  
+The result will look like `/* @import "./css/tabs/classic_squared_tabs.css"; /**/`  
+  
+_Example 3_  
+Open `userChrome.css` file    
+Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`  
+Remove `/*` at lines start to enable this popup appearance.  
+The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
 
 ## Suggested ui tweaks
 
