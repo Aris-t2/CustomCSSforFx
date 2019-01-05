@@ -1,32 +1,28 @@
-!!! READ THIS BEFORE POSTING A NEW ISSUE REPORT !!!  
+!!! READ THIS BEFORE OPENING A NEW ISSUE REPORT !!!
+INVALID REPORTS WILL BE CLOSED WITHOUT FURTHER NOTICE TO KEEP ISSUE AREA CLEAN.
+By submitting a new issue you confirm having read and understood the below text and all 'how to report a new issue' instructions. Thanks for your understanding.
 
-!!! IMPORTANT !!!  
-By submitting a new issue you confirm having read and understood the below text and all 'how to report a new issue' instructions.
-Invalid issue reports will get closed without further notice to keep this projects support area clean.
-Thanks for your understanding.
-(use template at the bottom after reading everything on this page)
+-> use TEMPLATE at the bottom after reading everything on this page <-
 
 SUPPORT AREA for features THIS project provides
-1. This is not a 'request' area for new stuff or legacy add-on features.
-2. Read 'how to report issues properly' before posting a new issue.
---> https://github.com/Aris-t2/CustomCSSforFx/issues/4
-3. Make sure there are no '@namespace' references anywhere in your code. They cause CSS code not to work in some cases.
-4. Do not open a new issue about something this project does not offer. Instead join the 'General discussions, feedback, questions belong here' thread to chat and ask questions about what is or could be possible there.
---> https://github.com/Aris-t2/CustomCSSforFx/issues/163
-5. Use available support threads:
+1. This is not a 'request' area for new stuff or legacy add-on features. Do not open a new issue about something this project does not offer. Instead join the 'General discussions, feedback, questions belong here' thread to chat and ask questions about what is or could be possible there.
+2. Use available support threads:
+- GENERAL TALK, FEEDBACK & QUESTIONS: --> https://github.com/Aris-t2/CustomCSSforFx/issues/163
 - TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
 - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/39
 - ADD-ON BAR SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/73
 - OLD SEARCH SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/104
+3. Read 'how to report issues properly' before posting a new issue.
+--> https://github.com/Aris-t2/CustomCSSforFx/issues/4
 
 Firefox bugs (join general discussion thread to talk about Firefox bugs):
 - CSS code might not work, if multi-process mode (e10s) is disabled
 - CSS code might not work on macOS/Linux in userContent.css
-
+- '@namespace' references might cause custom CSS code not to work sometimes
 
 ----------------------------------
 
-Fill 1-5 below and delete this line and everything above it before submitting.
+Add all information required in 1-5 and delete this line and everything above it before submitting.
 
 
 1. Describe the issue
