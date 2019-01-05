@@ -42,7 +42,7 @@
   --ac_popup_max_height: 300px !important;
   
   /* for searchbar_popup_engines_show_labels_scrollbars.css */
-  --search-one-offs_lables_height: 100px !important;
+  --search-one-offs_labels_height: 100px !important;
   
   /* for ac_popup_classic_with_two_lines_fx64.css */
   --ac_popup_width: 700px !important; /* popup width in normal mode */

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.3.5 ********************************************************************************/
+/* version 2.3.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -147,6 +147,7 @@
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_classic_appearance_v2.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_windows_classic_theme_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_glass_appearance.css";			/* <--- good for Dark themes */
 /* @import "./css/buttons/buttons_on_navbar_osx_appearance.css"; /**/
 
