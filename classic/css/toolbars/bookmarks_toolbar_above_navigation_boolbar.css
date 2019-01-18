@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#nav-bar {
+  box-shadow: unset !important;
+  -moz-box-ordinal-group: 10 !important;
+  border-bottom: 1px solid ThreeDShadow !important;
+  margin-top: -1px !important;
+}

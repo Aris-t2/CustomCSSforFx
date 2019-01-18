@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.3.6 ********************************************************************************/
+/* version 2.3.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -25,6 +25,10 @@
   - 'tabs below content' mode uses an own new option
   - 'additional bookmarks toolbar' uses an own new option
   - 'simulated add-on bar > additional bookmarks toolbar' uses an own new option
+  
+[!] Firefox 66+ 
+  - 'multiple tab lines v1' is not compatible with Firefox 66+
+  - 'bookmarks toolbar multiple lines' is not compatible with Firefox 66+
   
 *************************************************************************************************/
 
@@ -331,6 +335,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix_default_tabs.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 and default tabs */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi-lined tabs support, causes glitches with disabled menubar */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* only for multi-lined tabs support, no menubar with OS titlebar */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
@@ -363,6 +368,7 @@
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
 /* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
 /* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
+/* [!] v1 is not compatible with Firefox 66+ ****************************************************/
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* <--- EXPERIMENTAL */
 
@@ -560,11 +566,16 @@
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar_fx65.css"; /**/
 
+/* BOOKMARKS TOOLBAR above navigation toolbar - [only use one at a time] ************************/
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_boolbar.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_boolbar_when_tab_not_top.css"; /**/
+
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] not compatible to 'simulated second bookmars toolbar' option *****************************/
 /* [!] not compatible to 'simulated add-bar' option *********************************************/
+/* [!] not compatible to Firefox 66+ (2019-01-14 Nightly) ***************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
 

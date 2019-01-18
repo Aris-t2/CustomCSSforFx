@@ -1,0 +1,15 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#navigator-toolbox #nav-bar {
+  -moz-box-ordinal-group: 3 !important;
+  border-top: unset !iportant;
+  box-shadow: unset !important;
+}
+#navigator-toolbox #PersonalToolbar {
+  -moz-box-ordinal-group: 2 !important;
+  border-bottom: unset !iportant;
+  box-shadow: unset !important;
+}
