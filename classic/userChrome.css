@@ -567,8 +567,8 @@
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar_fx65.css"; /**/
 
 /* BOOKMARKS TOOLBAR above navigation toolbar - [only use one at a time] ************************/
-/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_boolbar.css"; /**/
-/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_boolbar_when_tab_not_top.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar_when_tab_not_top.css"; /**/
 
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
