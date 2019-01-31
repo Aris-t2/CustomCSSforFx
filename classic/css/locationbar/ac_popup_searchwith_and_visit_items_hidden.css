@@ -18,6 +18,10 @@
   display: none !important;
 }*/
 
+#PopupAutoCompleteRichResult > richlistbox > richlistitem.emptySearchQuery{
+  display: none !important;
+}
+
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
   min-height: 0 !important;
   height: auto !important;

@@ -3,12 +3,15 @@
 /****************************************************************************************/
 
 
-/* If complete CustomCSSforFx release package is used 'root' values have to be set *******
+/* If complete CustomCSSforFx release package is used, ':root' variables have to be set **
    inside /config/general_variables.css! ************************************************/
 :root {
   --ac_popup_width: 700px; /* popup width in normal mode */
   --ac_popup_width_maximized: 1400px;  /* popup width in maximized mode */
   --ac_popup_width_fullscreen: 1400px;  /* popup width in fullscreen mode */
+  --ac_popup_number_of_results: 10; /* value has to be identical to about:config > browser.urlbar.maxRichResults */
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )); /* calculate maximum height based on items to display */
+  --ac_popup_height: auto; /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
 }
 
 /* popup position */
@@ -30,8 +33,12 @@
 
 /* Max-height for items visible without scrolling */
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
-  height: auto !important;
-  max-height: calc(47.5px * 12) !important;
+  height: var(--ac_popup_height) !important;
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
+  max-height: var(--ac_popup_maxheight) !important;
 }
 
 /* popup width [normal mode] */
@@ -165,6 +172,18 @@
 }
 	
 /* show scrollbar if needed */
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
+  overflow: auto !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
+  overflow-x: hidden !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > .autocomplete-richlistbox {
   overflow-y: auto !important;
 }
+
+

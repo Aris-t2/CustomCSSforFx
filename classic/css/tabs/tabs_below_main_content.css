@@ -20,7 +20,7 @@
 /* this is an experiment not meant for every day use */
 /* values might need adjustment for different toolbar content */
 
-#browser-bottombox {
+#main-window:not([inDOMFullscreen="true"])  #browser-bottombox {
   margin-bottom: var(--space_below_content) !important;
 }
 

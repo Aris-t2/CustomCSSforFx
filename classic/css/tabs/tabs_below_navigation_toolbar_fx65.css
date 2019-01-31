@@ -54,8 +54,8 @@
 	}
 }
 
-/* Windows 7 extra tweaks */
-@media (-moz-os-version: windows-win7) {
+/* Windows 7/8 extra tweaks */
+@media (-moz-os-version:windows-win8), (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: none !important;
@@ -133,4 +133,12 @@
   margin: 0px !important;
   width: 18px !important;
   height: 18px !important;
+}
+
+/* some id!ot at Moz thought it is a great idea to add padding and margin values here */
+@media (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+  #TabsToolbar > .toolbar-items {
+    padding-top: 0 !important;
+	margin-top: 0 !important;
+  }
 }

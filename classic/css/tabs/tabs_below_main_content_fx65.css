@@ -13,26 +13,26 @@
   padding-bottom: 1px !important;
 }
 
-#browser-bottombox {
+#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
   margin-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
 }
 
 @media (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
-	#browser-bottombox {
+	#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
 	  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
 	}
   }
 }
 
-#TabsToolbar {
+#main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
   position: fixed !important;
 }
 
 /* lw-theme */
-#navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
-  background-color: var(--toolbar-bgcolor) !important;
+  background-color: var#main-window[tabsintitlebar]:not([inDOMFullscreen="true"])#main-window[tabsintitlebar]:not([inDOMFullscreen="true"])(--toolbar-bgcolor) !important;
   background-image: var(--lwt-header-image) !important;
 }

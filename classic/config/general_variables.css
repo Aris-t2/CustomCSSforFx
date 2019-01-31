@@ -48,7 +48,9 @@
   --ac_popup_width: 700px !important; /* popup width in normal mode */
   --ac_popup_width_maximized: 1400px !important;  /* popup width in maximized mode */
   --ac_popup_width_fullscreen: 1400px !important;  /* popup width in fullscreen mode */
-  
+  --ac_popup_number_of_results: 10 !important;  /* value has to be identical to about:config > browser.urlbar.maxRichResults */
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )) !important; /* calculate maximum height based on items to display */
+  --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
 }
 
 :root[uidensity="touch"] {
