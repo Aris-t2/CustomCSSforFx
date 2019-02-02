@@ -15,10 +15,10 @@ SUPPORT AREA for features THIS project provides
 3. Read 'how to report issues properly' before posting a new issue.
 --> https://github.com/Aris-t2/CustomCSSforFx/issues/4
 
-Firefox bugs (join general discussion thread to talk about Firefox bugs):
+General problems (join general discussion thread to talk about Firefox bugs):
 - CSS code might not work, if multi-process mode (e10s) is disabled
-- CSS code might not work on macOS/Linux in userContent.css
-- '@namespace' references might cause custom CSS code not to work sometimes
+- CSS code imported through userContent.css might not work on macOS/Linux 
+- no support, if code contains '@namespace' references (remove that useless stuff)
 
 ----------------------------------
 
