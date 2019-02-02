@@ -3,6 +3,9 @@
 /****************************************************************************************/
 
 
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
 :root {
   --classic_squared_tabs_tab_height: 26px;
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF;
@@ -385,4 +388,14 @@
 /* remove non-required icon pending */
 .tab-icon-pending {
   display: none !important;
+}
+
+/* Fx65+ fixes */
+#main-window[sizemode="maximized"] #TabsToolbar {
+  margin-top: -1px !important;
+}
+
+#main-window #navigator-toolbox #titlebar #TabsToolbar > .toolbar-items {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }

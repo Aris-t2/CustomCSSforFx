@@ -3,6 +3,9 @@
 /****************************************************************************************/
 
 
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
 :root {
   --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
   --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);

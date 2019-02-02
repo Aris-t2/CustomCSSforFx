@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.3.8 ********************************************************************************/
+/* version 2.3.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -25,6 +25,7 @@
   - 'tabs below content' mode uses an own new option
   - 'additional bookmarks toolbar' uses an own new option
   - 'simulated add-on bar > additional bookmarks toolbar' uses an own new option
+  - 'appbutton in titlebar' on macOS gets moved to the right (see extra option)
   
 [!] Firefox 66+ 
   - 'multiple tab lines v1' is not compatible with Firefox 66+
@@ -295,6 +296,9 @@
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_grey.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_browser_logo.css"; /**/
 
+/* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? */
+/* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
+
 /* button color - [only use one at a time] ******************************************************/
 @import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
@@ -342,6 +346,8 @@
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */ 	/* <-- tabs below main content Fx65+ */
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_fix.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 */
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_fix_default_tabs.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 and default tabs */
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */

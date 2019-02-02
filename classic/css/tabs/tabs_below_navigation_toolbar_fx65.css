@@ -55,7 +55,30 @@
 }
 
 /* Windows 7/8 extra tweaks */
-@media (-moz-os-version:windows-win8), (-moz-os-version: windows-win7) {
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: none !important;
+	}
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]):-moz-lwtheme #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: block !important;
+	  margin-top: -13px !important;
+	}
+  }
+  @media not all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
+	  top: -2px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
+	  top: 0px !important;
+	}
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: none !important;
+	}
+  }
+}
+
+@media (-moz-os-version:windows-win8) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: none !important;
