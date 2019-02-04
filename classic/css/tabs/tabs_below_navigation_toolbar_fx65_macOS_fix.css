@@ -4,12 +4,11 @@
 
 
 #main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  margin-top: calc(-3px + var(--tab-min-height_tnot)) !important;
+  margin-top: calc(-1px + var(--tab-min-height_tnot)) !important;
 }
 
-#tabbrowser-tabs .tabbrowser-arrowscrollbox {
-  margin-top: 5px !important;
-  margin-bottom: -5px !important;
+#TabsToolbar {
+  height: var(--tab-min-height_tnot) !important;
 }
 
 #main-window[tabsintitlebar]:not([sizemode="maximized"]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {

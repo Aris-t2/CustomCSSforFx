@@ -399,3 +399,9 @@
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+@media (-moz-os-version: windows-win10) {
+  #main-window[sizemode="maximized"] .titlebar-buttonbox-container {
+	-moz-margin-end: -2px !important;
+  }
+}

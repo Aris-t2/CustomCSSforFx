@@ -3,12 +3,12 @@
 /****************************************************************************************/
 
 
-#PopupSearchAutoComplete .search-panel-tree {
-  display: block !important;
+#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) {
   width: 100% !important;
+  display: block !important;
 }
 
-#PopupSearchAutoComplete .search-panel-tree *[anonid="main-box"] {
+#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) > * {
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
   display: none !important;
 }
 
-#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box{
+#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box {
   position: absolute !important;
   -moz-padding-start: 4px !important;
   margin-top: 3px !important;

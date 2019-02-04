@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.3.9 ********************************************************************************/
+/* version 2.4.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -433,7 +433,7 @@
 /* @import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
 /* @import "./css/tabs/tab_maxwidth.css"; /**/
 /* @import "./css/tabs/tab_titles_remove_blur.css"; /**/
-/* @import "./css/tabs/alltabs_button_always_visible.css"; /**/
+/* @import "./css/tabs/alltabs_button_always_visible.css"; /**/  /* <--- hidden, if multiple tab row are used */
 /* @import "./css/tabs/pinnedtab_empty_favicon_hidden.css"; /**/
 /* edit target file to select which items to hide ***********************************************/
 /* @import "./css/tabs/tab_context_menuitems_visibility.css"; /**/
