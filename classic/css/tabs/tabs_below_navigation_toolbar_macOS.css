@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
+@import "./tabs_below_navigation_toolbar.css";
+
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar {
   margin-top: 24px !important;
 }

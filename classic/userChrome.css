@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.0 ********************************************************************************/
+/* version 2.4.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -333,21 +333,21 @@
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
 /* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 					/* <-- tabs not on top */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 				/* <-- macOS fix */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ 						/* <-- tabs not on top Fx65+ */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_fix_default_tabs.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 and default tabs */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* only for multi-lined tabs support, causes glitches with disabled menubar */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* only for multi-lined tabs support, no menubar with OS titlebar */
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- tabs not on top - Fx60-64 - Windows/Linux */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- tabs not on top - Fx60-64 - macOS */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ /* <-- tabs not on top - Fx65+ - Windows/Linux */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/ /* <-- tabs not on top - Fx65+ - macOS */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/ /* <-- tabs not on top - Fx65+ - macOS - default tabs */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* <-- tabs not on top - Fx65+ - Windows/Linux - only for multi-lined tabs support, causes glitches with disabled menubar */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* tabs not on top - Fx65+ - Windows/Linux - only for multi-lined tabs support - no menubar with OS titlebar */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
-/* @import "./css/tabs/tabs_below_main_content.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/  /* <--- EXPERIMENTAL */ 	/* <-- tabs below main content Fx65+ */
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_fix.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 */
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_fix_default_tabs.css"; /**/ 	/* <-- macOS fix Fx65+ for v1 not v2 and default tabs */
+/* @import "./css/tabs/tabs_below_main_content.css"; /**/ /* <-- tabs on bottom - Fx60-64 */  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/ /* <-- tabs on bottom - Fx65+ - Windows/Linux */ /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/ /* <-- tabs on bottom - Fx65+ - macOS */ /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/  /* <-- tabs on bottom - Fx65+ - macOS - default tabs */
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
@@ -599,9 +599,9 @@
 
 /* TOOLBAR TEXT MODES - [only use one at a time] ************************************************/
 /* @import "./css/toolbars/toolbar_mode_icons_and_text.css"; /**/
+/* @import "./css/toolbars/toolbar_mode_icons_and_text_macOS.css"; /**/ /* -> alternative appearance for Linux */
 /* @import "./css/toolbars/toolbar_mode_text.css"; /**/
-/* [!] FIX for macOS / alternative appearance for Linux *****************************************/
-/* @import "./css/toolbars/toolbar_mode_icons_and_text_and_text_only_macOS_fix.css"; /**/	/* <-- macOS fix */
+/* @import "./css/toolbars/toolbar_mode_text_macOS.css"; /**/ /* -> alternative appearance for Linux */
 
 
 /************************************************************************************************/

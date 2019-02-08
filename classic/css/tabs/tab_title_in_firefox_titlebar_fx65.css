@@ -76,7 +76,6 @@
   visibility: visible !important;
 }
 
-
 /* move caption buttons to windows top right position */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
   position: fixed !important;
@@ -116,7 +115,7 @@
 	  top: 0px !important;
 	}
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar:not([inactive="true"]) ~ #TabsToolbar .titlebar-buttonbox-container {
-	  display: none !important;
+	  /*display: none !important;*/
 	}
   }
 }

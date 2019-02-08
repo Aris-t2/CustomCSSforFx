@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
+@import "./toolbar_mode_icons_and_text.css";
+
 /* fix for macOS */
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,

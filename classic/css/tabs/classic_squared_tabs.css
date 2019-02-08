@@ -239,7 +239,7 @@
 }
 
 .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
-:root[uidensity=touch]  .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
   width: 16px !important;
   height: 16px !important;
   -moz-margin-end: -6px !important;

@@ -21,7 +21,12 @@
   border-right: 0px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar {
+#main-window[tabsintitlebar] #toolbar-menubar:not([autohide="true"]),
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"] {
+  margin-bottom: 26px !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar .titlebar-buttonbox-container {
   display: none !important;
 }
 
