@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.1 ********************************************************************************/
+/* version 2.4.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -512,7 +512,8 @@
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
 
 /* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
-/* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes ********/
+/* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes **********/
+/* [!] Try alternatives provided within support thread ******************************************/
 /* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
 /* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
 /* [!] 'about:config > browser.oldsearch.customwidth': enables custom popup width ***************/
@@ -599,9 +600,9 @@
 
 /* TOOLBAR TEXT MODES - [only use one at a time] ************************************************/
 /* @import "./css/toolbars/toolbar_mode_icons_and_text.css"; /**/
-/* @import "./css/toolbars/toolbar_mode_icons_and_text_macOS.css"; /**/ /* -> alternative appearance for Linux */
+/* @import "./css/toolbars/toolbar_mode_icons_and_text_macOS.css"; /**/ /* -> also offers alternative appearance on Linux */
 /* @import "./css/toolbars/toolbar_mode_text.css"; /**/
-/* @import "./css/toolbars/toolbar_mode_text_macOS.css"; /**/ /* -> alternative appearance for Linux */
+/* @import "./css/toolbars/toolbar_mode_text_macOS.css"; /**/ /* -> also offers alternative appearance on Linux */
 
 
 /************************************************************************************************/
