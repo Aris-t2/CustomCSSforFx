@@ -83,7 +83,7 @@
 }
 
 #tabbrowser-tabs * {
-  overflow-x: none !important;
+  overflow-x: collapse !important;
 }
 
 #main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {

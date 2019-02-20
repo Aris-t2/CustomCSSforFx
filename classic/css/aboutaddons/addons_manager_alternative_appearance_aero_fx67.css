@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addons_manager_alternative_appearance_fx67.css";
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+				url-prefix(about:addons) {
+
+	#addons-page {
+	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	}
+}
+
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+
+body > div#main {
+  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+}

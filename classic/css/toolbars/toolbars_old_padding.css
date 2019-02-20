@@ -5,5 +5,12 @@
 
 /* old toolbar padding */
 #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
-  padding: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#navigator-toolbox > #PersonalToolbar {
+  min-height: 30px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }

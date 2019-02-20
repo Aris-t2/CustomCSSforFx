@@ -2,8 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+/* height variable gets set in 'general_variables.css' file, if full package is used ****/
 :root {
   --bookmark_items_lines: 1 !important; /* override multiple bookmark lines option */
+  --addonbar_height: 27px;
 }
 
 /* create an empty space below navigation toolbar */
@@ -39,7 +42,7 @@
 
 /* set minimum height for bookmarks, when on navigation toolbar */
 #nav-bar[currentset*="personal-bookmarks"] #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
-  min-height: 24px !important;
+  min-height: calc( var(--addonbar_height) - 3px); !important;
 }
 
 /* adjustments */
@@ -56,7 +59,7 @@
   position: fixed !important;
   bottom: 0px !important;
   width: 100% !important;
-  height: 27px !important;
+  height: var(--addonbar_height) !important;
   -moz-padding-start: 1px !important;
   -moz-padding-end: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
@@ -68,12 +71,12 @@
   background-image: var(--lwt-header-image) !important;
 }
 #PersonalToolbar > *  {
-  min-height: 24px !important;
+  min-height: calc( var(--addonbar_height) - 3px); !important;
 }
 
 /* free some space below content */
 #main-window:not([chromehidden*="toolbar"]):not([sizemode="fullscreen"]) #browser-bottombox  {
-  margin-bottom: 26px;
+  margin-bottom: calc( var(--addonbar_height) - 1px);
 }
 
 /* hide this projects custom bookmarks label, if used */
@@ -131,6 +134,13 @@
  /* override multiple bookmark lines option */
 #personal-bookmarks #PlacesToolbar .chevron{
   visibility: visible !important;
+}
+
+/* override default settings */
+#main-window #navigator-toolbox > #PersonalToolbar {
+  min-height: unset !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 

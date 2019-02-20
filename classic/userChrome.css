@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.2 ********************************************************************************/
+/* version 2.4.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -27,9 +27,10 @@
   - 'simulated add-on bar > additional bookmarks toolbar' uses an own new option
   - 'appbutton in titlebar' on macOS gets moved to the right (see extra option)
   
-[!] Firefox 66+ 
+[!] Firefox 66+ (look for '*_fx66.css')
   - 'multiple tab lines v1' is not compatible with Firefox 66+
-  - 'bookmarks toolbar multiple lines' is not compatible with Firefox 66+
+  - 'bookmarks toolbar multiple lines' is not compatible with Firefox 66+, use "_fx66.css" alternative
+  - 'serachbar show labels' is different now in Firefox 66+
   
 *************************************************************************************************/
 
@@ -62,7 +63,7 @@
 
   EXPERIMENTAL settings are for testing only!
   
-  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/163
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/189
 
   All options have significant categories and names.
   
@@ -428,6 +429,7 @@
 
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
+/* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
 /* @import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
@@ -509,7 +511,9 @@
 /* searchbar popup - search engine settings - [only use one at a time] **************************/
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx66.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx66.css"; /**/
 
 /* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
 /* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes **********/
@@ -578,7 +582,7 @@
 /* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar_when_tab_not_top.css"; /**/
 
-/* BOOKMARKS TOOLBAR - MULTIPLE LINES ***********************************************************/
+/* BOOKMARKS TOOLBAR - MULTIPLE LINES - [only use one at a time] ********************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] not compatible to 'simulated second bookmars toolbar' option *****************************/
@@ -586,6 +590,7 @@
 /* [!] not compatible to Firefox 66+ (2019-01-14 Nightly) ***************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */
 
 /* TOOLBAR COLORS *******************************************************************************/
 @import "./css/toolbars/general_toolbar_colors.css"; /**/

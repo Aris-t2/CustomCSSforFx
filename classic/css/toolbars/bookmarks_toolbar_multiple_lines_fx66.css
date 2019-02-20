@@ -1,0 +1,31 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* import old button/bookmark size code */
+
+:root {
+  --bookmark_items_height: 26px; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3; /* <- maximum amount of lines */
+}
+
+#PersonalToolbar {
+  min-height: var(--bookmark_items_height) !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important;
+}
+  
+
+#PlacesToolbar,
+#PlacesToolbarItems {
+  overflow: visible;
+  display: block;
+}
+
+#PlacesToolbarItems > .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap; 
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important
+}

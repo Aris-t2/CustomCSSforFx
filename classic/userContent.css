@@ -53,6 +53,8 @@
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_fx67.css"; /**/ /* if new html-based version is used */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx67.css"; /**/	/* <-- AERO colors */ /* if new html-based version is used */
 
 /* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories.css"; /**/
