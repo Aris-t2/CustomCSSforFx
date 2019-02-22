@@ -4,6 +4,7 @@
 
 
 /* hide private mode indicators / private masks */
+#main-window[privatebrowsingmode=temporary]:not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar .private-browsing-indicator,
 * #private-browsing-indicator-titlebar,
 * #private-browsing-indicator,
 * .private-browsing-indicator {
