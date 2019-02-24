@@ -5,7 +5,7 @@
 
 
 #main-window:not([customizing="true"]) #nav-bar {
-  padding-bottom: 28px !important;
+  padding-bottom: 26px !important;
 }
 
 /* reduce maximum width of location bar and search bar on navigation toolbar */

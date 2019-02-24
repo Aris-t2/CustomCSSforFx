@@ -17,9 +17,12 @@
   height: var(--tab-min-height_tnot) !important;
 }
 
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
   position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: unset !important;
 }
 
 #tabbrowser-tabs .tabbrowser-arrowscrollbox {
@@ -38,4 +41,9 @@
   padding-bottom: 4px !important;
   height: unset !important;
   max-height: unset !important;
+}
+
+#main-window[tabsintitlebar][sizemode="normal"] #titlebar {
+  margin-top: -20px !important;
+  padding-top: 20px !important;
 }

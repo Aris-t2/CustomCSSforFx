@@ -10,7 +10,7 @@
 }
 
 #navigator-toolbox > #PersonalToolbar {
-  min-height: 30px !important;
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
+  min-height: 28px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
 }
