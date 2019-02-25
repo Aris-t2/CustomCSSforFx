@@ -33,7 +33,7 @@
 /* caption button position in maximized mode after moving to the top */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: 0px !important;
+  top: 0 !important;
 }
 
 #PersonalToolbar {
@@ -43,7 +43,7 @@
   max-height: unset !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"] #titlebar {
-  margin-top: -20px !important;
-  padding-top: 20px !important;
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #titlebar {
+  margin-top: calc(-1 * var(--tab-min-height_tnot)) !important;
+  padding-top: var(--tab-min-height_tnot) !important;
 }
