@@ -293,7 +293,7 @@
   box-shadow: unset !important;
 }
 
-/* hide tab separators */
+/* hide tab separators and borders set by Firefox */
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
   opacity: 0 !important;
@@ -301,19 +301,12 @@
   border-image-slice: unset !important;
   width: unset !important;
 }
+
 #tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
 .tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
 #tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
   content: unset !important;
   display: unset !important;
-}
-/**/
-
-/* remove crap set by Firefox 58+ */
-.tabbrowser-tab,
-.tab-stack,
-.tab-background {
-  border: unset !important;
 }
 
 .tabbrowser-tab::after,
@@ -336,6 +329,13 @@
   border-top-right-radius: 3px !important;
 }
 
+.tabbrowser-tab,
+.tab-stack,
+.tab-background {
+  border: unset !important;
+}
+
+/* remove titlebar placerholders */
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"],
 #TabsToolbar .titlebar-placeholder[type="post-tabs"]{
   opacity: 0 !important;

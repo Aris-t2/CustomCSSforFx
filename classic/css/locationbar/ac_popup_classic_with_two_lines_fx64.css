@@ -5,6 +5,7 @@
 
 /* If complete CustomCSSforFx release package is used, ':root' variables have to be set **
    inside /config/general_variables.css! ************************************************/
+   
 :root {
   --ac_popup_width: 700px; /* popup width in normal mode */
   --ac_popup_width_maximized: 1400px;  /* popup width in maximized mode */

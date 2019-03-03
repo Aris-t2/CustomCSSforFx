@@ -3,6 +3,10 @@
 /****************************************************************************************/
 
 
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+
 /* Set a custom amount of results: about:config > browser.urlbar.maxRichResults *********/
 
 :root {

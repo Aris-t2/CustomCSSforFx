@@ -3,7 +3,10 @@
 /****************************************************************************************/
 
 
-/* import old button/bookmark size code */
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+/* import old button/bookmark size code *************************************************/
 @import "./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css";
 
 :root {

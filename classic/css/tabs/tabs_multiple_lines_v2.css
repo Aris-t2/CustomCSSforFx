@@ -98,23 +98,23 @@
   -moz-padding-end: 0px !important;
 }
 
-/* remove crap set by Firefox 58+ */
+/* hide private window indicator, window controls and titlebar placeholders */
+#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
+#main-window[tabsintitlebar] #TabsToolbar #window-controls,
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
+  opacity: 0 !important;
+}
+
+/* hide tab borders set by Firefox 58+ to solve 'blank space below tabs' issue */
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
   border-left: unset !important;
   border-image: unset !important;
   border-image-slice: unset !important;
   border: 0 !important;
-}
-
-#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
-#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
-  opacity: 0 !important;
-}
-
-#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
-#main-window[tabsintitlebar] #TabsToolbar #window-controls,
-#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
-#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
-  display: none !important;
 }

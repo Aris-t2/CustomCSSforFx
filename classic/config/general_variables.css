@@ -38,12 +38,12 @@
   /* for increase_ui_font_size.css */
   --general_ui_font_size: 12pt !important;
   
+  /* for searchbar_popup_engines_show_labels_scrollbars.css / ..._fx66.css*/
+  --search-one-offs_labels_height: 100px !important;
+    
   /* for ac_popup_custom_height.css (location bar popup) */
   --ac_popup_max_height: 300px !important;
-  
-  /* for searchbar_popup_engines_show_labels_scrollbars.css */
-  --search-one-offs_labels_height: 100px !important;
-  
+
   /* for ac_popup_classic_with_two_lines_fx64.css */
   --ac_popup_width: 700px !important; /* popup width in normal mode */
   --ac_popup_width_maximized: 1400px !important;  /* popup width in maximized mode */
