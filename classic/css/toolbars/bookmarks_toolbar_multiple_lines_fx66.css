@@ -84,6 +84,7 @@
   padding-bottom: 0px !important;
   margin-top: 2px !important;
   margin-bottom: 2px !important;
+  vertical-align: middle;
 }
 /*
 #personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item:hover:active:not([disabled="true"]),
