@@ -391,7 +391,7 @@
 }
 
 /* Fx65+ fixes */
-#main-window[sizemode="maximized"] #TabsToolbar {
+#main-window[sizemode="maximized"][tabsintitlebar] #TabsToolbar {
   margin-top: -1px !important;
 }
 

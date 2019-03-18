@@ -106,7 +106,7 @@
 }
 
 /* hide non-required items */
-/*#TabsToolbar .private-browsing-indicator,*/
+#TabsToolbar .private-browsing-indicator,
 #TabsToolbar #window-controls,
 #TabsToolbar *[type="caption-buttons"],
 #TabsToolbar *[type="pre-tabs"],
@@ -116,17 +116,18 @@
 
 /* adjust private mode icon position */
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-	#main-window[privatebrowsingmode=temporary]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
+	#main-window[tabsintitlebar][privatebrowsingmode=temporary]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
 	  position: fixed !important;
 	  top: 0 !important;
 	  right: 130px !important;
 	  visibility: visible !important;
 	  display: block !important;
 	}
-	#main-window[privatebrowsingmode=temporary][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
+	#main-window[tabsintitlebar][privatebrowsingmode=temporary][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
 	  top: 8px !important;
 	}
 }
+
 /* adjust tabs toolbar padding */
 #main-window:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[tabsintitlebar]:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,

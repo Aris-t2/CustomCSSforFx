@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.5 ********************************************************************************/
+/* version 2.4.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -29,8 +29,8 @@
   
 [!] Firefox 66+ (look for '*_fx66.css')
   - 'multiple tab lines v1' is not compatible with Firefox 66+
-  - 'bookmarks toolbar multiple lines' is not compatible with Firefox 66+, use "_fx66.css" alternative
-  - 'searchbar show labels' is different now in Firefox 66+
+  - 'bookmarks toolbar multiple lines' uses an own new option
+  - 'searchbar show labels' uses an own new option
   
 *************************************************************************************************/
 
@@ -587,7 +587,6 @@
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] not compatible to 'simulated second bookmars toolbar' option *****************************/
 /* [!] not compatible to 'simulated add-bar' option *********************************************/
-/* [!] not compatible to Firefox 66+ (2019-01-14 Nightly) ***************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */

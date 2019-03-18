@@ -8,5 +8,13 @@
 	  opacity: 1 !important;
 	  min-height: 48px !important;
 	}
+	
+	#category-recentUpdates[hidden] {
+	  opacity: 1 !important;
+	  min-height: 48px !important;
+	  height: 48px !important;
+	  display: inherit !important;
+	  transition: unset !important;
+	}
 
 }

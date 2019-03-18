@@ -1,0 +1,36 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(about:config) {
+
+	.config-background #prefs,
+	.config-background #prefs * {
+	  min-height: unset !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	  font-size: unset !important;
+	}
+
+	.config-background #prefs button {
+	  -moz-margin-start: 1px !important;
+	}
+
+	.config-background #prefs #form-edit > * {
+	  -moz-margin-end: 2px !important;
+	}
+
+	.config-background #search-container * {
+	  min-height: unset !important;
+	  font-size: unset !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	  margin-top: unset !important;
+	  margin-bottom: unset !important;
+	}
+
+	.config-background #search-container {
+	  padding: 4px !important;
+	}
+
+}
