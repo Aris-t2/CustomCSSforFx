@@ -1,7 +1,17 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
 /* large button mode */
 #main-window:not([customizing]) #nav-bar-customization-target > toolbaritem.chromeclass-toolbar-additional toolbarbutton .toolbarbutton-icon,
 #main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton .toolbarbutton-icon,
-#main-window:not([customizing]) #nav-bar > toolbarbutton .toolbarbutton-icon {
+#main-window:not([customizing]) #nav-bar > toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack .toolbarbutton-icon {
   width: 48px !important;
   height: 48px !important;
 }

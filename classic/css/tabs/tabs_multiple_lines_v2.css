@@ -118,3 +118,9 @@
   border-image-slice: unset !important;
   border: 0 !important;
 }
+
+/* Fx66+ fix */
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}

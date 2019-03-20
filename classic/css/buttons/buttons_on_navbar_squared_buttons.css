@@ -20,7 +20,12 @@
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
-
+#main-window[uidensity=compact] #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
 #main-window[uidensity=compact] #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 2px !important;
   margin-right: 2px !important;
@@ -31,7 +36,6 @@
   margin-left: 2px !important;
   margin-right: 2px !important;
 }
-
 #main-window[uidensity=compact] #nav-bar :-moz-any(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
   padding-left: 8px !important;
   padding-right: 8px !important;
@@ -61,6 +65,12 @@
   height: 30px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  padding-left: 11px !important;
+  padding-right: 11px !important;
 }
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 6px !important;
@@ -106,6 +116,12 @@
   height: 32px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+#main-window[uidensity=touch] #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
 }
 #main-window[uidensity=touch] #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 6px !important;

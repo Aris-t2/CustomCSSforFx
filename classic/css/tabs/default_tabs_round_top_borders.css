@@ -8,7 +8,6 @@
 }
 
 /* tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -16,6 +15,11 @@
   border-top-left-radius: var(--default_tab_border_roundness) !important;
   border-top-right-radius: var(--default_tab_border_roundness) !important;
   overflow: hidden;
+}
+
+#TabsToolbar .tabs-newtab-button{
+  border-top-left-radius: var(--default_tab_border_roundness) !important;
+  border-top-right-radius: var(--default_tab_border_roundness) !important;
 }
 
 /* hide tab separators */
