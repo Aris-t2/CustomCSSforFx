@@ -7,8 +7,14 @@
    inside /config/general_variables.css! ************************************************/
 :root {
   --ac_popup_width: 700px; /* popup width in normal mode */
-  --ac_popup_width_maximized: 1400px;  /* popup width in maximized mode */
-  --ac_popup_width_fullscreen: 1400px;  /* popup width in fullscreen mode */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px;  /* popup width in fullscreen mode */
 }
 
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox .autocomplete-richlistitem .ac-title {
@@ -48,26 +54,6 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
   min-width: calc( var(--ac_popup_width) - 50px) !important;
   width: calc( var(--ac_popup_width) - 50px) !important;
-}
-
-/* popup width [maximized mode] */
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-  width: var(--ac_popup_width_maximized) !important;
-  max-width: var(--ac_popup_width_maximized) !important;
-}
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
-  min-width: calc( var(--ac_popup_width_maximized) - 50px) !important;
-}
-
-/* popup width [fullscreen mode] */
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-  width: var(--ac_popup_width_fullscreen) !important;
-  max-width: var(--ac_popup_width_fullscreen) !important;
-}
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
-  min-width: calc( var(--ac_popup_width_fullscreen) - 50px) !important;
 }
 
 /* Items height, border, postion for two lines */
@@ -117,6 +103,12 @@
 }
 	
 /* show scrollbar if needed */
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
+  overflow-x: hidden !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > .autocomplete-richlistbox {
   overflow-y: auto !important;
 }
