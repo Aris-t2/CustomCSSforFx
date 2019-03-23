@@ -1,6 +1,6 @@
 ## Downloads for Firefox Quantum (60+)
 
-**[Releases & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** --- **[List of CTR, CTB GMF & Noia4 CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
+**[Releases & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** --- **[List of CTR, CTB, GMF & Noia4 CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2)**  
 **[Custom JavaScript for Firefox](https://github.com/Aris-t2/CustomJSforFx)** --- **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
 
 ## Want to support this project?
