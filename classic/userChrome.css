@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.7 ********************************************************************************/
+/* version 2.4.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -375,9 +375,10 @@
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
 /* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
 /* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
-/* [!] v1 is not compatible with Firefox 66+ ****************************************************/
+/* [!] v1 and v2 are not compatible with Firefox 66+ ********************************************/
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_multiple_lines_v3.css"; /**/  /* <--- EXPERIMENTAL */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/
@@ -677,6 +678,10 @@
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63 */
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64.css"; /**/  /* <--- old autocomplete popup for Fx 64+ */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/
+
+/* Move bookmarks star, switch to tab icon etc. to the right ************************************/
+/* [!] for 'ac_popup_classic_with_two_lines_fx64.css' only **************************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/
 
 /* Classic popup & url only: requires 'Classic popup with two lined results' option (Fx60-64!) **/
 /* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/

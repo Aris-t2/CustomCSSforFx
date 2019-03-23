@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
-  visibility: visible !important;
+  visibility: hidden !important;
   display: block !important;
   opacity: 0 !important;
   -moz-margin-end: -16px !important;

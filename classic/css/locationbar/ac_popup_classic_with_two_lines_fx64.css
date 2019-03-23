@@ -8,11 +8,22 @@
    
 :root {
   --ac_popup_width: 700px; /* popup width in normal mode */
-  --ac_popup_width_maximized: 1400px;  /* popup width in maximized mode */
-  --ac_popup_width_fullscreen: 1400px;  /* popup width in fullscreen mode */
   --ac_popup_number_of_results: 10; /* value has to be identical to about:config > browser.urlbar.maxRichResults */
   --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )); /* calculate maximum height based on items to display */
   --ac_popup_height: auto; /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px;  /* popup width in fullscreen mode */
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
 }
 
 /* popup position */
@@ -42,7 +53,6 @@
   max-height: var(--ac_popup_maxheight) !important;
 }
 
-/* popup width [normal mode] */
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
   min-width: 0px !important;
   width: var(--ac_popup_width) !important;
@@ -52,26 +62,6 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
   min-width: calc( var(--ac_popup_width) - 50px) !important;
   width: calc( var(--ac_popup_width) - 50px) !important;
-}
-
-/* popup width [maximized mode] */
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-  width: var(--ac_popup_width_maximized) !important;
-  max-width: var(--ac_popup_width_maximized) !important;
-}
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
-#main-window[sizemode="maximized"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
-  min-width: calc( var(--ac_popup_width_maximized) - 50px) !important;
-}
-
-/* popup width [fullscreen mode] */
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-  width: var(--ac_popup_width_fullscreen) !important;
-  max-width: var(--ac_popup_width_fullscreen) !important;
-}
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
-#main-window[inFullscreen="true"] #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
-  min-width: calc( var(--ac_popup_width_fullscreen) - 50px) !important;
 }
 
 /* Items height, border, postion for two lines */
@@ -96,9 +86,15 @@
   font-size: 14px;
 }
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(ltr) .autocomplete-richlistitem .ac-title {
-  left: 30px;
+  left: 20px;
 }
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(rtl) .autocomplete-richlistitem .ac-title {
+  right: 20px;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(ltr) .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
+  left: 30px;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(rtl) .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
   right: 30px;
 }
 
@@ -174,10 +170,6 @@
 	
 /* show scrollbar if needed */
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
-  overflow: auto !important;
-}
-
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
   overflow-x: hidden !important;
 }
 
@@ -186,5 +178,3 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > .autocomplete-richlistbox {
   overflow-y: auto !important;
 }
-
-

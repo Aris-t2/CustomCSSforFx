@@ -44,14 +44,6 @@
   /* for ac_popup_custom_height.css (location bar popup) */
   --ac_popup_max_height: 300px !important;
 
-  /* for ac_popup_classic_with_two_lines_fx64.css */
-  --ac_popup_width: 700px !important; /* popup width in normal mode */
-  --ac_popup_width_maximized: 1400px !important;  /* popup width in maximized mode */
-  --ac_popup_width_fullscreen: 1400px !important;  /* popup width in fullscreen mode */
-  --ac_popup_number_of_results: 10 !important;  /* value has to be identical to about:config > browser.urlbar.maxRichResults */
-  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )) !important; /* calculate maximum height based on items to display */
-  --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
-  
   /* for addonbar_move_bookmarks_toolbar_to_bottom.css */
   --addonbar_height: 27px !important;
 }
@@ -59,4 +51,20 @@
 :root[uidensity="touch"] {
   /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 36px !important;
+}
+
+/* for ac_popup_classic_with_two_lines_fx64.css */
+:root {
+  --ac_popup_width: 700px !important; /* popup width in normal mode */
+  --ac_popup_number_of_results: 10 !important;  /* value has to be identical to about:config > browser.urlbar.maxRichResults */
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )) !important; /* calculate maximum height based on items to display */
+  --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px !important; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px !important; /* popup width in fullscreen mode */
 }

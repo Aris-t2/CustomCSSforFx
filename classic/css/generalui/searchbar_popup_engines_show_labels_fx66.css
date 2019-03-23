@@ -109,3 +109,7 @@
   visibility: collapse !important;
   opacity: 0 !important;
 }
+
+#PopupSearchAutoComplete .search-panel-tree {
+  overflow-y: hidden !important;
+}

@@ -5,19 +5,64 @@
 
 /****************************************************************************************/
 /* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
-/* all credits go to the original author: ***********************************************/
+/* all credits go to the original authors: **********************************************/
 /* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/* https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/multi-row_tabs.css */
 /****************************************************************************************/
 
 
 /* NOTE  ********************************************************************************/
 /* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
 
-:root {
-  --tabs-lines: 3; /* 3 rows, increase for more */
+:root{
+  --tabs-lines: 4;
   --tab_min_width_mlt: 80px;
   --tab_max_width_mlt: 200px;
   --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+}
+
+#tabbrowser-tabs{
+  min-height: unset !important;
+  padding-inline-start: 0px !important
+}
+
+/* Test for Firefox > 66 */
+@supports (inset-block:auto){
+  #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+  }
+  #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+    overflow: -moz-hidden-unscrollable;
+    display: block;
+	margin-bottom:-1px !important;
+  }
+}
+
+/* Test for Firefox < 66 */
+@supports not (inset-block:auto){
+  #tabbrowser-tabs > .tabbrowser-arrowscrollbox{
+    min-height: unset !important;
+  }
+  #tabbrowser-tabs .scrollbox-innerbox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tabbrowser-tabs .arrowscrollbox-scrollbox {
+    overflow: -moz-hidden-unscrollable;
+    display: block;
+  }
+}
+
+.tabbrowser-tab{
+  height: var(--tab-min-height_mlt);
+}
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]{
+  position: static !important;
+  margin-inline-start: 0px !important;
 }
 
 .tabbrowser-tab[fadein]:not([pinned]) {
@@ -26,76 +71,24 @@
   max-width: var(--tab_max_width_mlt) !important;
 }
 
-.tabbrowser-tab,.tab-background {
-  min-height: var(--tab-min-height_mlt);
-}
-
-.tabs-newtab-button {
-  vertical-align: bottom !important;
-  height: var(--tab-min-height_mlt);
-  margin-bottom: -1px !important;
-}
-
-.tab-stack {
+.tabbrowser-tab > stack{
   width: 100%;
-}
-
-/* fix tab position */
-#tabbrowser-tabs,
-#tabbrowser-tabs > .tabbrowser-arrowscrollbox {
-  min-height: var(--tab-min-height_mlt) !important;
-}
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-}
-/**/
-
-#tabbrowser-tabs .scrollbox-innerbox {
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: collapse !important;
-  overflow-y: auto !important;
-  min-height: var(--tab-min-height_mlt);
-  max-height: calc( var(--tabs-lines) * var(--tab-min-height_mlt) ) !important;
-}
-
-#tabbrowser-tabs .arrowscrollbox-scrollbox {
-  overflow-x: collapse;
-  overflow: visible; 
-  display: block;
+  height: 100%;
 }
 
 #tabbrowser-tabs .scrollbutton-up,
 #tabbrowser-tabs .scrollbutton-down,
-#TabsToolbar #alltabs-button,
-.tabbrowser-tab:not([fadein]){
-  display: none;
+#alltabs-button,
+:root:not([customizing]) #TabsToolbar #new-tab-button,
+#tabbrowser-tabs spacer,
+.tabbrowser-tab::after{
+  display: none !important;
 }
 
-#main-window[tabsintitlebar] #tabbrowser-tabs {
-  -moz-window-dragging: no-drag !important;
-}
-
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
-  opacity: 0 !important;
-}
-
-#tabbrowser-tabs * {
-  overflow-x: collapse !important;
-}
-
-#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
-  display: block !important;
-}
-
-#tabbrowser-tabs .scrollbox-innerbox {
-  -moz-padding-end: 4px !important;
-}
-
-#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
-  -moz-padding-end: 0px !important;
+#tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
+#TabsToolbar[customizing="true"] #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .tabs-newtab-button {
+  visibility: visible !important;
 }
 
 /* hide private window indicator, window controls and titlebar placeholders */
@@ -128,4 +121,9 @@
   visibility: hidden !important;
   display: block !important;
   -moz-margin-start: -18px !important;
+}
+
+/* fix scrollbar */
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+  -moz-window-dragging: no-drag !important;
 }
