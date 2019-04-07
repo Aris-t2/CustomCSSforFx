@@ -2,12 +2,16 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-.tabbrowser-tab:not([selected="true"]) .tab-close-button {
-  visibility: collapse !important;
-}
 
-#tabbrowser-tabs .tabbrowser-tab[selected="true"] .tab-close-button {
+@import ".//tabs_multiple_lines_v3.css";
+
+
+:root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {
+  display: unset !important;
   visibility: visible !important;
-  display: block !important;
 }
 
+.tabs-newtab-button {
+  display: none !important;
+  visibility: hidden !important;
+}

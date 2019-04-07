@@ -88,7 +88,7 @@
 #tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
 #tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
 #TabsToolbar[customizing="true"] #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .tabs-newtab-button {
-  visibility: visible !important;
+  visibility: hidden !important;
 }
 
 /* hide private window indicator, window controls and titlebar placeholders */
@@ -126,4 +126,10 @@
 /* fix scrollbar */
 #main-window[tabsintitlebar] #tabbrowser-tabs {
   -moz-window-dragging: no-drag !important;
+}
+
+/*lw theme fix */
+#main-window:-moz-lwtheme {
+  background: var(--lwt-header-image) !important;
+  background-repeat: repeat-y !important;
 }

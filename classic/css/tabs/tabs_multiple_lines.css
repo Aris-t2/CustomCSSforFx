@@ -116,3 +116,9 @@
   border-image-slice: unset !important;
   border: 0 !important;
 }
+
+/*lw theme fix */
+#main-window:-moz-lwtheme {
+  background: var(--lwt-header-image) !important;
+  background-repeat: repeat-y !important;
+}

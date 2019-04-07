@@ -129,3 +129,9 @@
   display: block !important;
   -moz-margin-start: -18px !important;
 }
+
+/*lw theme fix */
+#main-window:-moz-lwtheme {
+  background: var(--lwt-header-image) !important;
+  background-repeat: repeat-y !important;
+}

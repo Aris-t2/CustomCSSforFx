@@ -1,0 +1,23 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#TabsToolbar .arrowscrollbox-overflow-start-indicator {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#TabsToolbar .arrowscrollbox-scrollbox {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+#TabsToolbar .arrowscrollbox-overflow-start-indicator {
+  -moz-box-ordinal-group: 2 !important;
+}
+
+#TabsToolbar .scrollbutton-up {
+  -moz-box-ordinal-group: 3 !important;
+}
+#TabsToolbar .scrollbutton-down {
+  -moz-box-ordinal-group: 4 !important;
+}

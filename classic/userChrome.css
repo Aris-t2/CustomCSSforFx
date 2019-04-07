@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.4.9 ********************************************************************************/
+/* version 2.5.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -382,6 +382,7 @@
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_multiple_lines_v3.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_multiple_lines_v3_force_newtab_button_visibility.css"; /**/  /* <--- EXPERIMENTAL */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/
@@ -389,6 +390,10 @@
 /* @import "./css/tabs/tab_title_in_firefox_titlebar.css"; /**/
 /* @import "./css/tabs/tab_title_in_firefox_titlebar_fx65.css"; /**/
 /* @import "./css/tabs/tab_title_in_firefox_titlebar_centered.css"; /**/
+
+/* Tab scroll buttons position - [only use one at a time] ***************************************/
+/* @import "./css/tabs/tab_scrollbuttons_both_on toolbars_start.css"; /**/
+/* @import "./css/tabs/tab_scrollbuttons_both_on toolbars_end.css"; /**/
 
 /* restore empty/missing tab favicon - [only use one at a time] *********************************/
 @import "./css/tabs/missing_tab_favicon_restored_default.css"; /**/

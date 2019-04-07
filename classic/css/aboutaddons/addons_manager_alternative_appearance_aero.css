@@ -11,3 +11,12 @@
 	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
 	}
 }
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/shortcuts.html) {
+
+	html,
+	body {
+	  background: #dbeaf9 !important;
+	}
+
+}
