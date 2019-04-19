@@ -2,13 +2,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
 
-.tabbrowser-tab:not([selected="true"]) .tab-close-button {
-  visibility: collapse !important;
+	#list-view #private-browsing-notice {
+		display: none !important;
+	}
+
 }
-
-#tabbrowser-tabs .tabbrowser-tab:not([pinned])[selected="true"] .tab-close-button {
-  visibility: visible !important;
-  display: block !important;
-}
-
