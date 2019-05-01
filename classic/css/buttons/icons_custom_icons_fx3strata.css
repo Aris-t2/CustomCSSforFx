@@ -15,7 +15,8 @@
 	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
-#downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]) {
+#downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
+#downloads-button .toolbarbutton-icon {
   list-style-image: url("../../image/toolbar_fx3_strata.png") !important;
 }
 
