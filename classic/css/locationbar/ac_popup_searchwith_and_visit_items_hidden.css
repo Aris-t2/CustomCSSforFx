@@ -51,4 +51,35 @@
   overflow-y: auto !important;
 }
 
-/**/
+
+
+/* Fx 68 */
+
+#urlbar-results .urlbarView-body-outer {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+#urlbar-results .urlbarView-row:first-of-type:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row[anonid="type-icon-spacer"],
+#urlbar-results .urlbarView-row:first-of-type[type="visiturl"] + .urlbarView-row[type="search"],
+#urlbar-results .urlbarView-row:first-of-type:last-of-type[type="search"] {
+  z-index: -1000000000 !important;
+  position: fixed !important;
+  opacity: 0 !important;
+  visibility: collapse !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+}
+
+#urlbar-results .urlbarView-row:not([collapsed="true"]) + .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]) + .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]) {
+  display: none !important;
+}
+
+/* show scrollbar */
+#urlbar-results scrollbox{
+  overflow-y: auto !important;
+}

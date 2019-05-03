@@ -15,3 +15,10 @@
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url .ac-url-text:not([selected]) {
   color: #00d2ff !important;
 }
+
+
+/* Fx68+ */
+#urlbar-results .urlbarView-title-separator,
+#urlbar-results .urlbarView-title{
+  display: none !important;
+}

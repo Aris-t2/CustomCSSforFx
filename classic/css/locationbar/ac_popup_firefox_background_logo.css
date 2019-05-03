@@ -9,5 +9,12 @@
 	  background-position: center center !important;
 	  background-repeat: no-repeat !important;
 	}
+	
+	/* Fx68 */
+	#urlbarView-results {
+	  background-image: url(./../../image/fx_logo.png) !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
+	}
 
 }

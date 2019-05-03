@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 /* Aero-like appearance */
 :-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistitem[selected="true"],
 :-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistitem[selected="true"][current="true"],
@@ -59,4 +60,45 @@
 
 :-moz-any(#PopupAutoCompleteRichResult,#PopupSearchAutoComplete) .autocomplete-richlistbox {
   padding: 1px !important;
+}
+
+
+
+/* Fx68 */
+#urlbarView-results .urlbarView-row[selected],
+#urlbarView-results .urlbarView-row[aria-selected="true"], 
+#urlbarView-results .urlbarView-row:hover {
+  color: inherit !important;
+  background-color: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+  border-radius: 6px !important;
+  outline: 1px solid rgba(124,163,206,0.7) !important;
+  -moz-outline-radius: 3px !important;
+  outline-offset: -1px !important;
+}
+
+#urlbarView-results .urlbarView-row[selected] .urlbarView-title, 
+#urlbarView-results .urlbarView-title[selected],
+#urlbarView-results .urlbarView-row[selected] .urlbarView-url, 
+#urlbarView-results .urlbarView-url[selected],
+#urlbarView-results .urlbarView-row[selected] .urlbarView-action,
+#urlbarView-results .urlbarView-action[selected],
+#urlbarView-results .urlbarView-row[selected] .ac-separator,
+#urlbarView-results .ac-separator[selected] {
+  color: HighlightText !important;
+}
+
+/* replace inverted text colors with default ones */
+#urlbarView-results .urlbarView-row[selected] .urlbarView-title {
+  color: hsl(0, 0%, 0%) !important;
+}
+#urlbarView-results .urlbarView-row[selected] .urlbarView-url {
+  color: hsl(210, 77%, 47%) !important;
+}
+#urlbarView-results .urlbarView-row[selected] .urlbarView-action {
+  color: hsl(178, 100%, 28%) !important;
 }

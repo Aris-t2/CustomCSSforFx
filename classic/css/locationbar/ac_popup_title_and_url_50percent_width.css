@@ -49,3 +49,41 @@
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url .ac-url-text:not([selected]) {
   color: #00d2ff !important;
 }
+
+
+
+/* Fx68+ */
+#urlbarView-results {
+  padding: 0px !important;
+}
+
+#urlbar-results .urlbarView-body-outer,
+#urlbar-results .urlbarView-row,
+#urlbar-results .urlbarView-row-inner {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  -moz-padding-end: 0 !important;
+}
+
+#urlbar-results .urlbarView-row-inner {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}
+
+#urlbar-results .urlbarView-title-separator {
+  display: none !important;
+}
+
+#urlbar-results .urlbarView-title, 
+#urlbar-results .urlbarView-url {
+  min-width: calc((100vw - 100px)/2) !important;
+  width: calc((100vw - 100px)/2) !important;
+}
+
+
+#urlbar-results .urlbarView-row[type="search"] .urlbarView-action, 
+#urlbar-results .urlbarView-row[type="search"]:not([selected]):not(:hover) .urlbarView-action {
+  display: block !important;
+  visibility: visible !important;
+}

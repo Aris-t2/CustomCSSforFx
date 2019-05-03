@@ -1,0 +1,109 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* If complete CustomCSSforFx release package is used 'root' values have to be set *******
+   inside /config/general_variables.css! ************************************************/
+:root {
+  --ac_popup_width: 700px; /* popup width in normal mode */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px;  /* popup width in fullscreen mode */
+}
+
+#urlbar-results .urlbarView-row .urlbarView-title {
+  visibility: collapse !important;
+}
+
+/* popup position */
+#urlbar-results {
+  -moz-margin-start: 0 !important;
+  margin-top: -4px !important;
+}
+
+/* remove space around box */
+#urlbarView-results {
+  padding: 0 !important;
+}
+
+/* Max-height for items visible without scrolling */
+#urlbarView-results {
+  height: auto !important;
+  max-height: calc(47.5px * 12) !important;
+}
+
+/* popup width [normal mode] */
+#urlbar-results {
+  min-width: 0px !important;
+  width: var(--ac_popup_width) !important;
+  max-width: var(--ac_popup_width) !important;
+}
+#urlbar-results .urlbarView-row .urlbarView-title, 
+#urlbar-results .urlbarView-row .urlbarView-url {
+  min-width: calc( var(--ac_popup_width) - 100px) !important;
+  width: calc( var(--ac_popup_width) - 100px) !important;
+}
+
+/* Items height, border, postion for two lines */
+#urlbar-results .urlbarView-row {
+  position: relative !important;
+  height: 22px !important;
+  border-bottom-color: transparent !important;
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row {
+  left: 0 !important;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row {
+  right: 0 !important;
+}
+
+/* Hide separator between title and url ans space before icons */
+#urlbar-results .urlbarView-title-separator { 
+  display: none !important;
+}
+
+#urlbar-results .urlbarView-row[selected=true] {
+  background-color: Highlight !important;
+}
+
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-action-text,
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-title, 
+#urlbar-results .urlbarView-title[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-url, 
+#urlbar-results .urlbarView-url[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-action,
+#urlbar-results .urlbarView-action[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-title-separator,
+#urlbar-results .ac-separator[selected] {
+  color: HighlightText !important;
+}
+  
+#urlbar-results .urlbarView-row[type="search"] .urlbarView-action, 
+#urlbar-results .urlbarView-row[type="search"]:not([selected]):not(:hover) .urlbarView-action {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* fix large space issue at items end */
+#urlbar-results .urlbarView-row {
+  border-inline-end: 0px solid transparent !important;
+}
+	
+/* show scrollbar if needed */
+#urlbar-results > .urlbarView-body-outer {
+  overflow-x: hidden !important;
+}
+
+#urlbar-results > .urlbarView-body-outer,
+#urlbar-results scrollbox,
+#urlbar-results > .urlbarView-body-outer {
+  overflow-y: auto !important;
+}

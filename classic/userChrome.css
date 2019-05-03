@@ -5,20 +5,20 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.5.2 ********************************************************************************/
+/* version 2.5.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
-[!] FIREFOX 63-64 (look for '*_fx63.css'):
+[!] FIREFOX 63-64 (look for '_fx63'):
   - 'classic/old autocomplete popup with two-lined results' requires a different option
 
-[!] FIREFOX 64+ (look for '*_fx64.css')
+[!] FIREFOX 64+ (look for '_fx64')
   - 'classic/old autocomplete popup with two-lined results' uses an own new option
   - 'classic/old autocomplete popup with url only results' uses an own new option
   - 'old search' does not work anymore and there is no workaround (yet?)
   
-[!] Firefox 65+ (look for '*_fx65.css')
+[!] Firefox 65+ (look for '_fx65')
   - 'tabs not on top' mode uses an own new option
   - 'tabs not on top' mode uses another new option, if combined with 'multiple tab lines' option
   - 'higher navigation toolbar position' options  uses an own new option
@@ -27,10 +27,24 @@
   - 'simulated add-on bar > additional bookmarks toolbar' uses an own new option
   - 'appbutton in titlebar' on macOS gets moved to the right (see extra option)
   
-[!] Firefox 66+ (look for '*_fx66.css')
+[!] Firefox 66+ (look for '_fx66')
   - 'multiple tab lines v1' is not compatible with Firefox 66+
   - 'bookmarks toolbar multiple lines' uses an own new option
   - 'searchbar show labels' uses an own new option
+  
+[!] Firefox 68+ (look for '_fx68')
+  - 'autocomplete popup > url and title 50% width each' code changed
+  - 'autocomplete popup > title and url 50% width each' code changed
+  - 'autocomplete popup > title item hidden' code changed
+  - 'autocomplete popup > title item hidden > visible on hover only' code changed
+  - 'classic/old autocomplete popup with two-lined results' uses a new option
+  - 'classic/old autocomplete popup with url only results' uses a new option
+  - "hide 'Search with...' and 'Visit...' results" code changed
+  - 'autocomplete popup > Firefox logo in background' code changed
+  - 'autocomplete popup > Aero highlighting' code changed
+  - 'autocomplete popup > custom height' code changed
+  - 'autocomplete popup > separators between results' code changed
+  - 'autocomplete popup > keyword bold/underline' not supported anymore
   
 *************************************************************************************************/
 
@@ -689,12 +703,16 @@
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 64+ & star icon at the end */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64_star_at_the_end.css"; /**/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68.css"; /**/  /* <--- old autocomplete popup for Fx 68+ */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 68+ & star icon at the end */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/
 
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 /* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/
-/* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/
-/* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/
+/* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* not for Fx68+ */
+/* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/ /* not for Fx68+ */
 /* @import "./css/locationbar/ac_popup_result_separator.css"; /**/
 /* custom amount of result items: about:config > browser.urlbar.maxRichResults ******************/
 /* @import "./css/locationbar/ac_popup_custom_height.css"; /**/

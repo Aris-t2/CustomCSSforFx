@@ -21,3 +21,17 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
   overflow-y: auto !important;
 }
+
+
+/* Fx68 */
+#urlbar-results > .urlbarView-body-outer,
+#urlbarView-results {
+  max-height: var(--ac_popup_max_height) !important;
+  height: auto !important;
+}
+
+
+#urlbar-results > .urlbarView-body-outer,
+#urlbar-results scrollbox{
+  overflow-y: auto !important;
+}

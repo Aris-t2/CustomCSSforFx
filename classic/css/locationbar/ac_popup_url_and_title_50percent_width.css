@@ -56,3 +56,21 @@
 }
 
 /**/
+
+
+/* Fx68+ */
+#urlbar-results .urlbarView-row {
+  position: relative !important;
+}
+
+#urlbar-results .urlbarView-row .urlbarView-title {
+  position: absolute !important;
+  right: 50px !important;
+  top: 4px !important;
+}
+
+#urlbar-results .urlbarView-row .urlbarView-url {
+  position: absolute !important;
+  left: 50px !important;
+  top: 4px !important;
+}

@@ -6,3 +6,9 @@
   border-top: 1px solid lightgrey !important;
   border-bottom: 1px solid transparent !important;
 }
+
+/* Fx68 */
+#urlbarView-results .urlbarView-row + .urlbarView-row {
+  border-top: 1px solid lightgrey !important;
+  border-bottom: 1px solid transparent !important;
+}
