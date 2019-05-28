@@ -5,11 +5,11 @@
 
 /* blue */
 #appMenu-fxa-status image,
-:-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
+:-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-downloads-show-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
   fill: #4169e1 !important; 
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-fxa-status image,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-new-window-button,#appMenu-zoomEnlarge-button,#appMenu-fullscreen-button,#appMenu-copy-button,#appMenu-find-button,#appMenu-library-downloads-button,#appMenu-library-downloads-show-button,#appMenu-library-remotetabs-button,#PanelUI-remotetabs-view-sidebar,#PanelUI-remotetabs-view-managedevices,#PanelUI-remotetabs-syncnow,#appMenu-save-file-button) .toolbarbutton-icon {
   fill: #00d2ff !important; 
 }
 
@@ -22,15 +22,15 @@
 }
 
 /* orange */
-:-moz-any(#appMenuRestoreLastSession,#appMenu-library-screenshots,#appMenu-open-file-button) .toolbarbutton-icon {
+:-moz-any(#appMenuRestoreLastSession,#appMenu-library-screenshots,#appMenu-open-file-button,#appMenu-taskmanager-button) .toolbarbutton-icon {
   fill: orange !important;
 }
 
 /* red */
-:-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button) .toolbarbutton-icon {
+:-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button,#appMenu-logins-button,#appMenu-tp-button) .toolbarbutton-icon {
   fill: red !important;
 }
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button) .toolbarbutton-icon {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-quit-button,#appMenu-tp-label,#appMenu-library-pocket-button,#appMenu-logins-button) .toolbarbutton-icon {
   fill: #ff5a5a !important;
 }
 

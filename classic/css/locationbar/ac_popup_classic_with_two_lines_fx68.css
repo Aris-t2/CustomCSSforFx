@@ -30,6 +30,7 @@
 #urlbar-results {
   -moz-margin-start: 0 !important;
   margin-top: -4px !important;
+  border: 1px solid ThreeDShadow !important;
 }
 
 /* Hide "Visit/Search" items */

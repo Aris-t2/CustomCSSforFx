@@ -53,10 +53,10 @@ toolbar:not(#TabsToolbar):not(:-moz-lwtheme) :-moz-any(.scrollbutton-up,.scrollb
 }
 
  /*PURPLE*/
-:-moz-any(#history-button,#history-panelmenu,#library-button,#privatebrowsing-button,#print-button){
+:-moz-any(#history-button,#history-panelmenu,#library-button,#privatebrowsing-button,#print-button,#fxa-toolbar-menu-button){
   fill: #800080 !important;
 }
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#history-button,#history-panelmenu,#library-button,#privatebrowsing-button,#print-button) {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#history-button,#history-panelmenu,#library-button,#privatebrowsing-button,#print-button,#fxa-toolbar-menu-button) {
   fill: #ff00ff !important;
 }
 

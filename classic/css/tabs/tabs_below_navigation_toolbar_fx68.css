@@ -1,0 +1,20 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_fx65.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+#TabsToolbar,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme, 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  border-bottom: 0 !important;
+}
+
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
+}
