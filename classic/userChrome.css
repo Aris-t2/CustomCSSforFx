@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.5.4 ********************************************************************************/
+/* version 2.5.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -16,7 +16,6 @@
 [!] FIREFOX 64+ (look for '_fx64')
   - 'classic/old autocomplete popup with two-lined results' uses an own new option
   - 'classic/old autocomplete popup with url only results' uses an own new option
-  - 'old search' does not work anymore and there is no workaround (yet?)
   
 [!] Firefox 65+ (look for '_fx65')
   - 'tabs not on top' mode uses an own new option
@@ -47,6 +46,10 @@
   - 'autocomplete popup > keyword bold/underline' not supported anymore
   - 'tabs not on top' > code changed
   - 'tabs below main content' > code changed
+  
+[!] Firefox 69+
+  - about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true (or custom styles will not be loaded)
+  
   
 *************************************************************************************************/
 

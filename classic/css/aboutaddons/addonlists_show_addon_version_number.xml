@@ -58,6 +58,12 @@
                 <xul:label anonid="legacy" class="legacy-warning text-link" value="&addon.legacy.label;"/>
                 <xul:label class="disabled-postfix" value="&addon.disabled.postfix;"/>
                 <xul:label class="update-postfix" value="&addon.update.postfix;"/>
+				
+			  <xul:hbox class="description-container privateBrowsing-notice-container">
+				<!--xul:label anonid="privateBrowsing" class="description privateBrowsing-notice" value="&addon.privateBrowsing.label;"/-->
+				<xul:image anonid="privateBrowsing" class="privateBrowsing-notice privateBrowsing-notice-icon"/>
+			  </xul:hbox>
+				
                 <xul:spacer flex="5000"/>
               </xul:hbox>
             <xul:label anonid="date-updated" class="date-updated"
@@ -159,6 +165,7 @@
           </xul:hbox>
         </xul:vbox>
       </xul:hbox>
+
     </content>
 
     <implementation>
@@ -202,6 +209,22 @@
             isLegacyExtension(this.mAddon);
           this.setAttribute("legacy", legacyWarning);
           document.getAnonymousElementByAttribute(this, "anonid", "legacy").href = SUPPORT_URL + "webextensions";
+	  
+          
+		if(parseInt(Services.appinfo.version)>=67) {
+		  if (!allowPrivateBrowsingByDefault && this.mAddon.type === "extension") {
+            ExtensionPermissions.get(this.mAddon.id).then((perms) => {
+              let allowed = perms.permissions.includes("internal:privateBrowsingAllowed");
+              this.setAttribute("privateBrowsing", allowed);
+              if (!allowed && PrivateBrowsingUtils.isContentWindowPrivate(window)) {
+                this._preferencesBtn.hidden = true;
+              }
+            });
+          }
+		  
+		} else {
+		  document.getAnonymousElementByAttribute(this, "anonid", "privateBrowsing").style.visibility = "hidden";
+		}
 
           if (!("applyBackgroundUpdates" in this.mAddon) ||
               (this.mAddon.applyBackgroundUpdates == AddonManager.AUTOUPDATE_DISABLE ||
@@ -222,6 +245,7 @@
               }
             });
           }
+
         ]]></body>
       </method>
 	  

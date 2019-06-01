@@ -29,3 +29,8 @@
   min-width: 32px !important;
   min-height: 32px !important;
 }
+
+.privateBrowsing-notice-icon {
+  list-style-image: url("chrome://browser/skin/privatebrowsing/favicon.svg") !important;
+  background: unset  !important;
+}
