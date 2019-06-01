@@ -222,7 +222,7 @@ _extensions.screenshots.disabled_
 _privacy.userContext.enabled_  
 
 **Password viewer in login forms** (suggestion: disable / set to 'false')  
-signon.showAutoCompleteFooter
+_signon.showAutoCompleteFooter_
 
 **Font rendering**  
 _gfx.canvas.azure.backends_ > direct2d1.1,cairo,skia (old font rendering)  
