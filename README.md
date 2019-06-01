@@ -221,6 +221,9 @@ _extensions.screenshots.disabled_
 **Container tabs**  
 _privacy.userContext.enabled_  
 
+**Password viewer in login forms** (suggestion: disable / set to 'false')  
+_signon.showAutoCompleteFooter_
+
 **Font rendering**  
 _gfx.canvas.azure.backends_ > direct2d1.1,cairo,skia (old font rendering)  
 _gfx.content.azure.backends_ > direct2d1.1,cairo,skia (old font rendering)  
