@@ -123,6 +123,8 @@
 /* [!] more info inside 'custom_scrollbar_appearance.css' file **********************************/
 /* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
 
+/* Autofill forms (Firefox 67+ only) - disable CSS3 filter background ***************************/
+/* @import "./css/webcontent/form_background_white.css"; /**/
 
 /************************************************************************************************/
 /************************************************************************************************/
