@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.5.5 ********************************************************************************/
+/* version 2.5.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -82,7 +82,7 @@
 
   EXPERIMENTAL settings are for testing only!
   
-  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/189
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/211
 
   All options have significant categories and names.
   
@@ -246,6 +246,7 @@
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
+/* @import "./css/buttons/custom_backforward_connected.css"; /**/	
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
@@ -370,7 +371,7 @@
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/ /* <-- tabs on bottom - Fx60-64 */  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/ /* <-- tabs on bottom - Fx6567 - Windows/Linux */ /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/ /* <-- tabs on bottom - Fx65-67 - Windows/Linux */ /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/ /* <-- tabs on bottom - Fx65+ - macOS */ /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/  /* <-- tabs on bottom - Fx65+ - macOS - default tabs */
 /* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/ /* <-- tabs on bottom - Fx68+ - Windows/Linux */ /* <--- EXPERIMENTAL */

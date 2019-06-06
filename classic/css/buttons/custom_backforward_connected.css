@@ -1,0 +1,63 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+:root {
+  --color_disabled_state: #f9f9fa;
+  --color_default_state: #e8e8e8;
+  --color_hover_state: lightblue;
+  --color_active_state: lightgrey;
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #forward-button[disabled="true"] .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #forward-button .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button[disabled="true"] .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button::before,
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button:not([disabled="true"])::before,
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button[disabled="true"]::before,
+#main-window:not([uidensity=compact]) #nav-bar #back-button[disabled="true"],
+#main-window:not([uidensity=compact]) #nav-bar #back-button {
+  opacity: 1.0 !important;
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button::before,
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button:not([disabled="true"])::before,
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button[disabled="true"]::before {
+  display: block !important;
+  content: "" !important;
+  width: 32px !important;
+  height: 32px !important;
+  -moz-margin-start: -31px !important;
+  -moz-margin-end: -9px !important;
+  border-radius: 10000px !important;
+  position: relative !important;
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button .toolbarbutton-icon {
+  width: 38px !important;
+  height: 30px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  -moz-padding-start: 12px !important;
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #forward-button[disabled="true"] .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button[disabled="true"] .toolbarbutton-icon {
+  background: var(--color_disabled_state) !important; 
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #forward-button:not([disabled="true"]) .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button:not([disabled="true"]) .toolbarbutton-icon {
+  background: var(--color_default_state) !important; 
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #forward-button:not([disabled="true"]):not([open="true"]):not(:active):hover .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button:not([disabled="true"]):not([open="true"]):not(:active):hover .toolbarbutton-icon {
+  background: var(--color_hover_state) !important; 
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #forward-button:not([disabled="true"]):not(:hover):-moz-any([open="true"],:active) .toolbarbutton-icon,
+#main-window:not([uidensity=compact]) #nav-bar #back-button:not([disabled="true"]):not(:hover):-moz-any([open="true"],:active) .toolbarbutton-icon {
+  background: var(--color_active_state) !important; 
+}
