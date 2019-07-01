@@ -121,7 +121,7 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
-  display: -moz-box !important;
+  display: block !important;
   padding: 0 2px !important;
 }
 

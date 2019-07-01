@@ -55,7 +55,7 @@
   visibility: hidden !important;
 }
 #tracking-protection-icon-box:not([hasException])[active][animationsenabled] > #tracking-protection-icon {
-  display: -moz-box !important;
+  display: block !important;
 }
 
 /* hide this projects custom bookmarks label, if used */
