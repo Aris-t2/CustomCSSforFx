@@ -145,6 +145,9 @@ _Customize mode > grab and drag flexible space into palette_
 **RSS icon in location bar**  
 _Install [Awesome RSS](https://addons.mozilla.org/addon/awesome-rss/) WebExtension_  
 
+**Search within "New Tab page" (Fx69+)**  
+_browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar_  
+
 ## 'about:config' tweaks
 
 (To revert changes right-click entry and select 'reset')  
