@@ -45,7 +45,8 @@
 	  opacity: 0.6 !important;
 	  filter: greyscale !important; 
 	}
-
+	
+	.more-options-menu plugin-options panel-item,
 	.more-options-menu addon-options panel-item {
 	  background: white !important;
 	  color: black !important;
@@ -78,7 +79,8 @@
 	  visibility: hidden !important;
 	}
 
-	button {
+	link[href$="panel-item.css"] ~ button,
+	link[href$="panel-list.css"] ~ button {
 	  width: unset !important;
 	  padding: 2px 5px !important; 
 	}
@@ -99,7 +101,7 @@
 	}
 	
 	/*restore version number */
-	section[section="0"] .addon-name[title]::after {
+	.addon-name[title]::after {
 	  display: block !important;
 	  content: attr(title) !important;
 	  margin-top: -22px !important;

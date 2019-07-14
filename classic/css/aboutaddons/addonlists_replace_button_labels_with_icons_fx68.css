@@ -9,15 +9,17 @@
 	  right: 40px !important;
 	}
 
-	button {
-	  width: 16px !important;
+	link[href$="panel-item.css"] ~ button,
+	link[href$="panel-list.css"] ~ button {
+	  width: 18px !important;
 	  height: 18px !important;
-	  padding: 4px !important;
+	  padding: 0 !important;
 	  padding-inline-end: 0px !important;
-	  background-position: left !important;
+	  background-position: center !important;
 	}
 	
-	button slot {
+	link[href$="panel-item.css"] ~ button slot,
+	link[href$="panel-list.css"] ~ button slot {
 	  visibility: hidden !important;
 	}
 
@@ -25,13 +27,16 @@
 	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
 	}
 	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
 	panel-item[data-l10n-id="remove-addon-button"] {
 	  --icon: url("chrome://global/skin/icons/delete.svg") !important;
 	}
-	
-	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"],
+
 	panel-item[data-l10n-id="install-update-button"] {
-	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	  --icon: url("chrome://global/skin/icons/update-icon.svg") !important;
 	}
 	
 	panel-item[data-l10n-id="preferences-addon-button"] {
@@ -57,53 +62,5 @@
 	panel-item[data-l10n-id="never-activate-button"] {
 	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
 	}
-	
-	.deck-tab-group {
-	  -moz-margin-start: -13px !important;
-	}
-	
-	named-deck-button[data-l10n-id] {
-	  width: 16px !important;
-	  height: 16px !important;
-	  padding: 4px !important; 
-	}
 
-	named-deck-button[data-l10n-id]:hover {
-	  background: unset !important;
-	  box-shadow: unset !important;
-	}	
-	
-	named-deck-button[data-l10n-id]::after  {
-	  content: "" !important;
-	  display: inline-block !important;
-	  width: 16px !important;
-	  height: 16px !important;
-	  padding: 4px !important;
-	  padding-inline-end: 0px !important;
-	  -moz-margin-start: -16px !important;
-	  background-repeat: no-repeat !important;
-	  background-position: left !important;
-	  z-index: -1000 !important;
-	}
-	
-	named-deck-button[data-l10n-id],
-	named-deck-button[data-l10n-id]::after  {
-	  cursor: pointer !important;
-	}
-	
-	named-deck-button[data-l10n-id="details-addon-button"]::after  {
-	  background-image: url("chrome://browser/skin/chevron.svg") !important;
-	}
-	
-	named-deck-button[data-l10n-id="preferences-addon-button"]::after  {
-	  background-image: url("chrome://browser/skin/settings.svg") !important;
-	}
-	
-	named-deck-button[data-l10n-id="permissions-addon-button"]::after  {
-	  background-image: url("chrome://global/skin/icons/warning.svg") !important;
-	}
-	
-	named-deck-button[data-l10n-id="release-notes-addon-button"]::after  {
-	  background-image: url("chrome://browser/skin/chevron.svg") !important;
-	}
 }

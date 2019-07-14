@@ -12,7 +12,7 @@
 	:root {
 	  --addon-icon-size: 20px !important;
 	}
-
+	
 	addon-card:not([expanded="true"]) .addon.card {
 	  margin-top: 0 !important;
 	  margin-bottom: 0 !important;

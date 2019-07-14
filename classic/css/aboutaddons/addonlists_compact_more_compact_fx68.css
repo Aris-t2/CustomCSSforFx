@@ -26,8 +26,9 @@
 	.more-options-menu panel-list {
 	  top: 3px !important;
 	}
-	
-	button {
+
+	link[href$="panel-item.css"] ~ button,
+	link[href$="panel-list.css"] ~ button {
 	  padding: 0px 2px !important; 
 	}
 
