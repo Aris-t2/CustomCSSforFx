@@ -99,7 +99,7 @@
 	}
 	
 	/*restore version number */
-	section[section="0"] .addon-name::after {
+	section[section="0"] .addon-name[title]::after {
 	  display: block !important;
 	  content: attr(title) !important;
 	  margin-top: -22px !important;
