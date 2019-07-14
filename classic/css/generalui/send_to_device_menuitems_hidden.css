@@ -2,7 +2,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
+#PanelUI-fxa-menu-remotetabs-button,
+#PanelUI-fxa-menu-view-sidebar,
+#sidebarMenu-popup toolbarbutton#sidebar-switcher-tabs,
+#PanelUI-fxa-menu-sendtab-button,
 #context-sep-sendpagetodevice,
 #context-sendpagetodevice,
 #context-sep-sendlinktodevice,

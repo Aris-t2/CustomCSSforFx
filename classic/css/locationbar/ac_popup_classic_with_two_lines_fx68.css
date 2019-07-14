@@ -67,7 +67,7 @@
 /* Items height, border, postion for two lines */
 #urlbar-results .urlbarView-row {
   position: relative !important;
-  height: 40px !important;
+  height: 36px !important;
   border-bottom-color: transparent !important;
   -moz-margin-start: 0 !important;
   -moz-padding-start: 0 !important;
@@ -128,14 +128,14 @@
 /* Position of type icon (bookmark, switch-to-tab...) */
 #urlbar-results .urlbarView-row .urlbarView-type-icon {
   position: absolute !important;
-  bottom: 12px !important;
+  bottom: 8px !important;
   left: 4px !important;
 }
 
 /* Position of site icon */
 #urlbar-results .urlbarView-row .urlbarView-favicon {
   position: absolute !important;
-  top: 6px !important;
+  top: 4px !important;
   left: 4px !important;
 }
 

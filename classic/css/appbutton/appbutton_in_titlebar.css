@@ -186,13 +186,13 @@
 
 /* 'Firefox' title */
 #main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox"]::after,
-#main-window[tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"]):not([label="Tor-Browser"])::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"]):not([label="Tor Browser"]):not([label="Tor-Browser"])::after {
   content: "Firefox" !important;
   -moz-margin-start: -6px !important;
 }
 
 #main-window[uidensity=touch][tabsintitlebar] #PanelUI-menu-button[label="Firefox"]::after,
-#main-window[uidensity=touch][tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"]):not([label="Tor-Browser"])::after {
+#main-window[uidensity=touch][tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"]):not([label="Tor Browser"]):not([label="Tor-Browser"])::after {
   -moz-margin-start: -12px !important;
 }
 
@@ -217,11 +217,11 @@
 }
 
 /* 'Tor-Browser' title */
-#main-window[tabsintitlebar] #PanelUI-menu-button[label="Tor-Browser"]::after {
+#main-window[tabsintitlebar] #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"])::after {
   content: "Tor-Fox" !important;
   -moz-margin-start: -6px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar] #PanelUI-menu-button[label="Tor-Browser"]::after {
+#main-window[uidensity=touch][tabsintitlebar] #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"])::after {
   -moz-margin-start: -12px !important;
 }
 

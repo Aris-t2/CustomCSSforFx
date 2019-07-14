@@ -30,14 +30,14 @@
 }
 
 /* Tor-Browser */
-#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button[label="Tor-Browser"] {
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"]) {
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
 }
-#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button[label="Tor-Browser"]:hover:not(:active):not([open]){
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"]):hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
 					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
 					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
-#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button[label="Tor-Browser"]:-moz-any(:hover:active,[open]) {
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"]):-moz-any(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }

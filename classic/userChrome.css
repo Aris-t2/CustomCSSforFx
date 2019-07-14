@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.5.7 ********************************************************************************/
+/* version 2.5.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -48,7 +48,7 @@
   - 'tabs below main content' > code changed
   
 [!] Firefox 69+
-  - about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true (or custom styles will not be loaded)
+  - 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true' (or custom styles will not be loaded)
   
   
 *************************************************************************************************/
@@ -510,8 +510,10 @@
 /* @import "./css/generalui/findbar_on_top.css"; /**/
 /* @import "./css/generalui/findbar_show_full_quickfindbar.css"; /**/
 /* @import "./css/generalui/findbar_on_top_fade_out_on_hover.css"; /**/
+/* @import "./css/generalui/findbar_compact.css"; /**/
 /* findbar - close icon position - [only use one at a time] *************************************/
 /* @import "./css/generalui/findbar_on_top_close_at_findbars_start.css"; /**/
+/* @import "./css/generalui/findbar_compact_on_top_close_at_findbars_start.css"; /**/
 /* @import "./css/generalui/findbar_on_bottom_close_at_findbars_start.css"; /**/
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/

@@ -1,0 +1,115 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addons_manager_alternative_appearance.css";
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+
+	body > div#main {
+	  margin-inline-start: -1px !important;
+	  margin-inline-end: 1px !important;
+	  margin-bottom: 4px !important;
+	  max-width: unset !important;
+	  box-shadow: unset !important;
+	  border: 0 !important;
+	  border-radius: 0 !important;
+	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	}
+
+	.addon.card {
+	  margin-bottom: 1px !important;
+	  box-shadow: unset !important;
+	  border: 0 !important;
+	  border-radius: 0 !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card:hover {
+	  background: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card:hover span {
+	  color: HighlightText !important;
+	}
+
+	.list-section-heading {
+	  display: none !important;
+	}
+
+	section[section="1"] {
+	  color: grey !important;
+	  opacity: 0.6 !important;
+	  filter: greyscale !important; 
+	}
+
+	.more-options-menu addon-options panel-item {
+	  background: white !important;
+	  color: black !important;
+	}
+
+	/* remove advertising other add-ons */
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	/* restore buttons */
+	.more-options-menu panel-list {
+	  display: block !important;
+	  visibility: visible !important;
+	  -moz-appearance: none !important;
+	  background: unset !important;
+	  border: unset !important;
+	  box-shadow: unset !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  position: absolute !important;
+	  top: 0 !important;
+	  right:0 !important;
+	}
+
+	.more-options-menu,
+	.arrow {
+	  visibility: hidden !important;
+	}
+
+	button {
+	  width: unset !important;
+	  padding: 2px 5px !important; 
+	  border: 1px solid lightgrey !important;
+	}
+
+	panel-item {
+	  --icon: unset !important;
+	}
+
+	.more-options-menu panel-list *:not([hidden]) {
+	  display: inline-grid !important;
+	  visibility: visible !important;
+	  -moz-box-orient: horizontal !important;
+	  -moz-appearance: none !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+	
+	/*restore version number */
+	section[section="0"] .addon-name::after {
+	  display: block !important;
+	  content: attr(title) !important;
+	  margin-top: -22px !important;
+	}
+
+}
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+				url-prefix(about:addons) {
+	#addons-page .main-content{
+	  -moz-margin-start: -1px !important;
+	}
+}

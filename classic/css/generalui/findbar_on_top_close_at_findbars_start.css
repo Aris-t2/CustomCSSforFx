@@ -4,7 +4,6 @@
 
 
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-closebutton {
-  -moz-box-ordinal-group: 0 !important;
   position: absolute !important;
   margin-top: -26px !important;
   margin-bottom: 8px !important;
