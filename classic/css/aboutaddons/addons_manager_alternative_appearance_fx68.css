@@ -49,6 +49,7 @@
 	.more-options-menu addon-options panel-item {
 	  background: white !important;
 	  color: black !important;
+	  border: 1px solid lightgrey !important;
 	}
 
 	/* remove advertising other add-ons */
@@ -69,7 +70,7 @@
 	  width: unset !important;
 	  position: absolute !important;
 	  top: 0 !important;
-	  right:0 !important;
+	  right: 0px !important;
 	}
 
 	.more-options-menu,
@@ -80,7 +81,6 @@
 	button {
 	  width: unset !important;
 	  padding: 2px 5px !important; 
-	  border: 1px solid lightgrey !important;
 	}
 
 	panel-item {

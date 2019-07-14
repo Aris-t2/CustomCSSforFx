@@ -1,0 +1,109 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	
+	.more-options-menu panel-list {
+	  right: 40px !important;
+	}
+
+	button {
+	  width: 16px !important;
+	  height: 18px !important;
+	  padding: 4px !important;
+	  padding-inline-end: 0px !important;
+	  background-position: left !important;
+	}
+	
+	button slot {
+	  visibility: hidden !important;
+	}
+
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="remove-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/delete.svg") !important;
+	}
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"],
+	panel-item[data-l10n-id="install-update-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="preferences-addon-button"] {
+	  --icon: url("chrome://browser/skin/settings.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="report-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/warning.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="manage-addon-button"] {
+	  --icon: url("chrome://browser/skin/chevron.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="ask-to-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important
+	}
+	
+	panel-item[data-l10n-id="always-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="never-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+	
+	.deck-tab-group {
+	  -moz-margin-start: -13px !important;
+	}
+	
+	named-deck-button[data-l10n-id] {
+	  width: 16px !important;
+	  height: 16px !important;
+	  padding: 4px !important; 
+	}
+
+	named-deck-button[data-l10n-id]:hover {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}	
+	
+	named-deck-button[data-l10n-id]::after  {
+	  content: "" !important;
+	  display: inline-block !important;
+	  width: 16px !important;
+	  height: 16px !important;
+	  padding: 4px !important;
+	  padding-inline-end: 0px !important;
+	  -moz-margin-start: -16px !important;
+	  background-repeat: no-repeat !important;
+	  background-position: left !important;
+	  z-index: -1000 !important;
+	}
+	
+	named-deck-button[data-l10n-id],
+	named-deck-button[data-l10n-id]::after  {
+	  cursor: pointer !important;
+	}
+	
+	named-deck-button[data-l10n-id="details-addon-button"]::after  {
+	  background-image: url("chrome://browser/skin/chevron.svg") !important;
+	}
+	
+	named-deck-button[data-l10n-id="preferences-addon-button"]::after  {
+	  background-image: url("chrome://browser/skin/settings.svg") !important;
+	}
+	
+	named-deck-button[data-l10n-id="permissions-addon-button"]::after  {
+	  background-image: url("chrome://global/skin/icons/warning.svg") !important;
+	}
+	
+	named-deck-button[data-l10n-id="release-notes-addon-button"]::after  {
+	  background-image: url("chrome://browser/skin/chevron.svg") !important;
+	}
+}

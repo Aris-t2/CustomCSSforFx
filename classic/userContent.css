@@ -11,6 +11,8 @@
   - new 'compact appearance' option for Fx 68+
   - new 'more compact appearance' option for Fx 68+
   - new 'compact categories' option for Fx 68+
+  - new 'replace button labels with icons' option for Fx 68+
+  - new 'show buttons on hover only' option for Fx 68+
   - old add-ons manager > show 'version number for add-ons' does not work with the html based add-on manager
   - old add-ons manager > show 'last update date' does not work with the html based add-on manager
   - old add-ons manager > alternative appearance does not work with the html based add-on manager
@@ -72,6 +74,10 @@
 /* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories_fx68.css"; /**/
 
+/* other settings *******************************************************************************/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
+
 
 /* FIREFOX 60-67 ###############################################################################*/
 /* NOTE: 'Version number for add-ons' will stop working soon when Mozilla drops XBL support. *****
@@ -108,7 +114,7 @@
 /* @import "./css/aboutaddons/addonlists_green_dot_hidden.css"; /**/	
 /* @import "./css/aboutaddons/details_page_alternative_content_order.css"; /**/	
 /* @import "./css/aboutaddons/details_page_switch_banner_label_position_for_themes.css"; /**/
-/* @import "./css/aboutaddons/search_category_always_visible.css"; /**/ /* not for recent Fx versions) */
+/* @import "./css/aboutaddons/search_category_always_visible.css"; /**/ /* not for recent Fx versions */
 
 
 /* FIREFOX 60-70+ ##############################################################################*/
