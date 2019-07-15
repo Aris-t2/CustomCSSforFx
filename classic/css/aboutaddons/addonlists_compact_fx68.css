@@ -46,7 +46,7 @@
 	  display: none !important;
 	}
 	
-	.more-options-menu panel-list {
+	:-moz-any(plugin-options, addon-options) > panel-list {
 	  top: 5px !important;
 	}
 

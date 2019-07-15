@@ -59,45 +59,53 @@
 	  display: none !important;
 	}
 	
+	/* remove three dots button */
+	.more-options-button {
+	  visibility: hidden !important;
+	}
+
+	/* reduce sice of default buttons */
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	  width: unset !important;
+	  padding: 2px 5px !important; 
+	}
+	
+	/* remove button icon */
+	panel-item {
+	  --icon: unset !important;
+	}
+
 	/* restore buttons */
-	.more-options-menu panel-list {
+	:-moz-any(plugin-options, addon-options) > panel-list {
 	  display: block !important;
-	  visibility: visible !important;
-	  -moz-appearance: none !important;
+	  overflow: hidden !important;
+	  right: 0px !important;
+	  left: unset !important;
+	  top: 2px;
+	  box-shadow: none !important;
 	  background: unset !important;
 	  border: unset !important;
 	  box-shadow: unset !important;
 	  min-width: unset !important;
 	  width: unset !important;
-	  position: absolute !important;
-	  top: 0 !important;
-	  right: 0px !important;
 	}
 
-	.more-options-menu,
-	.arrow {
-	  visibility: hidden !important;
+	div.arrow.top ~ div.list {
+	  display: flex !important;
+	  justify-content: end;
 	}
 
-	link[href$="panel-item.css"] ~ button,
-	link[href$="panel-list.css"] ~ button {
-	  width: unset !important;
-	  padding: 2px 5px !important; 
+	panel-item[action] {
+	  margin: 0 4px;
+	  background: var(--in-content-table-background);
 	}
 
-	panel-item {
-	  --icon: unset !important;
+	panel-item[action="expand"] {
+	  display: none;
 	}
 
-	.more-options-menu panel-list *:not([hidden]) {
-	  display: inline-grid !important;
-	  visibility: visible !important;
-	  -moz-box-orient: horizontal !important;
-	  -moz-appearance: none !important;
-	  min-width: unset !important;
-	  width: unset !important;
-	  padding: 0 !important;
-	  margin: 0 !important;
+	panel-item[action="preferences"] {
+	  order: -1;
 	}
 	
 	/*restore version number */

@@ -1,0 +1,49 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
+	   fill: red !important;
+	}
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
+	  fill: green !important;
+	}
+	
+	panel-item[data-l10n-id="remove-addon-button"] {
+	  fill: red !important;
+	}
+
+	panel-item[data-l10n-id="install-update-button"] {
+	  fill: blue !important;
+	}
+	
+	panel-item[data-l10n-id="preferences-addon-button"] {
+	  fill: grey !important;
+	}
+	
+	panel-item[data-l10n-id="report-addon-button"] {
+	  fill: orange !important;
+	}
+	
+	panel-item[data-l10n-id="expand-addon-button"],
+	panel-item[data-l10n-id="manage-addon-button"] {
+	  fill: blue !important;
+	}
+	
+	panel-item[data-l10n-id="ask-to-activate-button"] {
+	  fill: red !important;
+	}
+	
+	panel-item[data-l10n-id="always-activate-button"] {
+	  fill: green !important;
+	}
+	
+	panel-item[data-l10n-id="never-activate-button"] {
+	  fill: red !important;
+	}
+
+}

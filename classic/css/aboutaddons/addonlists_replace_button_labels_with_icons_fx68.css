@@ -6,11 +6,10 @@
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	.more-options-menu panel-list {
-	  right: 40px !important;
+	  right: 30px !important;
 	}
 
-	link[href$="panel-item.css"] ~ button,
-	link[href$="panel-list.css"] ~ button {
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: 18px !important;
 	  height: 18px !important;
 	  padding: 0 !important;
@@ -18,8 +17,7 @@
 	  background-position: center !important;
 	}
 	
-	link[href$="panel-item.css"] ~ button slot,
-	link[href$="panel-list.css"] ~ button slot {
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button slot {
 	  visibility: hidden !important;
 	}
 
@@ -47,12 +45,13 @@
 	  --icon: url("chrome://global/skin/icons/warning.svg") !important;
 	}
 	
+	panel-item[data-l10n-id="expand-addon-button"],
 	panel-item[data-l10n-id="manage-addon-button"] {
 	  --icon: url("chrome://browser/skin/chevron.svg") !important;
 	}
 	
 	panel-item[data-l10n-id="ask-to-activate-button"] {
-	  --icon: url("chrome://browser/skin/zoom-in.svg") !important
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
 	}
 	
 	panel-item[data-l10n-id="always-activate-button"] {

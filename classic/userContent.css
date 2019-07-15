@@ -12,6 +12,7 @@
   - new 'more compact appearance' option for Fx 68+
   - new 'compact categories' option for Fx 68+
   - new 'replace button labels with icons' option for Fx 68+
+  - new 'colorized icon' option for 'replace button labels with icons' option for Fx 68+
   - new 'show buttons on hover only' option for Fx 68+
   - old add-ons manager > show 'version number for add-ons' does not work with the html based add-on manager
   - old add-ons manager > show 'last update date' does not work with the html based add-on manager
@@ -76,6 +77,7 @@
 
 /* other settings *******************************************************************************/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requieres above option */
 /* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
 
 

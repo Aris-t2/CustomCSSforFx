@@ -27,8 +27,7 @@
 	  top: 3px !important;
 	}
 
-	link[href$="panel-item.css"] ~ button,
-	link[href$="panel-list.css"] ~ button {
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  padding: 0px 2px !important; 
 	}
 
