@@ -13,9 +13,6 @@
 }
 
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	body > div#main {
 	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;

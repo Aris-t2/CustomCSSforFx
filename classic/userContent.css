@@ -6,14 +6,19 @@
 /*************************************************************************************************
 
 [!] Firefox 68+ (look for '_fx68')
-  - new 'alternative appearance' option for Fx 68+ (incl. version number and buttons)
-  - new 'alternative appearance' option for Fx 68+ (incl. version number and buttons) (AERO background)
-  - new 'compact appearance' option for Fx 68+
-  - new 'more compact appearance' option for Fx 68+
-  - new 'compact categories' option for Fx 68+
-  - new 'replace button labels with icons' option for Fx 68+
-  - new 'colorized icon' option for 'replace button labels with icons' option for Fx 68+
-  - new 'show buttons on hover only' option for Fx 68+
+  - new 'alternative appearance' option
+  - new 'alternative appearance' option (AERO background color)
+  - new 'restore version number' option for active add-ons
+  - new 'compact appearance' option
+  - new 'more compact appearance' option
+  - new 'compact categories' option
+  - new 'replace menu popup with buttons' option
+  - new 'replace button labels with icons' option
+  - new 'colorized icon' option for 'replace button labels with icons' option
+  - new 'show buttons on hover only' option
+  - new 'hide manage/expand button' option
+  - new 'hide report button' option
+  
   - old add-ons manager > show 'version number for add-ons' does not work with the html based add-on manager
   - old add-ons manager > show 'last update date' does not work with the html based add-on manager
   - old add-ons manager > alternative appearance does not work with the html based add-on manager
@@ -68,17 +73,23 @@
 @import "./css/aboutaddons/addons_manager_alternative_appearance_fx68.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx68.css"; /**/	/* <-- AERO colors */
 
+/* version number for active add-ons [Fx 68+] ***************************************************/
+@import "./css/aboutaddons/addonlists_show_addon_version_number_fx68.css"; /**/
+
 /* compact item lists - [only use one at a time] ************************************************/
 /* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
 /* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
 
+/* button settings (requires addons_manager_alternative_appearance_fx68) ************************/
+@import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
+@import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
+@import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requires replace_button_labels_with_icons option */
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
+
 /* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories_fx68.css"; /**/
-
-/* other settings *******************************************************************************/
-/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
-/* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requieres above option */
-/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
 
 
 /* FIREFOX 60-67 ###############################################################################*/

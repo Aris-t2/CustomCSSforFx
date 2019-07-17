@@ -4,9 +4,6 @@
 
 @import "./addons_manager_alternative_appearance.css";
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
 	body > div#main {
@@ -29,90 +26,28 @@
 
 	addon-card:not([expanded="true"]) .addon.card:hover {
 	  background: Highlight !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span) {
 	  color: HighlightText !important;
 	}
 
-	addon-card:not([expanded="true"]) .addon.card:hover span {
-	  color: HighlightText !important;
-	}
-
+	/* remove headers like 'Enabled'/'Disabled' */
 	.list-section-heading {
 	  display: none !important;
 	}
 
+	/* reduce opacity for disabled add-ons */
 	section[section="1"] {
 	  color: grey !important;
 	  opacity: 0.6 !important;
 	  filter: greyscale !important; 
-	}
-	
-	.more-options-menu plugin-options panel-item,
-	.more-options-menu addon-options panel-item {
-	  background: white !important;
-	  color: black !important;
-	  border: 1px solid lightgrey !important;
 	}
 
 	/* remove advertising other add-ons */
 	recommended-themes-section,
 	recommended-extensions-section {
 	  display: none !important;
-	}
-	
-	/* remove three dots button */
-	.more-options-button {
-	  visibility: hidden !important;
-	}
-
-	/* reduce sice of default buttons */
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
-	  width: unset !important;
-	  padding: 2px 5px !important; 
-	}
-	
-	/* remove button icon */
-	panel-item {
-	  --icon: unset !important;
-	}
-
-	/* restore buttons */
-	:-moz-any(plugin-options, addon-options) > panel-list {
-	  display: block !important;
-	  overflow: hidden !important;
-	  right: 0px !important;
-	  left: unset !important;
-	  top: 2px;
-	  box-shadow: none !important;
-	  background: unset !important;
-	  border: unset !important;
-	  box-shadow: unset !important;
-	  min-width: unset !important;
-	  width: unset !important;
-	}
-
-	div.arrow.top ~ div.list {
-	  display: flex !important;
-	  justify-content: end;
-	}
-
-	panel-item[action] {
-	  margin: 0 4px;
-	  background: var(--in-content-table-background);
-	}
-
-	panel-item[action="expand"] {
-	  display: none;
-	}
-
-	panel-item[action="preferences"] {
-	  order: -1;
-	}
-	
-	/*restore version number */
-	.addon-name[title]::after {
-	  display: block !important;
-	  content: attr(title) !important;
-	  margin-top: -22px !important;
 	}
 
 }
