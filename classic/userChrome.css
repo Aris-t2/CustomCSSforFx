@@ -718,6 +718,8 @@
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 68+ & star icon at the end */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/
+/* [!] - Firefox 70+: new-style popup with two-line, scrollable results *************************/
+/* @import "./css/locationbar/ac_popup_with_two_lines_fx70.css"; /**/
 
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/

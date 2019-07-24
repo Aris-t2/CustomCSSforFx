@@ -1,0 +1,44 @@
+:root {
+  --ac_popup_maxheight: calc((2.6875em * 1.05 + 12px) * var(--ac_popup_number_of_results_fx70) - 6px);
+}
+
+#urlbar-results .urlbarView-row {
+  height: 2.6875em !important;
+}
+.urlbarView-row-inner {
+  flex-wrap: wrap !important;
+}
+#urlbar-results .urlbarView-title {
+  height: 1.2em;
+}
+#urlbar-results .urlbarView-title-separator {
+  flex-basis: 100%;
+  height: 0;
+  display: block !important;
+}
+#urlbar-results .urlbarView-title-separator:before {
+  content: '' !important;
+}
+.urlbarView-secondary {
+  left: 48px;
+  top: 0.5em;
+  position: relative;
+  font-size: 0.85em;
+}
+.urlbarView-row[type="search"]:not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-title-separator,
+.urlbarView-row[type="search"]:not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-action {
+  visibility: visible !important;
+}
+
+#urlbarView-results {
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+#urlbar-results > .urlbarView-body-outer {
+  overflow-x: hidden !important;
+}
+#urlbar-results > .urlbarView-body-outer,
+#urlbar-results scrollbox,
+#urlbar-results > .urlbarView-body-outer {
+  overflow-y: auto !important;
+}

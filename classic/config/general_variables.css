@@ -67,6 +67,11 @@
   --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
 }
 
+/* for ac_popup_with_two_lines_fx70.css */
+:root {
+  --ac_popup_number_of_results_fx70: 7; /* how many results to show before overflowing to scroll */
+}
+
 :root[sizemode="maximized"] {
   --ac_popup_width: 1400px !important; /* popup width in maximized mode */
 }
