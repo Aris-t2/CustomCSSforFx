@@ -50,5 +50,13 @@
 	panel-item[action="preferences"] {
 	  order: -1;
 	}
+	
+	panel-item[badged] {
+	  border: 1px solid Highlight !important;
+	}
+
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button::after {
+	  display: none !important;
+	}
 
 }

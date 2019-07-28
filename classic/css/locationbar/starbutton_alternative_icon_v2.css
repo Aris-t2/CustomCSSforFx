@@ -48,6 +48,8 @@
 }
 
 /* yellow star button */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-type-icon[type=bookmark],
+.urlbarView-row[type=bookmark] > .urlbarView-row-inner > .urlbarView-type-icon,
 #urlbar #star-button {
   list-style-image: url("chrome://browser/skin/bookmark.svg") !important;
   -moz-context-properties: fill !important;

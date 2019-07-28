@@ -18,3 +18,7 @@
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
   padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
 }
+
+#urlbar-results {
+  z-index: 100 !important;
+}

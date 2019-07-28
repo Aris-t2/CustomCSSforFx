@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.6.2 ********************************************************************************/
+/* version 2.6.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -718,6 +718,7 @@
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 68+ & star icon at the end */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/
+/* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/  /* <--- for Fx 68+ */
 
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/

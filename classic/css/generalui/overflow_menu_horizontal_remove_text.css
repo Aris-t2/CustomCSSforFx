@@ -31,6 +31,6 @@
   padding: 0 !important;
   margin: 0 !important;
   min-height: unset !important;
-  height: 26px !important;
-  max-height: 26px !important;
+  height: auto !important;
+  max-height: auto !important;
 }

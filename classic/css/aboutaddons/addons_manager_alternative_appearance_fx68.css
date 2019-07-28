@@ -43,6 +43,15 @@
 	  opacity: 0.6 !important;
 	  filter: greyscale !important; 
 	}
+	
+	/* workaround for Fx 70+ to not have reduced opacity twice */
+	addon-card:not([expanded]) > .addon.card[active="false"],
+	addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
+	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
+	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
+	  opacity: 1 !important;
+	  transition: unset !important;
+	}
 
 	/* remove advertising other add-ons */
 	recommended-themes-section,
