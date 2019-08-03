@@ -23,9 +23,25 @@
 
 /* popup position */
 #urlbar-results {
-  -moz-margin-start: 0 !important;
+  -moz-margin-start: 0px !important;
+  left: unset !important;
+  right: unset !important;
   margin-top: -4px !important;
+  border-block: 0px !important;
+}
+
+#urlbar-results .urlbarView-body-outer {
   border: 1px solid ThreeDShadow !important;
+}
+
+#urlbar-results .search-one-offs {
+  margin-top: -1px !important;
+  border: 1px solid ThreeDShadow !important;
+  background-color: hsla(0,0%,100%,1.0) !important;
+}
+
+.search-setting-button-compact {
+  margin-left: -2px !important;
 }
 
 /* remove space around box */
@@ -108,3 +124,10 @@
 #urlbar-results > .urlbarView-body-outer {
   overflow-y: auto !important;
 }
+
+/* adjust popup position on Fx 70+ */
+#urlbar-results {
+  left: unset !important;
+  right: unset !important;
+}
+

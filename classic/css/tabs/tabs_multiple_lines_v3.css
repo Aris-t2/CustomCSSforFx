@@ -129,7 +129,7 @@
 }
 
 /*lw theme fix */
-#main-window:-moz-lwtheme {
+#main-window[style*='--lwt-header-image']:-moz-lwtheme {
   background: var(--lwt-header-image) !important;
   background-repeat: repeat-y !important;
 }

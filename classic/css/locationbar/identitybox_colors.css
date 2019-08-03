@@ -4,12 +4,27 @@
 
 
 /* Fx70+ tweaks */
+
 #urlbar[pageproxystate="invalid"] #tracking-protection-icon-container ~ #identity-box > #identity-icon {
   margin-inline-start: 0px !important;
 }
-#urlbar:not([pageproxystate="invalid"]) > #tracking-protection-icon-container ~ #identity-box {
+#tracking-protection-icon-container ~ #identity-box,
+#urlbar[pageproxystate=valid] > #identity-box.notSecureText,
+#urlbar[pageproxystate=valid] > #identity-box.verifiedIdentity,
+#urlbar[pageproxystate=valid] > #identity-box.chromeUI,
+#urlbar[pageproxystate=valid] > #identity-box.extensionPage {
+  padding-inline-end: 4px !important;
+}
+#urlbar:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not(.chromeUI) ~ #identity-box {
   padding-inline-start: 27px !important;
   margin-inline-start: -27px !important;
+}
+#tracking-protection-icon-container {
+  padding-inline-start: 4px !important;
+  padding-inline-end: 4px !important;
+}
+#tracking-protection-icon-container::after {
+  border: unset !important;
 }
 
 /* colorize identity box based on level of security */

@@ -28,10 +28,27 @@
 
 /* popup position */
 #urlbar-results {
-  -moz-margin-start: 0 !important;
+  -moz-margin-start: 0px !important;
+  left: unset !important;
+  right: unset !important;
   margin-top: -4px !important;
+  border-block: 0px !important;
+}
+
+#urlbar-results .urlbarView-body-outer {
   border: 1px solid ThreeDShadow !important;
 }
+
+#urlbar-results .search-one-offs {
+  margin-top: -1px !important;
+  border: 1px solid ThreeDShadow !important;
+  background-color: hsla(0,0%,100%,1.0) !important;
+}
+
+.search-setting-button-compact {
+  margin-left: -2px !important;
+}
+
 
 /* Hide "Visit/Search" items */
 .urlbarView-title-separator {
@@ -68,6 +85,7 @@
 #urlbar-results .urlbarView-row {
   position: relative !important;
   height: 36px !important;
+  border-radius: 0px !important;
   border-bottom-color: transparent !important;
   -moz-margin-start: 0 !important;
   -moz-padding-start: 0 !important;
