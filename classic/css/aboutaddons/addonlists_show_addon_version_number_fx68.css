@@ -6,7 +6,7 @@
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	/*restore version number */
-	.addon-name[title]::after {
+	div:not([current-view="updates"]) .addon-name[title]::after {
 	  display: block !important;
 	  content: attr(title) !important;
 	  margin-top: -22px !important;

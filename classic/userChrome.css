@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.6.4 ********************************************************************************/
+/* version 2.6.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -49,7 +49,11 @@
   
 [!] Firefox 69+
   - 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true' (or custom styles will not be loaded)
-  
+
+[!] Firefox 70+
+ - 'about:config > security.identityblock.show_extended_validation > true' (to distinguish between verifiedIdentity and verfiedDomain)
+ - 'identitybox > replace i-icon with globe' option replaces 'search glass' icon
+ - ' identitybox colors' option cheats tracking protection button into identity box
   
 *************************************************************************************************/
 
@@ -655,7 +659,7 @@
 /* @import "./css/locationbar/locationbar_reduce_height.css"; /**/
 
 /* identity box / page identity button **********************************************************/
-@import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/
+@import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* Fx70+: replaces search glass */
 @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 

@@ -4,27 +4,35 @@
 
 
 /* Fx70+ tweaks */
+/* about:config > security.identityblock.show_extended_validation > true */
 
-#urlbar[pageproxystate="invalid"] #tracking-protection-icon-container ~ #identity-box > #identity-icon {
+#urlbar[pageproxystate="invalid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box > #identity-icon {
   margin-inline-start: 0px !important;
 }
-#tracking-protection-icon-container ~ #identity-box,
-#urlbar[pageproxystate=valid] > #identity-box.notSecureText,
-#urlbar[pageproxystate=valid] > #identity-box.verifiedIdentity,
-#urlbar[pageproxystate=valid] > #identity-box.chromeUI,
-#urlbar[pageproxystate=valid] > #identity-box.extensionPage {
+#tracking-protection-icon-container:not([hidden]) ~ #identity-box,
+#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.notSecureText,
+#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.verifiedIdentity,
+#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.chromeUI,
+#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.extensionPage {
   padding-inline-end: 4px !important;
 }
-#urlbar:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not(.chromeUI) ~ #identity-box {
-  padding-inline-start: 27px !important;
-  margin-inline-start: -27px !important;
+#urlbar:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not([hidden]):not(.chromeUI) ~ #identity-box {
+  padding-inline-start: 26px !important;
+  margin-inline-start: -24px !important;
 }
-#tracking-protection-icon-container {
+#tracking-protection-icon-container:not([hidden]) {
   padding-inline-start: 4px !important;
   padding-inline-end: 4px !important;
+  position: relative !important;
+  border-inline-end: 0 !important;
+  background: unset !important;
+  z-index: 1000 !important;
 }
-#tracking-protection-icon-container::after {
-  border: unset !important;
+#tracking-protection-icon-container:not([hidden]):hover {
+  background: hsla(215,54%,33%,.05)  !important;
+}
+#tracking-protection-icon-container:not([hidden]):-moz-any([open="true"],:hover:active) {
+  background: hsla(215,54%,33%,.1)  !important;
 }
 
 /* colorize identity box based on level of security */

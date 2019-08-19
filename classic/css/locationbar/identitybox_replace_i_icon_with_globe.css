@@ -3,17 +3,17 @@
 /****************************************************************************************/
 
 
-/* globe icon instead of 'i'-icon */
-*:not(.chromeUI) > #identity-icon,
-*:not(.chromeUI):not(.verifiedDomain):not(.verifiedIdentity) > #page-proxy-favicon {
+/* globe icon instead of 'i'-icon or 'search glass' icon */
+
+*:not(.chromeUI) > #identity-icon:first-child,
+*:not(:-moz-any(.chromeUI,.verifiedDomain,.verifiedIdentity,.notSecure)) > :-moz-any(#identity-icon,#page-proxy-favicon) {
   list-style-image:url('./../../image/globe.svg') !important;
   filter: unset !important;
   fill: unset !important;
   opacity: 1.0 !important;
 }
-
-#main-window:-moz-lwtheme-brighttext *:not(.chromeUI) > #identity-icon,
-#main-window:-moz-lwtheme-brighttext *:not(.chromeUI):not(.verifiedDomain):not(.verifiedIdentity) > #page-proxy-favicon {
+#main-window:-moz-lwtheme-brighttext *:not(.chromeUI) > #identity-icon:first-child,
+#main-window:-moz-lwtheme-brighttext *:not(:-moz-any(.chromeUI,.verifiedDomain,.verifiedIdentity,.notSecure)) > :-moz-any(#identity-icon,#page-proxy-favicon) {
   box-shadow: inset 0 0 0 8px rgba(255,255,255,1.0) !important;
   border-radius: 1000px !important;
 }
