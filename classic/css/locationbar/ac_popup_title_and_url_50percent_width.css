@@ -77,8 +77,8 @@
 
 #urlbar-results .urlbarView-title, 
 #urlbar-results .urlbarView-url {
-  min-width: calc((100vw - 100px)/2) !important;
-  width: calc((100vw - 100px)/2) !important;
+  min-width: calc((100vw - 120px)/2) !important;
+  width: calc((100vw - 120px)/2) !important;
 }
 
 

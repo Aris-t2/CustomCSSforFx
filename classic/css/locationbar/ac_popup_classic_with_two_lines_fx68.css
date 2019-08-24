@@ -26,19 +26,34 @@
   --item-padding-end: 0 !important;
 }
 
-/* popup position */
-#urlbar-results {
-  -moz-margin-start: 0px !important;
+/*Fx70+ tweaks */
+.urlbarView:not(.megabar) {
   left: unset !important;
   right: unset !important;
-  margin-top: -4px !important;
-  border-block: 0px !important;
+  border: 1px solid ThreeDShadow !important;
 }
-
+#urlbar-input-container + .urlbarView:not(.megabar){
+  margin-top: -6px !important;
+}
+#urlbar:not(.megabar) .search-one-offs {
+  padding-inline-start: unset !important;
+  padding-inline-end: unset !important;
+  background: #ededed !important;
+}
+#urlbar-input-container {
+  --item-padding-start: 0px !important;
+  --item-padding-end: 0px !important;
+}
+#urlbar-results {
+  left: unset !important;
+  right: unset !important;
+  border-block: 0px !important;
+  padding: 0 !important;
+  margin-top: 0px !important;
+}
 #urlbar-results .urlbarView-body-outer {
   border: 1px solid ThreeDShadow !important;
 }
-
 #urlbar-results .search-one-offs {
   margin-top: -1px !important;
   border: 1px solid ThreeDShadow !important;
@@ -49,6 +64,10 @@
   margin-left: -2px !important;
 }
 
+/* popup position */
+#urlbar-results {
+  -moz-margin-start: 0px !important;
+}
 
 /* Hide "Visit/Search" items */
 .urlbarView-title-separator {
