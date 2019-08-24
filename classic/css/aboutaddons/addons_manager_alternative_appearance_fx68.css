@@ -28,7 +28,7 @@
 	  background: Highlight !important;
 	}
 
-	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span) {
+	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span,.addon-name-link) {
 	  color: HighlightText !important;
 	}
 

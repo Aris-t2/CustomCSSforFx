@@ -4,19 +4,19 @@
 
 
 /* Fx70+ tweaks */
-/* about:config > security.identityblock.show_extended_validation > true */
+/* recomnmended to set: about:config > security.identityblock.show_extended_validation > true */
 
-#urlbar[pageproxystate="invalid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box > #identity-icon {
+#urlbar-input-container[pageproxystate="invalid"] #tracking-protection-icon-container:not([hidden]) + #identity-box > #identity-icon {
   margin-inline-start: 0px !important;
 }
-#tracking-protection-icon-container:not([hidden]) ~ #identity-box,
-#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.notSecureText,
-#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.verifiedIdentity,
-#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.chromeUI,
-#urlbar[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) ~ #identity-box.extensionPage {
+#tracking-protection-icon-container:not([hidden]) + #identity-box,
+#urlbar-input-container[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) + #identity-box.notSecureText,
+#urlbar-input-container[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) + #identity-box.verifiedIdentity,
+#urlbar-input-container[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) + #identity-box.chromeUI,
+#urlbar-input-container[pageproxystate=valid] > #tracking-protection-icon-container:not([hidden]) + #identity-box.extensionPage {
   padding-inline-end: 4px !important;
 }
-#urlbar:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not([hidden]):not(.chromeUI) ~ #identity-box {
+#urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not([hidden]):not(.chromeUI) + #identity-box {
   padding-inline-start: 26px !important;
   margin-inline-start: -24px !important;
 }
