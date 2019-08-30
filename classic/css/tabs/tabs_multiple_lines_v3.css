@@ -85,9 +85,9 @@
   display: none !important;
 }
 
-#tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > .tabs-newtab-button,
-#TabsToolbar[customizing="true"] #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .tabs-newtab-button {
+#tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar[customizing="true"] #tabbrowser-tabs > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   visibility: hidden !important;
 }
 

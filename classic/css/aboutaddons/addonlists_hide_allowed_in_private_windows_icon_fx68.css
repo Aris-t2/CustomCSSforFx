@@ -4,9 +4,10 @@
 
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
-	
+  
+  a.addon-badge-private-browsing-allowed,
   div.addon-badge-private-browsing-allowed {
-	display: none;
+	display: none !important;
   }
 	
 }

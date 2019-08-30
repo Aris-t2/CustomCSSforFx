@@ -7,6 +7,6 @@
   visibility: visible !important;
 }
 
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   visibility: collapse !important;
 }

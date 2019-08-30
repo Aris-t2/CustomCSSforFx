@@ -4,7 +4,7 @@
 
 
 /* disable tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,

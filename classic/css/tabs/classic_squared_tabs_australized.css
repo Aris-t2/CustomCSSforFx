@@ -42,14 +42,14 @@
 }
 
 /* default grey tabs */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   background-image: linear-gradient(to top,transparent,transparent) !important;
 }
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
   background-image: var(--classic_squared_tabs_active_tab) !important;
 }
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: linear-gradient(to top,transparent,transparent) !important;
 }
@@ -66,14 +66,14 @@
 */
 
 /* tab border color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
-#TabsToolbar .tabs-newtab-button {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
   border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
   border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
@@ -95,19 +95,19 @@
 /********************************************/
 
 /* lightweight theme tab colors*/
-.tabs-newtab-button:-moz-lwtheme-darktext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-.tabs-newtab-button:hover:-moz-lwtheme-darktext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-.tabs-newtab-button:-moz-lwtheme-brighttext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-.tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
@@ -122,21 +122,21 @@
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-darktext:hover,
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:hover,
 .tabbrowser-tab .tab-content:-moz-lwtheme-darktext:hover {
   border-top: 1px solid rgba(0,0,0,.2) !important;
   border-left: 1px solid rgba(0,0,0,.2) !important; 
   border-right: 1px solid rgba(0,0,0,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext:hover,
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:hover,
 .tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:hover {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-darktext:not([selected]):not(:hover),
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:not([selected]):not(:hover),
 .tabbrowser-tab .tab-content:-moz-lwtheme-darktext:not([selected]):not(:hover),
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext:not([selected]):not(:hover),
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:not([selected]):not(:hover),
 .tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:not([selected]):not(:hover) {
   border-top: 1px solid transparent !important;
   border-left: 1px solid transparent !important; 
@@ -171,7 +171,7 @@
 }
 
 /* tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -191,20 +191,20 @@
 }
 
 /* space between tabs */
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab:not([pinned]) {
   -moz-margin-start: 0px !important;
 }
 
 /* width of new tab tab */
-#TabsToolbar .tabs-newtab-button{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
   min-width: 0px !important;
   width: 28px !important;
   margin-bottom: -1px !important;
 }
 
 /* size of new tab tabs '+' icon */
-#TabsToolbar .tabs-newtab-button .toolbarbutton-icon{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
   min-width: 0px !important;
   min-height: 0px !important;
   width: 14px !important;

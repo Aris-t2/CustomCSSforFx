@@ -30,7 +30,7 @@
   min-height: var(--tab-min-height_mlt);
 }
 
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   vertical-align: bottom !important;
   height: var(--tab-min-height_mlt);
   margin-bottom: -1px !important;

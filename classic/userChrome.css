@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.6.7 ********************************************************************************/
+/* version 2.6.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -50,10 +50,12 @@
 [!] Firefox 69+
   - 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true' (or custom styles will not be loaded)
 
-[!] Firefox 70+
+[!] Firefox 70+ (look for '_fx70')
  - 'about:config > security.identityblock.show_extended_validation > true' (to distinguish between verifiedIdentity and verfiedDomain)
  - 'identitybox > replace i-icon with globe' option replaces 'search glass' icon
- - ' identitybox colors' option cheats tracking protection button into identity box
+ - 'identitybox colors' option cheats tracking protection button into identity box
+ - 'searchbar popup > show engine labels' uses an own new option
+ - 'searchbar popup > show engine labels + show scrollbar' uses an own new option
   
 *************************************************************************************************/
 
@@ -550,8 +552,10 @@
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_fx66.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx70.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx66.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx70.css"; /**/
 
 /* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
 /* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes **********/

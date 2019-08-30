@@ -157,7 +157,7 @@
 }
 
 /* size of new tab tabs '+' icon */
-.tabs-newtab-button .toolbarbutton-icon {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon {
   padding: 0px !important;
   margin: 0px !important;
   width: 18px !important;

@@ -160,9 +160,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
 
-#main-window:not(:-moz-lwtheme) #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
+#main-window:not(:-moz-lwtheme) #TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
 #main-window:not(:-moz-lwtheme) #TabsToolbar > toolbarbutton,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar :-moz-any(.tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar > toolbarbutton {
   fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;

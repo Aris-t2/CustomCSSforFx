@@ -55,14 +55,14 @@
 }
 
 /* 'new tab' tab size */
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   vertical-align: bottom !important;
   height: var(--mltabs-newtab-height) !important;
   margin-bottom: -1px !important;
 }
 
 @media (-moz-windows-classic) {
-	#TabsToolbar #tabbrowser-tabs .tabs-newtab-button {
+	#TabsToolbar #tabbrowser-tabs :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
 	  margin-bottom: 1px !important;
 	  height: calc(var(--mltabs-newtab-height) - 2px) !important;
 	}

@@ -169,3 +169,8 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 .toolbarbutton-animatable-box {
   display: none !important;
 }
+
+/* fix icon glitch */
+#downloads-button:not(:-moz-any([attention],[progress])) #downloads-indicator-icon {
+  background-image: unset !important;
+}

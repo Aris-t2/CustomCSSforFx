@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-#TabsToolbar .tabs-newtab-button{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
   border-top-left-radius: var(--default_tab_border_roundness) !important;
   border-top-right-radius: var(--default_tab_border_roundness) !important;
 }

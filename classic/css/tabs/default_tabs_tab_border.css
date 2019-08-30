@@ -3,14 +3,14 @@
 /****************************************************************************************/
 
 
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab {
   border-top: 1px solid var(--tabs-border-color) !important;
   border-left: 1px solid var(--tabs-border-color) !important;
   border-right: 1px solid var(--tabs-border-color) !important;
 }
 
-#TabsToolbar:-moz-lwtheme-brighttext .tabs-newtab-button,
+#TabsToolbar:-moz-lwtheme-brighttext :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:-moz-lwtheme-brighttext .tabbrowser-tab {
   border-top: 1px solid #5a5a5c !important;
   border-left: 1px solid #5a5a5c !important;

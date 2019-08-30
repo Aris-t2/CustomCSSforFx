@@ -52,7 +52,7 @@
 }
 
 /* default tabs color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   background-image: var(--classic_squared_tabs_other_tabs) !important;
 }
@@ -61,7 +61,7 @@
   background-image: var(--classic_squared_tabs_active_tab) !important;
 }
 /* hovered tabs color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: var(--classic_squared_tabs_hovered_tabs) !important;
 }
@@ -72,14 +72,14 @@
 }
 
 /* tab border color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
-#TabsToolbar .tabs-newtab-button {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
   border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
   border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border2) !important;
@@ -92,7 +92,7 @@
 }
 
 /* new tab icon color */
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button {
+#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
@@ -105,19 +105,19 @@
 /********************************************/
 
 /* lightweight theme tab colors*/
-.tabs-newtab-button:-moz-lwtheme-darktext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-darktext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-dark_other_tabs) !important;
 }
-.tabs-newtab-button:hover:-moz-lwtheme-darktext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-darktext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-dark_hovered_tabs) !important;
 }
-.tabs-newtab-button:-moz-lwtheme-brighttext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-bright_other_tabs) !important;
 }
-.tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-bright_hovered_tabs) !important;
 }
@@ -126,11 +126,11 @@
 }
 
 /* compact dark lw-theme */
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext,
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 #main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.99)) !important;
 }
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabs-newtab-button:hover:-moz-lwtheme-brighttext,
+#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
 #main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(rgba(71,71,71,.7), rgba(71,71,71,.7)) !important;
 }
@@ -145,13 +145,13 @@
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-darktext,
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
 .tabbrowser-tab .tab-content:-moz-lwtheme-darktext {
   border-top: 1px solid rgba(0,0,0,.2) !important;
   border-left: 1px solid rgba(0,0,0,.2) !important; 
   border-right: 1px solid rgba(0,0,0,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme .tabs-newtab-button:-moz-lwtheme-brighttext,
+#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 .tabbrowser-tab .tab-content:-moz-lwtheme-brighttext {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
@@ -187,7 +187,7 @@
 }
 
 /* tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -207,20 +207,20 @@
 }
 
 /* space between tabs */
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab:not([pinned]) {
   -moz-margin-start: 0px !important;
 }
 
 /* width of new tab tab */
-#TabsToolbar .tabs-newtab-button{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
   min-width: 0px !important;
   width: 28px !important;
   margin-bottom: -1px !important;
 }
 
 /* size of new tab tabs '+' icon */
-#TabsToolbar .tabs-newtab-button .toolbarbutton-icon{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
   min-width: 0px !important;
   min-height: 0px !important;
   width: 14px !important;

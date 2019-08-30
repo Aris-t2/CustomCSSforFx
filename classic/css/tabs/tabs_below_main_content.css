@@ -107,14 +107,14 @@
 }
 
 /* width of new tab tab */
-#TabsToolbar .tabs-newtab-button {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   min-width: 0px !important;
   width: 28px !important;
   margin-bottom: -1px !important;
 }
 
 /* size of new tab tabs '+' icon */
-.tabs-newtab-button .toolbarbutton-icon {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon {
   min-width: 0px !important;
   min-height: 0px !important;
   width: 14px !important;

@@ -5,8 +5,9 @@
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
-  div.addon-badge-recommended {
-	display: none;
+  a.addon-badge-recommended,
+  div.addon-badge-recommended  {
+	display: none !important;
   }
 	
 }

@@ -11,7 +11,7 @@
   visibility: visible !important;
 }
 
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   display: none !important;
   visibility: hidden !important;
 }
