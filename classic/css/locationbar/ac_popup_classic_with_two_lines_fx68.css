@@ -151,10 +151,10 @@
   top: 3px;
 }
 #urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
-  right: 0px;
+  right: 4px;
 }
 #urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
-  left: 0px;
+  left: 4px;
 }
 
 /* Hide separator between title and url ans space before icons */

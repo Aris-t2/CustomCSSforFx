@@ -16,8 +16,8 @@
 }
 
 #urlbar-results .urlbarView-title {
-  position: absolute !important;
-  margin-bottom: 4px !important;
+  /*position: absolute !important;*/
+  margin-bottom: 2px !important;
 }
 
 #urlbar-results .urlbarView-title-separator {
@@ -51,4 +51,9 @@
 #urlbar-results scrollbox,
 #urlbar-results > .urlbarView-body-outer {
   overflow-y: auto !important;
+}
+
+#urlbar-results {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
 }

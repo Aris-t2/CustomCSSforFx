@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.6.8 ********************************************************************************/
+/* version 2.6.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -708,31 +708,35 @@
 /* @import "./css/locationbar/ac_popup_item_title_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_visible_on_hover_only.css"; /**/
 /* [!] 'Classic/old popup with two lined results' option notes **********************************/
-/* [!] - separate options for Firefox 60-62, 63, and 64+ ****************************************/
+/* [!] - separate options for Firefox 60-62, 63, 64 and 68+ *************************************/
 /* [!] - Firefox 60-63: popup code is XBL (xml) based like on older Firefox versions ************/
 /* [!] - Firefox 60-63: option removes 'oneoff' searches at popups bottom ***********************/
-/* [!] - Firefox 60-63: option throws unfixable warnings in 'error console' in ******************/
-/* [!] - Firefox 64+: popup width can not be automatically detected anymore *********************/
+/* [!] - Firefox 60-63: option throws unfixable warnings in 'error console' *********************/
+/* [!] - Firefox 64+: popup width can not be detected automatically anymore *********************/
 /* [!] - Firefox 64+: popup width has to be set manually inside /config/ files ******************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup for Fx 60-62*/
-/* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup for Fx 63 */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx63.css"; /**/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64.css"; /**/  /* <--- old autocomplete popup for Fx 64+ */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 64+ & star icon at the end */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64_star_at_the_end.css"; /**/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68.css"; /**/  /* <--- old autocomplete popup for Fx 68+ */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup for Fx 68+ & star icon at the end */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/
-/* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/  /* <--- for Fx 68+ */
+/*  - for Firefox 60-62 *************************************************************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup*/
+/* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/  /* <--- old autocomplete popup + url only */
+/*  - for Firefox 63 ****************************************************************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx63.css"; /**/  /* <--- old autocomplete popup + url only */
+/*  - for Firefox 64-67 *************************************************************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64.css"; /**/  /* <--- old autocomplete popup */
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/  /* <--- old autocomplete popup + url only */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
+/*  - for Firefox 68+ ***************************************************************************/
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68.css"; /**/  /* <--- old autocomplete popup */
+/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/  /* <--- old autocomplete popup + url only */
+/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
+/* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/ /* default popup + two lined results*/
 
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 /* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/
-/* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* not for Fx68+ */
-/* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/ /* not for Fx68+ */
+/* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* Fx60-Fx67 only */
+/* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/ /* Fx60-Fx67 only */
 /* @import "./css/locationbar/ac_popup_result_separator.css"; /**/
 /* custom amount of result items: about:config > browser.urlbar.maxRichResults ******************/
 /* @import "./css/locationbar/ac_popup_custom_height.css"; /**/

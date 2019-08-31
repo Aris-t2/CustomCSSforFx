@@ -114,10 +114,10 @@
   top: 3px;
 }
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(ltr) .autocomplete-richlistitem .ac-tags {
-  right: 0px;
+  right: 4px;
 }
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(rtl) .autocomplete-richlistitem .ac-tags {
-  left: 0px;
+  left: 4px;
 }
 
 /* Hide separator between title and url ans space before icons */

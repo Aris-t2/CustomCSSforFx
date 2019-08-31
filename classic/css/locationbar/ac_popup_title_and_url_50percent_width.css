@@ -50,6 +50,18 @@
   color: #00d2ff !important;
 }
 
+/* Tags */
+
+/* Position of bookmark tags */
+#urlbar-results .urlbarView-row .urlbarView-tags {
+  position: absolute !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 0;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 0;
+}
 
 
 /* Fx68+ */

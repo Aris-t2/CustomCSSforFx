@@ -162,3 +162,14 @@
   right: unset !important;
 }
 
+/* Position of bookmark tags */
+#urlbar-results .urlbarView-row .urlbarView-tags {
+  position: absolute !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 4px;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 4px;
+}
+

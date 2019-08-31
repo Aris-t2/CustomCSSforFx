@@ -23,3 +23,11 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-type-icon {
   margin-bottom: 20px !important;
 }
+
+/* Tags */
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 30px !important;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 30px !important;
+}
