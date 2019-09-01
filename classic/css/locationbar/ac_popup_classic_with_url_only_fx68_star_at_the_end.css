@@ -13,11 +13,11 @@
 
 /* move bookmarks star and other icon to items right */
 #urlbar-results .urlbarView-row .urlbarView-type-icon {
-  -moz-margin-start: calc( var(--ac_popup_width) - 26px ) !important;
+  -moz-margin-start: calc( var(--ac_popup_width) - 38px ) !important;
 }
 
 #urlbar-results .urlbarView-row .urlbarView-favicon {
-  -moz-margin-start: calc( -1 * ( var(--ac_popup_width) - 10px ) ) !important;
+  -moz-margin-start: calc( -1 * ( var(--ac_popup_width) - 18px ) ) !important;
 }
 
 /* Tags */

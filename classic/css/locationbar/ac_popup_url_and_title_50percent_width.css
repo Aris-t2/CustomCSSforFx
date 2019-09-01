@@ -43,16 +43,17 @@
 /* calculate width for action type menuitems like this, *
 ** if not using 50% widths for title and url. ***********
 ** 60% url, 40% title in this example ******************//*
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-url-text,
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text {
-  min-width: calc((100vw - 100px)*0.4) !important;
-  width: calc((100vw - 100px)*0.4) !important;
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text,
+#urlbar-results .urlbarView-url {
+  min-width: calc((100vw - 120px)*0.6) !important;
+  width: calc((100vw - 120px)*0.6) !important;
 }
 
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title-text,
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
-  min-width: calc((100vw - 100px)*0.6) !important;
-  width: calc((100vw - 100px)*0.6) !important;
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
+#urlbar-results .urlbarView-title {
+  min-width: calc((100vw - 120px)*0.4) !important;
+  width: calc((100vw - 120px)*0.4) !important;
 }
 
 /**/

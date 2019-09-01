@@ -85,15 +85,51 @@
   max-height: var(--ac_popup_maxheight) !important;
 }
 
-#urlbar-results {
+#urlbar-results{
+  overflow: hidden !important;
+  overflow-y: visible !important;
+  height: var(--ac_popup_height) !important;
   max-height: var(--ac_popup_maxheight) !important;
 }
 
+/*
+#urlbar-results {
+  max-height: var(--ac_popup_maxheight) !important;
+}*/
+
+/*
+.urlbarView {
+  overflow: hidden !important;
+  overflow-y: visible !important;
+}
+
+#urlbarView-results {
+  height: var(--ac_popup_height) !important;
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+#urlbar-results{
+  max-height: var(--ac_popup_maxheight) !important;
+}*/
+
+/*
+.urlbarView {
+  overflow: hidden !important;
+  overflow-y: visible !important;
+}
+
+.urlbarView-body-inner {
+  max-height: var(--ac_popup_maxheight) !important;
+}*/
+
+
+/* popup width [normal mode] */
 #urlbar-results {
   min-width: 0px !important;
   width: var(--ac_popup_width) !important;
   max-width: var(--ac_popup_width) !important;
 }
+
 #urlbar-results .urlbarView-row .urlbarView-title, 
 #urlbar-results .urlbarView-row .urlbarView-url {
   min-width: calc( var(--ac_popup_width) - 50px) !important;
