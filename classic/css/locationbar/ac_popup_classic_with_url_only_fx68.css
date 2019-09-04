@@ -174,3 +174,8 @@
   left: 4px;
 }
 
+/* reduce space around search engines */
+#urlbar .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

@@ -18,6 +18,7 @@
   padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
 }
 
+.urlbarView:not(.megabar),
 #urlbar-results {
   z-index: 100 !important;
 }

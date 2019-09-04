@@ -249,3 +249,9 @@
 #urlbar-results > .urlbarView-body-outer {
   overflow-y: auto !important;
 }
+
+/* reduce space around search engines */
+#urlbar .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
