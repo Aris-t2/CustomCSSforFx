@@ -2,19 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@-moz-document url(chrome://browser/content/browser.xul) {
 
-	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
-	  background-image: url(./../../image/fx_logo.png) !important;
-	  background-position: center center !important;
-	  background-repeat: no-repeat !important;
-	}
-	
-	/* Fx68 */
-	#urlbarView-results {
-	  background-image: url(./../../image/fx_logo.png) !important;
-	  background-position: center center !important;
-	  background-repeat: no-repeat !important;
-	}
-
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"],
+.urlbarView:not(.megabar),
+#urlbarView-results {
+  background-image: url(./../../image/fx_logo.png) !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }

@@ -5,7 +5,7 @@
 
 /* Glass8 ( http://www.glass8.eu/ ) required for 'Windows 7'-like window transparency */
 
-@-moz-document url(chrome://browser/content/browser.xul) {
+@-moz-document url(chrome://browser/content/browser.xul), url(chrome://browser/content/browser.xhtml) {
 	#main-window {
 	  background-color: transparent !important;
 	  -moz-appearance: -moz-win-glass !important;
