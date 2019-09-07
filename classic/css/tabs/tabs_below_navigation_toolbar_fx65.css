@@ -30,8 +30,10 @@
 }
 
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
-  display: none !important;
+  /*display: none !important;*/
+  visibility: hidden !important;
 }
+
 
 /* move caption buttons to windows top right position */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
