@@ -10,6 +10,7 @@
 
 ## Instructions / Howto / Readme
 
+- [Unlock custom CSS usage in Firefox 69 and newer](#unlock-custom-css-usage-in-firefox-69-and-newer)
 - [WebExtensions can not modify Firefox Quantums appearance properly](#webextensions-can-not-modify-firefox-quantums-appearance-properly)  
 - [Where to find Firefox profile folder? The correct location for user styles.](#where-to-find-firefox-profile-folder-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
@@ -17,6 +18,10 @@
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
 - [Suggested ui tweaks](#suggested-ui-tweaks)  
 - ['about:config' tweaks](#aboutconfig-tweaks)  
+
+## Unlock custom CSS usage in Firefox 69 and newer
+
+`about:config` > `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`  
 
 ## WebExtensions can not modify Firefox Quantums appearance properly
 
