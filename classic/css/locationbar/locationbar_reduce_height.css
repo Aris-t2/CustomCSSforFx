@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#urlbar,
+#urlbar,#searchbar,
 .searchbar-textbox {
   margin: 1px !important;
   min-height: 0px !important;

@@ -92,37 +92,6 @@
   max-height: var(--ac_popup_maxheight) !important;
 }
 
-/*
-#urlbar-results {
-  max-height: var(--ac_popup_maxheight) !important;
-}*/
-
-/*
-.urlbarView {
-  overflow: hidden !important;
-  overflow-y: visible !important;
-}
-
-#urlbarView-results {
-  height: var(--ac_popup_height) !important;
-  max-height: var(--ac_popup_maxheight) !important;
-}
-
-#urlbar-results{
-  max-height: var(--ac_popup_maxheight) !important;
-}*/
-
-/*
-.urlbarView {
-  overflow: hidden !important;
-  overflow-y: visible !important;
-}
-
-.urlbarView-body-inner {
-  max-height: var(--ac_popup_maxheight) !important;
-}*/
-
-
 /* popup width [normal mode] */
 #urlbar-results {
   min-width: 0px !important;

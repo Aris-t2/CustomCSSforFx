@@ -3,21 +3,53 @@
 /****************************************************************************************/
 
 
-#TabsToolbar .arrowscrollbox-overflow-start-indicator {
+#tabbrowser-tabs[overflow="true"] .arrowscrollbox-overflow-start-indicator {
   -moz-box-ordinal-group: 0 !important;
 }
 
-#TabsToolbar .arrowscrollbox-scrollbox {
+#tabbrowser-tabs[overflow="true"] .arrowscrollbox-scrollbox {
   -moz-box-ordinal-group: 1 !important;
 }
 
-#TabsToolbar .arrowscrollbox-overflow-start-indicator {
+#tabbrowser-tabs[overflow="true"] .arrowscrollbox-overflow-start-indicator {
   -moz-box-ordinal-group: 2 !important;
 }
 
-#TabsToolbar .scrollbutton-up {
+#tabbrowser-tabs[overflow="true"] .scrollbutton-up {
   -moz-box-ordinal-group: 3 !important;
 }
-#TabsToolbar .scrollbutton-down {
+#tabbrowser-tabs[overflow="true"] .scrollbutton-down {
   -moz-box-ordinal-group: 4 !important;
+}
+
+/* Fix pinned tabs position for the first 10 pinned tabs (follow the system for more pinnen tabs) */
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+  margin-inline-start: -30px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -60px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -90px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -120px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -150px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -180px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -210px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -240px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -270px !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: -300px !important;
 }
