@@ -32,6 +32,7 @@
 /* move menubar to the top and extend its with to full window width */
 #toolbar-menubar {
   position: fixed !important;
+  display:block !important;
   width: 100vw !important;
   -moz-window-dragging: drag !important;
 }

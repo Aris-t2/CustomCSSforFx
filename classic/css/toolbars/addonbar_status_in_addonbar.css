@@ -6,6 +6,7 @@
 .browserContainer :-moz-any(statuspanel,#statuspanel) {
   -moz-box-ordinal-group: 3 !important;
   position: fixed !important;
+  display:block !important;
   bottom: 2px !important;
 }
 

@@ -66,12 +66,14 @@
 
 #urlbar-results .urlbarView-row .urlbarView-title {
   position: absolute !important;
+  display:block !important;
   right: 50px !important;
   top: 4px !important;
 }
 
 #urlbar-results .urlbarView-row .urlbarView-url {
   position: absolute !important;
+  display:block !important;
   left: 50px !important;
   top: 4px !important;
 }

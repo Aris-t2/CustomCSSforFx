@@ -27,6 +27,7 @@
 	.search-container {
 	  background: transparent !important;
 	  position: absolute !important;
+	  display:block !important;
 	  top: 20px !important;
 	}
 	

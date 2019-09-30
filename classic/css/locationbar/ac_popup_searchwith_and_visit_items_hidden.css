@@ -34,6 +34,7 @@
 #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type:last-of-type[actiontype="searchengine"] {
   z-index: -1000000000 !important;
   position: fixed !important;
+  display:block !important;
   opacity: 0 !important;
   visibility: collapse !important;
   min-height: 0 !important;
@@ -67,6 +68,7 @@
 #urlbar-results .urlbarView-row:first-of-type:last-of-type[type="search"] {
   z-index: -1000000000 !important;
   position: fixed !important;
+  display:block !important;
   opacity: 0 !important;
   visibility: collapse !important;
   min-height: 0 !important;

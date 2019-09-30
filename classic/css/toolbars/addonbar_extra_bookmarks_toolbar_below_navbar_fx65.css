@@ -16,6 +16,7 @@
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
   position: absolute !important;
+  display:block !important;
   bottom: 1px !important;
   min-width: 0 !important;
   width: auto !important;

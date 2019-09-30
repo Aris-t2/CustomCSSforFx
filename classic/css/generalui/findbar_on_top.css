@@ -33,6 +33,7 @@
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
+  display:block !important;
   margin-top: -1px !important;
   box-shadow: unset !important;
   border: 1px solid #e1e1e2 !important;

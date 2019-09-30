@@ -15,7 +15,7 @@
 /* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
 
 :root{
-  --tabs-lines: 4;
+  --tabs-lines: 3;
   --tab_min_width_mlt: 80px;
   --tab_max_width_mlt: 200px;
   --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */

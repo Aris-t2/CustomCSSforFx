@@ -60,6 +60,7 @@
   -moz-appearance: none !important;
   -moz-box-ordinal-group: 0 !important;
   position: fixed !important;
+  display:block !important;
   height: 22px !important;
   margin: 0 !important;
   -moz-margin-start: 1px !important;

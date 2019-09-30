@@ -28,6 +28,7 @@
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box {
   position: absolute !important;
+  display:block !important;
   -moz-padding-start: 4px !important;
   margin-top: 3px !important;
 }

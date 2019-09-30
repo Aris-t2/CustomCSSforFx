@@ -27,6 +27,7 @@
 
 #main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
   position: fixed !important;
+  display:block !important;
 }
 
 /* lw-theme */

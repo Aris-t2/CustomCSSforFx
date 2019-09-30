@@ -5,6 +5,7 @@
 
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-closebutton {
   position: absolute !important;
+  display:block !important;
   margin-top: -26px !important;
   margin-bottom: 8px !important;
   -moz-margin-start: 4px !important;

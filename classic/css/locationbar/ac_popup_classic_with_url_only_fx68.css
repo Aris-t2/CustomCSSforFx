@@ -166,6 +166,7 @@
 /* Position of bookmark tags */
 #urlbar-results .urlbarView-row .urlbarView-tags {
   position: absolute !important;
+  display:block !important;
 }
 #urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
   right: 4px;

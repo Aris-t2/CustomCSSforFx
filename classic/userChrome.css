@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.7.4 ********************************************************************************/
+/* version 2.7.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -56,6 +56,10 @@
  - 'identitybox colors' option cheats tracking protection button into identity box
  - 'searchbar popup > show engine labels' uses an own new option
  - 'searchbar popup > show engine labels + show scrollbar' uses an own new option
+ 
+ [!] Firefox 71+ (look for '_fx71')
+ - support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
+ - appbutton in titlebar requires workaround depending on configuration
   
 *************************************************************************************************/
 
@@ -317,7 +321,7 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
-@import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
+/* @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
@@ -327,11 +331,23 @@
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_grey.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_browser_logo.css"; /**/
 
-/* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? */
+/* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
+/* Firefox 71 workaround for broken taskbar *****************************************************/
+/* [!] tabs on top + menubar hidden + appbutton label */
+/* [!] tabs not on top + menubar hidden/visible + appbutton label */
+/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix.css"; /**/
+/* [!] tabs on top + menubar hidden + appbutton icon only */
+/* [!] tabs not on top + menubar hidden/visible + appbutton icon only */
+/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix2.css"; /**/
+/* [!] tabs on top + menubar visible + appbutton label */
+/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix3.css"; /**/
+/* [!] tabs on top + menubar visible + appbutton icon only */
+/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix4.css"; /**/
+
 /* button color - [only use one at a time] ******************************************************/
-@import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_transparent.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_semi_transparent.css"; /**/

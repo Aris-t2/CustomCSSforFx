@@ -26,6 +26,7 @@
 
 #TabsToolbar {
   position: fixed !important;
+  display:block !important;
   bottom: 0px !important;
   width: 100% !important;
 }

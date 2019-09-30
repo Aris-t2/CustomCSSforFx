@@ -124,6 +124,7 @@
 /* Position of items title & font-size */
 #urlbar-results .urlbarView-row .urlbarView-title {
   position: absolute !important;
+  display:block !important;
   top: 1px;
   font-size: 14px;
 }
@@ -138,6 +139,7 @@
 #urlbar-results .urlbarView-row .urlbarView-url,
 #urlbar-results .urlbarView-row .urlbarView-action {
   position: absolute !important;
+  display:block !important;
   top: 24px;
   font-size: 12px;
 }
@@ -153,6 +155,7 @@
 /* Position of bookmark tags */
 #urlbar-results .urlbarView-row .urlbarView-tags {
   position: absolute !important;
+  display:block !important;
   top: 3px;
 }
 #urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
@@ -170,6 +173,7 @@
 /* Position of type icon (bookmark, switch-to-tab...) */
 #urlbar-results .urlbarView-row .urlbarView-type-icon {
   position: absolute !important;
+  display:block !important;
   bottom: 8px !important;
   left: 4px !important;
 }
@@ -177,6 +181,7 @@
 /* Position of site icon */
 #urlbar-results .urlbarView-row .urlbarView-favicon {
   position: absolute !important;
+  display:block !important;
   top: 4px !important;
   left: 4px !important;
 }
@@ -223,4 +228,6 @@
 #urlbar .search-one-offs {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+  width: var(--ac_popup_width) !important;
+  max-width: var(--ac_popup_width) !important;
 }

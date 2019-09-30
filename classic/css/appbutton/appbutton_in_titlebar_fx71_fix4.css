@@ -3,8 +3,12 @@
 /****************************************************************************************/
 
 
-/* remove search go button */
-#searchbar .search-go-button,
-.searchbar-textbox .search-go-button {
-  visibility: hidden !important;
+#main-window[tabsintitlebar] #nav-bar #PanelUI-button {
+  position: relative !important;
+  margin-top: -57px !important;
+  margin-bottom: 63px !important;
+}
+
+#main-window[tabsintitlebar] #nav-bar-customization-target {
+  -moz-margin-start: -37px !important;
 }

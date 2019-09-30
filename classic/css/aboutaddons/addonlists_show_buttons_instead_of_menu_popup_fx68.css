@@ -11,6 +11,14 @@
 	  border: 1px solid lightgrey !important;
 	}
 	
+	@supports -moz-bool-pref("browser.in-content.dark-mode") {
+	  @media (prefers-color-scheme: dark) {
+		.more-options-menu panel-item {
+		  background: black !important;
+		  color: white !important;
+	  }
+	}}
+	
 	/* reduce sice of default buttons */
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: unset !important;
