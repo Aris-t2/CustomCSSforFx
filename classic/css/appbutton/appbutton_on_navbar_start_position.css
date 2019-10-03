@@ -8,6 +8,12 @@
   -moz-box-ordinal-group: 0 !important;
 }
 
+#PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
+  -moz-box-ordinal-group: 10 !important;
+  margin-inline-start: 3px !important;
+  margin-inline-end: unset !important;
+}
+
 #main-window:not([uidensity=compact]) #PanelUI-button {
   margin-inline-start: 0px !important;
   border-inline-start: 0px solid !important;

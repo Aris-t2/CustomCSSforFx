@@ -35,6 +35,11 @@
   max-height: unset !important;
 }
 
+#PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
+  margin-inline-end: 3px !important;
+}
+
+
 /* back button adjustment */
 #nav-bar #back-button .toolbarbutton-icon {
   border: 0 !important;

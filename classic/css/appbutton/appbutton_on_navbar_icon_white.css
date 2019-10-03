@@ -8,7 +8,7 @@
   -moz-image-region: unset !important;
 }
 
-#PanelUI-button .toolbarbutton-icon {
+#PanelUI-button #PanelUI-menu-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton-inv.svg") !important;
 }
 
