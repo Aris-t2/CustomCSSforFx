@@ -6,7 +6,7 @@
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	panel-item[action="report"] {
-	  display: none;
+	  display: none !important;
 	}
 
 }

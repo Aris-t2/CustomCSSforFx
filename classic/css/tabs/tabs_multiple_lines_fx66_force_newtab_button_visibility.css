@@ -1,0 +1,17 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_multiple_lines_fx66.css";
+
+
+:root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {
+  display: unset !important;
+  visibility: visible !important;
+}
+
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  display: none !important;
+  visibility: hidden !important;
+}

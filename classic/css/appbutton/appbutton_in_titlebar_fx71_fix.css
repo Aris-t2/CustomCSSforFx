@@ -12,3 +12,11 @@
 #main-window[tabsintitlebar] #nav-bar-customization-target {
   -moz-margin-start: -91px !important;
 }
+
+@media all and (-moz-os-version: windows-win7),
+@media all and (-moz-os-version: windows-win8) {
+ #main-window[tabsintitlebar][sizemode="maximized"] #nav-bar #PanelUI-button {
+	margin-top: -26px !important;
+	margin-bottom: 34px !important;
+  }
+}

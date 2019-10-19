@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.7.6 ********************************************************************************/
+/* version 2.7.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -27,7 +27,7 @@
   - 'appbutton in titlebar' on macOS gets moved to the right (see extra option)
   
 [!] Firefox 66+ (look for '_fx66')
-  - 'multiple tab lines v1' is not compatible with Firefox 66+
+  - 'multiple tab lines v1 & v2' are not compatible with Firefox 66+
   - 'bookmarks toolbar multiple lines' uses an own new option
   - 'searchbar show labels' uses an own new option
   
@@ -58,8 +58,9 @@
  - 'searchbar popup > show engine labels + show scrollbar' uses an own new option
  
  [!] Firefox 71+ (look for '_fx71')
- - support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
- - appbutton in titlebar requires workaround depending on configuration
+ - added support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
+ - 'appbutton in titlebar' requires workaround depending on configuration
+ - 'multiple tab lines' got own new settings
   
 *************************************************************************************************/
 
@@ -334,7 +335,7 @@
 /* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
-/* Firefox 71 workaround for broken taskbar *****************************************************/
+/* Firefox 71 workaround for broken navigation toolbar ******************************************/
 /* [!] tabs on top + menubar hidden + appbutton label */
 /* [!] tabs not on top + menubar hidden/visible + appbutton label */
 /* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix.css"; /**/
@@ -416,19 +417,20 @@
 /* @import "./config/custom_tab_text_settings.css"; /**/
 
 /* MULTIROW / multi lined tabs - [only use one at a time] ***************************************/
+/* [!] EXPERIMENTAL (any Fx update might break this highly experimental feature) ****************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 **********************/
-/* [!] BUG: dragging tabs does not work properly with multi lined tabs **************************/
-/* [!] for v1 see https://00.bulog.jp/archives/1476 *********************************************/
-/* [!] for v2 see https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ****/
+/* [!] BUG: dragging tabs does not work with multi lined tabs ***********************************/
+/* [!] Original authors: --> https://00.bulog.jp/archives/1476 **********************************/
+/* [!] --> https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
 /* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
 /* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
-/* [!] v1 and v2 are not compatible with Firefox 66+ ********************************************/
-/* @import "./css/tabs/tabs_multiple_lines.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_multiple_lines_v3.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_multiple_lines_v3_force_newtab_button_visibility.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_multiple_lines_v4.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/tabs/tabs_multiple_lines.css"; /**/ /* Fx 60-65 */
+/* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* Fx 60-65 */
+/* @import "./css/tabs/tabs_multiple_lines_fx66.css"; /**/  /* Fx 66-70 */
+/* @import "./css/tabs/tabs_multiple_lines_fx66_force_newtab_button_visibility.css"; /**/  /* Fx 66-70 */  
+/* @import "./css/tabs/tabs_multiple_lines_fx71.css"; /**/  /* Fx 71+ */
+/* @import "./css/tabs/tabs_multiple_lines_fx71_force_newtab_button_visibility.css"; /**/  /* Fx 71+ */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/

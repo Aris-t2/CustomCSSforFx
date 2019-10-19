@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import ".//tabs_multiple_lines_v3.css";
+@import "./tabs_multiple_lines_fx71.css";
 
 
 :root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {

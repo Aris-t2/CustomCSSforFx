@@ -110,6 +110,11 @@
   color: white !important;
 }
 
+/* support for sidebar */
+#sidebar-box:not([hidden="true"]) + #sidebar-splitter + #appcontent findbar {
+  -moz-margin-start: 230px !important;
+}
+
 /* status at findbars start *//*
 :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
   -moz-box-ordinal-group: 0;
