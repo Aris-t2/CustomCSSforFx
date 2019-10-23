@@ -20,7 +20,7 @@
   list-style-image: url("../../image/toolbar_fx_firebird.png") !important;
 }
 
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   list-style-image: url("../../image/newtabff3.png") !important;
   -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
 }

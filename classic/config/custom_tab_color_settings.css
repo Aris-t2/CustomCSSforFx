@@ -46,11 +46,11 @@
 }
 
 /* new tab *********************************/
-#TabsToolbar #tabbrowser-tabs .tabs-newtab-button {
+#TabsToolbar #tabbrowser-tabs :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   background: var(--default_tabs_bg_newtab) !important;
 }
 
 /* hovered new tab *************************/
-#TabsToolbar #tabbrowser-tabs .tabs-newtab-button:hover {
+#TabsToolbar #tabbrowser-tabs :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover {
   background: var(--default_tabs_bg_newtab_hovered) !important;
 }

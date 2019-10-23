@@ -3,6 +3,6 @@
 /****************************************************************************************/
 
 /* hide urlbars go button */
-#urlbar-container .urlbar-go-button{
+#urlbar-container :-moz-any(.urlbar-go-button, #urlbar-go-button){
   visibility: collapse !important;
 }

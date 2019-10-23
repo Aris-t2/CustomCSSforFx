@@ -26,7 +26,7 @@
   background: -moz-image-rect(url("../../image/toolbar_fx_noia.png"), 0, 198, 18, 180) center no-repeat !important;
 }
 
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   list-style-image: url("../../image/newtabnoia.png") !important;
   -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
 }

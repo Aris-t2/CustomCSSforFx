@@ -40,6 +40,9 @@
   padding-inline-end: unset !important;
   background: #ededed !important;
 }
+#main-window:-moz-lwtheme-brighttext #urlbar:not(.megabar) .search-one-offs {
+  background: #323234 !important;
+}
 #urlbar-input-container {
   --item-padding-start: 0px !important;
   --item-padding-end: 0px !important;

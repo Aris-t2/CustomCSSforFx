@@ -19,7 +19,7 @@
 	  }
 	}}
 	
-	/* reduce sice of default buttons */
+	/* reduce size of default buttons */
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: unset !important;
 	  padding: 2px 5px !important; 
