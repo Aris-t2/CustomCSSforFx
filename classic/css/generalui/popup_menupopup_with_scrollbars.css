@@ -3,10 +3,29 @@
 /****************************************************************************************/
 
 
+/* Fx60-69 */
 menupopup scrollbox {
   overflow-y: auto !important
 }
 
 menupopup :-moz-any(.autorepeatbutton-up, .autorepeatbutton-down, .scrollbutton-up, .scrollbutton-down) {
+  display: none !important;
+}
+
+/* Fx70 */
+link[href$="global.css"] ~ hbox arrowscrollbox scrollbox {
+  overflow-y: auto !important;
+}
+
+link[href$="global.css"] ~ hbox arrowscrollbox :-moz-any(.scrollbutton-up, .scrollbutton-down) {
+  display: none !important;
+}
+
+/* Fx71+ */
+link[href$="global.css"] ~ scrollbox {
+  overflow-y: auto !important;
+}
+
+link[href$="global.css"] ~ .menupopup-scrollbutton {
   display: none !important;
 }

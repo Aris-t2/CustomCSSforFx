@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.7.8 ********************************************************************************/
+/* version 2.7.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -61,7 +61,17 @@
  - added support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
  - 'appbutton in titlebar' requires workaround depending on configuration
  - 'multiple tab lines' got own new settings
-  
+
+ [!] Firefox 72+ (look for '_fx72')
+ - 'searchbar popup > show engine labels' uses an own new option
+ - 'searchbar popup > show engine labels + show scrollbar' uses an own new option
+ 
+ 
+ ------------------------------------------------------------------------------------------------------------------
+ [!] For 'Location Bar' settings to work in Firefox 71+ set 'about:config > browser.urlbar.megabar' to 'false'. [!]
+ ------------------------------------------------------------------------------------------------------------------
+ 
+
 *************************************************************************************************/
 
 /*************************************************************************************************
@@ -440,8 +450,8 @@
 /* @import "./css/tabs/tab_title_in_firefox_titlebar_centered.css"; /**/
 
 /* Tab scroll buttons position - [only use one at a time] ***************************************/
-/* @import "./css/tabs/tab_scrollbuttons_both_on toolbars_start.css"; /**/
-/* @import "./css/tabs/tab_scrollbuttons_both_on toolbars_end.css"; /**/
+/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_start.css"; /**/
+/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_end.css"; /**/
 
 /* restore empty/missing tab favicon - [only use one at a time] *********************************/
 @import "./css/tabs/missing_tab_favicon_restored_default.css"; /**/
@@ -509,7 +519,7 @@
 /* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
-/* @import "./css/generalui/popup_menupopup_with_scrollbars"; /**/
+/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/
@@ -572,9 +582,11 @@
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_fx66.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_fx70.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx72.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx66.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx70.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx72.css"; /**/
 
 /* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
 /* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes **********/

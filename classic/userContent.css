@@ -135,8 +135,11 @@
 
 
 /* FIREFOX 60-70+ ##############################################################################*/
-@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
 @import "./css/aboutaddons/addonlists_private_browsing_notice_hidden.css"; /**/
+@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/recentupdates_category_last_category.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_last_category.css"; /**/
 
 
 /************************************************************************************************/

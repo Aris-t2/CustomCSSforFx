@@ -282,3 +282,8 @@
 #main-window[tabsintitlebar]::after {
   -moz-margin-start: 45px !important;
 }
+
+/* remove this nonsense button, a menuitem is inside menu button anyways */
+#PanelUI-button #whats-new-menu-button {
+  display: none !important;
+}
