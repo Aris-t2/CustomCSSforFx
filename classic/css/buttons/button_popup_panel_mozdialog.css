@@ -3,6 +3,9 @@
 /****************************************************************************************/
 
 
+.panel-arrowcontent,
+.popup-internal-box,
+.panel-subview-footer,
 #BMB_bookmarksPopup .popup-internal-box,
 .popup-internal-box > autorepeatbutton,
 .panel-subview-footer,
@@ -20,4 +23,10 @@
 .panel-subview-footer {
   background: white !important;
   color: black !important;
+}
+
+.panel-subview-footer,
+.subviewbutton.panel-subview-footer {
+  -moz-appearance: menuitem !important;
+  min-height: unset !important;
 }

@@ -52,6 +52,9 @@
   --color_default_state: #e8e8e8 !important;
   --color_hover_state: lightblue !important;
   --color_active_state: lightgrey !important;
+  
+  /* for ac_popup_result_font_size.css */
+  --results_font_size: 10pt !important;
 }
 
 :root[uidensity="touch"] {

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.7.9 ********************************************************************************/
+/* version 2.8.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -56,6 +56,7 @@
  - 'identitybox colors' option cheats tracking protection button into identity box
  - 'searchbar popup > show engine labels' uses an own new option
  - 'searchbar popup > show engine labels + show scrollbar' uses an own new option
+ - 'classic appearance for bookmarks menu button' is not working anymore (use button_popup_panel_mozdialog.css + button_popup_panel_compact.css)
  
  [!] Firefox 71+ (look for '_fx71')
  - added support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
@@ -70,7 +71,9 @@
  ------------------------------------------------------------------------------------------------------------------
  [!] For 'Location Bar' settings to work in Firefox 71+ set 'about:config > browser.urlbar.megabar' to 'false'. [!]
  ------------------------------------------------------------------------------------------------------------------
- 
+ [!] It is not possible to modify individual menupopups anymore, because their code got moved into general html [!]
+ [!] '#shadow-root' sub areas not customizable by CSS without modifying all other menu popups too.              [!]
+ ------------------------------------------------------------------------------------------------------------------
 
 *************************************************************************************************/
 
@@ -247,7 +250,7 @@
 /* @import "./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css"; /**/
 /* popup appearance *****************************************************************************/
-@import "./css/buttons/bookmarks_menu_button_popup_classic_appearance.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_classic_appearance.css"; /**/ /* Fx60-69 only */
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import "./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css"; /**/
@@ -263,6 +266,7 @@
 /* @import "./css/buttons/overflow_button_rotate_on_open.css"; /**/
 /* @import "./css/buttons/button_popup_panelarrow_hidden.css"; /**/
 /* @import "./css/buttons/button_popup_panel_mozdialog.css"; /**/
+/* @import "./css/buttons/button_popup_panel_compact.css"; /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
@@ -764,6 +768,7 @@
 /* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/ /* default popup + two lined results*/
 
 /* result menuitem settings/appearance **********************************************************/
+@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 /* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/
 /* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* Fx60-Fx67 only */
