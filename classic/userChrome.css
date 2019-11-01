@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.8.0 ********************************************************************************/
+/* version 2.8.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -259,6 +259,7 @@
 /* @import "./css/buttons/buttons_on_tabs_toolbar_classic_appearance.css"; /**/			/* <--- EXPERIMENTAL */
 
 /* other button settings ************************************************************************/
+@import "./css/buttons/whatnew_button_always_hidden.css"; /**/
 /* @import "./css/buttons/forward_button_hide_when_disabled.css"; /**/
 /* @import "./css/buttons/back_and_forward_separated_history_popups.css"; /**/
 /* @import "./css/buttons/back_and_forward_leftclick_history_popup_hidden.css"; /**/
@@ -271,6 +272,8 @@
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71+ */
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/	
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
@@ -336,6 +339,7 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
+/* [!] Fx71+: use fixes/workarounds below *******************************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
@@ -349,16 +353,16 @@
 /* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
-/* Firefox 71 workaround for broken navigation toolbar ******************************************/
-/* [!] tabs on top + menubar hidden + appbutton label */
-/* [!] tabs not on top + menubar hidden/visible + appbutton label */
+/* Firefox 71 workarounds for 'broken navigation toolbar' ***************************************/
+/* [!] tabs on top + menubar hidden + appbutton label *******************************************/
+/* [!] tabs not on top + menubar hidden/visible + appbutton label *******************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix.css"; /**/
-/* [!] tabs on top + menubar hidden + appbutton icon only */
-/* [!] tabs not on top + menubar hidden/visible + appbutton icon only */
+/* [!] tabs on top + menubar hidden + appbutton icon only ***************************************/
+/* [!] tabs not on top + menubar hidden/visible + appbutton icon only ***************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix2.css"; /**/
-/* [!] tabs on top + menubar visible + appbutton label */
+/* [!] tabs on top + menubar visible + appbutton label ******************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix3.css"; /**/
-/* [!] tabs on top + menubar visible + appbutton icon only */
+/* [!] tabs on top + menubar visible + appbutton icon only **************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix4.css"; /**/
 
 /* button color - [only use one at a time] ******************************************************/
@@ -386,41 +390,54 @@
 /* remove top corner roundness ******************************************************************/
 /* @import "./css/tabs/classic_squared_tabs_fully_squared.css"; /**/
 
+
 /************************************************************************************************/
 /* TABS TOOLBAR POSITION (below titlebar / below navigation toolbar / below main content) *******/
 /************************************************************************************************/
 
-/* [only use one at a time] - below titlebar OR below navigation bar OR below main content ******/
+/* [only use one at a time] - BELOW TITLEBAR or BELOW NAVIGATION BAR or BELOW MAIN CONTENT ******/
+
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
-/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
+
+/* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP *****************************/
 /* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- tabs not on top - Fx60-64 - Windows/Linux */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- tabs not on top - Fx60-64 - macOS */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/ /* <-- tabs not on top - Fx65-67 - Windows/Linux */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/ /* <-- tabs not on top - Fx65+ - macOS */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/ /* <-- tabs not on top - Fx65+ - macOS - default tabs */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/ /* <-- tabs not on top - Fx65+ - Windows/Linux - only for multi-lined tabs support, causes glitches with disabled menubar */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* tabs not on top - Fx65+ - Windows/Linux - only for multi-lined tabs support - no menubar with OS titlebar */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/ /* <-- tabs not on top - Fx68+ - Windows/Linux */
+/* [!] Note: only ~fx65_v2 works with multi-tab lines option on Fx65+. **************************/
+/* - Fx 60-64 ***********************************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- Windows/Linux */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- macOS */
+/* - Fx 65-67 - Windows/Linux *******************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/
+/* - Fx 65+ - macOS *****************************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/
+/* - Fx 65+ v2 - Windows/Linux - mainly for multi-lined tabs (Glitches with inactive menubar!) **/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
+/* - Fx 68+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
+
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
-/* @import "./css/tabs/tabs_below_main_content.css"; /**/ /* <-- tabs on bottom - Fx60-64 */  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/ /* <-- tabs on bottom - Fx65-67 - Windows/Linux */ /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/ /* <-- tabs on bottom - Fx65+ - macOS */ /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/  /* <-- tabs on bottom - Fx65+ - macOS - default tabs */
-/* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/ /* <-- tabs on bottom - Fx68+ - Windows/Linux */ /* <--- EXPERIMENTAL */
+/* - Fx 60-64 ***********************************************************************************/
+/* @import "./css/tabs/tabs_below_main_content.css"; /**/
+/* - Fx 65-67 - Windows/Linux *******************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/
+/* - Fx 65+ - macOS *****************************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/
+/* - Fx 68+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/
 
-/* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (tabs not on top) - [only use one at a time] *****/
+/* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (for tabs not on top) - [only use one at a time] */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_fx65.css"; /**/			/* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only_fx65.css"; /**/  /* <--- EXPERIMENTAL */
-/************************************************************************************************/
 
 
 /* TAB BACKGROUND COLORS for default/active/hovered/unloaded tabs and 'new tab' tab *************/
@@ -633,7 +650,7 @@
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
-/* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/							/*  <-- macOS fix */
+/* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
 
 /* edit target file to select which items to hide ***********************************************/
 /* @import "./css/toolbars/toolbar_context_menuitems_visibility.css"; /**/
@@ -788,7 +805,7 @@
 /************************************************************************************************/
 /************************************************************************************************/
 /* Create a new file "my_userChrome.css" and add own/custom code to it. *************************/
-/* @import "./my_userChrome.css"; /**/
+@import "./my_userChrome.css"; /**/
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/

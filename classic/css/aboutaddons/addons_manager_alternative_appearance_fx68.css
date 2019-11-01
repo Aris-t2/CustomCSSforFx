@@ -323,11 +323,11 @@
 	}
 
 	addon-card:not([expanded="true"]) .addon.card:hover {
-	  background: Highlight !important;
+	  background: var(--in-content-category-background-hover) !important;
 	}
 
 	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span,.addon-name-link) {
-	  color: HighlightText !important;
+	  color: var(--in-content-category-text-hover) !important;
 	}
 
 	/* remove headers like 'Enabled'/'Disabled' */

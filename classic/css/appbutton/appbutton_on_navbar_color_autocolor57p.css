@@ -90,7 +90,7 @@
 }
 
 /* Tor-Browser */
-#nav-bar #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"])] :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text){
+#nav-bar #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"]) :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text){
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
 }
 #nav-bar #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"]):hover:not(:active):not([open]) :-moz-any(.toolbarbutton-badge-stack,.toolbarbutton-text){

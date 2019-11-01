@@ -22,3 +22,14 @@ panelview .toolbarbutton-1,
 .panel-subview-body {
   padding: 0px !important;
 }
+
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-avatar {
+  margin-inline-start: 2px !important;
+}
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-label {
+  margin-inline-start: -24px !important;
+  padding-inline-start: 24px !important;
+}
+panelmultiview .toolbaritem-combined-buttons > spacer.before-label {
+  width: 26px !important;
+}
