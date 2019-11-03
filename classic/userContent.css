@@ -31,7 +31,10 @@
   
 [!] Firefox 70+
   - 'about:config >  extensions.htmlaboutaddons.enabled > false' workaround does not work anymore
-  
+
+[!] Firefox 72+ (look for '_fx72')
+ - new 'compact categories' option
+ - new 'replace menu popup with buttons' option 
   
 *************************************************************************************************/
 
@@ -79,11 +82,16 @@
 /* compact item lists - [only use one at a time] ************************************************/
 /* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
 /* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
+/* @import "./css/aboutaddons/addonlists_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
+/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
 
-/* button settings (requires addons_manager_alternative_appearance_fx68) ************************/
-@import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
-@import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
-@import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
+/* button settings (requires addons_manager_alternative_appearance_fx68/72) *********************/
+/* - buttons instead of menupopup - [only use one at a time] ************************************/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx72.css"; /**/
+/* - other button settings **********************************************************************/
+/* @import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requires replace_button_labels_with_icons option */
 /* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
@@ -195,7 +203,7 @@
 /************************************************************************************************/
 /************************************************************************************************/
 /* Create a new file "my_userContent.css" and add own/custom code to it. ************************/
-/* @import "./my_userContent.css"; /**/
+@import "./my_userContent.css"; /**/
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/

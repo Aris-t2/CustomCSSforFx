@@ -2,8 +2,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/*@import "./addons_manager_alternative_appearance.css";*/
-
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
 				url-prefix(about:addons) {
@@ -363,5 +361,38 @@
 				url-prefix(about:addons) {
 	#addons-page .main-content{
 	  -moz-margin-start: -1px !important;
+	}
+
+}
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	.main-heading,
+	.main-search {
+	  background: unset !important;
+	  max-width: unset !important;
+	  padding-inline-start: unset !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	  margin-inline-start: 12px !important;
+	}
+	.sticky-container {
+	  background: #f9f9fa !important;
+	  z-index: 1000 !important;
+	}
+	
+	.main-heading {
+	  margin-top: -26px !important;
+	}
+	
+	.main-heading .header-name,
+	.main-heading .spacer,
+	.main-search .search-label	{
+	  display: none !important;
+	}
+	
+	.main-search search-textbox {
+	  min-height: unset !important;
+	  width: unset !important;
+	  font-size: 13px !important;
 	}
 }

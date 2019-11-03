@@ -23,4 +23,8 @@
 	body > div#main {
 	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
 	}
+
+	.sticky-container {
+	  background: #dbeaf9 !important;
+	}
 }

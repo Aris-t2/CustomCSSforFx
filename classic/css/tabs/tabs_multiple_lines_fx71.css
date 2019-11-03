@@ -49,8 +49,6 @@
     flex-wrap: wrap;
     overflow-y: auto;
     max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
-																	
-						  
   }
   #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
     overflow: -moz-hidden-unscrollable;

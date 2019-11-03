@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.8.1 ********************************************************************************/
+/* version 2.8.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -246,6 +246,8 @@
 
 /* bookmarks menu button - 'button & popup' appearance ******************************************/
 @import "./css/buttons/bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_showall_top_hidden.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_showall_bottom_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css"; /**/
@@ -411,10 +413,11 @@
 /* - Fx 65+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/
-/* - Fx 65+ v2 - Windows/Linux - mainly for multi-lined tabs (Glitches with inactive menubar!) **/
+/* - Fx 65+ v2 - mainly for multi-lined tabs (Glitches with inactive menubar!) ******************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
-/* - Fx 68+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_macOS.css"; /**/
+/* - Fx 68+ Windows/Linux (use the Fx 65+ versions for macOS) ***********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/

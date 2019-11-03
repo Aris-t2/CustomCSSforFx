@@ -15,7 +15,8 @@
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/shortcuts.html) {
 
 	html,
-	body {
+	body,
+	.sticky-container {
 	  background: #dbeaf9 !important;
 	}
 

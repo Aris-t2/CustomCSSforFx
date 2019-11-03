@@ -383,3 +383,18 @@ html[data-reactid][data-reactroot] head[data-reactid] + body[data-reactid]{
 	}
 
 }
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	.main-heading,
+	.main-search {
+	  background: unset !important;
+	  max-width: unset !important;
+	  padding-inline-start: unset !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	}
+	.sticky-container {
+	  background: -moz-Dialog !important;
+	  z-index: 1000 !important;
+	}
+}
