@@ -40,7 +40,7 @@
 	}
 
 	/* restore buttons */
-	/*link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~*/ addon-list .more-options-menu addon-options panel-list {
+	addon-list .more-options-menu :-moz-any(addon-options,plugin-options) panel-list {
 	  display: block !important;
 	  overflow: hidden !important;
 	  right: 0px !important;
@@ -68,7 +68,7 @@
 	  border: 1px solid Highlight !important;
 	}
 
-	addon-options button::after {
+	:-moz-any(addon-options,plugin-options) button::after {
 	  display: none !important;
 	}
 	

@@ -90,8 +90,8 @@
 /* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx72.css"; /**/
 /* - other button settings **********************************************************************/
-/* @import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
-/* @import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
+@import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
+@import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requires replace_button_labels_with_icons option */
 /* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
