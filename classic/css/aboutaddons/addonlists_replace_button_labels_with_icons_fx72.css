@@ -5,11 +5,6 @@
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
-	.more-options-menu panel-list,
-	addon-list .more-options-menu addon-options panel-list	{
-	  right: 30px !important;
-	}
-
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: 18px !important;
 	  height: 18px !important;
@@ -18,8 +13,21 @@
 	  background-position: center !important;
 	}
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button slot {
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label:not([accesskey]) {
 	  visibility: hidden !important;
+	}
+	
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey]:hover {
+	  background: var(--in-content-button-background-hover)
+	}
+	
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	  padding-top: 1px !important;
+	  padding-bottom: 1px !important;
+	}
+	
+	addon-page-options panel-list panel-item[accesskey][checked] {
+	  background: url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
 
 	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {

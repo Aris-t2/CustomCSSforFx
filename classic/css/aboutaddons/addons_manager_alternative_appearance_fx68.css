@@ -373,7 +373,7 @@
 	  padding-inline-start: unset !important;
 	  padding-top: unset !important;
 	  padding-bottom: unset !important;
-	  margin-inline-start: 12px !important;
+	  margin-inline-start: 0px !important;
 	}
 	.sticky-container {
 	  background: #f9f9fa !important;
@@ -381,7 +381,7 @@
 	}
 	
 	.main-heading {
-	  margin-top: -26px !important;
+	  margin-top: -30px !important;
 	}
 	
 	.main-heading .header-name,
@@ -393,6 +393,21 @@
 	.main-search search-textbox {
 	  min-height: unset !important;
 	  width: unset !important;
-	  font-size: 13px !important;
+	  font-size: 12px !important;
 	}
+	
+	.page-options-menu > .more-options-button {
+	  margin: 2px !important;
+	  width: 48px !important;
+	  height: 24px !important;
+	}
+	
+	addon-page-options panel-list {
+	  z-index: 1000 !important;
+	}
+	
+	.main-heading .page-options-menu {
+	  order: -1;
+	}
+	
 }

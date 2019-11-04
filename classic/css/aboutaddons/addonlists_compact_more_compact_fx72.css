@@ -5,9 +5,6 @@
 
 @import "./addonlists_compact_fx72.css";
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
@@ -24,11 +21,18 @@
 	}
 	
 	:-moz-any(plugin-options, addon-options) > panel-list {
-	  margin-top: -23px !important;
+	  margin-top: -21px !important;
 	}
 	
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
-	  padding: 0px 2px !important; 
+	  padding: 0px 0px !important;
+	  margin: 0px 0px !important;
+	  min-height: 0px !important; 
+	  height: unset !important; 
+	}
+	
+	.addon.card div.more-options-menu {
+	  height: 20px !important;
 	}
 
 }
