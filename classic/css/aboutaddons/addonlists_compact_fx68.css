@@ -3,10 +3,6 @@
 /****************************************************************************************/
 
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
-
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	:root {
@@ -15,11 +11,11 @@
 	
 	addon-card:not([expanded="true"]) .addon.card {
 	  margin-top: 0 !important;
-	  margin-bottom: 0 !important;
-	  padding-top: 0 !important;
+	  margin-bottom: -2px !important;
+	  padding-top: 3px !important;
 	  padding-bottom: 0px !important;
 	  -moz-padding-start: 2px !important;
-	  min-height: 0px !important;
+	  min-height: 40px !important;
 	}
 	
 	addon-list[type="theme"] .addon.card {
@@ -44,10 +40,6 @@
 	recommended-themes-section,
 	recommended-extensions-section {
 	  display: none !important;
-	}
-	
-	:-moz-any(plugin-options, addon-options) > panel-list {
-	  top: 5px !important;
 	}
 
 }

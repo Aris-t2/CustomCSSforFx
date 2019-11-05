@@ -3,8 +3,7 @@
 /****************************************************************************************/
 
 
-@import "./addonlists_compact_fx72.css";
-
+@import "./addonlists_compact_fx68.css";
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
@@ -16,21 +15,15 @@
 	  display: none !important;
 	}
 	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-bottom: 0px !important;
+	  min-height: 19px !important;
+	}
+	
 	addon-list[type="theme"] .addon.card {
 	  min-height: 0px !important;
 	}
-	
-	:-moz-any(plugin-options, addon-options) > panel-list {
-	  margin-top: -21px !important;
-	}
-	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
-	  padding: 0px 0px !important;
-	  margin: 0px 0px !important;
-	  min-height: 0px !important; 
-	  height: unset !important; 
-	}
-	
+
 	.addon.card div.more-options-menu {
 	  height: 20px !important;
 	}

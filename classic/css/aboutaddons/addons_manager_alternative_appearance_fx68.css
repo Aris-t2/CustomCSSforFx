@@ -354,6 +354,11 @@
 	recommended-extensions-section {
 	  display: none !important;
 	}
+	
+	
+	addon-list message-bar-stack.pending-uninstall {
+	  margin-bottom: 0px !important;
+	}
 
 }
 
@@ -362,7 +367,7 @@
 	#addons-page .main-content{
 	  -moz-margin-start: -1px !important;
 	}
-
+	
 }
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {

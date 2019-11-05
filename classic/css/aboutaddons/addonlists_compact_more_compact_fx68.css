@@ -5,10 +5,6 @@
 
 @import "./addonlists_compact_fx68.css";
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
-
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	:root {
@@ -19,16 +15,18 @@
 	  display: none !important;
 	}
 	
+	addon-card:not([expanded="true"]) .addon.card {
+	  padding-top: 2px !important;
+	  margin-bottom: 0px !important;
+	  min-height: 22px !important;
+	}
+	
 	addon-list[type="theme"] .addon.card {
 	  min-height: 0px !important;
 	}
-	
-	.more-options-menu panel-list {
-	  top: 3px !important;
-	}
 
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
-	  padding: 0px 2px !important; 
+	.addon.card div.more-options-menu {
+	  height: 20px !important;
 	}
 
 }
