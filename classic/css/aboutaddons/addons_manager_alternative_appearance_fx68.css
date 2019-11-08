@@ -415,4 +415,10 @@
 	  order: -1;
 	}
 	
+	button[data-l10n-id="addon-updates-manual-updates-found"] {
+	  min-height: 0 !important;
+	  padding: 0 !important;
+	}
+	
+	
 }

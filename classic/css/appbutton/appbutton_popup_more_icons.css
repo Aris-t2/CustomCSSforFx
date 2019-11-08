@@ -27,6 +27,6 @@
   padding-inline-start: 8px !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
   fill: currentColor !important;
 }

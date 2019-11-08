@@ -3,7 +3,8 @@
 /****************************************************************************************/
 
 
-#urlbar, #searchbar, .searchbar-textbox {
+#urlbar,#urlbar-input-container,
+#searchbar, .searchbar-textbox {
   border-radius: 20px !important;
 }
 

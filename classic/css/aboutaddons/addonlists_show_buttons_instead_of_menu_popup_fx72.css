@@ -62,9 +62,13 @@
 	panel-item[badged] {
 	  border: 1px solid Highlight !important;
 	}
-
+	
+	panel-item[badged]::after,
+	:host([badged]) button::after,
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button::after,
 	:-moz-any(addon-options,plugin-options) button::after {
 	  display: none !important;
+	  content: unset !important;
 	}
 	
 	addon-page-options panel-list {

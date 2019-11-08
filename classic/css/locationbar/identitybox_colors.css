@@ -4,7 +4,7 @@
 
 
 /* Fx70+ tweaks */
-/* recomnmended to set: about:config > security.identityblock.show_extended_validation > true */
+/* recommended to set: about:config > security.identityblock.show_extended_validation > true */
 
 #urlbar-input-container[pageproxystate="invalid"] #tracking-protection-icon-container:not([hidden]) + #identity-box > #identity-icon {
   margin-inline-start: 0px !important;

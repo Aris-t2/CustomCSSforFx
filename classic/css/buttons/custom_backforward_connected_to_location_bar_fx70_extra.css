@@ -36,3 +36,9 @@
 #main-window[uidensity=touch] #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container #tracking-protection-icon-box image {
   margin-inline-start: 2px !important;
 }
+
+/* remove tracking protection icons bg color */
+#main-window #urlbar-container #urlbar #urlbar-input-container #tracking-protection-icon-container:not([hidden]):hover,
+#main-window #urlbar-container #urlbar #urlbar-input-container #tracking-protection-icon-container:not([hidden]):-moz-any([open="true"],:hover:active) {
+  background: unset !important;
+}
