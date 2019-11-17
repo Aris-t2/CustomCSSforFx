@@ -122,3 +122,7 @@
   -moz-margin-end: 6px !important;
 }
 /**/
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+	z-index: 10000 !important;
+}

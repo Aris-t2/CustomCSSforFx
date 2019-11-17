@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.8.5 ********************************************************************************/
+/* version 2.8.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -206,6 +206,7 @@
 /* squared buttons / button size - [only use one at a time] *************************************/
 /* "rectangular shape" - normal size ************************************************************/
 /* @import "./css/buttons/buttons_on_navbar_squared_buttons.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_squared_buttons_fx72.css"; /**/
 /* "normal shape" - large size (huge 48x48px buttons with 36x36px icons) ************************/
 /* [!] not compatible with 'custom icon' options ************************************************/
 /* [!] not compatible with 'custom back & forward buttons' appearance options *******************/
@@ -417,8 +418,10 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_macOS.css"; /**/
-/* - Fx 68+ Windows/Linux (use the Fx 65+ versions for macOS) ***********************************/
+/* - Fx 68-71 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
+/* - Fx 72+ Windows/Linux (use the Fx 65+ versions for macOS) ***********************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
@@ -431,8 +434,10 @@
 /* - Fx 65+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/
-/* - Fx 68+ Windows/Linux ***********************************************************************/
+/* - Fx 68-71 Windows/Linux *********************************************************************/
 /* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/
+/* - Fx 72+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_fx72.css"; /**/
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (for tabs not on top) - [only use one at a time] */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
@@ -645,6 +650,7 @@
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 **********************/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
 /* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/
