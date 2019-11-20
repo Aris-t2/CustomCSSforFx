@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
+#appMenu-fxa-status,
+#appMenu-fxa-status + toolbarseparator,
 #appMenu-fxa-container,
 #appMenu-fxa-container + toolbarseparator {
   display: none !important;
