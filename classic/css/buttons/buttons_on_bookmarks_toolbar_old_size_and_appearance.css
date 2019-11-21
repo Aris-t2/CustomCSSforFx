@@ -5,8 +5,9 @@
 
 @media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
   @media not all and (-moz-windows-classic) {
-	#PersonalToolbar toolbarbutton,
-	#PlacesToolbar toolbarbutton {
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
+	#PersonalToolbar #PlacesToolbar toolbarbutton,
+	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
 	  -moz-appearance: toolbarbutton !important;
 	  background: unset !important;
 	  box-shadow: unset !important;
@@ -17,12 +18,12 @@
 	}
 
 	#PersonalToolbar .toolbarbutton-badge-stack,
-	#PersonalToolbar toolbarbutton .toolbarbutton-icon {
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
 	  background: unset !important;
 	  box-shadow: unset !important;
 	}
 
-	#PersonalToolbar toolbarbutton .toolbarbutton-icon {
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
 	  padding-left: 0px !important;
 	  padding-right: 0px !important;
 	  width: 16px !important;

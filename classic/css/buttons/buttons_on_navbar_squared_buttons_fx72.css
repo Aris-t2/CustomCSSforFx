@@ -7,16 +7,12 @@
 
 
 /* compact button mode */
-#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 32px !important;
   height: 26px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-}
-
-#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 32px !important;
-  height: 26px !important;
 }
 
 #main-window[uidensity=compact] #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
@@ -52,17 +48,19 @@
   min-height: 26px !important;
 }
 
+/* fix for toolbar button badges */
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -5px !important;
+}
+
 
 /* normal button mode */
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 40px !important;
   height: 30px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
-}
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 40px !important;
-  height: 30px !important;
 }
 
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
@@ -103,17 +101,20 @@
   min-height: 30px !important;
 }
 
+/* fix for toolbar button badges */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -6px !important;
+  -moz-margin-end: -5px !important;
+}
+
 
 /* touch button mode */
-#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 46px !important;
   height: 32px !important;
   padding-top: 8px !important;
   padding-bottom: 8px !important;
-}
-#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 46px !important;
-  height: 32px !important;
 }
 #main-window[uidensity=touch] #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
   -moz-margin-start: 6px !important;
@@ -153,8 +154,10 @@
 }
 
 /* fix for toolbar button badges */
-#nav-bar .toolbarbutton-1 .toolbarbutton-badge {
-  margin-top: -1px !important;
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -6px !important;
+  -moz-margin-end: -5px !important;
 }
+
 
 /**/
