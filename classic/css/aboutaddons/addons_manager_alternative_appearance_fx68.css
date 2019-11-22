@@ -167,7 +167,7 @@
 	}
 
 	#nav-header {
-	  min-height: unset !important;;
+	  min-height: unset !important;
 	}
 	
 	#header-utils-btn {
@@ -250,9 +250,9 @@
 
 	.list > .addon,
 	.list > .addon:hover {
-	  outset: unset !important;
+	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  duration: unset !important;
+	  /*duration: unset !important;*/
 	  border-bottom: 1px solid var(--in-content-box-border-color) !important;
 	}
 
@@ -261,9 +261,9 @@
 	}
 	
 	#detail-view .card {
-	  outset: unset !important;
+	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  duration: unset !important;
+	  /*duration: unset !important;*/
 	}
 
 	#detail-view .detail-view-container {
@@ -319,13 +319,14 @@
 	  border: 0 !important;
 	  border-radius: 0 !important;
 	}
-
+	
 	addon-card:not([expanded="true"]) .addon.card:hover {
-	  background: var(--in-content-category-background-hover) !important;
+	  background: Highlight !important;
+	  box-shadow: unset !important;
 	}
 
 	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span,.addon-name-link) {
-	  color: var(--in-content-category-text-hover) !important;
+	  color: HighlightText !important;
 	}
 
 	/* remove headers like 'Enabled'/'Disabled' */
@@ -337,7 +338,7 @@
 	section[section="1"] {
 	  color: grey !important;
 	  opacity: 0.6 !important;
-	  filter: greyscale !important; 
+	  filter: grayscale(100%) !important; 
 	}
 	
 	/* workaround for Fx 70+ to not have reduced opacity twice */

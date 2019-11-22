@@ -318,9 +318,9 @@
 
 	.list > .addon,
 	.list > .addon:hover {
-	  outset: unset !important;
+	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  duration: unset !important;
+	  /*duration: unset !important;*/
 	  padding-top: 10px !important;
 	  padding-bottom: 10px !important;
 	  margin-top: 4px !important;
@@ -332,9 +332,9 @@
 	}
 
 	#detail-view .card {
-	  outset: unset !important;
+	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  duration: unset !important;
+	  /*duration: unset !important;*/
 	}
 	
 	#detail-view .detail-view-container {

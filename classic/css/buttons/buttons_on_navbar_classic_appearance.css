@@ -89,7 +89,7 @@
 			  border-color .2s ease-in,
 			  box-shadow .2s ease-in !important;
 }
-#nav-bar toolbarbutton:not(#PlacesChevron[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
+#nav-bar toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
 #nav-bar toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):-moz-any(:hover:active,:active, [open]) > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
