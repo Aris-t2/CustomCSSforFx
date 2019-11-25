@@ -7,17 +7,31 @@
 	.more-options-menu panel-item {
 	  background: white !important;
 	  color: black !important;
-	  margin: 0 1px;
+	  margin: 0 1px !important;
 	  border: 1px solid lightgrey !important;
+	}
+	
+	addon-list panel-item:not([badged]){
+	  border: 1px solid lightgrey !important;
+	}
+	
+	addon-list addon-card:not([expanded="true"]) panel-list * {
+	  background: white !important;
+	  color: black !important;
 	}
 	
 	@supports -moz-bool-pref("browser.in-content.dark-mode") {
 	  @media (prefers-color-scheme: dark) {
+		addon-list addon-card:not([expanded="true"]) panel-list *,
 		.more-options-menu panel-item {
 		  background: black !important;
 		  color: white !important;
 	  }
 	}}
+	
+	addon-list panel-item{
+	  margin: 0 1px !important;
+	}
 	
 	/* reduce size of default buttons */
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
@@ -26,15 +40,15 @@
 	}
 	
 	/* remove three dots button */
-	.addon.card .more-options-menu .more-options-button {
-	  visibility: hidden !important;
+	addon-card .more-options-button {
+	  display: none !important;
 	}
 
 	/* remove button icon */
-	panel-item {
+	addon-list panel-item {
 	  --icon: unset !important;
 	}
-
+	
 	/* restore buttons */
 	addon-list .more-options-menu :-moz-any(addon-options,plugin-options) panel-list {
 	  position: relative !important;
@@ -97,6 +111,35 @@
 
 	addon-page-options panel-list panel-item[accesskey][checked] {
 	  background: url("chrome://global/skin/icons/check.svg") 5px no-repeat !important;
+	}
+	
+	
+	addon-list addon-card:not([expanded="true"]) panel-list {
+	  position: absolute !important;
+	  display: block !important;
+	  overflow: hidden !important;
+	  box-shadow: none !important;
+	  background: unset !important;
+	  border: unset !important;
+	  box-shadow: unset !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  left: unset !important;
+	  top: unset !important;
+	  right: 46px !important;
+	  bottom: unset !important;
+	}
+
+	addon-list:-moz-any([type="theme"],[type="plugin"],[type="dictionary"]) addon-card:not([expanded="true"]) panel-list {
+	  right: 15px !important;
+	}
+
+	addon-list addon-card:not([expanded="true"]) panel-list {
+	  margin-top: -48px !important;
+	}
+
+	addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) panel-list {
+	  margin-top: -80px !important;
 	}
 
 }

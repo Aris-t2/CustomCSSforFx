@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import "./addonlists_compact_fx68.css";
+@import "./addonlists_show_buttons_instead_of_menu_popup_fx72.css";
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
@@ -12,16 +12,28 @@
 	}
 
 	.addon.card .addon-description {
-	  display: none !important;
+	  visibility: hidden !important;
+	  margin-top: -18px !important;
+	}
+	
+	addon-list addon-card:not([expanded="true"]) panel-list {
+	  margin-top: -30px !important;
+	}
+	
+	addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) panel-list {
+	  margin-top: -30px !important;
 	}
 	
 	addon-card:not([expanded="true"]) .addon.card {
 	  margin-bottom: 0px !important;
 	  min-height: 19px !important;
+	  height: 19px !important;
+	  max-height: 19px !important;
 	}
 	
-	addon-list[type="theme"] .addon.card {
-	  min-height: 0px !important;
+	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) panel-list {
+	  right: 100px !important;
 	}
 
 	.addon.card div.more-options-menu {
