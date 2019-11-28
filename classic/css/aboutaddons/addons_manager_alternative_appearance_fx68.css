@@ -335,18 +335,19 @@
 	}
 
 	/* reduce opacity for disabled add-ons */
-	section[section="1"] {
-	  color: grey !important;
-	  opacity: 0.6 !important;
-	  filter: grayscale(100%) !important; 
-	}
-	
-	/* workaround for Fx 70+ to not have reduced opacity twice */
+	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]), /* workaround for Fx 68-69*/
 	addon-card:not([expanded]) > .addon.card[active="false"],
 	addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
 	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
-	  opacity: 1 !important;
+	  color: grey !important;
+	  opacity: 0.6 !important;
+	  transition: unset !important;
+	}
+	
+	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] { /* workaround for Fx 70+*/
+	  color: inherit !important;
+	  opacity: 1.0 !important;
 	  transition: unset !important;
 	}
 
@@ -355,7 +356,6 @@
 	recommended-extensions-section {
 	  display: none !important;
 	}
-	
 	
 	addon-list message-bar-stack.pending-uninstall {
 	  margin-bottom: 0px !important;

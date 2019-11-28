@@ -4,7 +4,8 @@
 
 
 #editBMPanel_chooseFolderMenuItem .menu-iconic-icon,
-treechildren::-moz-tree-image(title, container) {
+treechildren::-moz-tree-image(title, container),
+treechildren::-moz-tree-image(title, query, hostContainer) {
  list-style-image: url("./../../image/folder-item.png")!important;
  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
 }
@@ -20,26 +21,30 @@ treechildren::-moz-tree-image(title, container, livemark) {
 
 #editBMPanel_folderMenuList:-moz-any([label="Bookmarks Toolbar"],[label="Lesezeichen-Symbolleiste"]) .menulist-icon,
 #editBMPanel_toolbarFolderItem .menu-iconic-icon,
-treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar),
+treechildren::-moz-tree-image(container, queryFolder_toolbar_____) {
  list-style-image: url("./../../image/bookmarksToolbar.png") !important;
  -moz-image-region: auto !important;
 }
 
 #editBMPanel_folderMenuList:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"]) .menulist-icon,
 #editBMPanel_bmRootItem .menu-iconic-icon,
-treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu),
+treechildren::-moz-tree-image(container, queryFolder_menu________) {
  list-style-image: url("./../../image/bookmarksMenu.png") !important;
  -moz-image-region: auto !important;
 }
 
 #editBMPanel_folderMenuList:-moz-any([label="Other Bookmarks"],[label="Weitere Lesezeichen"]) .menulist-icon,
 #editBMPanel_unfiledRootItem .menu-iconic-icon,
-treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks),
+treechildren::-moz-tree-image(container, queryFolder_unfiled_____) {
  list-style-image: url("./../../image/unsortedBookmarks.png") !important;
  -moz-image-region: auto !important;
 }
 
-treechildren::-moz-tree-image(title, query) {
+treechildren::-moz-tree-image(title, query),
+treechildren::-moz-tree-image(query) {
  list-style-image: url("./../../image/query.png") !important;
  -moz-image-region: auto !important;
 }
@@ -49,9 +54,21 @@ treechildren::-moz-tree-image(title, query, dayContainer) {
   -moz-image-region: auto !important;
 }
 
-
-treechildren::-moz-tree-image(query, OrganizerQuery_History) {
+treechildren::-moz-tree-image(query, OrganizerQuery_History),
+treechildren::-moz-tree-image(query, OrganizerQuery_history____v),
+treechildren::-moz-tree-image(title, query, dayContainer) {
   list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+
+treechildren::-moz-tree-image(query, OrganizerQuery_allbms_____v) {
+  list-style-image: url("chrome://browser/skin/bookmark.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
+  list-style-image: url("chrome://browser/skin/downloads/download-icons.svg#arrow-with-bar") !important;
   -moz-image-region: auto !important;
 }
 
@@ -85,6 +102,8 @@ treechildren::-moz-tree-image(query, OrganizerQuery_History) {
   -moz-image-region: auto !important;
 }
 
+treechildren::-moz-tree-image(title, query, tagContainer),
+treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
 .bookmark-item[query][tagContainer] {
   list-style-image: url("./../../image/tag.png") !important;
   -moz-image-region: auto !important;
