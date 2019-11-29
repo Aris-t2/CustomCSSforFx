@@ -28,6 +28,7 @@
 	
 	#prefs {
 	  width: 100% !important;
+	  border-radius: 0 !important;
 	}
 	
 	#prefs button {
@@ -48,10 +49,7 @@
 	}
 	
 	input[type="radio"] {
-	  min-height: 0px !important;
-	  height: 10px !important;
-	  min-width: 0px !important;
-	  width: 10px !important;
+	  transform: scale(0.8) !important;
 	}
 
 	#search-container * {
@@ -63,7 +61,16 @@
 	}
 
 	#search-container {
-	  padding: 4px !important;
+	  padding: 0 !important;
+	}
+	
+	#search-container, #about-config-search:focus,
+	#search-container, #about-config-search[focused] {
+	  box-shadow: unset !important;
+	}
+
+	#search-container, #about-config-search:-moz-ui-invalid:focus {
+	  box-shadow: unset !important;
 	}
 	
 	.cell-edit,
