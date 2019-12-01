@@ -1,0 +1,67 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_show_buttons_instead_of_menu_popup_fx72.css";
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	
+	:root {
+	  --addon-icon-size: 16px !important;
+	}
+	
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  padding-top: 5px !important;
+	  padding-bottom: 5px !important;
+	  -moz-padding-start: 2px !important;
+	  min-height: unset !important;
+	}
+	
+	addon-list addon-card:not([expanded="true"]) panel-list {
+	  position: absolute !important;
+	  margin-top: -25px !important;
+	  right: 46px !important;
+	}
+	
+	.addon.card .addon-description {
+	  visibility: hidden !important;
+	  margin-top: -28px !important;
+	}
+	
+	addon-card:not([expanded="true"]) .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-image {
+	  display: none !important;
+	}
+	
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) panel-list {
+	  margin-top: -26px !important;
+	}
+	
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]{
+	  margin-top: 1px !important;;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) .spacer {
+	  display: none !important;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) .addon-description {
+	  margin-top: -22px !important;
+	}
+	
+	body div#main div[current-view="list"] addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) .card-contents{
+	  height: 18px !important;
+	}
+	
+}

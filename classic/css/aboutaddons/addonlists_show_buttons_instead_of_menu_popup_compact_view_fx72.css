@@ -1,0 +1,55 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_show_buttons_instead_of_menu_popup_fx72.css";
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	
+	:root {
+	  --addon-icon-size: 20px !important;
+	}
+	
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
+	  -moz-padding-start: 2px !important;
+	  min-height: 40px !important;
+	}
+	
+	addon-list addon-card:not([expanded="true"]) panel-list {
+	  position: absolute !important;
+	  margin-top: -44px !important;
+	  right: 45px !important;
+	}
+	
+	addon-card:not([expanded="true"]) .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-image {
+	  object-fit: unset !important;
+	  margin: 0 !important;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]{
+	  margin-top: 4px !important;;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) .spacer {
+	  display: none !important;
+	}
+	
+	body div#main div[current-view="list"] addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) .card-contents{
+	  height: 50px !important;
+	}
+	
+}

@@ -68,7 +68,7 @@
 
 
 /************************************************************************************************/
-/* about:addons (settings split into different areas for Firefox 60-67, 68+ or 60-70+) **********/
+/* about:addons (settings split into different areas for Firefox 60-67, 68+ and 60+) ************/
 /************************************************************************************************/
 
 /* FIREFOX 68+ #################################################################################*/
@@ -81,14 +81,16 @@
 
 /* compact item lists - [only use one at a time] ************************************************/
 /* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
+/* @import "./css/aboutaddons/addonlists_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
 /* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
 /* @import "./css/aboutaddons/addonlists_compact_more_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
 
-/* button settings (requires addons_manager_alternative_appearance_fx68/72) *********************/
+/* button settings (requires addons_manager_alternative_appearance_fx68) ************************/
 /* - buttons instead of menupopup - [only use one at a time] ************************************/
 /* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx72.css"; /**/
-/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_fx72.css"; /**/ /* for addonlists_compact_more_compact_fx72.css */
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view_fx72.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view_fx72.css"; /**/
 /* - buttons icons instead of labels (requires above option) - [only use one at a time] *********/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx72.css"; /**/
@@ -144,7 +146,7 @@
 /* @import "./css/aboutaddons/search_category_always_visible.css"; /**/ /* not for recent Fx versions */
 
 
-/* FIREFOX 60-70+ ##############################################################################*/
+/* FIREFOX 60+ #################################################################################*/
 @import "./css/aboutaddons/addonlists_private_browsing_notice_hidden.css"; /**/
 @import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
 /* @import "./css/aboutaddons/recentupdates_category_last_category.css"; /**/

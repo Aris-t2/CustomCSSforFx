@@ -4,6 +4,8 @@
 
 
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+
+	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"],
 	.more-options-menu panel-item {
 	  background: white !important;
 	  color: black !important;
@@ -11,6 +13,7 @@
 	  border: 1px solid lightgrey !important;
 	}
 	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not([badged]),
 	addon-list panel-item:not([badged]){
 	  border: 1px solid lightgrey !important;
 	}
@@ -20,13 +23,23 @@
 	  color: black !important;
 	}
 	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:hover,
+	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:active {
+	  border: 1px solid black !important;
+	}
+	
 	@supports -moz-bool-pref("browser.in-content.dark-mode") {
 	  @media (prefers-color-scheme: dark) {
 		addon-list addon-card:not([expanded="true"]) panel-list *,
+		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"],
 		.more-options-menu panel-item {
 		  background: black !important;
 		  color: white !important;
-	  }
+	    }
+		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:hover,
+		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:active {
+		  border: 1px solid white !important;
+		}
 	}}
 	
 	addon-list panel-item{
@@ -50,18 +63,6 @@
 	}
 	
 	/* restore buttons */
-	addon-list .more-options-menu :-moz-any(addon-options,plugin-options) panel-list {
-	  position: relative !important;
-	  display: block !important;
-	  overflow: hidden !important;
-	  margin-top: -25px;
-	  box-shadow: none !important;
-	  background: unset !important;
-	  border: unset !important;
-	  box-shadow: unset !important;
-	  min-width: unset !important;
-	  width: unset !important;
-	}
 
 	div.arrow.top + div.list {
 	  display: flex !important;
@@ -76,6 +77,7 @@
 	panel-item[badged] {
 	  border: 1px solid Highlight !important;
 	}
+	
 	
 	panel-item[badged]::after,
 	:host([badged]) button::after,
@@ -113,33 +115,39 @@
 	  background: url("chrome://global/skin/icons/check.svg") 5px no-repeat !important;
 	}
 	
-	
 	addon-list addon-card:not([expanded="true"]) panel-list {
-	  position: absolute !important;
+	  position: relative !important;
 	  display: block !important;
 	  overflow: hidden !important;
-	  box-shadow: none !important;
 	  background: unset !important;
 	  border: unset !important;
 	  box-shadow: unset !important;
 	  min-width: unset !important;
 	  width: unset !important;
-	  left: unset !important;
-	  top: unset !important;
-	  right: 46px !important;
-	  bottom: unset !important;
+	  float: right !important;
+	  right: 36px !important;
 	}
-
+	
 	addon-list:-moz-any([type="theme"],[type="plugin"],[type="dictionary"]) addon-card:not([expanded="true"]) panel-list {
-	  right: 15px !important;
+	  right: 1px !important;
 	}
 
 	addon-list addon-card:not([expanded="true"]) panel-list {
 	  margin-top: -48px !important;
 	}
 
-	addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) panel-list {
+	addon-list[type="theme"] addon-card:not([expanded="true"]) panel-list {
 	  margin-top: -80px !important;
+	}
+	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) .card-heading-image {
+	  width: 440px !important;
+	  height: 60px !important;
+	  object-fit: unset !important;
+	}
+	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) .card-contents{
+	  height: 40px !important;
 	}
 
 }
