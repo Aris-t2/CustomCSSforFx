@@ -130,6 +130,6 @@
 
 /*lw theme fix */
 #main-window[style*='--lwt-header-image']:-moz-lwtheme {
-  background: var(--lwt-header-image) !important;
+  /*background: var(--lwt-header-image) !important;*/
   background-repeat: repeat-y !important;
 }

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.9.0 ********************************************************************************/
+/* version 2.9.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -758,13 +758,15 @@
 @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
 @import "./css/locationbar/dropmarker_visible.css"; /**/
 
+/* megabar Fx71 and 73+ *************************************************************************/
+@import "./css/locationbar/megabar_optimizations.css"; /**/
 
 /************************************************************************************************/
-/* LOCATION BAR - appearance of 'autocomplete / location bar / urlbar' popup ********************/
+/* LOCATION BAR - appearance of 'location bar / urlbar' popup (not megabar) *********************/
 /************************************************************************************************/
 
 /* popup content order/appearance - [only use one at a time] ************************************/
-@import "./css/locationbar/ac_popup_url_and_title_50percent_width.css"; /**/
+/* @import "./css/locationbar/ac_popup_url_and_title_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_item_title_visible_on_hover_only.css"; /**/

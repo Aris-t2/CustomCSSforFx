@@ -53,7 +53,11 @@
   #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
     overflow: -moz-hidden-unscrollable;
     display: block;
-	margin-bottom:-1px !important;
+	/*margin-bottom:-1px !important;*/
+  }
+  
+  :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+    height: var(--tab-min-height_mlt) !important;
   }
 }
 
@@ -85,11 +89,6 @@
   flex-grow: 1;
   min-width: var(--tab_min_width_mlt) !important;
   max-width: var(--tab_max_width_mlt) !important;
-	
-																					   
-																	 
-	
-								  
 }
 
 .tabbrowser-tab > stack{
@@ -151,6 +150,5 @@
 
 /*lw theme fix */
 #main-window[style*='--lwt-header-image']:-moz-lwtheme {
-  background: var(--lwt-header-image) !important;
   background-repeat: repeat-y !important;
 }

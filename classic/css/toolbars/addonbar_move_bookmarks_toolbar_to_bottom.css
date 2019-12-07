@@ -66,6 +66,7 @@
   -moz-padding-start: 1px !important;
   -moz-padding-end: 1px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
+  z-index: 1000 !important;
 }
 #navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
@@ -74,7 +75,7 @@
   background-image: var(--lwt-header-image) !important;
 }
 #PersonalToolbar > *  {
-  min-height: calc( var(--addonbar_height) - 3px); !important;
+  min-height: calc( var(--addonbar_height) - 3px) !important;
 }
 
 /* free some space below content */
@@ -128,7 +129,7 @@
 }
 
 /* bookmarks item box width */
-#PersonalToolbar[currentset="personal-bookmarks"] #personal-bookmarks {
+#PersonalToolbar #personal-bookmarks {
   min-width: 40px !important;
   width: auto !important;
   max-width: 100vw !important;

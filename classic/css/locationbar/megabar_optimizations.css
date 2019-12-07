@@ -1,0 +1,67 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(.searchbar-textbox, #urlbar,#searchbar) {
+  font-size: 12px !important;
+}
+
+#urlbar-container[breakout] {
+  position: relative !important;
+  min-height: var(--urlbar-container-height);
+}
+
+#urlbar[breakout]:not([open]) {
+  position: relative !important;
+  display: inherit !important;
+  height: var(--urlbar-height) !important;
+}
+
+
+#urlbar[breakout][breakout-extend]:not([open]) {
+  top: unset !important;
+  left: unset !important;
+  width: 100% !important;
+}
+
+#urlbar[breakout][breakout-extend][open] {
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height))/2) !important;
+  left: 0px !important;
+  width: 100% !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  box-shadow: unset !important;
+}
+#urlbar[breakout] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding-block: unset !important;
+  padding-inline: unset !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  animation-name: unset !important;
+}
+
+
+.megabar #urlbarView-results {
+  padding: 0px !important;
+}
+
+.megabar #urlbar-results .urlbarView-body-outer,
+.megabar #urlbar-results .urlbarView-row,
+.megabar #urlbar-results .urlbarView-row-inner {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  -moz-padding-end: 0 !important;
+}
+
+.megabar #urlbar-results .urlbarView-row-inner {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}

@@ -9,7 +9,8 @@
 	  padding-inline-end: 0px !important;
 	}
 
- 	page,
+ 	#preferences-stack,.sticky-container,
+	page,
 	.dialogBox .groupbox-title {
 	  -moz-appearance: none !important;
 	  background: -moz-Dialog !important;
