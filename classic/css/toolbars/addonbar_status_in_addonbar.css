@@ -8,6 +8,7 @@
   position: fixed !important;
   display:block !important;
   bottom: 2px !important;
+  z-index: 1001 !important
 }
 
 .browserContainer :-moz-any(statuspanel,#statuspanel):-moz-locale-dir(ltr) {
