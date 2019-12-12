@@ -10,6 +10,8 @@
   --classic_squared_tabs_tab_height: 26px;
   --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF;
   --classic_squared_tabs_active_tab: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa);
+  --classic_squared_tabs_lwt-dark_active_tab: inherit;
+  --classic_squared_tabs_lwt-bright_active_tab: inherit;
   --classic_squared_tabs-border_size: 1px;
   --classic_squared_tabs-border1: #5f7181;
   --classic_squared_tabs-border-radius: 3px;
@@ -95,6 +97,9 @@
 /********************************************/
 
 /* lightweight theme tab colors*/
+.tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
+  background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
+}
 :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
@@ -102,6 +107,9 @@
 :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
+}
+.tabbrowser-tab[selected]:-moz-lwtheme-brighttext .tab-content {
+  background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
 }
 :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {

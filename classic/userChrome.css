@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.9.1 ********************************************************************************/
+/* version 2.9.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -342,8 +342,7 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
-/* [!] Fx71+: use fixes/workarounds below *******************************************************/
-/* @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
+@import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
@@ -356,20 +355,8 @@
 /* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
-/* Firefox 71 workarounds for 'broken navigation toolbar' ***************************************/
-/* [!] tabs on top + menubar hidden + appbutton label *******************************************/
-/* [!] tabs not on top + menubar hidden/visible + appbutton label *******************************/
-/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix.css"; /**/
-/* [!] tabs on top + menubar hidden + appbutton icon only ***************************************/
-/* [!] tabs not on top + menubar hidden/visible + appbutton icon only ***************************/
-/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix2.css"; /**/
-/* [!] tabs on top + menubar visible + appbutton label ******************************************/
-/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix3.css"; /**/
-/* [!] tabs on top + menubar visible + appbutton icon only **************************************/
-/* @import "./css/appbutton/appbutton_in_titlebar_fx71_fix4.css"; /**/
-
 /* button color - [only use one at a time] ******************************************************/
-/* @import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
+@import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_transparent.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_semi_transparent.css"; /**/
@@ -653,6 +640,7 @@
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
 /* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
  

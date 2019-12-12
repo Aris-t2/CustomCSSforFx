@@ -34,8 +34,10 @@
   --classic_squared_tabs_new_tab_icon_color: black !important;
   --classic_squared_tabs_tab_text_color: black !important;
   --classic_squared_tabs_tab_text_shadow: transparent !important;
+  --classic_squared_tabs_lwt-dark_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
   --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%) !important;
   --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%) !important;
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
   --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
 }

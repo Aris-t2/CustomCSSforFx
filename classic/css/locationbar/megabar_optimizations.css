@@ -47,6 +47,9 @@
   animation-name: unset !important;
 }
 
+.urlbarView.megabar .urlbarView-body-inner {
+  border-top: unset !important;
+}
 
 .megabar #urlbarView-results {
   padding: 0px !important;
