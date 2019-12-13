@@ -1,0 +1,24 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* based on [wrap]-code from default browser.css */
+/* removed [wrap] and added !important to force the code on non-wrapped results */
+
+.urlbarView.megabar .urlbarView-results > .urlbarView-row > .urlbarView-row-inner {
+  flex-wrap: wrap !important;
+}
+.urlbarView.megabar .urlbarView-results > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+}
+.urlbarView.megabar .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-top: 2px !important;
+  padding-inline-start: calc(6px + 2px + 16px) !important;
+}
+.urlbarView.megabar[actionoverride] .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
+.urlbarView.megabar .urlbarView-results > .urlbarView-row[has-url]:not([type$=tab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
+.urlbarView.megabar .urlbarView-results > .urlbarView-row[type=remotetab]:not([selected]):not(:hover) {
+  display: none !important;
+}

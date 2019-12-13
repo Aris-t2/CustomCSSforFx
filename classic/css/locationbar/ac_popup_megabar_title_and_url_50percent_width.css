@@ -1,0 +1,42 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.megabar .urlbarView-no-wrap,
+.megabar .urlbarView-url {
+  min-width: calc(50% - 5px) !important;
+  width: calc(50% - 5px) !important;
+}
+
+.megabar .urlbarView-url {
+  margin-inline-start: 10px !important;
+}
+
+.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+.megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% + 5px) !important;
+}
+
+.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  min-width: unset !important;
+  width: unset !important;
+  margin-inline-start: unset !important;
+}
+
+.megabar .urlbarView-title-separator {
+  display: none !important;
+}
+
+/* do not hide heuristic/actiontype url item */
+.megabar .urlbarView-action{
+  visibility: visible !important;
+  display: inherit !important;
+}

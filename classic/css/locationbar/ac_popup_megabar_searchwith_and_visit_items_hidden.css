@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide visit and search items*/
+.megabar .urlbarView-row[type="switchtab"],
+.megabar .urlbarView-row[type="search"],
+.megabar .urlbarView-row:not([has-url="true"]) {
+   display: none !important;
+}

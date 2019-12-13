@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* compact results */
+.megabar .urlbarView-row {
+  padding-block: 0px !important;
+}
+
+.megabar .urlbarView.megabar {
+  margin-inline: unset !important;
+  width: 100% !important;
+}

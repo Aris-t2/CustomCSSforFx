@@ -3,10 +3,9 @@
 /****************************************************************************************/
 
 
-:-moz-any(.searchbar-textbox, #urlbar,#searchbar) {
+#urlbar-container[breakout] #urlbar[breakout] {
   font-size: 12px !important;
 }
-
 #urlbar-container[breakout] {
   position: relative !important;
   min-height: var(--urlbar-container-height);
@@ -53,6 +52,7 @@
 
 .megabar #urlbarView-results {
   padding: 0px !important;
+  padding-block: 0px !important;
 }
 
 .megabar #urlbar-results .urlbarView-body-outer,
