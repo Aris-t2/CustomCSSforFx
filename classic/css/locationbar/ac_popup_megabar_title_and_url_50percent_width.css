@@ -5,8 +5,8 @@
 
 .megabar .urlbarView-no-wrap,
 .megabar .urlbarView-url {
-  min-width: calc(50% - 5px) !important;
-  width: calc(50% - 5px) !important;
+  min-width: 50% !important;
+  width: 50% !important;
 }
 
 .megabar .urlbarView-url {
@@ -22,7 +22,7 @@
 .megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
-  left: calc(50% + 5px) !important;
+  left: calc(50% + 10px) !important; /* 50% + 10px url space */
 }
 
 .urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
@@ -35,8 +35,28 @@
   display: none !important;
 }
 
-/* do not hide heuristic/actiontype url item */
+/* do not hide actiontype item */
 .megabar .urlbarView-action{
   visibility: visible !important;
   display: inherit !important;
 }
+
+
+/* use different width values to go from  50/50 to e.g. 40/60 */
+/*
+.megabar .urlbarView-no-wrap {
+  min-width: 40% !important;
+  width: 40% !important;
+}
+.megabar .urlbarView-url {
+  min-width: 60% !important;
+  width: 60% !important;
+}
+
+.megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: calc(40% + 10px) !important;
+}
+*/
