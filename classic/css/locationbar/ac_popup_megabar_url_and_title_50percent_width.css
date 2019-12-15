@@ -2,8 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 @import "ac_popup_megabar_title_and_url_50percent_width.css";
 
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
 
 .megabar .urlbarView-url {
   position: absolute !important;
@@ -18,6 +21,8 @@
   position: absolute !important;
   display: block !important;
   left: calc(50% + 10px) !important;
+  min-width: calc(50% - 18px) !important;
+  width: calc(50% - 18px) !important;
 }
 
 .megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,

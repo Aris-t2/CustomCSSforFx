@@ -26,8 +26,6 @@
 }
 
 .urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
-  min-width: unset !important;
-  width: unset !important;
   margin-inline-start: unset !important;
 }
 
@@ -41,6 +39,18 @@
   display: inherit !important;
 }
 
+/* do not wrap the line */
+.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner {
+  flex-wrap: unset !important;
+}
+.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+  max-width: unset !important;
+  flex-basis: unset !important;
+}
+.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-top: unset !important;
+  padding-inline-start: unset !important;
+}
 
 /* use different width values to go from  50/50 to e.g. 40/60 */
 /*
