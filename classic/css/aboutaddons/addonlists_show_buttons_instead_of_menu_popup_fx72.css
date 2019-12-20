@@ -58,6 +58,8 @@
 	}
 
 	/* remove button icon */
+	:host([checked]),
+	panel-item[checked],
 	addon-list panel-item {
 	  --icon: unset !important;
 	}
