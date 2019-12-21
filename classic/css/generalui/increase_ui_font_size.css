@@ -4,7 +4,7 @@
 
 
 /* set a custom font size here ***********************************************************
-**(some items will look broken with too hight font size values) *************************/
+**(some items will look broken with too height font size values) ************************/
 
 
 /* NOTE  ********************************************************************************/
@@ -28,6 +28,10 @@
   font-size: 10px !important;
 }
 
+/* override CSS code set by other 'options' */
+#main-window[uidensity="compact"] toolbar :-moz-any(.searchbar-textbox, #urlbar,#searchbar),
+.megabar #urlbar-results :-moz-any(.urlbarView-tags, .urlbarView-action, .urlbarView-title, .urlbarView-url),
+#urlbar-container[breakout] #urlbar[breakout],
 #searchbar,
 .searchbar-textbox {
   font-size: var(--general_ui_font_size) !important;
