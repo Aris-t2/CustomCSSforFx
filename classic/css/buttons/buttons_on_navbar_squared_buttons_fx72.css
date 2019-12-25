@@ -6,6 +6,19 @@
 ** types and button variations out there to catch all of them with general code. ********/
 
 
+:root {
+  --space_required_for_appbutton_fix: 46px !important;
+}
+
+:root[uidensity="compact"] {
+  --space_required_for_appbutton_fix: 36px !important;
+}
+
+:root[uidensity="touch"] {
+  --space_required_for_appbutton_fix: 50px !important;
+}
+
+
 /* compact button mode */
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {

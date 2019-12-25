@@ -12,3 +12,9 @@
   margin-inline: unset !important;
   width: 100% !important;
 }
+
+/* reduce space around search engines */
+#urlbar .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

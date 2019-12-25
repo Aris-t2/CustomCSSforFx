@@ -198,6 +198,7 @@
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
   -moz-margin-end: 2px !important;
   margin-top: 0px !important;
+  -moz-margin-start: -30px !important;
 }
 
 /* button color/border */
@@ -335,3 +336,14 @@
 #main-window[tabsintitlebar] #nav-bar:not([nonemptyoverflow="true"]) #nav-bar-customization-target {
   max-width: calc(100vw - var(--space_required_for_appbutton_fix2)) !important;
 }
+
+#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
+#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
+#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
+  width: unset !important;
+  height: unset !important;
+}
+

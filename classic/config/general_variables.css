@@ -54,7 +54,7 @@
   --color_active_state: lightgrey !important;
   
   /* for ac_popup_result_font_size.css */
-  --results_font_size: 10pt !important;
+  --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
 }
 
 :root[uidensity="touch"] {
