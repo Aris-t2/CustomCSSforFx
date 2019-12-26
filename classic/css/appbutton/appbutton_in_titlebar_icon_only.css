@@ -343,7 +343,7 @@
 #main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
 #main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
 #main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
-  width: unset !important;
+  /*width: unset !important;*/
   height: unset !important;
 }
 

@@ -3,6 +3,10 @@
 /****************************************************************************************/
 
 
+:root {
+  --space_required_for_appbutton_fix: 28px !important;
+}
+
 /* more compact navigation toolbar */
 #main-window[uidensity=compact] {
   --toolbarbutton-inner-padding: 5px !important;
