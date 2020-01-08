@@ -11,7 +11,7 @@
 #main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
 #main-window[tabsintitlebar] #nav-bar {
   -moz-margin-end: 145px !important;
-  -moz-appearance: none !important;  
+  -moz-appearance: none !important;
   background: transparent !important;
   border-top: unset !important;
 }
@@ -44,7 +44,7 @@
 	}
 
 	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
-	  margin-top: -28x !important;
+	  margin-top: -28px !important;
 	}
 }
 
