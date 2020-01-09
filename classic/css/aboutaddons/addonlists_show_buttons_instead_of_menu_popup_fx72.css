@@ -3,8 +3,22 @@
 /****************************************************************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
+	html {
+	  --addon-page-options-width: 340px;
+	}
+	
+	/* <some> locales require adjustments */
+	html:-moz-any([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
+	  --addon-page-options-width: 440px;
+	}
+	
+	html[lang*="es-"] {
+	  --addon-page-options-width: 460px;
+	}
+		/**/
+	
 	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"],
 	.more-options-menu panel-item {
 	  background: white !important;
@@ -92,15 +106,15 @@
 	addon-page-options panel-list {
 	  min-width: unset !important;
 	  width: auto !important;
-	  max-width: 300px !important;
+	  max-width: var(--addon-page-options-width) !important;
 	  z-index: 1000 !important;
 	}
 	
 	addon-page-options panel-list panel-item {
-	  min-width: 280px !important;
-	  width: 280px !important;
+	  min-width: calc(var(--addon-page-options-width) - 20px) !important;
+	  width: 320px !important;
 	}
-	
+		
 	.sticky-container {
 	  z-index: 1000 !important;
 	}
@@ -109,8 +123,8 @@
 	  padding-inline-start: 20px !important;
 	  padding-top: 3px !important;
 	  padding-bottom: 3px !important;
-	  min-width: 290px !important;
-	  width: 290px !important;
+	  min-width: calc(var(--addon-page-options-width) - 10px) !important;
+	  width: calc(var(--addon-page-options-width) - 10px) !important;
 	}
 
 	addon-page-options panel-list panel-item[accesskey][checked] {

@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	#addons-page .main-content .addon:not(:hover) .control-container{
 	  min-height: 23px !important;
 	}

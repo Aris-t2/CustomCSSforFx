@@ -2,8 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
 	#category-recentUpdates {
 	  -moz-box-ordinal-group: 99 !important;

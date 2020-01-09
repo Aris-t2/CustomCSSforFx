@@ -5,7 +5,7 @@
 
 @import "./addonlists_show_buttons_instead_of_menu_popup_fx72.css";
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	:root {
 	  --addon-icon-size: 20px !important;

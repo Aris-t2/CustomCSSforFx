@@ -10,7 +10,7 @@
 /* workaround for Firefox 71+ *******************/
 :root {
   --space_required_for_appbutton_fix: 36px;
-  --space_required_for_appbutton_fix2: 2px;
+  --space_required_for_appbutton_fix2: 4px;
 }
 
 :root[uidensity="compact"] {

@@ -4,7 +4,7 @@
 
 @import "addonlists_show_addon_date_last_updated.css";
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
   .addon .name-container {
 	-moz-box-flex: 0 !important;

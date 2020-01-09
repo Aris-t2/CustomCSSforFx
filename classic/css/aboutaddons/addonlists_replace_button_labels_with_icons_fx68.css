@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	.more-options-menu panel-list,
 	addon-list .more-options-menu addon-options panel-list	{

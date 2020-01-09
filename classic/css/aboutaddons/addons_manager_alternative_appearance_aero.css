@@ -4,8 +4,7 @@
 
 @import "./addons_manager_alternative_appearance.css";
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
 	#addons-page {
 	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;

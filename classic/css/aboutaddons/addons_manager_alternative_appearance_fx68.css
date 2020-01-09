@@ -3,8 +3,7 @@
 /****************************************************************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 					
 	:root {
 	  --in-content-category-text-hover: HighlightText !important;
@@ -341,7 +340,7 @@
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
 	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
 	  color: grey !important;
-	  opacity: 0.6 !important;
+	  /*opacity: 0.6 !important;*/
 	  transition: unset !important;
 	}
 	
@@ -419,6 +418,10 @@
 	button[data-l10n-id="addon-updates-manual-updates-found"] {
 	  min-height: 0 !important;
 	  padding: 0 !important;
+	}
+	
+	.card-heading-image {
+	  margin: unset !important;
 	}
 	
 	

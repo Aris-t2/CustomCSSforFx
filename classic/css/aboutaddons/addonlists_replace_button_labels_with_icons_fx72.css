@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: 18px !important;

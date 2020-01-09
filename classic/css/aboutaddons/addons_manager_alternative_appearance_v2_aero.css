@@ -12,7 +12,7 @@
 	}
 }
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/shortcuts.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
 	html,
 	body,
