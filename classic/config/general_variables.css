@@ -31,8 +31,8 @@
   /* for 'tabs_multiple_lines_v2.css' only */
   --tabs-lines: 3 !important; 
 
-  /* for bookmarks_toolbar_multiple_lines.css */
-  --bookmark_items_height: 26px !important; /* <- bookmark items - line height */
+  /* for bookmarks_toolbar_multiple_lines.css /_fx66.css / _fx74.css */
+  --bookmark_items_height: 22px !important; /* <- bookmark items - line height */
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */

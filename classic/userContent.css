@@ -5,37 +5,11 @@
 
 /*************************************************************************************************
 
-[!] Firefox 68+ (look for '_fx68')
-  - new 'alternative appearance' option
-  - new 'alternative appearance' option (AERO background color)
-  - new 'restore version number' option for active add-ons
-  - new 'compact appearance' option
-  - new 'more compact appearance' option
-  - new 'compact categories' option
-  - new 'replace menu popup with buttons' option
-  - new 'replace button labels with icons' option
-  - new 'colorized icon' option for 'replace button labels with icons' option
-  - new 'show buttons on hover only' option
-  - new 'hide manage/expand button' option
-  - new 'hide report button' option
+ Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
   
-  - old add-ons manager > show 'version number for add-ons' does not work with the html based add-on manager
-  - old add-ons manager > show 'last update date' does not work with the html based add-on manager
-  - old add-ons manager > alternative appearance does not work with the html based add-on manager
-  - old add-ons manager > compact appearance does not work with the html based add-on manager
-  - most old 'other' add-ons manager settings do not work with the html based add-on manager
-  --> use 'about:config > extensions.htmlaboutaddons.enabled > false' temporary workaround for the old settings
-  
-[!] Firefox 69+
-  - 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true' (or custom styles will not be loaded)
-  
-[!] Firefox 70+
-  - 'about:config >  extensions.htmlaboutaddons.enabled > false' workaround does not work anymore
+ [!] Firefox 69+ requires this preference to be enabled or custom styles will not be loaded:
+	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
 
-[!] Firefox 72+ (look for '_fx72')
- - new 'compact categories' option
- - new 'replace menu popup with buttons' option 
-  
 *************************************************************************************************/
 
 /*************************************************************************************************
@@ -50,8 +24,8 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * before '@import'
-  DISABLING options: add the combination of / and * before '@import'
+  ENABLING options: remove the combination of / and * in front of '@import'
+  DISABLING options: add the combination of / and * in front of '@import'
 
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' calls might not work properly on macOS and Linux

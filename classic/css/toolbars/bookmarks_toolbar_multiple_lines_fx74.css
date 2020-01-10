@@ -19,10 +19,16 @@
   max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important;
 }
 
-#PlacesToolbar,
-#PlacesToolbarItems {
-  overflow: visible;
+#personal-bookmarks,
+#PlacesToolbar > hbox {
   display: block;
+}
+
+#PlacesToolbarItems {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  overflow-y: auto;
 }
 
 #PlacesToolbarItems > .scrollbox-innerbox {
@@ -33,32 +39,12 @@
   max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important
 }
 
-#personal-bookmarks {
-  display: block;
-}
-
 #personal-bookmarks #PlacesToolbar {
   display: block;
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) );
-}
-
-#personal-bookmarks #PlacesToolbar > hbox {
-  display: -moz-stack !important;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-}
-
-#personal-bookmarks #PlacesToolbar #PlacesToolbarItems {
-  overflow-x: visible;
-  overflow-y: visible;
-}
-
-#personal-bookmarks #PlacesToolbar #PlacesToolbarItems > box {
-  display: block;
 }
 
 #personal-bookmarks #PlacesToolbar > .bookmark-item{
@@ -68,7 +54,6 @@
 #personal-bookmarks #PlacesToolbar .chevron{
   visibility: collapse;
 }
-
 #personal-bookmarks #PlacesToolbar > hbox > hbox{
   overflow-x: hidden;
   overflow-y: hidden;

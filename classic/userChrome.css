@@ -5,17 +5,16 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.9.7 ********************************************************************************/
+/* version 2.9.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
-  
-[!] Firefox 69+
-  - 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true' (or custom styles will not be loaded)
 
- [!] Firefox 71-72 (look for '_fx71')
- - added support for 'about:config > layout.css.xul-box-display-values.survive-blockification.enabled > false'
- 
+ Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
+  
+ [!] Firefox 69+ requires this preference to be enabled or custom styles will not be loaded:
+	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+
 *************************************************************************************************/
 
 /*************************************************************************************************
@@ -30,8 +29,8 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * before '@import'
-  DISABLING options: add the combination of / and * before '@import'
+  ENABLING options: remove the combination of / and * in front of '@import'
+  DISABLING options: add the combination of / and * in front of '@import'
 
   FIREFOX BUGS (nothing CSS code can do about):
   - some '@import' calls might not work properly on macOS and Linux
@@ -580,7 +579,6 @@
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
 /* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
@@ -621,7 +619,8 @@
 /* [!] not compatible to 'simulated add-bar' option *********************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
-/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */ /*Fx66-73*/
+/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx74.css"; /**/ /* <--- EXPERIMENTAL */ /*Fx74+*/
 
 /* TOOLBAR COLORS *******************************************************************************/
 @import "./css/toolbars/general_toolbar_colors.css"; /**/
