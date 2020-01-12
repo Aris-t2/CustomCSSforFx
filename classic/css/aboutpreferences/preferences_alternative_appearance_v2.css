@@ -36,11 +36,17 @@
 	}
 	
 	.sticky-container,
-	.search-container {
-	  background: transparent !important;
-	  position: absolute !important;
-	  display:block !important;
-	  top: 20px !important;
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: unset !important;
+	  margin: 3px 0 !important;
 	}
 	
 	.header-name {

@@ -233,7 +233,7 @@
 	  padding-bottom: 7px !important;
 	}
 
-	.addon.card {
+	addon-card:not([expanded]) .addon.card {
 	  max-width: unset !important;
 	  padding-inline-end: 0px !important;
 	}
@@ -249,9 +249,7 @@
 
 	.list > .addon,
 	.list > .addon:hover {
-	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  /*duration: unset !important;*/
 	  border-bottom: 1px solid var(--in-content-box-border-color) !important;
 	}
 
@@ -260,9 +258,7 @@
 	}
 	
 	#detail-view .card {
-	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  /*duration: unset !important;*/
 	}
 
 	#detail-view .detail-view-container {
@@ -340,7 +336,6 @@
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
 	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
 	  color: grey !important;
-	  /*opacity: 0.6 !important;*/
 	  transition: unset !important;
 	}
 	

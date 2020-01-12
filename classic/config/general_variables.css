@@ -36,7 +36,7 @@
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */
-  --general_ui_font_size: 12pt !important;
+  --general_ui_font_size: 10pt !important;
   
   /* for searchbar_popup_engines_show_labels_scrollbars.css / ..._fx66.css*/
   --search-one-offs_labels_height: 100px !important;

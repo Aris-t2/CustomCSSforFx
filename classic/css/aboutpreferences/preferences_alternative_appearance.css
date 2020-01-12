@@ -12,7 +12,8 @@
  	#preferences-stack,.sticky-container,
 	page,
 	.dialogBox .groupbox-title {
-	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	  /*background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;*/
+	  background: -moz-Dialog !important;
 	}
 
 	#categories {
@@ -29,7 +30,9 @@
 	}
 
 	.pane-container {
-	  width: unset !important;
+	  width: 100vw !important;
+	  padding: 0px !important;
+	  margin: 0px !important;
 	}
 	
 	.sticky-container,
@@ -188,7 +191,7 @@
 	radio image {
 	  width: 14px !important;
 	  height: 14px !important;
-	  margin: 0 !important;
+	  margin: 0 1px !important;
 	}
 	
 	/*checkbox label,

@@ -3,6 +3,10 @@
 /****************************************************************************************/
 
 
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  display: block !important;
+}
+
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-closebutton {
   position: absolute !important;
   display:block !important;

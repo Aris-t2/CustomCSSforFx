@@ -68,8 +68,7 @@
 	  display: none !important;
 	}
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]):-moz-lwtheme #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
-	  display: block !important;
-	  margin-top: -13px !important;
+	  display: flex !important;
 	}
   }
   @media not all and (-moz-windows-compositor) {

@@ -7,20 +7,6 @@
 /* cheat main menu button into title bar ********/
 /************************************************/
 
-/* workaround for Firefox 71+ *******************/
-:root {
-  --space_required_for_appbutton_fix: 36px;
-  --space_required_for_appbutton_fix2: 4px;
-}
-
-:root[uidensity="compact"] {
-  --space_required_for_appbutton_fix: 34px;
-}
-
-:root[uidensity="touch"] {
-  --space_required_for_appbutton_fix: 42px;
-}
-
 /* menubar adjustments */
 #main-window[tabsintitlebar] #toolbar-menubar {
   -moz-margin-start: 95px !important;
@@ -69,7 +55,7 @@
   -moz-appearance: none !important;
   -moz-box-ordinal-group: 0 !important;
   position: fixed !important;
-  display: block !important;
+  display: flex !important;
   height: 22px !important;
   margin: 0 !important;
   -moz-margin-start: 1px !important;
@@ -372,34 +358,6 @@
 /* workaround for Firefox 71+ *******************/
 #main-window[tabsintitlebar] #PanelUI-button > *:not(#PanelUI-menu-button) {
   display: none !important;
-}
-
-#main-window[tabsintitlebar] #PanelUI-button {
-  min-width: 1px !important;
-  width: 1px !important;
-  max-width: 1px !important;
-  margin-inline-start: 0px !important;
-}
-
-#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-  margin-inline-start: -2px !important;
-}
-
-#main-window[tabsintitlebar] #nav-bar-customization-target {
-  z-index: 10000 !important;
-}
-#main-window[tabsintitlebar] #nav-bar {
-  padding-inline-start: 1px !important;
-}
-#main-window[tabsintitlebar] #nav-bar #nav-bar-overflow-button{
-  padding-inline-end: 0px !important;
-}
-#main-window[tabsintitlebar] #nav-bar-customization-target {
-  max-width: calc(100vw - var(--space_required_for_appbutton_fix)) !important;
-}
-
-#main-window[tabsintitlebar] #nav-bar:not([nonemptyoverflow="true"]) #nav-bar-customization-target {
-  max-width: calc(100vw - var(--space_required_for_appbutton_fix2)) !important;
 }
 
 #main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
