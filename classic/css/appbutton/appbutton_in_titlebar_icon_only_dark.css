@@ -3,8 +3,6 @@
 /****************************************************************************************/
 
 
-@import "./appbutton_in_titlebar_icon_only.css";
-
 /* dropmarker icon / arrow */
 #main-window[tabsintitlebar] #navigator-toolbox  #PanelUI-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton_dark.svg") !important;

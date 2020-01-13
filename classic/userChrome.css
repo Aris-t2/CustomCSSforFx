@@ -282,15 +282,20 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
+/* -- Fx 60-73 **********************************************************************************/
 @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
+/* -- Fx 74+ ************************************************************************************/
+/* @import "./css/appbutton/appbutton_in_titlebar_fx74.css"; /**/ /* <-- label only */
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_fx74.css"; /**/
+
+/* for 'appbutton in titlebar icon only' - [only use one at a time] *****************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_browser_logo.css"; /**/
+
+/* for 'appbutton in titlebar icon only' ********************************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon.css"; /**/
-/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_dark.css"; /**/
-/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_grey.css"; /**/
-/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon_browser_logo.css"; /**/
 
 /* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
