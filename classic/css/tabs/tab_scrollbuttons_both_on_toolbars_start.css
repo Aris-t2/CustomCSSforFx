@@ -22,7 +22,7 @@
   -moz-box-ordinal-group: 4 !important;
 }
 
-/* Fix pinned tabs position for the first 10 pinned tabs (follow the system for more pinnen tabs) */
+/* Fix pinned tabs position for the first 10 pinned tabs (repeat for more pinned tabs) */
 #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
   margin-inline-start: -88px !important;
 }

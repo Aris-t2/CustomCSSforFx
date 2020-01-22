@@ -89,35 +89,18 @@
   display: none !important;
 }
 
-/* adjust flexible spaces visible rectangle in customizing mode *//*
-#PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] toolbarspring {
-  height: 20px !important;
-}
-/* workaround to make grabbing easier *//*
-#PersonalToolbar toolbarpaletteitem[place=toolbar][id^=wrapper-customizableui-special-spring] {
-  position: relative !important;
-  top: -14px !important;
-}
-
-/* downloads button fix *//*
-#PersonalToolbar #wrapper-downloads-button,
-#PersonalToolbar #downloads-button {
-  position: relative !important;
-  top: -16px !important;
-}
-
-/* create bigger spaces *//*
-#PersonalToolbar toolbarspring + toolbarspring {
-  min-width: 84px !important;
-  width: auto !important;
-  max-width: 128px !important;
-}
-*/
 #PersonalToolbar toolbarspring {
   display: flex !important;
   min-width: unset !important;
   width: inherit !important;
   max-width: unset !important;
+}
+
+#main-window[customizing="true"] #PersonalToolbar toolbarspring {
+  display: block !important;
+  min-width: 40px !important;
+  width: auto !important;
+  max-width: 112px !important;
 }
 
 /* remove animations */
@@ -137,9 +120,6 @@
 
 /* bookmarks item box width */
 #PersonalToolbar #personal-bookmarks {
-  /*min-width: 40px !important;
-  width: auto !important;
-  max-width: 80vw !important;*/
   display: flex !important;
   min-width: unset !important;
   width: inherit !important;
@@ -156,6 +136,15 @@
   min-height: unset !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+/* adjust button badges */
+#PersonalToolbar toolbarbutton .toolbarbutton-badge {
+  -moz-margin-end: -1px !important;
+  margin-top: -4px !important;  
+  padding: 1px !important;
+  min-width: unset !important;
+  font-size: 9px !important;
 }
 
 
