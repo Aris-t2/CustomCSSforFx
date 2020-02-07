@@ -46,3 +46,8 @@
   width: auto !important;
   max-width: 50vw !important;
 }
+
+/* megabar optimizations workaround */
+:root {
+  --workaround_value: -13px !important;
+}

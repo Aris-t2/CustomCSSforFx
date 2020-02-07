@@ -2,6 +2,9 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+:root {
+  --workaround_value: 0px;
+}
 
 #urlbar-container[breakout] #urlbar[breakout] {
   font-size: 12px !important;
@@ -25,7 +28,7 @@
 }
 
 #urlbar[breakout][breakout-extend][open] {
-  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height))/2) !important;
+  top: calc(var(--workaround_value) + (var(--urlbar-toolbar-height) - var(--urlbar-height))/2) !important;
   left: 0px !important;
   width: 100% !important;
 }

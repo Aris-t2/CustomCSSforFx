@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.0 ********************************************************************************/
+/* version 3.0.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -285,7 +285,7 @@
 /* -- Fx 60-73 **********************************************************************************/
 @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
-/* -- Fx 74+ ************************************************************************************/
+/* -- Fx 74+ (might already work on Fx 73) ******************************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx74.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_fx74.css"; /**/
 
@@ -492,10 +492,12 @@
 /* @import "./css/generalui/overflow_menu_horizontal_remove_text.css"; /**/
 
 /* sidebar **************************************************************************************/
-/* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 /* @import "./css/generalui/sidebar_items_compact.css"; /**/
 /* @import "./css/generalui/sidebar_header_icons_colorized.css"; /**/
 /* @import "./css/generalui/sidebar_header_lwtheme.css"; /**/
+/* sidebar dimensions - [only use one at a time] ************************************************/
+/* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
+/* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 /* sidebar appearance - [only use one at a time] ************************************************/
 /* @import "./css/generalui/sidebar_appearance_grey.css"; /**/
 /* @import "./css/generalui/sidebar_appearance_grey_v2.css"; /**/
@@ -759,7 +761,7 @@
 /* popup content order/appearance - [only use one at a time] ************************************/
 /* @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/ /* for tile+url only, not for visit, search etc. */
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/ /* for tile+url only, not for heuristic items like 'visit', 'search' etc. */
 /* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
 
 /* result menuitem settings/appearance **********************************************************/
