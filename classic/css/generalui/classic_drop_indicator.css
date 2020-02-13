@@ -2,18 +2,19 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 #PlacesToolbarDropIndicator:not(hbox) {
-	list-style-image: url(./image/toolbar-drag-indicator.png) !important
+	list-style-image: url(../../image/toolbar-drag-indicator.png) !important
 }
 #PlacesToolbarDropIndicator:not(image) {
-	background: url(./image/toolbar-drag-indicator.png) no-repeat center !important
+	background: url(../../image/toolbar-drag-indicator.png) no-repeat center !important
 }
 
 
 .tab-drop-indicator:not(hbox) {
-	list-style-image: url(./image/tab-drag-indicator.png) !important;
+	list-style-image: url(../../image/tab-drag-indicator.png) !important;
 	max-height: var(--classic_squared_tabs_tab_height) !important
 }
 .tab-drop-indicator:not(image) {
-	background: url(./image/tab-drag-indicator.png) no-repeat center !important
+	background: url(../../image/tab-drag-indicator.png) no-repeat center !important
 }
