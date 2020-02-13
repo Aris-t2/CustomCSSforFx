@@ -5,11 +5,16 @@
 
 @-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 
+
 	html {
 	  --addon-page-options-width: 340px;
 	}
 	
 	/* <some> locales require adjustments */
+	html[lang="de"] {
+	  --addon-page-options-width: 370px;
+	}
+	
 	html:-moz-any([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
 	  --addon-page-options-width: 440px;
 	}
@@ -17,7 +22,7 @@
 	html[lang*="es-"] {
 	  --addon-page-options-width: 460px;
 	}
-		/**/
+	/**/
 	
 	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
 	.more-options-menu panel-item {
@@ -144,18 +149,10 @@
 	  right: 36px !important;
 	}
 	
-	/*addon-list:-moz-any([type="theme"],[type="plugin"],[type="dictionary"],[type="all"]) addon-card:not([expanded="true"]) panel-list {
-	  right: 1px !important;
-	}*/
-
 	addon-list addon-card:not([expanded="true"]) panel-list {
 	  margin-top: -48px !important;
 	}
 
-	/*addon-list[type="theme"] addon-card:not([expanded="true"]) panel-list {
-	  -moz-margin-end: 22px !important;
-	}*/
-	
 	addon-list addon-card:not([expanded="true"]) .addon.card .theme-enable-button {
 	  -moz-appearance: none !important;
 	  min-width: 20px !important;
@@ -190,11 +187,7 @@
 	addon-list[type="theme"] addon-card:not([expanded="true"]) .card-contents{
 	  height: 40px !important;
 	}
-	
-	/*input[type="checkbox"].toggle-button {
-	  margin: 0 8px !important;
-	}*/
-	
+
 	addon-list addon-card:not([expanded="true"]) .addon.card .theme-enable-button,
 	input[type="checkbox"].toggle-button {
 	  -moz-margin-end: 8px !important;

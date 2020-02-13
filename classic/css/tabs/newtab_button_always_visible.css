@@ -5,6 +5,7 @@
 
 #new-tab-button {
   visibility: visible !important;
+  display: unset !important;
 }
 
 :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.1 ********************************************************************************/
+/* version 3.0.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -486,7 +486,7 @@
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/
-@import "./css/generalui/classic_drop_indicator.css"; /**/
+/* @import "./css/generalui/classic_drop_indicator.css"; /**/
 
 /* overflow menu - [only use one at a time] *****************************************************/
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
