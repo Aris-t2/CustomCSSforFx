@@ -8,6 +8,7 @@
 #urlbar .urlbar-history-dropmarker,
 #urlbar:not(:hover) > .urlbar-textbox-container > .urlbar-history-dropmarker {
   opacity: 1 !important;
+  display: initial !important;
 }
 
 /**/

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.2 ********************************************************************************/
+/* version 3.0.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -625,8 +625,8 @@
 /* BOOKMARKS TOOLBAR - MULTIPLE LINES - [only use one at a time] ********************************/
 /* [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks **********/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
-/* [!] not compatible to 'simulated second bookmars toolbar' option *****************************/
-/* [!] not compatible to 'simulated add-bar' option *********************************************/
+/* [!] not compatible to 'simulated second bookmarks toolbar' option ****************************/
+/* [!] not compatible to 'simulated addon-bar' option *******************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */ /*Fx66-73*/
