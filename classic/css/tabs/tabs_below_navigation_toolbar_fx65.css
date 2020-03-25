@@ -31,7 +31,6 @@
 }
 
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
-  /*display: none !important;*/
   visibility: hidden !important;
 }
 

@@ -44,7 +44,7 @@
 }
 
 /* grey */
-:-moz-any(#appMenu-preferences-button,#appMenu-developer-button,#PanelUI-fxa-menu-account-devices-button,#PanelUI-fxa-menu-sync-prefs-button,#PanelUI-fxa-menu-setup-sync-button) .toolbarbutton-icon {
+:-moz-any(#appMenu-preferences-button,#appMenu-developer-button,#PanelUI-fxa-menu-account-devices-button,#PanelUI-fxa-menu-sync-prefs-button,#PanelUI-fxa-menu-setup-sync-button,#appMenu-import-button) .toolbarbutton-icon {
   fill: grey !important;
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-preferences-button,#appMenu-developer-button) .toolbarbutton-icon {

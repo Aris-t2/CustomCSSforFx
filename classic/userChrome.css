@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.3 ********************************************************************************/
+/* version 3.0.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -283,7 +283,7 @@
 
 /* button in titlebar - [only use one at a time] ************************************************/
 /* -- Fx 60-73 **********************************************************************************/
-@import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
+/* @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
 /* -- Fx 74+ (might already work on Fx 73) ******************************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_fx74.css"; /**/ /* <-- label only */
@@ -301,7 +301,7 @@
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
 /* button color - [only use one at a time] ******************************************************/
-@import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_transparent.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_semi_transparent.css"; /**/
@@ -343,7 +343,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- macOS */
 /* - Fx 65-67 - Windows/Linux *******************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/
-/* - Fx 65+ - macOS *****************************************************************************/
+/* - Fx 65-73 - macOS ***************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/
 /* - Fx 65+ v2 - mainly for multi-lined tabs (Glitches with inactive menubar!) ******************/
@@ -352,8 +352,13 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_macOS.css"; /**/
 /* - Fx 68-71 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
-/* - Fx 72+ Windows/Linux (use the Fx 65+ versions for macOS) ***********************************/
+/* - Fx 72-73 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
+/* - Fx 74+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
+/* - Fx 74+ - macOS *****************************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS_default_tabs.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
@@ -368,8 +373,10 @@
 /* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/
 /* - Fx 68-71 Windows/Linux *********************************************************************/
 /* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/
-/* - Fx 72+ Windows/Linux ***********************************************************************/
+/* - Fx 72-73 Windows/Linux *********************************************************************/
 /* @import "./css/tabs/tabs_below_main_content_fx72.css"; /**/
+/* - Fx 74+ Windows/Linux ***********************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_fx74.css"; /**/
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (for tabs not on top) - [only use one at a time] */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
@@ -654,7 +661,7 @@
 /* LOCATION BAR *********************************************************************************/
 /************************************************************************************************/
 
-/* general location bar tweaks ******************************************************************/
+/* general location bar tweaks [not for megabar] ************************************************/
 @import "./css/locationbar/locationbar_adjustments.css"; /**/
 @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
 /* @import "./css/locationbar/background_color_dark.css"; /**/
@@ -694,7 +701,7 @@
 
 /* autocomplete / history dropmarker ************************************************************/
 @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
-@import "./css/locationbar/dropmarker_visible.css"; /**/
+/* @import "./css/locationbar/dropmarker_visible.css"; /**/ /* Windows only */
 
 
 /************************************************************************************************/
