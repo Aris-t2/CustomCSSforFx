@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.4 ********************************************************************************/
+/* version 3.0.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -217,6 +217,7 @@
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71+ */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility */
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/	
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
@@ -595,6 +596,7 @@
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 **********************/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
 /* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/

@@ -20,6 +20,13 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background: var(--general_toolbar_color_toolbars, inherit) !important;
 }
 
+/* Fix issue aboves code creates on Fx75+ */
+#nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection {
+  background-color: Highlight !important;
+  color: HighlightText !important;
+}
+/**/
+
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,
 #main-window:not(:-moz-lwtheme) toolbar > toolbarbutton > .toolbarbutton-text,
 #main-window:not(:-moz-lwtheme) toolbar #stop-reload-button toolbarbutton > .toolbarbutton-text,

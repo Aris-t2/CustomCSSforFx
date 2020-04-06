@@ -34,6 +34,7 @@
   color: white !important;
 }
 
+
 /* add space for status text on add-on bar */
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
   padding-left: 400px !important;
@@ -41,4 +42,17 @@
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):-moz-locale-dir(rtl) {
   padding-right: 400px !important;
+}
+
+#statuspanel[mirror] {
+	inset-inline-start: unset !important;
+	inset-inline-end: unset !important;
+}
+
+#statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(ltr) {
+	margin-left: 0px !important;
+}
+
+#statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(rtl) {
+	margin-right: 0px !important;
 }

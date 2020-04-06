@@ -59,3 +59,15 @@
 #main-window #urlbar-container #urlbar #urlbar-input-container #tracking-protection-icon-container:not([hidden]):-moz-any([open="true"],:hover:active) {
   background: unset !important;
 }
+
+
+/**/
+
+#main-window[uidensity=compact] #nav-bar #back-button+#forward-button[disabled]+#urlbar-container #urlbar-input-container:not([pageproxystate="invalid"])>#tracking-protection-icon-container {
+  padding-inline-start: 17px !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #back-button+#forward-button[disabled]+#urlbar-container #urlbar-input-container:not([pageproxystate="invalid"])>#tracking-protection-icon-container:not([hidden])+#identity-box {
+  padding-inline-start: 31px !important;
+  margin-inline-start: -29px !important;
+}
