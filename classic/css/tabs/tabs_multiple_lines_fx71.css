@@ -50,12 +50,13 @@
     overflow-y: auto;
     max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
   }
-  #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+  #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
+  #tabbrowser-arrowscrollbox{
     overflow: -moz-hidden-unscrollable;
     display: block;
 	/*margin-bottom:-1px !important;*/
   }
-  
+
   :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
     height: var(--tab-min-height_mlt) !important;
   }
