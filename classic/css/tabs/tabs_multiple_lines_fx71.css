@@ -44,19 +44,18 @@
 
 /* Test for Firefox > 66 */
 @supports (inset-block:auto){
-  #tabbrowser-tabs > .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox{
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > .arrowscrollbox-scrollbox{
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
     max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
   }
-  #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
-  #tabbrowser-arrowscrollbox{
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) {
     overflow: -moz-hidden-unscrollable;
     display: block;
-	/*margin-bottom:-1px !important;*/
+	margin-bottom:-1px !important;
   }
-
+  
   :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
     height: var(--tab-min-height_mlt) !important;
   }
@@ -64,7 +63,7 @@
 
 /* Test for Firefox < 66 */
 @supports not (inset-block:auto){
-  #tabbrowser-tabs > .tabbrowser-arrowscrollbox{
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox){
     min-height: unset !important;
   }
   #tabbrowser-tabs .scrollbox-innerbox{
@@ -106,9 +105,9 @@
   display: none !important;
 }
 
-#tabbrowser-tabs[overflow="true"] > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-#TabsToolbar[customizing="true"] #tabbrowser-tabs > .tabbrowser-arrowscrollbox > :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+#tabbrowser-tabs[overflow="true"] > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar[customizing="true"] #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   visibility: hidden !important;
 }
 

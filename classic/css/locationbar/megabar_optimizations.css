@@ -5,10 +5,10 @@
 :root {
   --workaround_value: 0px;
 }
-
+/*
 #urlbar-container[breakout] #urlbar[breakout] {
   font-size: 12px !important;
-}
+}*/
 #urlbar-container[breakout] {
   position: relative !important;
   min-height: var(--urlbar-container-height);

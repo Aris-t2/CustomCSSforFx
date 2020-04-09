@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.5 ********************************************************************************/
+/* version 3.0.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -660,12 +660,13 @@
 
 
 /************************************************************************************************/
-/* LOCATION BAR *********************************************************************************/
+/* LOCATION BAR / MEGABAR - General settings ****************************************************/
 /************************************************************************************************/
 
-/* general location bar tweaks [not for megabar] ************************************************/
 @import "./css/locationbar/locationbar_adjustments.css"; /**/
-@import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
+
+/* general (& old) location bar tweaks [not for megabar !] **************************************/
+/* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
 /* @import "./css/locationbar/background_color_dark.css"; /**/
 /* @import "./css/locationbar/locationbar_border_roundness.css"; /**/
 /* @import "./css/locationbar/locationbar_reduce_height.css"; /**/
@@ -676,7 +677,7 @@
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 
 /* padlock icons in identity box / page identity button - [only use one at a time] **************/
-@import "./css/locationbar/identitybox_padlock_icon_classic.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_classic.css"; /**/
 /* @import "./css/locationbar/identitybox_padlock_icon_classic2.css"; /**/
 /* @import "./css/locationbar/identitybox_padlock_icon_modern.css"; /**/
 /* @import "./css/locationbar/identitybox_padlock_icon_modern2.css"; /**/
@@ -695,19 +696,20 @@
 /* @import "./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css"; /**/
 
 /* star button / bookmarks star *****************************************************************/
-@import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
-@import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
+/* @import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
+/* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
 /* alternative yellow star icon - [only use one at a time] **************************************/
 /* @import "./css/locationbar/starbutton_alternative_icon.css"; /**/
 /* @import "./css/locationbar/starbutton_alternative_icon_v2.css"; /**/
 
 /* autocomplete / history dropmarker ************************************************************/
-@import "./css/locationbar/dropmarker_at_the_end.css"; /**/
+/* @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
 /* @import "./css/locationbar/dropmarker_visible.css"; /**/ /* Windows only */
 
 
 /************************************************************************************************/
-/* LOCATION BAR - appearance of 'location bar / urlbar' popup (not megabar) *********************/
+/* LOCATION BAR POPUP - appearance of 'legacy location bar / urlbar popup' (not megabar popup) **/
+/* about:config > browser.urlbar.update1 > false (present since Firefox 72+) ********************/
 /************************************************************************************************/
 
 /* popup content order/appearance - [only use one at a time] ************************************/
@@ -722,8 +724,6 @@
 /* [!] - Firefox 60-63: option throws unfixable warnings in 'error console' *********************/
 /* [!] - Firefox 64+: popup width can not be detected automatically anymore *********************/
 /* [!] - Firefox 64+: popup width has to be set manually inside /config/ files ******************/
-/* [!] - Firefox 72+: set 'about:config > browser.urlbar.update1 > false' for old appearance ****/
-/* [!] - Firefox 72+: set 'about:config > browser.urlbar.update1 > true' for megabar settings ***/
 /*  - for Firefox 60-62 *************************************************************************/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup*/
 /* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/  /* <--- old autocomplete popup + url only */
@@ -762,8 +762,8 @@
 
 
 /************************************************************************************************/
-/* MEGABAR - appearance of 'megabar' / 'megabar popup' (Firefox 72+)  [EXPERIMETNAL] ************/
-/* about:config > browser.urlbar.update1 > true *************************************************/
+/* MEGABAR POPUP - appearance of 'megabar' & 'megabar popup' (Firefox 75+ by default) ***********/
+/* about:config > browser.urlbar.update1 > true (present since Firefox 72+) *********************/
 /************************************************************************************************/
 
 @import "./css/locationbar/megabar_optimizations.css"; /**/
