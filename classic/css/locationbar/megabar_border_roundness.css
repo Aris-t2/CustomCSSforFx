@@ -3,9 +3,9 @@
 /****************************************************************************************/
 
 
-/* hide visit and search items*/
-#urlbar .urlbarView-row[type="switchtab"],
-#urlbar .urlbarView-row[type="search"],
-#urlbar .urlbarView-row:not([has-url="true"]) {
-   display: none !important;
+#urlbar[focused="true"]:not([usertyping="true"]) #urlbar-background,
+#urlbar:not([open]) #urlbar-background,
+#urlbar,#urlbar-input-container,
+#searchbar, .searchbar-textbox {
+  border-radius: 20px !important;
 }

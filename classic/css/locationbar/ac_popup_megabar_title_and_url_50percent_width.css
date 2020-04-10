@@ -3,68 +3,68 @@
 /****************************************************************************************/
 
 
-.megabar .urlbarView-no-wrap,
-.megabar .urlbarView-url {
+#urlbar .urlbarView-no-wrap,
+#urlbar .urlbarView-url {
   min-width: 50% !important;
   width: 50% !important;
 }
 
-.megabar .urlbarView-url {
+#urlbar .urlbarView-url {
   margin-inline-start: 10px !important;
 }
 
-.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
   min-width: 100% !important;
   width: 100% !important;
 }
 
-.megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
   left: calc(50% + 10px) !important; /* 50% + 10px url space */
 }
 
-.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-inline-start: unset !important;
 }
 
-.megabar .urlbarView-title-separator {
+#urlbar .urlbarView-title-separator {
   display: none !important;
 }
 
 /* do not hide actiontype item */
-.megabar .urlbarView-action{
+#urlbar .urlbarView-action{
   visibility: visible !important;
   display: inherit !important;
 }
 
 /* do not wrap the line */
-.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner {
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner {
   flex-wrap: unset !important;
 }
-.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
   max-width: unset !important;
   flex-basis: unset !important;
 }
-.urlbarView.megabar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-top: unset !important;
   padding-inline-start: unset !important;
 }
 
 /* use different width values to go from  50/50 to e.g. 40/60 */
 /*
-.megabar .urlbarView-no-wrap {
+#urlbar .urlbarView-no-wrap {
   min-width: 40% !important;
   width: 40% !important;
 }
-.megabar .urlbarView-url {
+#urlbar .urlbarView-url {
   min-width: 60% !important;
   width: 60% !important;
 }
 
-.megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
   left: calc(40% + 10px) !important;

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.6 ********************************************************************************/
+/* version 3.0.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -660,19 +660,13 @@
 
 
 /************************************************************************************************/
-/* LOCATION BAR / MEGABAR - General settings ****************************************************/
+/* LOCATION BAR / MEGABAR - Settings for both 'about:config > browser.urlbar.update1' cases *****/
 /************************************************************************************************/
 
-@import "./css/locationbar/locationbar_adjustments.css"; /**/
-
-/* general (& old) location bar tweaks [not for megabar !] **************************************/
 /* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
-/* @import "./css/locationbar/background_color_dark.css"; /**/
-/* @import "./css/locationbar/locationbar_border_roundness.css"; /**/
-/* @import "./css/locationbar/locationbar_reduce_height.css"; /**/
 
 /* identity box / page identity button **********************************************************/
-@import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* Fx70+: replaces search glass */
+/* @import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* replaces search glass in Fx70+ */
 @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 
@@ -702,15 +696,48 @@
 /* @import "./css/locationbar/starbutton_alternative_icon.css"; /**/
 /* @import "./css/locationbar/starbutton_alternative_icon_v2.css"; /**/
 
+/* general popup/results settings ***************************************************************/
+@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
+/* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
+ 
+/************************************************************************************************/
+/* MEGABAR - settings for 'megabar' & 'megabar popup' (active in Firefox 75+ by default) ********/
+/* about:config > browser.urlbar.update1 > true (pref present in Firefox 72-76) *****************/
+/************************************************************************************************/
+
+@import "./css/locationbar/megabar_optimizations.css"; /**/
+@import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
+/* @import "./css/locationbar/megabar_border_roundness.css"; /**/
+/* @import "./css/locationbar/megabar_background_color_dark.css"; /**/
+
+/* popup content order/appearance - [only use one at a time] ************************************/
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/ /* for tile+url only, not for heuristic items like 'visit', 'search' etc. */
+/* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
+
+/* result menuitem settings/appearance **********************************************************/
+/* @import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
+
+
+/* [!!!!!!!!!!!!] Location bar settings below will stop working in Firefox 77+ [!!!!!!!!!!!!!!] */
+/************************************************************************************************/
+/* LOCATION BAR - settings for 'legacy location bar / urlbar popup' (not megabar popup) *********/
+/* [!] Firefox settings for Firefox 60-76 only **************************************************/
+/* [!] about:config > browser.urlbar.update1 > false (present in Firefox 72-76) *****************/
+/************************************************************************************************/
+
+/* general & old location bar tweaks ************************************************************/
+/* @import "./css/locationbar/locationbar_adjustments.css"; /**/
+/* @import "./css/locationbar/background_color_dark.css"; /**/
+/* @import "./css/locationbar/locationbar_border_roundness.css"; /**/
+/* @import "./css/locationbar/locationbar_reduce_height.css"; /**/
+
 /* autocomplete / history dropmarker ************************************************************/
 /* @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
 /* @import "./css/locationbar/dropmarker_visible.css"; /**/ /* Windows only */
-
-
-/************************************************************************************************/
-/* LOCATION BAR POPUP - appearance of 'legacy location bar / urlbar popup' (not megabar popup) **/
-/* about:config > browser.urlbar.update1 > false (present since Firefox 72+) ********************/
-/************************************************************************************************/
 
 /* popup content order/appearance - [only use one at a time] ************************************/
 /* @import "./css/locationbar/ac_popup_url_and_title_50percent_width.css"; /**/
@@ -735,17 +762,16 @@
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/  /* <--- old autocomplete popup + url only */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
-/*  - for Firefox 68+ ***************************************************************************/
+/*  - for Firefox 68-71 *************************************************************************/
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68.css"; /**/  /* <--- old autocomplete popup */
 /* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/  /* <--- old autocomplete popup + url only */
 /* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
 /* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/ /* default popup + two lined results*/
-/*  - for Firefox 72+ ('about:config > browser.urlbar.update1 > false') *************************/
+/*  - for Firefox 72-76 ('about:config > browser.urlbar.update1 > false') ***********************/
 /* @import "./css/locationbar/ac_popup_default_with_two_lines_fx72.css"; /**/ /* default popup + two lined results*/
 
 /* result menuitem settings/appearance **********************************************************/
-/* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 /* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/
 /* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* Fx60-Fx67 only */
 /* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/ /* Fx60-Fx67 only */
@@ -759,28 +785,6 @@
 /* [!] Hiding will not work properly in all cases. Sometimes an empty box will be visible. ******/
 /* [!] Suggested to use aboves 'custom popup height' and to increase amount of result items. ****/
 /* @import "./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css"; /**/  /* <--- EXPERIMENTAL */
-
-
-/************************************************************************************************/
-/* MEGABAR POPUP - appearance of 'megabar' & 'megabar popup' (Firefox 75+ by default) ***********/
-/* about:config > browser.urlbar.update1 > true (present since Firefox 72+) *********************/
-/************************************************************************************************/
-
-@import "./css/locationbar/megabar_optimizations.css"; /**/
-
-/* popup content order/appearance - [only use one at a time] ************************************/
-/* @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/ /* for tile+url only, not for heuristic items like 'visit', 'search' etc. */
-/* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
-
-/* result menuitem settings/appearance **********************************************************/
-/* @import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
-
-
-/* LOCATION BAR / MEGABAR - results *************************************************************/
-@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
 
 
 /************************************************************************************************/

@@ -8,7 +8,7 @@
 /* [!] NOT A STANDALONE FILE! */
 /* [!] This code does not achieve the requested result without above files content! */
 
-.megabar .urlbarView-url {
+#urlbar .urlbarView-url {
   position: absolute !important;
   display: block !important;
   margin-inline-start: 0px !important;
@@ -17,7 +17,7 @@
   left: calc(6px + 2px + 16px) !important;
 }
 
-.megabar .urlbarView-title {
+#urlbar .urlbarView-title {
   position: absolute !important;
   display: block !important;
   left: calc(50% + 10px) !important;
@@ -25,8 +25,8 @@
   width: calc(50% - 18px) !important;
 }
 
-.megabar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-.megabar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
   left: calc(6px + 2px + 16px) !important;
@@ -34,13 +34,13 @@
 
 /* use different width values to go from  50/50 to e.g. 40/60 */
 /*
-.megabar .urlbarView-url {
+#urlbar .urlbarView-url {
   margin-inline-start: 0px !important;
   min-width: calc(40% - 18px) !important;
   width: calc(40% - 18px) !important;
 }
 
-.megabar .urlbarView-title {
+#urlbar .urlbarView-title {
   min-width: calc(60% - 18px) !important;
   width: calc(60% - 18px) !important;
   left: calc(40% + 10px) !important;

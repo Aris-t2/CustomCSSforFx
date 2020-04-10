@@ -2,10 +2,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
-/* hide visit and search items*/
-#urlbar .urlbarView-row[type="switchtab"],
-#urlbar .urlbarView-row[type="search"],
-#urlbar .urlbarView-row:not([has-url="true"]) {
-   display: none !important;
+#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView {
+    display: none !important;
 }
