@@ -4,11 +4,11 @@
 
 
 /* compact results */
-.megabar .urlbarView-row {
+#urlbar .urlbarView-row {
   padding-block: 0px !important;
 }
 
-.megabar .urlbarView.megabar {
+#urlbar .urlbarView {
   margin-inline: unset !important;
   width: 100% !important;
 }
@@ -17,4 +17,9 @@
 #urlbar .search-one-offs {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+#urlbar #urlbar-results {
+  padding: 0px !important;
+  margin: 0px !important;
 }

@@ -3,6 +3,6 @@
 /****************************************************************************************/
 
 
-#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView {
+#urlbar .search-one-offs {
   display: none !important;
 }

@@ -25,6 +25,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-color: Highlight !important;
   color: HighlightText !important;
 }
+
 /**/
 
 #main-window:not(:-moz-lwtheme) #PersonalToolbar #bookmarks-menu-button::after,

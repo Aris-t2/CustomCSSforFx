@@ -93,6 +93,7 @@
 	
 	#firefoxAccountCategory {
 	  margin-top: 20px !important;
+	  visibility: hidden !important;
 	}
 	
 	/* category icons */

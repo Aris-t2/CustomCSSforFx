@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 3.0.7 ********************************************************************************/
+/* version 3.0.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -699,6 +699,11 @@
 /* general popup/results settings ***************************************************************/
 @import "./css/locationbar/ac_popup_result_font_size.css"; /**/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
+
+/* selection color / force selection color on themes without predefined selection color *********/
+/* @import "./css/locationbar/selection_color_for_dark_bg.css"; /**/
+/* @import "./css/locationbar/selection_color_for_bright_bg.css"; /**/
+
  
 /************************************************************************************************/
 /* MEGABAR - settings for 'megabar' & 'megabar popup' (active in Firefox 75+ by default) ********/
@@ -706,7 +711,7 @@
 /************************************************************************************************/
 
 @import "./css/locationbar/megabar_optimizations.css"; /**/
-@import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
+/* @import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
 /* @import "./css/locationbar/megabar_border_roundness.css"; /**/
 /* @import "./css/locationbar/megabar_background_color_dark.css"; /**/
 
@@ -719,6 +724,7 @@
 /* result menuitem settings/appearance **********************************************************/
 /* @import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_search_engines_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
 
 

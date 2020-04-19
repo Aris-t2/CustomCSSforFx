@@ -34,8 +34,8 @@
 	#categories .category.selected:hover,
 	#categories .category[selected]:hover:active,
 	#categories .category.selected:hover:active {
-	  color: var(--in-content-category-text-hover) !important;
-	  background-color: var(--in-content-category-background-hover) !important;
+	  color: var(--in-content-category-text-selected) !important;
+	  background-color: var(--in-content-category-background-selected) !important;
 	}
 
 	.category {
@@ -149,6 +149,7 @@
 	  filter: brightness(2.00) !important;
 	}
 	
+	.category[name]:not([selected]):hover,
 	#category-discover:not([selected="true"]):hover .category-icon,
 	#category-theme:not([selected="true"]):hover .category-icon{
 	  filter: brightness(1.5) !important;
@@ -390,7 +391,7 @@
 	}
 	
 	.main-heading {
-	  margin-top: -30px !important;
+	  margin-top: -26px !important;
 	}
 	
 	.main-heading .header-name,

@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
-#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView {
-  display: none !important;
+#nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection,
+#nav-bar:-moz-lwtheme-brighttext #urlbar ::-moz-selection{
+  background-color: HighlightText !important;
+  color: Highlight !important;
 }

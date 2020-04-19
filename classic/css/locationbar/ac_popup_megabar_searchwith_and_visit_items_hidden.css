@@ -4,8 +4,12 @@
 
 
 /* hide visit and search items*/
-#urlbar .urlbarView-row[type="switchtab"],
-#urlbar .urlbarView-row[type="search"],
-#urlbar .urlbarView-row:not([has-url="true"]) {
-   display: none !important;
+:-moz-any(#urlbar,.megabar) .urlbarView-row:-moz-any([type="switchtab"],[type="search"]),
+:-moz-any(#urlbar,.megabar) .urlbarView-row:not([has-url="true"]) {
+  display: none !important;
+}
+
+#urlbar #urlbar-results {
+  padding: 0px !important;
+  margin: 0px !important;
 }

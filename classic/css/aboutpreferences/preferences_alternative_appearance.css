@@ -75,6 +75,10 @@
 	  visibility: collapse !important;
 	}
 	
+	#firefoxAccountCategory {
+	  visibility: hidden !important;
+	}
+	
 	/* main colors category items */
 	#categories .category[selected]{
 	  background-color: white !important;
