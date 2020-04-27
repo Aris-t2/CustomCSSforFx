@@ -16,7 +16,7 @@
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
   position: absolute !important;
-  display:block !important;
+  display: block !important;
   bottom: 1px !important;
   min-width: 0 !important;
   width: auto !important;
@@ -47,7 +47,8 @@
   max-width: 50vw !important;
 }
 
-/* megabar optimizations workaround */
-:root {
-  --workaround_value: -13px !important;
+/* workaround for megabar_expanding_breakout_disabled.css */
+#main-window #nav-bar #urlbar[breakout],
+#main-window #nav-bar #urlbar[breakout][breakout-extend] {
+  top: calc(-13px + ((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
 }

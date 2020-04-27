@@ -3,23 +3,42 @@
 /****************************************************************************************/
 
 
-/* compact results */
-#urlbar .urlbarView-row {
-  padding-block: 0px !important;
+/* disable useless space wasting inside popup */
+#urlbar[breakout][breakout-extend] > .urlbarView {
+  padding: unset !important;
+  margin: unset !important;
 }
 
-#urlbar .urlbarView {
+#urlbar[breakout] .urlbarView {
   margin-inline: unset !important;
   width: 100% !important;
 }
 
-/* reduce space around search engines */
-#urlbar .search-one-offs {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-}
-
-#urlbar #urlbar-results {
+/* disable space wasting inside popup around result items */
+#urlbar[breakout] #urlbar-results {
   padding: 0px !important;
   margin: 0px !important;
+}
+#urlbar[breakout] #urlbar-results .urlbarView-body-outer,
+#urlbar[breakout] #urlbar-results .urlbarView-row,
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  -moz-padding-end: 0 !important;
+}
+
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}
+
+#urlbar[breakout] .urlbarView-row {
+  padding-block: 0px !important;
+}
+
+/* disable space wasting inside popup around search engines */
+#urlbar[breakout] .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
