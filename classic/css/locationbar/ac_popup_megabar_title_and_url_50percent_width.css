@@ -25,6 +25,11 @@
   left: calc(50% + 10px) !important; /* 50% + 10px url space */
 }
 
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: calc(50% + 0px) !important;
+}
+
 #urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-inline-start: unset !important;
 }
@@ -68,5 +73,9 @@
   position: absolute !important;
   display: block !important;
   left: calc(40% + 10px) !important;
+}
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: calc(40% + 0px) !important;
 }
 */
