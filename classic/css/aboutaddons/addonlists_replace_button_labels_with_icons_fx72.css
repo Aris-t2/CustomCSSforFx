@@ -67,7 +67,7 @@
 	}
 	
 	panel-item[data-l10n-id="preferences-addon-button"] {
-	  --icon: url("chrome://browser/skin/settings.svg") !important;
+	  --icon: url("chrome://browser/skin/developer.svg") !important; /* settings.svg */
 	}
 	
 	panel-item[data-l10n-id="report-addon-button"] {

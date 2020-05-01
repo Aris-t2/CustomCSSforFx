@@ -24,7 +24,7 @@
 	}
 	/**/
 	
-	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
+	addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
 	.more-options-menu panel-item {
 	  background: white !important;
 	  color: black !important;
@@ -32,36 +32,36 @@
 	  border: 1px solid lightgrey !important;
 	}
 	
-	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):not([badged]),
-	addon-list panel-item:not([badged]){
+	addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):not([badged]),
+	.addon.card panel-item:not([badged]){
 	  border: 1px solid lightgrey !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) panel-list * {
+	addon-list addon-card panel-list * {
 	  background: white !important;
 	  color: black !important;
 	}
 	
-	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):hover,
-	addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):active {
+	addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):hover,
+	addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):active {
 	  border: 1px solid black !important;
 	}
 	
 	@supports -moz-bool-pref("browser.in-content.dark-mode") {
 	  @media (prefers-color-scheme: dark) {
-		addon-list addon-card:not([expanded="true"]) panel-list *,
-		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
+		addon-list addon-card panel-list *,
+		addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
 		.more-options-menu panel-item {
 		  background: black !important;
 		  color: white !important;
 	    }
-		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):hover,
-		addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):active {
+		addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):hover,
+		addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):active {
 		  border: 1px solid white !important;
 		}
 	}}
 	
-	addon-list panel-item{
+	:-moz-any(addon-list,panel-list) panel-item{
 	  margin: 0 1px !important;
 	}
 	
@@ -79,7 +79,7 @@
 	/* remove button icon */
 	:host([checked]),
 	panel-item[checked],
-	addon-list panel-item {
+	:-moz-any(addon-list,panel-list) panel-item {
 	  --icon: unset !important;
 	}
 	
@@ -136,7 +136,7 @@
 	  background: url("chrome://global/skin/icons/check.svg") 5px no-repeat !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) panel-list {
+	addon-card panel-list {
 	  position: relative !important;
 	  display: flex !important;
 	  overflow: hidden !important;
@@ -149,11 +149,11 @@
 	  right: 36px !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) panel-list {
+	addon-card panel-list {
 	  margin-top: -48px !important;
 	}
 
-	addon-list addon-card:not([expanded="true"]) .addon.card .theme-enable-button {
+	addon-card .addon.card .theme-enable-button {
 	  -moz-appearance: none !important;
 	  min-width: 20px !important;
 	  width: 20px !important;
@@ -166,35 +166,39 @@
 	  opacity: 0.9 !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) .addon.card .theme-enable-button:hover {
+	addon-card .addon.card .theme-enable-button:hover {
 	  cursor: pointer !important;
 	  opacity: 1.0 !important;
 	  filter: brightness(2.00) !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) .addon.card[active="true"] .theme-enable-button {
+	addon-card .addon.card[active="true"] .theme-enable-button {
 	  background: Highlight url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]):hover .addon.card[active="true"] .theme-enable-button {
+	addon-card:hover .addon.card[active="true"] .theme-enable-button {
 	  background: red url("chrome://browser/skin/zoom-out.svg") 2px no-repeat !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]):hover .addon.card[active="false"] .theme-enable-button {
+	addon-card:hover .addon.card[active="false"] .theme-enable-button {
 	  background: green url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
 	
-	addon-list[type="theme"] addon-card:not([expanded="true"]) .card-contents{
+	addon-list[type="theme"] addon-card .card-contents{
 	  height: 40px !important;
 	}
 
-	addon-list addon-card:not([expanded="true"]) .addon.card .theme-enable-button,
+	addon-card .addon.card .theme-enable-button,
 	input[type="checkbox"].toggle-button {
 	  -moz-margin-end: 8px !important;
 	}
 	
-	addon-card:not([expanded]) > .addon.card,
-	addon-card:not([expanded]) > .addon.card * {
+	.card-contents input[type="checkbox"].toggle-button {
+	  -moz-margin-end: 0px !important;
+	}
+	
+	addon-card > .addon.card,
+	addon-card > .addon.card * {
 	  overflow: hidden !important;
 	}
 

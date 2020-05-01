@@ -26,9 +26,8 @@
   border-radius: 0px !important;
 }
 
-/* disable ugly animations */
-#urlbar[breakout],
-#urlbar[breakout] * {
+/* disable 'breakout' animation */
+#urlbar[breakout] {
   animation: unset !important;
   duration: unset !important;
 }

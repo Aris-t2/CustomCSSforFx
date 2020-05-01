@@ -16,39 +16,39 @@
 	  display: none !important;
 	}
 	
-	addon-card:not([expanded="true"]) .addon.card {
+	addon-card .addon.card {
 	  margin-top: 0 !important;
 	  margin-bottom: 0 !important;
 	  padding-top: 0 !important;
 	  padding-bottom: 0 !important;
-	  -moz-padding-start: 2px !important;
+	 /* -moz-padding-start: 2px !important;*/
 	  min-height: 40px !important;
 	}
 	
-	addon-list addon-card:not([expanded="true"]) panel-list {
+	addon-card panel-list {
 	  position: absolute !important;
 	  margin-top: -44px !important;
-	  right: 45px !important;
+	  right: 46px !important;
 	}
 	
-	addon-card:not([expanded="true"]) .card-heading-icon {
+	addon-card .card-heading-icon {
 	  margin-inline-end: 2px !important;
 	}
 
-	addon-card:not([expanded="true"]) .card-heading-image {
+	addon-card .card-heading-image {
 	  object-fit: unset !important;
 	  margin: 0 !important;
 	}
 
-	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) button[data-l10n-id="enable-addon-button"]{
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]{
 	  margin-top: 4px !important;;
 	}
 
-	body div#main div[current-view="list"] addon-list[type="theme"] addon-card:not([expanded="true"]) .spacer {
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card .spacer {
 	  display: none !important;
 	}
 	
-	body div#main div[current-view="list"] addon-list:-moz-any([type="theme"]) addon-card:not([expanded="true"]) .card-contents{
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card .card-contents{
 	  height: 50px !important;
 	}
 	

@@ -40,6 +40,7 @@
 
 	.category {
 	  margin-inline-start: 0px !important;
+	  transition: none !important;
 	}
 	
 	/* dimensions / positioning */
