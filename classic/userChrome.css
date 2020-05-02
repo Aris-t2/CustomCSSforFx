@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+)***********************************/
-/* version 3.1.1 ********************************************************************************/
+/* version 3.1.2 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -719,7 +719,7 @@
 /* popup content order/appearance - [only use one at a time] ************************************/
 @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/ /* for tile+url only, not for heuristic items like 'visit', 'search' etc. */
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
 
 /* result menuitem settings/appearance **********************************************************/

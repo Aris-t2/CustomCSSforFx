@@ -22,3 +22,24 @@
 #urlbar .urlbarView-results > .urlbarView-row[type=remotetab]:not([selected]):not(:hover) {
   display: none !important;
 }
+
+
+/* support for heuristic items: search, remote tab, switch to tab */  
+/* :-moz-any([type=search],[type=remotetab],[type=switchtab]) != :not([has-url="true"]) */
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=search],[type=remotetab],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator {
+  display: none !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=search],[type=remotetab],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap,
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap {
+  padding-bottom: 19px !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=search],[type=remotetab],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  display: block !important;
+  margin-bottom: -19px !important;
+  position: absolute !important;
+  padding-inline-start: calc(6px + 2px + 16px) !important;
+}

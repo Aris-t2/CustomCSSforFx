@@ -3,9 +3,25 @@
 /****************************************************************************************/
 
 
-#urlbar[focused="true"]:not([usertyping="true"]) #urlbar-background,
-#urlbar:not([open]) #urlbar-background,
-#urlbar,#urlbar-input-container,
+#urlbar #urlbar-background,
+#urlbar, #urlbar-input-container,
 #searchbar, .searchbar-textbox {
   border-radius: 20px !important;
+}
+
+#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView,
+#urlbar .search-one-offs,
+#urlbar .search-one-offs .search-panel-header,
+#urlbar .search-one-offs .search-panel-one-offs-container {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+#urlbar .search-one-offs .search-setting-button-compact {
+  border-bottom-right-radius: 20px !important;
+}
+
+#urlbar[focused="true"][open] #urlbar-input-container {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
