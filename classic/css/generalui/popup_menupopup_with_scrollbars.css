@@ -29,3 +29,12 @@ link[href$="global.css"] ~ scrollbox {
 link[href$="global.css"] ~ .menupopup-scrollbutton {
   display: none !important;
 }
+
+/* Fx76+ */
+link[href$="arrowscrollbox.css"] ~ scrollbox {
+  overflow-y: auto !important;
+}
+
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-up,
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-down {
+  display: none !important;

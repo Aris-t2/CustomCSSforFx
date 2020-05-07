@@ -31,3 +31,10 @@
   fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
+
+/* Fx76+ fix */
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down) {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+}

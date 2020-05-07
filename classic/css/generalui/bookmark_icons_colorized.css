@@ -72,7 +72,6 @@ treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
   -moz-image-region: auto !important;
 }
 
-
 .bookmark-item[container] {
   list-style-image: url("./../../image/folder-item.png") !important;
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
@@ -99,6 +98,11 @@ treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
 
 .bookmark-item[container][query] {
   list-style-image: url("./../../image/query.png") !important;
+  -moz-image-region: auto !important;
+}
+
+#scrollbutton-up .toolbarbutton-icon,
+#scrollbutton-down .toolbarbutton-icon {
   -moz-image-region: auto !important;
 }
 

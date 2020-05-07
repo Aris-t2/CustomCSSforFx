@@ -47,17 +47,19 @@
 
 /* FIREFOX 68+ #################################################################################*/
 /* addons page appearance - [only use one at a time] (incl. version number & buttons) ***********/
-@import "./css/aboutaddons/addons_manager_alternative_appearance_fx68.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_fx68.css"; /**/
+@import "./css/aboutaddons/addons_manager_alternative_appearance_fx75.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx68.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx75.css"; /**/	/* <-- AERO colors */
 
 /* version number for active add-ons [Fx 68+] ***************************************************/
 @import "./css/aboutaddons/addonlists_show_addon_version_number_fx68.css"; /**/
 
 /* compact item lists - [only use one at a time] ************************************************/
-/* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
-/* @import "./css/aboutaddons/addonlists_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
-/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68 */
-/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68 */
+/* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68+ */
+/* @import "./css/aboutaddons/addonlists_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68+ */
+/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68+ */
+/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx72.css"; /**/ /* best with alternative_appearance_fx68+ */
 
 /* button settings (requires addons_manager_alternative_appearance_fx68) ************************/
 /* - buttons instead of menupopup - [only use one at a time] ************************************/
@@ -69,6 +71,7 @@
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx72.css"; /**/
 /* - other button settings **********************************************************************/
+/* @import "./css/aboutaddons/addonlists_hide_buttons_on_details_page_fx72.css"; /**/ /* if addonlists_show_buttons_instead_of_menu_popup_fx72.css is active */
 /* @import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
 /* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requires replace_button_labels_with_icons option */

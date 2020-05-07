@@ -96,6 +96,8 @@
 
 /* tab height */
 #tabbrowser-tabs,
+#tabbrowser-arrowscrollbox,
+#tabbrowser-tabs[positionpinnedtabs] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[pinned],
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
   min-height: var(--tab-min-height_tnot) !important;
@@ -255,7 +257,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 /* scroll buttons */
 #TabsToolbar:not(:-moz-lwtheme) #alltabs-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-arrowscrollbox > .scrollbutton-up,
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-arrowscrollbox > .scrollbutton-down {
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-arrowscrollbox > .scrollbutton-down,
+#TabsToolbar:not(:-moz-lwtheme) #tabbrowser-arrowscrollbox > #scrollbutton-up,
+#TabsToolbar:not(:-moz-lwtheme) #tabbrowser-arrowscrollbox > #scrollbutton-down {
   fill: black !important;
 }
 

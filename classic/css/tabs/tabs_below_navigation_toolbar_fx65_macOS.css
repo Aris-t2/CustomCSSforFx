@@ -26,7 +26,8 @@
   right: unset !important;
 }
 
-#tabbrowser-tabs .tabbrowser-arrowscrollbox {
+#tabbrowser-tabs .tabbrowser-arrowscrollbox,
+#tabbrowser-tabs #tabbrowser-arrowscrollbox {
   margin-top: -1px !important;
   margin-bottom: 1px !important;
 }

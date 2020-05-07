@@ -183,9 +183,15 @@
 	addon-card:hover .addon.card[active="false"] .theme-enable-button {
 	  background: green url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
-	
-	addon-list[type="theme"] addon-card .card-contents{
+
+	addon-card .card-contents {
+	  display: block !important;
 	  height: 40px !important;
+	}
+	
+	addon-card .card-contents .addon-description {
+	  display: block !important;
+	  mask-image: linear-gradient(to left, transparent, black 10px) !important;
 	}
 
 	addon-card .addon.card .theme-enable-button,
