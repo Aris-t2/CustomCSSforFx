@@ -38,3 +38,4 @@ link[href$="arrowscrollbox.css"] ~ scrollbox {
 link[href$="arrowscrollbox.css"] ~ #scrollbutton-up,
 link[href$="arrowscrollbox.css"] ~ #scrollbutton-down {
   display: none !important;
+}
