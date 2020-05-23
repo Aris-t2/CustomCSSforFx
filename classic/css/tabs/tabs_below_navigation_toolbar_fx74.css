@@ -53,3 +53,9 @@
 	  top: -5px !important;
 	}
 }
+
+toolbarbutton#scrollbutton-up[part="scrollbutton-up"],
+toolbarbutton#scrollbutton-down[part="scrollbutton-down"] {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+}

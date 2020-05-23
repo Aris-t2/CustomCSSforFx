@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-:-moz-any(#urlbar-background, #searchbar, .searchbar-textbox) {
+:-moz-any(#urlbar-background, #urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
   background-color: black !important;
   color: lightgrey !important;
 }

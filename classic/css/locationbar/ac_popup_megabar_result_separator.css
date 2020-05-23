@@ -1,0 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+.urlbarView-row + .urlbarView-row {
+  border-top: 1px solid lightgrey !important;
+  border-bottom: 1px solid transparent !important;
+}

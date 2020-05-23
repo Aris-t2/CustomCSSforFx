@@ -184,10 +184,10 @@
 	  background: green url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
 
-	addon-card .card-contents {
+	/*addon-card .card-contents {
 	  display: block !important;
 	  height: 40px !important;
-	}
+	}*/
 	
 	addon-card .card-contents .addon-description {
 	  display: block !important;
@@ -207,5 +207,66 @@
 	addon-card > .addon.card * {
 	  overflow: hidden !important;
 	}
+	
+	/**/
+	
+#main > div:-moz-any([current-view="list"], [current-view="updates"]) .addon.card {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+	
+.addon-card-collapsed {
+	flex: 1;
+	min-width: 1px;
+}
+
+addon-card .card-contents {
+	height: unset !important;
+}
+
+#main > div:-moz-any([current-view="list"], [current-view="updates"]) .toggle-button {
+	position: absolute;
+	right: 8px !important;
+}
+
+.addon-card-message {
+	order: 3;
+}
+
+addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
+	display: block;
+	position: relative;
+	overflow: unset !important;
+}
+
+#main > div:-moz-any([current-view="list"], [current-view="updates"]) > [type="extension"] addon-options {
+	margin-inline-end: 35px;
+}
+
+#main > div:not([current-view="detail"]) :-moz-any(addon-options, plugin-options) {
+	margin-top: -9px;
+	margin-inline-end: -5px;
+}
+
+addon-card panel-list {
+	margin-top: unset !important;
+	right: unset !important;
+	float: unset !important;
+}
+	
+#main > div[current-view="detail"] addon-details > .tab-group {
+	display: block !important;
+}
+	
+#main > div[current-view="detail"] :-moz-any(plugin-options, addon-options) > panel-list {
+	position: absolute !important;
+	top: 8px;
+	right: 0 !important;
+}
+	
+	
+	
+	
 
 }

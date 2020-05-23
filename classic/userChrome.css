@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+)***********************************/
-/* version 3.1.3 ********************************************************************************/
+/* version 3.1.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -727,6 +727,7 @@
 /* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_search_engines_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_result_separator.css"; /**/
 
 
 /* [!] Location bar settings below will stop working in Firefox 77+. Use megabar settings! [!] **/
