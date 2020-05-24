@@ -356,6 +356,7 @@
 /* - Fx 72-73 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
 /* - Fx 74+ Windows/Linux ***********************************************************************/
+/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
 /* - Fx 74+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS.css"; /**/
