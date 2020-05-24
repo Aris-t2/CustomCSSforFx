@@ -21,8 +21,8 @@
 	  margin-bottom: 0 !important;
 	  padding-top: 0 !important;
 	  padding-bottom: 0 !important;
-	 /* -moz-padding-start: 2px !important;*/
 	  min-height: 40px !important;
+	  padding-inline-start: 2px !important;
 	}
 	
 	addon-card panel-list {
@@ -41,15 +41,7 @@
 	}
 
 	body div#main div[current-view="list"] addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]{
-	  margin-top: 4px !important;;
-	}
-
-	body div#main div[current-view="list"] addon-list[type="theme"] addon-card .spacer {
-	  display: none !important;
-	}
-	
-	body div#main div[current-view="list"] addon-list[type="theme"] addon-card .card-contents{
-	  height: 50px !important;
+	  margin-top: 5px !important;;
 	}
 	
 }

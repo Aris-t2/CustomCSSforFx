@@ -163,7 +163,7 @@
 /************************************************************************************************/
 
 /* logins page appearance - [only use one at a time] ********************************************/
-/* @import "./css/aboutlogins/aboutlogins_alternative_appearance.css"; /**/
+@import "./css/aboutlogins/aboutlogins_alternative_appearance.css"; /**/
 /* @import "./css/aboutlogins/aboutlogins_alternative_appearance_aero.css"; /**/
 
 
