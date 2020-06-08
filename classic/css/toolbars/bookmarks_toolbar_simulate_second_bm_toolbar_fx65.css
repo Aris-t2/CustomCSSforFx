@@ -67,4 +67,18 @@
 }
 */
 
-/**/
+/* fix for megabar */
+#urlbar[breakout],
+#urlbar[breakout][breakout-extend] {
+  top: 5px !important;
+}
+
+:root[uidensity="compact"] #urlbar[breakout],
+:root[uidensity="compact"] #urlbar[breakout][breakout-extend] {
+  top: 3px !important;
+}
+
+:root[uidensity="touch"] #urlbar[breakout],
+:root[uidensity="touch"] #urlbar[breakout][breakout-extend] {
+  top: 4px !important;
+}

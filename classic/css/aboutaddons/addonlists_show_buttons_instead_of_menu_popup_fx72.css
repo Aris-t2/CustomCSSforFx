@@ -240,7 +240,7 @@ addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
 	overflow: unset !important;
 }
 
-#main > div:-moz-any([current-view="list"], [current-view="updates"]) > [type="extension"] addon-options {
+#main > div:-moz-any([current-view="list"], [current-view="updates"]) > :-moz-any([type="extension"],[type="all"]) addon-options {
 	margin-inline-end: 35px;
 }
 
