@@ -216,7 +216,7 @@
 	}
 
 	#header-search {
-	  padding: 0 0px !important;
+	  padding: 0px 0px !important;
 	  min-width: 200px !important;
 	  width: unset !important;
 	}
@@ -318,12 +318,15 @@
 	  }
 		
 	}}
-
+	
 	.addon.card {
-	  margin-bottom: 1px !important;
 	  box-shadow: unset !important;
-	  border: 0 !important;
+	  margin-bottom: 1px !important;
 	  border-radius: 0 !important;
+	}
+
+	addon-card:not([expanded]) > .addon.card {
+	  border: 0 !important;
 	}
 	
 	addon-card:not([expanded="true"]) .addon.card:hover {
@@ -391,6 +394,10 @@
 	  z-index: 1000 !important;
 	}
 	
+	.main-search {
+	  margin-top: 1px !important;
+	}
+	
 	.main-heading {
 	  margin-top: -26px !important;
 	}
@@ -407,10 +414,13 @@
 	  font-size: 12px !important;
 	}
 	
+	.main-heading .back-button,
 	.page-options-menu > .more-options-button {
-	  margin: 2px !important;
-	  width: 48px !important;
-	  height: 24px !important;
+	  margin: 3px 0.5px 2px 0.5px !important;
+	  min-width: unset !important;
+	  width: 58px !important;
+	  min-height: unset !important;
+	  height: 22px !important;
 	}
 	
 	addon-page-options panel-list {
@@ -429,6 +439,5 @@
 	.card-heading-image {
 	  margin: unset !important;
 	}
-	
 	
 }

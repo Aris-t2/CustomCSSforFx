@@ -28,6 +28,10 @@
 	  padding-inline-start: 2px !important;
 	}
 	
+	addon-card panel-list {
+	  margin-top: 1px !important;
+	}
+
 	.addon.card .addon-description {
 	  visibility: hidden !important;
 	}

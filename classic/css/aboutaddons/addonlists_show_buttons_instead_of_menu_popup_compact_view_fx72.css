@@ -26,9 +26,7 @@
 	}
 	
 	addon-card panel-list {
-	  position: absolute !important;
-	  margin-top: -44px !important;
-	  right: 46px !important;
+	  margin-top: 4px !important;
 	}
 	
 	addon-card .card-heading-icon {

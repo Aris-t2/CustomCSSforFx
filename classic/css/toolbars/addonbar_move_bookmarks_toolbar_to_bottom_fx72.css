@@ -18,3 +18,11 @@
 #PersonalToolbar #personal-bookmarks {
   max-width: 90vw !important;
 }
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  border-top: 1px solid rgba(204,204,204,0.8) !important;
+}
+
+#tracking-protection-icon-animatable-box {
+  visibility: inherit !important;
+}
