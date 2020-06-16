@@ -7,7 +7,7 @@
 --> https://github.com/Aris-t2/CustomCSSforFx/issues/4
 4. Verify there are no '@namespace' references anywhere in your custom code.
 5. Use available support threads:
-- GENERAL DISCUSSIONS, FEEDBACK, QUESTIONS --> https://github.com/Aris-t2/CustomCSSforFx/issues/273
+- GENERAL DISCUSSIONS, FEEDBACK, QUESTIONS --> https://github.com/Aris-t2/CustomCSSforFx/issues/308
 - TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
 - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/39
 - ADD-ON BAR SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/73
