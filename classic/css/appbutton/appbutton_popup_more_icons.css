@@ -93,7 +93,8 @@
 }
 
 #PanelUI-developerItems toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon {
-	-moz-context-properties: fill;
+	-moz-context-properties: fill, fill-opacity;
+	 fill-opacity: 0;
 	 list-style-image: url("chrome://devtools/skin/images/command-responsivemode.svg");
 }
 
