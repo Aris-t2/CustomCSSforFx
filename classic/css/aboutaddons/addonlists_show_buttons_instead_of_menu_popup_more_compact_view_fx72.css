@@ -13,7 +13,7 @@
 	
 	recommended-themes-section,
 	recommended-extensions-section,
-	addon-card .card-heading-image {
+	addon-list[type="theme"] addon-card > .addon.card .card-heading-image {
 	  display: none !important;
 	}
 
@@ -40,4 +40,21 @@
 	  margin-inline-end: 2px !important;
 	}
 	
+	addon-list[type="theme"] .card-heading-image {
+	  position: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card > .addon.card {
+	  height: unset !important;
+	}
+
+	addon-list[type="theme"] .card-contents {
+	  margin-top: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: 1px !important;
+	  margin-inline-end: 6px !important;
+	}
+
 }

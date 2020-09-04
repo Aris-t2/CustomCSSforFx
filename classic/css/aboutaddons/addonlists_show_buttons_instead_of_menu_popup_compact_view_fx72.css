@@ -42,4 +42,29 @@
 	  margin-top: 5px !important;;
 	}
 	
+	
+	/* small image */ 
+	addon-list[type="theme"] .card-heading-image {
+	  width: 200px !important;
+	  height: 40px !important;
+	  object-fit: unset !important;
+	}
+
+	addon-list[type="theme"] .card-heading-image {
+	  position: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card > .addon.card {
+	  height: unset !important;
+	}
+
+	addon-list[type="theme"] .card-contents {
+	  margin-top: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: 4px !important;
+	  margin-inline-end: 6px !important;
+	}
+	
 }

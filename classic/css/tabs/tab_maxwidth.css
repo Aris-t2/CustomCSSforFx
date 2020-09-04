@@ -21,7 +21,7 @@
 */
 
 /* tab max-width */
-#tabbrowser-tabs:not([overflow="true"]) .tabbrowser-tab[fadein]:not([pinned]) {
+#tabbrowser-tabs:not([overflow="true"]):not([using-closing-tabs-spacer="true"]) .tabbrowser-tab[fadein]:not([pinned]) {
   max-width: var(--tab_max_width) !important;
   overflow: hidden !important;
 }

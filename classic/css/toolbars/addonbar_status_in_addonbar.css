@@ -2,6 +2,9 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+:root {
+  --status-width: 400px;
+}
 
 .browserContainer :-moz-any(statuspanel,#statuspanel) {
   -moz-box-ordinal-group: 3 !important;
@@ -24,9 +27,9 @@
   border: 0 !important;
   box-shadow: none !important;
   pointer-events: none !important;
-  min-width: 400px !important;
-  width: 400px !important;
-  max-width: 400px !important;
+  min-width: var(--status-width) !important;
+  width: var(--status-width) !important;
+  max-width: var(--status-width) !important;
   color: black !important;
 }
 
@@ -37,11 +40,11 @@
 
 /* add space for status text on add-on bar */
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
-  padding-left: 400px !important;
+  padding-left: var(--status-width) !important;
 }
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):-moz-locale-dir(rtl) {
-  padding-right: 400px !important;
+  padding-right: var(--status-width) !important;
 }
 
 #statuspanel[mirror] {

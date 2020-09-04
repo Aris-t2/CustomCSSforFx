@@ -264,9 +264,32 @@ addon-card panel-list {
 	top: 8px;
 	right: 0 !important;
 }
-	
-	
-	
-	
+
+/* small image */ /*
+addon-list[type="theme"] .card-heading-image {
+  width: 200px !important;
+  height: 40px !important;
+  object-fit: unset !important;
+  padding-bottom: 50px !important;
+}
+/**/
+
+addon-list[type="theme"] .card-heading-image {
+  position: absolute !important;
+}
+
+addon-list[type="theme"] addon-card > .addon.card {
+  height: 144px;
+}
+
+addon-list[type="theme"] .card-contents {
+  margin-top: 100px !important;
+}
+
+addon-list[type="theme"] addon-card panel-list {
+  margin-top: 100px !important;
+  margin-inline-end: 6px !important;
+}
+
 
 }

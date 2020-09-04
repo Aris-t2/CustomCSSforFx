@@ -4,8 +4,8 @@
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+)***********************************/
-/* version 3.1.6 ********************************************************************************/
+/* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
+/* version 3.1.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -409,8 +409,10 @@
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* Fx 60-65 */
 /* @import "./css/tabs/tabs_multiple_lines_fx66.css"; /**/  /* Fx 66-70 */
 /* @import "./css/tabs/tabs_multiple_lines_fx66_force_newtab_button_visibility.css"; /**/  /* Fx 66-70 */  
-/* @import "./css/tabs/tabs_multiple_lines_fx71.css"; /**/  /* Fx 71+ */
-/* @import "./css/tabs/tabs_multiple_lines_fx71_force_newtab_button_visibility.css"; /**/  /* Fx 71+ */
+/* @import "./css/tabs/tabs_multiple_lines_fx71.css"; /**/  /* Fx 71-80 */
+/* @import "./css/tabs/tabs_multiple_lines_fx71_force_newtab_button_visibility.css"; /**/  /* Fx 71-80 */
+/* @import "./css/tabs/tabs_multiple_lines_fx81.css"; /**/  /* Fx 81+ */
+/* @import "./css/tabs/tabs_multiple_lines_fx81_force_newtab_button_visibility.css"; /**/  /* Fx 81+ */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
 /* [!] some internal pages only show default browser title **************************************/
