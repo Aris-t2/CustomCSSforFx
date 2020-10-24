@@ -624,6 +624,7 @@
 
 /* BOOKMARKS TOOLBAR ****************************************************************************/
 @import "./css/toolbars/bookmarks_toolbar_old_height.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_fixed_width.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_autohide.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
