@@ -1,0 +1,68 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(.browserContainer, #viewSource) .findbar-container :-moz-any(spacer, .findbar-find-fast[anonid="match-case-status"]) {
+  visibility: collapse;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton {
+  padding: 0 !important;
+  margin: 0 !important;
+  -moz-margin-end: 2px !important;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton  .toolbarbutton-icon{
+  width: 16px !important;
+  height: 16px !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-textbox {
+  font-size: 14px !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  display: inherit !important;
+  margin-top: -1px !important;
+  box-shadow: unset !important;
+  border: 1px solid #e1e1e2 !important;
+  border-top: 0px solid transparent !important;
+  border-radius: 0 0 3px 3px;
+  transition-property: margin-top, opacity, visibility !important;
+  background-image: unset !important;
+  z-index: 1000000 !important;
+}
+
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  -moz-appearance: none !important;
+  border: 1px solid var(--tabs-border-color) !important;
+  border-top: 0px solid transparent !important;
+}
+
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  -moz-appearance: none !important;
+  background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  -moz-margin-end: -18px !important;
+  -moz-padding-end: 18px !important;
+}
+
+
+:-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 4px !important;
+  font-weight: bold !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  font-style: italic !important;
+}
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  color: red !important;
+}
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .found-matches {
+  color: green !important;
+}
+#main-window:-moz-lwtheme-brighttext :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  color: white !important;
+}

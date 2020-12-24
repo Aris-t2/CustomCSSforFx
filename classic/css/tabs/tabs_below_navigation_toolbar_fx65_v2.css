@@ -170,7 +170,7 @@
 #main-window[tabsintitlebar][sizemode="fullscreen"] * #TabsToolbar {
  -moz-padding-start: 0px !important;
 }
-/* tweaks for fullscreen mode */
+
 #main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button,
@@ -229,10 +229,10 @@
 /* show window caption buttons in fullscreen mode */
 #main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #TabsToolbar #window-controls {
   position: absolute !important;
-  display: block !important;
+  display: flex !important;
   top: 0 !important;
   right: 0 !important;
-  margin-top: -32px !important;
+  /*margin-top: -32px !important;*/
   z-index: 1000 !important;
 }
 
@@ -256,6 +256,10 @@
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"]:-moz-lwtheme #TabsToolbar #window-controls * {
 	  color: white !important;
 	  fill: white !important;
+	}
+	
+	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #nav-bar {
+	  -moz-padding-end: 40px !important;
 	}
 
 }

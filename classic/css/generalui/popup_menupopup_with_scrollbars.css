@@ -31,7 +31,8 @@ link[href$="global.css"] ~ .menupopup-scrollbutton {
 }
 
 /* Fx76+ */
-link[href$="arrowscrollbox.css"] ~ scrollbox[orient="vertical"] {
+link[href$="arrowscrollbox.css"] ~ scrollbox[orient="vertical"],		/* Fx76-80 */
+link[href$="arrowscrollbox.css"] ~ .scrollbox-clip scrollbox[orient="vertical"] {		/* Fx81+ */
   overflow-y: auto !important;
 }
 

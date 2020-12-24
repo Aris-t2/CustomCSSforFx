@@ -2,8 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* make bookmarks fixed size */
-#PersonalToolbar .bookmark-item{
-   width:130px;
-   max-width:130px;
-} 
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  bottom: 27px !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar){
+  margin-bottom: 27px !important;
+}

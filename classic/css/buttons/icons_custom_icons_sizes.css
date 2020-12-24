@@ -42,7 +42,7 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 }
 
 #main-window:not([uidensity=compact]) #back-button .toolbarbutton-icon {
-  padding: 7px !important;
+  padding: 8px !important;
 }
 
 #forward-button	{
@@ -173,4 +173,10 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 /* fix icon glitch */
 #downloads-button:not(:-moz-any([attention],[progress])) #downloads-indicator-icon {
   background-image: unset !important;
+}
+
+
+/* fix nav-bars overflow menu icon size */
+#main-window #widget-overflow-fixed-list toolbarbutton .toolbarbutton-icon {
+  width: 18px !important;
 }

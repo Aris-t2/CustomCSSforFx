@@ -17,14 +17,14 @@
 @-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 	
 	:root{
-	  --in-content-page-background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	  --in-content-page-background: #edf6ff !important;
 	}
 	
 	body > div#main {
-	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	  background: #edf6ff !important;
 	}
 
 	.sticky-container {
-	  background: #dbeaf9 !important;
+	  background: #edf6ff !important;
 	}
 }

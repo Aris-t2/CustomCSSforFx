@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.1.7 ********************************************************************************/
+/* version 3.1.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -365,7 +365,6 @@
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
-/* [!] not compatible to 'toolbars - add-on bar (simulated add-on bar)' option ******************/
 /* - Fx 60-64 ***********************************************************************************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/
 /* - Fx 65-67 - Windows/Linux *******************************************************************/
@@ -414,10 +413,9 @@
 /* @import "./css/tabs/tabs_multiple_lines_fx81.css"; /**/  /* Fx 81+ */
 /* @import "./css/tabs/tabs_multiple_lines_fx81_force_newtab_button_visibility.css"; /**/  /* Fx 81+ */
 
-/* TAB TITLE IN FIREFOX TITLEBAR (Windows only) *************************************************/
+/* TAB TITLE IN FIREFOX TITLEBAR (Windows & Firefox 60-72 only) *********************************/
 /* [!] some internal pages only show default browser title **************************************/
 /* [!] might not always work correctly **********************************************************/
-/* [!] Firefox 60-72 ****************************************************************************/
 /* @import "./css/tabs/tab_title_in_firefox_titlebar.css"; /**/
 /* @import "./css/tabs/tab_title_in_firefox_titlebar_fx65.css"; /**/
 /* @import "./css/tabs/tab_title_in_firefox_titlebar_centered.css"; /**/
@@ -499,6 +497,7 @@
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/
 /* @import "./css/generalui/classic_drop_indicator.css"; /**/
+/* @import "./css/generalui/notification_old_size.css"; /**/
 
 /* overflow menu - [only use one at a time] *****************************************************/
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
@@ -519,15 +518,23 @@
 /* @import "./css/generalui/sidebar_appearance_lwtheme_bright.css"; /**/
 /* @import "./css/generalui/sidebar_appearance_lwtheme_dark.css"; /**/
 
-/* findbar **************************************************************************************/
+
+/* FINDBAR **************************************************************************************/
+/* @import "./css/generalui/findbar_compact.css"; /**/
+
+/* FINDBAR - FIREFOX 60-83 **********************************************************************/
 /* @import "./css/generalui/findbar_on_top.css"; /**/
 /* @import "./css/generalui/findbar_show_full_quickfindbar.css"; /**/
 /* @import "./css/generalui/findbar_on_top_fade_out_on_hover.css"; /**/
-/* @import "./css/generalui/findbar_compact.css"; /**/
 /* findbar - close icon position - [only use one at a time] *************************************/
 /* @import "./css/generalui/findbar_on_top_close_at_findbars_start.css"; /**/
 /* @import "./css/generalui/findbar_compact_on_top_close_at_findbars_start.css"; /**/
 /* @import "./css/generalui/findbar_on_bottom_close_at_findbars_start.css"; /**/
+
+/* FINDBAR FIREFOX 84+ **************************************************************************/
+/* @import "./css/generalui/findbar_on_top_fx84.css"; /**/
+/* @import "./css/generalui/findbar_on_top_close_at_findbars_start_fx84.css"; /**/
+
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
 /* @import "./css/generalui/context_bfrsb_icons_colorized.css"; /**/
@@ -595,11 +602,11 @@
 /* ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom ********************/
 /* [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks *****/
 /* [!] not compatible to 'bookmarks toolbar - multiple lines' option ****************************/
-/* [!] not compatible to 'tabs toolbar - below main content' option *****************************/
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 **********************/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
@@ -668,10 +675,12 @@
 /* LOCATION BAR / MEGABAR - Settings for both 'about:config > browser.urlbar.update1' cases *****/
 /************************************************************************************************/
 
+/* remove color formatting of the url: about:config > browser.urlbar.formatting.enabled > false */
+
 /* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
 
 /* identity box / page identity button **********************************************************/
-/* @import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* replaces search glass in Fx70+ */
+/* @import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* replaces search glass in Fx70+ */ /* Fx 60-83 only */
 @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 
@@ -734,6 +743,7 @@
 /* @import "./css/locationbar/ac_popup_megabar_result_separator.css"; /**/
 
 
+/* DO NOT USE OLD LOCATION BAR SETTINGS ON CURRENT FIREFOX VERSIONS - Firefox 77+ ***************/
 /* [!] Location bar settings below will stop working in Firefox 77+. Use megabar settings! [!] **/
 /************************************************************************************************/
 /* LOCATION BAR - settings for 'legacy location bar / urlbar popup' (not megabar popup) *********/

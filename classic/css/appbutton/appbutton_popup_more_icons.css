@@ -2,6 +2,10 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+::root {
+  --chevron-icon: url("chrome://browser/skin/chevron.svg");
+}
+
 #appMenu-open-file-button {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/open.svg");
@@ -14,7 +18,7 @@
 
 #appMenu-more-button {
   -moz-context-properties: fill;
-  list-style-image: url("chrome://browser/skin/chevron.svg");
+  list-style-image: var(--chevron-icon,url("chrome://global/skin/icons/chevron.svg"));
 }
 
 #appMenu-developer-button  {
@@ -26,7 +30,8 @@
   padding-inline-start: 8px !important;
 }
 
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
+#main-window:not([lwt-popup-brighttext]):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button),
+[lwt-popup-brighttext] :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
   fill: currentColor !important;
 }
 
