@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.1.8 ********************************************************************************/
+/* version 3.1.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -213,12 +213,6 @@
 /* @import "./css/buttons/button_popup_panel_compact.css"; /**/
 
 /* CUSTOM BACK & FORWARD BUTTONS appearance - [only use one at a time] **************************/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71+ */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility */
-/* @import "./css/buttons/custom_backforward_connected.css"; /**/	
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
@@ -234,6 +228,14 @@
 /* @import "./css/buttons/custom_backforward_small_ie8.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ie9.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
+/* @import "./css/buttons/custom_backforward_connected.css"; /**/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
+
+/* Additional tweaks for custom_backforward_connected_to_location_bar* **************************/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71+ */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility */
 
 
 /************************************************************************************************/
@@ -347,7 +349,7 @@
 /* - Fx 65-73 - macOS ***************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/
-/* - Fx 65+ v2 - mainly for multi-lined tabs (Glitches with inactive menubar!) ******************/
+/* - Fx 65+ v2 - mainly for multi-lined tabs (Glitches with inactive menubar!) ******************/  /* <- use this for multiple tab lines support */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_macOS.css"; /**/
@@ -492,7 +494,7 @@
 /* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
-/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/
+/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- breaks tabs scroll buttons */
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/

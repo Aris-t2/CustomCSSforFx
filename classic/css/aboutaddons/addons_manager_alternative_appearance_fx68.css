@@ -3,7 +3,10 @@
 /****************************************************************************************/
 
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 					
 	:root {
 	  --in-content-category-text-hover: HighlightText !important;
@@ -289,11 +292,14 @@
 }
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 	
-	:root{
+	/*:root{
 	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
-	}
+	}*/
 
 	body > div#main {
 	  margin-inline-start: -1px !important;
@@ -303,10 +309,10 @@
 	  box-shadow: unset !important;
 	  border: 0 !important;
 	  border-radius: 0 !important;
-	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	  /*background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;*/
 	}
 	
-	@supports -moz-bool-pref("browser.in-content.dark-mode") {
+	/*@supports -moz-bool-pref("browser.in-content.dark-mode") {
 	@media (prefers-color-scheme: dark) {
 		
 	  :root{
@@ -317,7 +323,7 @@
 		background: linear-gradient(black,black) !important;
 	  }
 		
-	}}
+	}}*/
 	
 	.addon.card {
 	  box-shadow: unset !important;
@@ -379,10 +385,13 @@
 	
 }
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 	.main-heading,
 	.main-search {
-	  background: unset !important;
+	 /* background: unset !important;*/
 	  max-width: unset !important;
 	  padding-inline-start: unset !important;
 	  padding-top: unset !important;

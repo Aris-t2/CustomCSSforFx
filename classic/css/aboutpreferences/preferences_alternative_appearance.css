@@ -9,21 +9,20 @@
 	  padding-inline-end: 0px !important;
 	}
 
- 	#preferences-stack,.sticky-container,
+ 	/*#preferences-stack,.sticky-container,
 	page,
 	.dialogBox .groupbox-title {
-	  /*background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;*/
 	  background: -moz-Dialog !important;
-	}
+	}*/
 
-	#categories {
+	/*#categories {
 	  background: transparent !important;
-	}
+	}*/
 
-	.groupbox-body,
+	/*.groupbox-body,
 	#dialogFrame{
 	  background-color: white !important;
-	}
+	}*/
 	
 	.main-content {
 	  padding: 0px !important;
@@ -49,9 +48,9 @@
 	  margin: 0 5px 5px 5px!important;
 	}
 
-	#policies-container {
+	/*#policies-container {
 	  background: transparent !important;
-	}
+	}*/
 	
 	#searchInput[focused] {
 	  box-shadow: unset !important;
@@ -90,9 +89,9 @@
 	  color: HighlightText !important;
 	}
 
-	#categories .category:not([selected]):not(:hover){
+	/*#categories .category:not([selected]):not(:hover){
 	  color: black !important;
-	}
+	}*/
 	#categories .category {
 	  transition-duration: unset !important;
 	}
@@ -126,7 +125,7 @@
 	/* alignment and text/font appearance */
 
 	#mainPrefPane {
-	  color: black !important;
+	  /*color: black !important;*/
 	  -moz-padding-start: 30px !important;
 	  margin-top: 4px !important;
 	  -moz-margin-start: -20px !important;
@@ -140,7 +139,7 @@
 	.main-content {
 	  margin-top: 20px !important;
 	  margin-bottom: 20px !important;
-	  background-color: white !important;
+	  /*background-color: white !important;*/
 	  -moz-margin-start: -1px !important;
 	}
 
@@ -180,7 +179,7 @@
 	menulist{
 	  min-height: unset !important;
 	  height: unset !important;
-	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	  /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;*/
 	}
 	
 	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
@@ -238,7 +237,7 @@
 *[subdialog="true"] menulist{
   min-height: unset !important;
   height: unset !important;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+  /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;*/
 }
 
 *[subdialog="true"] button:not(.button-link):not(.close-icon){

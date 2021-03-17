@@ -77,7 +77,7 @@
   padding-top: 2px !important;
   padding-bottom: 2px !important;
 }
-*/
+*//*
 #personal-bookmarks #PlacesToolbar toolbarseparator{
   -moz-appearance: none !important;
   visibility: visible !important;
@@ -86,7 +86,7 @@
   border-left: 3px solid ThreeDShadow !important;
   border-right: 3px solid ThreeDHighlight !important;
   vertical-align: middle;
-}
+}*/
 
 #personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
   -moz-appearance: toolbarbutton;

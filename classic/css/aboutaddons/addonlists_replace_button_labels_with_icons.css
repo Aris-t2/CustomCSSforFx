@@ -3,7 +3,11 @@
 /****************************************************************************************/
 
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
 	button[anonid="preferences-btn"].addon-control image{
 	  list-style-image: url("chrome://browser/skin/settings.svg");
 	}

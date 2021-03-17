@@ -55,6 +55,9 @@
   
   /* for ac_popup_result_font_size.css */
   --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
+  
+  /* for megabar_border_roundness.css */
+  --megabar_border_roundness: 20px !important;
 }
 
 :root[uidensity="touch"] {

@@ -2,6 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+#identity-icon-label,
 #identity-icon-labels {
   display: none !important;
 }

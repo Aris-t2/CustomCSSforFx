@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#nav-bar .toolbarbutton-icon,
-#nav-bar .toolbarbutton-badge-stack {
+#nav-bar toolbarbutton:not(.all-tabs-button) .toolbarbutton-icon,
+#nav-bar toolbarbutton:not(.all-tabs-button) .toolbarbutton-badge-stack {
   border-radius: 20px !important;
 }
