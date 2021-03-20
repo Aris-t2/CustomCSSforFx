@@ -1,0 +1,205 @@
+/* Firefox Proton userChrome.css tweaks *********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+/* Real 'compact mode' Proton UI for userChrome.css
+
+### HOWTO ###
+
+1. Open profile folder: address bar > about:support > Profile Folder > Open Folder
+   Create /chrome/ folder
+   Save this file as userChrome.css in it or add the code to an existing userChrome.css
+
+2. Open config area: address bar > about:config > modify/add the following values/settings:
+
+   toolkit.legacyUserProfileCustomizations.stylesheets > true
+   browser.proton.appmenu.enabled > true
+   browser.proton.enabled > true
+   browser.proton.tabs.enabled > true
+   browser.uidensity > 1
+
+3. Restart browser
+
+*/
+
+
+/* Compact toolbar and main toolbarbuttons *******************************************************/
+@supports -moz-bool-pref("browser.proton.enabled") {
+	
+	#main-window[uidensity="compact"] #nav-bar-customization-target > toolbarpaletteitem > :is(toolbarbutton, toolbaritem),
+	#main-window[uidensity="compact"] #nav-bar-customization-target > * {
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+
+	#main-window[uidensity="compact"] #urlbar-search-splitter {
+	  min-width: 1px !important;
+	}
+	#PanelUI-menu-button {
+	  padding-inline-end: 0 !important;
+	}
+	#main-window[uidensity="compact"] {
+	  --toolbarbutton-outer-padding: 1px !important;
+	  --toolbarbutton-inner-padding: 3px !important;
+	  --bookmark-block-padding: 1px !important;
+	}
+}
+
+
+/* Compact tabs ***********************************************************************************/
+@supports -moz-bool-pref("browser.proton.tabs.enabled") {
+	#main-window[uidensity="compact"]  {
+	  --tab-min-height: 22px !important;
+	}
+}
+
+
+/* Compact application/menu button ****************************************************************/
+@supports -moz-bool-pref("browser.proton.appmenu.enabled") {
+	.subview-subheader,
+	panelview .toolbarbutton-1,
+	.subviewbutton,
+	.widget-overflow-list .toolbarbutton-1 {
+	  margin: 0 !important;
+	  min-height: 0 !important;
+	  padding: 0 2px !important;
+	}
+
+}
+
+
+/* Megabar: disable breakout / expanding onto toolbar *********************************************/
+
+#urlbar[breakout][breakout-extend] {
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  left: unset !important;
+  width: calc(100% + 0 * 5px + 0 * 2px) !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  box-shadow: unset !important;
+  animation-name: unset !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding-block: unset !important;
+  padding-inline: unset !important;
+}
+
+/* disable result item roundness */
+#urlbar[breakout] .urlbarView-row-inner {
+  border-radius: 0px !important;
+}
+
+/* disable 'breakout' animation */
+#urlbar[breakout] {
+  animation: unset !important;
+  duration: unset !important;
+}
+
+/* remove 'border' between urlbar and results */
+.urlbarView-body-inner {
+  border-top: 0px !important;
+}
+
+
+/* Megabar: compact results ************************************************************************/
+
+/* disable empty spaces inside popup */
+#urlbar[breakout][breakout-extend] > .urlbarView {
+  padding: unset !important;
+  margin: unset !important;
+}
+
+#urlbar[breakout] .urlbarView {
+  margin-inline: unset !important;
+  width: 100% !important;
+}
+
+/* disable space wasting inside popup around result items */
+#urlbar[breakout] #urlbar-results {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#urlbar[breakout] #urlbar-results .urlbarView-body-outer,
+#urlbar[breakout] #urlbar-results .urlbarView-row,
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  -moz-padding-end: 0 !important;
+}
+
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}
+
+#urlbar[breakout] .urlbarView-row {
+  padding-block: 0px !important;
+}
+
+/* disable space wasting inside popup around search engines */
+#urlbar[breakout] .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+/* Megabar: old/classic title and results appearance *************************************************/
+#urlbar .urlbarView-no-wrap,
+#urlbar .urlbarView-url {
+  min-width: 50% !important;
+  width: 50% !important;
+}
+
+#urlbar .urlbarView-url {
+  margin-inline-start: 10px !important;
+}
+
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% + 10px) !important; /* 50% + 10px url space */
+}
+
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: calc(50% + 0px) !important;
+}
+
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-inline-start: unset !important;
+}
+
+#urlbar .urlbarView-title-separator {
+  display: none !important;
+}
+
+/* do not hide actiontype item */
+#urlbar .urlbarView-action{
+  visibility: visible !important;
+  display: inherit !important;
+}
+
+/* do not wrap the line */
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner {
+  flex-wrap: unset !important;
+}
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+  max-width: unset !important;
+  flex-basis: unset !important;
+}
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-top: unset !important;
+  padding-inline-start: unset !important;
+}
+
