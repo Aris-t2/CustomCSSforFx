@@ -8,28 +8,33 @@
 ### HOWTO ###
 
 1. Open profile folder: address bar > about:support > Profile Folder > Open Folder
-   Create /chrome/ folder
-   Save this file as userChrome.css in it or add the code to an existing userChrome.css
+   Create "chrome" (sub)folder.
+   Save this file as 'userChrome.css' inside "chrome" folder or add code to an existing userChrome.css file.
 
 2. Open config area: address bar > about:config > modify/add the following values/settings:
 
-   toolkit.legacyUserProfileCustomizations.stylesheets > true
-   browser.proton.appmenu.enabled > true
-   browser.proton.enabled > true
-   browser.proton.tabs.enabled > true
-   browser.uidensity > 1
+   toolkit.legacyUserProfileCustomizations.stylesheets > true   ||  enables custom style sheets
+   browser.uidensity > 1   ||  enables compact mode
+   browser.proton.enabled > true   ||  enables proton mode
+   browser.proton.appmenu.enabled > true   ||  enables proton appmenu
+   browser.proton.urlbar.enabled > true   ||  enables proton urlbar
+   browser.proton.doorhangers.enabled > true
+   browser.proton.infobars.enabled > true
+   browser.proton.modals.enabled > true
+   browser.proton.places-tooltip.enabled > true
 
 3. Restart browser
 
 */
 
 
-/* Compact toolbar and main toolbarbuttons *******************************************************/
 @supports -moz-bool-pref("browser.proton.enabled") {
 	
+	/* Compact toolbar and main toolbarbuttons *******************************************************/
 	#main-window[uidensity="compact"] #nav-bar-customization-target > toolbarpaletteitem > :is(toolbarbutton, toolbaritem),
 	#main-window[uidensity="compact"] #nav-bar-customization-target > * {
 	  padding: 0 !important;
+	  padding-top: 1px !important;
 	  margin: 0 !important;
 	}
 
@@ -44,11 +49,8 @@
 	  --toolbarbutton-inner-padding: 3px !important;
 	  --bookmark-block-padding: 1px !important;
 	}
-}
 
-
-/* Compact tabs ***********************************************************************************/
-@supports -moz-bool-pref("browser.proton.tabs.enabled") {
+	/* Compact tabs ***********************************************************************************/
 	#main-window[uidensity="compact"]  {
 	  --tab-min-height: 22px !important;
 	}
@@ -65,7 +67,6 @@
 	  min-height: 0 !important;
 	  padding: 0 2px !important;
 	}
-
 }
 
 
@@ -73,8 +74,8 @@
 
 #urlbar[breakout][breakout-extend] {
   top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-  left: unset !important;
-  width: calc(100% + 0 * 5px + 0 * 2px) !important;
+  left: 1px !important;
+  width: calc(100% - 1px) !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
