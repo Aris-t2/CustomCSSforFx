@@ -3,7 +3,7 @@
 /************************************************************************************************/
 
 
-/* Real 'compact mode' Proton UI for userChrome.css
+/* 'Real compact' Proton UI for userChrome.css
 
 ### HOWTO ###
 
@@ -14,6 +14,7 @@
 2. Open config area: address bar > about:config > modify/add the following values/settings:
 
    toolkit.legacyUserProfileCustomizations.stylesheets > true   ||  enables custom style sheets
+   browser.compactmode.show > true   ||  shows 'Compact mode' in customizing mode 
    browser.uidensity > 1   ||  enables compact mode
    browser.proton.enabled > true   ||  enables proton mode
    browser.proton.appmenu.enabled > true   ||  enables proton appmenu
@@ -79,7 +80,7 @@
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-  box-shadow: unset !important;
+  /*box-shadow: unset !important;*/ /* box-shadow should stay, if browser.proton.urlbar.enabled is true */
   animation-name: unset !important;
 }
 
@@ -149,7 +150,7 @@
 }
 
 
-/* Megabar: old/classic title and results appearance *************************************************/
+/* Megabar: old/classic 'title and url' results appearance *************************************************/
 #urlbar .urlbarView-no-wrap,
 #urlbar .urlbarView-url {
   min-width: 50% !important;
