@@ -19,6 +19,7 @@
    browser.proton.enabled > true   ||  enables proton mode
    browser.proton.appmenu.enabled > true   ||  enables proton appmenu
    browser.proton.urlbar.enabled > true   ||  enables proton urlbar
+   browser.proton.contextmenus.enabled   ||  enables proton context menus
    browser.proton.doorhangers.enabled > true
    browser.proton.infobars.enabled > true
    browser.proton.modals.enabled > true
@@ -55,6 +56,14 @@
 	#main-window[uidensity="compact"]  {
 	  --tab-min-height: 22px !important;
 	}
+}
+
+@supports -moz-bool-pref("browser.proton.contextmenus.enabled") {
+  menupopup > menuitem,
+  menupopup > menu {
+    padding-block: 0 !important;
+    padding-inline-start: 2px !important;
+  }
 }
 
 
