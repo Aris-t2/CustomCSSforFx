@@ -17,8 +17,6 @@
    browser.compactmode.show > true   ||  shows 'Compact mode' in customizing mode 
    browser.uidensity > 1   ||  enables compact mode
    browser.proton.enabled > true   ||  enables proton mode
-   browser.proton.appmenu.enabled > true   ||  enables proton appmenu
-   browser.proton.urlbar.enabled > true   ||  enables proton urlbar
    browser.proton.contextmenus.enabled   ||  enables proton context menus
    browser.proton.doorhangers.enabled > true
    browser.proton.infobars.enabled > true
@@ -43,7 +41,7 @@
 	#main-window[uidensity="compact"] #urlbar-search-splitter {
 	  min-width: 1px !important;
 	}
-	#PanelUI-menu-button {
+	#main-window[uidensity="compact"] #PanelUI-menu-button {
 	  padding-inline-end: 0 !important;
 	}
 	#main-window[uidensity="compact"] {
@@ -56,6 +54,22 @@
 	#main-window[uidensity="compact"]  {
 	  --tab-min-height: 22px !important;
 	}
+
+	#main-window[uidensity="compact"] .tab-close-button {
+	  width: 24px !important;
+	  height: 20px !important;
+	  padding: 3px 5px !important;
+	}
+
+	/* Compact application/menu button ****************************************************************/
+	#main-window[uidensity="compact"] .subview-subheader,
+	#main-window[uidensity="compact"] panelview .toolbarbutton-1,
+	#main-window[uidensity="compact"] .subviewbutton,
+	#main-window[uidensity="compact"] .widget-overflow-list .toolbarbutton-1 {
+	  margin: 0 !important;
+	  min-height: 0 !important;
+	  padding: 0 2px !important;
+	}
 }
 
 @supports -moz-bool-pref("browser.proton.contextmenus.enabled") {
@@ -67,25 +81,11 @@
 }
 
 
-/* Compact application/menu button ****************************************************************/
-@supports -moz-bool-pref("browser.proton.appmenu.enabled") {
-	.subview-subheader,
-	panelview .toolbarbutton-1,
-	.subviewbutton,
-	.widget-overflow-list .toolbarbutton-1 {
-	  margin: 0 !important;
-	  min-height: 0 !important;
-	  padding: 0 2px !important;
-	}
-}
-
-
 /* Megabar: disable breakout / expanding onto toolbar *********************************************/
-
 #urlbar[breakout][breakout-extend] {
   top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-  left: 1px !important;
-  width: calc(100% - 1px) !important;
+  left: 0px !important;
+  width: calc(100% - 0px) !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
@@ -96,7 +96,7 @@
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
   height: var(--urlbar-height) !important;
   padding-block: unset !important;
-  padding-inline: unset !important;
+  padding-inline: 1px !important;
 }
 
 /* disable result item roundness */
