@@ -1,0 +1,95 @@
+/* Firefox Proton userChrome.css tweaks *********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+/* 'Multiple tab lines' for userChrome.css compatible to Proton UI
+
+### HOWTO ###
+
+1. Open profile folder: address bar > about:support > Profile Folder > Open Folder
+   Create "chrome" (sub)folder.
+   Save this file as 'userChrome.css' inside "chrome" folder or add code to an existing userChrome.css file.
+
+2. Open config area: address bar > about:config > modify/add the following values/settings:
+
+   toolkit.legacyUserProfileCustomizations.stylesheets > true   ||  enables custom style sheets
+   browser.compactmode.show > true   ||  shows 'Compact mode' in customizing mode 
+   browser.uidensity > 1   ||  enables compact mode
+   browser.proton.enabled > true   ||  enables proton mode
+   browser.proton.contextmenus.enabled   ||  enables proton context menus
+   browser.proton.doorhangers.enabled > true
+   browser.proton.modals.enabled > true
+   browser.proton.places-tooltip.enabled > true
+
+3. Restart browser
+
+*/
+
+#main-window  {
+  --tab-min-height: unset !important;
+  --tabs-lines: 3;
+  --tab_min_width_mlt: 100px;
+  --tab_max_width_mlt: 200px;
+  --tab-min-height_mlt: 30px;
+}
+
+#tabbrowser-tabs{
+  min-height: unset !important;
+  padding-inline-start: 0px !important
+}
+
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  #scrollbutton-up~spacer,
+  #scrollbutton-up,
+  #scrollbutton-down{
+	display: var(--scrollbutton-display-model,initial);
+  }
+
+  scrollbox[part][orient="horizontal"]{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+    scrollbar-color: currentColor transparent;
+    scrollbar-width: thin;
+  }
+}
+
+.scrollbox-clip[orient="horizontal"],
+#tabbrowser-arrowscrollbox{
+  overflow: -moz-hidden-unscrollable;
+  display: block;
+  --scrollbutton-display-model: none;
+}
+
+.tabbrowser-tab{
+  height: var(--tab-min-height_mlt);
+}
+
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  height: var(--tab-min-height_mlt) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]{
+  position: static !important;
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  flex-grow: 1;
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
+}
+
+.tabbrowser-tab > stack{
+  width: 100%;
+  height: 100%;
+}
+
+#alltabs-button,
+:root:not([customizing]) #TabsToolbar #new-tab-button,
+#tabbrowser-arrowscrollbox > spacer,
+.tabbrowser-tab::after{ 
+  display: none !important;
+}
