@@ -229,14 +229,14 @@
 	
 	/* checkbox and radio items */
 	checkbox .checkbox-check {
-	  -moz-appearance: checkbox  !important;
+	  -moz-appearance: unset  !important;
 	  box-shadow: unset !important;
 	  padding: unset !important;
 	  margin: unset !important;
 	}
 
 	radio .radio-check {
-	  -moz-appearance: radio !important;
+	  -moz-appearance: unset !important;
 	  box-shadow: unset !important;
 	  padding: unset !important;
 	  margin: unset !important;
@@ -431,14 +431,14 @@
 
 /* checkbox / radios */
 *[subdialog="true"] checkbox .checkbox-check {
-  -moz-appearance: checkbox  !important;
+  -moz-appearance: unset  !important;
   box-shadow: unset !important;
   padding: unset !important;
   margin: unset !important;
 }
 
 *[subdialog="true"] radio .radio-check {
-  -moz-appearance: radio !important;
+  -moz-appearance: unset !important;
   box-shadow: unset !important;
   padding: unset !important;
   margin: unset !important;

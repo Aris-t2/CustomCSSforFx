@@ -36,3 +36,39 @@
 .urlbarView-body-inner {
   border-top: 0px !important;
 }
+
+
+
+@media (-moz-proton) {
+
+
+/* Megabar: disable breakout / expanding onto toolbar *********************************************/
+#urlbar[breakout][breakout-extend] {
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  left: 0px !important;
+  width: calc(100% - 0px) !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  animation-name: unset !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding-block: unset !important;
+  padding-inline: 1px !important;
+}
+
+/* disable result item roundness */
+#urlbar[breakout] .urlbarView-row-inner {
+  border-radius: 0px !important;
+}
+
+/* disable 'breakout' animation */
+#urlbar[breakout] {
+  animation: unset !important;
+  duration: unset !important;
+}
+
+
+}

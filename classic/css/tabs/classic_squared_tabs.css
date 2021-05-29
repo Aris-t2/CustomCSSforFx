@@ -414,3 +414,24 @@
 	-moz-margin-end: -2px !important;
   }
 }
+
+/* Proton compatibility */
+@media (-moz-proton) {
+	
+#main-window  {
+  --tab-min-height: 8px !important;
+}
+
+.tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 2px !important;
+  -moz-margin-end: -6px !important;
+}
+
+.tabbrowser-tab {
+  padding-inline: unset !important;
+}
+
+}

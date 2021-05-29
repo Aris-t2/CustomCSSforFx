@@ -99,3 +99,11 @@
 #main-window #TabsToolbar #window-controls {
   display: none !important;
 }
+
+
+@media all and (-moz-windows-classic) {
+  #main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
+  #main-window[tabsintitlebar] #nav-bar {
+	-moz-margin-end: 0px !important;
+  }
+}

@@ -251,12 +251,12 @@ addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
 	margin-top: -9px;
 	margin-inline-end: -5px;
 }
-
+/*
 addon-card panel-list {
 	margin-top: unset !important;
 	right: unset !important;
 	float: unset !important;
-}
+}*/
 	
 #main > div[current-view="detail"] addon-details > .tab-group {
 	display: block !important;
@@ -267,6 +267,7 @@ addon-card panel-list {
 	top: 8px;
 	right: 0 !important;
 }
+
 
 /* small image */ /*
 addon-list[type="theme"] .card-heading-image {
@@ -292,6 +293,10 @@ addon-list[type="theme"] .card-contents {
 addon-list[type="theme"] addon-card panel-list {
   margin-top: 100px !important;
   margin-inline-end: 6px !important;
+}
+
+addon-page-options panel-item-separator {
+  width: 100%;
 }
 
 

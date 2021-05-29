@@ -13,19 +13,26 @@
 
 #context-navigation{
   -moz-box-orient: vertical !important;
-  -moz-appearance:none !important;
-  background:unset !important;
+  -moz-appearance: none !important;
+  background: unset !important;
 }
 
 :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
   width: 16px !important;
   height: 16px !important;
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 12px !important;
+}
+
+@media not (-moz-proton) {
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
   margin-top: unset !important;
   margin-bottom: unset !important;
   padding-top: unset !important;
   padding-bottom: unset !important;
-  -moz-margin-start: 4px !important;
-  -moz-margin-end: 12px !important;
+}
+
 }
 
 @media (min-resolution: 120dpi) {
@@ -72,3 +79,29 @@
 	  -moz-margin-end: 3px !important;
 	} 
 }}}
+
+
+@media (-moz-proton) {
+
+#context-navigation:not([hidden]) {
+  flex-direction: column !important;
+  --menuitem-min-width: unset !important;
+  min-width: unset !important;
+  padding-bottom: 0px !important;
+}
+  
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 0px !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  -moz-margin-start: -12px !important;
+}
+
+}

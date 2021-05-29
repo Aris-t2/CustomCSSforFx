@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.1.9 ********************************************************************************/
+/* version 3.2.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -132,6 +132,9 @@
 /************************************************************************************************/
 /* TOOLBAR BUTTONS ******************************************************************************/
 /************************************************************************************************/
+
+/* PROTON: 'classic' pre-Proton button padding **************************************************/
+/* @import "./css/buttons/button_padding_proton.css"; /**/
 
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
@@ -357,12 +360,18 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
 /* - Fx 72-73 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
-/* - Fx 74+ Windows/Linux ***********************************************************************/
+/* - Fx 74-88 Windows/Linux *********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
-/* - Fx 74+ - macOS *****************************************************************************/
+/* - Fx 74-88 - macOS ***************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS_default_tabs.css"; /**/
+/* - Fx 89+ Windows/Linux ***********************************************************************/
+/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
+/* - Fx 89+ - macOS *****************************************************************************/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS_default_tabs.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/

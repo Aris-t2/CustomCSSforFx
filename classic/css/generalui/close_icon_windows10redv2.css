@@ -63,3 +63,7 @@
   padding: 0px !important;
   margin: 0px !important;
 }
+
+#TabsToolbar .tabbrowser-tab .tab-content .close-icon {
+  background: unset !important;
+}

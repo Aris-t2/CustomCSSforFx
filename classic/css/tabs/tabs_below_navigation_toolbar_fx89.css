@@ -2,9 +2,9 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import "./context_bfrsb_labels_with_icons.css";
 
-:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
-  opacity: 0 !important;
-  /*display: none !important;*/
+@import "./tabs_below_navigation_toolbar_fx74.css";
+
+#navigator-toolbox {
+  position: relative;
 }

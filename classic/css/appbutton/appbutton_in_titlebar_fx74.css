@@ -65,6 +65,13 @@
   padding-right: 0px !important;
 }
 
+
+@media (-moz-proton) {
+#main-window[tabsintitlebar] #PanelUI-button {
+  margin-inline-start: 0px !important;
+}
+}
+
 #main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
   -moz-margin-start: 0px !important;
 }
