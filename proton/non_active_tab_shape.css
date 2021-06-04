@@ -1,0 +1,40 @@
+/* Firefox Proton userChrome.css tweaks *********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+/* 'Real compact' Proton UI for userChrome.css
+
+### HOWTO ###
+
+1. Open profile folder: address bar > about:support > Profile Folder > Open Folder
+   Create "chrome" (sub)folder.
+   Save this file as 'userChrome.css' inside "chrome" folder or add code to an existing userChrome.css file.
+
+2. Open config area: address bar > about:config > modify/add the following values/settings:
+
+   toolkit.legacyUserProfileCustomizations.stylesheets > true   ||  enables custom style sheets
+   browser.compactmode.show > true   ||  shows 'Compact mode' in customizing mode 
+   browser.uidensity > 1   ||  enables compact mode
+   browser.proton.enabled > true   ||  enables proton mode
+   browser.proton.contextmenus.enabled   ||  enables proton context menus
+   browser.proton.doorhangers.enabled > true
+   browser.proton.modals.enabled > true
+   browser.proton.places-tooltip.enabled > true
+
+3. Restart browser
+
+*/
+
+
+@supports -moz-bool-pref("browser.proton.enabled") {
+	
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-color: color-mix(in srgb, currentColor 11%, transparent);
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-color: color-mix(in srgb, currentColor 17%, transparent) !important;
+}
+
+}
