@@ -4,6 +4,8 @@
 
 
 #editBookmarkPanelImage,
-#editBookmarkPanelFaviconContainer {
+#editBookmarkPanelFaviconContainer,
+#editBookmarkSeparator,
+#editBookmarkHeaderSeparator {
   display: none !important;
 }

@@ -18,3 +18,12 @@
 #PersonalToolbar {
   -moz-window-dragging: no-drag !important;
 }
+
+
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
+  min-height: 1px !important;
+  height: 1px !important;
+}
+}

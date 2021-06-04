@@ -8,3 +8,10 @@
 #navigator-toolbox {
   position: relative;
 }
+
+@media (-moz-proton) {
+	
+  .tabbrowser-tab {
+	min-height: unset !important; 
+  }
+}

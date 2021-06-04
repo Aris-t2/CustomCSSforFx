@@ -5,3 +5,7 @@
 :-moz-autofill, :autofill, :-moz-autofill-preview {
   filter: unset;
 }
+
+:root:not(#id) input {
+   filter: unset !important;
+}

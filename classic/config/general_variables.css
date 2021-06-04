@@ -58,6 +58,10 @@
   
   /* for megabar_border_roundness.css */
   --megabar_border_roundness: 20px !important;
+  
+  /* for tab_toolbar_color_proton.css */
+  --tabs_toolbar_background: initial !important;
+  --tabs_toolbar_background_inactive: initial !important;
 }
 
 :root[uidensity="touch"] {

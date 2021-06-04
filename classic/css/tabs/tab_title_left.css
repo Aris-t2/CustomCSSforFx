@@ -7,3 +7,11 @@
   -moz-box-flex: 1 !important;
   text-align: left !important;
 }
+
+/* Proton compatibility */
+@media (-moz-proton) {
+* .tab-label-container.proton {
+  display: flex !important;
+  justify-content: left !important;
+}
+}

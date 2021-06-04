@@ -57,6 +57,15 @@
   margin-right: 7px !important;
 }
 
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window[uidensity=compact] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+}
+
 #main-window[uidensity=compact] #nav-bar #zoom-reset-button .toolbarbutton-text {
   min-height: 26px !important;
 }
@@ -110,6 +119,15 @@
   margin-right: 11px !important;
 }
 
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #stop-reload-button .toolbarbutton-animatable-box {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+}
+
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #zoom-reset-button .toolbarbutton-text {
   min-height: 30px !important;
 }
@@ -156,10 +174,19 @@
   padding-right: 14px !important;
 }
 
-#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box ,
+#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
 #main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
   margin-left: 14px !important;
   margin-right: 14px !important;
+}
+
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
+#main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
+  margin-left: 13px !important;
+  margin-right: 13px !important;
+}
 }
 
 #main-window[uidensity=touch] #nav-bar #zoom-reset-button .toolbarbutton-text {

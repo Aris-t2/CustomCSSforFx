@@ -10,7 +10,15 @@
 }
 
 #titlebar:-moz-lwtheme {
-  background-image: var(--lwt-additional-images);
+  background-image: var(--lwt-additional-images, var(--lwt-header-image));
   background-repeat: var(--lwt-background-tiling);
   background-position: var(--lwt-background-alignment);
 }
+
+@media (-moz-proton) {
+	
+  .tabbrowser-tab {
+	min-height: unset !important; 
+  }
+}
+

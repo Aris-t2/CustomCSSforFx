@@ -66,7 +66,27 @@
 
 
 #TabsToolbar .tabbrowser-tab .tab-content .close-icon {
-  width: 20px !important;
-  height: 20px !important;
+  /*width: 20px !important;
+  height: 20px !important;*/
   background: unset !important;
+}
+
+@media (-moz-proton) {
+.tab-close-button {
+  margin-inline-end: unset !important;
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+  border-radius: unset !important;
+}
+
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: unset !important;
+  width: unset !important;
+}
+
+.tabbrowser-tab[visuallyselected=true]:hover,
+#tabbrowser-tabs:not([closebuttons=activetab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([visuallyselected=true]):hover {
+  --tab-label-mask-size: unset !important;
+}
 }

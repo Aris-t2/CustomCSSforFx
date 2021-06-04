@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.0 ********************************************************************************/
+/* version 3.2.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -415,14 +415,15 @@
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
 /* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
 /* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
+/* [!] currently not working with Proton UI - disable Proton settings to keep compatibility *****/
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/ /* Fx 60-65 */
 /* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* Fx 60-65 */
 /* @import "./css/tabs/tabs_multiple_lines_fx66.css"; /**/  /* Fx 66-70 */
 /* @import "./css/tabs/tabs_multiple_lines_fx66_force_newtab_button_visibility.css"; /**/  /* Fx 66-70 */  
 /* @import "./css/tabs/tabs_multiple_lines_fx71.css"; /**/  /* Fx 71-80 */
 /* @import "./css/tabs/tabs_multiple_lines_fx71_force_newtab_button_visibility.css"; /**/  /* Fx 71-80 */
-/* @import "./css/tabs/tabs_multiple_lines_fx81.css"; /**/  /* Fx 81+ */
-/* @import "./css/tabs/tabs_multiple_lines_fx81_force_newtab_button_visibility.css"; /**/  /* Fx 81+ */
+/* @import "./css/tabs/tabs_multiple_lines_fx81.css"; /**/  /* Fx 81+ */ /* disable Proton */
+/* @import "./css/tabs/tabs_multiple_lines_fx81_force_newtab_button_visibility.css"; /**/  /* Fx 81+ */ /* disable Proton */
 
 /* TAB TITLE IN FIREFOX TITLEBAR (Windows & Firefox 60-72 only) *********************************/
 /* [!] some internal pages only show default browser title **************************************/
@@ -625,6 +626,7 @@
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
+/* @import "./css/toolbars/tab_toolbar_color_proton.css"; /**/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */

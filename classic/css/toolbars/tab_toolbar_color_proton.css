@@ -1,0 +1,25 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Set a custom color value by replacing 'initial' with a color and adding !important before ; */
+/* or set a custom color value inside general_variables.css */
+:root{
+  --tabs_toolbar_background: initial;
+  --tabs_toolbar_background_inactive: initial;
+}
+
+
+@media (-moz-proton) {
+
+
+#main-window:not(:-moz-lwtheme) #TabsToolbar {
+  background: var(--tabs_toolbar_background) !important;
+}
+
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #TabsToolbar {
+  background: var(--tabs_toolbar_background_inactive) !important;
+}
+
+}

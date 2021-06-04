@@ -46,3 +46,18 @@
   position: absolute !important;
   padding-inline-start: calc(6px + 2px + 16px) !important;
 }
+
+/* Proton compatibility */
+@media (-moz-proton) {
+
+#urlbar .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  padding-inline-start: calc(6px + 1px + 16px) !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=remotetab]):not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  margin-bottom: -37px !important;
+}
+
+}

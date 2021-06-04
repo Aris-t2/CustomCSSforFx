@@ -67,3 +67,9 @@
 #TabsToolbar .tabbrowser-tab .tab-content .close-icon {
   background: unset !important;
 }
+
+#TabsToolbar .tabbrowser-tab .tab-content .close-icon {
+  /*width: 20px !important;
+  height: 20px !important;*/
+  background: unset !important;
+}
