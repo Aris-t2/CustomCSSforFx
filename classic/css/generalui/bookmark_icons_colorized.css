@@ -3,6 +3,7 @@
 /****************************************************************************************/
 
 
+.folder-icon,
 #editBMPanel_chooseFolderMenuItem .menu-iconic-icon,
 treechildren::-moz-tree-image(title, container),
 treechildren::-moz-tree-image(title, query, hostContainer) {
@@ -72,12 +73,14 @@ treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
   -moz-image-region: auto !important;
 }
 
-.bookmark-item[container] {
+toolbarbutton.bookmark-item[container],
+.bookmark-item[container] .menu-iconic-left .menu-iconic-icon {
   list-style-image: url("./../../image/folder-item.png") !important;
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
 }
 
-.bookmark-item[container][open] {
+toolbarbutton.bookmark-item[container][open],
+.bookmark-item[container][open] .menu-iconic-left .menu-iconic-icon {
   -moz-image-region: rect(16px, 32px, 32px, 16px) !important;
 }
 
@@ -85,13 +88,10 @@ treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
   list-style-image: url("./../../image/livemark-folder.png") !important;
   -moz-image-region: auto !important;
 }
-
-
 .bookmark-item[container][livemark] .bookmark-item {
   list-style-image: url("./../../image/livemark-item.png") !important;
   -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
 }
-
 .bookmark-item[container][livemark] .bookmark-item[visited] {
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
 }

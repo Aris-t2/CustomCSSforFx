@@ -417,18 +417,23 @@
 
 /* Proton compatibility */
 @media (-moz-proton) {
-	
-#main-window  {
-  --tab-min-height: 8px !important;
-}
+
 /*
-.tabbrowser-tab:not([pinned]) .tab-content .close-icon,
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
-  width: 18px !important;
-  height: 18px !important;
-  padding: 2px !important;
-  -moz-margin-end: -6px !important;
+#main-window  {
+  --tab-min-height: 16px !important;
 }*/
+
+#scrollbutton-up,
+#scrollbutton-down {
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+}
+
+.tab-background,
+.tab-stack {
+  min-height: unset !important;
+}
 
 .tab-close-button {
   margin-inline-end: unset !important;
@@ -457,6 +462,11 @@
   margin-block: initial !important;
 }
 
+}
+
+.tab-secondary-label {
+  display: none !important;
+}
 
 /* Lightweight theme on tabs */
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
@@ -469,8 +479,3 @@
   background-image: var(--toolbar-bgimage) !important;
 }
 
-}
-
-.tab-secondary-label {
-  display: none !important;
-}

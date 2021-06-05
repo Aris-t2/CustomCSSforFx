@@ -101,7 +101,21 @@
 }
 
 :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
-  -moz-margin-start: -12px !important;
+  -moz-margin-start: 2px !important;
 }
+
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+    width: unset !important;
+    height: unset !important;
+    padding: unset !important;
+  }
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon {
+    background-color: unset !important;
+  }
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+    background-color: unset !important;
+  }
+  
 
 }

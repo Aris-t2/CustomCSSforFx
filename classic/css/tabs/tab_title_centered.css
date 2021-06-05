@@ -9,9 +9,11 @@
 }
 
 /* Proton compatibility */
+/*
 @media (-moz-proton) {
 * .tab-label-container.proton {
   display: flex !important;
   justify-content: center !important;
 }
 }
+*/

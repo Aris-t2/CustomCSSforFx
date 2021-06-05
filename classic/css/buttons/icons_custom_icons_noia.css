@@ -30,3 +30,10 @@
   list-style-image: url("../../image/newtabnoia.png") !important;
   -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
 }
+
+/* Proton compatibility */
+@media (-moz-proton) {
+#downloads-button .toolbarbutton-icon {
+  list-style-image: url("../../image/toolbar_fx_noia.png") !important;
+}
+}

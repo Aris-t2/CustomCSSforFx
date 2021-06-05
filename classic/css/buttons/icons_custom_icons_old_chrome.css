@@ -35,3 +35,9 @@
 #bookmarks-menu-button{
   -moz-image-region: rect(0px, 144px, 18px, 126px) !important;
 }
+/* Proton compatibility */
+@media (-moz-proton) {
+#downloads-button .toolbarbutton-icon {
+  list-style-image: url("../../image/toolbar_fx_old_chrome.png") !important;
+}
+}

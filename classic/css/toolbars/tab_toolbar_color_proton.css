@@ -6,20 +6,66 @@
 /* Set a custom color value by replacing 'initial' with a color and adding !important before ; */
 /* or set a custom color value inside general_variables.css */
 :root{
-  --tabs_toolbar_background: initial;
-  --tabs_toolbar_background_inactive: initial;
+  --top_toolbars_background: initial;
+  --top_toolbars_background_inactive: initial;
+  --top_toolbars_text: initial;
+  --top_toolbars_text_inactive: initial;
 }
-
 
 @media (-moz-proton) {
 
-
-#main-window:not(:-moz-lwtheme) #TabsToolbar {
-  background: var(--tabs_toolbar_background) !important;
+#main-window:not(:-moz-lwtheme) #titlebar,
+#main-window:not(:-moz-lwtheme) #toolbar-menubar,
+#main-window:not(:-moz-lwtheme) #TabsToolbar,
+#main-window:not(:-moz-lwtheme) #navigator-toolbox{
+  background: var(--top_toolbars_background) !important;
+  color: var(--top_toolbars_text) !important;
 }
 
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #TabsToolbar {
-  background: var(--tabs_toolbar_background_inactive) !important;
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #titlebar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #toolbar-menubar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #TabsToolbar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #navigator-toolbox {
+  background: var(--top_toolbars_background_inactive) !important;
+  color: var(--top_toolbars_text_inactive) !important;
 }
+
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > label {
+  color: var(--top_toolbars_text) !important;
+}
+
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #main-menubar > menu > label {
+  color: var(--top_toolbars_text_inactive) !important;
+}
+
+
+#main-window:not(:-moz-lwtheme) .titlebar-button {
+  stroke: #fff !important;
+}
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button {
+  stroke: CurrentColor !important;
+}
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover {
+  stroke: #fff !important;
+}
+
+
+/* use caption buttons offered for lw-themes *//*
+.titlebar-button {
+  -moz-context-properties: unset !important;
+}
+.titlebar-min {
+  list-style-image: url(chrome://browser/skin/window-controls/minimize-themes.svg) !important;
+}
+.titlebar-max {
+  list-style-image: url(chrome://browser/skin/window-controls/maximize-themes.svg) !important;
+}
+.titlebar-restore {
+  list-style-image: url(chrome://browser/skin/window-controls/restore-themes.svg) !important;
+}
+.titlebar-close {
+  list-style-image: url(chrome://browser/skin/window-controls/close-themes.svg) !important;
+}
+*/
 
 }

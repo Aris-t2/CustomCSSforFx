@@ -401,16 +401,8 @@
 @media (-moz-proton) {
 	
 #main-window  {
-  --tab-min-height: 8px !important;
+  --tab-min-height: 26px !important;
 }
-/*
-.tabbrowser-tab:not([pinned]) .tab-content .close-icon,
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
-  width: 18px !important;
-  height: 18px !important;
-  padding: 2px !important;
-  -moz-margin-end: -6px !important;
-}*/
 
 .tab-close-button {
   margin-inline-end: unset !important;
@@ -440,6 +432,12 @@
 }
 
 
+}
+
+.tab-secondary-label {
+  display: none !important;
+}
+
 /* Lightweight theme on tabs */
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
@@ -449,10 +447,4 @@
 #main-window:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #main-window:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
   background-image: var(--toolbar-bgimage) !important;
-}
-
-}
-
-.tab-secondary-label {
-  display: none !important;
 }

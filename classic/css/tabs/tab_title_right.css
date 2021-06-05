@@ -8,10 +8,11 @@
   text-align: right !important;
 }
 
-/* Proton compatibility */
+/* Proton compatibility *//*
 @media (-moz-proton) {
 * .tab-label-container.proton {
   display: flex !important;
   justify-content: right !important;
 }
 }
+*/

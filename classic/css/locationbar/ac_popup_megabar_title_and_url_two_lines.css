@@ -60,4 +60,11 @@
   margin-bottom: -37px !important;
 }
 
+#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  margin-bottom: -47px !important;
+  -moz-appearance: none !important;
+  background: unset !important;
+  padding-inline-start: 15px !important;
+}
+
 }

@@ -30,3 +30,10 @@
 #downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon {
   background: -moz-image-rect(url("../../image/toolbar_fx1.png"), 0, 198, 18, 180) center no-repeat !important;
 }
+
+/* Proton compatibility */
+@media (-moz-proton) {
+#downloads-button .toolbarbutton-icon {
+  list-style-image: url("../../image/toolbar_fx1.png") !important;
+}
+}
