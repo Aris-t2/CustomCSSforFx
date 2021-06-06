@@ -21,3 +21,12 @@
 	color: CurrentColor !important;
   }
 }
+
+
+@media (-moz-proton) {
+	
+  #TabsToolbar {
+	--toolbarbutton-inner-padding: calc((var(--tab-min-height_tnot) - 15px) / 2 - 4.5px) !important;
+  }
+
+}

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.3 ********************************************************************************/
+/* version 3.2.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -369,7 +369,6 @@
 /* - Fx 89+ Windows/Linux ***********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_LinWin_default_tabs.css"; /**/
 /* - Fx 89+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS_default_tabs.css"; /**/

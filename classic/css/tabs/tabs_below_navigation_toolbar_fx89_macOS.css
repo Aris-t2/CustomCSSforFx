@@ -10,7 +10,7 @@
 }
 
 #titlebar:-moz-lwtheme {
-  background-image: var(--lwt-additional-images, var(--lwt-header-image));
+  background-image: var(--lwt-header-image, var(--lwt-additional-images));
   background-repeat: var(--lwt-background-tiling);
   background-position: var(--lwt-background-alignment);
 }
