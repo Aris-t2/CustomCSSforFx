@@ -376,3 +376,8 @@
   width: unset !important;
   height: unset !important;
 }
+
+
+#TabsToolbar .titlebar-spacer[type="pre-tabs"] {
+  display: none !important;
+}

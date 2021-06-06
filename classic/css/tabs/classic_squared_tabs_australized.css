@@ -399,9 +399,22 @@
 
 /* Proton compatibility */
 @media (-moz-proton) {
-	
+
+/*
 #main-window  {
-  --tab-min-height: 26px !important;
+  --tab-min-height: 16px !important;
+}*/
+
+#scrollbutton-up,
+#scrollbutton-down {
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+}
+
+.tab-background,
+.tab-stack {
+  min-height: unset !important;
 }
 
 .tab-close-button {
@@ -430,7 +443,6 @@
   border-radius: initial !important;
   margin-block: initial !important;
 }
-
 
 }
 

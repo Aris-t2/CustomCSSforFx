@@ -39,14 +39,24 @@
 }
 
 
-#main-window:not(:-moz-lwtheme) .titlebar-button {
-  stroke: #fff !important;
-}
-#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button {
-  stroke: CurrentColor !important;
-}
+#TabsToolbar toolbarbutton:not(:-moz-lwtheme),
+#scrollbutton-up:not(:-moz-lwtheme),
+#scrollbutton-down:not(:-moz-lwtheme),
+#main-window:not(:-moz-lwtheme) .titlebar-button,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button,
 #main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover {
-  stroke: #fff !important;
+  fill: CurrentColor !important;
+}
+
+
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down) {
+  fill: CurrentColor !important;
+}
+
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up,
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover {
+    fill: CurrentColor !important;
 }
 
 

@@ -20,4 +20,17 @@
   .tabbrowser-tab {
 	min-height: unset !important; 
   }
+  #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+	padding-bottom: calc(0px + var(--tab-min-height_tnot) + 10px) !important;
+  }
+  #TabsToolbar {
+	height: calc(var(--tab-min-height_tnot) + 10px) !important;
+  }
+
+toolbarbutton#scrollbutton-up[part="scrollbutton-up"]:-moz-lwtheme,
+toolbarbutton#scrollbutton-down[part="scrollbutton-down"]:-moz-lwtheme {
+  fill: CurrentColor !important;
+  color: CurrentColor !important;
+}
+
 }

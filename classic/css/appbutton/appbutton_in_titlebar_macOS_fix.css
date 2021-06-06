@@ -13,3 +13,7 @@
 #main-window[tabsintitlebar] #TabsToolbar {
   -moz-padding-end: 100px !important
 }
+
+#TabsToolbar .titlebar-spacer[type="pre-tabs"] {
+  display: initial !important;
+}

@@ -14,4 +14,10 @@
   .tabbrowser-tab {
 	min-height: unset !important; 
   }
+
+  toolbarbutton#scrollbutton-up[part="scrollbutton-up"]:-moz-lwtheme,
+  toolbarbutton#scrollbutton-down[part="scrollbutton-down"]:-moz-lwtheme {
+	fill: CurrentColor !important;
+	color: CurrentColor !important;
+  }
 }

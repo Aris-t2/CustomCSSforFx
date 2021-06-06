@@ -54,13 +54,13 @@
   padding-inline-start: calc(6px + 1px + 16px) !important;
 }
 
-#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
 #urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
-#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=remotetab]):not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+#urlbar .urlbarView-results > .urlbarView-row:is([type=remotetab]):not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
   margin-bottom: -37px !important;
 }
 
-#urlbar .urlbarView-results > .urlbarView-row:-moz-any([type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+#urlbar .urlbarView-results > .urlbarView-row:is([type=switchtab],[type=remotetab]]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
   margin-bottom: -47px !important;
   -moz-appearance: none !important;
   background: unset !important;
