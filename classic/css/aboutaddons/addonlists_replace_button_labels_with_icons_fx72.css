@@ -79,7 +79,7 @@
 	
 	panel-item[data-l10n-id="expand-addon-button"],
 	panel-item[data-l10n-id="manage-addon-button"] {
-	  --icon: url("chrome://browser/skin/chevron.svg") !important;
+	  --icon: url("chrome://global/skin/icons/chevron.svg") !important;
 	}
 	
 	panel-item[data-l10n-id="ask-to-activate-button"] {

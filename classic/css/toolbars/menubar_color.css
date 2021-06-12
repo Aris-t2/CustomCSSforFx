@@ -56,3 +56,11 @@
 #main-window #main-menubar {
   text-shadow: unset !important;
 }
+
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
+	  visibility: visible !important;
+	}
+  }
+}

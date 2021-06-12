@@ -182,6 +182,24 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 }
 
 
+#downloads-indicator-anchor,
+#downloads-button {
+  list-style-image: unset !important;
+}
+
+#downloads-button .toolbarbutton-icon,
+#downloads-button[attention="success"] .toolbarbutton-icon,
+#downloads-button[progress="true"] .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
+  display: -moz-box !important;
+  visibility: visible !important;
+}
+
+#downloads-indicator-start-box,
+#downloads-indicator-finish-box {
+  display: none !important;
+}
+
 /* Proton compatibility */
 @media (-moz-proton) {
 
@@ -216,25 +234,6 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 #main-window[uidensity=touch] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
 #main-window[uidensity=touch] #nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
   padding: 8px !important;
-}
-
-
-#downloads-indicator-anchor,
-#downloads-button {
-  list-style-image: unset !important;
-}
-
-#downloads-button .toolbarbutton-icon,
-#downloads-button[attention="success"] .toolbarbutton-icon,
-#downloads-button[progress="true"] .toolbarbutton-icon {
-  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
-  display: -moz-box !important;
-  visibility: visible !important;
-}
-
-#downloads-indicator-start-box,
-#downloads-indicator-finish-box {
-  display: none !important;
 }
 
 toolbar:not(#nav-bar) :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,

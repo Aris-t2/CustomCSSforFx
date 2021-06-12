@@ -91,3 +91,11 @@
   opacity: 1.0 !important;
 }
 
+@media (-moz-proton) {
+	
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-customization-target > #forward-button,
+#main-window[uidensity=touch] #nav-bar #nav-bar-customization-target > #forward-button {
+  -moz-margin-start: -4px !important;
+}
+	
+}

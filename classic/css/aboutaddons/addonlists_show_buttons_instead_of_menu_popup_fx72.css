@@ -50,8 +50,8 @@
 	  border: 1px solid black !important;
 	}
 	
-	@supports -moz-bool-pref("browser.in-content.dark-mode") {
-	  @media (prefers-color-scheme: dark) {
+
+	@media (prefers-color-scheme: dark) {
 		addon-list addon-card panel-list *,
 		addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button),
 		.more-options-menu panel-item {
@@ -62,7 +62,7 @@
 		addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]:not(.theme-enable-button):active {
 		  border: 1px solid white !important;
 		}
-	}}
+	}
 	
 	:-moz-any(addon-list,panel-list) panel-item{
 	  margin: 0 1px !important;
@@ -155,6 +155,10 @@
 	addon-card panel-list {
 	  margin-top: -48px !important;
 	}
+	
+	addon-card[expanded="true"] panel-list {
+	  margin-top: -43px !important;
+	}
 
 	addon-card .addon.card .theme-enable-button {
 	  -moz-appearance: none !important;
@@ -167,6 +171,14 @@
 	  border-top: 3px solid !important;
 	  -moz-margin-end: 1px !important;
 	  opacity: 0.9 !important;
+	}
+	
+	addon-card[expanded="true"] .addon.card .theme-enable-button {
+	  margin-top: -28px !important;
+	  z-index: 1000000 !important;
+	  position: absolute !important;
+	  border-top: 1px solid !important;
+	  right: 20px !important;
 	}
 	
 	addon-card .addon.card .theme-enable-button:hover {
@@ -196,6 +208,12 @@
 	  display: block !important;
 	  mask-image: linear-gradient(to left, transparent, black 10px) !important;
 	}
+	
+	/* disable short description on expanded add-ons to prevent button jumping */
+	addon-card[expanded="true"] .card-contents .addon-description {
+	  display: none !important;
+	  /*position: absolute !important;*/
+	}
 
 	addon-card .addon.card .theme-enable-button,
 	input[type="checkbox"].toggle-button {
@@ -203,13 +221,14 @@
 	}
 	
 	.card-contents input[type="checkbox"].toggle-button {
-	  -moz-margin-end: 0px !important;
+	  -moz-margin-end: 10px !important;
 	}
 	
 	addon-card > .addon.card,
 	addon-card > .addon.card * {
 	  overflow: hidden !important;
 	}
+	
 	
 	/**/
 	
@@ -294,6 +313,7 @@ addon-list[type="theme"] addon-card panel-list {
   margin-top: 100px !important;
   margin-inline-end: 6px !important;
 }
+
 
 addon-page-options panel-item-separator {
   width: 100%;

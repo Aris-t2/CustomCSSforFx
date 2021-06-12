@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+	--urlbar_background: white;	
+}
+
+#urlbar-input,
+#urlbar-scheme,
+.searchbar-textbox {
+  background-color: var(--urlbar_background) !important;
+}

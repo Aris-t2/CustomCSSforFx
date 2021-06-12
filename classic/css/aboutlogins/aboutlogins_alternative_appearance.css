@@ -4,9 +4,10 @@
 
 @-moz-document url-prefix(about:logins) {
 	
-	
+  @media not (-moz-toolbar-prefers-color-scheme: dark) {
 	html, body {
 	  background: white !important;
+	  color: black !important;
 	}
 	
 	header,
@@ -16,6 +17,16 @@
 	  background: #f5f5f5 !important;
 	}
 	
+	.login-list-item.keyboard-selected,
+	.login-list-item.selected {
+	  background: white !important;
+	  color: black !important;
+	  border-inline-start-color: white !important;
+	}
+	
+  }	
+  
+  
 	.login-list-item {
 	  background: unset !important;
 	}
@@ -27,18 +38,11 @@
 	  color: HighlightText !important;
 	}
 
-	.login-list-item.keyboard-selected,
-	.login-list-item.selected {
-	  background: white !important;
-	  color: black !important;
-	  border-inline-start-color: white !important;
-	}
+
 	
 	.login-list-item, .meta{
 	  border-bottom: unset !important;
 	}
-	
-
 	
 	header {
 	  padding-inline-end: unset !important;

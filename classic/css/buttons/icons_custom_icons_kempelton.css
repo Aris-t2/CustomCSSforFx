@@ -31,9 +31,6 @@
   background: -moz-image-rect(url("../../image/toolbar_fx_kempelton.png"), 0, 198, 18, 180) center no-repeat !important;
 }
 
-/* Proton compatibility */
-@media (-moz-proton) {
 #downloads-button .toolbarbutton-icon {
   list-style-image: url("../../image/toolbar_fx_kempelton.png") !important;
-}
 }

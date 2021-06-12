@@ -3,30 +3,68 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_navigation_toolbar_fx74.css";
+:root {
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
+  --tab-min-height_tnot: 32px;
+}
+
+#TabsToolbar {
+  position: absolute;
+  display:block;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--toolbar-bgcolor);
+  background-image: var(--toolbar-bgimage);
+  background-clip: padding-box;
+  color: var(--toolbar-color);
+}
+
+@media not (-moz-proton) {
+#TabsToolbar:not(:-moz-lwtheme){
+  -moz-appearance: none;
+  background-image: var(--tabs_toolbar_color_tabs_not_on_top);
+}
+}
+
+#tabbrowser-tabs {
+  width: 100vw;
+}
 
 #navigator-toolbox {
   position: relative;
+  padding-bottom: calc( var(--tab-min-height_tnot) + 0px );
 }
 
-@media (-moz-proton) {
-	
-  .tabbrowser-tab {
-	min-height: unset !important; 
-  }
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
+  height: 36px;
+}
 
-  toolbarbutton#scrollbutton-up[part="scrollbutton-up"]:-moz-lwtheme,
-  toolbarbutton#scrollbutton-down[part="scrollbutton-down"]:-moz-lwtheme {
-	fill: CurrentColor !important;
-	color: CurrentColor !important;
-  }
+/* move caption buttons to windows top right position */
+.titlebar-buttonbox-container {
+  position: fixed;
+  right: 0;
+  visibility: visible;
+  display: block;
+}
+
+#TabsToolbar .titlebar-buttonbox-container,
+#TabsToolbar .private-browsing-indicator,
+#TabsToolbar #window-controls,
+#TabsToolbar *[type="caption-buttons"],
+#TabsToolbar *[type="pre-tabs"],
+#TabsToolbar *[type="post-tabs"] {
+  display: none;
 }
 
 
-@media (-moz-proton) {
-	
-  #TabsToolbar {
-	--toolbarbutton-inner-padding: calc((var(--tab-min-height_tnot) - 15px) / 2 - 4.5px) !important;
-  }
-
+/* Fixes for projects other settings */
+/* remove application/hamburger button in titlebar and tab toolbars start padding */
+#main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button {
+  visibility: collapse;
+}
+#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar]:is([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar {
+ -moz-padding-start: 0px !important;
+ -moz-margin-start: 0px !important;
 }

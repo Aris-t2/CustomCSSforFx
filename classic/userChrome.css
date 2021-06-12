@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.4 ********************************************************************************/
+/* version 3.2.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -219,6 +219,7 @@
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ff3_strata_v2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_orange.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_red.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ie8.css"; /**/
@@ -325,6 +326,7 @@
 /* custom tab appearance - [only use one at a time] *********************************************/
 @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
+/* @import "./css/tabs/default_tabs_enhanced.css"; /**/ /* Fx89+ & Proton UI */
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
@@ -369,6 +371,7 @@
 /* - Fx 89+ Windows/Linux ***********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_WinLin_defaults_tabs.css"; /**/
 /* - Fx 89+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS_default_tabs.css"; /**/
@@ -461,7 +464,7 @@
 /* @import "./css/tabs/tab_close_at_tabs_start.css"; /**/
 /* @import "./css/tabs/tab_close_icon_size.css"; /**/
 
-/* tab title - [only use one at a time] for Fx 60-88 and 89-90 with disabled Proton only ********/
+/* tab title - [only use one at a time] *********************************************************/
 /* @import "./css/tabs/tab_title_left.css"; /**/
 /* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/tab_title_right.css"; /**/
@@ -743,6 +746,7 @@
 /* @import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
 /* @import "./css/locationbar/megabar_border_roundness.css"; /**/
 /* @import "./css/locationbar/megabar_background_color_dark.css"; /**/
+/* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* Fx89+ */
 
 /* popup content order/appearance - [only use one at a time] ************************************/
 @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/

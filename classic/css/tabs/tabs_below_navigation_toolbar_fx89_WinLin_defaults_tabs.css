@@ -7,35 +7,6 @@
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
 }
 
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  margin-top: calc(-6px + var(--tab-min-height));
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
-  position: fixed;
-  top: 3px;
-  left: 0;
-  right: unset;
-}
-
-/* caption button position in maximized mode after moving to the top */
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
-#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: 0;
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #titlebar {
-  margin-top: calc(-1 * var(--tab-min-height));
-  padding-top: var(--tab-min-height);
-  height: unset !important;
-}
-
-#titlebar:-moz-lwtheme {
-  background-image: var(--lwt-header-image, var(--lwt-additional-images));
-  background-repeat: var(--lwt-background-tiling);
-  background-position: var(--lwt-background-alignment);
-}
-
 #TabsToolbar {
   position: absolute;
   display:block;
@@ -46,7 +17,6 @@
   background-clip: padding-box;
   color: var(--toolbar-color);
 }
-
 
 #tabbrowser-tabs {
   width: 100vw;
@@ -100,6 +70,4 @@
  -moz-padding-start: 0px !important;
  -moz-margin-start: 0px !important;
 }
-#main-window[tabsintitlebar] #TabsToolbar {
-  -moz-padding-end: 0px !important
-}
+

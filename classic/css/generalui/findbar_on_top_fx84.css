@@ -41,11 +41,29 @@
   border-top: 0px solid transparent !important;
 }
 
+#main-window:-moz-lwtheme :is(.browserContainer, #viewSource) :is(findbar, #FindToolbar) {
+	padding-block: 0 !important;
+	border: unset !important;
+}
+
 #main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
   -moz-appearance: none !important;
   background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
   -moz-margin-end: -18px !important;
   -moz-padding-end: 18px !important;
+}
+
+#main-window:-moz-lwtheme :is(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  -moz-appearance: none !important;
+  background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  -moz-margin-end: -26px !important;
+  -moz-padding-end: 26px !important;
+  -moz-margin-start: -26px !important;
+  -moz-padding-start: 26px !important;
+}
+
+#main-window:-moz-lwtheme :is(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container hbox[anonid="findbar-textbox-wrapper"] {
+  -moz-padding-start: 8px;
 }
 
 

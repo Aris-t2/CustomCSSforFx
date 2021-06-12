@@ -229,6 +229,10 @@
 	  margin-inline-start: 0 !important;
 	}
 	
+#backContainersButton .button-box {
+	padding-block-end: 20px !important
+}
+	
 }
 
 /* preference sub windows */
