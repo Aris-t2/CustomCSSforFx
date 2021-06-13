@@ -169,11 +169,11 @@
   border-image: unset !important;
   border-image-slice: 0 !important;
 }
-
+/*
 .tabbrowser-tab:not([selected]) .tab-background{
   display: none !important;
 }
-
+*/
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: rgba(0,0,0,.0) !important;
 }

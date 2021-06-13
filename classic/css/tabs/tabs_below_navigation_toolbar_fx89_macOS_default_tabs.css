@@ -41,12 +41,14 @@
   display:block;
   bottom: 0;
   width: 100vw;
-  background-color: var(--toolbar-bgcolor);
-  background-image: var(--toolbar-bgimage);
   background-clip: padding-box;
   color: var(--toolbar-color);
 }
 
+#TabsToolbar:not(:-moz-lwtheme){
+  -moz-appearance: none;
+  background-image: var(--tabs_toolbar_color_tabs_not_on_top);
+}
 
 #tabbrowser-tabs {
   width: 100vw;
@@ -88,18 +90,39 @@
   display: none;
 }
 
+/* lw themes support */
+#nav-bar {
+  box-shadow: unset !important;
+}
+
+/* remove color overlay for lw-themes */
+#main-window[style*='--lwt-header-image'] :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
+  background: unset !important;
+}
+
+/* adjust background color */
+#main-window:not([style*='--lwt-header-image']) #TabsToolbar:-moz-lwtheme {
+  -moz-appearance: none !important;
+  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+}
 
 /* Fixes for projects other settings */
 /* remove application/hamburger button in titlebar and tab toolbars start padding */
 #main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button {
   visibility: collapse;
 }
+
+/* override code inside appbutton in titlebar code */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[tabsintitlebar]:is([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar {
  -moz-padding-start: 0px !important;
  -moz-margin-start: 0px !important;
 }
+
 #main-window[tabsintitlebar] #TabsToolbar {
   -moz-padding-end: 0px !important
 }

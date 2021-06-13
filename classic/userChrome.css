@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.5 ********************************************************************************/
+/* version 3.2.6 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -159,7 +159,6 @@
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode *****/
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
-/* @import "./css/buttons/buttons_on_navbar_more_compact_mode_custom_icons_fix.css"; /**/
 
 /* icon appearance - [only use one at a time] (custom icons do not scale in HiDPI modes) ********/
 @import "./css/buttons/icons_colorized.css"; /**/

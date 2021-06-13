@@ -12,6 +12,12 @@
   --toolbarbutton-inner-padding: 5px !important;
 }
 
+@media (-moz-proton) {
+#main-window[uidensity=compact] {
+  --toolbarbutton-inner-padding: 6px !important;
+}
+}
+
 #main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button,
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,

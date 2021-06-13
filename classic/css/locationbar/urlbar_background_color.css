@@ -12,3 +12,12 @@
 .searchbar-textbox {
   background-color: var(--urlbar_background) !important;
 }
+
+#searchbar:focus-within {
+  box-shadow: unset !important;
+}
+
+#urlbar:not([focused="true"], [open]) > #urlbar-background,
+#searchbar:not(:focus-within) {
+  background-color: var(--urlbar_background) !important;
+}
