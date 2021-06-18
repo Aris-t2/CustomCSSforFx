@@ -69,7 +69,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_allbms_____v) {
 }
 
 treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
-  list-style-image: url("chrome://browser/skin/downloads/download-icons.svg#arrow-with-bar") !important;
+  list-style-image: url("chrome://browser/skin/downloads/downloads.svg") !important;
   -moz-image-region: auto !important;
 }
 
@@ -96,7 +96,10 @@ toolbarbutton.bookmark-item[container][open],
   -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
 }
 
-.bookmark-item[container][query] {
+.bookmark-item[container][query],
+.bookmark-item[container][query][open],
+.bookmark-item[container][query] > .menu-iconic-left > .menu-iconic-icon,
+.bookmark-item[container][query][open] > .menu-iconic-left > .menu-iconic-icon {
   list-style-image: url("./../../image/query.png") !important;
   -moz-image-region: auto !important;
 }
@@ -134,18 +137,19 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
   list-style-image: url("./../../image/feedIcon16.png") !important;
 }
 
-#bookmarksToolbarFolderMenu,
-#BMB_bookmarksToolbar,
+#bookmarksToolbarFolderMenu > .menu-iconic-left > .menu-iconic-icon,
+#BMB_bookmarksToolbar > .menu-iconic-left > .menu-iconic-icon,
 #panelMenu_bookmarksToolbar {
   list-style-image: url("./../../image/bookmarksToolbar.png") !important;
   -moz-image-region: auto !important;
 }
 
-#menu_unsortedBookmarks,
-#BMB_unsortedBookmarks,
+#menu_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
+#BMB_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
 #panelMenu_unsortedBookmarks {
   list-style-image: url("./../../image/unsortedBookmarks.png") !important;
   -moz-image-region: auto !important;
 }
+
 
 /**/
