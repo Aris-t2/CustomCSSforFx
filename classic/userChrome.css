@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.7 ********************************************************************************/
+/* version 3.2.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -231,14 +231,14 @@
 /* @import "./css/buttons/custom_backforward_small_ie8.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ie9.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
-/* @import "./css/buttons/custom_backforward_connected.css"; /**/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/			/* <-- AERO colors */
+/* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* not for Fx89+ Proton tabs */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/  /* not for Fx89+ Proton tabs */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/  /* <-- AERO colors */  /* not for Fx89+ Proton tabs */
 
 /* Additional tweaks for custom_backforward_connected_to_location_bar* **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71+ */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71-88 */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility on Fx 71-88 */
 
 
 /************************************************************************************************/
@@ -469,7 +469,7 @@
 /* @import "./css/tabs/tab_title_right.css"; /**/
 
 /* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
-/* [!] To be used with Fx 57-88 default tabs, not Fx 89+ Proton tabs ****************************/
+/* [!] Fx 57-90 default tabs, not Fx 89+ Proton tabs ********************************************/
 /* @import "./css/tabs/default_tabs_tab_border.css"; /**/
 /* @import "./css/tabs/default_tabs_round_top_borders.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_containers_full_line.css"; /**/
@@ -480,6 +480,12 @@
 /* @import "./css/tabs/default_tabs_static_tab_line.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode.css"; /**/
+
+/* DEFAULT TABS Fx89+ - Proton tabs - use only, if 'classic squared tabs' are disabled **********/
+/* tab line settings - [only use one at a time] *************************************************/
+/* @import "./css/tabs/default_tabs_no_tab_line_proton.css"; /**/
+/* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs_proton.css"; /**/
+/* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode_proton.css"; /**/
 
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
@@ -699,7 +705,7 @@
 
 /* identity box / page identity button **********************************************************/
 /* @import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* replaces search glass in Fx70+ */ /* Fx 60-83 only */
-@import "./css/locationbar/identitybox_colors.css"; /**/
+/* @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 
 /* padlock icons in identity box / page identity button - [only use one at a time] **************/

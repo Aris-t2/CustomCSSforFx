@@ -2,12 +2,15 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 :root {
   --color_disabled_state: #f9f9fa;
   --color_default_state: #e8e8e8;
   --color_hover_state: lightblue;
   --color_active_state: lightgrey;
 }
+
+@media not (-moz-proton) {
 
 #main-window:not([uidensity=compact]) #nav-bar #forward-button[disabled="true"] .toolbarbutton-icon,
 #main-window:not([uidensity=compact]) #nav-bar #forward-button .toolbarbutton-icon,
@@ -60,4 +63,12 @@
 #main-window:not([uidensity=compact]) #nav-bar #forward-button:not([disabled="true"]):not(:hover):-moz-any([open="true"],:active) .toolbarbutton-icon,
 #main-window:not([uidensity=compact]) #nav-bar #back-button:not([disabled="true"]):not(:hover):-moz-any([open="true"],:active) .toolbarbutton-icon {
   background: var(--color_active_state) !important; 
+}
+
+}
+
+@media (-moz-proton) {
+#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button {
+  -moz-margin-start: -4px !important;
+}
 }

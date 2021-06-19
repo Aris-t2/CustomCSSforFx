@@ -26,3 +26,7 @@
 #tracking-protection-icon-animatable-box {
   visibility: inherit !important;
 }
+
+#PersonalToolbar .toolbarbutton-1 {
+  margin: 0px !important; 
+}
