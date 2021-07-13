@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.8 ********************************************************************************/
+/* version 3.2.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -249,8 +249,10 @@
 /* @import "./css/appbutton/appbutton_hidden.css"; /**/
 
 /* application/hamburger button popup ***********************************************************/
-@import "./css/appbutton/appbutton_popup_more_icons.css"; /**/
-@import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/
+@import "./css/appbutton/appbutton_popup_icons_fx89.css"; /**/ /*Fx 89+ */
+/* @import "./css/appbutton/appbutton_popup_more_icons.css"; /**/ /*Fx 60-88 */
+@import "./css/appbutton/appbutton_popup_icons_colorized_fx89.css"; /**/ /*Fx 89+ */
+/* @import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/ /*Fx 60-88 */
 /* @import "./css/appbutton/appbutton_popup_sync_hidden.css"; /**/
 /* @import "./css/appbutton/appbutton_popup_logins_and_passwords_hidden.css"; /**/
 /* @import "./css/appbutton/appbutton_popup_trackingprotection_hidden.css"; /**/
@@ -489,6 +491,7 @@
 
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
+/* @import "./css/tabs/tab_audio_icon_fx89.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/

@@ -56,7 +56,7 @@
 
 arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up,
 arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover {
-    fill: CurrentColor !important;
+  fill: CurrentColor !important;
 }
 
 
