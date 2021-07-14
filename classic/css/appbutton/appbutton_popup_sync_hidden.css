@@ -6,6 +6,8 @@
 #appMenu-fxa-status,
 #appMenu-fxa-status + toolbarseparator,
 #appMenu-fxa-container,
-#appMenu-fxa-container + toolbarseparator {
+#appMenu-fxa-container + toolbarseparator,
+#appMenu-fxa-status2,
+#appMenu-fxa-status2 + toolbarseparator {
   display: none !important;
 }

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.2.9 ********************************************************************************/
+/* version 3.3.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -234,6 +234,8 @@
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* not for Fx89+ Proton tabs */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/  /* not for Fx89+ Proton tabs */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/  /* <-- AERO colors */  /* not for Fx89+ Proton tabs */
+/* @import "./css/buttons/custom_backforward_connected_fx89.css"; /**/ /* Fx 89+ */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx89.css"; /**/ /* Fx 89+ */
 
 /* Additional tweaks for custom_backforward_connected_to_location_bar* **************************/
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
