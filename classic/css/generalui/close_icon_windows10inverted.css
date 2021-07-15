@@ -65,7 +65,16 @@
 }
 
 #TabsToolbar .tabbrowser-tab .tab-content .close-icon {
-  /*width: 20px !important;
-  height: 20px !important;*/
   background: unset !important;
+}
+
+@media (-moz-proton) {
+	
+.tab-close-button {
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+  border-radius: unset !important;
+}
+
 }
