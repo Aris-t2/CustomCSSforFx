@@ -1,0 +1,29 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  display: block !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-closebutton {
+  position: absolute !important;
+  display: block !important;
+  margin-top: -26px !important;
+  margin-bottom: 8px !important;
+  -moz-margin-start: 4px !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  -moz-padding-start: 26px !important;
+}
+
+#main-window[style*='--lwt-header-image']:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  -moz-margin-end: 0px !important;
+  -moz-padding-end: 0px !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  overflow: hidden !important;
+}

@@ -1,0 +1,40 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_fx65.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+#TabsToolbar,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme, 
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #TabsToolbar:-moz-lwtheme {
+  border-bottom: 0 !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
+}
+
+.urlbarView:not(.megabar),
+#urlbar-results {
+  z-index: 100 !important;
+}
+
+/* Fx71+ fix */
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button,.scrollbutton-up,.scrollbutton-down):not(:-moz-lwtheme),
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button,.scrollbutton-up,.scrollbutton-down):-moz-lwtheme-darktext,
+.tabbrowser-arrowscrollbox::part(scrollbutton-up),
+.tabbrowser-arrowscrollbox::part(scrollbutton-down) {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+}
+
+/* Fx76+ fix */
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down) {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+}

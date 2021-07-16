@@ -1,0 +1,125 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* short findbar on contents top */
+
+:-moz-any(.browserContainer, #viewSource) .findbar-container :-moz-any(spacer, .findbar-find-fast[anonid="match-case-status"]) {
+  visibility: collapse;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton {
+  padding: 0 !important;
+  margin: 0 !important;
+  -moz-margin-end: 2px !important;
+}
+
+:-moz-any(.browserContainer, #viewSource) .findbar-closebutton  .toolbarbutton-icon{
+  width: 16px !important;
+  height: 16px !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-textbox {
+  font-size: 14px !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  display: flex !important;
+  margin-top: -1px !important;
+  box-shadow: unset !important;
+  border: 1px solid #e1e1e2 !important;
+  border-top: 0px solid transparent !important;
+  border-radius: 0 0 3px 3px;
+  transition-property: margin-top, opacity, visibility !important;
+  background-image: unset !important;
+}
+
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  -moz-appearance: none !important;
+  border: 1px solid var(--tabs-border-color) !important;
+  border-top: 0px solid transparent !important;
+}
+
+#main-window:-moz-lwtheme :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-container {
+  -moz-appearance: none !important;
+  background-image: linear-gradient(to bottom, var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  -moz-margin-end: -18px !important;
+  -moz-padding-end: 18px !important;
+}
+
+/* space before findbar */
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):-moz-locale-dir(ltr) {
+  left: 5px;
+}
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):-moz-locale-dir(rtl) {
+  right: 5px;
+}
+
+/* increase width to full window size *//*
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+ 
+/**
+#viewSource #FindToolbar {
+  background-color: -moz-dialog;
+  color: -moz-dialogtext;
+}
+*/
+
+@media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
+  @media not all and (-moz-windows-classic) {
+	:-moz-any(.browserContainer,#viewSource) .findbar-button {
+	  -moz-appearance: toolbarbutton !important;
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}
+	.browserContainer findbar toolbarbutton * {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}
+  }
+}
+
+:-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 4px !important;
+  font-weight: bold !important;
+}
+:-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  font-style: italic !important;
+}
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .findbar-find-status {
+  color: red !important;
+}
+#main-window:not(:-moz-lwtheme-brighttext) :-moz-any(.browserContainer, #viewSource) .found-matches {
+  color: green !important;
+}
+#main-window:-moz-lwtheme-brighttext :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  color: white !important;
+}
+
+/* support for sidebar */
+#sidebar-box:not([hidden="true"]) + #sidebar-splitter + #appcontent findbar {
+  -moz-margin-start: 230px !important;
+}
+
+/* status at findbars start *//*
+:-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
+  -moz-box-ordinal-group: 0;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 6px !important;
+}
+/**/
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  z-index: 10000 !important;
+}
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  overflow: hidden !important;
+}

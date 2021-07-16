@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+:-moz-autofill, :autofill, :-moz-autofill-preview {
+  filter: unset;
+}
+
+:root:not(#id) input {
+   filter: unset !important;
+}

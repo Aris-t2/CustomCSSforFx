@@ -1,0 +1,34 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tab-label {
+  -moz-box-flex: 1 !important;
+  text-align: right !important;
+}
+
+/* Proton compatibility */
+
+@media (-moz-proton) {
+  .tab-label-container {
+	display: grid !important;
+	justify-items: safe right !important;
+  }
+  .tab-label {
+	overflow: hidden !important;
+  }
+  
+.tab-close-button {
+  margin-inline-end: unset !important;
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+  border-radius: unset !important;
+}
+
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: unset !important;
+  width: unset !important;
+}
+}

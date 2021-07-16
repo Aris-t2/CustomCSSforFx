@@ -1,0 +1,10 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) .findbar-closebutton {
+  -moz-box-ordinal-group: 0 !important;
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: -8px !important;
+}

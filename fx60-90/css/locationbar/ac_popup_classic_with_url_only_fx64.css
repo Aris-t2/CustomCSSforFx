@@ -1,0 +1,114 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* If complete CustomCSSforFx release package is used 'root' values have to be set *******
+   inside /config/general_variables.css! ************************************************/
+:root {
+  --ac_popup_width: 700px; /* popup width in normal mode */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px;  /* popup width in fullscreen mode */
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox .autocomplete-richlistitem .ac-title {
+  visibility: collapse !important;
+}
+
+/* popup position */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
+  -moz-margin-start: 0 !important;
+  margin-top: -4px !important;
+}
+
+/* Hide "Visit/Search" items */
+/*#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"]),*/
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem[anonid="type-icon-spacer"] {
+  display: none !important;
+}
+
+/* remove space around box */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  padding: 0 !important;
+}
+
+/* Max-height for items visible without scrolling */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  height: auto !important;
+  max-height: calc(47.5px * 12) !important;
+}
+
+/* popup width [normal mode] */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
+  min-width: 0px !important;
+  width: var(--ac_popup_width) !important;
+  max-width: var(--ac_popup_width) !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
+  min-width: calc( var(--ac_popup_width) - 50px) !important;
+  width: calc( var(--ac_popup_width) - 50px) !important;
+}
+
+/* Items height, border, postion for two lines */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+  position: relative !important;
+  height: 32px !important;
+  border-bottom-color: transparent !important;
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(ltr) .autocomplete-richlistitem {
+  left: 0 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"]:-moz-locale-dir(rtl) .autocomplete-richlistitem {
+  right: 0 !important;
+}
+
+/* Hide separator between title and url ans space before icons */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem spacer,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator { 
+  display: none !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] {
+  background-color: Highlight !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] .ac-action-text,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] .ac-title, 
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-title[selected],
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] .ac-url, 
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url[selected],
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] .ac-action,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-action[selected],
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[selected=true] .ac-separator,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-separator[selected] {
+  color: HighlightText !important;
+}
+  
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not([selected]):not(:hover) > .ac-action[actiontype=searchengine] {
+  display: block !important;
+}
+
+/* fix large space issue at items end */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+  border-inline-end: 0px solid transparent !important;
+}
+	
+/* show scrollbar if needed */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox {
+  overflow-x: hidden !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > richlistbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] > .autocomplete-richlistbox {
+  overflow-y: auto !important;
+}

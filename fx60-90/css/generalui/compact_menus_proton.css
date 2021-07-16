@@ -1,0 +1,24 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.subview-subheader,
+panelview .toolbarbutton-1,
+.subviewbutton,
+.widget-overflow-list .toolbarbutton-1 {
+  margin: 0 !important;
+  min-height: 0 !important;
+  padding: 2px !important;
+}
+	
+menupopup > menuitem,
+menupopup > menu {
+  padding-block: 2px !important;
+  padding-inline-start: 4px !important;
+}
+
+#context-navigation :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  padding: 2px !important;
+  -moz-margin-start: -10px !important;
+}

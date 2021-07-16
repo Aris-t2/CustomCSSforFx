@@ -1,0 +1,37 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "icons_custom_icons_sizes.css";
+
+/*
+   There are no icon set versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+:-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
+#downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
+#downloads-button .toolbarbutton-icon {
+  list-style-image: url("../../image/toolbar_fx2.png") !important;
+}
+
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  list-style-image: url("../../image/newtabff1.png") !important;
+  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
+}
+
+#downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
+#downloads-button:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
+#downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon {
+  background: -moz-image-rect(url("../../image/toolbar_fx2.png"), 0, 198, 18, 180) center no-repeat !important;
+}
+
+#downloads-button .toolbarbutton-icon {
+  list-style-image: url("../../image/toolbar_fx2.png") !important;
+}
+

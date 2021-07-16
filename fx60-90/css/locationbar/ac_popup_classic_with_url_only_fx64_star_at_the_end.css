@@ -1,0 +1,20 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./ac_popup_classic_with_url_only_fx64.css";
+
+/* THIS IS NOT A STANDALONE FILE! *******************************************************/
+/* Extension file for 'ac_popup_classic_with_two_lines_fx64.css' ************************/
+
+/* If complete CustomCSSforFx release package is used, ':root' variables have to be set **
+   inside /config/general_variables.css otherwise inside *********************************
+   'ac_popup_classic_with_url_only_fx64.css' file! *************************************/
+
+/* move bookmarks star and other icon to items right */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-type-icon {
+  -moz-margin-start: calc( var(--ac_popup_width) - 26px ) !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-site-icon {
+  -moz-margin-start: calc( -1 * ( var(--ac_popup_width) - 10px ) ) !important;
+}

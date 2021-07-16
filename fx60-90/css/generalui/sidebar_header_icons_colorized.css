@@ -1,0 +1,25 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebar-switcher-bookmarks > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #336699 !important;
+  fill: #336699 !important;
+  opacity: 1.0 !important;
+}
+
+#sidebar-switcher-history > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #800080 !important;
+  fill: #800080 !important;
+  opacity: 1.0 !important;
+}
+
+#sidebar-switcher-tabs > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #4169e1 !important;
+  fill: #4169e1 !important;
+  opacity: 1.0 !important;
+}

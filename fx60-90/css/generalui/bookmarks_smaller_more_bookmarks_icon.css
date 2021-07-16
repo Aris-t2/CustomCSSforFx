@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PlacesChevron .toolbarbutton-icon {
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
+}

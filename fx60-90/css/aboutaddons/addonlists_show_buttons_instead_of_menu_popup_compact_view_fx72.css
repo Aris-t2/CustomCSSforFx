@@ -1,0 +1,73 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_show_buttons_instead_of_menu_popup_fx72.css";
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	:root {
+	  --addon-icon-size: 20px !important;
+	}
+	
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	addon-card .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
+	  min-height: 40px !important;
+	  padding-inline-start: 2px !important;
+	}
+	
+	addon-card panel-list {
+	  margin-top: 4px !important;
+	}
+	
+	addon-card .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card .card-heading-image {
+	  object-fit: unset !important;
+	  margin: 0 !important;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]{
+	  margin-top: 5px !important;;
+	}
+	
+	
+	/* small image */ 
+	addon-list[type="theme"] .card-heading-image {
+	  width: 200px !important;
+	  height: 40px !important;
+	  object-fit: unset !important;
+	}
+
+	addon-list[type="theme"] .card-heading-image {
+	  position: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card > .addon.card {
+	  height: unset !important;
+	}
+
+	addon-list[type="theme"] .card-contents {
+	  margin-top: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: 4px !important;
+	  margin-inline-end: 6px !important;
+	}
+	
+}

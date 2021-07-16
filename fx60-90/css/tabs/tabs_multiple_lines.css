@@ -1,0 +1,124 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original author: https://00.bulog.jp/archives/1476 *************/
+/****************************************************************************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+:root {
+  --tabs-end-position: 50px;
+  --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+  --mltabs-newtab-height: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+  --tab_min_width_mlt: 60px;
+  --tab_max_width_mlt: 100px;
+}
+
+/* titlebar buttons */
+#titlebar-buttonbox {
+  vertical-align: top !important;
+  display: block !important;
+}
+
+.tabbrowser-arrowscrollbox scrollbox {
+  overflow: visible !important;
+}
+
+.tabbrowser-arrowscrollbox scrollbox > box {
+  display: block !important;
+}
+
+/* additional space after tabs */
+/*
+.tabbrowser-tabs {
+  -moz-margin-end: var(--tabs-end-position) !important;
+}
+*/
+
+/* tab size */
+.tabbrowser-tab {
+  min-height: var(--tab-min-height_mlt) !important;
+  max-height: var(--tab-min-height_mlt) !important;
+  vertical-align: top !important;
+  -moz-box-sizing: border-box !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
+}
+
+/* 'new tab' tab size */
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  vertical-align: bottom !important;
+  height: var(--mltabs-newtab-height) !important;
+  margin-bottom: -1px !important;
+}
+
+@media (-moz-windows-classic) {
+	#TabsToolbar #tabbrowser-tabs :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+	  margin-bottom: 1px !important;
+	  height: calc(var(--mltabs-newtab-height) - 2px) !important;
+	}
+}
+
+/* hide unneeded buttons */
+.scrollbutton-up,
+.scrollbutton-down,
+#TabsToolbar #alltabs-button{
+  display: none;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+  opacity: 0 !important;
+}
+
+#tabbrowser-tabs * {
+  overflow-x: none !important;
+}
+
+#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
+  display: block !important;
+}
+
+#tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 4px !important;
+}
+
+#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 0px !important;
+}
+
+/* hide private window indicator, window controls and titlebar placeholders */
+#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
+#main-window[tabsintitlebar] #TabsToolbar #window-controls,
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
+  opacity: 0 !important;
+}
+
+/* hide tab borders set by Firefox 58+ to solve 'blank space below tabs' issue */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  border: 0 !important;
+}
+
+/*lw theme fix */
+#main-window:-moz-lwtheme {
+  background: var(--lwt-header-image) !important;
+  background-repeat: repeat-y !important;
+}

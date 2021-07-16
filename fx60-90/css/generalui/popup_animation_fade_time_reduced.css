@@ -1,0 +1,10 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/*popup, menupopup,*/ #BMB_bookmarksPopup, panel[type="arrow"] {
+  transition-duration: 0.01ms !important;
+}
+
+/**/

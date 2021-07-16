@@ -1,0 +1,69 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	.more-options-menu panel-list,
+	addon-list .more-options-menu addon-options panel-list	{
+	  right: 30px !important;
+	}
+
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	  width: 18px !important;
+	  height: 18px !important;
+	  padding: 0 !important;
+	  padding-inline-end: 0px !important;
+	  background-position: center !important;
+	}
+	
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button slot {
+	  visibility: hidden !important;
+	}
+
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="remove-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/delete.svg") !important;
+	}
+
+	panel-item[data-l10n-id="install-update-button"] {
+	  --icon: url("chrome://global/skin/icons/update-icon.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="preferences-addon-button"] {
+	  --icon: url("chrome://browser/skin/settings.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="report-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/warning.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="expand-addon-button"],
+	panel-item[data-l10n-id="manage-addon-button"] {
+	  --icon: url("chrome://browser/skin/chevron.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="ask-to-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="always-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="never-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+
+}

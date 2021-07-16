@@ -1,0 +1,69 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#tabbrowser-tabs {
+  --group_zero: inherit;
+  --pin_tab1: inherit;
+  --pin_tab2: inherit;
+  --pin_tab3: inherit;
+  --pin_tab4: inherit;
+  --pin_tab5: inherit;
+  --pin_tab6: inherit;
+  --pin_tab7: inherit;
+  --pin_tab8: inherit;
+  --pin_tab9: inherit;
+  --pin_tab10: inherit;
+}
+
+#tabbrowser-tabs[overflow="true"] {
+  --group_zero: 1000;
+  --pin_tab1: -88px;
+  --pin_tab2: -118px;
+  --pin_tab3: -148px;
+  --pin_tab4: -178px;
+  --pin_tab5: -208px;
+  --pin_tab6: -238px;
+  --pin_tab7: -268px;
+  --pin_tab8: -298px;
+  --pin_tab9: -328px;
+  --pin_tab10: -358px;
+}
+
+spacer[part="arrowscrollbox-overflow-start-indicator"] + scrollbox[part="scrollbox"]{
+  -moz-box-ordinal-group: var(--group_zero) !important;
+}
+
+/* Fix pinned tabs position for the first 10 pinned tabs (repeat for more pinned tabs) */
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab1) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab2) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab3) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab4) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab5) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab6) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab7) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab8) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab9) !important;
+}
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] + .tabbrowser-tab[pinned] {
+  margin-inline-start: var(--pin_tab10) !important;
+}
+

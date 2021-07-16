@@ -1,0 +1,206 @@
+/* Firefox Quantum userContent.css tweaks *******************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+/*************************************************************************************************
+
+ Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
+  
+ [!] Firefox 69+ requires this preference to be enabled or custom styles will not be loaded:
+	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+
+*************************************************************************************************/
+
+/*************************************************************************************************
+
+  README
+
+  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
+  CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
+  \chrome\config\
+  \chrome\css\
+  \chrome\image\
+  \chrome\userChrome.css
+  \chrome\userContent.css
+
+  ENABLING options: remove the combination of / and * in front of '@import'
+  DISABLING options: add the combination of / and * in front of '@import'
+
+  FIREFOX BUGS (nothing CSS code can do about):
+  - some '@import' calls might not work properly on macOS and Linux
+  - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
+  - in both cases CSS code has to be added to userContent.css file manually
+
+  Some CSS tweaks won't work, if '@namespace' references are used inside .css files!
+
+  All options have significant categories and names.
+
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/211
+
+*************************************************************************************************/
+
+
+/************************************************************************************************/
+/* about:addons (settings split into different areas for Firefox 60-67, 68+ and 60+) ************/
+/************************************************************************************************/
+
+/* FIREFOX 68+ #################################################################################*/
+/* addons page appearance - [only use one at a time] (incl. version number & buttons) ***********/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_fx68.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_fx75.css"; /**/
+@import "./css/aboutaddons/addons_manager_alternative_appearance_fx89.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx68.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx75.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx89.css"; /**/	/* <-- AERO colors */
+
+/* version number for active add-ons [Fx 68+] ***************************************************/
+@import "./css/aboutaddons/addonlists_show_addon_version_number_fx68.css"; /**/
+
+/* compact item lists - [only use one at a time] - 'to be used with alternative appearance ' ****/
+/* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_fx72.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact_fx72.css"; /**/
+
+/* button settings (requires aboves 'addons page appearance' settings) **************************/
+/* - buttons instead of menupopup - [only use one at a time] ************************************/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_fx72.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view_fx72.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view_fx89.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view_fx72.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view_fx89.css"; /**/
+
+/* - buttons icons instead of labels (requires above option) - [only use one at a time] *********/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons_fx72.css"; /**/
+/* - other button settings **********************************************************************/
+/* @import "./css/aboutaddons/addonlists_hide_buttons_on_details_page_fx72.css"; /**/ /* if addonlists_show_buttons_instead_of_menu_popup_fx72.css is active */
+/* @import "./css/aboutaddons/addonlists_hide_report_button_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_manage_button_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_colorized_button_icons_fx68.css"; /**/ /* requires replace_button_labels_with_icons option */
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover_fx68.css"; /**/
+
+/* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories_fx68.css"; /**/
+
+/* other settings *******************************************************************************/
+/* @import "./css/aboutaddons/addonlists_badges_old_size.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_recommended_icon_fx68.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_allowed_in_private_windows_icon_fx68.css"; /**/
+
+
+/* FIREFOX 60-67 ###############################################################################*/
+/* NOTE: 'Version number for add-ons' will stop working soon when Mozilla drops XBL support. *****
+		 See https://bugzilla.mozilla.org/show_bug.cgi?id=1397874 *******************************/
+
+/* version number for add-ons [Fx 60-67] - [only use one at a time] *****************************/
+/* [!] version number's xml file now restores add-on 'description' on Firefox 64+ ***************/
+/* @import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_addon_version_number_hide_description.css";
+
+/* show 'last updated' date for add-ons [Fx 60-67] - [only use one at a time] *******************/
+/* @import "./css/aboutaddons/addonlists_show_addon_date_last_updated.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_addon_date_last_updated_start_position.css"; /**/
+
+/* addons page appearance [Fx 60-67] - [only use one at a time] *********************************/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_v2_aero.css"; /**/	/* <-- AERO colors */
+
+/* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories.css"; /**/
+
+/* compact item lists [Fx 60-67] - [only use one at a time] *************************************/
+/* @import "./css/aboutaddons/addonlists_compact.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact.css"; /**/
+
+/* other settings [Fx 60-67] ********************************************************************/
+/* @import "./css/aboutaddons/addonlists_disabled_addons_colorized_icons.css"; /**/	
+/* @import "./css/aboutaddons/addonlists_disabled_tag_hidden.css"; /**/
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover.css"; /**/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons.css"; /**/	
+/* @import "./css/aboutaddons/addonlists_move_button_to_start.css"; /**/
+/* @import "./css/aboutaddons/addonlists_green_dot_hidden.css"; /**/
+/* @import "./css/aboutaddons/addonlists_private_browsing_notice_hidden.css"; /**/
+/* @import "./css/aboutaddons/details_page_alternative_content_order.css"; /**/	
+/* @import "./css/aboutaddons/details_page_switch_banner_label_position_for_themes.css"; /**/
+/* @import "./css/aboutaddons/search_category_always_visible.css"; /**/ /* not for recent Fx versions */
+
+
+/* FIREFOX 60+ #################################################################################*/
+@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_last_category.css"; /**/
+
+
+/************************************************************************************************/
+/* about:preferences ****************************************************************************/
+/************************************************************************************************/
+
+/* preferences page appearance - [only use one at a time] ***************************************/
+@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_v2.css"; /**/
+
+
+/************************************************************************************************/
+/* about:newtab / about:home ********************************************************************/
+/************************************************************************************************/
+
+/* a dark appearance for inbuilt 'Dark' theme is present by default in Firefox 61+ **************/
+/* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* alternative background color for about:newtab/home pages 'Dark' theme present in Firefox 61+ */
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
+
+/* @import "./css/aboutnewtab/top_sites_larger_favicons.css"; /**/
+
+
+/************************************************************************************************/
+/* about:config (Firefox 67+) *******************************************************************/
+/************************************************************************************************/
+
+/* @import "./css/aboutconfig/aboutconfig_compact_appearance.css"; /**/
+
+
+/************************************************************************************************/
+/* about:logins (Firefox 75+) *******************************************************************/
+/************************************************************************************************/
+
+/* logins page appearance - [only use one at a time] ********************************************/
+@import "./css/aboutlogins/aboutlogins_alternative_appearance.css"; /**/
+/* @import "./css/aboutlogins/aboutlogins_alternative_appearance_aero.css"; /**/
+
+
+/************************************************************************************************/
+/* WEB CONTENT **********************************************************************************/
+/************************************************************************************************/
+
+/* top level image on white background - [only use one at a time] *******************************/
+/* [!] this settings can sometimes cause glitches ***********************************************/
+/* @import "./css/webcontent/toplevel_image_classic_v1.css"; /**/
+/* @import "./css/webcontent/toplevel_image_classic_v2.css"; /**/
+
+/* Screenshots - internal browser add-on ********************************************************/
+/* @import "./css/webcontent/screenshots_alternative_save_ui.css"; /**/
+
+/* CUSTOM SCROLLBARS VARIABLES (Firefox 63+ only) - EXPERIMENTAL ********************************/
+/* [!] Might not work on every page! This issue is for Mozilla to solve. ************************/
+/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ************************/
+/* [!] custom size values only compatible with 'web content' scrollbars at the moment ***********/
+/* [!] more info inside 'custom_scrollbar_appearance.css' file **********************************/
+/* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
+
+/* Autofill forms (Firefox 67+ only) - disable CSS3 filter background ***************************/
+/* @import "./css/webcontent/autofill_forms_background_white.css"; /**/	
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+/* Create a new file "my_userContent.css" and add own/custom code to it. ************************/
+@import "./my_userContent.css"; /**/
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/

@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addonlists_compact.css";
+
+#addons-page .addon{
+  padding: 0 4px !important;
+}

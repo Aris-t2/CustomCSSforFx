@@ -1,0 +1,35 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_compact_fx68.css";
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	:root {
+	  --addon-icon-size: 16px !important;
+	}
+
+	.addon.card .addon-description {
+	  display: none !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  padding-top: 2px !important;
+	  margin-bottom: 0px !important;
+	  min-height: 22px !important;
+	}
+	
+	addon-list[type="theme"] .addon.card {
+	  min-height: 0px !important;
+	}
+
+	.addon.card div.more-options-menu {
+	  height: 20px !important;
+	}
+
+}

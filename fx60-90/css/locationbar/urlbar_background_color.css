@@ -1,0 +1,37 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+	--urlbar_background: white;	
+}
+
+#urlbar-input,
+#urlbar-scheme,
+.searchbar-textbox,
+#page-action-buttons,
+#identity-icon-box,
+#urlbar-input-container,
+.searchbar-search-button,
+#urlbar:not([focused="true"], [open]) > #urlbar-background,
+#searchbar:not(:focus-within) {
+  background-color: var(--urlbar_background) !important;
+}
+
+#urlbar[focused="true"]:not([open]) #urlbar-input-container,
+#urlbar:not([focused="true"],[open]) #urlbar-input-container {
+  border: 1px solid var(--arrowpanel-border-color) !important;
+}
+
+#urlbar:is([focused="true"], [open]) #urlbar-input-container {
+  border-top: 1px solid var(--arrowpanel-border-color) !important;
+  border-left: 1px solid var(--arrowpanel-border-color) !important;
+  border-right: 1px solid var(--arrowpanel-border-color) !important;
+  border-bottom-left-radius: unset !important;
+  border-bottom-right-radius: unset !important;
+}
+
+#searchbar:focus-within {
+  box-shadow: unset !important;
+}

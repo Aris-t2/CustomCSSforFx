@@ -1,0 +1,171 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* toolbar contents order has to be '... back button, forward button, location bar ...' */
+
+
+@media not (-moz-proton) {
+/* hide disabled forward button in normal and touch modes */
+#main-window:not([customizing=true]):not([uidensity=compact]) #nav-bar #forward-button[disabled] {
+  visibility: collapse !important;
+}
+
+/* back button opacity */
+#main-window:not([uidensity=compact]) #nav-bar #back-button {
+  opacity: 1.0 !important;
+}
+
+/* compact mode */
+#main-window[uidensity=compact] #nav-bar #back-button  {
+  -moz-margin-end: 0px !important;
+  -moz-padding-end: 0px !important;
+}
+#main-window[uidensity=compact] #nav-bar #forward-button {
+  -moz-margin-start: -1px !important;
+  -moz-padding-start: 0px !important;
+}
+
+/* normal mode */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -16px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled]){
+  -moz-margin-start: -12px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button:not([disabled]) + #urlbar-container {
+  -moz-margin-start: -8px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 14px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container::before {
+  display: block !important;
+  content: "" !important;
+  width: 32px !important;
+  height: 32px !important;
+  -moz-margin-start: -17px !important;
+  -moz-margin-end: -15px !important;
+  border-radius: 10000px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled])::before {
+  display: block !important;
+  content: "" !important;
+  width: 32px !important;
+  height: 32px !important;
+  -moz-margin-start: -23px !important;
+  -moz-margin-end: -9px !important;
+  border-radius: 10000px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled]) .toolbarbutton-icon {
+  width: 38px !important;
+  height: 30px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  -moz-padding-start: 14px !important;
+}
+
+/* touch mode */
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -20px !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button:not([disabled]) {
+  -moz-margin-start: -12px !important;
+}
+#main-window[uidensity=touch] #nav-bar #forward-button:not([disabled]) + #urlbar-container {
+  -moz-margin-start: -8px !important;
+}
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 18px !important;
+}
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container::before {
+  display: block !important;
+  content: "" !important;
+  width: 40px !important;
+  height: 40px !important;
+  -moz-margin-start: -19px !important;
+  -moz-margin-end: -19px !important;
+  border-radius: 10000px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button:not([disabled])::before {
+  display: block !important;
+  content: "" !important;
+  width: 40px !important;
+  height: 40px !important;
+  -moz-margin-start: -29px !important;
+  -moz-margin-end: -9px !important;
+  border-radius: 10000px !important;
+  background: #f9f9fa !important; /*  #ddebf9*/
+  position: relative !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button:not([disabled]) .toolbarbutton-icon {
+  width: 40px !important;
+  height: 32px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  -moz-padding-start: 15px !important;
+}
+
+/* dark lw-themes */ /* old value #838384 / new value #cccccc */
+#main-window[style*='--toolbar-color:rgb(255, 255, 255)']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--toolbar-color:rgb(255, 255, 255)']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme #nav-bar #back-button + #forward-button:not([disabled])::before,
+#main-window[style*='--toolbar-color:rgb(255, 255, 255)'][uidensity=touch]:-moz-lwtheme #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--toolbar-color:rgb(255, 255, 255)'][uidensity=touch]:-moz-lwtheme #nav-bar #back-button + #forward-button:not([disabled])::before,
+#main-window:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #back-button + #forward-button:not([disabled])::before,
+#main-window[uidensity=touch]:-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window[uidensity=touch]:-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #back-button + #forward-button:not([disabled])::before {
+  background: #bbbbbb !important;
+}
+
+#main-window[style*='--lwt-accent-color:rgb(0, 0, 0);']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--lwt-accent-color:rgb(0, 0, 0);']:not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme #nav-bar #back-button + #forward-button:not([disabled])::before,
+#main-window[style*='--lwt-accent-color:rgb(0, 0, 0);'][uidensity=touch]:-moz-lwtheme #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window[style*='--lwt-accent-color:rgb(0, 0, 0);'][uidensity=touch]:-moz-lwtheme #nav-bar #back-button + #forward-button:not([disabled])::before {
+  background: #838384 !important;
+}
+
+/* default Dark theme */
+#main-window:not([style*='--lwt-header-image']):not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window:not([style*='--lwt-header-image']):not([uidensity=compact]):not([uidensity=touch]):-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #back-button + #forward-button:not([disabled])::before,
+#main-window:not([style*='--lwt-header-image'])[uidensity=touch]:-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #forward-button[disabled] + #urlbar-container::before,
+#main-window:not([style*='--lwt-header-image'])[uidensity=touch]:-moz-lwtheme:-moz-lwtheme-brighttext #nav-bar #back-button + #forward-button:not([disabled])::before {
+  background: #323234 !important;
+}
+
+
+}
+
+@media (-moz-proton) {
+	
+#main-window:not([customizing=true])[uidensity=compact] #nav-bar #back-button + #forward-button:not([disabled]) {
+  -moz-margin-start: -6px !important;
+  -moz-margin-end: -8px !important;
+}
+#main-window:not([customizing=true]):not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled]) {
+  -moz-margin-start: -4px !important;
+  -moz-margin-end: -7px !important;
+}
+#main-window:not([customizing=true])[uidensity=touch] #nav-bar #back-button + #forward-button:not([disabled]) {
+  -moz-margin-start: -4px !important;
+  -moz-margin-end: -7px !important;
+}
+
+#main-window:not([customizing=true]) #nav-bar #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -3px !important;
+}
+#main-window:not([customizing=true]) #nav-bar #forward-button[disabled] {
+  visibility: collapse !important;
+}
+
+
+}
+
+/**/

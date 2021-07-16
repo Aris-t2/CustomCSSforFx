@@ -1,0 +1,74 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	.more-options-menu panel-item {
+	  background: white !important;
+	  color: black !important;
+	  margin: 0 1px;
+	  border: 1px solid lightgrey !important;
+	}
+	
+	@supports -moz-bool-pref("browser.in-content.dark-mode") {
+	  @media (prefers-color-scheme: dark) {
+		.more-options-menu panel-item {
+		  background: black !important;
+		  color: white !important;
+	  }
+	}}
+	
+	/* reduce size of default buttons */
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	  width: unset !important;
+	  padding: 2px 5px !important; 
+	}
+	
+	/* remove three dots button */
+	.more-options-button {
+	  visibility: hidden !important;
+	}
+
+	/* remove button icon */
+	panel-item {
+	  --icon: unset !important;
+	}
+
+	/* restore buttons */
+	:-moz-any(plugin-options, addon-options) > panel-list {
+	  display: block !important;
+	  overflow: hidden !important;
+	  right: 0px !important;
+	  left: unset !important;
+	  top: 2px;
+	  box-shadow: none !important;
+	  background: unset !important;
+	  border: unset !important;
+	  box-shadow: unset !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	}
+
+	div.arrow.top ~ div.list {
+	  display: flex !important;
+	  justify-content: end;
+	}
+
+	panel-item[action="preferences"] {
+	  order: -1;
+	}
+	
+	panel-item[badged] {
+	  border: 1px solid Highlight !important;
+	}
+
+	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button::after {
+	  display: none !important;
+	}
+
+}

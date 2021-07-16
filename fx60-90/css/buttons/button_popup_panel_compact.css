@@ -1,0 +1,35 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.subview-subheader,
+panelview .toolbarbutton-1,
+.subviewbutton,
+.widget-overflow-list .toolbarbutton-1 {
+  min-height: 24px !important;
+  padding: 2px 2px !important;
+}
+
+#widget-overflow-mainView > .panel-subview-body > toolbarseparator,
+.PanelUI-subView menuseparator,
+.PanelUI-subView toolbarseparator,
+.cui-widget-panelview menuseparator,
+.cui-widget-panel toolbarseparator {
+  margin: 0px !important;
+}
+
+.panel-subview-body {
+  padding: 0px !important;
+}
+
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-avatar {
+  margin-inline-start: 2px !important;
+}
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-label {
+  margin-inline-start: -24px !important;
+  padding-inline-start: 24px !important;
+}
+panelmultiview .toolbaritem-combined-buttons > spacer.before-label {
+  width: 26px !important;
+}

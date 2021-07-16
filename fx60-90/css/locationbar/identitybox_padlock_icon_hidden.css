@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar #tracking-protection-icon-container:not([hidden]) ~ #identity-box,
+#urlbar #connection-icon {
+  display: none !important;
+}

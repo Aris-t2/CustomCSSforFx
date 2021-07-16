@@ -1,0 +1,212 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+::root {
+  --chevron-icon: url("chrome://browser/skin/chevron.svg");
+  --toggle-icon: url("chrome://browser/skin/toggle.svg");
+}
+
+#appMenu-open-file-button {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/open.svg");
+}
+
+#appMenu-save-file-button {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/save.svg");
+}
+
+#appMenu-more-button {
+  -moz-context-properties: fill;
+  list-style-image: var(--chevron-icon,url("chrome://global/skin/icons/chevron.svg"));
+}
+
+#appMenu-developer-button  {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+}
+
+:-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) > .toolbarbutton-text  {
+  padding-inline-start: 8px !important;
+}
+
+#main-window:not([lwt-popup-brighttext]):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button),
+[lwt-popup-brighttext] :-moz-any(#appMenu-open-file-button,#appMenu-save-file-button,#appMenu-more-button,#appMenu-developer-button) {
+  fill: currentColor !important;
+}
+
+/* Even More AppButton Icons: DevTools by Key */
+
+#PanelUI-developerItems toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: var(--toggle-icon,url("chrome://global/content/aboutconfig/toggle.svg"));
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-inspector.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-webconsole.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-debugger.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-styleeditor.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_performance"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-profiler.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_storage"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-storage.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-accessibility.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_application"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-application.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_dom"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-dom.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-webconsole.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill, fill-opacity;
+  fill-opacity: 0;
+  list-style-image: url("chrome://devtools/skin/images/command-responsivemode.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon { /* Re-using the DOM icon since I expect everyone uses the Inspector instead */
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-dom.svg");
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_inspector"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_webconsole"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_jsdebugger"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_netmonitor"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_styleeditor"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_performance"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_storage"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_accessibility"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_application"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_dom"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_browserConsole"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_responsiveDesignMode"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton[key="key_viewSource"] > label.toolbarbutton-text {
+	padding-inline-start: 8px !important;
+}
+
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+	fill: currentColor !important;
+}
+
+/* Eye Dropper & Get More Tools (by Name (English Only)) */
+
+#PanelUI-developerItems toolbarbutton image.toolbarbutton-icon[label="Eyedropper"] {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/command-eyedropper.svg");
+}
+
+#PanelUI-developerItems toolbarbutton image.toolbarbutton-icon[label="Get More Tools"],
+#PanelUI-developerItems toolbarbutton image.toolbarbutton-icon[label="Extensions for Developers"] {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+}
+
+#PanelUI-developerItems toolbarbutton > label.toolbarbutton-text[value="Eyedropper"],
+#PanelUI-developerItems toolbarbutton > label.toolbarbutton-text[value="Get More Tools"],
+#PanelUI-developerItems toolbarbutton > label.toolbarbutton-text[value="Extensions for Developers"] {
+	padding-inline-start: 8px !important;
+}
+
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton > image.toolbarbutton-icon[label="Eyedropper"],
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton > image.toolbarbutton-icon[label="Get More Tools"],
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton > image.toolbarbutton-icon[label="Extensions for Developers"] {
+	fill: currentColor !important;
+}
+
+/**************************************/
+/* PNG IMAGES (Using icons from FF24) */
+/**************************************/
+
+/* Remote Debugging (by Name (English Only)) */
+
+#PanelUI-developerItems toolbarbutton image.toolbarbutton-icon[label="Remote Debugging"] {
+  list-style-image: url("../../image/remote.png");
+  filter: grayscale(100%) brightness(70%);
+  -moz-image-region: auto;
+}
+
+#PanelUI-developerItems toolbarbutton > label.toolbarbutton-text[value="Remote Debugging"] {
+  padding-inline-start: 8px !important;
+}
+
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton > image.toolbarbutton-icon[label="Remote Debugging"] {
+  list-style-image: url("../../image/remote.png");
+  filter: grayscale(100%) brightness(130%) !important;
+  -moz-image-region: auto;
+}
+
+/* Browser Toolbox (by Key) and Browser Content Toolbox (by Name (English Only)) */
+
+#PanelUI-developerItems toolbarbutton[key="key_browserToolbox"] > image.toolbarbutton-icon,
+#PanelUI-developerItems toolbarbutton image.toolbarbutton-icon[label="Browser Content Toolbox"] {
+  list-style-image: url("../../image/command-tilt.png");
+  filter: grayscale(100%) brightness(10%);
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+
+#PanelUI-developerItems toolbarbutton[key="key_browserToolbox"] > label.toolbarbutton-text,
+#PanelUI-developerItems toolbarbutton > label.toolbarbutton-text[value="Browser Content Toolbox"] {
+  padding-inline-start: 8px !important;
+}
+
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton[key="key_browserToolbox"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-developerItems toolbarbutton > image.toolbarbutton-icon[label="Browser Content Toolbox"] {
+  list-style-image: url("../../image/command-tilt.png");
+  filter: grayscale(100%) brightness(220%) !important;
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}

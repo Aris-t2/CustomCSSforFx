@@ -1,0 +1,137 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original author: ***********************************************/
+/* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/****************************************************************************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+:root {
+  --tabs-lines: 3; /* 3 rows, increase for more */
+  --tab_min_width_mlt: 80px;
+  --tab_max_width_mlt: 200px;
+  --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  flex-grow: 1;
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
+}
+
+.tabbrowser-tab,.tab-background {
+  min-height: var(--tab-min-height_mlt);
+}
+
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  vertical-align: bottom !important;
+  height: var(--tab-min-height_mlt);
+  margin-bottom: -1px !important;
+}
+
+.tab-stack {
+  width: 100%;
+}
+
+/* fix tab position */
+#tabbrowser-tabs,
+#tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+  min-height: var(--tab-min-height_mlt) !important;
+}
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+/**/
+
+#tabbrowser-tabs .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: collapse !important;
+  overflow-y: auto !important;
+  min-height: var(--tab-min-height_mlt);
+  max-height: calc( var(--tabs-lines) * var(--tab-min-height_mlt) ) !important;
+}
+
+#tabbrowser-tabs .arrowscrollbox-scrollbox {
+  overflow-x: collapse;
+  overflow: visible; 
+  display: block;
+}
+
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+#TabsToolbar #alltabs-button,
+.tabbrowser-tab:not([fadein]){
+  display: none;
+}
+
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+  -moz-window-dragging: no-drag !important;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+  opacity: 0 !important;
+}
+
+#tabbrowser-tabs * {
+  overflow-x: collapse !important;
+}
+
+#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
+  display: block !important;
+}
+
+#tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 4px !important;
+}
+
+#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
+  -moz-padding-end: 0px !important;
+}
+
+/* hide private window indicator, window controls and titlebar placeholders */
+#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
+#main-window[tabsintitlebar] #TabsToolbar #window-controls,
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
+  opacity: 0 !important;
+}
+
+/* hide tab borders set by Firefox 58+ to solve 'blank space below tabs' issue */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  border: 0 !important;
+}
+
+/* Fx66+ tab close fix */
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-close-button {
+  visibility: hidden !important;
+  display: block !important;
+  -moz-margin-start: -18px !important;
+}
+
+/*lw theme fix */
+#main-window:-moz-lwtheme {
+  background: var(--lwt-header-image) !important;
+  background-repeat: repeat-y !important;
+}

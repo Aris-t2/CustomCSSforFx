@@ -1,0 +1,10 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "addonlists_show_addon_version_number.css";
+
+.addon:not([pending="uninstall"])[status="installed"] button.details,
+.addon:not([pending="uninstall"])[status="installed"] .description {
+  display: none !important;
+}

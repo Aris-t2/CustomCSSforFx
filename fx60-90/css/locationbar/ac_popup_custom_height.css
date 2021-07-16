@@ -1,0 +1,37 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+
+/* Set a custom amount of results: about:config > browser.urlbar.maxRichResults *********/
+
+:root {
+  --ac_popup_max_height: 300px;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  max-height: var(--ac_popup_max_height) !important;
+  height: auto !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+  overflow-y: auto !important;
+}
+
+
+/* Fx68 */
+#urlbar-results > .urlbarView-body-outer,
+#urlbarView-results {
+  max-height: var(--ac_popup_max_height) !important;
+  height: auto !important;
+}
+
+
+#urlbar-results > .urlbarView-body-outer,
+#urlbar-results scrollbox{
+  overflow-y: auto !important;
+}

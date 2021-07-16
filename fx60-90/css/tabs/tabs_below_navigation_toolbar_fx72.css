@@ -1,0 +1,20 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_fx68.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+/*
+#TabsToolbar {
+  bottom: -3px !important;
+}*/
+
+#TabsToolbar {
+  min-height: 0 !important;
+  height: var(--tab-min-height_tnot) !important;
+  max-height: unset !important;
+}

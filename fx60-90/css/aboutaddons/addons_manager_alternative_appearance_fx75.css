@@ -1,0 +1,39 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addons_manager_alternative_appearance_fx68.css";
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	.category {
+	  -moz-margin-end: -4px !important;
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0px !important;
+	}
+	
+	#preferencesButton,
+	#help-button {
+		
+	}
+	
+	#preferencesButton {
+	  fill: #8b8b8b !important;
+	}
+	
+	#help-button {
+	  fill: #ff0000 !important;
+	}
+	
+	#preferencesButton:hover,
+	#help-button:hover {
+	  color: var(--in-content-category-text-hover) !important;
+	  background-color: var(--in-content-category-background-hover) !important;
+	}
+
+}

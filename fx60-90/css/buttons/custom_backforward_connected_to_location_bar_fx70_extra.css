@@ -1,0 +1,44 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* normal mode */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -20px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 20px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container {
+  padding-inline-start: 12px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container + #identity-box {
+  padding-inline-start: 22px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container #tracking-protection-icon-box image {
+  margin-inline-start: 2px !important;
+}
+
+/* touch mode */
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
+  -moz-margin-start: -26px !important;
+}
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container #identity-box {
+  padding-inline-start: 22px !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container {
+  padding-inline-start: 16px !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container + #identity-box {
+  padding-inline-start: 24px !important;
+}
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button[disabled] + #urlbar-container #urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container #tracking-protection-icon-box image {
+  margin-inline-start: 2px !important;
+}
+
+/* remove tracking protection icons bg color */
+#main-window #urlbar-container #urlbar #urlbar-input-container #tracking-protection-icon-container:not([hidden]):hover,
+#main-window #urlbar-container #urlbar #urlbar-input-container #tracking-protection-icon-container:not([hidden]):-moz-any([open="true"],:hover:active) {
+  background: unset !important;
+}

@@ -1,0 +1,185 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* If complete CustomCSSforFx release package is used, ':root' variables have to be set **
+   inside /config/general_variables.css! ************************************************/
+   
+:root {
+  --ac_popup_width: 700px; /* popup width in normal mode */
+  --ac_popup_number_of_results: 10; /* value has to be identical to about:config > browser.urlbar.maxRichResults */
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )); /* calculate maximum height based on items to display */
+  --ac_popup_height: auto; /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px;  /* popup width in fullscreen mode */
+}
+
+#urlbar-results {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+}
+
+/*Fx70+ tweaks */
+.urlbarView:not(.megabar) {
+  left: unset !important;
+  right: unset !important;
+  border: 1px solid ThreeDShadow !important;
+}
+#urlbar-input-container + .urlbarView:not(.megabar){
+  margin-top: -6px !important;
+}
+#urlbar:not(.megabar) .search-one-offs {
+  padding-inline-start: unset !important;
+  padding-inline-end: unset !important;
+  background: #ededed !important;
+}
+#main-window:-moz-lwtheme-brighttext #urlbar:not(.megabar) .search-one-offs {
+  background: #323234 !important;
+}
+#urlbar-input-container {
+  --item-padding-start: 0px !important;
+  --item-padding-end: 0px !important;
+}
+#urlbar-results {
+  left: unset !important;
+  right: unset !important;
+  border-block: 0px !important;
+  padding: 0 !important;
+  margin-top: 0px !important;
+}
+#urlbar-results .urlbarView-body-outer {
+  border: 1px solid ThreeDShadow !important;
+}
+#urlbar-results .search-one-offs {
+  margin-top: -1px !important;
+  border: 1px solid ThreeDShadow !important;
+  background-color: hsla(0,0%,100%,1.0) !important;
+}
+
+.search-setting-button-compact {
+  margin-left: -2px !important;
+}
+
+/* popup position */
+#urlbar-results {
+  -moz-margin-start: 0px !important;
+}
+
+/* hide title */
+#urlbar-results .urlbarView-row .urlbarView-title {
+  visibility: collapse !important;
+}
+
+/* remove space around box */
+#urlbarView-results {
+  padding: 0 !important;
+}
+
+/* Max-height for items visible without scrolling */
+#urlbarView-results {
+  height: var(--ac_popup_height) !important;
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+#urlbar-results{
+  overflow: hidden !important;
+  overflow-y: visible !important;
+  height: var(--ac_popup_height) !important;
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+/* popup width [normal mode] */
+#urlbar-results {
+  min-width: 0px !important;
+  width: var(--ac_popup_width) !important;
+  max-width: var(--ac_popup_width) !important;
+}
+#urlbar-results .urlbarView-row .urlbarView-title, 
+#urlbar-results .urlbarView-row .urlbarView-url {
+  min-width: calc( var(--ac_popup_width) - 100px) !important;
+  width: calc( var(--ac_popup_width) - 100px) !important;
+}
+
+/* Items height, border, postion for two lines */
+#urlbar-results .urlbarView-row {
+  position: relative !important;
+  border-radius: 0px !important;
+  height: 22px !important;
+  border-bottom-color: transparent !important;
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row {
+  left: 0 !important;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row {
+  right: 0 !important;
+}
+
+/* Hide separator between title and url ans space before icons */
+#urlbar-results .urlbarView-title-separator { 
+  display: none !important;
+}
+
+#urlbar-results .urlbarView-row[selected=true] {
+  background-color: Highlight !important;
+}
+
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-action-text,
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-title, 
+#urlbar-results .urlbarView-title[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-url, 
+#urlbar-results .urlbarView-url[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-action,
+#urlbar-results .urlbarView-action[selected],
+#urlbar-results .urlbarView-row[selected=true] .urlbarView-title-separator,
+#urlbar-results .ac-separator[selected] {
+  color: HighlightText !important;
+}
+  
+#urlbar-results .urlbarView-row[type="search"] .urlbarView-action, 
+#urlbar-results .urlbarView-row[type="search"]:not([selected]):not(:hover) .urlbarView-action {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* fix large space issue at items end */
+#urlbar-results .urlbarView-row {
+  border-inline-end: 0px solid transparent !important;
+}
+	
+/* show scrollbar if needed */
+#urlbar-results > .urlbarView-body-outer {
+  overflow-x: hidden !important;
+}
+
+#urlbar-results > .urlbarView-body-outer,
+#urlbar-results scrollbox,
+#urlbar-results > .urlbarView-body-outer {
+  overflow-y: auto !important;
+}
+
+/* Position of bookmark tags */
+#urlbar-results .urlbarView-row .urlbarView-tags {
+  position: absolute !important;
+  display:block !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 4px;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 4px;
+}
+
+/* reduce space around search engines */
+#urlbar .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

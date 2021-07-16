@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar.css";
+
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar {
+  margin-top: 24px !important;
+}
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  margin-top: 24px !important;
+}

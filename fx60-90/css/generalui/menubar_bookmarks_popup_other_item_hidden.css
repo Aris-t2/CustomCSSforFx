@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* other bookmarks */
+#menu_unsortedBookmarks,
+#menu_mobileBookmarks,
+#bookmarksMenuItemsSeparator{
+  display: none !important;
+}
+
+/**/

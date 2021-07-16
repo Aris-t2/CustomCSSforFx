@@ -1,0 +1,150 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/***********************************************************/
+/* context menu items and icons instead of just huge icons */
+/***********************************************************/
+
+@media not (-moz-proton) {
+
+
+#context-sep-navigation,
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) .menu-iconic-highlightable-text {
+  display: none !important;
+}
+
+#context-navigation{
+  -moz-box-orient: vertical !important;
+  -moz-appearance: none !important;
+  background: unset !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-margin-start: 4px !important;
+  -moz-margin-end: 12px !important;
+}
+
+
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  margin-top: unset !important;
+  margin-bottom: unset !important;
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+}
+
+
+
+@media (min-resolution: 120dpi) {
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image  {
+	  -moz-margin-end: 8px !important;
+	}
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  -moz-appearance: menuitem !important;
+  min-height: unset !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  content: attr(aria-label) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+#context-navigation > .menuitem-iconic{
+  -moz-box-pack: start !important;
+}
+
+/* fix for German locale */
+#context-bookmarkpage[aria-label*="Lesezeichen"] {
+  -moz-padding-end: 10px !important;
+}
+
+
+@media (-moz-windows-classic) {
+
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	  -moz-margin-start: 0px !important;
+	  -moz-margin-end: 2px !important;
+	}
+
+}
+
+
+/* code for Linux/macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	  -moz-margin-start: 2px !important;
+	  -moz-margin-end: 3px !important;
+	} 
+}}}
+
+}
+
+
+
+@media (-moz-proton) {
+	
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  -moz-appearance: menuitem !important;
+  min-height: unset !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  content: attr(aria-label) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+#context-navigation > .menuitem-iconic{
+  -moz-box-pack: start !important;
+}
+
+/* fix for German locale */
+#context-bookmarkpage[aria-label*="Lesezeichen"] {
+  -moz-padding-end: 10px !important;
+}
+
+#context-navigation:not([hidden]) {
+  flex-direction: column !important;
+  --menuitem-min-width: unset !important;
+  min-width: unset !important;
+  padding-bottom: 0px !important;
+}
+  
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  -moz-margin-start: 12px !important;
+  -moz-margin-end: 4px !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  -moz-margin-start: 2px !important;
+}
+
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+    width: unset !important;
+    height: unset !important;
+    padding: unset !important;
+  }
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon {
+    background-color: unset !important;
+  }
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+    background-color: unset !important;
+  }
+  
+
+}

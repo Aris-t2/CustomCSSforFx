@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+
+/* move dropmarker to location bars end */
+.urlbar-history-dropmarker{
+  -moz-box-ordinal-group: 100 !important;
+}
+
+/**/

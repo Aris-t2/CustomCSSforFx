@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+* #PanelUI-button,
+#main-window:not([uidensity=compact]) * #PanelUI-button {
+  margin-inline-start: 0px !important;
+  border-inline-start: 0px solid !important;
+  margin-inline-end: 0px !important;
+  border-inline-end: 0px solid !important;
+  border-image: unset !important;
+  border-image-slice: 0 !important;
+}

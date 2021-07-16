@@ -1,0 +1,36 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.addon:not([pending="uninstall"])[status="installed"]	{
+  -moz-binding: url("./addonlists_show_addon_version_number.xml#addon-generic") !important;
+}
+	
+.addon:not([pending="uninstall"])[status="installed"] .name-container .version {
+  visibility: visible !important;
+}
+	
+.addon:not([pending="uninstall"])[status="installed"] .legacy-warning {
+  display: none !important;
+}
+	
+.addon:not([pending="uninstall"])[status="installed"] .description-container {
+  margin-inline-start: 0px !important;
+  -moz-box-align: center !important;
+  font-size: 1.25rem !important;
+}
+
+.addon:not([pending="uninstall"])[status="installed"] .description {
+  margin: 0 !important;
+}
+
+.addon:not([pending="uninstall"])[status="installed"] .icon {
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+.privateBrowsing-notice-icon {
+  list-style-image: url("chrome://browser/skin/privatebrowsing/favicon.svg") !important;
+  background: unset  !important;
+}

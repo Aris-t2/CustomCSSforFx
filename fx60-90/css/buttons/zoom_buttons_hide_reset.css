@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+toolbar #zoom-controls > separator,
+toolbar #zoom-controls > #zoom-reset-button{
+  visibility: collapse !important;
+}
+#nav-bar #zoom-in-button{
+  -moz-padding-start:2px !important;
+}
+#nav-bar #zoom-out-button{
+  -moz-padding-end:2px !important;
+}

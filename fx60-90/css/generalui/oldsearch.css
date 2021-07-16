@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "oldsearch.css";
+
+searchbar {
+  -moz-binding: url("./oldsearch.xml#searchbar") !important;
+}
+
+searchbar .searchbar-textbox {
+  -moz-binding: url("./oldsearch.xml#searchbar-textbox") !important;
+}

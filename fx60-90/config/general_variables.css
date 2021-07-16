@@ -1,0 +1,88 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* general settings */
+:root {
+  /* custom height for 'classic squared tabs' only */
+  --classic_squared_tabs_tab_height: 26px !important;
+  
+  /* set to '0px' for fully classic squared tabs */
+  --classic_squared_tabs-border-radius: 3px !important;
+  
+  /* set to '0px' for fully squared tabs */
+  --default_tab_border_roundness: 5px !important;
+ 
+  /* for default icon only */
+  --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
+  
+  /* for tab_close_icon_size.css */
+  --tab_close_icons_size: 16px !important; /* set 14x14 - 20x20px */
+  
+  /* for 'tab_maxwidth.css'- unlock 'min width' code inside file first for '--tab_min_width' to work */
+  --tab_min_width: 50px !important; 
+  --tab_max_width: 120px !important;
+  
+  /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
+  --tab_min_width_mlt: 100px !important;
+  --tab_max_width_mlt: 200px !important;
+  
+  /* for 'tabs_multiple_lines_v2.css' only */
+  --tabs-lines: 3 !important; 
+
+  /* for bookmarks_toolbar_multiple_lines.css /_fx66.css / _fx74.css */
+  --bookmark_items_height: 22px !important; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
+  
+  /* for increase_ui_font_size.css */
+  --general_ui_font_size: 10pt !important;
+  
+  /* for searchbar_popup_engines_show_labels_scrollbars.css / ..._fx66.css*/
+  --search-one-offs_labels_height: 100px !important;
+    
+  /* for ac_popup_custom_height.css (location bar popup) */
+  --ac_popup_max_height: 300px !important;
+
+  /* for addonbar_move_bookmarks_toolbar_to_bottom.css */
+  --addonbar_height: 27px !important;
+  
+  /* for custom_backforward_connected.css */
+  --color_disabled_state: #f9f9fa !important;
+  --color_default_state: #e8e8e8 !important;
+  --color_hover_state: lightblue !important;
+  --color_active_state: lightgrey !important;
+  
+  /* for ac_popup_result_font_size.css */
+  --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
+  
+  /* for megabar_border_roundness.css */
+  --megabar_border_roundness: 20px !important;
+  
+  /* for tab_toolbar_color_proton.css */
+  --top_toolbars_background: initial !important;
+  --top_toolbars_background_inactive: initial !important;
+  --top_toolbars_text: initial !important;
+  --top_toolbars_text_inactive: initial !important;
+}
+
+:root[uidensity="touch"] {
+  /* custom height for 'classic squared tabs' only */
+  --classic_squared_tabs_tab_height: 36px !important;
+}
+
+/* for ac_popup_classic_with_two_lines_fx64.css and ac_popup_classic_with_two_lines_fx68.css */
+:root {
+  --ac_popup_width: 700px !important; /* popup width in normal mode */
+  --ac_popup_number_of_results: 10 !important;  /* value has to be identical to about:config > browser.urlbar.maxRichResults */
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )) !important; /* calculate maximum height based on items to display */
+  --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
+}
+
+:root[sizemode="maximized"] {
+  --ac_popup_width: 1400px !important; /* popup width in maximized mode */
+}
+
+:root[inFullscreen="true"] {
+  --ac_popup_width: 1400px !important; /* popup width in fullscreen mode */
+}

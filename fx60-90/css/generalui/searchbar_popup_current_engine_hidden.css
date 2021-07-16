@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PopupSearchAutoComplete .search-panel-current-engine,
+#PopupSearchAutoComplete .search-panel-current-input {
+  display: none !important;	
+}

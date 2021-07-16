@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* make bookmarks fixed size */
+#PersonalToolbar .bookmark-item{
+   width:130px;
+   max-width:130px;
+} 

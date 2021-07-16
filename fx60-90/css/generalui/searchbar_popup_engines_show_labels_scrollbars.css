@@ -1,0 +1,20 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+@import "./searchbar_popup_engines_show_labels.css";
+
+:root {
+  --search-one-offs_labels_height: 200px;
+}
+
+#PopupSearchAutoComplete .search-one-offs  {
+  height: var(--search-one-offs_labels_height) !important;
+  max-height: var(--search-one-offs_labels_height) !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}

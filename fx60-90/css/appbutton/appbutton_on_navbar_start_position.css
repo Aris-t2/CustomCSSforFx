@@ -1,0 +1,28 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* move main menu button to navigation toolbars start */
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
+  -moz-box-ordinal-group: 10 !important;
+  margin-inline-start: 3px !important;
+  margin-inline-end: unset !important;
+}
+
+#main-window:not([uidensity=compact]) #PanelUI-button {
+  margin-inline-start: 0px !important;
+  border-inline-start: 0px solid !important;
+  margin-inline-end: 2px !important;
+  border-inline-end: 1px solid !important;
+}
+
+#main-window[chromehidden="menubar toolbar directories extrachrome "] #nav-bar-customization-target {
+  -moz-padding-end: 2px !important;
+}
+
+/**/

@@ -1,0 +1,37 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --space_required_for_appbutton_fix: 28px !important;
+}
+
+/* more compact navigation toolbar */
+#main-window[uidensity=compact] {
+  --toolbarbutton-inner-padding: 5px !important;
+}
+
+@media (-moz-proton) {
+#main-window[uidensity=compact] {
+  --toolbarbutton-inner-padding: 6px !important;
+}
+}
+
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target #stop-reload-button > toolbarbutton {
+  margin: 1px 0px !important;
+  padding: 0 !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* fix for toolbar button badges */
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  -moz-margin-end: -5px !important;
+}

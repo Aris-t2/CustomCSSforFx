@@ -1,0 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* hide page action (three dots) button */
+#urlbar-container #pageActionButton{
+  visibility: collapse !important;
+}

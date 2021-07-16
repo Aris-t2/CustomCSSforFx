@@ -1,0 +1,34 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  /*display: none !important;*/
+  min-width: 0 !important;
+  width: 0 !important;
+  max-width: 0 !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  -moz-margin-start: 2px !important;
+}
+
+/* tab toolbar position */
+#TabsToolbar{
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+  min-height: unset !important;
+}
+
+/* code for macOS */
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	#TabsToolbar .titlebar-placeholder[type="caption-buttons"]:not([ordinal="1000"]) {
+	  -moz-margin-start: 24px !important;
+	}
+}}}
+

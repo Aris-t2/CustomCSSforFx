@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* sidebar item */
+#BMB_viewBookmarksSidebar{
+  display: none !important;
+}
+
+/**/

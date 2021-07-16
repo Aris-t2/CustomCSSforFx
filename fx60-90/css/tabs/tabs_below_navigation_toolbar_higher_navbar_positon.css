@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"],
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
+  margin-top: unset !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar:not(:-moz-lwtheme),
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar {
+  -moz-margin-end: 145px !important;
+  -moz-appearance: none !important;  
+  background: transparent !important;
+  border-top: unset !important;
+}
+
+#main-window[sizemode="normal"] #navigator-toolbox #nav-bar {
+  border-left: 0px !important;
+  border-right: 0px !important;
+}

@@ -1,0 +1,14 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* make dropmarker always visible */
+#urlbar .autocomplete-history-dropmarker,
+#urlbar .urlbar-history-dropmarker,
+#urlbar:not(:hover) > .urlbar-textbox-container > .urlbar-history-dropmarker {
+  opacity: 1 !important;
+  display: initial !important;
+}
+
+/**/

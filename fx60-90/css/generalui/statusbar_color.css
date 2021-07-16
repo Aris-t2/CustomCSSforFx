@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --statusbar_background_color: grey;
+  --statusbar_font_color: black;
+}
+
+:-moz-any(statuspanel,#statuspanel) {
+  -moz-appearance: none !important;
+  background: unset !important;
+  border: 0 !important;
+}
+
+:-moz-any(statuspanel,#statuspanel) :-moz-any(#statuspanel-label,.statuspanel-label) {
+  -moz-appearance: none !important;
+  background: var(--statusbar_background_color) !important;
+  color: var(--statusbar_font_color) !important;
+  border: 0 !important;
+}

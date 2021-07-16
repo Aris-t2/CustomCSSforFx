@@ -1,0 +1,42 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx60-69 */
+menupopup scrollbox {
+  overflow-y: auto !important
+}
+
+menupopup :-moz-any(.autorepeatbutton-up, .autorepeatbutton-down, .scrollbutton-up, .scrollbutton-down) {
+  display: none !important;
+}
+
+/* Fx70 */
+link[href$="global.css"] ~ hbox arrowscrollbox scrollbox {
+  overflow-y: auto !important;
+}
+
+link[href$="global.css"] ~ hbox arrowscrollbox :-moz-any(.scrollbutton-up, .scrollbutton-down) {
+  display: none !important;
+}
+
+/* Fx71+ */
+link[href$="global.css"] ~ scrollbox {
+  overflow-y: auto !important;
+}
+
+link[href$="global.css"] ~ .menupopup-scrollbutton {
+  display: none !important;
+}
+
+/* Fx76+ */
+link[href$="arrowscrollbox.css"] ~ scrollbox[orient="vertical"],		/* Fx76-80 */
+link[href$="arrowscrollbox.css"] ~ .scrollbox-clip scrollbox[orient="vertical"] {		/* Fx81+ */
+  overflow-y: auto !important;
+}
+
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-up,
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-down {
+  display: none !important;
+}

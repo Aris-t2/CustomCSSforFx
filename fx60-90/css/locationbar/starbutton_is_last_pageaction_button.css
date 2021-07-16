@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* move star-button to boxes last position */
+#star-button-box{
+  -moz-box-ordinal-group: 100 !important;
+}
+
+/**/

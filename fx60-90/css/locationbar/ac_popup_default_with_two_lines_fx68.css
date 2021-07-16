@@ -1,0 +1,59 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )); /* calculate maximum height based on items to display */
+}
+
+#urlbar-results .urlbarView-row {
+  height: 36px !important;
+}
+
+.urlbarView-row-inner {
+  flex-wrap: wrap !important;
+}
+
+#urlbar-results .urlbarView-title {
+  /*position: absolute !important;*/
+  margin-bottom: 2px !important;
+}
+
+#urlbar-results .urlbarView-title-separator {
+  flex-basis: 100%;
+  height: 0;
+  display: block !important;
+}
+
+#urlbar-results .urlbarView-title-separator:before {
+  content: '' !important;
+}
+
+.urlbarView-secondary {
+  left: 48px;
+  position: relative;
+}
+
+.urlbarView-row[type="search"]:not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-title-separator,
+.urlbarView-row[type="search"]:not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-action {
+  visibility: visible !important;
+}
+
+#urlbarView-results {
+  max-height: var(--ac_popup_maxheight) !important;
+}
+
+#urlbar-results > .urlbarView-body-outer {
+  overflow-x: hidden !important;
+}
+
+#urlbar-results scrollbox,
+#urlbar-results > .urlbarView-body-outer {
+  overflow-y: auto !important;
+}
+
+#urlbar-results {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+}

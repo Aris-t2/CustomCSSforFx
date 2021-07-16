@@ -1,0 +1,16 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./preferences_alternative_appearance.css";
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+	.navigation, #preferences-body,
+	window > stack > hbox,
+	#preferences-stack,/*.sticky-container,*/
+	page, page .dialogBox .groupbox-title{
+	  /*background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;*/
+	  background: #edf6ff !important;
+	}
+
+}

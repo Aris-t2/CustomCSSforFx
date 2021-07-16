@@ -1,0 +1,18 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: hidden !important;
+  display: block !important;
+  opacity: 0 !important;
+  -moz-margin-end: -16px !important;
+}
+
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-close-button {
+  visibility: hidden !important;
+  display: block !important;
+  opacity: 0 !important;
+  -moz-margin-start: -18px !important;
+}
+

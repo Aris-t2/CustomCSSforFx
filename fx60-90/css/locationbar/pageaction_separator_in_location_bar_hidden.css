@@ -1,0 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* hide page action separator */
+#urlbar-container #pageActionSeparator{
+  visibility: collapse !important;
+}

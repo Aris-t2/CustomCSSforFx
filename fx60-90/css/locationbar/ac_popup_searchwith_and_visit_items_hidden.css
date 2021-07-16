@@ -1,0 +1,89 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* To hide search engines at popups bottom open 'about:config' and set ************
+** browser.urlbar.oneOffSearches to 'false' **************************************
+** The popup won't be hidden completely, if no result items are present.**********
+** A small 'line' will be still visible ****************************************** 
+*********************************************************************************/
+
+/* Hide "Visit/Search" items */
+
+/* this creates an empty space at items place *//*
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem[anonid="type-icon-spacer"] {
+  display: none !important;
+}*/
+
+#PopupAutoCompleteRichResult > richlistbox > richlistitem.emptySearchQuery{
+  display: none !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem[anonid="type-icon-spacer"],
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type[actiontype="visiturl"] + richlistitem[actiontype="searchengine"],
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:first-of-type:last-of-type[actiontype="searchengine"] {
+  z-index: -1000000000 !important;
+  position: fixed !important;
+  display:block !important;
+  opacity: 0 !important;
+  visibility: collapse !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:not([collapsed="true"]) + richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]),
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) + richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) {
+  display: none !important;
+}
+
+/* show scrollbar */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+  overflow-y: auto !important;
+}
+
+
+
+/* Fx 68 */
+
+#urlbar-results .urlbarView-body-outer {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+#urlbar-results .urlbarView-row:first-of-type:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row[anonid="type-icon-spacer"],
+#urlbar-results .urlbarView-row:first-of-type[type="visiturl"] + .urlbarView-row[type="search"],
+#urlbar-results .urlbarView-row:first-of-type:last-of-type[type="search"] {
+  z-index: -1000000000 !important;
+  position: fixed !important;
+  display:block !important;
+  opacity: 0 !important;
+  visibility: collapse !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+}
+
+#urlbar-results .urlbarView-row:not([collapsed="true"]) + .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]),
+#urlbar-results .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]) + .urlbarView-row:-moz-any([type*="heuristic"],[type="search"],[type="visiturl"],[type="keyword"],[type="switchtab"]) {
+  display: none !important;
+}
+
+/* show scrollbar */
+#urlbar-results scrollbox{
+  overflow-y: auto !important;
+}
+
+

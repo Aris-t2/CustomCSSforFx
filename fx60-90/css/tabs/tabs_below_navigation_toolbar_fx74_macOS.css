@@ -1,0 +1,21 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_fx65_macOS.css";
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+  margin-top: calc(-3px + var(--tab-min-height_tnot)) !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
+}
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
+  top: 3px !important;
+  left: -5px !important;
+  right: unset !important;
+}

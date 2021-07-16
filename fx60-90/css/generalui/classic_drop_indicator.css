@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx72 */
+#PlacesToolbarDropIndicator:not(hbox) {
+  list-style-image: url(../../image/toolbar-drag-indicator.png) !important;
+}
+
+.tab-drop-indicator:not(hbox) {
+  list-style-image: url(../../image/tab-drag-indicator.png) !important;
+}
+
+/* Fx73+ */
+#PlacesToolbarDropIndicator:not(image) {
+  background: url(../../image/toolbar-drag-indicator.png) no-repeat bottom !important;
+}
+
+.tab-drop-indicator:not(image) {
+  background: url(../../image/tab-drag-indicator.png) no-repeat bottom !important;
+}

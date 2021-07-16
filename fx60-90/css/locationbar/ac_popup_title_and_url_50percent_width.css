@@ -1,0 +1,109 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* To hide search engines at popups bottom open 'about:config' and set ************
+** browser.urlbar.oneOffSearches to 'false' *************************************/
+
+/* remove unneeded padding around results */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+  padding: 0 !important;
+}
+
+/* make sure there is no unneeded space before results (Fx58+) */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+
+/* make sure there is no unneeded space before results (Fx57+) */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem spacer{
+  display: none !important;
+}
+
+/* remove separator between title and url */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
+  display: none !important;
+}
+
+/* calculate width of title and url: width = 1/2 * (window size - 100px) */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text {
+  min-width: calc((100vw - 100px)/2) !important;
+  width: calc((100vw - 100px)/2) !important;
+}
+
+/* fix large space issue at items end */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+  border-inline-end: 0px solid transparent !important;
+}
+
+/* do not hide heuristic/actiontype url item */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem[actiontype="searchengine"] .ac-action {
+  visibility: visible !important;
+  display: inherit !important;
+}
+
+/* url text color: fix for default dark theme*/
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url .ac-url-text:not([selected]) {
+  color: #00d2ff !important;
+}
+
+/* Tags */
+
+/* Position of bookmark tags */
+#urlbar-results .urlbarView-row .urlbarView-tags {
+  position: absolute !important;
+  display:block !important;
+}
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 0;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 0;
+}
+
+
+/* Fx68+ */
+#urlbarView-results {
+  padding: 0px !important;
+}
+
+#urlbar-results .urlbarView-body-outer,
+#urlbar-results .urlbarView-row,
+#urlbar-results .urlbarView-row-inner {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  -moz-padding-end: 0 !important;
+}
+
+#urlbar-results .urlbarView-row-inner {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}
+
+#urlbar-results .urlbarView-title-separator {
+  display: none !important;
+}
+
+#urlbar-results .urlbarView-title, 
+#urlbar-results .urlbarView-url {
+  min-width: calc((100vw - 120px)/2) !important;
+  width: calc((100vw - 120px)/2) !important;
+}
+
+#urlbar-results .urlbarView-row[type="search"] .urlbarView-action, 
+#urlbar-results .urlbarView-row[type="search"]:not([selected]):not(:hover) .urlbarView-action {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* reduce space around search engines */
+#urlbar .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-inline-start: 4px !important;
+  padding-inline-end: 0px !important;
+}

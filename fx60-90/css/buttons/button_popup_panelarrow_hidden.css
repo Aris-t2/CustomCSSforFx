@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* remove arrow from panel popup */
+.panel-arrowbox {
+  visibility: collapse !important;
+}
+
+.panel-arrow{
+  display:none !important;
+}

@@ -1,0 +1,31 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./ac_popup_classic_with_two_lines_fx68.css";
+
+/* THIS IS NOT A STANDALONE FILE! *******************************************************/
+/* Extension file for 'ac_popup_classic_with_two_lines_fx68.css' ************************/
+
+/* If complete CustomCSSforFx release package is used, ':root' variables have to be set **
+   inside /config/general_variables.css otherwise inside *********************************
+   'ac_popup_classic_with_two_lines_fx68.css' file! *************************************/
+
+/* move bookmarks star and other icon to items right */
+#urlbar-results .urlbarView-row .urlbarView-type-icon{
+  -moz-margin-start: calc( var(--ac_popup_width) - 38px ) !important;
+}
+
+/* Position of type icon (bookmark, switch-to-tab...) */
+#urlbar-results .urlbarView-row .urlbarView-type-icon {
+  top: 6px !important;
+  bottom: unset !important;
+}
+
+/* Tags */
+#urlbar-results:-moz-locale-dir(ltr) .urlbarView-row .urlbarView-tags {
+  right: 30px !important;
+}
+#urlbar-results:-moz-locale-dir(rtl) .urlbarView-row .urlbarView-tags {
+  left: 30px !important;
+}

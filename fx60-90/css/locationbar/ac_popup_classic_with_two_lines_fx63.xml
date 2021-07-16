@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+
+<!--
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+-->
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "chrome://global/locale/notification.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+%brandDTD;
+]>
+
+<bindings id="urlbarBindings"
+		  xmlns="http://www.mozilla.org/xbl"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="urlbar-rich-result-popup" extends="chrome://browser/content/urlbarBindings.xml#urlbar-rich-result-popup">
+
+    <implementation>
+	  
+	  <method name="_openAutocompletePopup">
+        <parameter name="aInput"/>
+        <parameter name="aElement"/>
+        <body><![CDATA[
+          if (this.mPopupOpen) {
+            return;
+          }
+
+          if (!this.style.direction) {
+            this.style.direction =
+              aElement.ownerGlobal.getComputedStyle(aElement).direction;
+          }
+          let popupDirection = this.style.direction;
+
+          let documentRect =
+            window.windowUtils
+                .getBoundsWithoutFlushing(window.document.documentElement);
+          let width = documentRect.right - documentRect.left;
+
+		  this.setAttribute("width", Math.round(aElement.getBoundingClientRect().width));
+
+          let elementRect =
+            window.windowUtils.getBoundsWithoutFlushing(aElement);
+          if (popupDirection == "rtl") {
+            let offset = elementRect.right - documentRect.right;
+            this.style.marginRight = offset + "px";
+          } else {
+            let offset = documentRect.left - elementRect.left;
+            this.style.marginLeft = offset + "px";
+          }
+
+          let needsHandleOverUnderflow = false;
+          let boundToCheck = popupDirection == "rtl" ? "right" : "left";
+          let inputRect = window.windowUtils.getBoundsWithoutFlushing(aInput);
+          let startOffset = Math.abs(inputRect[boundToCheck] - documentRect[boundToCheck]);
+          let alignSiteIcons = startOffset / width <= 0.3 || startOffset <= 250;
+          if (alignSiteIcons) {
+            let boundToCheckEnd = popupDirection == "rtl" ? "left" : "right";
+            let endOffset = Math.abs(inputRect[boundToCheckEnd] -
+                                     documentRect[boundToCheckEnd]);
+            if (endOffset > startOffset * 2) {
+              endOffset = startOffset;
+            }
+            let identityIcon = document.getElementById("identity-icon");
+            let identityRect =
+              window.windowUtils.getBoundsWithoutFlushing(identityIcon);
+            let start = popupDirection == "rtl" ?
+                        documentRect.right - identityRect.right :
+                        identityRect.left;
+            if (!this.margins || start != this.margins.start ||
+                                 endOffset != this.margins.end ||
+                                 width != this.margins.width) {
+              this.margins = { start, end: endOffset, width };
+              needsHandleOverUnderflow = true;
+            }
+          } else if (this.margins) {
+            this.margins = undefined;
+            needsHandleOverUnderflow = true;
+          }
+
+          this.mInput = aInput;
+          this.input.controller.setInitiallySelectedIndex(this._isFirstResultHeuristic ? 0 : -1);
+          this.input.userSelectionBehavior = "none";
+          this._invalidate();
+
+          try {
+            let whichNotification = aInput.whichSearchSuggestionsNotification;
+            if (whichNotification != "none") {
+              let impressionId = this._searchSuggestionsImpressionId = {};
+              this.addEventListener("popupshown", () => {
+                if (this._searchSuggestionsImpressionId == impressionId)
+                  aInput.updateSearchSuggestionsNotificationImpressions(whichNotification);
+              }, {once: true});
+              this._showSearchSuggestionsNotification(whichNotification, popupDirection);
+            } else if (this.classList.contains("showSearchSuggestionsNotification")) {
+              this._hideSearchSuggestionsNotification();
+            }
+          } catch (ex) {
+            Cu.reportError(ex);
+          }
+
+          let yOffset = Math.round(
+            window.windowUtils.getBoundsWithoutFlushing(document.getElementById("nav-bar")).bottom -
+            window.windowUtils.getBoundsWithoutFlushing(aInput).bottom);
+	  
+		  var x_position = aElement.getBoundingClientRect().x;
+		  var y_position = -1;
+			
+          this.openPopup(aElement, "after_start", x_position, y_position, false, false);
+
+          if (needsHandleOverUnderflow) {
+            for (let item of this.richlistbox.childNodes) {
+              item.handleOverUnderflow();
+            }
+          }
+        ]]></body>
+      </method>
+
+
+    </implementation>
+
+  </binding>
+  
+
+
+  <binding id="autocomplete-richlistitem" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete-richlistitem">
+
+    <content align="start"
+             onoverflow="this._onOverflow();"
+             onunderflow="this._onUnderflow();">
+	<xul:hbox>
+		<xul:hbox align="center">
+													   
+		  <xul:image anonid="site-icon"
+					 class="ac-site-icon"
+					 xbl:inherits="src=image,selected,type"/>
+		  <xul:hbox class="ac-title"
+					align="center"
+					xbl:inherits="selected">
+			<xul:description class="ac-text-overflow-container">
+			  <xul:description anonid="title-text"
+							   class="ac-title-text"
+							   xbl:inherits="selected"/>
+			</xul:description>
+				 
+			<xul:hbox anonid="tags"
+					class="ac-tags"
+					align="center"
+					xbl:inherits="selected">
+			  <xul:description class="ac-text-overflow-container">
+				<xul:description anonid="tags-text"
+							   class="ac-tags-text"
+							   xbl:inherits="selected"/>
+			  </xul:description>
+			</xul:hbox>
+		  </xul:hbox>
+		</xul:hbox>
+		<xul:spacer flex="1" id="ibox-spacer"/>
+		<xul:hbox align="end" id="ibox-box">
+		  <xul:image anonid="type-icon"
+				   class="ac-type-icon"
+				   xbl:inherits="selected,current,type"/>
+		</xul:hbox>
+	</xul:hbox>
+	<xul:hbox align="center">
+      <xul:hbox anonid="separator"
+                class="ac-separator"
+                align="center"
+                xbl:inherits="selected,actiontype,type">
+        <xul:description class="ac-separator-text">—</xul:description>
+      </xul:hbox>
+      <xul:hbox class="ac-url"
+                align="center"
+                xbl:inherits="selected,actiontype">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="url-text"
+                           class="ac-url-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      </xul:hbox>
+      <xul:hbox class="ac-action"
+                align="center"
+                xbl:inherits="selected,actiontype">
+        <xul:description class="ac-text-overflow-container">
+          <xul:description anonid="action-text"
+                           class="ac-action-text"
+                           xbl:inherits="selected"/>
+        </xul:description>
+      </xul:hbox>
+	</xul:hbox>
+    </content>
+	
+	<implementation>
+	
+      <method name="_handleOverflow">
+        <body><![CDATA[
+          let itemRect = this.parentNode.getBoundingClientRect();
+          let titleRect = this._titleText.getBoundingClientRect();
+          let tagsRect = this._tagsText.getBoundingClientRect();
+          let separatorRect = this._separator.getBoundingClientRect();
+          let urlRect = this._urlText.getBoundingClientRect();
+          let actionRect = this._actionText.getBoundingClientRect();
+          let separatorURLActionWidth =
+            separatorRect.width + Math.max(urlRect.width, actionRect.width);
+
+          let dir = this.getAttribute("dir");
+          let titleStart = dir == "rtl" ? itemRect.right - titleRect.right
+                                        : titleRect.left - itemRect.left;
+
+          let popup = this.parentNode.parentNode;
+          /*let itemWidth = itemRect.width - titleStart - popup.overflowPadding -
+                          (popup.margins ? popup.margins.end : 0);*/
+		  let itemWidth = itemRect.width;
+
+          if (this._tags.hasAttribute("empty")) {
+            tagsRect.width = 0;
+          }
+
+          let titleTagsWidth = titleRect.width + tagsRect.width;
+          if (titleTagsWidth + separatorURLActionWidth > itemWidth) {
+
+			let titleTagsPct = 0.66;
+
+            let titleTagsAvailable = itemWidth - separatorURLActionWidth;
+            let titleTagsMaxWidth = Math.max(
+              titleTagsAvailable,
+              itemWidth * titleTagsPct
+            );
+            if (titleTagsWidth > titleTagsMaxWidth) {
+
+              let titlePct = 0.33;
+
+              let titleAvailable = titleTagsMaxWidth - tagsRect.width;
+              let titleMaxWidth = Math.max(
+                titleAvailable,
+                titleTagsMaxWidth * titlePct
+              );
+              let tagsAvailable = titleTagsMaxWidth - titleRect.width;
+              let tagsMaxWidth = Math.max(
+                tagsAvailable,
+                titleTagsMaxWidth * (1 - titlePct)
+              );
+              this._titleText.style.maxWidth = titleMaxWidth + "px";
+              this._tagsText.style.maxWidth = tagsMaxWidth + "px";
+            }
+            let urlActionMaxWidth = Math.max(
+              itemWidth - titleTagsWidth,
+              itemWidth * (1 - titleTagsPct)
+            );
+            urlActionMaxWidth -= separatorRect.width;
+            /*this._urlText.style.maxWidth = urlActionMaxWidth + "px";*/
+            this._actionText.style.maxWidth = urlActionMaxWidth + "px";
+			
+			var new_max_width = itemRect.width - 80;
+			
+			this._titleText.style.maxWidth = new_max_width + "px";
+			this._urlText.style.maxWidth = new_max_width + "px";
+			  
+            this._hasMaxWidths = true;
+          }
+        ]]></body>
+      </method>
+	</implementation>
+
+  </binding>
+
+</bindings>

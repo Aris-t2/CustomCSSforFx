@@ -1,0 +1,19 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	/*restore version number */
+	div:not([current-view="updates"]) .addon-name-link[title]:not([data-l10n-args])::after,
+	div:not([current-view="updates"]) .addon-name[title]:not([data-l10n-args])::after {
+	  display: block !important;
+	  content: attr(title) !important;
+	  margin-top: -22px !important;
+	}
+
+}

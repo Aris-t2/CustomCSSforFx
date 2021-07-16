@@ -1,0 +1,26 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.urlbarView .urlbarView-results > .urlbarView-row > .urlbarView-row-inner {
+  flex-wrap: wrap !important;
+}
+.urlbarView .urlbarView-results > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+}
+.urlbarView .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-top: 2px !important;
+  padding-inline-start: calc(6px + 2px + 16px) !important;
+}
+.urlbarView[actionoverride] .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
+.urlbarView .urlbarView-results > .urlbarView-row[has-url]:not([type$=tab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
+.urlbarView .urlbarView-results > .urlbarView-row[type=remotetab]:not([selected]):not(:hover) {
+  display: none !important;
+}
+
+#urlbar-results {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+}

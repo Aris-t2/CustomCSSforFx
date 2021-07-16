@@ -1,0 +1,40 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_main_content_fx65.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
+  padding-bottom: 0px !important;
+  border-bottom: 1px solid threedshadow !important;
+}
+
+#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
+  margin-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
+}
+
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
+	  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
+	}
+  }
+}
+
+#main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
+  position: fixed !important;
+  display:block !important;
+}
+
+/* lw-theme */
+#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+  background-repeat: no-repeat !important;
+  background-position: bottom left !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--lwt-header-image) !important;
+}

@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Unload tabs line */
+.tabbrowser-tab[pending] .tab-content {
+  margin-bottom: 2px !important;
+  border-top-style: solid !important;
+  border-width: 2px !important;
+  border-color: red !important;
+}

@@ -1,0 +1,18 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* remove arrow from panel popup */
+#main-window[tabsintitlebar] #appMenu-popup .panel-arrowbox {
+  visibility: collapse !important;
+}
+#main-window[tabsintitlebar] #appMenu-popup{
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: -250px !important;
+  margin-top: -2px !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar:-moz-any([autohide="true"],[autohide="false"]) ~ #nav-bar  #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+  border-radius: 0 0 0 0 !important;
+}

@@ -1,0 +1,10 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./tabs_below_navigation_toolbar_higher_navbar_positon_fx65.css";
+
+#main-window[tabsintitlebar] #nav-bar #nav-bar-customization-target {
+  -moz-padding-start: 60px !important;
+}
+/**/

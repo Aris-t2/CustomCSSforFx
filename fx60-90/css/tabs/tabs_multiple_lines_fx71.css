@@ -1,0 +1,154 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original authors: **********************************************/
+/* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/* https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/multi-row_tabs.css */
+/****************************************************************************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+:root{
+  --tabs-lines: 3;
+  --tab_min_width_mlt: 80px;
+  --tab_max_width_mlt: 200px;
+  --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+}
+
+#tabbrowser-tabs{
+  min-height: unset !important;
+  padding-inline-start: 0px !important;
+}
+
+/* Selectors for Firefox 71+ */
+/* These are not tabs toolbar specific but horizontal scrollbox isn't used elsewhere, except in bookmarks toolbar but there it doesn't have [part] attribute since it's not in shadow-root */
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  .scrollbutton-up[orient="horizontal"][part]~spacer,
+  .scrollbutton-up[orient="horizontal"][part],
+  .scrollbutton-down[orient="horizontal"][part]{
+	  display: none !important;
+  }
+
+  scrollbox[part][orient="horizontal"]{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+  }
+}
+
+/* Test for Firefox > 66 */
+@supports (inset-block:auto){
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > .arrowscrollbox-scrollbox{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+  }
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) {
+    overflow: -moz-hidden-unscrollable;
+    display: block;
+	margin-bottom:-1px !important;
+  }
+  
+  :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+    height: var(--tab-min-height_mlt) !important;
+  }
+}
+
+/* Test for Firefox < 66 */
+@supports not (inset-block:auto){
+  #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox){
+    min-height: unset !important;
+  }
+  #tabbrowser-tabs .scrollbox-innerbox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tabbrowser-tabs .arrowscrollbox-scrollbox {
+    overflow: -moz-hidden-unscrollable;
+    display: block;
+  }
+}
+
+.tabbrowser-tab{
+  height: var(--tab-min-height_mlt);
+}
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]{
+  position: static !important;
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  flex-grow: 1;
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
+}
+
+.tabbrowser-tab > stack{
+  width: 100%;
+  height: 100%;
+}
+
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+#alltabs-button,
+:root:not([customizing]) #TabsToolbar #new-tab-button,
+#tabbrowser-tabs spacer,
+.tabbrowser-tab::after{
+  display: none !important;
+}
+
+#tabbrowser-tabs[overflow="true"] > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar[customizing="true"] #tabbrowser-tabs > :-moz-any(.tabbrowser-arrowscrollbox,#tabbrowser-arrowscrollbox) > :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  visibility: hidden !important;
+}
+
+/* hide private window indicator, window controls and titlebar placeholders */
+#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
+#main-window[tabsintitlebar] #TabsToolbar #window-controls,
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
+#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
+  opacity: 0 !important;
+}
+
+/* hide tab borders set by Firefox 58+ to solve 'blank space below tabs' issue */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: unset !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  border: 0 !important;
+}
+
+/* Fx66+ tab close fix */
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-close-button {
+  visibility: hidden !important;
+  display: block !important;
+  -moz-margin-start: -18px !important;
+}
+
+/* fix scrollbar */
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+  -moz-window-dragging: no-drag !important;
+}
+
+/*lw theme fix */
+#main-window[style*='--lwt-header-image']:-moz-lwtheme {
+  background-repeat: repeat-y !important;
+}

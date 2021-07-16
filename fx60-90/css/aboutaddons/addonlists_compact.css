@@ -1,0 +1,261 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	/* dimensions / positioning */
+	#addons-page .main-content{
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+	
+	#addons-page #header-search .textbox-input-box{
+	  height: 18px !important;
+	}
+	
+	#addons-page #addon-list {
+	  -moz-margin-start: -1px !important;
+	}
+
+	#addons-page:not(.inSidebar):not([aios-inSidebar="true"]) .view-pane > .list > scrollbox {
+	  padding-right: 0 !important;
+	  padding-left: 0 !important;
+	}
+
+	#addons-page #detail-view,
+	#addons-page #userstyle-sorting,
+	#addons-page .global-warning-container,
+	#addons-page .global-info-container{
+	  -moz-margin-start: 0px !important;
+	  -moz-margin-end: 1px !important;
+	}
+
+	#addons-page .detail-view-container {
+	  -moz-margin-start: 10px !important;
+	}
+
+	#addons-page #view-port{
+	  -moz-margin-end: 4px !important;
+	}
+
+	#addons-page #header{
+	  padding: 2px 0 !important;
+	  margin: 0 !important;
+	}
+	
+	/* buttons / menulists */
+	#addons-page #header button,
+	#addons-page #header #header-utils-btn,
+	#addons-page #list-view .global-info button,
+	#addons-page #list-view .discover-button,
+	#addons-page .status-control-wrapper button,
+	#addons-page #userstyle-sorting button,
+	#addons-page #update-actions button,
+	#addons-page #updates-list-empty button,
+	#addons-page .relnotes-toggle,
+	#list-view menulist{
+	  padding: 2px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+
+	#addons-page #header-utils-btn{
+	  padding: 2px !important;
+	  height: unset !important;
+	}
+
+	#addons-page button.sorter{
+	  padding:2px !important;
+	  min-height: 26px !important;
+	  height: unset !important;
+	}
+
+	#addons-page #header-search{
+	  padding: 1px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	button.addon-control image{
+	  margin-top: -1.5px !important;
+	  margin-bottom: -1.5px !important;
+	}
+
+	/* detail view */
+	#detail-view button:not(.button-link):not(.text-link),
+	#detail-view menulist{
+	  padding:2px !important;
+	  height: unset !important;
+	  /*font-size: 90% !important;*/
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	#detail-view colorpicker[type="button"]{
+	  padding:2px !important;
+	  min-height: 26px !important;
+	  min-width: 40px !important;
+	  height:auto !important;
+	  width: auto !important;
+	}
+	
+	/* checkbox and radio items */
+	#addons-page checkbox image,
+	#addons-page radio image {
+	  width: 16px !important;
+	  height: 16px !important;
+	  margin: 0 !important;
+	}
+
+	/********************/
+	.addon .warning,
+	.addon .error,
+	.addon .pending,
+	.addon .icon-container {
+	  padding: unset !important;
+	  margin: unset !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+
+	.addon .icon {
+	  min-width: unset !important;
+	  min-height: unset !important;
+	  width: 21px !important;
+	  height: 21px !important;
+	}
+	
+	.addon .warning-icon,
+	.addon .error-icon,
+	.addon .pending-icon {
+	  width: 14px !important;
+	  height: 14px !important;
+	  -moz-margin-start: 4px !important;
+	}
+
+	.addon .content-inner-container{
+	  -moz-box-orient: horizontal !important;
+	}
+	#updates-list .addon .content-inner-container{
+	  -moz-box-orient: vertical !important;
+	}
+
+	.addon .name-container .name,
+	.addon .name-container .version,
+	.addon .name-container .disabled-postfix,
+	.addon .name-container .update-postfix,
+	.addon .name-container .legacy-warning	{
+	  -moz-margin-start: 4px !important;
+	  -moz-margin-end: 0 !important;
+	}
+	
+	.addon .update-available button,
+	.addon .control-container button,
+	.addon .control-container menulist {
+	  margin-top: 1px !important;
+	  margin-bottom: 1px !important;
+	  -moz-margin-start: 1px !important;
+	  -moz-margin-end: 0px !important;
+	}
+	
+	.addon .warning .button-box,
+	.addon .pending .button-box,
+	.addon .content-inner-container,
+	.addon .description-container .button-link,
+	.addon .update-available .button-box,
+	.addon .control-container .button-box,
+	.addon .control-container menulist .menulist-label-box {
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+	
+	.addon .experiment-container {
+	  display: none !important;
+	}
+
+	.description-container spacer {
+	  display: none !important;
+	}
+
+	.description-container .button-link .button-box {
+	  -moz-padding-start: 0px !important;
+	  -moz-padding-end: 2px !important;
+	}
+	
+	#addons-page .addon .name-container .legacy-warning,
+	#addons-page #addon-list .name-container .legacy-warning {
+	  padding: 0 2px !important;
+	  margin: 2px !important;
+	}
+	
+	.alert .alert-title {
+	  font-size: 160% !important;
+	}
+
+	.discover-title {
+	  font-size: 18px !important;
+	}
+
+	.name-container {
+	  font-size: 1.1rem !important;
+	}
+
+	.legacy-warning {
+	  font-size: 0.7rem !important;
+	}
+
+	.description,
+	.description-container {
+	  font-size: 1.05rem !important;
+	}
+
+	.addon[status="uninstalled"] > .container {
+	  font-size: 100% !important;
+	}
+
+	.detail-view-container {
+	  font-size: 1.05rem !important;
+	}
+
+	#detail-name-container {
+	  font-size: 2.2rem !important;
+	}
+
+	.preferences-description {
+	  font-size: 80.9% !important;
+	}
+
+	#detail-experiment-container {
+	  font-size: 70% !important;
+	}
+
+	#disabled-unsigned-addons-heading,
+	#legacy-extensions-heading {
+	  font-size: 1.1em !important;
+	}
+
+	:root > * {
+	  font-size: 1.15em !important;
+	}
+	
+	#addons-page .addon {
+	  padding: 5px 4px !important;
+	}
+	
+	#addons-page .addon .icon,
+	#addons-page .addon:not([pending="uninstall"])[status="installed"] .icon {
+	  min-width: unset !important;
+	  min-height: unset !important;
+	  margin: 0 !important;
+	  padding: 0 !important;
+	}
+	
+	#addons-page .addon .description-container {
+	  margin-inline-start: 5px !important;
+	}
+}

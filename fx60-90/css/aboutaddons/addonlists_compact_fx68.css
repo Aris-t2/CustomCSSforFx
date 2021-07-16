@@ -1,0 +1,48 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	:root {
+	  --addon-icon-size: 20px !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: -2px !important;
+	  padding-top: 3px !important;
+	  padding-bottom: 0px !important;
+	  -moz-padding-start: 2px !important;
+	  min-height: 40px !important;
+	}
+	
+	addon-list[type="theme"] .addon.card {
+	  min-height: 40px !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card .more-options-button {
+	  width: 16px !important;
+	  height: 16px !important;
+	  margin-top: 10px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-image {
+	  display: none !important;
+	}
+
+	/* remove advertising other add-ons */
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+
+}

@@ -1,0 +1,72 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addons_manager_alternative_appearance_fx75.css";
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+	url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	.category {
+	  -moz-margin-end: -4px !important;
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0px !important;
+	}
+	
+	#preferencesButton,
+	#help-button {
+		
+	}
+	
+	#preferencesButton {
+	  fill: #8b8b8b !important;
+	}
+	
+	#help-button {
+	  fill: #ff0000 !important;
+	}
+	
+	#preferencesButton:hover,
+	#help-button:hover {
+	  color: var(--in-content-category-text-hover) !important;
+	  background-color: var(--in-content-category-background-hover) !important;
+	}
+
+	:root{
+	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	}
+
+	body > div#full {
+	  margin-inline-start: -1px !important;
+	  margin-inline-end: 1px !important;
+	  margin-bottom: 4px !important;
+	  max-width: unset !important;
+	  box-shadow: unset !important;
+	  border: 0 !important;
+	  border-radius: 0 !important;
+	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	  
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark) {
+		
+	  :root{
+		--in-content-page-background: linear-gradient(black,black) !important;
+	  }
+		
+	  body > div#full {
+		background: linear-gradient(black,black) !important;
+	  }
+		
+	}
+	
+	.addon-badge {
+	  width: 16px !important;
+	  height: 16px !important;
+	}
+	
+}

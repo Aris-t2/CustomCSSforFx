@@ -1,0 +1,30 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+#main-window .megabar {
+  z-index: 3 !important;
+}
+
+#main-window:not([uidensity=compact]) #nav-bar #back-button {
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #forward-button[disabled] + #urlbar-container::before {
+  z-index: 4 !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled])::before {
+  z-index: 4 !important;
+}
+
+/**/
+#urlbar-input-container:not([pageproxystate="invalid"]) > #tracking-protection-icon-container:not([hidden]):not(.chromeUI) + #identity-box {
+  padding-inline-start: 26px !important;
+  margin-inline-start: -24px !important;
+}
+
+#main-window * #tracking-protection-icon-container:not([hidden]) {
+  z-index: unset !important;
+}

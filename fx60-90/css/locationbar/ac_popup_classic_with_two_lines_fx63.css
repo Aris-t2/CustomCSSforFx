@@ -1,0 +1,129 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url(chrome://browser/content/browser.xul) {
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] {
+	  -moz-binding: url("./ac_popup_classic_with_two_lines_fx63.xml#urlbar-rich-result-popup") !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+	  -moz-binding: url("./ac_popup_classic_with_two_lines_fx63.xml#autocomplete-richlistitem") !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem *:not(.ac-url),
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"])) .ac-url {
+	  visibility: visible !important;
+	  display: inherit !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"])) .ac-action {
+	  visibility: collapse !important;
+	  display: none !important;
+	}
+
+	/* remove space around box */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+	  padding: 0 !important;
+	}
+	
+	/* restyle popup items */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+	  -moz-box-orient: vertical !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	  max-height: unset !important;
+	  padding: 4px 0px !important;
+	  border-radius: 0 !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-separator {
+	  display: none !important;
+	  visibility: collapse !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-site-icon,.ac-title,.ac-action,.ac-url) {
+	  -moz-margin-start: unset !important;
+	  -moz-margin-end: unset !important;
+	  -moz-padding-start: unset !important;
+	  -moz-padding-end: unset !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem :-moz-any(.ac-title,.ac-url) {
+	  min-width: unset !important;
+	  width: unset !important;
+	  max-width: unset !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-type-icon {
+	  margin-inline-start: 4px !important;
+	  margin-inline-end: 4px !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-site-icon {
+	  -moz-margin-start: 4px !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
+	  -moz-margin-start: 5px !important;
+	  margin-top: -3px !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action {
+	  -moz-margin-start: 25px !important;
+	  margin-top: 1px !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url {
+	  -moz-margin-start: 25px !important;
+	  margin-top: 0px !important;
+	  padding-bottom: 1px !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-action[actiontype=searchengine]:not([selected]) {
+	  display: block !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem #ibox-spacer {
+	  width: 100000px !important;
+	}
+	
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] hbox[anonid="search-suggestions-notification"],
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] deck[search-suggestions-notification] {
+	  display: none !important;
+	}
+	
+	/* fix large space issue at items end */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem {
+	  border-inline-end: 0px solid transparent !important;
+	}
+	
+	/* remove search box at popups button */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .search-one-offs {
+	  display: none !important;
+	}
+	
+	/* show scrollbar */
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] scrollbox{
+	  overflow-y: auto !important;
+	}
+	
+	/* for Windows Classic theme *//*
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title {
+	  padding-top: 2px !important;
+	  padding-bottom: 2px !important;
+	}
+
+	#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistbox {
+	  padding: 0 !important;
+	}
+	
+	/**/
+	
+	/* url text color: fix for default dark theme*/
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url .ac-url-text:not([selected]) {
+	  color: #00d2ff !important;
+	}
+
+}

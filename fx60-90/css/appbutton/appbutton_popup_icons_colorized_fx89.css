@@ -1,0 +1,75 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* blue */
+#appMenu-fxa-label2::before,
+:is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2) > .toolbarbutton-icon {
+  fill: #4169e1 !important; 
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-fxa-label2::before,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2) > .toolbarbutton-icon {
+  fill: #00d2ff !important; 
+}
+
+/* purple */
+:is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2) > .toolbarbutton-icon,
+#PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession) > .toolbarbutton-icon {
+  fill: #800080 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2) > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession) > .toolbarbutton-icon {
+  fill: #ff00ff !important;
+}
+
+/* dark blue */
+:is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button) > .toolbarbutton-icon,
+#appMenu-zoom-controls2::before,
+#PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
+  fill: #336699 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button) > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-zoom-controls2::before,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
+  fill: #64a3e2 !important;
+}
+
+/* red */
+:is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory) > .toolbarbutton-icon {
+  fill: red !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory) > .toolbarbutton-icon {
+  fill: #ff5a5a !important;
+}
+
+/* green */
+#appMenu-extensions-themes-button > .toolbarbutton-icon {
+  fill: green !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-extensions-themes-button > .toolbarbutton-icon {
+  fill: lightgreen !important;
+}
+
+/* orange */
+:is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar) > .toolbarbutton-icon {
+  fill: orange !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar) > .toolbarbutton-icon {
+  fill: orange !important;
+}
+
+/* grey */
+#appMenu-settings-button > .toolbarbutton-icon {
+  fill: grey !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-settings-button > .toolbarbutton-icon {
+  fill: lightgrey !important;
+}

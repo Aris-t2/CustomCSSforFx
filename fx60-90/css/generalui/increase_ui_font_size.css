@@ -1,0 +1,40 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* set a custom font size here ***********************************************************
+**(some items will look broken with too height font size values) ************************/
+
+
+/* NOTE  ********************************************************************************/
+/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+
+
+:root{
+  --general_ui_font_size: 12pt;
+}
+
+* {
+  font-size: var(--general_ui_font_size) !important;
+}
+
+/* do not change these items font values ************************/
+#PanelUI-button,
+#PanelUI-button * {
+  font-size: var(--general_ui_font_size) !important;
+}
+.toolbarbutton-badge-stack .toolbarbutton-badge{
+  font-size: 10px !important;
+}
+
+/* override CSS code set by other 'options' */
+#main-window[uidensity="compact"] toolbar :-moz-any(.searchbar-textbox, #urlbar,#searchbar),
+.megabar #urlbar-results :-moz-any(.urlbarView-tags, .urlbarView-action, .urlbarView-title, .urlbarView-url),
+#urlbar-container[breakout] #urlbar[breakout],
+#searchbar,
+.searchbar-textbox {
+  font-size: var(--general_ui_font_size) !important;
+}
+
+/**/

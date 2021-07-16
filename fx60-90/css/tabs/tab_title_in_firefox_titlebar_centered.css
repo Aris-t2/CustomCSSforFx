@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"])[tabsintitlebar]::after {
+  max-width: unset !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}

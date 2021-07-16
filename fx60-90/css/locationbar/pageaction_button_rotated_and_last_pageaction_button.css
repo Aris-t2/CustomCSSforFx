@@ -1,0 +1,13 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* hide page action (three dots) button */
+#urlbar-container #pageActionButton {
+  -moz-box-ordinal-group: 101 !important;
+  -moz-padding-start: 2px !important;
+  -moz-padding-end: 2px !important;
+  -moz-margin-start: -6px !important;
+  -moz-margin-end: -8px !important;
+  transform: rotate(90deg);
+}

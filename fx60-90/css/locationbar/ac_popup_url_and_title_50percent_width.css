@@ -1,0 +1,79 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./ac_popup_title_and_url_50percent_width.css";
+
+/* To hide search engines at popups bottom open 'about:config' and set ************
+** browser.urlbar.oneOffSearches to 'false' *************************************/
+
+
+/* reorder content to switch title and url positions */
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-type-icon{
+  -moz-box-ordinal-group: 0 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-site-icon{
+  -moz-box-ordinal-group: 1 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-title{
+  -moz-box-ordinal-group: 5 !important;
+  -moz-margin-start: 10px !important;
+  -moz-margin-end: 0px !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-tags{
+  -moz-box-ordinal-group: 3 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-separator{
+  -moz-box-ordinal-group: 4 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-url{
+  -moz-box-ordinal-group: 2 !important;
+}
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .ac-action{
+  -moz-box-ordinal-group: 6 !important;
+}
+
+/* prevent url/title overlapping */
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] richlistitem:-moz-any([type*="heuristic"],[actiontype="searchengine"],[actiontype="visiturl"],[actiontype="keyword"],[actiontype="switchtab"]) .ac-title {
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 10px !important;
+}
+
+/* calculate width for action type menuitems like this, *
+** if not using 50% widths for title and url. ***********
+** 60% url, 40% title in this example ******************//*
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-url-text,
+#urlbar-results .urlbarView-url {
+  min-width: calc((100vw - 120px)*0.6) !important;
+  width: calc((100vw - 120px)*0.6) !important;
+}
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem .ac-title-text, 
+#urlbar-results .urlbarView-title {
+  min-width: calc((100vw - 120px)*0.4) !important;
+  width: calc((100vw - 120px)*0.4) !important;
+}
+
+/**/
+
+
+/* Fx68+ */
+#urlbar-results .urlbarView-row {
+  position: relative !important;
+}
+
+#urlbar-results .urlbarView-row .urlbarView-title {
+  position: absolute !important;
+  display:block !important;
+  right: 50px !important;
+  top: 4px !important;
+}
+
+#urlbar-results .urlbarView-row .urlbarView-url {
+  position: absolute !important;
+  display:block !important;
+  left: 50px !important;
+  top: 4px !important;
+}
