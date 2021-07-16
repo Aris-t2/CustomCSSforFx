@@ -2,8 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-/* make bookmarks fixed size */
+/* fixed width for bookmarks */
 #PersonalToolbar .bookmark-item{
-   width:130px;
-   max-width:130px;
+   width: 130px;
+   max-width: 130px;
 } 

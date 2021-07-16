@@ -222,3 +222,18 @@
 }
 
 /**/
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button,
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button,
+#identity-box[pageproxystate="valid"].extensionPage > .identity-box-button,
+#urlbar-label-box,
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button:hover:not([open]),
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button:hover:not([open]),
+#identity-box[pageproxystate="valid"].extensionPage > .identity-box-button:hover:not([open]),
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button:hover:active,
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button[open=true],
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button:hover:active,
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button[open=true],
+#identity-box[pageproxystate="valid"].extensionPage > .identity-box-button:hover:active,
+#identity-box[pageproxystate="valid"].extensionPage > .identity-box-button[open=true] {
+  background-color: unset !important;
+}

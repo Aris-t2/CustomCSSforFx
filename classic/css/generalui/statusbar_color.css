@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-:root {
+#statuspanel-label {
   --statusbar_background_color: grey;
   --statusbar_font_color: black;
 }

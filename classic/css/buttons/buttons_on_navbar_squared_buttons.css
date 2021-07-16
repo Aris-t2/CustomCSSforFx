@@ -182,11 +182,13 @@
 
 /* Proton compatibility */
 @media (-moz-proton) {
+	
 #main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
 #main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
   margin-left: 13px !important;
   margin-right: 13px !important;
 }
+
 }
 
 #main-window[uidensity=touch] #nav-bar #zoom-reset-button .toolbarbutton-text {
@@ -200,4 +202,9 @@
 }
 
 
-/**/
+#reload-button > .toolbarbutton-animatable-box,
+#stop-button > .toolbarbutton-animatable-box {
+  top: calc(50% - 10px) !important;
+
+}
+
