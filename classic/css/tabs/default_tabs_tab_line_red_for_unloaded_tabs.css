@@ -4,9 +4,12 @@
 
 
 /* Unload tabs line */
-.tabbrowser-tab[pending] .tab-content {
-  margin-bottom: 2px !important;
-  border-top-style: solid !important;
-  border-width: 2px !important;
-  border-color: red !important;
+.tabbrowser-tab .tab-context-line {
+  height: 1px !important;
+  border-radius: 0px !important;
+  margin: -3px 3px 0 !important;
+}
+
+.tabbrowser-tab[pending]:not([usercontextid]) .tab-context-line {
+  background-color: red !important;
 }

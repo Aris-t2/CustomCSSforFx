@@ -12,6 +12,10 @@
   --search-one-offs_labels_height: 200px;
 }
 
+#PopupSearchAutoComplete .search-panel-one-offs {
+  min-height: unset !important;
+}
+
 #PopupSearchAutoComplete .search-one-offs  {
   height: var(--search-one-offs_labels_height) !important;
   max-height: var(--search-one-offs_labels_height) !important;

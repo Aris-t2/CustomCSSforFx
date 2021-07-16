@@ -355,54 +355,93 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 
-/* [!] NOT A STANDALONE FILE! */
-/* [!] This code does not achieve the requested result without above files content! */
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
+/* move titlebar and its content (menubar, tabs toolbar) below navigation/bookmarks toolbar */
+#titlebar {
+  -moz-box-ordinal-group: 100 !important;
 }
 
-#TabsToolbar {
-  position: absolute !important;
+/* space above tabs toolbar */
+#main-window[tabsintitlebar][sizemode="maximized"] * #titlebar {
+  margin-top: -8px !important;
+}
+
+/* space for menubar above navigation toolbar (Firefox titlebar) */
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 26px !important;
+}
+#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 26px !important;
+}
+
+/* add 'drag' feature to space above navigation toolbar */
+#main-window[tabsintitlebar] #navigator-toolbox,
+#main-window[tabsintitlebar] #nav-bar {
+  -moz-window-dragging: drag !important;
+}
+
+/* move menubar to the top and extend its with to full window width */
+#toolbar-menubar {
+  position: fixed !important;
   display:block !important;
-  bottom: 0 !important;
   width: 100vw !important;
+  -moz-window-dragging: drag !important;
 }
 
-#tabbrowser-tabs {
-  width: 100vw !important;
-}
-
-/* make sure button icon colors set correctly */
-#main-window:not(:-moz-lwtheme) #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
-  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
-  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
-}
-
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
-  visibility: hidden !important;
-}
-
-
-/* move caption buttons to windows top right position */
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+/* move menubars / tab toolbars caption buttons to windows top right position */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   position: fixed !important;
   right: 0 !important;
   visibility: visible !important;
   display: block !important;
 }
 
+/* menubar postion after moving to the top */
+#toolbar-menubar {
+  top: 0px !important;
+}
+
+/* Linux/macOS */
+/* space above navigation toolbar (OS titlebar) */
+/* set to '0', if no menubar is used */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 28px !important;
+}
+
+/* menubar postion in maximized mode after moving to the top */
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  top: 0px !important;
+}
+
 /* caption button position in maximized mode after moving to the top */
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
-#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   top: -14px !important;
 }
 
+/* Windows */
+@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+	/* set to '0', if no menubar is used */
+	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 18px !important;
+	}
+	/* set to '0', if no menubar is used */
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 34px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+	  top: 8px !important;
+	}
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 0px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 8px !important;
+	}
+}
 
 /* Windows */
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
 	  top: 1px !important;
 	}
 	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
@@ -417,7 +456,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	  display: none !important;
 	}
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]):-moz-lwtheme #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
-	  display: flex !important;
+	  display: block !important;
+	  margin-top: -13px !important;
 	}
   }
   @media not all and (-moz-windows-compositor) {
@@ -439,18 +479,50 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	}
 }
 
+/* hide line above navigation toolbar appearing in some cases */
+#main-window:not([tabsintitlebar]) #nav-bar,
+#main-window:not([tabsintitlebar]) #navigator-toolbox {
+  border-top: 0 !important;
+  box-shadow: unset !important;
+}
 
-/* Windows 10 extra tweaks */
-@media (-moz-os-version: windows-win10) {
-  #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme):hover:not([disabled="true"]),
-  #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme)[_moz-menuactive="true"]:not([disabled="true"]) {
-	background-color: Highlight !important;
-	color: HighlightText !important;
-  }
+/* force buttons on menubar being very small to not break the toolbar */
+#toolbar-menubar toolbaritem > toolbarbutton .toolbarbutton-icon,
+#toolbar-menubar > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
+#toolbar-menubar > toolbarbutton .toolbarbutton-icon {
+  padding: 0px 0px !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+#toolbar-menubar toolbaritem > toolbarbutton,
+#toolbar-menubar > toolbarpaletteitem toolbarbutton,
+#toolbar-menubar > toolbarbutton {
+  position: relative !important;
+  padding: 0px 0px !important;
+  margin: 0px 0px !important;
+}
+#toolbar-menubar toolbaritem > toolbarbutton .toolbarbutton-icon,
+#TabsToolbar-customization-target > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
+#TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
+  padding: unset !important;
+  height: unset !important;
+  width: unset !important;
+}
+
+/* make sure button icon colors set correctly */
+#main-window:not(:-moz-lwtheme) #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
+  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
 
 /* tweaks for fullscreen mode */
-#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="fullscreen"] * #TabsToolbar {
+ -moz-padding-start: 0px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button,
 #main-window #TabsToolbar #window-controls {
   display: none !important;
@@ -465,34 +537,30 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   display: none !important;
 }
 
-/* adjust private mode icon position */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-	#main-window[tabsintitlebar][privatebrowsingmode=temporary]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
-	  position: fixed !important;
-	  top: 0 !important;
-	  right: 130px !important;
-	  visibility: visible !important;
-	  display: block !important;
+/* Windows 7 extra tweaks */
+@media (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) * .titlebar-buttonbox-container {
+	  display: none !important;
 	}
-	#main-window[tabsintitlebar][privatebrowsingmode=temporary][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .private-browsing-indicator {
-	  top: 8px !important;
+  }
+  @media not all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: -8px !important;
 	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  top: 0px !important;
+	}
+  }
 }
 
-/* adjust tabs toolbar padding */
-#main-window:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[tabsintitlebar]:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar,
-#main-window[tabsintitlebar]:-moz-any([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar {
- -moz-padding-start: 0px !important;
- -moz-margin-start: 0px !important;
-}
-
-/* hide line above navigation toolbar appearing in some cases */
-#main-window:not([tabsintitlebar]) #nav-bar,
-#main-window:not([tabsintitlebar]) #navigator-toolbox {
-  border-top: 0 !important;
-  box-shadow: unset !important;
+/* Windows 10 extra tweaks */
+@media (-moz-os-version: windows-win10) {
+  #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme):hover:not([disabled="true"]),
+  #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme)[_moz-menuactive="true"]:not([disabled="true"]) {
+	background-color: Highlight !important;
+	color: HighlightText !important;
+  }
 }
 
 /* disable Mozillas tab jumping nonsense when moving tabs */
@@ -507,30 +575,14 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   margin-top: unset !important;
 }
 
-/* size of new tab tabs '+' icon */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon {
-  padding: 0px !important;
-  margin: 0px !important;
-  width: 18px !important;
-  height: 18px !important;
-}
-
-/* some id!ot at Moz thought it is a great idea to add padding and margin values here */
-@media (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-  #TabsToolbar > .toolbar-items {
-    padding-top: 0 !important;
-	margin-top: 0 !important;
-  }
-}
-
 
 /* show window caption buttons in fullscreen mode */
 #main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #TabsToolbar #window-controls {
   position: absolute !important;
-  display: block !important;
+  display: flex !important;
   top: 0 !important;
   right: 0 !important;
-  margin-top: -32px !important;
+  /*margin-top: -32px !important;*/
   z-index: 1000 !important;
 }
 
@@ -555,6 +607,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	  color: white !important;
 	  fill: white !important;
 	}
+	
+	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #nav-bar {
+	  -moz-padding-end: 40px !important;
+	}
 
 }
 
@@ -564,84 +620,4 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	  -moz-padding-end: 60px !important;
 	}
 }*/
-
-/**/
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  margin-top: calc(-1px + var(--tab-min-height_tnot)) !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
-}
-
-#TabsToolbar {
-  height: var(--tab-min-height_tnot) !important;
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
-  position: fixed !important;
-  display:block !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: unset !important;
-}
-
-#tabbrowser-tabs .tabbrowser-arrowscrollbox,
-#tabbrowser-tabs #tabbrowser-arrowscrollbox {
-  margin-top: -1px !important;
-  margin-bottom: 1px !important;
-}
-
-/* caption button position in maximized mode after moving to the top */
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
-#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: 0 !important;
-}
-
-#PersonalToolbar {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-  height: unset !important;
-  max-height: unset !important;
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #titlebar {
-  margin-top: calc(-1 * var(--tab-min-height_tnot)) !important;
-  padding-top: var(--tab-min-height_tnot) !important;
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  margin-top: calc(-3px + var(--tab-min-height_tnot)) !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: calc(0px + var(--tab-min-height_tnot)) !important;
-}
-
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
-  top: 3px !important;
-  left: -5px !important;
-  right: unset !important;
-}
-
-
-#navigator-toolbox {
-  position: relative;
-}
-
-#titlebar:-moz-lwtheme {
-  background-image: var(--lwt-header-image, var(--lwt-additional-images));
-  background-repeat: var(--lwt-background-tiling);
-  background-position: var(--lwt-background-alignment);
-}
-
-@media (-moz-proton) {
-	
-  .tabbrowser-tab {
-	min-height: unset !important; 
-  }
-}
 

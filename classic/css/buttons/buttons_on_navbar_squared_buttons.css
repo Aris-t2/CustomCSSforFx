@@ -6,20 +6,32 @@
 ** types and button variations out there to catch all of them with general code. ********/
 
 
+:root {
+  --space_required_for_appbutton_fix: 46px !important;
+}
+
+:root[uidensity="compact"] {
+  --space_required_for_appbutton_fix: 36px !important;
+}
+
+:root[uidensity="touch"] {
+  --space_required_for_appbutton_fix: 50px !important;
+}
+
+
 /* compact button mode */
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
-#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack > .toolbarbutton-icon {
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 32px !important;
   height: 26px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
-#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 32px !important;
-  height: 26px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+
+#main-window[uidensity=compact] #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
+  -moz-margin-start: 2px !important;
 }
+
 #main-window[uidensity=compact] #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
@@ -29,8 +41,6 @@
 #main-window[uidensity=compact] #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 2px !important;
   margin-right: 2px !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
 }
 #main-window[uidensity=compact] #nav-bar .webextension-browser-action .toolbarbutton-icon {
   margin-left: 2px !important;
@@ -47,25 +57,38 @@
   margin-right: 7px !important;
 }
 
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window[uidensity=compact] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+}
+
 #main-window[uidensity=compact] #nav-bar #zoom-reset-button .toolbarbutton-text {
   min-height: 26px !important;
+}
+
+/* fix for toolbar button badges */
+#main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -5px !important;
 }
 
 
 /* normal button mode */
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack > .toolbarbutton-icon {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 40px !important;
   height: 30px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
 }
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 40px !important;
-  height: 30px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
+  -moz-margin-start: 5px !important;
 }
+
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
   padding-top: 7px !important;
   padding-bottom: 7px !important;
@@ -75,8 +98,6 @@
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 6px !important;
   margin-right: 6px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
 }
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .webextension-browser-action .toolbarbutton-icon {
   margin-left: 6px !important;
@@ -98,24 +119,36 @@
   margin-right: 11px !important;
 }
 
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #stop-reload-button .toolbarbutton-animatable-box {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+}
+
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #zoom-reset-button .toolbarbutton-text {
   min-height: 30px !important;
+}
+
+/* fix for toolbar button badges */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -6px !important;
+  -moz-margin-end: -5px !important;
 }
 
 
 /* touch button mode */
 #main-window[uidensity=touch] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
-#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack > .toolbarbutton-icon {
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   width: 46px !important;
   height: 32px !important;
   padding-top: 8px !important;
   padding-bottom: 8px !important;
 }
-#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  width: 46px !important;
-  height: 32px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+#main-window[uidensity=touch] #nav-bar #PanelUI-menu-button .toolbarbutton-icon {
+  -moz-margin-start: 6px !important;
 }
 #main-window[uidensity=touch] #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
   padding-top: 8px !important;
@@ -126,8 +159,6 @@
 #main-window[uidensity=touch] #nav-bar #downloads-button #downloads-indicator-anchor {
   margin-left: 6px !important;
   margin-right: 6px !important;
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
 }
 #main-window[uidensity=touch] #nav-bar .webextension-browser-action .toolbarbutton-icon {
   margin-left: 6px !important;
@@ -143,10 +174,19 @@
   padding-right: 14px !important;
 }
 
-#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box ,
+#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
 #main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
   margin-left: 14px !important;
   margin-right: 14px !important;
+}
+
+/* Proton compatibility */
+@media (-moz-proton) {
+#main-window[uidensity=touch] #nav-bar #stop-reload-button .toolbarbutton-animatable-box,
+#main-window[uidensity=touch] #nav-bar #nav-bar-overflow-button .toolbarbutton-animatable-box{
+  margin-left: 13px !important;
+  margin-right: 13px !important;
+}
 }
 
 #main-window[uidensity=touch] #nav-bar #zoom-reset-button .toolbarbutton-text {
@@ -154,8 +194,10 @@
 }
 
 /* fix for toolbar button badges */
-#nav-bar .toolbarbutton-1 .toolbarbutton-badge {
-  margin-top: -1px !important;
+#main-window[uidensity=touch] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-top: -6px !important;
+  -moz-margin-end: -5px !important;
 }
+
 
 /**/

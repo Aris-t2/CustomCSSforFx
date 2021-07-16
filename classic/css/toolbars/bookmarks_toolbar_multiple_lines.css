@@ -10,12 +10,33 @@
 @import "./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css";
 
 :root {
-  --bookmark_items_height: 26px; /* <- bookmark items - line height */
+  --bookmark_items_height: 22px; /* <- bookmark items - line height */
   --bookmark_items_lines: 3; /* <- maximum amount of lines */
 }
 
-#personal-bookmarks {
+#PersonalToolbar {
+  min-height: var(--bookmark_items_height) !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important;
+}
+
+#personal-bookmarks,
+#PlacesToolbar > hbox {
   display: block;
+}
+
+#PlacesToolbarItems {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  overflow-y: auto;
+}
+
+#PlacesToolbarItems > .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap; 
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important
 }
 
 #personal-bookmarks #PlacesToolbar {
@@ -26,22 +47,6 @@
   max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) );
 }
 
-#personal-bookmarks #PlacesToolbar > hbox {
-  display: -moz-stack !important;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-}
-
-#personal-bookmarks #PlacesToolbar #PlacesToolbarItems {
-  overflow-x: visible;
-  overflow-y: visible;
-}
-
-#personal-bookmarks #PlacesToolbar #PlacesToolbarItems > box {
-  display: block;
-}
-
 #personal-bookmarks #PlacesToolbar > .bookmark-item{
   visibility: visible !important;
 }
@@ -49,7 +54,6 @@
 #personal-bookmarks #PlacesToolbar .chevron{
   visibility: collapse;
 }
-
 #personal-bookmarks #PlacesToolbar > hbox > hbox{
   overflow-x: hidden;
   overflow-y: hidden;
@@ -73,7 +77,7 @@
   padding-top: 2px !important;
   padding-bottom: 2px !important;
 }
-*/
+*//*
 #personal-bookmarks #PlacesToolbar toolbarseparator{
   -moz-appearance: none !important;
   visibility: visible !important;
@@ -82,7 +86,7 @@
   border-left: 3px solid ThreeDShadow !important;
   border-right: 3px solid ThreeDHighlight !important;
   vertical-align: middle;
-}
+}*/
 
 #personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
   -moz-appearance: toolbarbutton;

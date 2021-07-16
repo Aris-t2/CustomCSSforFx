@@ -1,7 +1,0 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx ************************************/
-/****************************************************************************************/
-
-.tab-context-line {
-  display: none !important;
-}

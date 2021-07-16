@@ -2,7 +2,6 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
 @-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
 	url-prefix(about:addons),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
@@ -23,4 +22,10 @@
 	  -moz-margin-start: 27px !important;
 	}
 	
+	/* adjust category icon position */
+	.sidebar-footer-button .sidebar-footer-label,
+	richlistitem .category-name {
+	  display: none !important;
+	}
+
 }

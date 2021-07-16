@@ -2,123 +2,80 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-
 /****************************************************************************************/
 /* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
-/* all credits go to the original author: https://00.bulog.jp/archives/1476 *************/
+/* all credits go to the original authors: **********************************************/
+/* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/* https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/multi-row_tabs.css */
 /****************************************************************************************/
 
 
 /* NOTE  ********************************************************************************/
 /* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
 
-:root {
-  --tabs-end-position: 50px;
+:root{
+  --tabs-lines: 3;
+  --tab_min_width_mlt: 100px;
+  --tab_max_width_mlt: 200px;
   --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
-  --mltabs-newtab-height: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
-  --tab_min_width_mlt: 60px;
-  --tab_max_width_mlt: 100px;
 }
 
-/* titlebar buttons */
-#titlebar-buttonbox {
-  vertical-align: top !important;
-  display: block !important;
+#tabbrowser-tabs{
+  min-height: unset !important;
+  padding-inline-start: 0px !important
 }
 
-.tabbrowser-arrowscrollbox scrollbox {
-  overflow: visible !important;
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  #scrollbutton-up~spacer,
+  #scrollbutton-up,
+  #scrollbutton-down{
+	display: var(--scrollbutton-display-model,initial);
+  }
+
+  scrollbox[part][orient="horizontal"]{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+    scrollbar-color: currentColor transparent;
+    scrollbar-width: thin;
+  }
 }
 
-.tabbrowser-arrowscrollbox scrollbox > box {
-  display: block !important;
+.scrollbox-clip[orient="horizontal"],
+#tabbrowser-arrowscrollbox{
+  overflow: -moz-hidden-unscrollable;
+  display: block;
+  --scrollbutton-display-model: none;
 }
 
-/* additional space after tabs */
-/*
-.tabbrowser-tabs {
-  -moz-margin-end: var(--tabs-end-position) !important;
+.tabbrowser-tab{
+  height: var(--tab-min-height_mlt);
 }
-*/
 
-/* tab size */
-.tabbrowser-tab {
-  min-height: var(--tab-min-height_mlt) !important;
-  max-height: var(--tab-min-height_mlt) !important;
-  vertical-align: top !important;
-  -moz-box-sizing: border-box !important;
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+  height: var(--tab-min-height_mlt) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]{
+  position: static !important;
+  margin-inline-start: 0px !important;
 }
 
 .tabbrowser-tab[fadein]:not([pinned]) {
+  flex-grow: 1;
   min-width: var(--tab_min_width_mlt) !important;
   max-width: var(--tab_max_width_mlt) !important;
 }
 
-/* 'new tab' tab size */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
-  vertical-align: bottom !important;
-  height: var(--mltabs-newtab-height) !important;
-  margin-bottom: -1px !important;
+.tabbrowser-tab > stack{
+  width: 100%;
+  height: 100%;
 }
 
-@media (-moz-windows-classic) {
-	#TabsToolbar #tabbrowser-tabs :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
-	  margin-bottom: 1px !important;
-	  height: calc(var(--mltabs-newtab-height) - 2px) !important;
-	}
-}
-
-/* hide unneeded buttons */
-.scrollbutton-up,
-.scrollbutton-down,
-#TabsToolbar #alltabs-button{
-  display: none;
-}
-
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
-  opacity: 0 !important;
-}
-
-#tabbrowser-tabs * {
-  overflow-x: none !important;
-}
-
-#main-window[customizing] #tabbrowser-tabs .scrollbox-innerbox {
-  display: block !important;
-}
-
-#tabbrowser-tabs .scrollbox-innerbox {
-  -moz-padding-end: 4px !important;
-}
-
-#TabsToolbar[currentset^="tabbrowser-tabs,new-tab-button"] #tabbrowser-tabs .scrollbox-innerbox {
-  -moz-padding-end: 0px !important;
-}
-
-/* hide private window indicator, window controls and titlebar placeholders */
-#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
-#main-window[tabsintitlebar] #TabsToolbar #window-controls,
-#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="pre-tabs"],
-#main-window[tabsintitlebar] #TabsToolbar .titlebar-spacer[type="post-tabs"] {
+#alltabs-button,
+:root:not([customizing]) #TabsToolbar #new-tab-button,
+#tabbrowser-arrowscrollbox > spacer,
+.tabbrowser-tab::after{ 
   display: none !important;
-}
-#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
-#TabsToolbar .titlebar-placeholder[type="post-tabs"] {
-  opacity: 0 !important;
-}
-
-/* hide tab borders set by Firefox 58+ to solve 'blank space below tabs' issue */
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
-  border-left: unset !important;
-  border-image: unset !important;
-  border-image-slice: unset !important;
-  border: 0 !important;
-}
-
-/*lw theme fix */
-#main-window:-moz-lwtheme {
-  background: var(--lwt-header-image) !important;
-  background-repeat: repeat-y !important;
 }

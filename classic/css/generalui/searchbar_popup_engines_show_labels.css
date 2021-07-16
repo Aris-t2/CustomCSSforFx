@@ -3,15 +3,6 @@
 /****************************************************************************************/
 
 
-#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) {
-  width: 100% !important;
-  display: block !important;
-}
-
-#PopupSearchAutoComplete .search-panel-tree:not([collapsed="true"]) > * {
-  width: 100%;
-}
-
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item {
   -moz-appearance:none !important;
   min-width: 0 !important;
@@ -27,8 +18,7 @@
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box {
-  position: absolute !important;
-  display:block !important;
+  display: block !important;
   -moz-padding-start: 4px !important;
   margin-top: 3px !important;
 }
@@ -43,4 +33,10 @@
   min-width: 0 !important;
   width: 100% !important;
   white-space: nowrap !important;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs {
+  min-height: unset !important;
+  height: unset !important;
+  max-height: unset !important;
 }

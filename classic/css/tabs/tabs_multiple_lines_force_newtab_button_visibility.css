@@ -2,6 +2,16 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-.tab-context-line {
+
+@import "./tabs_multiple_lines.css";
+
+
+:root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {
+  display: unset !important;
+  visibility: visible !important;
+}
+
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   display: none !important;
+  visibility: hidden !important;
 }

@@ -4,15 +4,15 @@
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
-/* version 3.3.1 ********************************************************************************/
+/* Custom CSS for Firefox 91+ *******************************************************************/
+/* version 4.0.0pre1 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
  Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
   
- [!] Firefox 69+ requires this preference to be enabled or custom styles will not be loaded:
+ [!] Firefox requires this preference to be enabled or custom styles will not be loaded:
 	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
 
 *************************************************************************************************/
@@ -104,7 +104,6 @@
 
 /* COLOR VARIABLES FOR DEFAULT BROWSER THEME ONLY - MAIN UI - [only use one at a time] **********/
 /* [!] set own colors for tabs & toolbars inside 'color_variables.css' or use available presets */
-/* [!] 'about:config > ui.systemUsesDarkTheme > 0' might be required in some cases **************/
 /* [!] enabled 'menubar_color.css' and 'statusbar_color.css' might be required in some cases ****/
 @import "./config/color_variables.css"; /**/  /* <- default 'grey' colors */
 /* @import "./config/color_variables_aero.css"; /**/  /* <- 'AeroBlue' colors (Win 7 Aero) */
@@ -121,11 +120,11 @@
 /* @import "./css/toolbars/default_dark_theme_darker.css"; /**/
 /* @import "./css/toolbars/default_dark_theme_darker_v2.css"; /**/
 
-/* CUSTOM SCROLLBARS VARIABLES (Firefox 63+ only) - EXPERIMENTAL ********************************/
+/* CUSTOM SCROLLBARS VARIABLES - EXPERIMENTAL ***************************************************/
 /* [!] Might not work on every page! This issue is for Mozilla to solve. ************************/
-/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ************************/
-/* [!] custom size values only compatible with 'web content' scrollbars at the moment ***********/
-/* [!] more info inside 'custom_scrollbar_appearance.css' file **********************************/
+/* [!] Not compatible with custom scrollbar JavaScript userChrome scripts. **********************/
+/* [!] Custom size values only compatible with 'web content' scrollbars at the moment. **********/
+/* [!] More info inside 'custom_scrollbar_appearance.css' file. *********************************/
 /* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
 
 
@@ -134,7 +133,7 @@
 /************************************************************************************************/
 
 /* PROTON: 'classic' pre-Proton button padding **************************************************/
-/* @import "./css/buttons/button_padding_proton.css"; /**/
+ @import "./css/buttons/button_padding_proton.css"; /**/
 
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
@@ -149,7 +148,6 @@
 /* squared buttons / button size - [only use one at a time] *************************************/
 /* "rectangular shape" - normal size ************************************************************/
 /* @import "./css/buttons/buttons_on_navbar_squared_buttons.css"; /**/
-/* @import "./css/buttons/buttons_on_navbar_squared_buttons_fx72.css"; /**/
 /* "normal shape" - large size (huge 48x48px buttons with 36x36px icons) ************************/
 /* [!] not compatible with 'custom icon' options ************************************************/
 /* [!] not compatible with 'custom back & forward buttons' appearance options *******************/
@@ -194,8 +192,6 @@
 /* @import "./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css"; /**/
 /* @import "./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css"; /**/
-/* popup appearance *****************************************************************************/
-/* @import "./css/buttons/bookmarks_menu_button_popup_classic_appearance.css"; /**/ /* Fx60-69 only */
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import "./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css"; /**/
@@ -231,16 +227,10 @@
 /* @import "./css/buttons/custom_backforward_small_ie8.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ie9.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
-/* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* not for Fx89+ Proton tabs */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/  /* not for Fx89+ Proton tabs */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_aero.css"; /**/  /* <-- AERO colors */  /* not for Fx89+ Proton tabs */
-/* @import "./css/buttons/custom_backforward_connected_fx89.css"; /**/ /* Fx 89+ */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx89.css"; /**/ /* Fx 89+ */
-
-/* Additional tweaks for custom_backforward_connected_to_location_bar* **************************/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx70_extra.css"; /**/	/* has to be enabled for Fx 70 */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_fx71_extra.css"; /**/	/* has to be enabled for Fx 71-88 */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_megabar_support.css"; /**/	/* has to be enabled for megabar compatibility on Fx 71-88 */
+/* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */
+/* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared*/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared*/
 
 
 /************************************************************************************************/
@@ -251,14 +241,10 @@
 /* @import "./css/appbutton/appbutton_hidden.css"; /**/
 
 /* application/hamburger button popup ***********************************************************/
-@import "./css/appbutton/appbutton_popup_icons_fx89.css"; /**/ /*Fx 89+ */
-/* @import "./css/appbutton/appbutton_popup_more_icons.css"; /**/ /*Fx 60-88 */
-@import "./css/appbutton/appbutton_popup_icons_colorized_fx89.css"; /**/ /*Fx 89+ */
-/* @import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/ /*Fx 60-88 */
+@import "./css/appbutton/appbutton_popup_icons.css"; /**/
+@import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/
 /* @import "./css/appbutton/appbutton_popup_sync_hidden.css"; /**/
 /* @import "./css/appbutton/appbutton_popup_logins_and_passwords_hidden.css"; /**/
-/* @import "./css/appbutton/appbutton_popup_trackingprotection_hidden.css"; /**/
-/* @import "./css/appbutton/appbutton_popup_panelarrow_hidden.css"; /**/ 
 
 /************************************************************************************************/
 /* button on navigation toolbar *****************************************************************/
@@ -292,12 +278,8 @@
 /************************************************************************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
-/* -- Fx 60-73 **********************************************************************************/
-/* @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
+@import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
-/* -- Fx 74+ (might already work on Fx 73) ******************************************************/
-@import "./css/appbutton/appbutton_in_titlebar_fx74.css"; /**/ /* <-- label only */
-/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_fx74.css"; /**/
 
 /* for 'appbutton in titlebar icon only' - [only use one at a time] *****************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
@@ -307,7 +289,7 @@
 /* for 'appbutton in titlebar icon only' ********************************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon.css"; /**/
 
-/* macOS fix - appbutton in titlebar gets moved to the right for obvious reasons, right Apple? **/
+/* macOS fix - appbutton in titlebar gets moved to the right ************************************/
 /* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
 
 /* button color - [only use one at a time] ******************************************************/
@@ -329,7 +311,7 @@
 /* custom tab appearance - [only use one at a time] *********************************************/
 @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
-/* @import "./css/tabs/default_tabs_enhanced.css"; /**/ /* Fx89+ & Proton UI */
+/* @import "./css/tabs/default_tabs_enhanced.css"; /**/
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
@@ -348,61 +330,30 @@
 
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP *****************************/
 /* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
-/* [!] Note: only ~fx65_v2 works with multi-tab lines option on Fx65+. **************************/
-/* - Fx 60-64 ***********************************************************************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- Windows/Linux */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- macOS */
-/* - Fx 65-67 - Windows/Linux *******************************************************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/
-/* - Fx 65-73 - macOS ***************************************************************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_macOS_default_tabs.css"; /**/
-/* - Fx 65+ v2 - mainly for multi-lined tabs (Glitches with inactive menubar!) ******************/  /* <- use this for multiple tab lines support */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx65_v2_macOS.css"; /**/
-/* - Fx 68-71 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
-/* - Fx 72-73 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
-/* - Fx 74-88 Windows/Linux *********************************************************************/
-/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
-/* - Fx 74-88 - macOS ***************************************************************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS_default_tabs.css"; /**/
+/* [!] Note: only 'alt' works with multi-tab lines option. **************************************/
 /* - Fx 89+ Windows/Linux ***********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_WinLin_defaults_tabs.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_defaults_tabs.css"; /**/
 /* - Fx 89+ - macOS *****************************************************************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS_default_tabs.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_default_tabs.css"; /**/
+
+/* - Alternative for multi-lined tabs (Glitches with inactive menubar!) ******************/  /* <- use this for multiple tab lines support */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_alt.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_alt_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_alt_macOS.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
-/* - Fx 60-64 ***********************************************************************************/
+/* - Fx 89+ Windows/Linux ***********************************************************************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/
-/* - Fx 65-67 - Windows/Linux *******************************************************************/
-/* @import "./css/tabs/tabs_below_main_content_fx65.css"; /**/
-/* - Fx 65+ - macOS *****************************************************************************/
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS.css"; /**/
-/* @import "./css/tabs/tabs_below_main_content_fx65_macOS_default_tabs.css"; /**/
-/* - Fx 68-71 Windows/Linux *********************************************************************/
-/* @import "./css/tabs/tabs_below_main_content_fx68.css"; /**/
-/* - Fx 72-73 Windows/Linux *********************************************************************/
-/* @import "./css/tabs/tabs_below_main_content_fx72.css"; /**/
-/* - Fx 74+ Windows/Linux ***********************************************************************/
-/* @import "./css/tabs/tabs_below_main_content_fx74.css"; /**/
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (for tabs not on top) - [only use one at a time] */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_fx65.css"; /**/			/* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only_fx65.css"; /**/  /* <--- EXPERIMENTAL */
 
 
 /* TAB BACKGROUND COLORS for default/active/hovered/unloaded tabs and 'new tab' tab *************/
@@ -419,29 +370,10 @@
 /* [!] Original authors: --> https://00.bulog.jp/archives/1476 **********************************/
 /* [!] --> https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
-/* [!] not compatible with 'tabs below navigation toolbar' option on Firefox 65+ ****************/
-/* [!] only compatible with 'tabs below navigation toolbar Fx 65 v2' option on Firefox 65+ ******/
-/* @import "./css/tabs/tabs_multiple_lines.css"; /**/ /* Fx 60-65 */
-/* @import "./css/tabs/tabs_multiple_lines_v2.css"; /**/  /* Fx 60-65 */
-/* @import "./css/tabs/tabs_multiple_lines_fx66.css"; /**/  /* Fx 66-70 */
-/* @import "./css/tabs/tabs_multiple_lines_fx66_force_newtab_button_visibility.css"; /**/  /* Fx 66-70 */  
-/* @import "./css/tabs/tabs_multiple_lines_fx71.css"; /**/  /* Fx 71-80 */
-/* @import "./css/tabs/tabs_multiple_lines_fx71_force_newtab_button_visibility.css"; /**/  /* Fx 71-80 */
-/* @import "./css/tabs/tabs_multiple_lines_fx81.css"; /**/  /* Fx 81+ */
-/* @import "./css/tabs/tabs_multiple_lines_fx81_force_newtab_button_visibility.css"; /**/  /* Fx 81+ */
+/* [!] only compatible with 'tabs below navigation toolbar alt version' *************************/
+/* @import "./css/tabs/tabs_multiple_lines.css"; /**/
+/* @import "./css/tabs/tabs_multiple_lines_force_newtab_button_visibility.css"; /**/
 
-/* TAB TITLE IN FIREFOX TITLEBAR (Windows & Firefox 60-72 only) *********************************/
-/* [!] some internal pages only show default browser title **************************************/
-/* [!] might not always work correctly **********************************************************/
-/* @import "./css/tabs/tab_title_in_firefox_titlebar.css"; /**/
-/* @import "./css/tabs/tab_title_in_firefox_titlebar_fx65.css"; /**/
-/* @import "./css/tabs/tab_title_in_firefox_titlebar_centered.css"; /**/
-
-/* Tab scroll buttons position - [only use one at a time] ***************************************/
-/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_start.css"; /**/  /* Fx 60-71 */ 
-/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_start_fx72.css"; /**/  /* Fx 72+ */
-/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_end.css"; /**/  /* Fx 60-71 */
-/* @import "./css/tabs/tab_scrollbuttons_both_on_toolbars_end_fx72.css"; /**/  /* Fx 72+ */
 
 /* restore empty/missing tab favicon - [only use one at a time] *********************************/
 @import "./css/tabs/missing_tab_favicon_restored_default.css"; /**/
@@ -472,28 +404,15 @@
 /* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/tab_title_right.css"; /**/
 
-/* DEFAULT TABS - use only, if 'classic squared tabs' are disabled ******************************/
-/* [!] Fx 57-90 default tabs, not Fx 89+ Proton tabs ********************************************/
-/* @import "./css/tabs/default_tabs_tab_border.css"; /**/
-/* @import "./css/tabs/default_tabs_round_top_borders.css"; /**/
-/* @import "./css/tabs/default_tabs_tab_containers_full_line.css"; /**/
-/* tab background/color settings - [only use one at a time] *************************************/
-/* @import "./css/tabs/default_tabs_tab_background_appearance.css"; /**/
+/* DEFAULT TABS Fx89+ - Proton tabs - use only, if 'classic squared tabs' are disabled **********/
 /* tab line settings - [only use one at a time] *************************************************/
 /* @import "./css/tabs/default_tabs_no_tab_line.css"; /**/
-/* @import "./css/tabs/default_tabs_static_tab_line.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode.css"; /**/
 
-/* DEFAULT TABS Fx89+ - Proton tabs - use only, if 'classic squared tabs' are disabled **********/
-/* tab line settings - [only use one at a time] *************************************************/
-/* @import "./css/tabs/default_tabs_no_tab_line_proton.css"; /**/
-/* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs_proton.css"; /**/
-/* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode_proton.css"; /**/
-
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
-/* @import "./css/tabs/tab_audio_icon_fx89.css"; /**/
+/* @import "./css/tabs/tab_audio_icon.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
@@ -547,18 +466,9 @@
 /* FINDBAR **************************************************************************************/
 /* @import "./css/generalui/findbar_compact.css"; /**/
 
-/* FINDBAR - FIREFOX 60-83 **********************************************************************/
-/* @import "./css/generalui/findbar_on_top.css"; /**/
-/* @import "./css/generalui/findbar_show_full_quickfindbar.css"; /**/
-/* @import "./css/generalui/findbar_on_top_fade_out_on_hover.css"; /**/
-/* findbar - close icon position - [only use one at a time] *************************************/
-/* @import "./css/generalui/findbar_on_top_close_at_findbars_start.css"; /**/
-/* @import "./css/generalui/findbar_compact_on_top_close_at_findbars_start.css"; /**/
-/* @import "./css/generalui/findbar_on_bottom_close_at_findbars_start.css"; /**/
-
 /* FINDBAR FIREFOX 84+ **************************************************************************/
-/* @import "./css/generalui/findbar_on_top_fx84.css"; /**/
-/* @import "./css/generalui/findbar_on_top_close_at_findbars_start_fx84.css"; /**/
+/* @import "./css/generalui/findbar_on_top.css"; /**/
+/* @import "./css/generalui/findbar_on_top_close_at_findbars_start.css"; /**/
 
 
 /* page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks' ********************/
@@ -593,28 +503,7 @@
 /* searchbar popup - search engine settings - [only use one at a time] **************************/
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx66.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx70.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_fx72.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx66.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx70.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars_fx72.css"; /**/
-
-/* OLD SEARCH (for Firefox 60-63 only!) *********************************************************/	/* <--- OLD SEARCH */
-/* [!] 'Old search' does not work with Firefox 64+ anymore due to Firefox code changes **********/
-/* [!] Try alternatives provided within support thread ******************************************/
-/* [!] 'about:config > browser.search.openintab': open search in current or new tab *************/
-/* [!] 'about:config > browser.search.suggest.enabled': search suggestions visibility ***********/
-/* [!] 'about:config > browser.oldsearch.customwidth': enables custom popup width ***************/
-/* [!] 'about:config > browser.oldsearch.customwidthvalue': custom popup width value ************/
-/* [!] 'about:config > browser.oldsearch.clearinput': clear searchbox after search **************/
-/* [!] 'about:config > browser.oldsearch.reverttodefault': revert to first engine after search **/
-/* [!] Shift + click on search glass: search opens in a new window ******************************/
-/* [!] Ctrl/Cmd + click on search glass: search opens in a new tab ******************************/
-/* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/104 *********************/
-/* @import "./css/generalui/oldsearch.css"; /**/  /*  <--- use this for Fx 60-62 */
-/* @import "./css/generalui/oldsearch63.css"; /**/  /*  <--- use this for Fx 63 (Fx 64+ not supported!) */
 
 /* MENUBARS bookmarks popup (not compatible to macOS/Linux) *************************************/
 /* @import "./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css"; /**/
@@ -633,13 +522,12 @@
 /* [!] not compatible to 'bookmarks toolbar autohide' option ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/73 **********************/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/  /* <--- EXPERIMENTAL */
-/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx72.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/  /* <--- EXPERIMENTAL */
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
-/* [!] Fx 65+ create additional toolbar for 'bookmarks toolbar items' on navigation toolbar *****/
-/* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
+/* [!] create additional toolbar for 'bookmarks toolbar items' on navigation toolbar ************/
+/* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
 /* @import "./css/toolbars/tab_toolbar_color_proton.css"; /**/
@@ -654,7 +542,7 @@
 /* @import "./css/toolbars/menubar_fog_hidden.css"; /**/
 /* @import "./css/toolbars/menubar_alternative_menu_hover_color.css"; /**/
 /* @import "./css/toolbars/menubar_in_fullscreen_mode.css"; /**/
-/* @import "./css/toolbars/menubar_in_fullscreen_mode_alt_fx65_v2.css"; /**/ /*'tabs not on top v2' + Fx65+ */
+/* @import "./css/toolbars/menubar_in_fullscreen_mode_alt.css"; /**/ /*'tabs not on top alt' */
 /* menubar color - ******************************************************************************/
 /* @import "./css/toolbars/menubar_color.css"; /**/
 
@@ -666,7 +554,6 @@
 /* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
 /* [!] simulate second bookmarks toolbar while "Bookmarks Toolbar Items" element is on nav-bar **/
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
-/* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar_fx65.css"; /**/
 
 /* BOOKMARKS TOOLBAR above navigation toolbar - [only use one at a time] ************************/
 /* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar.css"; /**/
@@ -679,8 +566,6 @@
 /* [!] not compatible to 'simulated addon-bar' option *******************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/99 **********************/
 /* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/ /* <--- EXPERIMENTAL */
-/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx66.css"; /**/ /* <--- EXPERIMENTAL */ /*Fx66-73*/
-/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines_fx74.css"; /**/ /* <--- EXPERIMENTAL */ /*Fx74+*/
 
 /* TOOLBAR COLORS *******************************************************************************/
 @import "./css/toolbars/general_toolbar_colors.css"; /**/
@@ -709,7 +594,6 @@
 /* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
 
 /* identity box / page identity button **********************************************************/
-/* @import "./css/locationbar/identitybox_replace_i_icon_with_globe.css"; /**/ /* replaces search glass in Fx70+ */ /* Fx 60-83 only */
 /* @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
 
@@ -749,8 +633,7 @@
 
  
 /************************************************************************************************/
-/* MEGABAR - settings for 'megabar' & 'megabar popup' (active in Firefox 75+ by default) ********/
-/* about:config > browser.urlbar.update1 > true (pref present in Firefox 72-76) *****************/
+/* MEGABAR - settings for 'megabar' & 'megabar popup' *******************************************/
 /************************************************************************************************/
 
 @import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
@@ -760,9 +643,9 @@
 /* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* Fx89+ */
 
 /* popup content order/appearance - [only use one at a time] ************************************/
-@import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
+/*@import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/
+ @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
 
 /* result menuitem settings/appearance **********************************************************/
@@ -771,72 +654,6 @@
 /* @import "./css/locationbar/ac_popup_megabar_search_engines_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_separator.css"; /**/
-
-
-/* DO NOT USE OLD LOCATION BAR SETTINGS ON CURRENT FIREFOX VERSIONS - Firefox 77+ ***************/
-/* [!] Location bar settings below will stop working in Firefox 77+. Use megabar settings! [!] **/
-/************************************************************************************************/
-/* LOCATION BAR - settings for 'legacy location bar / urlbar popup' (not megabar popup) *********/
-/* [!] Firefox settings for Firefox 60-76 only **************************************************/
-/* [!] about:config > browser.urlbar.update1 > false (present in Firefox 72-76) *****************/
-/************************************************************************************************/
-
-/* general & old location bar tweaks ************************************************************/
-/* @import "./css/locationbar/locationbar_adjustments.css"; /**/
-/* @import "./css/locationbar/background_color_dark.css"; /**/
-/* @import "./css/locationbar/locationbar_border_roundness.css"; /**/
-/* @import "./css/locationbar/locationbar_reduce_height.css"; /**/
-
-/* autocomplete / history dropmarker ************************************************************/
-/* @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
-/* @import "./css/locationbar/dropmarker_visible.css"; /**/ /* Windows only */
-
-/* popup content order/appearance - [only use one at a time] ************************************/
-/* @import "./css/locationbar/ac_popup_url_and_title_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_title_and_url_50percent_width.css"; /**/
-/* @import "./css/locationbar/ac_popup_item_title_hidden.css"; /**/
-/* @import "./css/locationbar/ac_popup_item_title_visible_on_hover_only.css"; /**/
-/* [!] 'Classic/old popup with two lined results' option notes **********************************/
-/* [!] - separate options for Firefox 60-62, 63, 64 and 68+ *************************************/
-/* [!] - Firefox 60-63: popup code is XBL (xml) based like on older Firefox versions ************/
-/* [!] - Firefox 60-63: option removes 'oneoff' searches at popups bottom ***********************/
-/* [!] - Firefox 60-63: option throws unfixable warnings in 'error console' *********************/
-/* [!] - Firefox 64+: popup width can not be detected automatically anymore *********************/
-/* [!] - Firefox 64+: popup width has to be set manually inside /config/ files ******************/
-/*  - for Firefox 60-62 *************************************************************************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines.css"; /**/  /* <--- old autocomplete popup*/
-/* @import "./css/locationbar/ac_popup_classic_with_url_only.css"; /**/  /* <--- old autocomplete popup + url only */
-/*  - for Firefox 63 ****************************************************************************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx63.css"; /**/  /* <--- old autocomplete popup */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx63.css"; /**/  /* <--- old autocomplete popup + url only */
-/*  - for Firefox 64-67 *************************************************************************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64.css"; /**/  /* <--- old autocomplete popup */
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx64_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64.css"; /**/  /* <--- old autocomplete popup + url only */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx64_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
-/*  - for Firefox 68-71 *************************************************************************/
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68.css"; /**/  /* <--- old autocomplete popup */
-/* @import "./css/locationbar/ac_popup_classic_with_two_lines_fx68_star_at_the_end.css"; /**/  /* <--- old autocomplete popup + star icon at the end */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68.css"; /**/  /* <--- old autocomplete popup + url only */
-/* @import "./css/locationbar/ac_popup_classic_with_url_only_fx68_star_at_the_end.css"; /**/   /* <--- old autocomplete popup + url only + star icon at the end */
-/* @import "./css/locationbar/ac_popup_default_with_two_lines_fx68.css"; /**/ /* default popup + two lined results*/
-/*  - for Firefox 72-76 ('about:config > browser.urlbar.update1 > false') ***********************/
-/* @import "./css/locationbar/ac_popup_default_with_two_lines_fx72.css"; /**/ /* default popup + two lined results*/
-
-/* result menuitem settings/appearance **********************************************************/
-/* @import "./css/locationbar/ac_popup_result_highlighting_aero.css"; /**/
-/* @import "./css/locationbar/ac_popup_keysearch_bold.css"; /**/ /* Fx60-Fx67 only */
-/* @import "./css/locationbar/ac_popup_keysearch_underline.css"; /**/ /* Fx60-Fx67 only */
-/* @import "./css/locationbar/ac_popup_result_separator.css"; /**/
-/* custom amount of result items: about:config > browser.urlbar.maxRichResults ******************/
-/* @import "./css/locationbar/ac_popup_custom_height.css"; /**/
-
-/* hide 'Search with...' and 'Visit...' results *************************************************/
-/* - browser preferences: disable 'show search suggestions inside address bar results' **********/
-/* - hide bottom search engines: about:config > browser.urlbar.oneOffSearches > false ***********/
-/* [!] Hiding will not work properly in all cases. Sometimes an empty box will be visible. ******/
-/* [!] Suggested to use aboves 'custom popup height' and to increase amount of result items. ****/
-/* @import "./css/locationbar/ac_popup_searchwith_and_visit_items_hidden.css"; /**/  /* <--- EXPERIMENTAL */
 
 
 /************************************************************************************************/

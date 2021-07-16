@@ -8,21 +8,38 @@
 	  margin-inline-start: 0px !important;
 	  padding-inline-end: 0px !important;
 	}
+	
+	@media not (-moz-toolbar-prefers-color-scheme: dark) {
 
- 	/*#preferences-stack,.sticky-container,
-	page,
-	.dialogBox .groupbox-title {
-	  background: -moz-Dialog !important;
-	}*/
+		#preferences-stack,.sticky-container,
+		page,
+		.dialogBox .groupbox-title {
+		  background: -moz-Dialog !important;
+		}
 
-	/*#categories {
-	  background: transparent !important;
-	}*/
+		#categories {
+		  background: transparent !important;
+		}
 
-	/*.groupbox-body,
-	#dialogFrame{
-	  background-color: white !important;
-	}*/
+		.groupbox-body,
+		#dialogFrame{
+		  background-color: white !important;
+		}
+		
+		#policies-container {
+		  background: transparent !important;
+		}
+		
+		#categories .category:not([selected]):not(:hover){
+		  color: black !important;
+		}
+		
+		.main-content {
+		  background-color: white !important;
+		}
+
+	
+	}
 	
 	.main-content {
 	  padding: 0px !important;
@@ -41,6 +58,8 @@
 	  padding-inline: 0px !important;
 	  min-height: unset !important;
 	  height: unset !important;
+	  /*margin-top: -20px !important;*/
+	  background: unset !important;
 	}
 	
 	#policies-container, #searchInput {
@@ -48,26 +67,14 @@
 	  margin: 0 5px 5px 5px!important;
 	}
 
-	/*#policies-container {
-	  background: transparent !important;
-	}*/
+
 	
 	#searchInput[focused] {
 	  box-shadow: unset !important;
 	}
 	
-	.sticky-container,
-	.search-container {
-	  /*background: transparent !important;
-	  position: absolute !important;
-	  display:block !important;
-	  top: 20px !important;*/
-	  /*margin-top: -20px !important;
-	  margin-inline-start: 0px !important;
-	  padding-inline-end: 0px !important;
-	  min-width: unset !important;
-	  width: unset !important;
-	  max-width: unset !important;*/
+	.sticky-container {
+	  position: fixed !important;
 	}
 	
 	.header-name {
@@ -89,9 +96,7 @@
 	  color: HighlightText !important;
 	}
 
-	/*#categories .category:not([selected]):not(:hover){
-	  color: black !important;
-	}*/
+
 	#categories .category {
 	  transition-duration: unset !important;
 	}
@@ -206,7 +211,7 @@
 	  -moz-margin-start: 2px !important;
 	}
 	
-	radio *{
+	radio * {
 	  outline: unset !important;
 	}
 	
@@ -229,9 +234,13 @@
 	  margin-inline-start: 0 !important;
 	}
 	
-#backContainersButton .button-box {
-	padding-block-end: 20px !important
-}
+	#backContainersButton .button-box {
+	  padding-block-end: 20px !important
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0 !important;
+	}
 	
 }
 
