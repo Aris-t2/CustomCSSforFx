@@ -1,4 +1,4 @@
-## Downloads for Firefox Quantum (60+)
+## Downloads for Firefox
 
 **[CustomCSSforFx releases & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** - **[Custom JavaScript for Firefox](https://github.com/Aris-t2/CustomJSforFx)** - **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)** - **[List of CTR, CTB, GMF & Noia4 CSS tweaks & link to FOXSCAPEuC theme](https://github.com/Aris-t2/CustomCSSforFx/issues/2)** - **[Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)**   
 
@@ -18,7 +18,7 @@
 - [Suggested ui tweaks](#suggested-ui-tweaks)  
 - ['about:config' tweaks](#aboutconfig-tweaks)  
 
-## Unlock custom CSS usage in Firefox 69 and newer
+## Unlock custom CSS usage
 
 `about:config` > `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`  
 
