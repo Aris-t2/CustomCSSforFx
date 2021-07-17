@@ -22,3 +22,12 @@ menupopup > menu {
   padding: 2px !important;
   -moz-margin-start: -10px !important;
 }
+
+.panel-subview-body {
+  padding: 0px !important;
+}
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --panel-padding: 0px !important;
+}

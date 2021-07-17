@@ -1,0 +1,9 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --panel-border-radius: 0px !important;
+}

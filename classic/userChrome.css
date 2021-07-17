@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.0pre2 ****************************************************************************/
+/* version 4.0.0pre4 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -427,14 +427,18 @@
 /* GENERAL UI ***********************************************************************************/
 /************************************************************************************************/
 
+/* context menus / menupopups / panels **********************************************************/
+/* @import "./css/generalui/popup_compact_menus_proton.css"; /**/
+/* @import "./css/generalui/popup_compact_menus_proton_squaread.css"; /**/
+/* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
+/* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
+/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- this removes tab scroll buttons */
+
 @import "./css/generalui/private_mode_indicator_hidden.css"; /**/
 @import "./css/generalui/bookmark_icons_colorized.css"; /**/
 /* @import "./css/generalui/bookmarks_smaller_more_bookmarks_icon.css"; /**/
 /* @import "./css/generalui/send_to_device_menuitems_hidden.css"; /**/
 /* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/
-/* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
-/* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
-/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- breaks tabs scroll buttons */
 /* @import "./css/generalui/increase_ui_font_size.css"; /**/
 /* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
 /* @import "./css/generalui/statusbar_color.css"; /**/
@@ -474,9 +478,6 @@
 /* @import "./css/generalui/context_bfrsb_labels_with_icons.css"; /**/
 /* @import "./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOS.css"; /**/		/* <-- Linux/macOS fix v1 */
 /* @import "./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOSv2.css"; /**/		/* <-- Linux/macOS fix v2 */
-
-/* context menus / menupopups - Proton / Fx89+ **************************************************/
-/* @import "./css/generalui/compact_menus_proton.css"; /**/
 
 /* close icons for general ui and tabs - [only use one at a time] *******************************/
 /* @import "./css/generalui/close_icon_windows7.css"; /**/
