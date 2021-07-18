@@ -19,7 +19,7 @@
 
 #TabsToolbar:not(:-moz-lwtheme){
   -moz-appearance: none;
-  background-image: var(--tabs_toolbar_color_tabs_not_on_top);
+  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 }
 
 #tabbrowser-tabs {

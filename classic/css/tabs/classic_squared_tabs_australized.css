@@ -231,7 +231,7 @@
 }
 
 @media not (-moz-proton) {
-	
+
 /* tab close icon size and position */
 .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
   width: 16px !important;
@@ -239,7 +239,7 @@
 }
 
 .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
-:root[uidensity=touch]  .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
+:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
   width: 16px !important;
   height: 16px !important;
   -moz-margin-end: -6px !important;
@@ -254,6 +254,8 @@
 :root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-close-button {
   margin-inline-end: unset !important;
   padding: unset !important;
+}
+
 }
 
 /*tab favicon position*/
@@ -420,9 +422,14 @@
   padding: unset !important;
 }
 
+
 .tab-background,
 .tab-stack {
   min-height: unset !important;
+}
+
+#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
+  min-height: var(--tab-min-height) !important;
 }
 
 .tab-close-button {

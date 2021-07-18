@@ -3,6 +3,7 @@
 /****************************************************************************************/
 
 
+/* Set a custom color value inside general_variables.css */
 :root {
 	--urlbar_background: white;	
 }

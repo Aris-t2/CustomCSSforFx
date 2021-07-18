@@ -64,6 +64,9 @@
   --top_toolbars_background_inactive: initial !important;
   --top_toolbars_text: initial !important;
   --top_toolbars_text_inactive: initial !important;
+  
+  /* for urlbar_background_color.css */
+  --urlbar_background: white !important;
 }
 
 :root[uidensity="touch"] {
