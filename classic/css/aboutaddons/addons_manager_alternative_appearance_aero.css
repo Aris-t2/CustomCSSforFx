@@ -1,12 +1,11 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userContent.css tweaks *******************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 @import "./addons_manager_alternative_appearance.css";
 
-
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-	url-prefix(about:addons),
+@-moz-document url-prefix(about:addons),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 
@@ -26,4 +25,5 @@
 	.sticky-container {
 	  background: #edf6ff !important;
 	}
+
 }

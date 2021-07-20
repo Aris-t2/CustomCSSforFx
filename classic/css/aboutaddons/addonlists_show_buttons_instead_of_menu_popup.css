@@ -1,10 +1,9 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userContent.css tweaks *******************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-	url-prefix(about:addons),
+@-moz-document url-prefix(about:addons),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 
@@ -230,94 +229,92 @@
 	}
 	
 	
+	/**/	
+	#main > div:-moz-any([current-view="list"], [current-view="updates"]) .addon.card {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+		
+	.addon-card-collapsed {
+		flex: 1;
+		min-width: 1px;
+	}
+
+	addon-card .card-contents {
+		height: unset !important;
+	}
+
+	#main > div:-moz-any([current-view="list"], [current-view="updates"]) .toggle-button {
+		position: absolute;
+		right: 8px !important;
+	}
+
+	.addon-card-message {
+		order: 3;
+	}
+
+	addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
+		display: block;
+		position: relative;
+		overflow: unset !important;
+	}
+
+	#main > div:-moz-any([current-view="list"], [current-view="updates"]) > :-moz-any([type="extension"],[type="all"]) addon-options {
+		margin-inline-end: 35px;
+	}
+
+	#main > div:not([current-view="detail"]) :-moz-any(addon-options, plugin-options) {
+		margin-top: -9px;
+		margin-inline-end: -5px;
+	}
+	/*
+	addon-card panel-list {
+		margin-top: unset !important;
+		right: unset !important;
+		float: unset !important;
+	}*/
+		
+	#main > div[current-view="detail"] addon-details > .tab-group {
+		display: block !important;
+	}
+		
+	#main > div[current-view="detail"] :-moz-any(plugin-options, addon-options) > panel-list {
+		position: absolute !important;
+		top: 8px;
+		right: 0 !important;
+	}
+
+
+	/* small image */ /*
+	addon-list[type="theme"] .card-heading-image {
+	  width: 200px !important;
+	  height: 40px !important;
+	  object-fit: unset !important;
+	  padding-bottom: 50px !important;
+	}
 	/**/
-	
-#main > div:-moz-any([current-view="list"], [current-view="updates"]) .addon.card {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-}
-	
-.addon-card-collapsed {
-	flex: 1;
-	min-width: 1px;
-}
 
-addon-card .card-contents {
-	height: unset !important;
-}
+	addon-list[type="theme"] .card-heading-image {
+	  position: absolute !important;
+	}
 
-#main > div:-moz-any([current-view="list"], [current-view="updates"]) .toggle-button {
-	position: absolute;
-	right: 8px !important;
-}
+	addon-list[type="theme"] addon-card > .addon.card {
+	  height: 144px;
+	}
 
-.addon-card-message {
-	order: 3;
-}
+	addon-list[type="theme"] .card-contents {
+	  margin-top: 100px !important;
+	}
 
-addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
-	display: block;
-	position: relative;
-	overflow: unset !important;
-}
-
-#main > div:-moz-any([current-view="list"], [current-view="updates"]) > :-moz-any([type="extension"],[type="all"]) addon-options {
-	margin-inline-end: 35px;
-}
-
-#main > div:not([current-view="detail"]) :-moz-any(addon-options, plugin-options) {
-	margin-top: -9px;
-	margin-inline-end: -5px;
-}
-/*
-addon-card panel-list {
-	margin-top: unset !important;
-	right: unset !important;
-	float: unset !important;
-}*/
-	
-#main > div[current-view="detail"] addon-details > .tab-group {
-	display: block !important;
-}
-	
-#main > div[current-view="detail"] :-moz-any(plugin-options, addon-options) > panel-list {
-	position: absolute !important;
-	top: 8px;
-	right: 0 !important;
-}
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: 100px !important;
+	  margin-inline-end: 6px !important;
+	}
 
 
-/* small image */ /*
-addon-list[type="theme"] .card-heading-image {
-  width: 200px !important;
-  height: 40px !important;
-  object-fit: unset !important;
-  padding-bottom: 50px !important;
-}
-/**/
-
-addon-list[type="theme"] .card-heading-image {
-  position: absolute !important;
-}
-
-addon-list[type="theme"] addon-card > .addon.card {
-  height: 144px;
-}
-
-addon-list[type="theme"] .card-contents {
-  margin-top: 100px !important;
-}
-
-addon-list[type="theme"] addon-card panel-list {
-  margin-top: 100px !important;
-  margin-inline-end: 6px !important;
-}
-
-
-addon-page-options panel-item-separator {
-  width: 100%;
-}
-
+	addon-page-options panel-item-separator {
+	  width: 100%;
+	}
 
 }

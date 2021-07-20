@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userContent.css tweaks *******************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -130,7 +130,6 @@
 	/* alignment and text/font appearance */
 
 	#mainPrefPane {
-	  /*color: black !important;*/
 	  -moz-padding-start: 30px !important;
 	  margin-top: 4px !important;
 	  -moz-margin-start: -20px !important;
@@ -144,7 +143,6 @@
 	.main-content {
 	  margin-top: 20px !important;
 	  margin-bottom: 20px !important;
-	  /*background-color: white !important;*/
 	  -moz-margin-start: -1px !important;
 	}
 
@@ -184,7 +182,6 @@
 	menulist{
 	  min-height: unset !important;
 	  height: unset !important;
-	  /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;*/
 	}
 	
 	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
@@ -202,10 +199,6 @@
 	  margin: 0 1px !important;
 	}
 	
-	/*checkbox label,
-	radio label {
-	  -moz-margin-start: -10px !important;
-	}*/
 	
 	#homeContentsGroup checkbox label {
 	  -moz-margin-start: 2px !important;
@@ -250,7 +243,6 @@
 *[subdialog="true"] menulist{
   min-height: unset !important;
   height: unset !important;
-  /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;*/
 }
 
 *[subdialog="true"] button:not(.button-link):not(.close-icon){
@@ -266,11 +258,6 @@
   height: 14px !important;
   margin: 0 !important;
 }
-
-/**[subdialog="true"] checkbox label,
-*[subdialog="true"] radio label {
-  -moz-margin-start: -10px !important;
-}*/
 
 *[subdialog="true"] radio *{
   outline: unset !important;

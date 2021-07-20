@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userContent.css tweaks *******************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -231,15 +231,11 @@
 	checkbox .checkbox-check {
 	  -moz-appearance: unset  !important;
 	  box-shadow: unset !important;
-	  /*padding: unset !important;
-	  margin: unset !important;*/
 	}
 
 	radio .radio-check {
 	  -moz-appearance: unset !important;
 	  box-shadow: unset !important;
-	  /*padding: unset !important;
-	  margin: unset !important;*/
 	}
 
 	radio,

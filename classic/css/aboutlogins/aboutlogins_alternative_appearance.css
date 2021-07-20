@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 @-moz-document url-prefix(about:logins) {
 	
   @media not (-moz-toolbar-prefers-color-scheme: dark) {
@@ -25,8 +26,7 @@
 	}
 	
   }	
-  
-  
+
 	.login-list-item {
 	  background: unset !important;
 	}
@@ -37,8 +37,6 @@
 	  background: Highlight !important;
 	  color: HighlightText !important;
 	}
-
-
 	
 	.login-list-item, .meta{
 	  border-bottom: unset !important;

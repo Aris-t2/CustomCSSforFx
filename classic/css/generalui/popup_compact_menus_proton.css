@@ -18,11 +18,6 @@ menupopup > menu {
   padding-inline-start: 4px !important;
 }
 
-#context-navigation :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-  padding: 2px !important;
-  -moz-margin-start: -10px !important;
-}
-
 .panel-subview-body {
   padding: 0px !important;
 }
@@ -30,4 +25,16 @@ menupopup > menu {
 * menupopup,
 :is(menupopup, panel)[type=arrow] {
   --panel-padding: 0px !important;
+}
+
+
+#context-navigation :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  padding: 2px !important;
+  margin-inline-start: -6px !important;
+  height: 16px !important;
+}
+:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-inline-start: 4px !important;
 }

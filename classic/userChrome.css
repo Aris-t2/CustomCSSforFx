@@ -1,11 +1,11 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.0pre5 ****************************************************************************/
+/* version 4.0.0pre7 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -32,23 +32,12 @@
   ENABLING options: remove the combination of / and * in front of '@import'
   DISABLING options: add the combination of / and * in front of '@import'
 
-  FIREFOX BUGS (nothing CSS code can do about):
-  - some '@import' calls might not work properly on macOS and Linux
-  - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
-  - in both cases CSS code has to be added to userChrome.css file manually
-
   macOS issues / glitches / fixes -> look for 'macOS fix' additions inside this file
   - tabs toolbar spaces in 'toolbars' category
   - tabs not on top mode in 'tabs toolbar position' category
   - page context items in 'general ui' category
 
-  Some CSS tweaks won't work, if '@namespace' references are used inside '.css' files!
-
   EXPERIMENTAL settings are for testing only!
-  
-  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/211
-
-  All options have significant categories and names.
   
   BASIC OVERVIEW - settings this file contains:
   CONFIGURATION FILES
@@ -429,7 +418,7 @@
 
 /* context menus / menupopups / panels **********************************************************/
 /* @import "./css/generalui/popup_compact_menus_proton.css"; /**/
-/* @import "./css/generalui/popup_compact_menus_proton_squaread.css"; /**/
+/* @import "./css/generalui/popup_compact_menus_proton_squared.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
 /* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- this removes tab scroll buttons */
@@ -476,8 +465,8 @@
 /* menuitem labels - [only use one at a time] ***************************************************/
 @import "./css/generalui/context_bfrsb_labels_without_icons.css"; /**/
 /* @import "./css/generalui/context_bfrsb_labels_with_icons.css"; /**/
-/* @import "./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOS.css"; /**/		/* <-- Linux/macOS fix v1 */
-/* @import "./css/generalui/context_bfrsb_labels_with_and_without_icons_Lin_macOSv2.css"; /**/		/* <-- Linux/macOS fix v2 */
+/* @import "./css/generalui/context_bfrsb_labels_without_icons_Linux.css"; /**/
+/* @import "./css/generalui/context_bfrsb_labels_with_icons_Linux.css"; /**/
 
 /* close icons for general ui and tabs - [only use one at a time] *******************************/
 /* @import "./css/generalui/close_icon_windows7.css"; /**/

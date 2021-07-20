@@ -1,4 +1,4 @@
-/* Firefox Quantum userContent.css tweaks *******************************************************/
+/* Firefox userContent.css tweaks ***************************************************************/
 /* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
@@ -27,16 +27,6 @@
   ENABLING options: remove the combination of / and * in front of '@import'
   DISABLING options: add the combination of / and * in front of '@import'
 
-  FIREFOX BUGS (nothing CSS code can do about):
-  - some '@import' calls might not work properly on macOS and Linux
-  - some '@import' calls might not work properly, if multi-process mode (e10s) is disabled
-  - in both cases CSS code has to be added to userContent.css file manually
-
-  Some CSS tweaks won't work, if '@namespace' references are used inside .css files!
-
-  All options have significant categories and names.
-
-  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/211
 
 *************************************************************************************************/
 
@@ -92,6 +82,9 @@
 /************************************************************************************************/
 /* about:newtab / about:home ********************************************************************/
 /************************************************************************************************/
+
+/* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
 
 /* @import "./css/aboutnewtab/top_sites_larger_favicons.css"; /**/
 

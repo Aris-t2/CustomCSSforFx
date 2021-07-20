@@ -3,7 +3,9 @@
 /****************************************************************************************/
 
 
-:-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
-  -moz-margin-start: 2px !important;
-  -moz-margin-end: 3px !important;
+@-moz-document url(about:newtab), url(about:home) {
+  body {
+	background-color: #323234 !important;
+	color: #D1D1D1 !important;
+  }
 }
