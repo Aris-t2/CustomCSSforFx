@@ -22,7 +22,7 @@
 
 `about:config` > `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`  
 
-## WebExtensions can not modify Firefox Quantums appearance properly
+## WebExtensions can not modify Firefox appearance properly
 
 The only way to modify ui is adding custom CSS code to **userChrome.css** and **userContent.css** files inside browsers profile folder.  
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.  
@@ -122,7 +122,7 @@ Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`
 Remove `/*` at lines start to enable this popup appearance.  
 The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
 
-## Suggested ui tweaks
+## Suggested ui tweaks (list might be partly outdated)
 
 **Toolbar modes (suggestion: compact mode)**  
 _Customize mode > Density > Compact / Normal / Touch_  
@@ -152,7 +152,7 @@ _Install [Awesome RSS](https://addons.mozilla.org/addon/awesome-rss/) WebExtensi
 **Search within "New Tab page" (Fx69+)**  
 _browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar_  
 
-## 'about:config' tweaks
+## 'about:config' tweaks (list might be partly outdated)
 
 (To revert changes right-click entry and select 'reset')  
 
