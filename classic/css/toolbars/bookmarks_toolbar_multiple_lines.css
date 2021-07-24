@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -79,7 +79,7 @@
 }
 *//*
 #personal-bookmarks #PlacesToolbar toolbarseparator{
-  -moz-appearance: none !important;
+  appearance: none !important;
   visibility: visible !important;
   display: inline;
   text-shadow: none !important;
@@ -89,7 +89,7 @@
 }*/
 
 #personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
-  -moz-appearance: toolbarbutton;
+  appearance: toolbarbutton;
 }
 
 #navigator-toolbox #PersonalToolbar { 

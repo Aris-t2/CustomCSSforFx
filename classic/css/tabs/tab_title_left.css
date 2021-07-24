@@ -1,22 +1,13 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-.tab-label {
-  -moz-box-flex: 1 !important;
-  text-align: left !important;
+.tab-label-container {
+  display: grid !important;
+  justify-items: safe left !important;
 }
 
-/* Proton compatibility */
-@media (-moz-proton) {
-
-  .tab-label-container {
-	display: grid !important;
-	justify-items: safe left !important;
-  }
-  .tab-label {
-	overflow: hidden !important;
-  }
-
+.tab-label {
+  overflow: hidden !important;
 }

@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -44,14 +44,14 @@
 }
 
 /* default grey tabs */
-#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar:not(:-moz-lwtheme) :is(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   background-image: linear-gradient(to top,transparent,transparent) !important;
 }
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
   background-image: var(--classic_squared_tabs_active_tab) !important;
 }
-#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
+#TabsToolbar:not(:-moz-lwtheme) :is(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: linear-gradient(to top,transparent,transparent) !important;
 }
@@ -68,14 +68,14 @@
 */
 
 /* tab border color */
-#TabsToolbar:not(:-moz-lwtheme) :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
+#TabsToolbar:not(:-moz-lwtheme) :is(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
   border-top: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-left: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
   border-right: var(--classic_squared_tabs-border_size) solid var(--classic_squared_tabs-border1) !important;
 }
 
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) {
   border-top: var(--classic_squared_tabs-border_size) solid transparent !important;
   border-left: var(--classic_squared_tabs-border_size) solid transparent !important; 
   border-right: var(--classic_squared_tabs-border_size) solid transparent !important;
@@ -100,22 +100,22 @@
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
 }
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
+:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-darktext,
+:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-darktext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-darktext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
 .tabbrowser-tab[selected]:-moz-lwtheme-brighttext .tab-content {
   background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
 }
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
+:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
+:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
 .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
@@ -130,21 +130,21 @@
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:hover,
+#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:hover,
 .tabbrowser-tab .tab-content:-moz-lwtheme-darktext:hover {
   border-top: 1px solid rgba(0,0,0,.2) !important;
   border-left: 1px solid rgba(0,0,0,.2) !important; 
   border-right: 1px solid rgba(0,0,0,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:hover,
+#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:hover,
 .tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:hover {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
-#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:not([selected]):not(:hover),
+#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-darktext:not([selected]):not(:hover),
 .tabbrowser-tab .tab-content:-moz-lwtheme-darktext:not([selected]):not(:hover),
-#TabsToolbar:-moz-lwtheme :-moz-any(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:not([selected]):not(:hover),
+#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext:not([selected]):not(:hover),
 .tabbrowser-tab .tab-content:-moz-lwtheme-brighttext:not([selected]):not(:hover) {
   border-top: 1px solid transparent !important;
   border-left: 1px solid transparent !important; 
@@ -185,7 +185,7 @@
 }
 
 /* tab top border roundness */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -205,20 +205,20 @@
 }
 
 /* space between tabs */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+:is(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab:not([pinned]) {
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 /* width of new tab tab */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button){
   min-width: 0px !important;
   width: 28px !important;
   margin-bottom: -1px !important;
 }
 
 /* size of new tab tabs '+' icon */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
   min-width: 0px !important;
   min-height: 0px !important;
   width: 14px !important;
@@ -230,38 +230,11 @@
   box-shadow: unset !important;
 }
 
-@media not (-moz-proton) {
-
-/* tab close icon size and position */
-.tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
-  width: 16px !important;
-  height: 16px !important;
-}
-
-.tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content .close-icon {
-  width: 16px !important;
-  height: 16px !important;
-  -moz-margin-end: -6px !important;
-}
-
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-content  .close-icon,
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .close-icon > .toolbarbutton-icon {
-  margin-top: -8px !important;
-  margin-bottom: -8px !important;
-}
-
-:root[uidensity=touch] .tabbrowser-tab:not([pinned]) .tab-close-button {
-  margin-inline-end: unset !important;
-  padding: unset !important;
-}
-
-}
 
 /*tab favicon position*/
 .tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
 .tabbrowser-tab:not([pinned]) .tab-icon-image{
-  -moz-margin-start:-6px !important;
+  margin-inline-start:-6px !important;
 }
 
 /* reduce minimum tab height */
@@ -403,17 +376,9 @@
 
 @media (-moz-os-version: windows-win10) {
   #main-window[sizemode="maximized"] .titlebar-buttonbox-container {
-	-moz-margin-end: -2px !important;
+	margin-inline-end: -2px !important;
   }
 }
-
-/* Proton compatibility */
-@media (-moz-proton) {
-
-/*
-#main-window  {
-  --tab-min-height: 16px !important;
-}*/
 
 #scrollbutton-up,
 #scrollbutton-down {
@@ -421,7 +386,6 @@
   height: unset !important;
   padding: unset !important;
 }
-
 
 .tab-background,
 .tab-stack {
@@ -453,8 +417,6 @@
 .tab-background:-moz-lwtheme {
   border-radius: initial !important;
   margin-block: initial !important;
-}
-
 }
 
 .tab-secondary-label {

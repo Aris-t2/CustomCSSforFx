@@ -1,10 +1,10 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item {
-  -moz-appearance:none !important;
+  appearance:none !important;
   min-width: 0 !important;
   width: 100% !important;
   border: unset !important;
@@ -24,12 +24,12 @@
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item::after {
-  -moz-appearance: none !important;
+  appearance: none !important;
   display: inline !important;
   content: attr(tooltiptext) !important;
   position: relative !important;
   top: -9px !important;
-  -moz-padding-start: 25px !important;
+  padding-inline-start: 25px !important;
   min-width: 0 !important;
   width: 100% !important;
   white-space: nowrap !important;

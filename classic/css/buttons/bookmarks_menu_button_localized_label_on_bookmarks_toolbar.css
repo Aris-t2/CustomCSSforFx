@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -13,11 +13,11 @@
 }
 
 /* Create Fx56-like button label for supported locales *********/
-#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"]) .toolbarbutton-text {
+#PersonalToolbar #bookmarks-menu-button:is([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"]) .toolbarbutton-text {
   display: none !important;
 }
 
-#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"])::after {
+#PersonalToolbar #bookmarks-menu-button:is([label="Bookmarks Menu"],[label="Lesezeichen-Menü"],[label="Menu des marque-pages"],[label="Menú de marcadores"],[label="Menu de marcadores"],[label="Menu segnalibri"],[label="Меню закладок"])::after {
   visibility: visible !important;
   display: block !important;
 }
@@ -27,7 +27,7 @@
   content: "Bookmarks" !important;
 }
 #PersonalToolbar #bookmarks-menu-button[label="Bookmarks Menu"] #BMB_bookmarksPopup {
-  -moz-margin-end: -40px !important;
+  margin-inline-start: -40px !important;
 }
 
 /* German: 'Lesezeichen' */
@@ -35,7 +35,7 @@
   content: "Lesezeichen" !important;
 }
 #PersonalToolbar  #bookmarks-menu-button[label="Lesezeichen-Menü"] #BMB_bookmarksPopup {
-  -moz-margin-end: -42px !important;
+  margin-inline-start: -42px !important;
 }
 
 /* French: 'Marque-pages' */
@@ -43,15 +43,15 @@
   content: "Marque-pages" !important;
 }
 #PersonalToolbar #bookmarks-menu-button[label="Menu des marque-pages"] #BMB_bookmarksPopup {
-  -moz-margin-end: -50px !important;
+  margin-inline-start: -50px !important;
 }
 
 /* Spanish/Portuguese: 'Marcadores' */
-#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Menú de marcadores"],[label="Menu de marcadores"])::after {
+#PersonalToolbar #bookmarks-menu-button:is([label="Menú de marcadores"],[label="Menu de marcadores"])::after {
   content: "Marcadores" !important;
 }
-#PersonalToolbar #bookmarks-menu-button:-moz-any([label="Menú de marcadores"],[label="Menu de marcadores"]) #BMB_bookmarksPopup {
-  -moz-margin-end: -42px !important;
+#PersonalToolbar #bookmarks-menu-button:is([label="Menú de marcadores"],[label="Menu de marcadores"]) #BMB_bookmarksPopup {
+  margin-inline-start: -42px !important;
 }
 
 /* Italian: 'Segnalibri' */
@@ -59,7 +59,7 @@
   content: "Segnalibri" !important;
 }
 #PersonalToolbar #bookmarks-menu-button[label="Menu segnalibri"] #BMB_bookmarksPopup {
-  -moz-margin-end: -37px !important;
+  margin-inline-start: -37px !important;
 }
 
 /* Russian: 'Закладки' */
@@ -67,7 +67,5 @@
   content: "Закладки" !important;
 }
 #PersonalToolbar #bookmarks-menu-button[label="Меню закладок"] #BMB_bookmarksPopup {
-  -moz-margin-end: -37px !important;
+  margin-inline-start: -37px !important;
 }
-
-/**/

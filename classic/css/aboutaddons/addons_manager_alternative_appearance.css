@@ -52,7 +52,7 @@
 	}
 
 	#addons-page #addon-list {
-	  -moz-margin-start: -1px !important;
+	  margin-inline-start: -1px !important;
 	}
 
 	#addons-page:not(.inSidebar):not([aios-inSidebar="true"]) .view-pane > .list > scrollbox {
@@ -64,16 +64,16 @@
 	#addons-page #userstyle-sorting,
 	#addons-page .global-warning-container,
 	#addons-page .global-info-container{
-	  -moz-margin-start: 0px !important;
-	  -moz-margin-end: 1px !important;
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 1px !important;
 	}
 
 	#addons-page .detail-view-container {
-	  -moz-margin-start: 10px !important;
+	  margin-inline-start: 10px !important;
 	}
 
 	#addons-page #view-port{
-	  -moz-margin-end: 4px !important;
+	  margin-inline-end: 4px !important;
 	}
 
 	#addons-page #header{
@@ -320,7 +320,7 @@
 	  box-shadow: unset !important;
 	}
 
-	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :-moz-any(div,span,.addon-name-link) {
+	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :is(div,span,.addon-name-link) {
 	  color: HighlightText !important;
 	}
 
@@ -357,7 +357,7 @@
 
 
 	#addons-page .main-content{
-	  -moz-margin-start: -1px !important;
+	  margin-inline-start: -1px !important;
 	}
 
 	.main-heading,
@@ -422,7 +422,7 @@
 	
 
 	.category {
-	  -moz-margin-end: -4px !important;
+	  margin-inline-end: -4px !important;
 	}
 	
 	.sidebar-footer-list {

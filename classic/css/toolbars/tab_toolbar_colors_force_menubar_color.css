@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -8,6 +8,6 @@
 }
 
 #main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: var(--colored_menubar_background_image, inherit) !important;
 }

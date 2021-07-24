@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -27,12 +27,12 @@ menupopup > menu {
   --panel-padding: 0px !important;
 }
 
-
-#context-navigation :-moz-any(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+#context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
   padding: 2px !important;
   margin-inline-start: -6px !important;
   height: 16px !important;
 }
+
 :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
   margin: 0 !important;
   padding: 0 !important;

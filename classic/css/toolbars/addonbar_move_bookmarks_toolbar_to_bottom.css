@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -17,7 +17,7 @@
 }
 
 /* reduce maximum width of location bar and search bar on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] :-moz-any(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+#main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"] :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
   min-width: 50px !important;
 }
 
@@ -63,8 +63,8 @@
   bottom: 0 !important;
   width: 100% !important;
   height: var(--addonbar_height) !important;
-  -moz-padding-start: 2px !important;
-  -moz-padding-end: 2px !important;
+  padding-inline-start: 2px !important;
+  padding-inline-end: 2px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
   z-index: 1000 !important;
 }
@@ -140,7 +140,7 @@
 
 /* adjust button badges */
 #PersonalToolbar toolbarbutton .toolbarbutton-badge {
-  -moz-margin-end: -1px !important;
+  margin-inline-end: -1px !important;
   margin-top: -4px !important;  
   padding: 1px !important;
   min-width: unset !important;

@@ -49,7 +49,7 @@
   .contentSearchHeaderRow   {
 	background: #2c2c2c !important;
 	color: #FFF !important;
-	-moz-appearance: none !important;
+	appearance: none !important;
 	border-color: transparent !important;
   }
   .search-wrapper .search-label,
@@ -66,13 +66,13 @@
   .section-top-bar .info-option {
 	background: #2c2c2c !important;
 	color: #FFF !important;
-	-moz-appearance: none !important;
+	appearance: none !important;
 	border-color: transparent !important;
   }
   .context-menu {
 	background: #2c2c2c !important;
 	color: #C4C4C4 !important;
-	-moz-appearance: none !important;
+	appearance: none !important;
 	border-color: transparent !important;
   }
   .separator {

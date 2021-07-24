@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -6,8 +6,8 @@
 /* To hide seach engines at popups bottom open 'about:config' and set ************
 ** browser.urlbar.oneOffSearches to 'false' *************************************/
 
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any(:hover,[selected])) .ac-title-text,
-#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:-moz-any(:hover,[selected])) .ac-separator {
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:is(:hover,[selected])) .ac-title-text,
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"] .autocomplete-richlistitem:not(:is(:hover,[selected])) .ac-separator {
   display: none !important;
 }
 
@@ -18,7 +18,7 @@
 
 
 /* Fx68+ */
-#urlbar-results .urlbarView-row-inner:not(:-moz-any(:hover,[selected])) .urlbarView-title-separator,
-#urlbar-results .urlbarView-row-inner:not(:-moz-any(:hover,[selected])) .urlbarView-title{
+#urlbar-results .urlbarView-row-inner:not(:is(:hover,[selected])) .urlbarView-title-separator,
+#urlbar-results .urlbarView-row-inner:not(:is(:hover,[selected])) .urlbarView-title{
   display: none !important;
 }

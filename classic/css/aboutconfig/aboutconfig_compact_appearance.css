@@ -42,11 +42,11 @@
 	}
 
 	#prefs button {
-	  -moz-margin-start: 1px !important;
+	  margin-inline-start: 1px !important;
 	}
 
 	#prefs #form-edit > * {
-	  -moz-margin-end: 2px !important;
+	  margin-inline-end: 2px !important;
 	}
 	
 	input[type="radio"] {

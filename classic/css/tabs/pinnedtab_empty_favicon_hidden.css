@@ -1,6 +1,7 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
+
 
 .tabbrowser-tab[pinned] .tab-icon-image:not([src]) {
    visibility: hidden !important;
@@ -9,5 +10,3 @@
 .tabbrowser-tab[pinned] .tab-text {
   display: none !important;
 }
-
-/**/

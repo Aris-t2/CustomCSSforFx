@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -42,7 +42,7 @@
 }
 
 #main-window #nav-bar #back-button + #forward-button {
- -moz-margin-start: -16px !important;
+ margin-inline-start: -16px !important;
 }
 
 #main-window #nav-bar #back-button .toolbarbutton-icon{

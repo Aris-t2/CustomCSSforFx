@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -13,6 +13,6 @@
 					linear-gradient(hsl(211,33%,32%), hsl(209,53%,10%) 95%) !important;
 }
 
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
   background-image: linear-gradient(hsl(211,33%,26%), hsl(209,53%,6%) 95%) !important;
 }

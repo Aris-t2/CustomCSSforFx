@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -13,5 +13,3 @@
   visibility: visible !important;
   transition: visibility 150ms ease-out !important;
 }
-
-/**/

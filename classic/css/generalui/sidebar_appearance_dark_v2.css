@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -79,7 +79,7 @@
 /* Add custom splitter between sidebar and content *//*
 #sidebar,
 #sidebar-header {
-  -moz-border-end: 3px solid #474749 !important;
+  border-inline-end: 3px solid #474749 !important;
 }
 
 /**/

@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -13,14 +13,14 @@
 }
 
 /* reduce maximum width of location bar and search bar on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar :-moz-any(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+#main-window:not([customizing="true"]) #nav-bar :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
   min-width: 50px !important;
 }
 
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
   position: absolute !important;
-  display:block !important;
+  display: block !important;
   bottom: 1px !important;
   min-width: 0 !important;
   width: auto !important;

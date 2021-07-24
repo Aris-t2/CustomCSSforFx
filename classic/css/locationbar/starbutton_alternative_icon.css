@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -27,23 +27,23 @@
 
 /* unset default filters (+ override filters set in icons_colorized.css) */
 #urlbar #star-button[starred],
-#urlbar #star-button-animatable-box[starred]:-moz-any(:hover,:hover:active),
-#urlbar #star-button[preloadanimations][animate][starred]:-moz-any(:hover,:hover:active),
+#urlbar #star-button-animatable-box[starred]:is(:hover,:hover:active),
+#urlbar #star-button[preloadanimations][animate][starred]:is(:hover,:hover:active),
 #urlbar #star-button-box[open] #star-button[starred],
-#urlbar #star-button[starred]:-moz-any(:hover,:hover:active) {
+#urlbar #star-button[starred]:is(:hover,:hover:active) {
   filter: unset !important;
 }
 
 /* grey non-bookmarked star (+ override filters set in icons_colorized.css) */
 #urlbar #star-button:not([starred]),
 #urlbar #star-button-box[open] #star-button:not([starred]),
-#urlbar #star-button:not([starred]):-moz-any(:hover,:hover:active) {
+#urlbar #star-button:not([starred]):is(:hover,:hover:active) {
   filter: grayscale(1.0) brightness(1.15) !important;
 }
 
 /* hover/open filters */
 #urlbar #star-button-box[open],
-#urlbar #star-button-box:-moz-any(:hover,:hover:active){
+#urlbar #star-button-box:is(:hover,:hover:active){
   filter: brightness(1.25) contrast(100%) !important;
 }
 

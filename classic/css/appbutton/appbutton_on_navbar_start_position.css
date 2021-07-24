@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -9,7 +9,7 @@
 }
 
 #PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
-  -moz-box-ordinal-group: 10 !important;
+  box-ordinal-group: 10 !important;
   margin-inline-start: 3px !important;
   margin-inline-end: unset !important;
 }
@@ -22,7 +22,5 @@
 }
 
 #main-window[chromehidden="menubar toolbar directories extrachrome "] #nav-bar-customization-target {
-  -moz-padding-end: 2px !important;
+  padding-inline-end: 2px !important;
 }
-
-/**/

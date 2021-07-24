@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -13,7 +13,7 @@
   display: block !important;
   min-width: calc(100% - 24px) !important;
   width: calc(100% - 24px) !important;
-  left: calc(6px + 2px + 16px) !important;
+  left: 24px !important;
   padding-inline-start: 0 !important;
 }
 
@@ -21,7 +21,7 @@
 #urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
-  left: calc(6px + 2px + 16px) !important;
+  left: 24px !important;
 }
 
 /* do not hide actiontype item */

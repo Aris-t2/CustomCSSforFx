@@ -1,12 +1,13 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
+
 
 :root {
   --status-width: 400px;
 }
 
-.browserContainer :-moz-any(statuspanel,#statuspanel) {
+.browserContainer :is(statuspanel,#statuspanel) {
   -moz-box-ordinal-group: 3 !important;
   position: fixed !important;
   display:block !important;
@@ -14,15 +15,15 @@
   z-index: 1001 !important
 }
 
-.browserContainer :-moz-any(statuspanel,#statuspanel):-moz-locale-dir(ltr) {
+.browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(ltr) {
   left: 0px;
 }
-.browserContainer :-moz-any(statuspanel,#statuspanel):-moz-locale-dir(rtl) {
+.browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(rtl) {
   right: 0px;
 }
 
-.browserContainer :-moz-any(statuspanel,#statuspanel) :-moz-any(#statuspanel-label,.statuspanel-label) {
-  -moz-appearance: none !important;
+.browserContainer :is(statuspanel,#statuspanel) :is(#statuspanel-label,.statuspanel-label) {
+  appearance: none !important;
   background: none !important;
   border: 0 !important;
   box-shadow: none !important;
@@ -33,7 +34,7 @@
   color: black !important;
 }
 
-.browserContainer :-moz-any(statuspanel,#statuspanel):-moz-lwtheme-brighttext :-moz-any(#statuspanel-label,.statuspanel-label) {
+.browserContainer :is(statuspanel,#statuspanel):-moz-lwtheme-brighttext :is(#statuspanel-label,.statuspanel-label) {
   color: white !important;
 }
 
@@ -48,14 +49,14 @@
 }
 
 #statuspanel[mirror] {
-	inset-inline-start: unset !important;
-	inset-inline-end: unset !important;
+  inset-inline-start: unset !important;
+  inset-inline-end: unset !important;
 }
 
 #statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(ltr) {
-	margin-left: 0px !important;
+  margin-left: 0px !important;
 }
 
 #statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(rtl) {
-	margin-right: 0px !important;
+  margin-right: 0px !important;
 }

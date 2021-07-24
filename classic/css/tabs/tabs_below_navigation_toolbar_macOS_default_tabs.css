@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -38,7 +38,7 @@
 
 #TabsToolbar {
   position: absolute;
-  display:block;
+  display: block;
   bottom: 0;
   width: 100vw;
   background-clip: padding-box;
@@ -46,7 +46,7 @@
 }
 
 #TabsToolbar:not(:-moz-lwtheme){
-  -moz-appearance: none;
+  appearance: none;
   background-image: var(--tabs_toolbar_color_tabs_not_on_top);
 }
 
@@ -57,16 +57,6 @@
 #navigator-toolbox {
   position: relative;
   padding-bottom: calc( var(--tab-min-height) + 8px );
-}
-
-@media not (-moz-proton) {
-#navigator-toolbox {
-  padding-bottom: calc( var(--tab-min-height) + 0px );
-}
-#TabsToolbar:not(:-moz-lwtheme){
-  -moz-appearance: none;
-  background-image: var(--tabs_toolbar_color_tabs_not_on_top);
-}
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
@@ -96,13 +86,13 @@
 }
 
 /* remove color overlay for lw-themes */
-#main-window[style*='--lwt-header-image'] :-moz-any(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
+#main-window[style*='--lwt-header-image'] :is(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
   background: unset !important;
 }
 
 /* adjust background color */
 #main-window:not([style*='--lwt-header-image']) #TabsToolbar:-moz-lwtheme {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
 
@@ -119,10 +109,10 @@
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[tabsintitlebar]:is([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar {
- -moz-padding-start: 0px !important;
- -moz-margin-start: 0px !important;
+  padding-inline-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 #main-window[tabsintitlebar] #TabsToolbar {
-  -moz-padding-end: 0px !important
+  padding-inline-end: 0px !important
 }

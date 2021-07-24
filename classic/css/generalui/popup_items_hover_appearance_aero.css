@@ -1,20 +1,20 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-panelview .toolbarbutton-1:not(:-moz-any([disabled],[open],:active)):-moz-any(:hover,:focus),
-toolbarbutton.subviewbutton:not(:-moz-any([disabled],[open],:active)):-moz-any(:hover,:focus),
-menu.subviewbutton:not(:-moz-any([disabled],:active))[_moz-menuactive],
-menuitem.subviewbutton:not(:-moz-any([disabled],:active))[_moz-menuactive],
-.widget-overflow-list .toolbarbutton-1:not(:-moz-any([disabled],[open],:active)):-moz-any(:hover,:focus),
-.toolbaritem-combined-buttons:-moz-any(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not(:-moz-any([disabled],[open],:active)):-moz-any(:hover,:focus),
-panelview .toolbarbutton-1:not([disabled]):-moz-any([open],:hover:active),
-toolbarbutton.subviewbutton:not([disabled]):-moz-any([open],:hover:active),
+panelview .toolbarbutton-1:not(:is([disabled],[open],:active)):is(:hover,:focus),
+toolbarbutton.subviewbutton:not(:is([disabled],[open],:active)):is(:hover,:focus),
+menu.subviewbutton:not(:is([disabled],:active))[_moz-menuactive],
+menuitem.subviewbutton:not(:is([disabled],:active))[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:not(:is([disabled],[open],:active)):is(:hover,:focus),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not(:is([disabled],[open],:active)):is(:hover,:focus),
+panelview .toolbarbutton-1:not([disabled]):is([open],:hover:active),
+toolbarbutton.subviewbutton:not([disabled]):is([open],:hover:active),
 menu.subviewbutton:not([disabled])[_moz-menuactive]:active,
 menuitem.subviewbutton:not([disabled])[_moz-menuactive]:active,
-.widget-overflow-list .toolbarbutton-1:not([disabled]):-moz-any([open],:hover:active),
-.toolbaritem-combined-buttons:-moz-any(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not([disabled]):-moz-any([open],:hover:active) {
+.widget-overflow-list .toolbarbutton-1:not([disabled]):is([open],:hover:active),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not([disabled]):is([open],:hover:active) {
   color: inherit !important;
   background-color: transparent !important;
   background-image:
@@ -24,6 +24,6 @@ menuitem.subviewbutton:not([disabled])[_moz-menuactive]:active,
 	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
   border-radius: 6px !important;
   outline: 1px solid rgba(124,163,206,0.7) !important;
-  -moz-outline-radius: 3px !important;
+  outline-radius: 3px !important;
   outline-offset: -1px !important;
 }

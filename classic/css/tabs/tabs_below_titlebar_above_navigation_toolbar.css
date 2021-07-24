@@ -1,11 +1,11 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 #main-window[tabsintitlebar][sizemode="normal"] #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #TabsToolbar{
-  -moz-padding-start: 2px !important;
+  padding-inline-start: 2px !important;
   margin-top: 3px !important;
 }
 
@@ -18,7 +18,7 @@
 
 #main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  -moz-padding-start: 2px !important;
+  padding-inline-start: 2px !important;
   margin-top: 24px !important;
 }
 

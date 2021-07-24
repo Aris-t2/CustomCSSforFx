@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -8,7 +8,7 @@
 	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
 	#PersonalToolbar #PlacesToolbar toolbarbutton,
 	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
-	  -moz-appearance: toolbarbutton !important;
+	  appearance: toolbarbutton !important;
 	  background: unset !important;
 	  box-shadow: unset !important;
 	  padding-left: 3px !important;

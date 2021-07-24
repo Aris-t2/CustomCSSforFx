@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -46,7 +46,7 @@
 }
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container {
-  -moz-margin-start: -15px !important;
+  margin-inline-start: -15px !important;
 }
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container #urlbar {
@@ -54,14 +54,14 @@
 }
 
 #main-window #nav-bar #back-button + #forward-button:not([disabled]) {
- -moz-margin-start: -16px !important;
+ margin-inline-start: -16px !important;
 }
 
 #main-window #nav-bar #forward-button:not([disabled]) + #urlbar-container {
-  -moz-margin-start: -2.5px !important;
+  margin-inline-start: -2.5px !important;
 }
 #main-window[uidensity=compact] #nav-bar #forward-button:not([disabled]) + #urlbar-container {
-  -moz-margin-start: -3.5px !important;
+  margin-inline-start: -3.5px !important;
 }
 
 #permissions-granted-icon,

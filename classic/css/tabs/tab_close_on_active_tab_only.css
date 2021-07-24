@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,7 +11,6 @@
   visibility: visible !important;
   display: block !important;
 }
-
 
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([selected="true"]) .tab-close-button,
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned]:not([selected="true"]) .tab-close-button {

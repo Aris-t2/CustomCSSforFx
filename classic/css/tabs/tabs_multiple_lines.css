@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -53,7 +53,7 @@
   height: var(--tab-min-height_mlt);
 }
 
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+:is(.tabs-newtab-button,#tabs-newtab-button) {
   height: var(--tab-min-height_mlt) !important;
 }
 

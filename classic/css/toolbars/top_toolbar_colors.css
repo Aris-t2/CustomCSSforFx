@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,8 +11,6 @@
   --top_toolbars_text: initial;
   --top_toolbars_text_inactive: initial;
 }
-
-@media (-moz-proton) {
 
 #main-window:not(:-moz-lwtheme) #titlebar,
 #main-window:not(:-moz-lwtheme) #toolbar-menubar,
@@ -77,5 +75,3 @@ arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="tru
   list-style-image: url(chrome://browser/skin/window-controls/close-themes.svg) !important;
 }
 */
-
-}

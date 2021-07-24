@@ -17,7 +17,7 @@
 	  margin-bottom: -2px !important;
 	  padding-top: 3px !important;
 	  padding-bottom: 0px !important;
-	  -moz-padding-start: 2px !important;
+	  padding-inline-start: 2px !important;
 	  min-height: 40px !important;
 	}
 	

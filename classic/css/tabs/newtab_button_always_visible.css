@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -8,6 +8,6 @@
   display: unset !important;
 }
 
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
+:is(.tabs-newtab-button,#tabs-newtab-button) {
   visibility: collapse !important;
 }

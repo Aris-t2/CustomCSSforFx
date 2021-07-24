@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -24,11 +24,11 @@
 }
 
 .tab-icon-overlay[soundplaying] {
-	fill: #058B00 !important;/* var(--green-70) */
+  fill: #058B00 !important;/* var(--green-70) */
 }
 .tab-icon-overlay[muted] {
-	fill: #D70022 !important;/* var(--red-60) */
+  fill: #D70022 !important;/* var(--red-60) */
 }
 .tab-icon-overlay[activemedia-blocked] {
-	fill: #FFE900 !important;/* var(--yellow-50) */
+  fill: #FFE900 !important;/* var(--yellow-50) */
 }

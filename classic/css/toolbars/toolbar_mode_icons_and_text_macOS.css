@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -9,7 +9,7 @@
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
-  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
@@ -19,8 +19,8 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hov
   border-radius: 4px !important;
 }
 
-toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:-moz-any([open],[checked],:hover:active,:active),
-toolbar:not(#TabsToolbar) .toolbarbutton-1:-moz-any([open],[checked],:hover:active,:active),
-toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:-moz-any([open],[checked],:hover:active,:active){
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:is([open],[checked],:hover:active,:active){
   background: var(--toolbarbutton-active-background,hsla(0,0%,70%,.6)) !important;
 }

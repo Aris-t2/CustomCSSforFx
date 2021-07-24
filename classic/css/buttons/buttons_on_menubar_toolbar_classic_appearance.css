@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -17,18 +17,18 @@
 }
 
 /* adjust zoom reset and copy buttons position */
-#toolbar-menubar :-moz-any(#copy-button,#zoom-reset-button) {
-  -moz-margin-start: -1px !important;
-  -moz-margin-end: -1px !important;
+#toolbar-menubar :is(#copy-button,#zoom-reset-button) {
+  margin-inline-start: -1px !important;
+  margin-inline-end: -1px !important;
 }
-#toolbar-menubar :-moz-any(#edit-controls, #zoom-controls) separator {
+#toolbar-menubar :is(#edit-controls, #zoom-controls) separator {
   visibility: collapse !important;
 }
 
 /* unset default button appearance first */
 #toolbar-menubar .toolbarbutton-1,
 #toolbar-menubar .toolbarbutton-1 .toolbarbutton-icon{
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: unset !important;
 }
 
@@ -39,7 +39,7 @@
 }
 
 /* classic button style */
-#main-window:not([customizing]) #toolbar-menubar .toolbarbutton-1[disabled=true]:-moz-any([open],[checked],:hover:active,:active),
+#main-window:not([customizing]) #toolbar-menubar .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active),
 #toolbar-menubar toolbarbutton[type="menu-button"],
 #toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-button,
@@ -54,8 +54,8 @@
 			  0 0 0 1px rgba(0,0,0,.4) inset !important;
 }
 #toolbar-menubar .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
-#toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-button ,
-#toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button ,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #toolbar-menubar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover,
 #toolbar-menubar .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
   background-color: hsla(190,60%,70%,.5) !important;
@@ -70,9 +70,9 @@
 }
 #toolbar-menubar toolbarbutton[type="menu"][open]:not([disabled]),
 #toolbar-menubar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active ,
-#toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):-moz-any(:hover:active,:active,[open]),
+#toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active,[open]),
 #toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
-#toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any([open],[checked],:hover:active,:active) {
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) {
   background-color: transparent !important;
   border-color: rgba(0,0,0,.65) rgba(0,0,0,.55) rgba(0,0,0,.5) !important;
   box-shadow: 0 0 6.5px rgba(0,0,0,.4) inset,

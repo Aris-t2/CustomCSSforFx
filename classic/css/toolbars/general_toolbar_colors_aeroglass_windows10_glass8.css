@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -8,7 +8,7 @@
 @-moz-document url(chrome://browser/content/browser.xul), url(chrome://browser/content/browser.xhtml) {
 	#main-window {
 	  background-color: transparent !important;
-	  -moz-appearance: -moz-win-glass !important;
+	  appearance: -moz-win-glass !important;
 	}
 }
 #main-window:not([customizing]) .titlebar-button,

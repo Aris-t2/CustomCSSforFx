@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,5 +11,3 @@
 .tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
   display: none !important;
 }
-
-/**/

@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -32,20 +32,20 @@
 
 #sidebar-box {
   z-index: 1000 !important;
-  -moz-margin-end: calc(-1 * var(--sidebar-hover-width)) !important;
+  margin-inline-end: calc(-1 * var(--sidebar-hover-width)) !important;
   position: relative !important;
   opacity: 0 !important;
 }
 
 #sidebar-box:hover {
-  -moz-margin-end: unset !important;
+  margin-inline-end: unset !important;
   opacity: 1.0 !important;
 }
 
 #sidebar-box ~ #appcontent {
-  -moz-margin-start: calc(-1 * var(--sidebar-hover-width)) !important;
+  margin-inline-start: calc(-1 * var(--sidebar-hover-width)) !important;
 }
 
 #sidebar-box:hover ~ #appcontent {
-  -moz-margin-start: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
+  margin-inline-start: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
 }

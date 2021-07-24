@@ -17,7 +17,7 @@
 	  --addon-page-options-width: 370px;
 	}
 	
-	html:-moz-any([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
+	html:is([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
 	  --addon-page-options-width: 440px;
 	}
 	
@@ -63,12 +63,12 @@
 		}
 	}
 	
-	:-moz-any(addon-list,panel-list) panel-item{
+	:is(addon-list,panel-list) panel-item{
 	  margin: 0 1px !important;
 	}
 	
 	/* reduce size of default buttons */
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: unset !important;
 	  padding: 2px 5px !important; 
 	}
@@ -81,7 +81,7 @@
 	/* remove button icon */
 	:host([checked]),
 	panel-item[checked],
-	:-moz-any(addon-list,panel-list) panel-item {
+	:is(addon-list,panel-list) panel-item {
 	  --icon: unset !important;
 	}
 	
@@ -104,8 +104,8 @@
 	
 	panel-item[badged]::after,
 	:host([badged]) button::after,
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button::after,
-	:-moz-any(addon-options,plugin-options) button::after {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button::after,
+	:is(addon-options,plugin-options) button::after {
 	  display: none !important;
 	  content: unset !important;
 	}
@@ -126,7 +126,7 @@
 	  z-index: 1000 !important;
 	}
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
 	  padding-inline-start: 20px !important;
 	  padding-top: 3px !important;
 	  padding-bottom: 3px !important;
@@ -160,7 +160,7 @@
 	}
 
 	addon-card .addon.card .theme-enable-button {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  min-width: 20px !important;
 	  width: 20px !important;
 	  max-width: 20px !important;
@@ -168,7 +168,7 @@
 	  font-size: 0 !important;
 	  border: 1px solid !important;
 	  border-top: 3px solid !important;
-	  -moz-margin-end: 1px !important;
+	  margin-inline-end: 1px !important;
 	  opacity: 0.9 !important;
 	}
 	
@@ -216,11 +216,11 @@
 
 	addon-card .addon.card .theme-enable-button,
 	input[type="checkbox"].toggle-button {
-	  -moz-margin-end: 8px !important;
+	  margin-inline-end: 8px !important;
 	}
 	
 	.card-contents input[type="checkbox"].toggle-button {
-	  -moz-margin-end: 10px !important;
+	  margin-inline-end: 10px !important;
 	}
 	
 	addon-card > .addon.card,
@@ -230,7 +230,7 @@
 	
 	
 	/**/	
-	#main > div:-moz-any([current-view="list"], [current-view="updates"]) .addon.card {
+	#main > div:is([current-view="list"], [current-view="updates"]) .addon.card {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
@@ -245,7 +245,7 @@
 		height: unset !important;
 	}
 
-	#main > div:-moz-any([current-view="list"], [current-view="updates"]) .toggle-button {
+	#main > div:is([current-view="list"], [current-view="updates"]) .toggle-button {
 		position: absolute;
 		right: 8px !important;
 	}
@@ -254,17 +254,17 @@
 		order: 3;
 	}
 
-	addon-card > .addon.card :-moz-any(addon-options, plugin-options) {
+	addon-card > .addon.card :is(addon-options, plugin-options) {
 		display: block;
 		position: relative;
 		overflow: unset !important;
 	}
 
-	#main > div:-moz-any([current-view="list"], [current-view="updates"]) > :-moz-any([type="extension"],[type="all"]) addon-options {
+	#main > div:is([current-view="list"], [current-view="updates"]) > :is([type="extension"],[type="all"]) addon-options {
 		margin-inline-end: 35px;
 	}
 
-	#main > div:not([current-view="detail"]) :-moz-any(addon-options, plugin-options) {
+	#main > div:not([current-view="detail"]) :is(addon-options, plugin-options) {
 		margin-top: -9px;
 		margin-inline-end: -5px;
 	}
@@ -279,7 +279,7 @@
 		display: block !important;
 	}
 		
-	#main > div[current-view="detail"] :-moz-any(plugin-options, addon-options) > panel-list {
+	#main > div[current-view="detail"] :is(plugin-options, addon-options) > panel-list {
 		position: absolute !important;
 		top: 8px;
 		right: 0 !important;

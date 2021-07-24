@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -6,6 +6,6 @@
 @import "./custom_backforward_large.css";
 
 /* custom large back-forward buttons */
-#main-window toolbox toolbar :-moz-any(#back-button, #forward-button) .toolbarbutton-icon {
+#main-window toolbox toolbar :is(#back-button, #forward-button) .toolbarbutton-icon {
   list-style-image: url("./../../image/bf_ff3.png") !important;
 }

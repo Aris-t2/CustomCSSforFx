@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -6,7 +6,7 @@
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #nav-bar:-moz-lwtheme,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):-moz-lwtheme {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: black !important;
 }
 

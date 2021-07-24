@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -27,7 +27,7 @@
 
 #main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
   position: fixed !important;
-  display:block !important;
+  display: block !important;
 }
 
 /* lw-theme */
@@ -55,10 +55,6 @@
   }
 }
 
-#main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
-  position: fixed !important;
-  display:block !important;
-}
 
 /* lw-theme */
 #main-window:not([inDOMFullscreen="true"]) #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
@@ -68,14 +64,6 @@
   background-image: var(--lwt-header-image) !important;
 }
 
-/* [!] NOT A STANDALONE FILE! */
-/* [!] This code does not achieve the requested result without above files content! */
-
-
-/*
-#TabsToolbar {
-  bottom: -3px !important;
-}*/
 
 #main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
   margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
@@ -88,8 +76,6 @@
   border-top: 1px solid ThreeDShadow !important;
 }
 
-/* [!] NOT A STANDALONE FILE! */
-/* [!] This code does not achieve the requested result without above files content! */
 
 /* caption button position in maximized mode after moving to the top */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,

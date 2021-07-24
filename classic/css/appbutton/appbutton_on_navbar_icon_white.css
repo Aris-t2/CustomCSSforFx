@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,5 +11,3 @@
 #PanelUI-button #PanelUI-menu-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton-inv.svg") !important;
 }
-
-/**/

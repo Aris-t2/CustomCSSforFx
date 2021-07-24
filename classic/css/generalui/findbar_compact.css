@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -6,4 +6,8 @@
 .findbar-container,
 .findbar-container * {
   padding: 0 !important;
+}
+
+.findbar-container {
+  height: unset !important;
 }

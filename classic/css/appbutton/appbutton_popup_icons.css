@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -130,8 +130,6 @@
   fill: currentColor;
 }
 
-
-
 #appmenu-moreTools-button > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/developer.svg");
@@ -139,17 +137,12 @@
   fill: currentColor;
 }
 
-
-
-
-
 #PanelUI-bookmarks #panelMenuBookmarkThisPage > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/bookmark.svg");
   padding-inline-end: 4px;
   fill: currentColor;
 }
-
 
 #PanelUI-bookmarks #panelMenu_searchBookmarks > .toolbarbutton-icon {
   -moz-context-properties: fill;
@@ -165,16 +158,12 @@
   fill: currentColor;
 }
 
-
-
-
 #PanelUI-history #appMenuRecentlyClosedTabs > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/tab.svg");
   padding-inline-end: 4px;
   fill: currentColor;
 }
-
 
 #PanelUI-history #appMenuRecentlyClosedWindows > .toolbarbutton-icon {
   -moz-context-properties: fill;
@@ -190,9 +179,6 @@
   padding-inline-end: 4px;
   fill: currentColor;
 }
-
-
-
 
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon {
   -moz-context-properties: fill;
@@ -345,7 +331,7 @@
 
 #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] + toolbarbutton > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] + toolbarbutton > label.toolbarbutton-text {
-	padding-inline-start: 8px !important;
+  padding-inline-start: 8px !important;
 }
 
 /* Browser Toolbox (by Key) and Browser Content Toolbox  */

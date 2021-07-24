@@ -17,7 +17,7 @@
 	  --addon-page-options-width: 370px;
 	}
 	
-	html:-moz-any([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
+	html:is([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
 	  --addon-page-options-width: 440px;
 	}
 	
@@ -26,7 +26,7 @@
 	}
 	/**/
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
 	  width: 22px !important;
 	  height: 22px !important;
 	  padding: 0 !important;
@@ -35,15 +35,15 @@
 	  background-color: unset !important;
 	}
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label:not([accesskey]) {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label:not([accesskey]) {
 	  visibility: hidden !important;
 	}
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey]:hover {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey]:hover {
 	  background: var(--grey-30);
 	}
 	
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
 	  padding-top: 1px !important;
 	  padding-bottom: 1px !important;
 	}
@@ -119,7 +119,7 @@
 	  width: 320px !important;
 	}
 
-	link:-moz-any([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
 	  padding-inline-start: 20px !important;
 	  padding-top: 3px !important;
 	  padding-bottom: 3px !important;

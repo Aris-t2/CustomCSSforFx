@@ -1,9 +1,9 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 #nav-bar #PanelUI-menu-button .toolbarbutton-text {
   display: block !important;
-  -moz-margin-start: -1px !important;
+  margin-inline-start: -1px !important;
 }

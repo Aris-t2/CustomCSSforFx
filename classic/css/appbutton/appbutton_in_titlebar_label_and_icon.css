@@ -1,43 +1,43 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 /* gain space before menubar */
 #main-window[tabsintitlebar] #toolbar-menubar {
-  -moz-margin-start: 95px !important;
+  margin-inline-start: 95px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  -moz-margin-start: 94px !important;
+  margin-inline-start: 94px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
-  -moz-margin-start: 93px !important;
+  margin-inline-start: 93px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  -moz-margin-start: 92px !important;
+  margin-inline-start: 92px !important;
 }
 
 /* gain space before tabs toolbar */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  -moz-padding-start: 95px !important;
+  padding-inline-start: 95px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  -moz-padding-start: 94px !important;
+  padding-inline-start: 94px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  -moz-padding-start: 93px !important;
+  padding-inline-start: 93px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  -moz-padding-start: 92px !important;
+  padding-inline-start: 92px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar {
- -moz-padding-start: 95px !important;
+ padding-inline-start: 95px !important;
 }
 
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
@@ -46,7 +46,7 @@
 }
 
 #main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon {
-  -moz-margin-start: -16px !important;
+  margin-inline-start: -16px !important;
 }
 
 #main-window[tabsintitlebar] #PanelUI-menu-button::after {
@@ -85,5 +85,5 @@
 
 /* support for tab title in Firefox titlebar option*/
 #main-window[tabsintitlebar]::after {
-  -moz-margin-start: 95px !important;
+  margin-inline-start: 95px !important;
 }

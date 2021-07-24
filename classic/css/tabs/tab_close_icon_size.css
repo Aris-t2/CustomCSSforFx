@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -20,4 +20,3 @@
   min-height: var(--tab_close_icons_size) !important;
   height: var(--tab_close_icons_size) !important;
 }
-

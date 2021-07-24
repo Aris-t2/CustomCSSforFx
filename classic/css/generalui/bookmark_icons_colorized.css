@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -150,6 +150,3 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
   list-style-image: url("./../../image/unsortedBookmarks.png") !important;
   -moz-image-region: auto !important;
 }
-
-
-/**/

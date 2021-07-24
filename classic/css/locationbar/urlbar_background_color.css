@@ -1,11 +1,11 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 /* Set a custom color value inside general_variables.css */
 :root {
-	--urlbar_background: white;	
+  --urlbar_background: white;	
 }
 
 #urlbar-input,

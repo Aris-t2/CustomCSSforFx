@@ -1,10 +1,10 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
 :root {
-	--megabar_border_roundness: 20px;
+  --megabar_border_roundness: 20px;
 }
 
 #urlbar #urlbar-background,
@@ -29,7 +29,6 @@
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
-
 
 
 #urlbar[open="true"] #urlbar-background,

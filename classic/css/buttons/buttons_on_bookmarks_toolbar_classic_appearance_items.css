@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -17,23 +17,23 @@
 }
 
 /* adjust zoom reset and copy buttons position */
-#PlacesToolbar :-moz-any(#copy-button,#zoom-reset-button) {
-  -moz-margin-start: -1px !important;
-  -moz-margin-end: -1px !important;
+#PlacesToolbar :is(#copy-button,#zoom-reset-button) {
+  margin-inline-start: -1px !important;
+  margin-inline-end: -1px !important;
 }
-#PlacesToolbar :-moz-any(#edit-controls, #zoom-controls) separator {
+#PlacesToolbar :is(#edit-controls, #zoom-controls) separator {
   visibility: collapse !important;
 }
 
 /* classic button style */
-#main-window:not([customizing]) #PlacesToolbar .bookmark-item:not(menu):not(menuitem)[disabled=true]:-moz-any([open],[checked],:hover:active,:active),
+#main-window:not([customizing]) #PlacesToolbar .bookmark-item:not(menu):not(menuitem)[disabled=true]:is([open],[checked],:hover:active,:active),
 #PlacesToolbar toolbarbutton[type="menu-button"],
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem)[open] > .toolbarbutton-menubutton-button,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem)[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([checked]):not([open]):not(:active),
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: rgba(151,152,153,.05) linear-gradient(rgba(251,252,253,.95), rgba(246,247,248,.47) 49%, 
 			  rgba(231,232,233,.45) 51%, rgba(225,226,229,.3)) !important;
   border-color: rgba(0,0,0,.12) rgba(0,0,0,.19) rgba(0,0,0,.38) !important;
@@ -42,8 +42,8 @@
 			  0 0 0 1px rgba(0,0,0,.4) inset !important;
 }
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
-#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-button ,
-#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button ,
+#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):not([checked]):not([open]):not(:active):hover,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
   background-color: hsla(190,60%,70%,.5) !important;
@@ -58,9 +58,9 @@
 }
 #PlacesToolbar toolbarbutton[type="menu"][open]:not([disabled]),
 #PlacesToolbar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active ,
-#PlacesToolbar .bookmark-item:not(menu):not(menuitem) > .toolbarbutton-menubutton-button:not([disabled=true]):-moz-any(:hover:active,:active, [open]),
+#PlacesToolbar .bookmark-item:not(menu):not(menuitem) > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]),
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem)[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
-#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):-moz-any([open],[checked],:hover:active,:active) {
+#PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):is([open],[checked],:hover:active,:active) {
   background-color: transparent !important;
   border-color: rgba(0,0,0,.65) rgba(0,0,0,.55) rgba(0,0,0,.5) !important;
   box-shadow: 0 0 6.5px rgba(0,0,0,.4) inset,

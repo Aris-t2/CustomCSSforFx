@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.0pre7 ****************************************************************************/
+/* version 4.0.0pre8 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -144,7 +144,7 @@
 
 
 /* PROTON: 'classic' pre-Proton button padding **************************************************/
-/* @import "./css/buttons/button_padding_proton.css"; /**/
+/* @import "./css/buttons/classic_button_padding.css"; /**/
 
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
@@ -417,11 +417,11 @@
 /************************************************************************************************/
 
 /* context menus / menupopups / panels **********************************************************/
-/* @import "./css/generalui/popup_compact_menus_proton.css"; /**/
-/* @import "./css/generalui/popup_compact_menus_proton_squared.css"; /**/
+/* @import "./css/generalui/popup_compact_menus.css"; /**/
+/* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
-/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- this removes tab scroll buttons */
+/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- this removes tab scroll buttons, no CSS fix possible atm */
 
 @import "./css/generalui/private_mode_indicator_hidden.css"; /**/
 @import "./css/generalui/bookmark_icons_colorized.css"; /**/
@@ -516,7 +516,7 @@
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
-/* @import "./css/toolbars/tab_toolbar_color_proton.css"; /**/
+/* @import "./css/toolbars/top_toolbar_colors.css"; /**/ /* override tabs toolbar / titlebar colors forced by Proton UI */
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */

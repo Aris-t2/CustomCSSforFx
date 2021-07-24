@@ -1,37 +1,7 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-#customization-container :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
-	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,/*#PanelUI-menu-button,*/#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
-#customization-container :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon,
-toolbar:not(#nav-bar) :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,/*#bookmarks-menu-button,*/#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
-	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,/*#PanelUI-menu-button,*/#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
-toolbar:not(#nav-bar) #bookmarks-menu-button > .toolbarbutton-icon,
-toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
-  padding: 0px 0px !important;
-  width: 18px !important;
-  height: 18px !important;
-}
-
-#nav-bar :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,/*#bookmarks-menu-button,*/#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
-	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,/*#PanelUI-menu-button,*/#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
-#nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
-#nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
-  padding: 5px 5px !important;
-}
 
 #back-button {
   -moz-image-region: rect(0px, 54px, 18px, 36px) !important;
@@ -171,7 +141,7 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
 }
 
 /* fix icon glitch */
-#downloads-button:not(:-moz-any([attention],[progress])) #downloads-indicator-icon {
+#downloads-button:not(:is([attention],[progress])) #downloads-indicator-icon {
   background-image: unset !important;
 }
 
@@ -200,50 +170,47 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
   display: none !important;
 }
 
-/* Proton compatibility */
-@media (-moz-proton) {
-
-#main-window[uidensity=compact] #nav-bar :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+#main-window[uidensity=compact] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
 #main-window[uidensity=compact] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
-#main-window[uidensity=compact] #nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+#main-window[uidensity=compact] #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
   padding: 5px !important;
 }
 
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
-#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
   padding: 7px !important;
 }
 
-#main-window[uidensity=touch] #nav-bar :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+#main-window[uidensity=touch] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
 #main-window[uidensity=touch] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
-#main-window[uidensity=touch] #nav-bar :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+#main-window[uidensity=touch] #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
   padding: 8px !important;
 }
 
-toolbar:not(#nav-bar) :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+toolbar:not(#nav-bar) :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
 toolbar:not(#nav-bar) #bookmarks-menu-button > .toolbarbutton-icon,
-toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
   padding: 0px 0px !important;
   margin: 0px 0px !important;
   min-width: 18px !important;
@@ -252,6 +219,4 @@ toolbar:not(#nav-bar) :-moz-any(#panic-button,#pocket-button):not([open]) .toolb
   height: 18px !important;
   max-width: 18px !important;
   max-height: 18px !important;
-}
-
 }

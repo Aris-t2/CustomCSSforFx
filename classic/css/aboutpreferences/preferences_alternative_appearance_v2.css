@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 
 	.category {
@@ -12,7 +13,7 @@
  	#preferences-stack,.sticky-container,
 	page,
 	.dialogBox .groupbox-title {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: -moz-Dialog !important;
 	}
 
@@ -76,15 +77,15 @@
 	
 	/* groupbox */
 	.main-content groupbox{
-	  -moz-appearance: groupbox !important;
+	  appearance: groupbox !important;
 	}
 
 	.main-content groupbox caption {
 	  background: -moz-Dialog !important;
-	  -moz-margin-start: 2px !important;
-	  -moz-padding-start: 2px !important;
-	  -moz-margin-end: 2px !important;
-	  -moz-padding-end: 2px !important;
+	  margin-inline-start: 2px !important;
+	  padding-inline-start: 2px !important;
+	  margin-inline-end: 2px !important;
+	  padding-inline-end: 2px !important;
 	}
 	
 	.main-content .groupbox-title {
@@ -125,9 +126,9 @@
 	/* alignment and text/font appearance */
 	#mainPrefPane {
 	  color: black !important;
-	  -moz-padding-start: 20px !important;
+	  padding-inline-start: 20px !important;
 	  margin-top: -35px !important;
-	  -moz-margin-start: -20px !important;
+	  margin-inline-start: -20px !important;
 	}
 	
 	textbox {
@@ -139,7 +140,7 @@
 	  margin-top: 20px !important;
 	  margin-bottom: 20px !important;
 	  background-color: -moz-Dialog !important;
-	  -moz-margin-start: -1px !important;
+	  margin-inline-start: -1px !important;
 	}
 
 	.header label {
@@ -189,17 +190,17 @@
 	}
 	
 	button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
-	  -moz-appearance: button !important;
+	  appearance: button !important;
 	}
 
 	menulist{
-	  -moz-appearance: menulist !important;
+	  appearance: menulist !important;
 	}
 	
 	/* menulist popup */
 	@media all and (-moz-windows-theme:aero) {
 		menupopup menuitem {
-		  -moz-appearance: menuitem !important;
+		  appearance: menuitem !important;
 		}
 		menupopup menuitem:not([disabled="true"]) {
 		  color: black !important;
@@ -229,12 +230,12 @@
 	
 	/* checkbox and radio items */
 	checkbox .checkbox-check {
-	  -moz-appearance: unset  !important;
+	  appearance: unset  !important;
 	  box-shadow: unset !important;
 	}
 
 	radio .radio-check {
-	  -moz-appearance: unset !important;
+	  appearance: unset !important;
 	  box-shadow: unset !important;
 	}
 
@@ -254,7 +255,7 @@
 		}
 	
 		#homeContentsGroup checkbox label {
-		  -moz-margin-start: 2px !important;
+		  margin-inline-start: 2px !important;
 		}
 		
 		radio *{
@@ -274,7 +275,7 @@
 		}
 		
 		#homeContentsGroup checkbox label {
-		  -moz-margin-start: 8px !important;
+		  margin-inline-start: 8px !important;
 		}
 
 	  }
@@ -288,7 +289,7 @@
 		}
 
 		#homeContentsGroup checkbox label {
-		  -moz-margin-start: 6px !important;
+		  margin-inline-start: 6px !important;
 		}
 		
 	}
@@ -305,7 +306,7 @@
 		}
 
 		#homeContentsGroup checkbox label {
-		  -moz-margin-start: 6px !important;
+		  margin-inline-start: 6px !important;
 		}
 	  }
 		
@@ -392,16 +393,16 @@
 }
 
 *[subdialog="true"] button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
-  -moz-appearance: button !important;
+  appearance: button !important;
 }
 *[subdialog="true"] menulist{
-  -moz-appearance: menulist !important;
+  appearance: menulist !important;
 }
 
 /* menu popup */
 @media all and (-moz-windows-theme:aero) {
 	*[subdialog="true"] menupopup menuitem {
-	  -moz-appearance: menuitem !important;
+	  appearance: menuitem !important;
 	}
 	*[subdialog="true"] menupopup menuitem:not([disabled="true"]),
 	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected] {
@@ -431,14 +432,14 @@
 
 /* checkbox / radios */
 *[subdialog="true"] checkbox .checkbox-check {
-  -moz-appearance: unset  !important;
+  appearance: unset  !important;
   box-shadow: unset !important;
   padding: unset !important;
   margin: unset !important;
 }
 
 *[subdialog="true"] radio .radio-check {
-  -moz-appearance: unset !important;
+  appearance: unset !important;
   box-shadow: unset !important;
   padding: unset !important;
   margin: unset !important;
@@ -492,7 +493,7 @@
 	}
 	
 	#FontsDialog checkbox label {
-	  -moz-margin-start: -4px !important;
+	  margin-inline-start: -4px !important;
 	}
 }
 
@@ -515,7 +516,7 @@
 	}
 	
 	#FontsDialog checkbox label {
-	  -moz-margin-start: -4px !important;
+	  margin-inline-start: -4px !important;
 	}
 
   }

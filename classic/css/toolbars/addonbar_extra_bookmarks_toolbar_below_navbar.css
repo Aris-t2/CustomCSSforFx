@@ -1,15 +1,16 @@
-/* create an empty space below navigation toolbar */
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+/* this creates an empty space below navigation toolbar */
 
 #main-window:not([customizing="true"]) #nav-bar {
   padding-bottom: 26px !important;
 }
 
 /* reduce maximum width of location bar and search bar on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar :-moz-any(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+#main-window:not([customizing="true"]) #nav-bar :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
   min-width: 50px !important;
 }
 
@@ -52,7 +53,6 @@
 #main-window #nav-bar #urlbar[breakout][breakout-extend] {
   top: calc(-13px + ((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
 }
-
 
 #personal-toolbar-empty-description,
 #nav-bar #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {

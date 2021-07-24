@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -21,7 +21,7 @@
   height: 48px !important;
 }
 
-#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton :-moz-any(.scrollbutton-up,.scrollbutton-down) .toolbarbutton-icon {
+#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton :is(.scrollbutton-up,.scrollbutton-down) .toolbarbutton-icon {
   width: unset !important;
   height: unset !important;
 }

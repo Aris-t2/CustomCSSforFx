@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -11,7 +11,7 @@
 }
 
 #main-window[tabsintitlebar] #TabsToolbar {
-  -moz-padding-end: 100px !important
+  padding-inline-end: 100px !important
 }
 
 #TabsToolbar .titlebar-spacer[type="pre-tabs"] {

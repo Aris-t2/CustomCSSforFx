@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Firefox userChrome.css tweaks ********************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -21,7 +21,7 @@
   min-width: 0 !important;
   width: auto !important;
   max-width: unset !important;
-  -moz-box-orient: horizontal !important;
+  -moz-box-orient: horizontal !important; /* can not be replaced with box-orient yet */
 }
 
 #widget-overflow:not([remote="true"]) .panel-arrowcontent,
