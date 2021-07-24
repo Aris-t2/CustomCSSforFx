@@ -3,20 +3,7 @@
 /****************************************************************************************/
 
 
-:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-  appearance: menuitem !important;
-  min-height: unset !important;
-}
-
-:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
-  content: attr(aria-label) !important;
-  display: block !important;
-  visibility: visible !important;
-}
-
-#context-navigation > .menuitem-iconic{
-  -moz-box-pack: start !important; /* can not be replaced with box-pack yet */
-}
+/* context menu code has no effect on macOS */
 
 #context-navigation:not([hidden]) {
   display: flex;
@@ -25,15 +12,60 @@
   min-width: unset !important;
   padding-bottom: 0px !important;
 }
-
-#context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon {
-  background-color: unset !important;
+	
+:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  content: attr(aria-label) !important;
+  display: block !important;
+  visibility: visible !important;
 }
-#context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
-  background-color: unset !important;
+	
+#context-navigation > .menuitem-iconic {
+  -moz-box-pack: start !important; /* can not be replaced with box-pack yet */
 }
 
 /* fix for German locale */
 #context-bookmarkpage[aria-label*="Lesezeichen"] {
   padding-inline-end: 10px !important;
 }
+
+/* Windows Code */
+@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+	appearance: menuitem !important;
+	min-height: unset !important;
+  }
+
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon,
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+	background-color: unset !important;
+  }
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+    width: 16px !important;
+    height: 16px !important;
+    padding: 0px !important;
+    margin-top: 7px !important;
+	margin-bottom: 7px !important;
+	margin-inline-start: 12px !important;
+	margin-inline-end: 8px !important;
+  }
+
+}
+
+/* Linux code */
+@media not all and (-moz-os-version: windows-win10) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win7) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	margin: 0 !important;
+	width: 16px !important;
+	height: 16px !important;
+  }
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: 6px !important;
+  }
+
+}}}

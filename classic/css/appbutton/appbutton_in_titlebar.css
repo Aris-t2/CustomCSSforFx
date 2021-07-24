@@ -167,7 +167,7 @@
 @media not all and (-moz-os-version: windows-win8) {
 @media not all and (-moz-os-version: windows-win7) {
   #main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon  {
-	list-style-image: unset !important;
+	list-style-image: none !important;
   }	  
 }}}
 
