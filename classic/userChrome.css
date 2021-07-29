@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.0pre9 ****************************************************************************/
+/* version 4.0.0pre10 ***************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -514,6 +514,7 @@
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
+/* @import "./css/toolbars/top_toolbar_OS_accent_colors.css"; /**/ /* restore window accent color managed by the OS */
 /* @import "./css/toolbars/top_toolbar_colors.css"; /**/ /* override tabs toolbar / titlebar colors forced by Proton UI */
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/

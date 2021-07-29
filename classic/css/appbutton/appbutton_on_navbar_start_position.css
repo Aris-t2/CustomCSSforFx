@@ -14,13 +14,22 @@
   margin-inline-end: unset !important;
 }
 
-#main-window:not([uidensity=compact]) #PanelUI-button {
-  margin-inline-start: 0px !important;
-  border-inline-start: 0px solid !important;
+#main-window #PanelUI-button {
+  margin-inline-start: 2px !important;
   margin-inline-end: 2px !important;
-  border-inline-end: 1px solid !important;
 }
 
-#main-window[chromehidden="menubar toolbar directories extrachrome "] #nav-bar-customization-target {
+#PanelUI-menu-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#nav-bar-customization-target {
+  padding-inline-start: 0px !important;
   padding-inline-end: 2px !important;
+}
+
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
+#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+  padding-inline-start: 0px !important;
 }
