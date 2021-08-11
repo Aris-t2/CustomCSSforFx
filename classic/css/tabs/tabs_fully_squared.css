@@ -3,8 +3,8 @@
 /****************************************************************************************/
 
 
-/* disable tab top border roundness */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+/* disable tab border roundness */
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -16,6 +16,5 @@
 #TabsToolbar .tabbrowser-tab:hover::before,
 #TabsToolbar .tabbrowser-tab[last-visible-tab]:hover::after,
 #TabsToolbar #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
+  border-radius: 0px !important;
 }

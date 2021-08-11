@@ -34,7 +34,6 @@
   --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
 }
 
-
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab,
@@ -451,4 +450,9 @@
 #main-window:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[multiselected=true]:-moz-lwtheme,
 #main-window:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background[selected=true]:-moz-lwtheme {
   background-image: var(--toolbar-bgimage) !important;
+}
+
+/* restore border between navigation toolbar and tabs toolbar */
+#nav-bar:not(:-moz-lwtheme) {
+  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
 }

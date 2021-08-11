@@ -3,13 +3,13 @@
 /****************************************************************************************/
 
 
-/* Set a custom color value by replacing 'initial' with a color and adding !important before ; */
-/* or set a custom color value inside general_variables.css */
+/* Set a custom color value inside general_variables.css */
+
 :root{
-  --top_toolbars_background: initial;
-  --top_toolbars_background_inactive: initial;
-  --top_toolbars_text: initial;
-  --top_toolbars_text_inactive: initial;
+  --top_toolbars_background: #0063b1;
+  --top_toolbars_background_inactive: #ffffff;
+  --top_toolbars_text: #ffffff;
+  --top_toolbars_text_inactive: #999999;
 }
 
 #main-window:not(:-moz-lwtheme) #titlebar,

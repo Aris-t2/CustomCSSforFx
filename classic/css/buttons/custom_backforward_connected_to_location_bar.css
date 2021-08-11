@@ -54,7 +54,7 @@
 }
 
 #main-window #nav-bar #back-button + #forward-button:not([disabled]) {
- margin-inline-start: -16px !important;
+  margin-inline-start: -16px !important;
 }
 
 #main-window #nav-bar #forward-button:not([disabled]) + #urlbar-container {
@@ -77,4 +77,15 @@
 
 #main-window #nav-bar #back-button .toolbarbutton-icon{
   opacity: 1 !important;
+}
+
+/* fix rounded urlbar when connected*/
+#main-window #nav-bar #forward-button:not([disabled]) + #urlbar-container #urlbar-background {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+/* override classic toolbar buttons code */
+#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon {
+  background: #f9f9fa !important; /* has to be solid or forward buttons left side will be partly visible */
 }

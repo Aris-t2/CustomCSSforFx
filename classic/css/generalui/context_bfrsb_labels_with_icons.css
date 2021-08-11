@@ -28,12 +28,16 @@
   padding-inline-end: 10px !important;
 }
 
-/* Windows Code */
+/* Windows code */
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-	appearance: menuitem !important;
+	appearance: none !important;
 	min-height: unset !important;
+  }
+  
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):hover {
+	background-color: var(--menuitem-hover-background-color) !important;
   }
 
   #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon,

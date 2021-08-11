@@ -5,13 +5,13 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.0 ********************************************************************************/
+/* version 4.0.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
  Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
-  
+
  [!] Firefox requires this preference to be enabled or custom styles will not be loaded:
 	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
 
@@ -20,7 +20,7 @@
 /*************************************************************************************************
 
   README
-  
+
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
@@ -38,7 +38,7 @@
   - page context items in 'general ui' category
 
   EXPERIMENTAL settings are for testing only!
-  
+
   BASIC OVERVIEW - settings this file contains:
   CONFIGURATION FILES
   - general variables / color variables (default browser theme only)
@@ -302,8 +302,8 @@
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
-/* remove top corner roundness ******************************************************************/
-/* @import "./css/tabs/classic_squared_tabs_fully_squared.css"; /**/
+/* remove border roundness **********************************************************************/
+/* @import "./css/tabs/tabs_fully_squared.css"; /**/
 
 
 /************************************************************************************************/
@@ -319,7 +319,7 @@
 /* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
 /* [!] Note: only 'alt' works with multi-tab lines option. **************************************/
 /* - Windows/Linux ******************************************************************************/
-/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
+/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_default_tabs.css"; /**/
 /* - macOS **************************************************************************************/
@@ -400,6 +400,7 @@
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
+/* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
@@ -512,10 +513,14 @@
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/  /* <--- EXPERIMENTAL */
 /* [!] create additional toolbar for 'bookmarks toolbar items' on navigation toolbar ************/
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar.css"; /**/  /* <--- EXPERIMENTAL */
- 
+
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
+
+/* top toolbar colors - [only use one at a time] ************************************************/
 /* @import "./css/toolbars/top_toolbar_OS_accent_colors.css"; /**/ /* restore window accent color managed by the OS */
 /* @import "./css/toolbars/top_toolbar_colors.css"; /**/ /* override tabs toolbar / titlebar colors forced by Proton UI */
+
+/* other toolbar settings ***********************************************************************/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
@@ -609,22 +614,25 @@
 /* @import "./css/locationbar/selection_color_for_dark_bg.css"; /**/
 /* @import "./css/locationbar/selection_color_for_bright_bg.css"; /**/
 
- 
+
 /************************************************************************************************/
 /* MEGABAR - settings for 'megabar' & 'megabar popup' *******************************************/
 /************************************************************************************************/
 
 @import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
 /* @import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
-/* @import "./css/locationbar/megabar_border_roundness.css"; /**/
-/* @import "./css/locationbar/megabar_background_color_dark.css"; /**/
-/* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* Fx89+ */
+/* @import "./css/locationbar/urlbar_border_roundness.css"; /**/
+@import "./css/locationbar/urlbar_restore_visible_border.css"; /**/
+
+/* megabar/location bar background color - [only use one at a time] ******************************/
+/* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* default white background color */
+/* @import "./css/locationbar/urlbar_background_color_dark.css"; /**/ /* force dark color for e.g. dark lw-themes */
 
 /* popup content order/appearance - [only use one at a time] ************************************/
 @import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/
-/* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/ 
+/* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/
 
 /* result menuitem settings/appearance **********************************************************/
 @import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/

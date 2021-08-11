@@ -557,3 +557,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	  padding-inline-end: 60px !important;
 	}
 }*/
+
+/* remove restored border between navigation toolbar and tabs toolbar */
+#nav-bar:not(:-moz-lwtheme) {
+  box-shadow: unset !important;
+}

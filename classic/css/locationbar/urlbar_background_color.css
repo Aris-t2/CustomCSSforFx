@@ -5,34 +5,28 @@
 
 /* Set a custom color value inside general_variables.css */
 :root {
-  --urlbar_background: white;	
+  --urlbar_background_color: white;
+  --urlbar_text_color: black;
 }
 
-#urlbar-input,
-#urlbar-scheme,
-.searchbar-textbox,
+#urlbar-search-mode-indicator,
 #page-action-buttons,
 #identity-icon-box,
-#urlbar-input-container,
-.searchbar-search-button,
-#urlbar:not([focused="true"], [open]) > #urlbar-background,
-#searchbar:not(:focus-within) {
-  background-color: var(--urlbar_background) !important;
+#urlbar-background,
+#searchbar {
+  background-color: var(--urlbar_background_color) !important;
 }
 
-#urlbar[focused="true"]:not([open]) #urlbar-input-container,
-#urlbar:not([focused="true"],[open]) #urlbar-input-container {
-  border: 1px solid var(--arrowpanel-border-color) !important;
-}
-
-#urlbar:is([focused="true"], [open]) #urlbar-input-container {
-  border-top: 1px solid var(--arrowpanel-border-color) !important;
-  border-left: 1px solid var(--arrowpanel-border-color) !important;
-  border-right: 1px solid var(--arrowpanel-border-color) !important;
-  border-bottom-left-radius: unset !important;
-  border-bottom-right-radius: unset !important;
-}
-
-#searchbar:focus-within {
-  box-shadow: unset !important;
+#searchbar:-moz-lwtheme,
+#urlbar:-moz-lwtheme #urlbar-input,
+#urlbar:-moz-lwtheme #urlbar-scheme,
+#urlbar:-moz-lwtheme #page-action-buttons,
+#urlbar:-moz-lwtheme #identity-icon-box,
+#urlbar:-moz-lwtheme #urlbar-input-container,
+#urlbar:-moz-lwtheme #urlbar-background,
+#urlbar:-moz-lwtheme .urlbarView,
+#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row-inner[selected] {
+  color: var(--urlbar_text_color) !important;
+  fill: var(--urlbar_text_color) !important;
 }

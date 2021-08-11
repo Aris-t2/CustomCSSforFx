@@ -3,10 +3,9 @@
 /****************************************************************************************/
 
 
-.tabbrowser-tab .tab-icon-image[src="chrome://mozapps/skin/extensions/extension.svg"] {
-  fill: green !important;
-}
-
-.tabbrowser-tab .tab-icon-image[src="chrome://global/skin/icons/settings.svg"] {
-  fill: grey !important;
+#urlbar:not([focused="true"]) #urlbar-background,
+#urlbar[open="true"] #urlbar-background,
+#urlbar[focused="true"][open="true"] #urlbar-background,
+#searchbar:not(:focus-within) {
+  border: 1px solid var(--chrome-content-separator-color) !important;
 }

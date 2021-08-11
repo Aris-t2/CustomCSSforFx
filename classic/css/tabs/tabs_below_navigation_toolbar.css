@@ -84,3 +84,8 @@
   padding-inline-start: 0px !important;
   margin-inline-start: 0px !important;
 }
+
+/* remove restored border between navigation toolbar and tabs toolbar */
+#nav-bar:not(:-moz-lwtheme) {
+  box-shadow: unset !important;
+}

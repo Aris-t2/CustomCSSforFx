@@ -56,36 +56,21 @@
   /* for ac_popup_result_font_size.css */
   --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
   
-  /* for megabar_border_roundness.css */
+  /* for urlbar_border_roundness.css */
   --megabar_border_roundness: 20px !important;
   
-  /* for tab_toolbar_color_proton.css */
-  --top_toolbars_background: initial !important;
-  --top_toolbars_background_inactive: initial !important;
-  --top_toolbars_text: initial !important;
-  --top_toolbars_text_inactive: initial !important;
+  /* for top_toolbar_colors.css */
+  --top_toolbars_background: #0063b1 !important;
+  --top_toolbars_background_inactive: #ffffff !important;
+  --top_toolbars_text: #ffffff !important;
+  --top_toolbars_text_inactive: #999999 !important;
   
   /* for urlbar_background_color.css */
-  --urlbar_background: white !important;
+  --urlbar_background_color: white !important;
+  --urlbar_text_color: black !important;
 }
 
 :root[uidensity="touch"] {
   /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 36px !important;
-}
-
-/* for ac_popup_classic_with_two_lines_fx64.css and ac_popup_classic_with_two_lines_fx68.css */
-:root {
-  --ac_popup_width: 700px !important; /* popup width in normal mode */
-  --ac_popup_number_of_results: 10 !important;  /* value has to be identical to about:config > browser.urlbar.maxRichResults */
-  --ac_popup_maxheight: calc(47.5px * ( var(--ac_popup_number_of_results) + 1 )) !important; /* calculate maximum height based on items to display */
-  --ac_popup_height: auto !important;  /* replace auto with 'calc(47.5px * var(--ac_popup_number_of_results))' to get a shorter scrollable list for high result numbers */
-}
-
-:root[sizemode="maximized"] {
-  --ac_popup_width: 1400px !important; /* popup width in maximized mode */
-}
-
-:root[inFullscreen="true"] {
-  --ac_popup_width: 1400px !important; /* popup width in fullscreen mode */
 }
