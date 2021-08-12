@@ -3,16 +3,17 @@
 /****************************************************************************************/
 
 
-/* Force appbutton to the right *********************************************************/
+/* Force appbutton to the right, because some idiots at Apple decided to place caption **/
+/* buttons on the windows top left! Seriously, who came up with this bullsh!t? **********/
 
 #main-window[tabsintitlebar] #PanelUI-button {
   right: 0 !important;
 }
 
 #main-window[tabsintitlebar] #TabsToolbar {
-  padding-inline-end: 100px !important;
+  padding-inline-end: 100px !important
 }
 
-#main-window[tabsintitlebar] #TabsToolbar #tabbrowser-tabs {
-  padding-inline-start: 20px !important;
+#TabsToolbar .titlebar-spacer[type="pre-tabs"] {
+  display: initial !important;
 }

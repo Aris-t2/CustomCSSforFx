@@ -86,7 +86,6 @@
 }
 
 /* override classic toolbar buttons code */
-#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true] > .toolbarbutton-icon,
 #main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon {
-  background: #efefef !important; /* has to be solid or forward buttons left side will be partly visible */
+  background: #f9f9fa !important; /* has to be solid or forward buttons left side will be partly visible */
 }

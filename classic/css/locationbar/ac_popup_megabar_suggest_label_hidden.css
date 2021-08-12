@@ -1,8 +1,0 @@
-/* Firefox userChrome.css tweaks ********************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx ************************************/
-/****************************************************************************************/
-
-
-.urlbarView-row[label] {
-  display: none !important;
-}

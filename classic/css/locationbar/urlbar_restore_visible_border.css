@@ -9,14 +9,3 @@
 #searchbar:not(:focus-within) {
   border: 1px solid var(--chrome-content-separator-color) !important;
 }
-
-#urlbar[focused="true"][suppress-focus-border] > #urlbar-input-container {
-  border-top: 1px solid var(--chrome-content-separator-color) !important;
-  border-left: 1px solid var(--chrome-content-separator-color) !important;
-  border-right: 1px solid var(--chrome-content-separator-color) !important;
-}
-
-#urlbar[focused="true"][suppress-focus-border][open="true"] > #urlbar-input-container {
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-}
