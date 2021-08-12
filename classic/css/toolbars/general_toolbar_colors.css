@@ -15,7 +15,7 @@
   background: var(--general_toolbar_color_navbar, inherit) !important;
 }
 
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+#main-window toolbar:not(:-moz-lwtheme):not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
   appearance: none !important;
   background: var(--general_toolbar_color_toolbars, inherit) !important;
 }

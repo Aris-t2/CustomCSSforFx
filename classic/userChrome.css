@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.1 ********************************************************************************/
+/* version 4.0.2pre2 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -637,6 +637,7 @@
 /* result menuitem settings/appearance **********************************************************/
 @import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_suggest_label_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_search_engines_hidden.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
 /* @import "./css/locationbar/ac_popup_megabar_result_separator.css"; /**/
