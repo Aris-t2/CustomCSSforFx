@@ -47,8 +47,8 @@
 }
 
 .tab-close-button {
-  width: unset !important;
-  height: unset !important;
+  width: 16px !important;
+  height: 16px !important;
   padding: unset !important;
   border-radius: unset !important;
 }
