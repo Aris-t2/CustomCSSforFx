@@ -10,10 +10,10 @@
 #main-window:not([uidensity=compact]) #back-button {
   -moz-image-region: rect(0px, 36px, 18px, 18px) !important;
 }
-
+/*
 #main-window:not([uidensity=compact]) #back-button .toolbarbutton-icon {
   padding: 8px !important;
-}
+}*/
 
 #forward-button	{
   -moz-image-region: rect(0px, 72px, 18px, 54px) !important;

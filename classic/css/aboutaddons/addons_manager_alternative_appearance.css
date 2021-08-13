@@ -330,7 +330,7 @@
 	}
 
 	/* reduce opacity for disabled add-ons */
-	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]), /* workaround for Fx 68-69*/
+	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
 	addon-card:not([expanded]) > .addon.card[active="false"],
 	addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
@@ -339,7 +339,7 @@
 	  transition: unset !important;
 	}
 	
-	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] { /* workaround for Fx 70+*/
+	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] {
 	  color: inherit !important;
 	  opacity: 1.0 !important;
 	  transition: unset !important;
@@ -452,5 +452,11 @@
 	  width: 16px !important;
 	  height: 16px !important;
 	}
+	
+	
+	addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+	  color: dimgray !important;
+	}
+
 
 }

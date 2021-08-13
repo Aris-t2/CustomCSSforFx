@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
+@import "./addonlists_show_buttons_instead_of_menu_popup.css";
+
 @-moz-document url-prefix(about:addons),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {

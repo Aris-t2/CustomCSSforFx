@@ -45,8 +45,8 @@
 /* button settings (requires aboves 'addons page appearance' settings) **************************/
 /* - buttons instead of menupopup - [only use one at a time] ************************************/
 /* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup.css"; /**/
-/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view.css"; /**/
-/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view.css"; /**/ /* for addonlists_compact.css */
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view.css"; /* for addonlists_compact_more_compact.css */
 
 /* - buttons icons instead of labels  ***********************************************************/
 /* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons.css"; /**/
