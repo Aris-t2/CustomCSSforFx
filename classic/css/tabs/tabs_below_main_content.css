@@ -13,29 +13,9 @@
   padding-bottom: 1px !important;
 }
 
-#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-  margin-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
-}
-
-@media (-moz-os-version: windows-win7) {
-  @media all and (-moz-windows-compositor) {
-	#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-	  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
-	}
-  }
-}
-
 #main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
   position: fixed !important;
   display: block !important;
-}
-
-/* lw-theme */
-#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
-  background-repeat: no-repeat !important;
-  background-position: bottom left !important;
-  background-color: var#main-window[tabsintitlebar]:not([inDOMFullscreen="true"])#main-window[tabsintitlebar]:not([inDOMFullscreen="true"])(--toolbar-bgcolor) !important;
-  background-image: var(--lwt-header-image) !important;
 }
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
@@ -44,20 +24,18 @@
 }
 
 #main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-  margin-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
+  margin-bottom: calc(3px + var(--tab-min-height_tnot)) !important;
 }
 
-@media (-moz-os-version: windows-win7) {
-  @media all and (-moz-windows-compositor) {
-	#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-	  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
-	}
-  }
+#TabsToolbar {
+  min-height: 0 !important;
+  height: calc(2px + var(--tab-min-height_tnot)) !important;
+  max-height: unset !important;
+  border-top: 1px solid ThreeDShadow !important;
 }
 
-
-/* lw-theme */
-#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox > #TabsToolbar:-moz-lwtheme {
+/* lw-theme support */
+#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;
@@ -65,24 +43,13 @@
 }
 
 
-#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-  margin-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
-}
-
-#TabsToolbar {
-  min-height: 0 !important;
-  height: var(--tab-min-height_tnot) !important;
-  max-height: unset !important;
-  border-top: 1px solid ThreeDShadow !important;
-}
-
+/* ##### Caption buttons tweaks: min/max/restore/close ##### */
 
 /* caption button position in maximized mode after moving to the top */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
   top: 0px !important;
 }
-
 
 /* Windows */
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {

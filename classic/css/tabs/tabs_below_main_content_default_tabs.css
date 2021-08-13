@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_main_content.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+
+#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
+  margin-bottom: calc(8px + var(--tab-min-height)) !important;
+}
+
+#TabsToolbar {
+  height: calc(7px + var(--tab-min-height)) !important;
+}
