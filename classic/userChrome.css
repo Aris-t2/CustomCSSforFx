@@ -334,9 +334,12 @@
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
-/* - Windows/Linux ***********************************************************************/
+/* - Windows/Linux - ****************************************************************************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/
 /* @import "./css/tabs/tabs_below_main_content_default_tabs.css"; /**/
+/* - macOS - ************************************************************************************/
+/* @import "./css/tabs/tabs_below_main_content_macOS.css"; /**/
+/* @import "./css/tabs/tabs_below_main_content_macOS_default_tabs.css"; /**/
 
 /* - MOVE NAVIGATION TOOLBAR TO HIGHER POSITON (for tabs not on top) - [only use one at a time] */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/			/* <--- EXPERIMENTAL */

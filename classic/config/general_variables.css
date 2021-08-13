@@ -7,7 +7,7 @@
 :root {
 
   /* custom height for default tabs [disabled by default] */
-  /* --tab-min-height: 24px !important; /**/
+  /*--tab-min-height: 24px !important; /**/
 	
   /* custom height for 'classic squared tabs' only */
   --classic_squared_tabs_tab_height: 26px !important;

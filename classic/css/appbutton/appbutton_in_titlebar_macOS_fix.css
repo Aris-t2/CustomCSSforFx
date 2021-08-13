@@ -13,6 +13,6 @@
   padding-inline-end: 100px !important;
 }
 
-#main-window[tabsintitlebar] #TabsToolbar #tabbrowser-tabs {
-  padding-inline-start: 20px !important;
+#main-window[tabsintitlebar] .titlebar-buttonbox-container {
+  padding-inline-end: 20px !important;
 }

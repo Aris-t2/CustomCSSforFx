@@ -10,9 +10,13 @@
 
 
 #main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
-  margin-bottom: calc(8px + var(--tab-min-height)) !important;
+  margin-bottom: calc(4px + var(--tab-min-height)) !important;
 }
 
-#TabsToolbar {
-  height: calc(7px + var(--tab-min-height)) !important;
+#main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
+  height: calc(3px + var(--tab-min-height)) !important;
+}
+
+#main-window:not([inDOMFullscreen="true"]) #TabsToolbar-customization-target {
+  margin-top: -3px !important;
 }
