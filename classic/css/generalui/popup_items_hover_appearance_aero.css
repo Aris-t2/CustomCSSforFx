@@ -3,16 +3,19 @@
 /****************************************************************************************/
 
 
-/* override color set by context_bfrsb_labels_with_icons.css */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-  #context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):hover {
-	background-color: unset !important;
-  }
-}
-
-:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):hover {
+panelview .toolbarbutton-1:not(:is([disabled],[open],:active)):is(:hover,:focus),
+toolbarbutton.subviewbutton:not(:is([disabled],[open],:active)):is(:hover,:focus),
+menu.subviewbutton:not(:is([disabled],:active))[_moz-menuactive],
+menuitem.subviewbutton:not(:is([disabled],:active))[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:not(:is([disabled],[open],:active)):is(:hover,:focus),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not(:is([disabled],[open],:active)):is(:hover,:focus),
+panelview .toolbarbutton-1:not([disabled]):is([open],:hover:active),
+toolbarbutton.subviewbutton:not([disabled]):is([open],:hover:active),
+menu.subviewbutton:not([disabled])[_moz-menuactive]:active,
+menuitem.subviewbutton:not([disabled])[_moz-menuactive]:active,
+.widget-overflow-list .toolbarbutton-1:not([disabled]):is([open],:hover:active),
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem=true]) > toolbarbutton:not([disabled]):is([open],:hover:active) {
   color: inherit !important;
-  background: transparent !important;
   background-color: transparent !important;
   background-image:
 	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
