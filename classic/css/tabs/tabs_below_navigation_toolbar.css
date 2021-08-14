@@ -15,6 +15,7 @@
   width: 100vw;
   background-clip: padding-box;
   color: var(--toolbar-color);
+  z-index: 2;
 }
 
 #TabsToolbar:not(:-moz-lwtheme){
