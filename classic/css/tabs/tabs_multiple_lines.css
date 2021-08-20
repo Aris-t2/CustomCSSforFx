@@ -79,3 +79,7 @@
 .tabbrowser-tab::after{ 
   display: none !important;
 }
+
+.tab-background {
+  margin-block: unset !important;
+}

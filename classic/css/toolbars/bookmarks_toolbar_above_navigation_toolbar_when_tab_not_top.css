@@ -5,12 +5,12 @@
 
 #navigator-toolbox #nav-bar {
   -moz-box-ordinal-group: 3 !important;
-  border-top: unset !iportant;
+  border-top: unset !important;
   box-shadow: unset !important;
 }
 
 #navigator-toolbox #PersonalToolbar {
   -moz-box-ordinal-group: 2 !important;
-  border-bottom: unset !iportant;
+  border-bottom: unset !important;
   box-shadow: unset !important;
 }

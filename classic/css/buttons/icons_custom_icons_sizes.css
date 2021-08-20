@@ -140,17 +140,15 @@
   display: none !important;
 }
 
-/* fix icon glitch */
-#downloads-button:not(:is([attention],[progress])) #downloads-indicator-icon {
-  background-image: unset !important;
-}
-
-
 /* fix nav-bars overflow menu icon size */
 #main-window #widget-overflow-fixed-list toolbarbutton .toolbarbutton-icon {
   width: 18px !important;
 }
 
+/* download button tweaks */
+#downloads-button:not(:is([attention],[progress])) #downloads-indicator-icon {
+  background-image: unset !important;
+}
 
 #downloads-indicator-anchor,
 #downloads-button {
@@ -170,6 +168,27 @@
   display: none !important;
 }
 
+#downloads-button:is([progress],[counter],[paused],[attention])::after { 
+  content: "" !important; 
+  display: block !important; 
+  width: 11px !important; 
+  height: 11px !important; 
+  position: absolute !important; 
+  margin-inline-start: 16px !important; 
+  margin-top: -14px !important;
+  border-radius: 100px !important; 
+}
+
+#downloads-button:is([counter],[paused],[attention])::after { 
+  background: Highlight !important;
+}
+
+#downloads-button[progress]::after { 
+  background: radial-gradient(Highlight,HighlightText) !important; 
+}
+
+
+/* icons adjustment */
 #main-window[uidensity=compact] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,

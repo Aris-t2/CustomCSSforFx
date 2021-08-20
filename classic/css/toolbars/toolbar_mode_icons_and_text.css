@@ -124,12 +124,14 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :is
   box-shadow: unset !important;
 }
 
+toolbar:not(#TabsToolbar) #OtherBookmarks,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   appearance: toolbarbutton !important;
 }
 
+toolbar:not(#TabsToolbar) #OtherBookmarks .toolbarbutton-text,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
@@ -137,6 +139,12 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .to
   padding: 0 2px !important;
 }
 
+toolbar:not(#TabsToolbar) #PlacesChevron .toolbarbutton-text {
+  display: none !important;
+  padding: 0 !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
@@ -150,13 +158,14 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   min-width: 57px !important;
 }
 
+toolbar:not(#TabsToolbar) #OtherBookmarks,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   padding-top: 4px !important;
 }
 
-toolbar:not(#TabsToolbar)  #bookmarks-menu-button::after {
+toolbar:not(#TabsToolbar) #bookmarks-menu-button::after {
   visibility: collapse !important;
 }
 

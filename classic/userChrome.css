@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.2 ********************************************************************************/
+/* version 4.0.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -149,6 +149,7 @@
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_classic_appearance_v2.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_classic_appearance_dark.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_windows_classic_theme_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_glass_appearance.css";			/* <--- good for Dark themes */
 /* @import "./css/buttons/buttons_on_navbar_osx_appearance.css"; /**/
@@ -167,6 +168,7 @@
 /* @import "./css/buttons/buttons_on_navbar_huge_48px_size.css"; /**/			/* <--- EXPERIMENTAL */
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode *****/
+/* [!] 'compact mode' got hidden behind the about:config switch browser.compactmode.show ********/
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
 
 /* bookmarks toolbar - buttons appearance - [only use one at a time] ****************************/

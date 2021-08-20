@@ -11,6 +11,10 @@ panelview .toolbarbutton-1,
   min-height: 0 !important;
   padding: 2px !important;
 }
+
+.widget-overflow-list .toolbarbutton-1 {
+  padding: 4px 2px !important;
+}
 	
 menupopup > menuitem,
 menupopup > menu {

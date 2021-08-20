@@ -344,7 +344,26 @@
 	  opacity: 1.0 !important;
 	  transition: unset !important;
 	}
-
+	
+	addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+	  color: dimgray !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark) {
+		section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
+		addon-card:not([expanded]) > .addon.card[active="false"],
+		addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
+		addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
+		addon-card:not([expanded]) > .addon.card[active="false"]:hover {
+		  color: lightgrey !important;
+		}
+		
+		addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+		  color: lightgrey !important;
+		}
+	
+	}
+	
 	/* remove advertising other add-ons */
 	recommended-themes-section,
 	recommended-extensions-section {
@@ -452,11 +471,5 @@
 	  width: 16px !important;
 	  height: 16px !important;
 	}
-	
-	
-	addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
-	  color: dimgray !important;
-	}
-
 
 }
