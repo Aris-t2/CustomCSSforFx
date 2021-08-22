@@ -3,7 +3,7 @@
 /************************************************************************************************/
 
 
-/* 'Real compact' Proton UI for userChrome.css
+/* 'Real compact' Proton UI for Firefox 91+
 
 ### HOWTO ###
 
@@ -16,68 +16,55 @@
    toolkit.legacyUserProfileCustomizations.stylesheets > true   ||  enables custom style sheets
    browser.compactmode.show > true   ||  shows 'Compact mode' in customizing mode 
    browser.uidensity > 1   ||  enables compact mode
-   browser.proton.enabled > true   ||  enables proton mode
-   browser.proton.contextmenus.enabled   ||  enables proton context menus
-   browser.proton.doorhangers.enabled > true
-   browser.proton.infobars.enabled > true
-   browser.proton.modals.enabled > true
-   browser.proton.places-tooltip.enabled > true
 
 3. Restart browser
 
 */
 
-
-@supports -moz-bool-pref("browser.proton.enabled") {
-	
-	/* Compact toolbar and main toolbarbuttons *******************************************************/
-	#main-window[uidensity="compact"] #nav-bar-customization-target > toolbarpaletteitem > :is(toolbarbutton, toolbaritem),
-	#main-window[uidensity="compact"] #nav-bar-customization-target > * {
-	  padding: 0 !important;
-	  padding-top: 1px !important;
-	  margin: 0 !important;
-	}
-
-	#main-window[uidensity="compact"] #urlbar-search-splitter {
-	  min-width: 1px !important;
-	}
-	#main-window[uidensity="compact"] #PanelUI-menu-button {
-	  padding-inline-end: 0 !important;
-	}
-	#main-window[uidensity="compact"] {
-	  --toolbarbutton-outer-padding: 1px !important;
-	  --toolbarbutton-inner-padding: 3px !important;
-	  --bookmark-block-padding: 1px !important;
-	}
-
-	/* Compact tabs ***********************************************************************************/
-	#main-window[uidensity="compact"]  {
-	  --tab-min-height: 22px !important;
-	}
-
-	#main-window[uidensity="compact"] .tab-close-button {
-	  width: 24px !important;
-	  height: 20px !important;
-	  padding: 3px 5px !important;
-	}
-
-	/* Compact application/menu button ****************************************************************/
-	#main-window[uidensity="compact"] .subview-subheader,
-	#main-window[uidensity="compact"] panelview .toolbarbutton-1,
-	#main-window[uidensity="compact"] .subviewbutton,
-	#main-window[uidensity="compact"] .widget-overflow-list .toolbarbutton-1 {
-	  margin: 0 !important;
-	  min-height: 0 !important;
-	  padding: 0 2px !important;
-	}
+/* Compact toolbar and main toolbarbuttons *******************************************************/
+#main-window[uidensity="compact"] #nav-bar-customization-target > toolbarpaletteitem > :is(toolbarbutton, toolbaritem),
+#main-window[uidensity="compact"] #nav-bar-customization-target > * {
+  padding: 0 !important;
+  padding-top: 1px !important;
+  margin: 0 !important;
 }
 
-@supports -moz-bool-pref("browser.proton.contextmenus.enabled") {
-  menupopup > menuitem,
-  menupopup > menu {
-    padding-block: 0 !important;
-    padding-inline-start: 2px !important;
-  }
+#main-window[uidensity="compact"] #urlbar-search-splitter {
+  min-width: 1px !important;
+}
+#main-window[uidensity="compact"] #PanelUI-menu-button {
+  padding-inline-end: 0 !important;
+}
+#main-window[uidensity="compact"] {
+  --toolbarbutton-outer-padding: 1px !important;
+  --toolbarbutton-inner-padding: 3px !important;
+  --bookmark-block-padding: 1px !important;
+}
+
+/* Compact tabs ***********************************************************************************/
+#main-window[uidensity="compact"]  {
+  --tab-min-height: 22px !important;
+}
+#main-window[uidensity="compact"] .tab-close-button {
+  width: 24px !important;
+  height: 20px !important;
+  padding: 3px 5px !important;
+}
+
+/* Compact application/menu button ****************************************************************/
+#main-window[uidensity="compact"] .subview-subheader,
+#main-window[uidensity="compact"] panelview .toolbarbutton-1,
+#main-window[uidensity="compact"] .subviewbutton,
+#main-window[uidensity="compact"] .widget-overflow-list .toolbarbutton-1 {
+  margin: 0 !important;
+  min-height: 0 !important;
+  padding: 0 2px !important;
+}
+
+menupopup > menuitem,
+menupopup > menu {
+  padding-block: 0 !important;
+  padding-inline-start: 2px !important;
 }
 
 
@@ -89,7 +76,6 @@
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-  /*box-shadow: unset !important;*/ /* box-shadow should stay, if browser.proton.urlbar.enabled is true */
   animation-name: unset !important;
 }
 
@@ -214,3 +200,7 @@
   padding-inline-start: unset !important;
 }
 
+/* always show 'close tab icon' */
+.tabbrowser-tab:not([pinned="true"]) > .tab-stack > .tab-content > .tab-close-button:not([selected="true"]) {
+  display: initial !important;
+}
