@@ -5,15 +5,15 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.3 ********************************************************************************/
+/* version 4.0.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
 
- Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
+  Change-log: https://github.com/Aris-t2/CustomCSSforFx/commits/
 
- [!] Firefox requires this preference to be enabled or custom styles will not be loaded:
-	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+  [!] Firefox requires this preference to be enabled or custom styles will not be loaded:
+	'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
 
 *************************************************************************************************/
 
@@ -149,7 +149,8 @@
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_classic_appearance_v2.css"; /**/
-/* @import "./css/buttons/buttons_on_navbar_classic_appearance_dark.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_classic_appearance_dark.css"; /**/		/* <--- good for Dark themes */
+/* @import "./css/buttons/buttons_on_navbar_classic_appearance_aero.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_windows_classic_theme_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_glass_appearance.css";			/* <--- good for Dark themes */
 /* @import "./css/buttons/buttons_on_navbar_osx_appearance.css"; /**/
@@ -224,7 +225,7 @@
 
 
 /************************************************************************************************/
-/* APPLICATION/HAMBURGER BUTTON *****************************************************************/
+/* APPLICATION / HAMBURGER / MAIN MENU BUTTON ***************************************************/
 /************************************************************************************************/
 
 /* application/hamburger button hidden - disable all other appbutton options when using this ****/
@@ -237,8 +238,11 @@
 /* @import "./css/appbutton/appbutton_popup_logins_and_passwords_hidden.css"; /**/
 
 /************************************************************************************************/
-/* button on navigation toolbar *****************************************************************/
+/* Application / hamburger / main menu button on navigation toolbar *****************************/
 /************************************************************************************************/
+
+/* [!] disable all 'button in Firefox titlebar' options for
+       'button on navigation toolbar' options to work properly **********************************/
 
 /* @import "./css/appbutton/appbutton_on_navbar_start_position.css"; /**/
 
@@ -263,8 +267,11 @@
 
 
 /************************************************************************************************/
-/* button in Firefox titlebar *******************************************************************/
+/* Application / hamburger / main menu button in Firefox titlebar *******************************/
 /************************************************************************************************/
+
+/* [!] disable all 'button on navigation toolbar' options for
+       'button in Firefox titlebar' options to work properly ************************************/
 
 /* button in titlebar - [only use one at a time] ************************************************/
 @import "./css/appbutton/appbutton_in_titlebar.css"; /**/ /* <-- label only */
