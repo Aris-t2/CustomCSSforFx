@@ -15,7 +15,7 @@ Thanks for your understanding.
 SUPPORT AREA only for features THIS project provides
 1. This is not a 'request' area for new stuff or legacy add-on features. Do not open a new issue about something this project does not offer. Instead join the 'General discussions, feedback, questions belong here' thread to chat and ask questions about what is or could be possible there.
 2. Use available support threads:
-- GENERAL TALK, FEEDBACK & QUESTIONS: --> https://github.com/Aris-t2/CustomCSSforFx/issues/368
+- GENERAL TALK, FEEDBACK & QUESTIONS: --> https://github.com/Aris-t2/CustomCSSforFx/issues/404
 - TABS BELOW CONTENT SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/33
 - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/39
 - ADD-ON BAR SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/issues/73
@@ -28,24 +28,25 @@ SUPPORT AREA only for features THIS project provides
 Add all information required in 1-5 and delete this line and everything above it before submitting.
 
 
-1. Describe the issue
+1. Issue description:
 
 
-2. What should have happened instead?
+2. Steps to reproduce the issue:
 
 
-3. Steps to reproduce the issue?
+3. SCREENSHOT(S) of the issue (drag & drop images into this post):
 
 
-4. SCREENSHOTS with/without this projects files (drag & drop images into this post)
+4. about:config prefs (custom CSS files won't work, if these prefs are set to false)
+- toolkit.legacyUserProfileCustomizations.stylesheets > true (yes / no):
+- browser.proton.enabled > true (yes / no):
+- does the issue occure with latest CustomCSSforFx release (yes / no):
 
 
 5. System information
-- latest CustomCSSforFx files (yes / no [support only for latest files]):
 - OS & OS version: 
 - OS theme (if not default): 
-- DPI / HiDPI resolution: 
+- DPI / HiDPI resolution (e.g. 100%, 125%...): 
 - Firefox version: 
-- Firefox theme / lw-theme: 
-- Proton enabled (yes / no): 
-- This projects 'settings' the issue occurs with: 
+- Firefox (lw) theme (e.g. default, dark, 'theme name/link'): 
+- This projects userChrome.css/userContent.css 'settings' the issue occurs with: 
