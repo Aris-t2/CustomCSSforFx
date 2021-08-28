@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.4 ********************************************************************************/
+/* version 4.0.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -142,15 +142,18 @@
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
 
+/* 'icons_custom_icons*.css' options: hide 'downloads buttons badge' ****************************/
+/* @import "./css/buttons/icons_custom_icons_hide_downloads_badge.css"; /**/
 
-/* PROTON: 'classic' pre-Proton button padding **************************************************/
+
+/* 'classic' pre-Proton button padding **********************************************************/
 /* @import "./css/buttons/classic_button_padding.css"; /**/
 
 /* navigation toolbar buttons appearance - [only use one at a time] *****************************/
 @import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_classic_appearance_v2.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_classic_appearance_dark.css"; /**/		/* <--- good for Dark themes */
-/* @import "./css/buttons/buttons_on_navbar_classic_appearance_aero.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_aero_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_windows_classic_theme_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_navbar_glass_appearance.css";			/* <--- good for Dark themes */
 /* @import "./css/buttons/buttons_on_navbar_osx_appearance.css"; /**/
@@ -173,10 +176,13 @@
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
 
 /* bookmarks toolbar - buttons appearance - [only use one at a time] ****************************/
-/* old bookmarks toolbar button appearance ******************************************************/
-@import "./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css"; /**/  /* Windows only */
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css"; /**/  /* Windows only */
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_aero_appearance.css"; /**/
+
+/* bookmarks toolbar - bookmark items appearance - [only use one at a time] *********************/
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_items.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_aero_appearance_items.css"; /**/
 
 /* menubar - toolbar button appearance **********************************************************/
 /* @import "./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css"; /**/
@@ -311,9 +317,6 @@
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
-/* remove border roundness **********************************************************************/
-/* @import "./css/tabs/tabs_fully_squared.css"; /**/
-
 
 /************************************************************************************************/
 /* TABS TOOLBAR POSITION (below titlebar / below navigation toolbar / below main content) *******/
@@ -325,10 +328,9 @@
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP *****************************/
-/* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
 /* [!] Note: only 'alt' works with multi-tab lines option. **************************************/
+/* [!] Note: might require overriding url bars 'selection color' --> see corresponding area *****/
 /* - Windows/Linux ******************************************************************************/
-/* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_default_tabs.css"; /**/
 /* - macOS **************************************************************************************/
@@ -363,12 +365,9 @@
 /* edit target file to set own custom colors ****************************************************/
 /* @import "./config/custom_tab_text_settings.css"; /**/
 
-/* MULTIROW / multi lined tabs - [only use one at a time] ***************************************/
-/* [!] EXPERIMENTAL (any Fx update might break this highly experimental feature) ****************/
+/* MULTIROW / multi lined tabs - [only use one at a time] - EXPERIMENTAL ************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/39 **********************/
 /* [!] BUG: dragging tabs does not work with multi lined tabs ***********************************/
-/* [!] Original authors: --> https://00.bulog.jp/archives/1476 **********************************/
-/* [!] --> https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /* [!] not compatible with 'tabs toolbar - below main content' option ***************************/
 /* [!] only compatible with 'tabs below navigation toolbar alt version' *************************/
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/
@@ -410,8 +409,11 @@
 /* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs.css"; /**/
 /* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode.css"; /**/
 
+
 /* other tab settings ***************************************************************************/
 @import "./css/tabs/tab_icon_colors.css"; /**/
+/* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
+/* @import "./css/tabs/tabs_fully_squared.css"; /**/
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
 /* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/

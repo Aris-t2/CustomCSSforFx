@@ -3,16 +3,6 @@
 /****************************************************************************************/
 
 
-#PanelUI-button,
-#PanelUI-menu-button {
-  min-width: 0.1px !important;
-  width: 0.1px !important;
-  max-width: 0.1px !important;
-  opacity: 0 !important;
+#downloads-button:is([progress],[counter],[paused],[attention])::after { 
+  display: none !important;
 }
-
-/*
-#PanelUI-button {
-  visibility: collapse !important;
-}
-*/

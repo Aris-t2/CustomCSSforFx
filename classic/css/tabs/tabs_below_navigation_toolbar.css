@@ -23,6 +23,10 @@
   background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 }
 
+#main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme){
+  appearance: none !important;
+}
+
 #tabbrowser-tabs {
   width: 100vw;
 }
@@ -32,8 +36,9 @@
   padding-bottom: calc( var(--tab-min-height_tnot) + 1px );
 }
 
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #titlebar,
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
-  height: 36px;
+  height: 26px;
 }
 
 /* move caption buttons to windows top right position */

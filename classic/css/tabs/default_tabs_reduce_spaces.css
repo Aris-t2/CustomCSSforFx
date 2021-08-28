@@ -3,16 +3,10 @@
 /****************************************************************************************/
 
 
-#PanelUI-button,
-#PanelUI-menu-button {
-  min-width: 0.1px !important;
-  width: 0.1px !important;
-  max-width: 0.1px !important;
-  opacity: 0 !important;
+.tabbrowser-tab {
+  padding-inline: 1px !important;
 }
 
-/*
-#PanelUI-button {
-  visibility: collapse !important;
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
 }
-*/

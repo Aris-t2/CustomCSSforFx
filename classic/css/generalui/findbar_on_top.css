@@ -83,3 +83,7 @@
 #main-window:-moz-lwtheme-brighttext :is(.browserContainer, #viewSource) :is(.findbar-find-status,.found-matches) {
   color: white !important;
 }
+
+.browserContainer > findbar > #findbar-close-container {
+  background-color: unset !important;
+}
