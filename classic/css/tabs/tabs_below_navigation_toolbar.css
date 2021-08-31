@@ -6,6 +6,7 @@
 :root {
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
   --tab-min-height_tnot: 32px;
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height_tnot) + 1px );
 }
 
 #TabsToolbar {
@@ -33,7 +34,7 @@
 
 #navigator-toolbox {
   position: relative;
-  padding-bottom: calc( var(--tab-min-height_tnot) + 1px );
+  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding);
 }
 
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #titlebar,

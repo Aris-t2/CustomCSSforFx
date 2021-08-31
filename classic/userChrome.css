@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.5 ********************************************************************************/
+/* version 4.0.6pre1 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -314,6 +314,7 @@
 @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 /* @import "./css/tabs/default_tabs_enhanced.css"; /**/
+/* @import "./css/tabs/default_tabs_photon.css"; /**/ /* <--- TEST / EXPERIMENTAL */
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
@@ -324,7 +325,7 @@
 
 /* [only use one at a time] - BELOW TITLEBAR or BELOW NAVIGATION BAR or BELOW MAIN CONTENT ******/
 
-/* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
+/* - TABS BELOW TITLEBAR (Fx56-like tabs position) **********************************************/
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP *****************************/
@@ -332,7 +333,6 @@
 /* [!] Note: might require overriding url bars 'selection color' --> see corresponding area *****/
 /* - Windows/Linux ******************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_default_tabs.css"; /**/
 /* - macOS **************************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_default_tabs.css"; /**/
@@ -347,7 +347,6 @@
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* - Windows/Linux - ****************************************************************************/
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/
-/* @import "./css/tabs/tabs_below_main_content_default_tabs.css"; /**/
 /* - macOS - ************************************************************************************/
 /* @import "./css/tabs/tabs_below_main_content_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_main_content_macOS_default_tabs.css"; /**/

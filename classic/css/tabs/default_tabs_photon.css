@@ -1,0 +1,65 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+:root {
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 0px ) !important;
+  
+  --tab_below_main_content_bottom_margin: calc(1px + var(--tab-min-height)) !important;
+  --tab_below_main_content_toolbar_height: calc(0px + var(--tab-min-height)) !important;
+  --tab_below_main_content_top_margin: 0px !important;
+}
+
+.tab-background {
+  border-radius: 0px !important;
+  margin-block: unset !important;
+}
+
+.tab-background[multiselected=true],
+.tab-background[selected=true] {
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--toolbar-bgimage) !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab {
+  padding-inline: 1px !important;
+  border-radius: 0px !important;
+}
+
+#tabs-newtab-button {
+  padding-inline: 1px !important;
+  border-radius: 0px !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  border-radius: 0px !important;
+}
+
+.tabbrowser-tab .tab-context-line {
+  height: 2px !important;
+  border-radius: 0px !important;
+}
+
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: highlight !important;
+}
+
+#scrollbutton-up,
+#scrollbutton-down {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* restore border between navigation toolbar and tabs toolbar */
+#nav-bar:not(:-moz-lwtheme) {
+  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--chrome-content-separator-color) !important;
+}
+
+#nav-bar:-moz-lwtheme {
+  box-shadow: unset !important;
+}

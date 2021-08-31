@@ -103,8 +103,8 @@
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[tabsintitlebar]:is([sizemode="normal"],[sizemode="maximized"],[sizemode="fullscreen"]) #navigator-toolbox #TabsToolbar {
- padding-inline-start: 0px !important;
- margin-inline-start: 0px !important;
+  padding-inline-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 #main-window[tabsintitlebar] #TabsToolbar {

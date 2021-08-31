@@ -32,6 +32,10 @@
   --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
   --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
   --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  
+  --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height_tnot)) !important;
+  --tab_below_main_content_toolbar_height: calc(2px + var(--tab-min-height_tnot)) !important;
+  --tab_below_main_content_top_margin: 0 !important;
 }
 
 /* remove default tab colors */
