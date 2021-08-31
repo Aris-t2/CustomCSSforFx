@@ -6,7 +6,7 @@
 :root {
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
   --tab-min-height_tnot: 32px;
-  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height_tnot) + 1px );
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height_tnot) + 5px );
 }
 
 #TabsToolbar {
@@ -96,3 +96,4 @@
 #nav-bar:not(:-moz-lwtheme) {
   box-shadow: unset !important;
 }
+
