@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.6pre2 ****************************************************************************/
+/* version 4.0.6pre3 ****************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -314,7 +314,7 @@
 @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 /* @import "./css/tabs/default_tabs_enhanced.css"; /**/
-/* @import "./css/tabs/default_tabs_photon.css"; /**/ /* <--- TEST / EXPERIMENTAL */
+/* @import "./css/tabs/default_tabs_photon.css"; /**/ /* Fx 57-88 squared tabs */
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
 
@@ -342,7 +342,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_alt_force_hidden_menubar.css"; /**/ /* no menubar when OS titlebar is active */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_alt_macOS.css"; /**/
 
-/* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
+/* - TABS BELOW MAIN CONTENT (TABS ON BOTTOM) - *************************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
 /* - Windows/Linux - ****************************************************************************/

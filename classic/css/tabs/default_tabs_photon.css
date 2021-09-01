@@ -4,14 +4,17 @@
 
 
 :root {
+  /* variable for tabs below navigation toolbar option */
   --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 1px ) !important;
   
-  --tab_below_main_content_bottom_margin: calc(1px + var(--tab-min-height)) !important;
-  --tab_below_main_content_toolbar_height: calc(0px + var(--tab-min-height)) !important;
+  /* variable for tabs below main content option */
+  --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height)) !important;
+  --tab_below_main_content_toolbar_height: calc(2px + var(--tab-min-height)) !important;
   --tab_below_main_content_top_margin: 0px !important;
 
 }
 
+/* make tabs look like tabs again */
 .tab-background {
   border-radius: 0px !important;
   margin-block: 0px !important;
@@ -23,6 +26,7 @@
   background-image: var(--toolbar-bgimage) !important;
 }
 
+/* remove left and right tab spaces */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0px !important;
 }
@@ -32,6 +36,7 @@
   border-radius: 0px !important;
 }
 
+/* adjust 'new tab' tab */
 #tabs-newtab-button {
   padding-inline: 1px !important;
   border-radius: 0px !important;
@@ -41,6 +46,14 @@
   border-radius: 0px !important;
 }
 
+/* reduce scrollbuttons size */
+#scrollbutton-up,
+#scrollbutton-down {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/*tab line for active tab */
 .tabbrowser-tab .tab-context-line {
   height: 2px !important;
   border-radius: 0px !important;
@@ -54,13 +67,7 @@
   background-color: var(--tab-line-color,Highlight) !important;
 }
 
-#scrollbutton-up,
-#scrollbutton-down {
-  padding: 0 !important;
-  border-radius: 0 !important;
-}
-
-/* restore border between navigation toolbar and tabs toolbar */
+/* border between navigation toolbar and tabs toolbar */
 #nav-bar:not(:-moz-lwtheme) {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--chrome-content-separator-color) !important;
 }
@@ -69,16 +76,14 @@
   box-shadow: unset !important;
 }
 
-
-/* Tab separators: code from default browser.css from Fx 88 */
-
+/* Tab separators: modified Fx88s browser.css code */
 .titlebar-spacer[type="pre-tabs"] {
   border-inline-end: 1px solid var(--lwt-background-tab-separator-color, currentColor);
   opacity: 0.2;
 }
 
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
+.tabbrowser-tab:not([selected],[visuallyselected],[beforeselected-visible])::after,
+.tabbrowser-tab:not([selected],[visuallyselected],[beforeselected-visible])::before {
   border-left: 1px solid var(--lwt-background-tab-separator-color, currentColor);
   margin-block: 5px 4px;
   opacity: 0.3;
@@ -110,4 +115,10 @@
 #tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[visuallyselected]::before {
   content: "";
   display: block;
+}
+
+/* remove active tabs left and right tab border color when using lw-themes */
+:root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
+:root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+  box-shadow: unset !important;
 }

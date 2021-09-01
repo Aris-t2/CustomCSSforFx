@@ -30,11 +30,12 @@
   
   --tab-min-height: var(--classic_squared_tabs_tab_height) !important;
   --mltabs-newtab-height: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
-  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
-  --space_below_content: calc( var(--classic_squared_tabs_tab_height) + 1px ) !important;
+  --tab-min-height_tnot: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important; /* for tabs_below_navigation_toolbar_alt.css */
   
-  --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height_tnot)) !important;
-  --tab_below_main_content_toolbar_height: calc(2px + var(--tab-min-height_tnot)) !important;
+  --tab_below_navigation_toolbar_bottom_padding: var(--classic_squared_tabs_tab_height) !important;
+  
+  --tab_below_main_content_bottom_margin: calc(2px + var(--classic_squared_tabs_tab_height)) !important;
+  --tab_below_main_content_toolbar_height: calc(1px + var(--classic_squared_tabs_tab_height)) !important;
   --tab_below_main_content_top_margin: 0 !important;
 }
 
@@ -459,4 +460,10 @@
 /* restore border between navigation toolbar and tabs toolbar */
 #nav-bar:not(:-moz-lwtheme) {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
+}
+
+/* remove active tabs left and right tab border color when using lw-themes */
+:root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
+:root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+  box-shadow: unset !important;
 }
