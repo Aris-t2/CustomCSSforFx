@@ -3,5 +3,9 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_navigation_toolbar_macOS_default_tabs.css";
-@import "./tabs_below_main_content_default_tabs.css";
+@import "./custom_backforward_large.css";
+
+/* custom large back-forward buttons */
+#main-window toolbox toolbar :is(#back-button, #forward-button) .toolbarbutton-icon {
+  list-style-image: url("./../../image/bf_noia.png") !important;
+}

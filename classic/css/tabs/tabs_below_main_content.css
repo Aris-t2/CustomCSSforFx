@@ -44,7 +44,6 @@
   margin-top: var(--tab_below_main_content_top_margin) !important;
 }
 
-
 /* lw-theme support */
 #main-window:not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;

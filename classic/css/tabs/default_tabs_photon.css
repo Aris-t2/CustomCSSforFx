@@ -5,7 +5,11 @@
 
 :root {
   /* variable for tabs below navigation toolbar option */
-  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 1px ) !important;
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 0.5px ) !important;
+  
+  /* variable for tabs below navigation toolbar option on macOS */
+  --tab_below_navigation_toolbar_bottom_padding_macOS: calc( var(--tab-min-height) + 1px ) !important;
+  --tab_below_navigation_toolbar_toolbox_top_padding_macOS: calc(-1px + var(--tab-min-height)) !important;
   
   /* variable for tabs below main content option */
   --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height)) !important;

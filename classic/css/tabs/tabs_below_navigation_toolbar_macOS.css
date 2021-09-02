@@ -5,7 +5,9 @@
 
 :root {
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
-  --tab-min-height_tnot: 32px;
+ 
+  --tab_below_navigation_toolbar_bottom_padding_macOS: calc( var(--tab-min-height) + 8px );
+  --tab_below_navigation_toolbar_toolbox_top_padding_macOS: calc(-1px + var(--tab-min-height));
 }
 
 #TabsToolbar {
@@ -28,12 +30,11 @@
 
 #navigator-toolbox {
   position: relative;
-  padding-bottom: calc( var(--tab-min-height_tnot) + 1px );
+  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding_macOS);
 }
 
-
 #main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  padding-top: calc(-1px + var(--tab-min-height_tnot));
+  padding-top: var(--tab_below_navigation_toolbar_toolbox_top_padding_macOS);
 }
 
 #main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
@@ -56,14 +57,11 @@
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
   top: 0;
 }
-#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
-  height: 36px;
-}
-
 
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
   height: 0px;
 }
+
 
 #TabsToolbar .titlebar-buttonbox-container,
 #TabsToolbar .private-browsing-indicator,
