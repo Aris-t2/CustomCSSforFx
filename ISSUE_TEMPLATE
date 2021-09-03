@@ -40,7 +40,7 @@ Add all information required in 1-5 and delete this line and everything above it
 4. about:config prefs (custom CSS files won't work, if these prefs are set to false)
 - toolkit.legacyUserProfileCustomizations.stylesheets > true (yes / no):
 - browser.proton.enabled > true (yes / no):
-- does the issue occure with latest CustomCSSforFx release (yes / no):
+- does the issue occur with latest CustomCSSforFx release (yes / no):
 
 
 5. System information
