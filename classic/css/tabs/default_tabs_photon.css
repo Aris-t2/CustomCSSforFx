@@ -71,6 +71,11 @@
   background-color: var(--tab-line-color,Highlight) !important;
 }
 
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  margin: unset !important;
+  background-color: var(--identity-icon-color) !important;
+}
+
 /* border between navigation toolbar and tabs toolbar */
 #nav-bar:not(:-moz-lwtheme) {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--chrome-content-separator-color) !important;

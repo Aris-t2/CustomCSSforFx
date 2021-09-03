@@ -3,6 +3,8 @@
 /****************************************************************************************/
 
 
+#PopupSearchAutoComplete :is(richlistitem,button):is(:hover,[selected]),   /* apply code to search popup too */
+.urlbarView button:is(:hover,:hover:active,[selected]),
 #urlbar-results .urlbarView-row[selected] .urlbarView-row-inner,
 #urlbar-results .urlbarView-row[aria-selected="true"] .urlbarView-row-inner, 
 #urlbar-results .urlbarView-row:hover .urlbarView-row-inner {
