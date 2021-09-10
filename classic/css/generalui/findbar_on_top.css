@@ -32,7 +32,6 @@
   border-radius: 0 0 3px 3px;
   transition-property: margin-top, opacity, visibility !important;
   background-image: unset !important;
-  z-index: 1000000 !important;
 }
 
 #main-window:-moz-lwtheme :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {

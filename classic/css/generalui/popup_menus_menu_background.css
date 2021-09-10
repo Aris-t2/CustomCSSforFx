@@ -4,13 +4,8 @@
 
 
 :root {
-  --arrowpanel-border-radius: 0 !important;
-  --panel-border-radius: 0 !important;
-}
-
-* menupopup,
-:is(menupopup, panel)[type=arrow] {
-  --arrowpanel-border-radius: 0 !important;
-  --panel-border-radius: 0 !important;
-  border-radius: 0 !important;
+  --panel-background: Menu !important; /* -moz-Dialog */
+  --arrowpanel-background: Menu !important;
+  --panel-color: MenuText !important; /* -moz-DialogText */
+  --arrowpanel-color: MenuText !important;
 }

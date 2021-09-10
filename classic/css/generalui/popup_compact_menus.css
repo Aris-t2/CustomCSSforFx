@@ -3,22 +3,32 @@
 /****************************************************************************************/
 
 
+:root{
+  --item_y_padding: 3px; /* old value: 2px */
+  --y_padding_before_label: 28px !important; /* for popup_menus_space_before_label.css */
+  --panel-padding: 0px !important;
+  --arrowpanel-menuitem-margin: 0px !important;
+  --arrowpanel-menuitem-padding: 0px !important;
+  --panel-subview-body-padding: 0px !important;
+}
+
 .subview-subheader,
 panelview .toolbarbutton-1,
-.subviewbutton,
+.subviewbutton:not(#appMenu-fxa-status2),
 .widget-overflow-list .toolbarbutton-1 {
   margin: 0 !important;
   min-height: 0 !important;
-  padding: 2px !important;
+  padding: calc( var(--item_y_padding) + 1px) 2px !important;
 }
 
 .widget-overflow-list .toolbarbutton-1 {
-  padding: 4px 2px !important;
+  padding: var(--item_y_padding) 2px !important;
 }
 	
 menupopup > menuitem,
 menupopup > menu {
-  padding-block: 2px !important;
+  padding-block: 0 !important;
+  padding: var(--item_y_padding) 0 !important;
   padding-inline-start: 4px !important;
 }
 
@@ -33,7 +43,7 @@ menupopup > menu {
 
 
 #context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-  padding: 2px !important;
+  padding: var(--item_y_padding) 2px !important;
   margin-inline-start: -6px !important;
 }
 

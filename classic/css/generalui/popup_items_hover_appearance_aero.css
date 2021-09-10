@@ -10,7 +10,7 @@
   }
 }
 
-:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):hover {
+:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):not(#appMenu-fxa-status2):hover {
   color: inherit !important;
   background: transparent !important;
   background-color: transparent !important;

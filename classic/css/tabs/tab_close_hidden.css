@@ -5,15 +5,8 @@
 
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
   visibility: hidden !important;
-  display: block !important;
   opacity: 0 !important;
-  margin-inline-end: -16px !important;
+  min-width: 0.5px !important;
+  width: 0.5px !important;
+  max-width: 0.5px !important;
 }
-
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-close-button {
-  visibility: hidden !important;
-  display: block !important;
-  opacity: 0 !important;
-  margin-inline-start: -18px !important;
-}
-
