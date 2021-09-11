@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.7 ********************************************************************************/
+/* version 4.0.8 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -447,7 +447,7 @@
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
 /* @import "./css/generalui/overflow_menu_horizontal_remove_text.css"; /**/
 
-/* context menus / menupopups / panels **********************************************************/
+/* context menus / menupopups / panels (not compatible with macOS) ******************************/
 /* @import "./css/generalui/popup_compact_menus.css"; /**/
 /* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
 /* @import "./css/generalui/popup_menus_space_before_label.css"; /**/

@@ -354,3 +354,9 @@
   filter: grayscale(100%) brightness(220%) !important;
   -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
+
+
+/* support for restart_item_in_menu.uc.js script */
+#appMenu-restart-button > .toolbarbutton-icon {
+  margin-inline-end: -4px !important; 
+}

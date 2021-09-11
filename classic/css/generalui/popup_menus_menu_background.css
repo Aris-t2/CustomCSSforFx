@@ -9,3 +9,11 @@
   --panel-color: MenuText !important; /* -moz-DialogText */
   --arrowpanel-color: MenuText !important;
 }
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --panel-background: Menu !important; /* -moz-Dialog */
+  --arrowpanel-background: Menu !important;
+  --panel-color: MenuText !important; /* -moz-DialogText */
+  --arrowpanel-color: MenuText !important;
+}
