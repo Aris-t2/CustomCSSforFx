@@ -14,10 +14,20 @@
 }
 
 /* Windows code */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-os-version:windows-win10) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
 	margin-inline-start: var(--y_padding_before_label_cn_no_icon) !important;
   }
 
+}
+
+@media (-moz-os-version:windows-win7), (-moz-os-version:windows-win8) {
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	margin: unset !important;
+	margin-inline-start: 6px !important;
+	margin-inline-end: 10px !important;
+  }
+  
 }

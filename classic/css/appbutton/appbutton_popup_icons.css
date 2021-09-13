@@ -3,7 +3,12 @@
 /****************************************************************************************/
 
 
-#appMenu-fxa-label2::before {
+:root {
+  --y_padding_before_label_am: 4px !important;
+}
+
+#appMenu-fxa-label2::before,
+#fxa-manage-account-button::before {
   content:"" !important;
   display: block !important;
   width: 16px !important;
@@ -13,6 +18,56 @@
   margin-inline-end: 4px !important;
   fill: currentColor;
 }
+
+#PanelUI-fxa-menu-syncnow-button::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  -moz-context-properties: fill;
+  background-image: url("chrome://browser/skin/sync.svg") !important;
+  background-size: 16px !important;
+  margin-inline-end: 4px !important;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-setup-sync-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-connect-device-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/device-desktop.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-sendtab-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/fxa/send.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-sync-prefs-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/settings.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-account-signout-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/close.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+
+
 
 #appMenu-new-tab-button2 > .toolbarbutton-icon {
   -moz-context-properties: fill;
@@ -359,4 +414,69 @@
 /* support for restart_item_in_menu.uc.js script */
 #appMenu-restart-button > .toolbarbutton-icon {
   margin-inline-end: -4px !important; 
+}
+
+/**/
+#panelMenu_showAllBookmarks > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-historyMore > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+/**/
+#appMenu_menu_openHelp > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_feedbackPage > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_helpSafeMode > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_troubleShooting > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_help_reportSiteIssue > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_menu_HelpPopup_reportPhishingtoolmenu > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_aboutName > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
 }

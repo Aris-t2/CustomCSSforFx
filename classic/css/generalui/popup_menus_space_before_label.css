@@ -7,6 +7,7 @@
   --y_padding_before_label: 36px;
   --y_padding_before_label_cn_no_icon: 0px !important; /* for context_bfrsb_labels_without_icons.css */
   --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 4px );
+  --y_padding_before_label_am: calc(var(--y_padding_before_label) - 4px );
 }
 
 :is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
@@ -23,6 +24,12 @@
   padding-inline-start: var(--y_padding_before_label) !important;
 }
 
-#BMB_bookmarksPopup .subviewbutton:not(.menuitem-iconic):not(.menu-iconic) {
+.PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
   padding-inline-start: var(--y_padding_before_label_bm) !important;
+}
+
+#PanelUI-bookmarks .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic),
+#PanelUI-history .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic),
+#appMenu-popup .PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
+  padding-inline-start: var(--y_padding_before_label_am) !important;
 }

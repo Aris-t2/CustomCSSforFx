@@ -73,3 +73,27 @@
   }
 
 }}}
+
+
+@media (-moz-os-version:windows-win7),(-moz-os-version: windows-win8)  {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+	appearance: menuitem !important;
+	min-height: unset !important;
+  }
+  
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	margin: unset !important;
+	margin-inline-start: 6px !important;
+	margin-inline-end: 10px !important;
+  }
+  
+  #context-navigation {
+	background: unset !important;
+  }
+  
+  #context-sep-navigation {
+	margin-inline-start: 0px !important;
+  }
+  
+}

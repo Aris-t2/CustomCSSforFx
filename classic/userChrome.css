@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.8 ********************************************************************************/
+/* version 4.0.9 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -447,11 +447,13 @@
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
 /* @import "./css/generalui/overflow_menu_horizontal_remove_text.css"; /**/
 
-/* context menus / menupopups / panels (not compatible with macOS) ******************************/
+/* context menu / menupopup / panel appearance (Windows 10) *************************************/ 
 /* @import "./css/generalui/popup_compact_menus.css"; /**/
 /* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
 /* @import "./css/generalui/popup_menus_space_before_label.css"; /**/
 /* @import "./css/generalui/popup_menus_menu_background.css"; /**/
+
+/* other context menu settings ******************************************************************/
 /* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
 /* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
 /* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  /* <- this removes tab scroll buttons, no CSS fix possible atm */
@@ -539,6 +541,7 @@
 /* other toolbar settings ***********************************************************************/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
+/* @import "./css/toolbars/tabs_toolbar_remove background_fog_win7.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
 
 /* edit target file to select which items to hide ***********************************************/
