@@ -66,9 +66,6 @@
   fill: currentColor;
 }
 
-
-
-
 #appMenu-new-tab-button2 > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/new-tab.svg");

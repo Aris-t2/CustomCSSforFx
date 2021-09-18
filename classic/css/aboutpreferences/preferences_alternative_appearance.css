@@ -38,7 +38,6 @@
 		.main-content {
 		  background-color: white !important;
 		}
-
 	
 	}
 	
@@ -68,8 +67,6 @@
 	  margin: 0 5px 5px 5px!important;
 	}
 
-
-	
 	#searchInput[focused] {
 	  box-shadow: unset !important;
 	}
@@ -264,6 +261,8 @@
   outline: unset !important;
 }
 
+@media not (-moz-toolbar-prefers-color-scheme: dark) {
+
 *[subdialog="true"] > vbox,
 *[subdialog="true"] > hbox,
 *[subdialog="true"] .prefWindow-dlgbuttons,
@@ -273,6 +272,8 @@
 *[subdialog="true"] .largeDialogContainer{
   background-color: white !important;
   color: black !important;
+}
+
 }
 
 *[subdialog="true"] textbox {

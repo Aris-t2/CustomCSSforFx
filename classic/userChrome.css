@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.0.9 ********************************************************************************/
+/* version 4.1.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -415,6 +415,7 @@
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
+/* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
 /* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
@@ -447,7 +448,9 @@
 /* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
 /* @import "./css/generalui/overflow_menu_horizontal_remove_text.css"; /**/
 
-/* context menu / menupopup / panel appearance (Windows 10) *************************************/ 
+/* context menu / menupopup / panel appearance (not for macOS) **********************************/
+/* [!] affects context menus, popup menus and panel menus on Windows 10 *************************/
+/* [!] affects panel menus on Windows 7 and 8 and on Linux **************************************/
 /* @import "./css/generalui/popup_compact_menus.css"; /**/
 /* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
 /* @import "./css/generalui/popup_menus_space_before_label.css"; /**/
@@ -466,6 +469,7 @@
 
 /* sidebar **************************************************************************************/
 /* @import "./css/generalui/sidebar_items_compact.css"; /**/
+/* @import "./css/generalui/sidebar_header_icons.css"; /**/ /* adds icons to the popup */
 /* @import "./css/generalui/sidebar_header_icons_colorized.css"; /**/
 /* @import "./css/generalui/sidebar_header_lwtheme.css"; /**/
 /* sidebar dimensions - [only use one at a time] ************************************************/

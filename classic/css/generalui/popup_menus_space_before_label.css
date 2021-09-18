@@ -10,17 +10,17 @@
   --y_padding_before_label_am: calc(var(--y_padding_before_label) - 4px );
 }
 
-:is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
+:is(popup,menupopup)[type=arrow] :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
   padding-inline-start: var(--y_padding_before_label) !important;
 }
 
-:is(popup,menupopup) :is(menuseparator,.bookmarks-actions-menuseparator) {
+:is(popup,menupopup)[type=arrow] :is(menuseparator,.bookmarks-actions-menuseparator) {
   appearance: none;
   margin: 2px !important;
   margin-inline-start: var(--y_padding_before_label) !important;
 }
 
-:is(popup,menupopup) menuitem[checked="false"] {
+:is(popup,menupopup)[type=arrow] menuitem[checked="false"] {
   padding-inline-start: var(--y_padding_before_label) !important;
 }
 
@@ -32,4 +32,20 @@
 #PanelUI-history .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic),
 #appMenu-popup .PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
   padding-inline-start: var(--y_padding_before_label_am) !important;
+}
+
+@media (-moz-os-version:windows-win10) {
+	:is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
+	  padding-inline-start: var(--y_padding_before_label) !important;
+	}
+
+	:is(popup,menupopup) :is(menuseparator,.bookmarks-actions-menuseparator) {
+	  appearance: none;
+	  margin: 2px !important;
+	  margin-inline-start: var(--y_padding_before_label) !important;
+	}
+
+	:is(popup,menupopup) menuitem[checked="false"] {
+	  padding-inline-start: var(--y_padding_before_label) !important;
+	}
 }

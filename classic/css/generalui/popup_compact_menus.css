@@ -30,8 +30,8 @@ panelview .toolbarbutton-1,
   padding: calc( var(--item_y_padding) + 1px) 4px !important;
 }
 	
-menupopup > menuitem,
-menupopup > menu {
+menupopup[type=arrow] > menuitem,
+menupopup[type=arrow] > menu {
   padding-block: 0 !important;
   padding: var(--item_y_padding) 0 !important;
   padding-inline-start: 4px !important;
@@ -41,7 +41,7 @@ menupopup > menu {
   padding: 0px !important;
 }
 
-* menupopup,
+* menupopup[type=arrow],
 :is(menupopup, panel)[type=arrow] {
   --panel-padding: 0px !important;
 }
@@ -58,11 +58,11 @@ menupopup > menu {
   height: 16px !important;
 }
 
-:is(menupopup, panel) :is(.menu-accel,.menu-iconic-accel) {
+:is(menupopup, panel)[type=arrow] :is(.menu-accel,.menu-iconic-accel) {
   margin-inline-end: 8px !important;
 }
 
-:is(menupopup, panel) .menu-right {
+:is(menupopup, panel)[type=arrow] .menu-right {
   margin-inline-end: 4px !important;
 }
 
@@ -71,9 +71,27 @@ menupopup > menu {
   margin-inline-end: -2px !important;
 }
 
-/* support for context_bfrsb_labels_with_icons.css */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-os-version:windows-win10) {
+	
+  menupopup > menuitem,
+  menupopup > menu {
+	padding-block: 0 !important;
+	padding: var(--item_y_padding) 0 !important;
+	padding-inline-start: 4px !important;
+  }
 
+  * menupopup {
+	--panel-padding: 0px !important;
+  }
+  :is(menupopup, panel) :is(.menu-accel,.menu-iconic-accel) {
+	margin-inline-end: 8px !important;
+  }
+
+  :is(menupopup, panel) .menu-right {
+	margin-inline-end: 4px !important;
+  }
+
+  /* support for context_bfrsb_labels_with_icons.css */
   menugroup#context-navigation > menuitem.menuitem-iconic > hbox.menu-iconic-left > .menu-iconic-icon {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;

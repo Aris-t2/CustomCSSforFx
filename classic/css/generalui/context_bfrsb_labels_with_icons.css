@@ -88,6 +88,13 @@
 	margin-inline-end: 10px !important;
   }
   
+  @media (-moz-windows-classic){
+	#context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 2px !important;
+	}
+  }
+  
   #context-navigation {
 	background: unset !important;
   }
