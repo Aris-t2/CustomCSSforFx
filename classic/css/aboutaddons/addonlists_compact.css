@@ -44,5 +44,9 @@
 	recommended-extensions-section {
 	  display: none !important;
 	}
+	
+	.addon-description {
+      min-height: 20px !important;
+	}
 
 }

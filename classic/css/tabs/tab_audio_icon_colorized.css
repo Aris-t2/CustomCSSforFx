@@ -17,7 +17,7 @@
   fill: lightgreen !important;
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[muted] {
-  fill: ff5a5a !important;
+  fill: #ff5a5a !important;
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[activemedia-blocked] {
   fill: orange !important;
