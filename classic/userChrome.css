@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.1.0 ********************************************************************************/
+/* version 4.1.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -417,6 +417,7 @@
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
 /* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
 /* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/tabs_active_tab_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
@@ -547,6 +548,7 @@
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_remove background_fog_win7.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
+@import "./css/toolbars/searchbar_on_menubar_fix.css"; /**/		/* placing searchbar on menubar requires adjustments */
 
 /* edit target file to select which items to hide ***********************************************/
 /* @import "./css/toolbars/toolbar_context_menuitems_visibility.css"; /**/
@@ -622,6 +624,7 @@
 /* @import "./css/locationbar/popup_blocked_button_hidden.css"; /**/
 /* @import "./css/locationbar/zoom_button_hidden.css"; /**/
 /* @import "./css/locationbar/go_button_in_location_bar_hidden.css"; /**/
+/* @import "./css/locationbar/tracking_protection_alternative_icon.css"; /**/
 
 /* star button / bookmarks star *****************************************************************/
 /* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/

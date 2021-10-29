@@ -48,5 +48,12 @@
 	.addon-description {
       min-height: 20px !important;
 	}
+	
+	/* hide 'Colorways' info */
+	section[section="2"] :is(h2,h3),
+	h2[data-l10n-id="theme-monochromatic-heading"],
+	h3[data-l10n-id="theme-monochromatic-subheading"]{
+	  display: none !important;
+	}
 
 }

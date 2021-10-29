@@ -438,7 +438,6 @@
 	.card-heading-image {
 	  margin: unset !important;
 	}
-	
 
 	.category {
 	  margin-inline-end: -4px !important;
@@ -470,6 +469,22 @@
 	.addon-badge {
 	  width: 16px !important;
 	  height: 16px !important;
+	}
+	
+	/* hide 'Colorways' info */
+	section[section="2"] :is(h2,h3),
+	h2[data-l10n-id="theme-monochromatic-heading"],
+	h3[data-l10n-id="theme-monochromatic-subheading"]{
+	  display: none !important;
+	}
+	
+	.monochromatic-addon-list addon-card .card {
+	  width: 100% !important;
+	  box-sizing: unset !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list .card-heading-image {
+	  width: 350px !important;
 	}
 
 }

@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#urlbar #tracking-protection-icon-container:not([hidden]) ~ #identity-box,
+#urlbar #tracking-protection-icon-container:not([hidden]) ~ #identity-box #identity-icon-box,
 #urlbar #connection-icon {
   display: none !important;
 }

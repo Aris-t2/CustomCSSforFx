@@ -9,7 +9,7 @@
   --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 2px ) !important; /* for popup_menus_space_before_label.css */
   --panel-padding: 0px !important;
   --arrowpanel-menuitem-margin: 0px !important;
-  --arrowpanel-menuitem-padding: 0px !important;
+  --arrowpanel-menuitem-padding: calc( var(--item_y_padding) + 1px) 2px !important;
   --panel-subview-body-padding: 0px !important;
 }
 

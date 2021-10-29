@@ -5,7 +5,7 @@
 
 /* GENERAL SCROLLBAR SETTINGS (Firefox 63+) *********************************************/
 /* [!] Might not work on every page! This issue is for Mozilla to solve. ****************/
-/* [!] not compatible with custom scrollbar JavaScipt userChrome scripts ****************/
+/* [!] not compatible with custom scrollbar JavaScript userChrome scripts ***************/
 /* [!] only background, thumb and width variables available for now *********************/
 /* [!] color names and hex/rgb(a)/hsl(a) colors supported *******************************/
 /* [!] scrollbar buttons are not visible with width value 'thin' ************************/

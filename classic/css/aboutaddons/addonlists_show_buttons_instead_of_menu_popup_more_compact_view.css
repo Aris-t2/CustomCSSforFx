@@ -46,7 +46,7 @@
 	  margin-inline-end: 2px !important;
 	}
 	
-	addon-list[type="theme"] .card-heading-image {
+/*	addon-list[type="theme"] .card-heading-image {
 	  position: unset !important;
 	}
 
@@ -62,5 +62,18 @@
 	  margin-top: 1px !important;
 	  margin-inline-end: 6px !important;
 	}
-
+*/
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: -28px !important;
+	  margin-inline-end: 0px !important;
+	}
+	
+	addon-list[type="theme"] .addon-description {
+	  position: absolute !important;
+	  margin-top: 20px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card {
+	  width: 150px !important;
+	}
 }

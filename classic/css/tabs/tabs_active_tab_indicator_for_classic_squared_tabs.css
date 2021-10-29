@@ -3,10 +3,10 @@
 /************************************************************************************************/
 
 
-.tabbrowser-tab[usercontextid] .tab-content {
-  border-bottom: 2px solid var(--identity-icon-color) !important;
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-content {
+  border-bottom: 2px solid Highlight !important;
 }
 
-.tabbrowser-tab[usercontextid] .tab-content > * {
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-content > * {
   margin-bottom: -2px !important
 }

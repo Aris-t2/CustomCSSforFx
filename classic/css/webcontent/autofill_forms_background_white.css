@@ -8,5 +8,10 @@
 }
 
 :root:not(#id) input {
-   filter: unset !important;
+  filter: unset !important;
+}
+
+/* F94+ compatibility */
+input:autofill {
+  background-image: unset !important;
 }
