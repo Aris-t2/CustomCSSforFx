@@ -122,7 +122,7 @@ Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`
 Remove `/*` at lines start to enable this popup appearance.  
 The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
 
-## Suggested ui tweaks (list might be partly outdated)
+## Suggested ui tweaks (list might be partly outdated)<a name="suggested-ui-tweaks"></a>
 
 **Toolbar modes (suggestion: compact mode)**  
 _Customize mode > Density > Compact / Normal / Touch_  
@@ -152,7 +152,7 @@ _Install [Awesome RSS](https://addons.mozilla.org/addon/awesome-rss/) WebExtensi
 **Search within "New Tab page" (Fx69+)**  
 _browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar_  
 
-## 'about:config' tweaks (list might be partly outdated)
+## 'about:config' tweaks (list might be partly outdated) <a name="aboutconfig-tweaks"></a>
 
 (To revert changes right-click entry and select 'reset')  
 
