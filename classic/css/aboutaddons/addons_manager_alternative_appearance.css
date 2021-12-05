@@ -17,6 +17,16 @@
 	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
 	}
 	
+	@media (max-width: 830px) {
+	
+	:root {
+	  --section-width: 100% !important;
+	  --in-content-sidebar-width: 49px !important;
+	  --main-margin-start: 0px !important;
+	}
+	
+	}
+	
 	#categories .category:hover {
 	  color: var(--in-content-category-text-hover) !important;
 	  background-color: var(--in-content-category-background-hover) !important;
@@ -464,6 +474,10 @@
 	#help-button:hover {
 	  color: var(--in-content-category-text-hover) !important;
 	  background-color: var(--in-content-category-background-hover) !important;
+	}
+	
+	.sidebar-footer-icon {
+	  fill: unset !important;
 	}
 	
 	.addon-badge {

@@ -28,7 +28,6 @@
 	addon-card:not([expanded="true"]) .addon.card .more-options-button {
 	  width: 16px !important;
 	  height: 16px !important;
-	  margin-top: 10px !important;
 	}
 
 	addon-card:not([expanded="true"]) .card-heading-icon {
@@ -54,6 +53,15 @@
 	h2[data-l10n-id="theme-monochromatic-heading"],
 	h3[data-l10n-id="theme-monochromatic-subheading"]{
 	  display: none !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container {
+	  grid-template-rows: unset !important;
+	  row-gap: 0px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  display: flex !important;
 	}
 
 }

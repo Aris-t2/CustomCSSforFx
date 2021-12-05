@@ -34,7 +34,7 @@
 	  display: none !important;
 	}
 	
-	addon-list[type="theme"] addon-card:not([expanded="true"]) .addon.card .card-contents{
+	addon-list[type="theme"] addon-card:not([expanded="true"]) .addon.card .card-contents {
 	  min-height: 20px !important;
 	  height: 20px !important;
 	  max-height: 20px !important;
@@ -45,6 +45,23 @@
 	h2[data-l10n-id="theme-monochromatic-heading"],
 	h3[data-l10n-id="theme-monochromatic-subheading"]{
 	  display: none !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container {
+	  grid-template-rows: unset !important;
+	  row-gap: 0px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  min-height: 20px !important;
+	  height: 20px !important;
+	  max-height: 20px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card .card-contents {
+	  min-height: 20px !important;
+	  height: 60px !important;
+	  max-height: 60px !important;
 	}
 
 }

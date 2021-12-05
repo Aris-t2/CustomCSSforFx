@@ -31,7 +31,7 @@
 	}
 	
 	addon-card panel-list {
-	  margin-top: -47px !important;
+	  margin-top: -27px !important;
 	}
 	
 	addon-card[expanded="true"] panel-list {
@@ -46,23 +46,6 @@
 	  margin-inline-end: 2px !important;
 	}
 	
-/*	addon-list[type="theme"] .card-heading-image {
-	  position: unset !important;
-	}
-
-	addon-list[type="theme"] addon-card > .addon.card {
-	  height: unset !important;
-	}
-
-	addon-list[type="theme"] .card-contents {
-	  margin-top: unset !important;
-	}
-
-	addon-list[type="theme"] addon-card panel-list {
-	  margin-top: 1px !important;
-	  margin-inline-end: 6px !important;
-	}
-*/
 	addon-list[type="theme"] addon-card panel-list {
 	  margin-top: -28px !important;
 	  margin-inline-end: 0px !important;
@@ -74,6 +57,22 @@
 	}
 	
 	addon-list[type="theme"].monochromatic-addon-list addon-card {
-	  width: 150px !important;
+	  width: 200px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  display: flex !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card {
+	  min-height: unset !important;
+	  height: unset !important;
+	  max-height: unset !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card .card-contents {
+	  min-height: 20px !important;
+	  height: 40px !important;
+	  max-height: 40px !important;
 	}
 }

@@ -18,12 +18,12 @@
 
 /* purple */
 :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2) > .toolbarbutton-icon,
-#PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession) > .toolbarbutton-icon {
+#PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   fill: #800080 !important;
 }
 
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2) > .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession) > .toolbarbutton-icon {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   fill: #ff00ff !important;
 }
 

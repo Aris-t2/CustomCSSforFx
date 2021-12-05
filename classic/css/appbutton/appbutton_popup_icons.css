@@ -225,7 +225,7 @@
 }
 
 #PanelUI-history #appMenuClearRecentHistory > .toolbarbutton-icon,
-#PanelUI-history #appMenuRestoreSession > .toolbarbutton-icon {
+#PanelUI-history :is(#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/forget.svg");
   padding-inline-end: 4px;
