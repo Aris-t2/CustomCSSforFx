@@ -37,8 +37,8 @@
 #history-panelmenu{
   -moz-image-region: rect(0px, 180px, 18px, 162px) !important;
 }
-#downloads-button .toolbarbutton-icon,
-#downloads-button:not([indicator="true"]) {
+
+#downloads-indicator-anchor {
   -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
 }
 #add-ons-button	{
@@ -136,7 +136,7 @@
   -moz-image-region: rect(0px, 648px, 18px, 630px) !important;
 }
 
-.toolbarbutton-animatable-box {
+#stop-reload-button .toolbarbutton-animatable-box {
   display: none !important;
 }
 
@@ -144,49 +144,6 @@
 #main-window #widget-overflow-fixed-list toolbarbutton .toolbarbutton-icon {
   width: 18px !important;
 }
-
-/* download button tweaks */
-#downloads-button:not(:is([attention],[progress])) #downloads-indicator-icon {
-  background-image: unset !important;
-}
-
-#downloads-indicator-anchor,
-#downloads-button {
-  list-style-image: unset !important;
-}
-
-#downloads-button .toolbarbutton-icon,
-#downloads-button[attention="success"] .toolbarbutton-icon,
-#downloads-button[progress="true"] .toolbarbutton-icon {
-  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
-  display: -moz-box !important;
-  visibility: visible !important;
-}
-
-#downloads-indicator-start-box,
-#downloads-indicator-finish-box {
-  display: none !important;
-}
-
-#downloads-button:is([progress],[counter],[paused],[attention])::after { 
-  content: "" !important; 
-  display: block !important; 
-  width: 11px !important; 
-  height: 11px !important; 
-  position: absolute !important; 
-  margin-inline-start: 16px !important; 
-  margin-top: -14px !important;
-  border-radius: 100px !important; 
-}
-
-#downloads-button:is([counter],[paused],[attention])::after { 
-  background: Highlight !important;
-}
-
-#downloads-button[progress]::after { 
-  background: radial-gradient(Highlight,HighlightText) !important; 
-}
-
 
 /* icons adjustment */
 #main-window[uidensity=compact] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,

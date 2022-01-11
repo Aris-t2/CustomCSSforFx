@@ -92,6 +92,13 @@
 	  flex-flow: row wrap !important;
 	  justify-content: flex-start !important;
 	}
+	
+	
+	div[role="presentation"].list {
+	  display: flex !important;
+	  flex-flow: row wrap !important;
+	  justify-content: flex-start !important;
+	}
 
 	panel-item[action="preferences"] {
 	  order: -1;

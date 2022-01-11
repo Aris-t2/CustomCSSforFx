@@ -485,3 +485,8 @@
 	  fill: var(--lwt-tab-text, var(--toolbar-color)) !important;
 	}
 }
+
+/* Fx 97+ height fix */
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}

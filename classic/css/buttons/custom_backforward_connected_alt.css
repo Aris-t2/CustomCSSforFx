@@ -3,6 +3,14 @@
 /****************************************************************************************/
 
 
-#main-window:not([uidensity=compact]) #nav-bar #back-button + #forward-button {
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button {
+  margin-inline-start: -4px !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #back-button + #forward-button {
+  margin-inline-start: -6px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar #back-button + #forward-button {
   margin-inline-start: -4px !important;
 }

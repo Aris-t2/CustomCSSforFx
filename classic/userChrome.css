@@ -1,11 +1,11 @@
 /* Firefox userChrome.css tweaks ****************************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code ***************/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.1.2 ********************************************************************************/
+/* Version 4.1.3 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -143,10 +143,6 @@
 /* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
-
-/* 'icons_custom_icons*.css' options: hide 'downloads buttons badge' ****************************/
-/* @import "./css/buttons/icons_custom_icons_hide_downloads_badge.css"; /**/
-
 
 /* 'classic' pre-Proton button padding **********************************************************/
 /* @import "./css/buttons/classic_button_padding.css"; /**/

@@ -233,6 +233,18 @@
 	  margin-inline: 0 !important;
 	}
 	
+	#addonsButton {
+	  fill: #63c54f !important;
+	}
+	
+	#helpButton {
+	  fill: #ff0000 !important;
+	}
+	
+	.sidebar-footer-icon {
+	  fill: unset !important;
+	}
+	
 }
 
 /* preference sub windows */

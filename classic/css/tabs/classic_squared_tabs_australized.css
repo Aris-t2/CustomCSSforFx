@@ -459,3 +459,8 @@
 :root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
   box-shadow: unset !important;
 }
+
+/* Fx 97+ height fix */
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}
