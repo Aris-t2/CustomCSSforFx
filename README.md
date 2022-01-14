@@ -259,3 +259,6 @@ _nsITelemetry.canRecordExtended_
 _browser.newtabpage.activity-stream.feeds.telemetry_  
 _browser.newtabpage.activity-stream.telemetry_  
 _extensions.screenshots.upload-disabled_ ("true" to disable)
+
+**Privacy enhancements**  
+arkenfox/user.js: https://github.com/arkenfox/user.js
