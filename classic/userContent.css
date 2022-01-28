@@ -63,6 +63,7 @@
 
 /* other settings *******************************************************************************/
 /* @import "./css/aboutaddons/addonlists_badges_old_size.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_monochromatic_themes.css"; /**/
 /* @import "./css/aboutaddons/addonlists_hide_recommended_icon.css"; /**/
 /* @import "./css/aboutaddons/addonlists_hide_allowed_in_private_windows_icon.css"; /**/
 @import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
@@ -80,6 +81,9 @@
 /* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
 /* @import "./css/aboutpreferences/preferences_alternative_appearance_v2.css"; /**/
 
+/* other settings *******************************************************************************/
+/* @import "./css/aboutpreferences/category_morefrommozilla_hidden.css"; /**/
+/* @import "./css/aboutpreferences/category_nightlyexperiments_hidden.css"; /**/
 
 /************************************************************************************************/
 /* about:newtab / about:home ********************************************************************/

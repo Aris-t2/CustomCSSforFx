@@ -129,7 +129,7 @@
 
 	#categories .category[name="plugin"],
 	#category-plugin .category-icon {
-	  fill: #2b63c1 !important;
+	  fill: blue /*#2b63c1*/ !important;
 	}
 	
 	#categories .category[name="dictionary"],
@@ -164,7 +164,6 @@
 	  filter: brightness(2.25) !important;
 	}
 	
-	/* Firefox 64+ changes */
 	#heading,
 	#list-view-heading {
 	  margin-top: unset !important;
@@ -303,14 +302,14 @@
 	  
 	}
 	
-	@media (-moz-toolbar-prefers-color-scheme: dark) {
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 		
 	  :root{
-		--in-content-page-background: linear-gradient(black,black) !important;
+		--in-content-page-background: rgb(28,27,34) !important;
 	  }
 		
 	  body > div#full {
-		background: linear-gradient(black,black) !important;
+		background: rgb(28,27,34) !important;
 	  }
 		
 	}
@@ -359,7 +358,7 @@
 	  color: dimgray !important;
 	}
 	
-	@media (-moz-toolbar-prefers-color-scheme: dark) {
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 		section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
 		addon-card:not([expanded]) > .addon.card[active="false"],
 		addon-card:not([expanded])[panelopen] > .addon.card[active="false"],

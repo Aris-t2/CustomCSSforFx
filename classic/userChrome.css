@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* Version 4.1.3 ********************************************************************************/
+/* Version 4.1.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -609,6 +609,7 @@
 /* identity box / page identity button **********************************************************/
 /* @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
+/* @import "./css/locationbar/identitybox_replace_search_icon_with_globe.css"; /**/
 
 /* padlock icons in identity box / page identity button - [only use one at a time] **************/
 /* @import "./css/locationbar/identitybox_padlock_icon_classic.css"; /**/
@@ -618,6 +619,7 @@
 /* @import "./css/locationbar/identitybox_padlock_icon_hidden.css"; /**/
 
 /* additional icons/buttons and tweaks for third party page action buttons **********************/
+/* @import "./css/locationbar/icons_colorized.css"; /**/
 /* @import "./css/locationbar/reader_alternative_icon.css"; /**/
 /* @import "./css/locationbar/popup_blocked_button_hidden.css"; /**/
 /* @import "./css/locationbar/zoom_button_hidden.css"; /**/

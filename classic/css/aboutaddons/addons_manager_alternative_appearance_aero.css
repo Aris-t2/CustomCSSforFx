@@ -25,5 +25,18 @@
 	.sticky-container {
 	  background: #edf6ff !important;
 	}
+	
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		
+	  :root{
+		--in-content-page-background: rgb(28,27,34) !important;
+	  }
+		
+	  body > div#full {
+		background: rgb(28,27,34) !important;
+	  }
+		
+	}
 
 }

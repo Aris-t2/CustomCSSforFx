@@ -10,7 +10,7 @@
 	  padding-inline-end: 0px !important;
 	}
 	
-	@media not (-moz-toolbar-prefers-color-scheme: dark) {
+	@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
 
 		#preferences-stack,.sticky-container,
 		page,
@@ -38,7 +38,7 @@
 		.main-content {
 		  background-color: white !important;
 		}
-	
+
 	}
 	
 	.main-content {
@@ -60,6 +60,10 @@
 	  height: unset !important;
 	  /*margin-top: -20px !important;*/
 	  background: unset !important;
+	}
+	
+	.sticky-inner-container {
+	  max-width: unset !important;
 	}
 	
 	#policies-container, #searchInput {
@@ -84,6 +88,8 @@
 	}
 	
 	/* main colors category items */
+	
+	#categories > .category[selected]:not(:hover),
 	#categories .category[selected]{
 	  background-color: white !important;
 	  color: black !important;
@@ -98,7 +104,7 @@
 	#categories .category {
 	  transition-duration: unset !important;
 	}
-	
+
 	/* category icons */
 	#category-search .category-icon {
 	  list-style-image: url("./../../image/prefs_search.png") !important;
@@ -273,18 +279,18 @@
   outline: unset !important;
 }
 
-@media not (-moz-toolbar-prefers-color-scheme: dark) {
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 
-*[subdialog="true"] > vbox,
-*[subdialog="true"] > hbox,
-*[subdialog="true"] .prefWindow-dlgbuttons,
-*[subdialog="true"] prefpane,
-*[subdialog="true"] .contentPane,
-*[subdialog="true"] .dialog-content-box,
-*[subdialog="true"] .largeDialogContainer{
-  background-color: white !important;
-  color: black !important;
-}
+	*[subdialog="true"] > vbox,
+	*[subdialog="true"] > hbox,
+	*[subdialog="true"] .prefWindow-dlgbuttons,
+	*[subdialog="true"] prefpane,
+	*[subdialog="true"] .contentPane,
+	*[subdialog="true"] .dialog-content-box,
+	*[subdialog="true"] .largeDialogContainer{
+	  background-color: white !important;
+	  color: black !important;
+	}
 
 }
 
