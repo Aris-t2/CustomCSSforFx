@@ -51,6 +51,10 @@
   padding: 3px 5px !important;
 }
 
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}
+
 /* Compact application/menu button ****************************************************************/
 #main-window[uidensity="compact"] .subview-subheader,
 #main-window[uidensity="compact"] panelview .toolbarbutton-1,
