@@ -135,3 +135,8 @@
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
   border: 0 !important;
 }
+
+/* tab height fix ESR 91.6, 96.0.2, 97+ */
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}

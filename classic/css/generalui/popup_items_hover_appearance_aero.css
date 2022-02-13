@@ -4,7 +4,7 @@
 
 
 /* override color set by context_bfrsb_labels_with_icons.css */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
   #context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):hover {
 	background-color: unset !important;
   }

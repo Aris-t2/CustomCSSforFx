@@ -281,7 +281,7 @@
 }
 
 /* Windows 10 fix */
-@media (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
 	.titlebar-button {
 	  padding-top: 7px !important;
 	  padding-bottom: 7px !important;
@@ -406,7 +406,7 @@
   margin-top: 0 !important;
 }
 
-@media (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
   #main-window[sizemode="maximized"] .titlebar-buttonbox-container {
 	margin-inline-end: -2px !important;
   }
@@ -478,7 +478,7 @@
   box-shadow: unset !important;
 }
 
-@media (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows-win7), (-moz-os-version:windows-win7) {
 	#tabs-newtab-button:-moz-lwtheme,
 	.tabbrowser-tab:-moz-lwtheme {
 	  color: var(--lwt-tab-text, var(--toolbar-color)) !important;

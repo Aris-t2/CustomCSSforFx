@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
   @media not all and (-moz-windows-classic) {
 	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
 	#PersonalToolbar #PlacesToolbar toolbarbutton,

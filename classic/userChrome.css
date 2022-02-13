@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* Version 4.1.4 ********************************************************************************/
+/* Version 4.1.5 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -544,7 +544,7 @@
 /* other toolbar settings ***********************************************************************/
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
-/* @import "./css/toolbars/tabs_toolbar_remove background_fog_win7.css"; /**/
+/* @import "./css/toolbars/tabs_toolbar_remove_background_fog_win7.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
 @import "./css/toolbars/searchbar_on_menubar_fix.css"; /**/		/* placing searchbar on menubar requires adjustments */
 

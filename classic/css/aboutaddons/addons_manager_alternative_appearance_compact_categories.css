@@ -7,25 +7,33 @@
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
 	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 
+	:root {
+	  --in-content-sidebar-width: 45px !important;
+	}
+	
 	/* reduce category width*/
 	#categories {
-	  width: 70px !important;
+	  min-width: var(--in-content-sidebar-width) !important;
+	  width: var(--in-content-sidebar-width) !important;
+	  max-width: var(--in-content-sidebar-width) !important;
 	}
 
 	/* adjust category icon position */
-	richlistitem .category-icon {
+	:is(.category, richlistitem) .category-icon {
 	  margin-inline-start: 13px !important;
 	}
 
 	/* adjust footer icon position */
-	.sidebar-footer-button .sidebar-footer-icon{
-	  margin-inline-start: 27px !important;
+	.sidebar-footer-icon{
+	  margin-inline-start: 15px !important;
 	}
 	
 	/* adjust category icon position */
-	.sidebar-footer-button .sidebar-footer-label,
-	richlistitem .category-name {
+	:is(.category, richlistitem) .category-name,
+	.sidebar-footer-label	{
 	  display: none !important;
 	}
+	
+
 
 }

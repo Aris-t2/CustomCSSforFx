@@ -62,7 +62,7 @@
 }
 
 /* Windows */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
 	  top: 1px !important;
 	}
@@ -72,7 +72,7 @@
 }
 
 /* Windows 7/8 extra tweaks */
-@media (-moz-os-version: windows-win7) {
+@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: none !important;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (-moz-os-version:windows-win8) {
+@media (-moz-platform: windows-win8),(-moz-os-version:windows-win8) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
 	  top: -13px !important;
 	}

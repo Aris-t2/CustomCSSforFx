@@ -65,3 +65,11 @@
   appearance: none !important;
   background: unset !important;
 }
+
+#urlbar .urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner {
+  min-height: unset !important;
+}
+
+.urlbarView-row:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
+  display: none !important;
+}

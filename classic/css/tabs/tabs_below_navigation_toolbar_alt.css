@@ -212,7 +212,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   margin-top: unset !important;
 }
 
-@media (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
 	#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"],
 	#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
 	  margin-top: 30px !important;
@@ -266,7 +266,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* fix Windows 7s default tab background (remove dark purple bg color)*/
-@media (-moz-os-version: windows-win7) {
+@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
   @media (-moz-windows-default-theme) {
     .tabbrowser-tab:not([selected]):not(:hover):not(:-moz-lwtheme) {
       background-color: #e3e4e6 !important;
@@ -358,7 +358,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* Windows */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	/* set to '0', if no menubar is used */
 	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 18px !important;
@@ -376,10 +376,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
 	  top: 8px !important;
 	}
-}
 
-/* Windows */
-@media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
 	  top: 0px !important;
 	}
@@ -389,7 +386,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* Windows 7/8 extra tweaks */
-@media (-moz-os-version: windows-win7) {
+@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: none !important;
@@ -409,7 +406,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   }
 }
 
-@media (-moz-os-version:windows-win8) {
+@media (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
 	  top: -13px !important;
 	}
@@ -476,7 +473,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* Windows 7 extra tweaks */
-@media (-moz-os-version: windows-win7) {
+@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) * .titlebar-buttonbox-container {
 	  display: none !important;
@@ -493,7 +490,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* Windows 10 extra tweaks */
-@media (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
   #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme):hover:not([disabled="true"]),
   #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme)[_moz-menuactive="true"]:not([disabled="true"]) {
 	background-color: Highlight !important;
@@ -533,7 +530,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   margin: 0 !important;
 }
 
-@media (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #TabsToolbar #window-controls *,
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"]:-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar #window-controls * {
 	  color: black !important;
@@ -552,7 +549,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /*
-@media (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #nav-bar {
 	  padding-inline-end: 60px !important;
 	}

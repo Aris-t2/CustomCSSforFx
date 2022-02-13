@@ -22,11 +22,14 @@
   min-height: unset !important;
 }
 
-/* code for macOS */
+/* code for macOS (-moz-platform: osx) incoming */
+@media not all and (-moz-platform: windows-win7) {
+@media not all and (-moz-platform: windows-win8) {
+@media not all and (-moz-platform: windows-win10) {
 @media not all and (-moz-os-version: windows-win7) {
 @media not all and (-moz-os-version: windows-win8) {
 @media not all and (-moz-os-version: windows-win10) {
 	#TabsToolbar .titlebar-placeholder[type="caption-buttons"]:not([ordinal="1000"]) {
 	  margin-inline-start: 24px !important;
 	}
-}}}
+}}}}}}

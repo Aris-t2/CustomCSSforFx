@@ -113,3 +113,12 @@
 #nav-bar:not(:-moz-lwtheme) {
   box-shadow: unset !important;
 }
+
+/* draggable window */
+#main-window[tabsintitlebar] toolbox#navigator-toolbox{
+  -moz-window-dragging: drag !important;
+}
+
+#main-window[tabsintitlebar] :is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
+  -moz-window-dragging: no-drag !important;
+}

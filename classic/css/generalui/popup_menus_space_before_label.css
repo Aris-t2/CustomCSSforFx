@@ -34,7 +34,7 @@
   padding-inline-start: var(--y_padding_before_label_am) !important;
 }
 
-@media (-moz-os-version:windows-win10) {
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
 	:is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
 	  padding-inline-start: var(--y_padding_before_label) !important;
 	}

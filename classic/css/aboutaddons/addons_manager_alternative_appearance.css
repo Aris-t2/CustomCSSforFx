@@ -193,7 +193,7 @@
 	  margin: unset !important;
 	  width: calc(100vw - 246px) !important;
 	}
-	
+
 	/* tweaks for small windows */
 	@media (max-width: 830px) {
 	  
@@ -487,12 +487,17 @@
 	}
 	
 	.monochromatic-addon-list addon-card .card {
-	  width: 100% !important;
-	  box-sizing: unset !important;
+	  width: 350px !important;
+	  box-sizing: inherit !important;
 	}
 	
 	addon-list[type="theme"].monochromatic-addon-list .card-heading-image {
-	  width: 350px !important;
+	  max-width: 335px !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container .spacer,
+	.monochromatic-addon-list .addon-name-container {
+	  display: flex !important;
 	}
 
 }

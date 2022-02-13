@@ -71,7 +71,7 @@ menupopup[type=arrow] > menu {
   margin-inline-end: -2px !important;
 }
 
-@media (-moz-os-version:windows-win10) {
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
 	
   menupopup > menuitem,
   menupopup > menu {

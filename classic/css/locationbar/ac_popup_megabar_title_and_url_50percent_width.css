@@ -38,6 +38,10 @@
   display: none !important;
 }
 
+#urlbar .urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=dynamic],[sponsored]) .urlbarView-title {
+  width: calc(50% - 26px) !important;
+}
+
 /* do not hide actiontype item */
 #urlbar .urlbarView-action{
   visibility: visible !important;
@@ -55,6 +59,24 @@
 #urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-top: unset !important;
   padding-inline-start: unset !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row[type=remotetab] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  appearance: none !important;
+  background: unset !important;
+}
+
+#urlbar .urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner {
+  min-height: unset !important;
+}
+
+.urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon {
+  min-width: unset !important;
+  height: unset !important;
+}
+
+.urlbarView-dynamic-onboardTabToSearch-description {
+  display: none !important;
 }
 
 /* use different width values to go from  50/50 to e.g. 40/60 */

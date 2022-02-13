@@ -62,7 +62,7 @@
 }
 
 /* fix Firefox + Windows 8.1 + lw-theme bug (occurring without custom code too) */
-@media (-moz-os-version:windows-win8) {
+@media (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
 	#navigator-toolbox:-moz-lwtheme {
 	  border: unset !important;
 	}

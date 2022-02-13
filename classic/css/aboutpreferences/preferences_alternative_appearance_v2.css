@@ -296,7 +296,7 @@
 	
 	@media all and (-moz-windows-theme:aero) {
 		
-	  @media (-moz-os-version: windows-win7) {
+	  @media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
 		
 		checkbox .checkbox-check,
 		radio .radio-check,
@@ -499,7 +499,7 @@
 
 @media all and (-moz-windows-theme:aero) {
 	
-  @media (-moz-os-version: windows-win7) {
+  @media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
 	
 	*[subdialog="true"] checkbox .checkbox-check,
 	*[subdialog="true"] radio .radio-check,

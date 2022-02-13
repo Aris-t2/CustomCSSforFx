@@ -330,7 +330,7 @@
 	}
 	
 	addon-list[type="theme"].monochromatic-addon-list .card-heading-image {
-	  width: 350px !important;
+	  max-width: 335px !important;
 	}
 
 }

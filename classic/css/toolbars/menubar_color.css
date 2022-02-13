@@ -24,7 +24,7 @@
   background: none !important;
 }
 
-@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+@media (-moz-platform: windows-win8),(-moz-platform: windows-win10),(-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
   #main-window[tabsintitlebar] #titlebar-min .toolbarbutton-icon,
   #main-window[tabsintitlebar] #titlebar-max .toolbarbutton-icon,
   #main-window[tabsintitlebar] #titlebar-close:not(:hover) .toolbarbutton-icon {
@@ -57,7 +57,7 @@
   text-shadow: unset !important;
 }
 
-@media (-moz-os-version: windows-win7) {
+@media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
 	  visibility: visible !important;

@@ -14,7 +14,7 @@
 }
 
 /* Windows code */
-@media (-moz-os-version:windows-win10) {
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
 	margin-inline-start: var(--y_padding_before_label_cn_no_icon) !important;
@@ -22,7 +22,7 @@
 
 }
 
-@media (-moz-os-version:windows-win7), (-moz-os-version:windows-win8) {
+@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
 	margin-inline-start: 0px !important;
