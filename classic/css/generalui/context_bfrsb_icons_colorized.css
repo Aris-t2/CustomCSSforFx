@@ -26,3 +26,23 @@
 #context-bookmarkpage .menu-iconic-icon {
   fill: #336699 !important;
 }
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-back .menu-iconic-icon {
+  fill: #00d2ff !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-forward .menu-iconic-icon {
+  fill: #00d2ff !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-reload .menu-iconic-icon {
+  fill: lightgreen !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-stop .menu-iconic-icon {
+  fill: #ff5a5a !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-bookmarkpage .menu-iconic-icon {
+  fill: #64a3e2 !important;
+}
