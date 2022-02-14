@@ -34,6 +34,8 @@
 	  display: none !important;
 	}
 	
-
+	.category {
+	  margin-inline-start: 0px !important;
+	}
 
 }

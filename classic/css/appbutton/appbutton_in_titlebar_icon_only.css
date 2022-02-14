@@ -114,16 +114,17 @@
 }
 
 /* code for Linux/macOS */
-@media not all and (-moz-platform: windows-win10) {
-@media not all and (-moz-platform: windows-win8) {
-@media not all and (-moz-platform: windows-win7) {
-@media not all and (-moz-os-version: windows-win10) {
-@media not all and (-moz-os-version: windows-win8) {
-@media not all and (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
 	}  
-}}}}}}
+}
+
+@media not (-moz-platform: windows) {
+	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+	  top: 0px !important;
+	}  
+}
 
 #main-window[tabsintitlebar][sizemode="fullscreen"] #PanelUI-button {
   top: 0px !important;
@@ -145,16 +146,17 @@
 }
 
 /* code for Linux/macOS */
-@media not all and (-moz-platform: windows-win10) {
-@media not all and (-moz-platform: windows-win8) {
-@media not all and (-moz-platform: windows-win7) {
-@media not all and (-moz-os-version: windows-win10) {
-@media not all and (-moz-os-version: windows-win8) {
-@media not all and (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
   #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
 	max-width: 40px !important;
   }	  
-}}}}}}
+}
+
+@media not (-moz-platform: windows) {
+  #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+	max-width: 40px !important;
+  }
+}
 
 /* hide button in fullscreen mode, if toolbars get automatically hidden */
 #main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox[style*="margin-top: -"] #PanelUI-button {
@@ -306,4 +308,3 @@
 #main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
   height: unset !important;
 }
-

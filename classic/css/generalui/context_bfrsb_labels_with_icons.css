@@ -61,12 +61,7 @@
 }
 
 /* Linux code */
-@media not all and (-moz-platform: windows-win10) {
-@media not all and (-moz-platform: windows-win8) {
-@media not all and (-moz-platform: windows-win7) {
-@media not all and (-moz-os-version: windows-win10) {
-@media not all and (-moz-os-version: windows-win8) {
-@media not all and (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
 	margin: 0 !important;
@@ -78,7 +73,21 @@
 	margin-inline-start: 6px !important;
   }
 
-}}}}}}
+}
+
+@media not (-moz-platform: windows) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	margin: 0 !important;
+	width: 16px !important;
+	height: 16px !important;
+  }
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: 6px !important;
+  }
+
+}
 
 
 @media (-moz-platform: windows-win8), (-moz-platform: windows-win7),(-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {

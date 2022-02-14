@@ -70,6 +70,15 @@
   min-height: unset !important;
 }
 
-.urlbarView-row:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
+.urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon {
+  min-width: unset !important;
+  height: unset !important;
+}
+
+.urlbarView-dynamic-onboardTabToSearch-description {
+  display: none !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row[has-url="true"]:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
   display: none !important;
 }
