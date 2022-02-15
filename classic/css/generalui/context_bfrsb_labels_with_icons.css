@@ -29,7 +29,6 @@
 }
 
 /* Windows code */
-
 @media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 
   #context-navigation :is(menu, menuitem, menucaption),
@@ -60,8 +59,8 @@
 
 }
 
-/* Linux code */
-@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
 	margin: 0 !important;
@@ -89,8 +88,7 @@
 
 }
 
-
-@media (-moz-platform: windows-win8), (-moz-platform: windows-win7),(-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
+@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
 	appearance: menuitem !important;

@@ -107,8 +107,8 @@
 	}
 }
 
-/* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
 	}  
@@ -139,8 +139,8 @@
   border-bottom: 1px solid !important;
 }
 
-/* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
   #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
 	max-width: 90px !important;
   }	  
@@ -170,8 +170,8 @@
   box-shadow: unset !important;
 }
 
-/* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
   #main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon  {
 	list-style-image: none !important;
   }	  
