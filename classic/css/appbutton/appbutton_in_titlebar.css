@@ -108,7 +108,7 @@
 }
 
 /* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
 	}  
@@ -140,7 +140,7 @@
 }
 
 /* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
   #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
 	max-width: 90px !important;
   }	  
@@ -171,7 +171,7 @@
 }
 
 /* code for Linux/macOS */
-@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
   #main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon  {
 	list-style-image: none !important;
   }	  

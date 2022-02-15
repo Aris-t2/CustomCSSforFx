@@ -16,7 +16,8 @@
 
   README
 
-  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
+  Profile folder: address bar > about:support > Profile Folder > Open Folder
+  
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
   \chrome\css\
@@ -24,8 +25,8 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * in front of '@import'
-  DISABLING options: add the combination of / and * in front of '@import'
+  ACTIVE option: remove /* before '@import'
+  DEACTIVATE option: add /* before '@import'
 
 
 *************************************************************************************************/

@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* Version 4.1.5v4 ******************************************************************************/
+/* Version 4.1.5v5 ******************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -21,7 +21,8 @@
 
   README
 
-  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
+  Profile folder: address bar > about:support > Profile Folder > Open Folder
+  
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   \chrome\config\
   \chrome\css\
@@ -29,13 +30,10 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * in front of '@import'
-  DISABLING options: add the combination of / and * in front of '@import'
+  ACTIVE option: remove /* before '@import'
+  DEACTIVATE option: add /* before '@import'
 
-  macOS issues / glitches / fixes -> look for 'macOS fix' additions inside this file
-  - tabs toolbar spaces in 'toolbars' category
-  - tabs not on top mode in 'tabs toolbar position' category
-  - page context items in 'general ui' category
+  macOS specific code -> look for 'macOS fix' additions inside this file
 
   EXPERIMENTAL settings are for testing only!
 
@@ -54,9 +52,8 @@
   - custom tab appearance / old squared tabs
   - TABS TOOLBAR POSITION
   -- below titlebar / navigation and bookmarks toolbar / main content
-  - TAB TEXT - colors/shadow/weight/style for default/active/hovered/unloaded tabs
+  - TAB TEXT - colors/shadow/weight/style for default/active/hovered/pending tabs
   - MULTIROW / multi lined tabs
-  - TAB TITLE IN FIREFOX TITLEBAR
   - empty tab favicon / custom tab loading animation / tab close icon settings
   - settings for DEFAULT TABS / other tab settings
   GENERAL UI
@@ -64,8 +61,6 @@
   - overflow menu / sidebar / findbar
   - SEARCHBAR
   -- general settings for default search
-  -- OLD SEARCH + old search 'about:config' settings
-  - MENUBARS bookmarks menu popup items
   TOOLBARS
   - ADDONS BAR (simulated bottoms toolbar)
   - GENERAL TOOLBAR settings
@@ -76,7 +71,7 @@
   - AeroGlass TOOLBARS / WIN10 fix for GLASS8
   - TOOLBAR TEXT MODES
   -- icons+text / text only
-  LOCATION BAR / urlbar / awesomebar
+  LOCATION BAR / urlbar / mega bar
   - general location bar tweaks / identity box / padlock icons icon/button tweaks
   - 'autocomplete popup' appearance / result item settings/appearance
 

@@ -61,7 +61,7 @@
 }
 
 /* Linux code */
-@media not (-moz-os-version: windows-win10), not (-moz-os-version: windows-win8), not (-moz-os-version: windows-win7) {
+@media not (-moz-os-version: windows-win10) and not (-moz-os-version: windows-win8) and not (-moz-os-version: windows-win7) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
 	margin: 0 !important;
