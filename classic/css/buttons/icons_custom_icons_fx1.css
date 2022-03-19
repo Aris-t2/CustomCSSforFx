@@ -16,6 +16,8 @@
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button,#downloads-indicator-anchor),
 #panic-button:not([open]),#pocket-button:not([open]) {
+  list-style-image: url("../../image/toolbar_fx1.png") !important;
+}
 
 :is(.tabs-newtab-button,#tabs-newtab-button) {
   list-style-image: url("../../image/newtabff1.png") !important;

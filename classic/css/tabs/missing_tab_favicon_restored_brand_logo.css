@@ -18,3 +18,11 @@
 .tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
   display: none !important;
 }
+
+.tab-icon-image {
+  opacity: 1 !important;
+}
+.tab-icon-image:not([busy], [src]) {
+  content: url('chrome://branding/content/icon64.png') !important;
+  display: inline !important;
+}
