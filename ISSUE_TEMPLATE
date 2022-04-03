@@ -28,22 +28,23 @@ Add all information required in 1-5 and delete this line and everything above it
 1. Issue description:
 
 
-2. Steps to reproduce the issue:
+2. Does the issue occur with latest CustomCSSforFx release?
+(Check here: https://github.com/Aris-t2/CustomCSSforFx/releases)
 
 
-3. SCREENSHOT(S) of the issue (drag & drop images into this post):
+3. Steps to reproduce the issue:
 
 
-4. about:config prefs (custom CSS files won't work, if these prefs are set to false)
-- toolkit.legacyUserProfileCustomizations.stylesheets > true (yes / no):
-- browser.proton.enabled > true (yes / no):
-- does the issue occur with latest CustomCSSforFx release (yes / no):
+4. SCREENSHOT(S) of the issue (drag & drop images into this post):
 
 
-5. System information
+5. Is 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets' set to 'true'?
+(Custom CSS files will only work, if this pref is set to true!)
+
+
+6. System information
 - OS & OS version: 
-- OS theme (if not default): 
-- DPI / HiDPI resolution (e.g. 100%, 125%...): 
+- DPI / HiDPI (e.g. 100%, 125%...): 
 - Firefox version: 
-- Firefox (lw) theme (e.g. default, dark, 'theme name/link'): 
+- Firefox theme (e.g. default, dark, 'theme name & link'): 
 - This projects userChrome.css/userContent.css 'settings' the issue occurs with: 
