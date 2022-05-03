@@ -165,6 +165,73 @@
   border-left: 1px solid transparent !important; 
   border-right: 1px solid transparent !important; 
 }
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):-moz-lwtheme .tab-content {
+	  background-image: linear-gradient(transparent, transparent) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):hover:-moz-lwtheme .tab-content {
+	  background-image: linear-gradient(transparent, transparent) !important;
+	}
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme:hover,
+	.tabbrowser-tab .tab-content:-moz-lwtheme:hover {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme:not([selected]):not(:hover),
+	.tabbrowser-tab .tab-content:-moz-lwtheme:not([selected]):not(:hover) {
+	  border-top: 1px solid transparent !important;
+	  border-left: 1px solid transparent !important; 
+	  border-right: 1px solid transparent !important; 
+	}
+
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):-moz-lwtheme .tab-content {
+	  background-image: linear-gradient(transparent, transparent) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):hover:-moz-lwtheme .tab-content {
+	  background-image: linear-gradient(transparent, transparent) !important;
+	}
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  border-top: 1px solid rgba(0,0,0,.5) !important;
+	  border-left: 1px solid rgba(0,0,0,.4) !important; 
+	  border-right: 1px solid rgba(0,0,0,.4) !important;
+	}
+
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme:hover,
+	.tabbrowser-tab .tab-content:-moz-lwtheme:hover {
+	  border-top: 1px solid rgba(0,0,0,.2) !important;
+	  border-left: 1px solid rgba(0,0,0,.2) !important; 
+	  border-right: 1px solid rgba(0,0,0,.2) !important; 
+	}
+
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme:not([selected]):not(:hover),
+	.tabbrowser-tab .tab-content:-moz-lwtheme:not([selected]):not(:hover) {
+	  border-top: 1px solid transparent !important;
+	  border-left: 1px solid transparent !important; 
+	  border-right: 1px solid transparent !important; 
+	}
+
+}
+
 /********************************************/
 /******** lw-themes tab colors [end] ********/
 /********************************************/

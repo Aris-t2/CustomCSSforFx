@@ -14,6 +14,10 @@
   margin: 0px !important;
 }
 
+:is(#urlbar,.megabar) .urlbarView-row[label] {
+  margin-block-start: 0px !important;
+}
+
 /* hide other unneeded stuff */
 .urlbarView-row[dynamicType="onboardTabToSearch"] {
   display: none !important;

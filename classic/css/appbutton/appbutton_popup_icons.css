@@ -367,6 +367,26 @@
 	fill: currentColor !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+		fill: currentColor !important;
+	}
+}
+
+
 /* Eye Dropper & Get More Tools */
 
 #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] + toolbarbutton image.toolbarbutton-icon {
@@ -406,6 +426,16 @@
   filter: grayscale(100%) brightness(220%) !important;
   -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
+	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+	  list-style-image: url("../../image/command-tilt.png");
+	  filter: grayscale(100%) brightness(220%) !important;
+	  -moz-image-region: rect(0px, 48px, 16px, 32px);
+	}
+}
+
 
 
 /* support for restart_item_in_menu.uc.js script */

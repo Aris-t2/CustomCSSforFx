@@ -288,8 +288,8 @@
 	*[subdialog="true"] .contentPane,
 	*[subdialog="true"] .dialog-content-box,
 	*[subdialog="true"] .largeDialogContainer{
-	  background-color: white !important;
-	  color: black !important;
+	  background-color: var(--in-content-page-background) !important;
+	  color: var(--in-content-page-color) !important;
 	}
 
 }

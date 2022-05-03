@@ -22,7 +22,7 @@
   height: 100% !important;
   border-radius: 10000px !important;
   padding: 8px !important; 
-  background-color: #f9f9fa !important;
+  background-color: /*#e6e6e6*/ #f9f9fa !important;
 }
 
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
@@ -75,11 +75,11 @@
 #notification-popup-box>stack {
   margin-inline-start: 8px !important;
 }
-
+/*
 #main-window #nav-bar #identity-box {
-  padding-inline-end: 6px !important;
+  padding-inline-end: 2px !important;
 }
-
+*/
 #main-window #nav-bar #back-button .toolbarbutton-icon{
   opacity: 1 !important;
 }

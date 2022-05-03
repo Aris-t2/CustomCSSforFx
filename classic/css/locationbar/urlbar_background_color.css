@@ -30,3 +30,11 @@
   color: var(--urlbar_text_color) !important;
   fill: var(--urlbar_text_color) !important;
 }
+
+@media (-moz-content-prefers-color-scheme: light) {
+	#urlbar:-moz-lwtheme .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+	#urlbar:-moz-lwtheme .urlbarView-row-inner[selected] {
+	  color: var(--urlbar_text_color) !important;
+	  fill: var(--urlbar_text_color) !important;
+	}
+}

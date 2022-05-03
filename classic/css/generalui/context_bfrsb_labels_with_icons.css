@@ -90,6 +90,7 @@
 
 @media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
 
+  #context-navigation :is(menu, menuitem, menucaption),
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
 	appearance: menuitem !important;
 	min-height: unset !important;

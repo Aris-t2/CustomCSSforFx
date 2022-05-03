@@ -38,6 +38,11 @@
   color: white !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	.browserContainer :is(statuspanel,#statuspanel):-moz-lwtheme :is(#statuspanel-label,.statuspanel-label) {
+	  color: white !important;
+	}
+}
 
 /* add space for status text on add-on bar */
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {

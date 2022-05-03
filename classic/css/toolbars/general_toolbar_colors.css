@@ -57,6 +57,13 @@
   text-shadow: 1px 1px 1px black !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window[style*='--lwt-header-image']:-moz-lwtheme :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) :is(.toolbarbutton-icon,.toolbarbutton-text) {
+	  text-shadow: 1px 1px 1px black !important;
+	}
+}
+
+
 .browserContainer > findbar > #findbar-close-container {
   background-color: unset !important;
 }

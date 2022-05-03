@@ -148,16 +148,6 @@
   background: unset !important;
 }
 
-/* compact dark lw-theme *//*
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme-brighttext,
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):-moz-lwtheme-brighttext .tab-content {
-  background-image: linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.99)) !important;
-}
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme-brighttext,
-#main-window:not([style*='--lwt-header-image']):not([style*='--lwt-toolbar-field-background-color']):-moz-lwtheme .tabbrowser-tab:not([selected]):hover:-moz-lwtheme-brighttext .tab-content {
-  background-image: linear-gradient(rgba(71,71,71,.7), rgba(71,71,71,.7)) !important;
-}*/
-
 .tabbrowser-tab[selected]:-moz-lwtheme-darktext .tab-content {
   border-top: 1px solid rgba(0,0,0,.5) !important;
   border-left: 1px solid rgba(0,0,0,.4) !important; 
@@ -179,6 +169,61 @@
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
+}
+
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-bright_other_tabs) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):hover:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-bright_hovered_tabs) !important;
+	}
+	.tabbrowser-tab:not([selected]):not(:hover):-moz-lwtheme {
+	  background: unset !important;
+	}
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab .tab-content:-moz-lwtheme {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-dark_other_tabs) !important;
+	}
+	:is(.tabs-newtab-button,#tabs-newtab-button):hover:-moz-lwtheme,
+	.tabbrowser-tab:not([selected]):hover:-moz-lwtheme .tab-content {
+	  background-image: var(--classic_squared_tabs_lwt-dark_hovered_tabs) !important;
+	}
+
+	.tabbrowser-tab[selected]:-moz-lwtheme .tab-content {
+	  border-top: 1px solid rgba(0,0,0,.5) !important;
+	  border-left: 1px solid rgba(0,0,0,.4) !important; 
+	  border-right: 1px solid rgba(0,0,0,.4) !important;
+	}
+	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
+	.tabbrowser-tab .tab-content:-moz-lwtheme {
+	  border-top: 1px solid rgba(0,0,0,.2) !important;
+	  border-left: 1px solid rgba(0,0,0,.2) !important; 
+	  border-right: 1px solid rgba(0,0,0,.2) !important; 
+	}
 }
 
 /********************************************/

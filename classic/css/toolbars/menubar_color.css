@@ -46,6 +46,12 @@
   color: white !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+	  color: white !important;
+	}
+}
+
 #main-window:not(:-moz-lwtheme) #main-menubar > menu:is(:hover,[open],[_moz-menuactive]) {
   background: Highlight !important;
   color: HighlightText !important;

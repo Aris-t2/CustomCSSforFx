@@ -31,6 +31,18 @@
   fill: #00fcff !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar #reader-mode-button-icon{
+	  fill: #00d2ff !important;
+	}
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar #reader-mode-button-icon:-moz-any(:hover,:hover:active,[open]) {
+	  fill: #00fcff !important;
+	}
+
+}
+
+
 /* colorize star button icon */
 #urlbar #star-button:not([starred]) {
   fill: orange !important;

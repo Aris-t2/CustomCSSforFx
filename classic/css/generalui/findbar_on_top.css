@@ -83,6 +83,12 @@
   color: white !important;
 }
 
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:-moz-lwtheme :is(.browserContainer, #viewSource) :is(.findbar-find-status,.found-matches) {
+	  color: white !important;
+	}
+}
+
 .browserContainer > findbar > #findbar-close-container {
   background-color: unset !important;
 }

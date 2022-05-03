@@ -20,3 +20,18 @@
 #main-window:-moz-lwtheme-brighttext #sidebar-box * {
   color: white !important;
 }
+
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window #sidebar-box,
+	#main-window #sidebar-box * {
+	  color: white !important;
+	}
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	#main-window #sidebar-box,
+	#main-window #sidebar-box * {
+	  color: black !important;
+	}
+}

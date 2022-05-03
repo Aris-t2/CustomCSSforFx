@@ -144,6 +144,13 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
 
+@media (-moz-content-prefers-color-scheme: light) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button,.scrollbutton-up,.scrollbutton-down),
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #TabsToolbar > toolbarbutton {
+	  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+	  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+	}
+}
 /* toolbar borders */
 #main-window #navigator-toolbox::after {
   opacity: 0 !important;
@@ -452,6 +459,12 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   color: var(--classic_squared_tabs_new_tab_icon_color) !important;
 }
 
+@media (-moz-content-prefers-color-scheme: light) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #TabsToolbar-customization-target toolbarbutton .toolbarbutton-icon {
+	  fill: var(--classic_squared_tabs_new_tab_icon_color) !important;
+	  color: var(--classic_squared_tabs_new_tab_icon_color) !important;
+	}
+}
 /* tweaks for fullscreen mode */
 #main-window[tabsintitlebar][sizemode="fullscreen"] * #TabsToolbar {
   padding-inline-start: 0px !important;
@@ -535,6 +548,13 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"]:-moz-lwtheme:-moz-lwtheme-darktext #TabsToolbar #window-controls * {
 	  color: black !important;
 	  fill: black !important;
+	}
+	
+	@media (-moz-content-prefers-color-scheme: light) {
+		#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"]:-moz-lwtheme #TabsToolbar #window-controls * {
+		  color: black !important;
+		  fill: black !important;
+		}
 	}
 
 	#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"]:-moz-lwtheme #TabsToolbar #window-controls * {

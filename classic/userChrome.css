@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* Version 4.1.6 ********************************************************************************/
+/* Version 4.1.7 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -169,7 +169,7 @@
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
 
 /* bookmarks toolbar - buttons appearance - [only use one at a time] ****************************/
-/* @import "./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css"; /**/  /* Windows only */
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css"; /**/  /* Windows 7-10 only */
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css"; /**/
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_dark.css"; /**/
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_aero_appearance.css"; /**/
