@@ -140,3 +140,9 @@
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
   height: unset !important;
 }
+
+/* Fx 100+ outline fix */
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme,
+.tab-background[selected]:-moz-lwtheme {
+  outline: unset !important;
+}
