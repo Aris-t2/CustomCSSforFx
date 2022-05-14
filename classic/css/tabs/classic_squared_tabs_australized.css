@@ -112,55 +112,55 @@
 /********************************************/
 
 /* lightweight theme tab colors*/
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) .tabbrowser-tab[selected] .tab-content {
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab[selected] .tab-content {
   background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
 }
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) :is(.tabs-newtab-button,#tabs-newtab-button),
-#TabsToolbar:not([selected]):-moz-lwtheme-darktext .tabbrowser-tab .tab-content {
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar:not([selected]):-moz-lwtheme-darktext:-moz-lwtheme .tabbrowser-tab .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) :is(.tabs-newtab-button,#tabs-newtab-button):hover,
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) .tabbrowser-tab:not([selected]):hover .tab-content {
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):hover,
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab:not([selected]):hover .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab[selected] .tab-content {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab[selected] .tab-content {
   background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
 }
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) :is(.tabs-newtab-button,#tabs-newtab-button),
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab:not([selected]) .tab-content {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab:not([selected]) .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) :is(.tabs-newtab-button,#tabs-newtab-button):hover,
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab:not([selected]):hover .tab-content {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):hover,
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab:not([selected]):hover .tab-content {
   background-image: linear-gradient(transparent, transparent) !important;
 }
 
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) .tabbrowser-tab[selected] .tab-content {
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab[selected] .tab-content {
   border-top: 1px solid rgba(0,0,0,.5) !important;
   border-left: 1px solid rgba(0,0,0,.4) !important; 
   border-right: 1px solid rgba(0,0,0,.4) !important;
 }
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab[selected] .tab-content {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab[selected] .tab-content {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
 #TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):hover,
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) .tabbrowser-tab[selected] .tab-content:hover {
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab[selected] .tab-content:hover {
   border-top: 1px solid rgba(0,0,0,.2) !important;
   border-left: 1px solid rgba(0,0,0,.2) !important; 
   border-right: 1px solid rgba(0,0,0,.2) !important; 
 }
 #TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):hover,
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab .tab-content:hover {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab .tab-content:hover {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
 #TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):not([selected]):not(:hover),
-#TabsToolbar:is([darktext],:-moz-lwtheme-darktext) .tabbrowser-tab .tab-contentt:not([selected]):not(:hover),
+#TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab .tab-contentt:not([selected]):not(:hover),
 #TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):not([selected]):not(:hover),
-#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext).tabbrowser-tab .tab-content:not([selected]):not(:hover) {
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab .tab-content:not([selected]):not(:hover) {
   border-top: 1px solid transparent !important;
   border-left: 1px solid transparent !important; 
   border-right: 1px solid transparent !important; 
