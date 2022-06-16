@@ -33,3 +33,9 @@
 #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
   padding-inline-start: 0px !important;
 }
+
+/* workaround for Firefox 102+ *******************/
+panel[type="arrow"][side="top"],
+panel[type="arrow"][side="bottom"] {
+  margin-inline: 0 !important;
+}

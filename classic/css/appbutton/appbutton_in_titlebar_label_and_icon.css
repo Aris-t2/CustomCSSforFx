@@ -2,6 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@import "./appbutton_in_titlebar_icon_only.css";
+
 /* gain space before menubar */
 #main-window[tabsintitlebar] #toolbar-menubar {
   margin-inline-start: 95px !important;

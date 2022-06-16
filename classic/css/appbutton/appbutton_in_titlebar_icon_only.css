@@ -52,8 +52,8 @@
  padding-inline-start: 43px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
   margin-top: 4px !important;
 }
 
@@ -70,8 +70,9 @@
   box-shadow: unset !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
+  top: 0px !important;
 }
-
+/*
 #main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
   top: 0px !important;
 }
@@ -111,9 +112,9 @@
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 2px !important;
 	}
-}
+}*/
 
-/* code for Unix (macOS/Linux) */
+/* code for Unix (macOS/Linux) *//*
 @media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
@@ -129,7 +130,7 @@
 #main-window[tabsintitlebar][sizemode="fullscreen"] #PanelUI-button {
   top: 0px !important;
 }
-
+*/
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
   background-clip: padding-box !important;
   padding: 0 4px 0 !important;
@@ -307,4 +308,10 @@
 #main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
 #main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
   height: unset !important;
+}
+
+/* workaround for Firefox 102+ *******************/
+panel[type="arrow"][side="top"],
+panel[type="arrow"][side="bottom"] {
+  margin-inline: 0 !important;
 }

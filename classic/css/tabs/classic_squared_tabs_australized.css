@@ -338,9 +338,13 @@
 
 /* Windows 10 fix */
 @media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
-	.titlebar-button {
-	  padding-top: 7px !important;
-	  padding-bottom: 7px !important;
+	#toolbar-menubar .titlebar-button {
+	  padding-top: 6px !important;
+	  padding-bottom: 6px !important;
+	}
+	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) .titlebar-button {
+	  padding-top: 4px !important;
+	  padding-bottom: 4px !important;
 	}
 }
 
@@ -536,4 +540,17 @@
 /* Fx 97+ height fix */
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
   height: unset !important;
+}
+
+/* Fx 101+ */
+#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+  margin-top: -5px !important;
+}
+
+#main-window[sizemode="fullscreen"][tabsintitlebar] #titlebar {
+  margin-top: -3px !important;
+}
+
+#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
+  padding-top: 5px !important;
 }
