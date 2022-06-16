@@ -1,0 +1,67 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --status-width: 400px;
+}
+
+.browserContainer :is(statuspanel,#statuspanel) {
+  -moz-box-ordinal-group: 3 !important;
+  position: fixed !important;
+  display:block !important;
+  bottom: 2px !important;
+  z-index: 1001 !important
+}
+
+.browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(ltr) {
+  left: 0px;
+}
+.browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(rtl) {
+  right: 0px;
+}
+
+.browserContainer :is(statuspanel,#statuspanel) :is(#statuspanel-label,.statuspanel-label) {
+  appearance: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  min-width: var(--status-width) !important;
+  width: var(--status-width) !important;
+  max-width: var(--status-width) !important;
+  color: black !important;
+}
+
+.browserContainer :is(statuspanel,#statuspanel):-moz-lwtheme-brighttext :is(#statuspanel-label,.statuspanel-label) {
+  color: white !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	.browserContainer :is(statuspanel,#statuspanel):-moz-lwtheme :is(#statuspanel-label,.statuspanel-label) {
+	  color: white !important;
+	}
+}
+
+/* add space for status text on add-on bar */
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
+  padding-left: var(--status-width) !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):-moz-locale-dir(rtl) {
+  padding-right: var(--status-width) !important;
+}
+
+#statuspanel[mirror] {
+  inset-inline-start: unset !important;
+  inset-inline-end: unset !important;
+}
+
+#statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(ltr) {
+  margin-left: 0px !important;
+}
+
+#statuspanel[mirror] > #statuspanel-inner > #statuspanel-label:-moz-locale-dir(rtl) {
+  margin-right: 0px !important;
+}

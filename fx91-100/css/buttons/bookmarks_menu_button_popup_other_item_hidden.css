@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* other bookmarks */
+#BMB_unsortedBookmarks,
+#BMB_unsortedBookmarks + #BMB_mobileBookmarks,
+#BMB_unsortedBookmarks + #BMB_mobileBookmarks + menuseparator{
+  display: none !important;
+}

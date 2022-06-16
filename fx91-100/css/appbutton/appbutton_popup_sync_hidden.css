@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#appMenu-fxa-status,
+#appMenu-fxa-status + toolbarseparator,
+#appMenu-fxa-container,
+#appMenu-fxa-container + toolbarseparator,
+#appMenu-fxa-status2,
+#appMenu-fxa-status2 + toolbarseparator {
+  display: none !important;
+}

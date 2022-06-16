@@ -1,0 +1,89 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************
+******* BUTTONS *************
+****************************/
+
+/*****************************************/
+/* Classic button ui on menubar toolbar **/
+/*****************************************/
+
+/* back button adjustment */
+#toolbar-menubar #back-button .toolbarbutton-icon {
+  border: 0 !important;
+}
+
+/* adjust zoom reset and copy buttons position */
+#toolbar-menubar :is(#copy-button,#zoom-reset-button) {
+  margin-inline-start: -1px !important;
+  margin-inline-end: -1px !important;
+}
+#toolbar-menubar :is(#edit-controls, #zoom-controls) separator {
+  visibility: collapse !important;
+}
+
+/* unset default button appearance first */
+#toolbar-menubar .toolbarbutton-1,
+#toolbar-menubar .toolbarbutton-1 .toolbarbutton-icon{
+  appearance: none !important;
+  background: unset !important;
+}
+
+/* button spacing */
+#toolbar-menubar .toolbarbutton-1{
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+
+/* classic button style */
+#main-window:not([customizing]) #toolbar-menubar .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active),
+#toolbar-menubar toolbarbutton[type="menu-button"],
+#toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-button,
+#toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1:not([checked]):not([open]):not(:active),
+#toolbar-menubar .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+  background: rgba(151,152,153,.05) linear-gradient(rgba(251,252,253,.95), rgba(246,247,248,.47) 49%, 
+			  rgba(231,232,233,.45) 51%, rgba(225,226,229,.3)) !important;
+  border-color: rgba(0,0,0,.12) rgba(0,0,0,.19) rgba(0,0,0,.38) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 2px rgba(255,255,255,.1) inset,
+			  0 0 0 1px rgba(0,0,0,.4) inset !important;
+}
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button ,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover,
+#toolbar-menubar .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+  background-color: hsla(190,60%,70%,.5) !important;
+  border-color: hsla(190,50%,65%,.8) hsla(190,50%,50%,.8) hsla(190,50%,40%,.8) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.4) inset !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}
+#toolbar-menubar toolbarbutton[type="menu"][open]:not([disabled]),
+#toolbar-menubar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active ,
+#toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active,[open]),
+#toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) {
+  background-color: transparent !important;
+  border-color: rgba(0,0,0,.65) rgba(0,0,0,.55) rgba(0,0,0,.5) !important;
+  box-shadow: 0 0 6.5px rgba(0,0,0,.4) inset,
+			  0 0 2px rgba(0,0,0,.4) inset,
+			  0 1px 0 rgba(255,255,255,.4),
+			  0 0 0 1px rgba(0,0,0,.4) inset !important;
+}
+#toolbar-menubar toolbarbutton[disabled=true] > .toolbarbutton-icon {
+  opacity: .6 !important;
+}
+
+#toolbar-menubar toolbarbutton[disabled=true]{
+  opacity: 1.0 !important;
+}

@@ -1,0 +1,50 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	:root {
+	  --in-content-sidebar-width: 45px !important;
+	  --main-margin-start: 0px !important;
+	}
+	
+	/* reduce category width*/
+	#categories {
+	  min-width: var(--in-content-sidebar-width) !important;
+	  width: var(--in-content-sidebar-width) !important;
+	  max-width: var(--in-content-sidebar-width) !important;
+	}
+
+	/* adjust category icon position */
+	:is(.category, richlistitem) .category-icon {
+	  margin-inline-start: 13px !important;
+	}
+
+	/* adjust footer icon position */
+	.sidebar-footer-icon{
+	  margin-inline-start: 15px !important;
+	}
+	
+	/* adjust category icon position */
+	:is(.category, richlistitem) .category-name,
+	.sidebar-footer-label	{
+	  display: none !important;
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0px !important;
+	}
+	
+	.category {
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 0px !important;
+	  min-width: var(--in-content-sidebar-width) !important;
+	  width: var(--in-content-sidebar-width) !important;
+	  max-width: var(--in-content-sidebar-width) !important;
+	}
+
+}

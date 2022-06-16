@@ -1,0 +1,60 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* this creates an empty space below navigation toolbar */
+
+#main-window:not([customizing="true"]) #nav-bar {
+  padding-bottom: 26px !important;
+}
+
+/* reduce maximum width of location bar and search bar on navigation toolbar */
+#main-window:not([customizing="true"]) #nav-bar :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+  min-width: 50px !important;
+}
+
+/* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
+#main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
+  position: absolute !important;
+  display: block !important;
+  bottom: 0px !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 100vw !important;
+}
+
+/* reduce size of bookmarks 'more bookmarks' menu chevron and remove its background color on navigation toolbar */
+#nav-bar #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+/* set minimum height for bookmarks, when on navigation toolbar */
+#nav-bar #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+  min-height: 24px !important;
+}
+
+/* adjustments */
+#nav-bar #personal-bookmarks {
+  min-width: 40px !important;
+  width: auto !important;
+  max-width: 50vw !important;
+}
+
+/* workaround for megabar_expanding_breakout_disabled.css */
+#main-window #nav-bar #urlbar[breakout],
+#main-window #nav-bar #urlbar[breakout][breakout-extend] {
+  top: calc(-13px + ((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
+}
+
+#personal-toolbar-empty-description,
+#nav-bar #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+  padding: 0 2px !important; 
+}

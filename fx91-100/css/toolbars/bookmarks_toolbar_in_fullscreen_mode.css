@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* bookmarks toolbar visibility in fullscreen mode */
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
+  visibility: visible !important;
+}

@@ -1,0 +1,102 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --item_y_padding: 3px; /* old value: 2px */
+  --y_padding_before_label: 28px !important; /* for popup_menus_space_before_label.css */
+  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 2px ) !important; /* for popup_menus_space_before_label.css */
+  --panel-padding: 0px !important;
+  --arrowpanel-menuitem-margin: 0px !important;
+  --arrowpanel-menuitem-padding: calc( var(--item_y_padding) + 1px) 2px !important;
+  --panel-subview-body-padding: 0px !important;
+}
+
+.subview-subheader,
+panelview .toolbarbutton-1,
+.subviewbutton:not(#appMenu-fxa-status2),
+.widget-overflow-list .toolbarbutton-1 {
+  margin: 0 !important;
+  min-height: 0 !important;
+  padding: calc( var(--item_y_padding) + 1px) 2px !important;
+}
+
+.widget-overflow-list .toolbarbutton-1 {
+  padding: var(--item_y_padding) 2px !important;
+}
+
+#appMenu-popup .PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2) {
+  padding: calc( var(--item_y_padding) + 1px) 4px !important;
+}
+	
+menupopup[type=arrow] > menuitem,
+menupopup[type=arrow] > menu {
+  padding-block: 0 !important;
+  padding: var(--item_y_padding) 0 !important;
+  padding-inline-start: 4px !important;
+}
+
+.panel-subview-body {
+  padding: 0px !important;
+}
+
+* menupopup[type=arrow],
+:is(menupopup, panel)[type=arrow] {
+  --panel-padding: 0px !important;
+}
+
+#context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+  padding: var(--item_y_padding) 2px !important;
+  margin-inline-start: -6px !important;
+}
+
+:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-inline-start: 4px !important;
+  height: 16px !important;
+}
+
+:is(menupopup, panel)[type=arrow] :is(.menu-accel,.menu-iconic-accel) {
+  margin-inline-end: 8px !important;
+}
+
+:is(menupopup, panel)[type=arrow] .menu-right {
+  margin-inline-end: 4px !important;
+}
+
+.menu-iconic-icon {
+  margin-inline-start: 2px !important;
+  margin-inline-end: -2px !important;
+}
+
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
+	
+  menupopup > menuitem,
+  menupopup > menu {
+	padding-block: 0 !important;
+	padding: var(--item_y_padding) 0 !important;
+	padding-inline-start: 4px !important;
+  }
+
+  * menupopup {
+	--panel-padding: 0px !important;
+  }
+  :is(menupopup, panel) :is(.menu-accel,.menu-iconic-accel) {
+	margin-inline-end: 8px !important;
+  }
+
+  :is(menupopup, panel) .menu-right {
+	margin-inline-end: 4px !important;
+  }
+
+  /* support for context_bfrsb_labels_with_icons.css */
+  menugroup#context-navigation > menuitem.menuitem-iconic > hbox.menu-iconic-left > .menu-iconic-icon {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	margin-inline-start: 10px !important;
+	margin-inline-end: 6px !important;
+  }
+
+}

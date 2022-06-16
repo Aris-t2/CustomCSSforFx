@@ -1,0 +1,97 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* dark blue */
+#sidebar-switcher-bookmarks > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #336699 !important;
+  fill: #336699 !important;
+  opacity: 1.0 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-switcher-bookmarks > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #64a3e2 !important;
+  fill: #64a3e2 !important;
+  opacity: 1.0 !important;
+}
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-switcher-bookmarks > .toolbarbutton-icon,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #64a3e2 !important;
+	  fill: #64a3e2 !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+/* purple */
+#sidebar-switcher-history > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #800080 !important;
+  fill: #800080 !important;
+  opacity: 1.0 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-switcher-history > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #ff00ff !important;
+  fill: #ff00ff !important;
+  opacity: 1.0 !important;
+}
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-switcher-history > .toolbarbutton-icon,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #ff00ff !important;
+	  fill: #ff00ff !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+/* blue */
+#sidebar-reverse-position > .toolbarbutton-icon,
+#sidebar-switcher-tabs > .toolbarbutton-icon,
+#sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #4169e1 !important;
+  fill: #4169e1 !important;
+  opacity: 1.0 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-reverse-position > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-switcher-tabs > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #00d2ff !important;
+  fill: #00d2ff !important;
+  opacity: 1.0 !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-reverse-position > .toolbarbutton-icon,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-switcher-tabs > .toolbarbutton-icon,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #00d2ff !important;
+	  fill: #00d2ff !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+#sidebarMenu-popup toolbarbutton[data-l10n-id="sidebar-menu-close"] > .toolbarbutton-icon {
+  color: red !important;
+  fill: red !important;
+  opacity: 1.0 !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #sidebarMenu-popup toolbarbutton[data-l10n-id="sidebar-menu-close"] > .toolbarbutton-icon {
+  color: #ff5a5a !important;
+  fill: #ff5a5a !important;
+  opacity: 1.0 !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #sidebarMenu-popup toolbarbutton[data-l10n-id="sidebar-menu-close"] > .toolbarbutton-icon {
+	  color: #ff5a5a !important;
+	  fill: #ff5a5a !important;
+	  opacity: 1.0 !important;
+	}
+}

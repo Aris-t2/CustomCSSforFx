@@ -1,0 +1,43 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* DeveloperEdition colors (Fx57+) [label="Firefox Developer Edition"] */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"] {
+  background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+					linear-gradient(#0067de, #2398ff,#03daff) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button[label="Firefox Developer Edition"]:is(:hover:active,[open]){
+  background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
+}
+
+/* Nightly colors (Fx57+) [label="Nightly"] */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]) {
+  background-image: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]):hover:not(:active):not([open]) {
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+					linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]):is(:hover:active,[open]) {
+  background-image: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+}
+
+/* Tor-Browser */
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]) {
+  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+}
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]):hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
+					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
+					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+}
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]):is(:hover:active,[open]) {
+  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+}

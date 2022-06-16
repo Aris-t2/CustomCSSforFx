@@ -1,0 +1,37 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./toolbar_mode_icons_and_text.css";
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+  opacity: 0.01 !important;
+}
+
+#nav-bar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+#nav-bar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+  margin-bottom: -22px !important;
+}
+
+toolbar:not(#nav-bar):not(#TabsToolbar) toolbaritem .toolbarbutton-1 > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+  margin-bottom: -17px !important;
+}
+
+#PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
+  visibility: collapse !important;
+}
+
+/* menubar corrections */
+#main-window #toolbar-menubar toolbaritem .toolbarbutton-1 .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
+  margin-top: -1px !important;
+}
+
+/* tweak for bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css */
+#main-window #navigator-toolbox #PersonalToolbar #bookmarks-menu-button::after{
+  margin-top: -4px !important;
+}

@@ -1,0 +1,22 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --ctb_start_padding: 7px;
+  --ctb_width: 24px;
+  --ctb_start_margin: -4px;
+  --ctb_end_margin: 4px;
+}
+
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: var(--ctb_start_padding) !important;
+  width: var(--ctb_width) !important;
+}
+
+.tab-close-button {
+  -moz-box-ordinal-group: 0 !important;
+  margin-inline-start: var(--ctb_start_margin) !important;
+  margin-inline-end: var(--ctb_end_margin) !important;
+}

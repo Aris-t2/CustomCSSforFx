@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* fixed width for bookmarks */
+#PersonalToolbar .bookmark-item{
+   width: 130px;
+   max-width: 130px;
+} 

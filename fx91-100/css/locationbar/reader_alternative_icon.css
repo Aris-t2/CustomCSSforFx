@@ -1,0 +1,28 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* alternative reader icon*/
+#reader-mode-button-icon,
+#reader-mode-button {
+  list-style-image: url("./../../image/reader.png") !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+
+#reader-mode-button[readeractive] #reader-mode-button-icon,
+#reader-mode-button[readeractive] {
+  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+}
+
+#reader-mode-button-icon:hover,
+#reader-mode-button:hover  {
+  filter: brightness(1.25) !important;
+}
+
+/* colorize reader, page action and dropmarker icons */
+#urlbar #reader-mode-button,
+#reader-mode-button-icon,
+#urlbar #reader-mode-button:is(:hover,:hover:active,[open]) {
+  fill: unset !important;
+}

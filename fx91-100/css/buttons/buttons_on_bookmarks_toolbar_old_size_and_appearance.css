@@ -1,0 +1,38 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+  @media not all and (-moz-windows-classic) {
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
+	#PersonalToolbar #PlacesToolbar toolbarbutton,
+	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
+	  appearance: toolbarbutton !important;
+	  background: unset !important;
+	  box-shadow: unset !important;
+	  padding-left: 3px !important;
+	  padding-right: 3px !important;
+	  margin-left: 0px !important;
+	  margin-right: 0px !important;
+	}
+
+	#PersonalToolbar .toolbarbutton-badge-stack,
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}
+
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
+	  padding-left: 0px !important;
+	  padding-right: 0px !important;
+	  width: 16px !important;
+	}
+	#PersonalToolbar .scrollbutton-up .toolbarbutton-icon,
+	#PersonalToolbar .scrollbutton-down .toolbarbutton-icon {
+	  padding-left: unset !important;
+	  padding-right: unset !important;
+	  width: unset !important;
+	}
+  }
+}

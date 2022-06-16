@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PopupSearchAutoComplete :is(.search-panel-current-engine,.search-panel-current-input),
+#PopupSearchAutoComplete :is(.search-panel-current-engine,.search-panel-current-input) + menuseparator {
+  display: none !important;	
+}

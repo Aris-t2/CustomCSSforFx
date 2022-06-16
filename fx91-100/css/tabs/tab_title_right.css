@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tab-label-container {
+  display: grid !important;
+  justify-items: safe right !important;
+}
+  
+.tab-label {
+  overflow: hidden !important;
+}
+

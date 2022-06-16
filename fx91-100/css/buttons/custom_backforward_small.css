@@ -1,0 +1,92 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* override custom button shapes */
+#main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar :is(#back-button, #forward-button)[type="menu-button"] .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button)[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button)[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button):not([checked]):not([open]):not(:active) > .toolbarbutton-text,
+#nav-bar :is(#back-button, #forward-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#nav-bar :is(#back-button, #forward-button):not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#nav-bar :is(#back-button, #forward-button):not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button)[type="menu"][open]:not([disabled]) .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button)[type="menu-button"]:not([open]):hover:not([disabled]):active .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button) > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button)[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack  {
+  background: unset !important;
+  border-color: unset !important;
+  box-shadow: unset !important;
+  transition: unset !important;
+  fill: unset !important;
+}
+
+/* custom small back-forward buttons */
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button) .toolbarbutton-icon,
+#main-window:not([uidensity=compact]):not([uidensity=touch])  #navigator-toolbox #nav-bar :is(#back-button, #forward-button) .toolbarbutton-icon,
+#main-window[uidensity=compact]  #navigator-toolbox #nav-bar :is(#back-button, #forward-button) .toolbarbutton-icon,
+#main-window[uidensity=touch]  #navigator-toolbox #nav-bar :is(#back-button, #forward-button) .toolbarbutton-icon {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 23px !important;
+  background: unset !important;
+  box-shadow: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+}
+
+#main-window #navigator-toolbox #nav-bar #back-button  {
+  padding-inline-start: 2px !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window[uidensity=compact] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon {
+  -moz-image-region: rect(0px 23px 23px 0px) !important;
+  width: 23px !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window[uidensity=compact] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon {
+  -moz-image-region: rect(0px 46px 23px 23px) !important;
+  width: 23px !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > :is(#back-button, #forward-button) {
+  margin: unset !important;
+  padding: unset !important;
+}
+
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button):not([disabled]):hover .toolbarbutton-icon {
+  filter: brightness(1.3) !important;
+}
+
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button):not([disabled]):is(:active,:hover:active,[open]) .toolbarbutton-icon {
+  filter: brightness(0.9) contrast(175%) !important;
+}
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button)[disabled] .toolbarbutton-icon {
+  opacity: 1.0 !important;
+  filter: grayscale(75%) !important;
+}
+
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button)[disabled] {
+  opacity: 1.0 !important;
+}

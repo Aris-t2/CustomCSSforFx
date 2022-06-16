@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#nav-bar:-moz-lwtheme #urlbar ::-moz-selection,
+#nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection {
+  background-color: HighlightText !important;
+  color: Highlight !important;
+}

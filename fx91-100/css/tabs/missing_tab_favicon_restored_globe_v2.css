@@ -1,0 +1,42 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* show favicon for tabs without favicons */
+.tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+  display: inline !important;
+}
+
+#main-window .tabbrowser-tab[pinned] .tab-icon-image:not([src]),
+#main-window .tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+  list-style-image: url('./../../image/globe.svg') !important;
+}
+
+#main-window:-moz-lwtheme-brighttext .tabbrowser-tab[pinned] .tab-icon-image:not([src]),
+#main-window:-moz-lwtheme-brighttext .tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+  box-shadow: inset 0 0 0 8px rgba(255,255,255,1.0) !important;
+  border-radius: 1000px !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+
+	#main-window .tabbrowser-tab[pinned] .tab-icon-image:not([src]),
+	#main-window .tabbrowser-tab:not([pinned]) .tab-icon-image:not([src]) {
+	  box-shadow: inset 0 0 0 8px rgba(255,255,255,1.0) !important;
+	  border-radius: 1000px !important;
+	}
+}
+
+.tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
+  display: none !important;
+}
+
+
+.tab-icon-image {
+  opacity: 1 !important;
+}
+.tab-icon-image:not([busy], [src]) {
+  content: url('./../../image/globe.svg') !important;
+  display: inline !important;
+}

@@ -1,0 +1,20 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
+  min-height: 1px !important;
+  height: 1px !important;
+  max-height: 1px !important;
+  visibility: visible !important;
+  display: block !important;
+  opacity: 0.1 !important;
+}
+
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar:hover {
+  min-height: var(--addonbar_height) !important;
+  height: var(--addonbar_height) !important;
+  max-height: var(--addonbar_height) !important;
+  opacity: 1 !important;
+}

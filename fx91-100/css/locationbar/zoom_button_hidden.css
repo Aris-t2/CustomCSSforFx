@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* always hide zoom button */
+#urlbar-container #urlbar-zoom-button{
+  visibility: collapse !important;
+}

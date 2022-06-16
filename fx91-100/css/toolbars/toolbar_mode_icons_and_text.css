@@ -1,0 +1,143 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* disable classic appearance, if active */
+
+#main-window:not([customizing]) #nav-bar .toolbarbutton-1:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar .toolbarbutton-1:not(#PlacesChevron):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-text,
+#nav-bar .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+#nav-bar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
+#nav-bar toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#nav-bar .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#nav-bar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack {
+  background: unset !important;
+  background-color: unset !important;
+  border-color: unset !important;
+  box-shadow: unset !important;
+  transition: unset !important;
+}
+
+toolbar:not(#TabsToolbar) .toolbarbutton-1 .toolbarbutton-badge-stack,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 :is(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1 :is(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :is(.toolbarbutton-icon, .toolbarbutton-text){
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  appearance: toolbarbutton !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks .toolbarbutton-text,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
+  display: block !important;
+  padding: 0 2px !important;
+}
+
+toolbar:not(#TabsToolbar) #PlacesChevron .toolbarbutton-text {
+  display: none !important;
+  padding: 0 !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  -moz-box-orient: vertical !important;
+}
+
+/* remove min-width to get shorter buttons - button width = text-width */
+#nav-bar toolbaritem .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button),
+#nav-bar .toolbarbutton-1:not([type="menu-button"]):not(#nav-bar-overflow-button),
+#nav-bar .toolbarbutton-1[type="menu-button"] toolbarbutton:not(#nav-bar-overflow-button){
+  min-width: 57px !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  padding-top: 4px !important;
+}
+
+toolbar:not(#TabsToolbar) #bookmarks-menu-button::after {
+  visibility: collapse !important;
+}
+
+/* remove load/stop button animations */
+toolbar:not(#TabsToolbar) #stop-button .toolbarbutton-animatable-image,
+toolbar:not(#TabsToolbar) #reload-button .toolbarbutton-animatable-image {
+  visibility: collapse !important;
+}
+
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
+  fill: unset !important;
+}
+
+@media (-moz-windows-classic) {
+
+	/* tweaks for Windows Classic theme */
+	toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+	  box-shadow: 1px 0 0 0 white inset,
+				  0 1px 0 0 white inset,
+				  -1px 0 0 0 gray inset,
+				  0 -1px 0 0 gray inset !important;
+	}
+}
+
+toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
+toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
+toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
+  opacity: 0.6 !important;
+}
+
+/* menubar tweaks */
+#main-window #toolbar-menubar toolbaritem .toolbarbutton-1,
+#main-window #toolbar-menubar .toolbarbutton-1,
+#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  padding: 0 3px !important;
+}
+
+toolbar:not(#nav-bar) :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+toolbar:not(#nav-bar) #bookmarks-menu-button > .toolbarbutton-icon,
+toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  max-width: unset !important;
+  max-height: unset !important;
+}

@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Nightly */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  background-image: linear-gradient(hsl(211,33%,32%), hsl(209,53%,10%) 95%) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(210,48%,90%,.5) 10%, hsla(210,48%,90%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(211,70%,83%,.5), hsla(211,70%,83%,0)),
+					linear-gradient(hsl(211,33%,32%), hsl(209,53%,10%) 95%) !important;
+}
+
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+  background-image: linear-gradient(hsl(211,33%,26%), hsl(209,53%,6%) 95%) !important;
+}

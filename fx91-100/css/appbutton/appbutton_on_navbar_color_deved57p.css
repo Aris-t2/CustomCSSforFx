@@ -1,0 +1,34 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./appbutton_on_navbar_color_base.css";
+
+/* DevEdition */
+#nav-bar #PanelUI-menu-button  :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background: linear-gradient(#0067de, #2398ff,#03daff) !important;
+  border-color: hsla(210,59%,13%,.9) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 2px rgba(255,255,255,.1) inset,
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+#nav-bar #PanelUI-menu-button:hover:not(:active):not([open]) > :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+					linear-gradient(#0067de, #2398ff,#03daff) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#nav-bar #PanelUI-menu-button:hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#nav-bar #PanelUI-menu-button[open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}

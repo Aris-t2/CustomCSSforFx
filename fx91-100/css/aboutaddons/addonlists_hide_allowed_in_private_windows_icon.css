@@ -1,0 +1,15 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+  a.addon-badge-private-browsing-allowed,
+  div.addon-badge-private-browsing-allowed {
+	display: none !important;
+  }
+	
+}

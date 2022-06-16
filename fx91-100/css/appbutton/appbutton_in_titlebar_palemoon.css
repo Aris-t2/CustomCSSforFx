@@ -1,0 +1,17 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Palemoon */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  background-image: linear-gradient(rgb(82,182,247), rgb(10,98,215) 95%) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at bottom, rgba(89,240,252,.5) 10%, rgba(89,240,252,0) 70%),
+					radial-gradient(farthest-side at bottom, rgb(60,68,236), rgba(172,229,255,0)),
+					linear-gradient(rgb(69,170,246), rgb(30,40,209) 95%) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+  background-image: linear-gradient(rgb(69,170,246), rgb(0,74,209) 95%) !important;
+}

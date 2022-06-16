@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_multiple_lines.css";
+
+
+:root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {
+  display: unset !important;
+  visibility: visible !important;
+}
+
+:is(.tabs-newtab-button,#tabs-newtab-button) {
+  display: none !important;
+  visibility: hidden !important;
+}
+

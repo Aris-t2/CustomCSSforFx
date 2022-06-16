@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tab-icon-overlay[soundplaying] {
+  fill: #058B00 !important;/* var(--green-70) */
+}
+.tab-icon-overlay[muted] {
+  fill: #D70022 !important;/* var(--red-60) */
+}
+.tab-icon-overlay[activemedia-blocked] {
+  fill: #FFE900 !important;/* var(--yellow-50) */
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[soundplaying] {
+  fill: lightgreen !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[muted] {
+  fill: #ff5a5a !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[activemedia-blocked] {
+  fill: orange !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[soundplaying] {
+	  fill: lightgreen !important;
+	}
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[muted] {
+	  fill: #ff5a5a !important;
+	}
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[activemedia-blocked] {
+	  fill: orange !important;
+	}
+}

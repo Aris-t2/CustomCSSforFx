@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* reduce text font size in location/search bar (to what is was on Win7)*/
+#main-window[uidensity="compact"] :is(.searchbar-textbox, #urlbar,#searchbar) {
+  font-size: 12px !important;
+}

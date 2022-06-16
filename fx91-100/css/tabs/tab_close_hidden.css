@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  min-width: 0.5px !important;
+  width: 0.5px !important;
+  max-width: 0.5px !important;
+}

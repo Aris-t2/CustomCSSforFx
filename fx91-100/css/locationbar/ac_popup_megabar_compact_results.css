@@ -1,0 +1,44 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* disable useless space wasting inside popup */
+#urlbar[breakout][breakout-extend] > .urlbarView {
+  padding: unset !important;
+  margin: unset !important;
+}
+
+#urlbar[breakout] .urlbarView {
+  margin-inline: unset !important;
+  width: 100% !important;
+}
+
+/* disable space wasting inside popup around result items */
+#urlbar[breakout] #urlbar-results {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#urlbar[breakout] #urlbar-results .urlbarView-body-outer,
+#urlbar[breakout] #urlbar-results .urlbarView-row,
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  margin-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-inline-end: 0 !important;
+}
+
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {
+  padding-inline-start: 4px !important;
+  padding-inline-end: 4px !important;
+}
+
+#urlbar[breakout] .urlbarView-row {
+  padding-block: 0px !important;
+}
+
+/* disable space wasting inside popup around search engines */
+#urlbar[breakout] .search-one-offs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

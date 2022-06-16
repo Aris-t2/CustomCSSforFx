@@ -1,0 +1,8 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  -moz-margin-start: 20px !important;
+}

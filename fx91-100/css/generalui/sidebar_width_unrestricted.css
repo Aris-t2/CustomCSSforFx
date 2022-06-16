@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebar,
+#sidebar-header,
+#sidebar-box {
+  overflow: hidden !important;
+  min-width: 0px !important;
+  max-width: 9999px !important;
+}

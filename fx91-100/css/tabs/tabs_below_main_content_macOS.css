@@ -1,0 +1,17 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_macOS.css";
+@import "./tabs_below_main_content.css";
+
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+  padding-top: 0 !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #titlebar {
+  height: 0 !important;
+  padding-top: 0 !important;
+}

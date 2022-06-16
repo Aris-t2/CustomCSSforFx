@@ -1,0 +1,51 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --y_padding_before_label: 36px;
+  --y_padding_before_label_cn_no_icon: 0px !important; /* for context_bfrsb_labels_without_icons.css */
+  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 4px );
+  --y_padding_before_label_am: calc(var(--y_padding_before_label) - 4px );
+}
+
+:is(popup,menupopup)[type=arrow] :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
+  padding-inline-start: var(--y_padding_before_label) !important;
+}
+
+:is(popup,menupopup)[type=arrow] :is(menuseparator,.bookmarks-actions-menuseparator) {
+  appearance: none;
+  margin: 2px !important;
+  margin-inline-start: var(--y_padding_before_label) !important;
+}
+
+:is(popup,menupopup)[type=arrow] menuitem[checked="false"] {
+  padding-inline-start: var(--y_padding_before_label) !important;
+}
+
+.PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
+  padding-inline-start: var(--y_padding_before_label_bm) !important;
+}
+
+#PanelUI-bookmarks .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic),
+#PanelUI-history .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic),
+#appMenu-popup .PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
+  padding-inline-start: var(--y_padding_before_label_am) !important;
+}
+
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
+	:is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
+	  padding-inline-start: var(--y_padding_before_label) !important;
+	}
+
+	:is(popup,menupopup) :is(menuseparator,.bookmarks-actions-menuseparator) {
+	  appearance: none;
+	  margin: 2px !important;
+	  margin-inline-start: var(--y_padding_before_label) !important;
+	}
+
+	:is(popup,menupopup) menuitem[checked="false"] {
+	  padding-inline-start: var(--y_padding_before_label) !important;
+	}
+}

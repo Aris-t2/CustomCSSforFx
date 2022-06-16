@@ -1,0 +1,37 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#widget-overflow-mainView > toolbarseparator,
+#widget-overflow:not([remote="true"]) .widget-overflow-list .subviewbutton-nav::after,
+#overflowMenu-customize-button,
+#widget-overflow:not([remote="true"]) #widget-overflow-mainView .toolbarbutton-text {
+  display: none !important;
+}
+
+#widget-overflow:not([remote="true"]) #widget-overflow-mainView toolbarbutton {
+  padding: 0 2px !important;
+  margin: 0 !important;
+}
+
+#widget-overflow:not([remote="true"]),
+#widget-overflow:not([remote="true"]) .widget-overflow-list,
+#widget-overflow:not([remote="true"]) #widget-overflow-mainView {
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: unset !important;
+  -moz-box-orient: horizontal !important; /* can not be replaced with box-orient yet */
+}
+
+#widget-overflow:not([remote="true"]) .panel-arrowcontent,
+#widget-overflow:not([remote="true"]) panelmultiview,
+#widget-overflow:not([remote="true"]) .panel-viewcontainer,
+#widget-overflow:not([remote="true"]) .panel-viewstack,
+#widget-overflow:not([remote="true"]) .panel-subview-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: unset !important;
+  height: auto !important;
+  max-height: auto !important;
+}

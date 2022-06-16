@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#identity-icon-label,
+#identity-icon-labels {
+  display: none !important;
+}
+
+#identity-box {
+  padding-inline-end: 4px !important;
+  margin-inline-end: 4px !important;
+}

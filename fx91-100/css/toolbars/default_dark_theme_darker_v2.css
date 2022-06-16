@@ -1,0 +1,44 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #nav-bar:-moz-lwtheme,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):-moz-lwtheme {
+  appearance: none !important;
+  background: black !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab:not(:hover):not([selected="true"]) .tab-content {
+  background-image: linear-gradient(#323234,#323234) !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab:hover:not([selected="true"]) .tab-content {
+  background-image: linear-gradient(#474749,#474749) !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab[selected="true"] .tab-content {
+  background-image: linear-gradient(transparent,black,black) !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #nav-bar:-moz-lwtheme,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):-moz-lwtheme {
+	  appearance: none !important;
+	  background: black !important;
+	}
+
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab:not(:hover):not([selected="true"]) .tab-content {
+	  background-image: linear-gradient(#323234,#323234) !important;
+	}
+
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab:hover:not([selected="true"]) .tab-content {
+	  background-image: linear-gradient(#474749,#474749) !important;
+	}
+
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #navigator-toolbox #TabsToolbar:-moz-lwtheme .tabbrowser-tab[selected="true"] .tab-content {
+	  background-image: linear-gradient(transparent,black,black) !important;
+	}
+}

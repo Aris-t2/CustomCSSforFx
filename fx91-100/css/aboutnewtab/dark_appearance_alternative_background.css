@@ -1,0 +1,11 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url(about:newtab), url(about:home) {
+  body {
+	background-color: #323234 !important;
+	color: #D1D1D1 !important;
+  }
+}

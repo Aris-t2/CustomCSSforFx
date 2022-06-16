@@ -1,0 +1,103 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar .urlbarView-no-wrap,
+#urlbar .urlbarView-url {
+  min-width: 50% !important;
+  width: 50% !important;
+}
+
+#urlbar .urlbarView-url {
+  margin-inline-start: 10px !important;
+}
+
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% + 10px) !important; /* 50% + 10px url space */
+}
+
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: calc(50% + 0px) !important;
+}
+
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-inline-start: unset !important;
+}
+
+#urlbar .urlbarView-title-separator {
+  display: none !important;
+}
+
+#urlbar .urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=dynamic],[sponsored]) .urlbarView-title {
+  width: calc(50% - 26px) !important;
+}
+
+/* do not hide actiontype item */
+#urlbar .urlbarView-action{
+  visibility: visible !important;
+  display: inherit !important;
+}
+
+/* do not wrap the line */
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner {
+  flex-wrap: unset !important;
+}
+#urlbar .urlbarView-results[wrap] > .urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap {
+  max-width: unset !important;
+  flex-basis: unset !important;
+}
+#urlbar .urlbarView-results[wrap] > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
+  margin-top: unset !important;
+  padding-inline-start: unset !important;
+}
+
+#urlbar .urlbarView-results > .urlbarView-row[type=remotetab] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  appearance: none !important;
+  background: unset !important;
+}
+
+#urlbar .urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner {
+  min-height: unset !important;
+}
+
+.urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon {
+  min-width: unset !important;
+  height: unset !important;
+}
+
+.urlbarView-dynamic-onboardTabToSearch-description {
+  display: none !important;
+}
+
+/* use different width values to go from  50/50 to e.g. 40/60 */
+/*
+#urlbar .urlbarView-no-wrap {
+  min-width: 40% !important;
+  width: 40% !important;
+}
+#urlbar .urlbarView-url {
+  min-width: 60% !important;
+  width: 60% !important;
+}
+
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: calc(40% + 10px) !important;
+}
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: calc(40% + 0px) !important;
+}
+*/

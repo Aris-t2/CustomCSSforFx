@@ -1,0 +1,91 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_show_buttons_instead_of_menu_popup.css";
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	:root {
+	  --addon-icon-size: 20px !important;
+	}
+	
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	addon-card .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
+	  min-height: 40px !important;
+	  padding-inline-start: 2px !important;
+	}
+	
+	addon-card panel-list {
+	  margin-top: -47px !important;
+	}
+	
+	addon-card[expanded="true"] panel-list {
+	  margin-top: -26px !important;
+	}
+	
+	addon-card .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card .card-heading-image {
+	  object-fit: unset !important;
+	  margin: 0 !important;
+	}
+
+	body div#main div[current-view="list"] addon-list[type="theme"] addon-card button[data-l10n-id="enable-addon-button"]{
+	  margin-top: 5px !important;;
+	}
+	
+	/* small image */ 
+	/*addon-list[type="theme"] .card-heading-image {
+	  width: 200px !important;
+	  height: 40px !important;
+	  object-fit: unset !important;
+	}
+
+	addon-list[type="theme"] .card-heading-image {
+	  position: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card > .addon.card {
+	  height: unset !important;
+	}
+
+	addon-list[type="theme"] .card-contents {
+	  margin-top: unset !important;
+	}
+
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: 4px !important;
+	  margin-inline-end: 6px !important;
+	}*/
+	
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: -27px !important;
+	  margin-inline-end: 0px !important;
+	}
+	
+	addon-list[type="theme"] .addon-description {
+	  position: absolute !important;
+	  margin-top: 20px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card {
+	  width: 150px !important;
+	}
+	
+	
+	
+}

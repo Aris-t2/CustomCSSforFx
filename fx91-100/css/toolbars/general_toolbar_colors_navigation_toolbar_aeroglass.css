@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* navigation toolbar background */
+#main-window #navigator-toolbox #nav-bar:not(:-moz-lwtheme),
+#main-window #navigator-toolbox #nav-bar:-moz-lwtheme,
+#main-window #navigator-toolbox #nav-bar {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}

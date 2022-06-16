@@ -1,0 +1,42 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addons_manager_alternative_appearance.css";
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+
+	#addons-page {
+	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	}
+	
+	:root{
+	  --in-content-page-background: #edf6ff !important;
+	}
+	
+	body > div#full {
+	  background: #edf6ff !important;
+	}
+
+	.sticky-container {
+	  background: #edf6ff !important;
+	}
+	
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		
+	  :root{
+		--in-content-page-background: rgb(28,27,34) !important;
+	  }
+		
+	  body > div#full {
+		background: rgb(28,27,34) !important;
+	  }
+		
+	}
+
+}

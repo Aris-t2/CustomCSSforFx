@@ -1,0 +1,29 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* alternative padlock icons */
+#urlbar[pageproxystate="valid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box:is(.verifiedDomain,.verifiedIdentity) #identity-icon,
+#urlbar[pageproxystate="valid"] :is(.verifiedDomain,.verifiedIdentity) #connection-icon {
+  list-style-image: url(./../../image/padlock_classic2.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+#urlbar[pageproxystate="valid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box:is(.insecureLoginForms,.mixedActiveContent,.notSecure) #identity-icon,
+#urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent,.notSecure) #connection-icon {
+  list-style-image: url(./../../image/padlock_classic2_mal.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+
+#urlbar[pageproxystate="valid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box:is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked,.certUserOverridden) #identity-icon,
+#urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked,.certUserOverridden) #connection-icon {
+  list-style-image: url(./../../image/padlock_classic2_mpl.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+
+#urlbar[pageproxystate="valid"] #tracking-protection-icon-container:not([hidden]) ~ #identity-box.mixedActiveBlocked #identity-icon,
+#urlbar[pageproxystate="valid"] .mixedActiveBlocked #connection-icon {
+  list-style-image: url(./../../image/padlock_classic2_mab.png) !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+/**/

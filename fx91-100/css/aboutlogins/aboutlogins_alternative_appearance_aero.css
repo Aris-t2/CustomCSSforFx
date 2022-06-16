@@ -1,0 +1,17 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./aboutlogins_alternative_appearance.css";
+
+@-moz-document url-prefix(about:logins) {
+
+	header,
+	.container ol[role="listbox"],
+	login-list,
+	div.meta {
+	  background: #dbeaf9 !important;
+	}
+	
+}

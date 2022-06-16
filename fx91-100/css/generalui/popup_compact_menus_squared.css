@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --arrowpanel-border-radius: 0 !important;
+  --panel-border-radius: 0 !important;
+}
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --arrowpanel-border-radius: 0 !important;
+  --panel-border-radius: 0 !important;
+  border-radius: 0 !important;
+}

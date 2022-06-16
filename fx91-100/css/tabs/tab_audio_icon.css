@@ -1,0 +1,24 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* thanks to Speravir: https://github.com/Aris-t2/CustomCSSforFx/issues/368#issuecomment-859216327 */
+
+/* https://old.reddit.com/r/FirefoxCSS/comments/nqyhcm/anyone_got_any_css_to_put_the_audible_icon_back/h0eti2o/ */
+.tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
+  grid-template-areas: "a s";
+}
+.tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]) {
+  grid-area: s;
+}
+
+.tab-icon-overlay {
+  padding: 0 !important;
+}
+.tab-icon-overlay:hover {
+  background: none !important;
+}
+.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) > * {
+  opacity: 1 !important;
+}

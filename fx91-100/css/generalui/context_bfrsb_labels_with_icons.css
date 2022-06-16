@@ -1,0 +1,120 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* context menu code has no effect on macOS */
+
+#context-navigation:not([hidden]) {
+  display: flex;
+  flex-direction: column !important;
+  --menuitem-min-width: unset !important;
+  min-width: unset !important;
+  padding-bottom: 0px !important;
+}
+	
+:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  content: attr(aria-label) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+	
+#context-navigation > .menuitem-iconic {
+  -moz-box-pack: start !important; /* can not be replaced with box-pack yet */
+}
+
+/* fix for German locale */
+#context-bookmarkpage[aria-label*="Lesezeichen"] {
+  padding-inline-end: 10px !important;
+}
+
+/* Windows code */
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+
+  #context-navigation :is(menu, menuitem, menucaption),
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+	appearance: none !important;
+	min-height: unset !important;
+  }
+  
+  #context-navigation :is(menu, menuitem, menucaption):hover,
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):hover {
+	background-color: var(--menuitem-hover-background-color) !important;
+  }
+  
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon,
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+	background-color: unset !important;
+  }
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+    width: 16px !important;
+    height: 16px !important;
+    padding: 0px !important;
+    margin-top: 7px !important;
+	margin-bottom: 7px !important;
+	margin-inline-start: 12px !important;
+	margin-inline-end: 8px !important;
+  }
+
+}
+
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	margin: 0 !important;
+	width: 16px !important;
+	height: 16px !important;
+  }
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: 6px !important;
+  }
+
+}
+
+@media not (-moz-platform: windows) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
+	margin: 0 !important;
+	width: 16px !important;
+	height: 16px !important;
+  }
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: 6px !important;
+  }
+
+}
+
+@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
+
+  #context-navigation :is(menu, menuitem, menucaption),
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
+	appearance: menuitem !important;
+	min-height: unset !important;
+  }
+  
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	margin: unset !important;
+	margin-inline-start: 6px !important;
+	margin-inline-end: 10px !important;
+  }
+  
+  @media (-moz-windows-classic){
+	#context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 2px !important;
+	}
+  }
+  
+  #context-navigation {
+	background: unset !important;
+  }
+  
+  #context-sep-navigation {
+	margin-inline-start: 0px !important;
+  }
+  
+}

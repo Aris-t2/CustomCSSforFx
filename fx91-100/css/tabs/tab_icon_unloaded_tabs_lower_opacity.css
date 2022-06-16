@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Blend Inactive tabs favicon */
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content:not(:hover) .tab-icon-image{
+    filter: grayscale(70%);
+    transition: filter 0.2s ease-in;
+    opacity: 0.7;
+}

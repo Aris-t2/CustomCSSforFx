@@ -1,0 +1,17 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Aurora */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  background-image: linear-gradient(hsl(208,99%,37%), hsl(214,90%,23%) 95%) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(202,100%,85%,.5) 10%, hsla(202,100%,85%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(205,100%,72%,.7), hsla(205,100%,72%,0)),
+					linear-gradient(hsl(208,98%,34%), hsl(213,87%,20%) 95%) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+  background-image: linear-gradient(hsl(208,95%,30%), hsl(214,85%,17%) 95%) !important;
+}

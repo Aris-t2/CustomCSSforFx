@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Force appbutton to the right *********************************************************/
+
+#main-window[tabsintitlebar] #PanelUI-button {
+  right: 0 !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar {
+  padding-inline-end: 100px !important;
+}
+
+#main-window[tabsintitlebar] .titlebar-buttonbox-container {
+  padding-inline-end: 20px !important;
+}

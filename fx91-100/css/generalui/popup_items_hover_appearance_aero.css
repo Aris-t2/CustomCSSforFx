@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* override color set by context_bfrsb_labels_with_icons.css */
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+  #context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):hover {
+	background-color: unset !important;
+  }
+}
+
+:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):not(#appMenu-fxa-status2):hover {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+  border-radius: 6px !important;
+  outline: 1px solid rgba(124,163,206,0.7) !important;
+  outline-radius: 3px !important;
+  outline-offset: -1px !important;
+}

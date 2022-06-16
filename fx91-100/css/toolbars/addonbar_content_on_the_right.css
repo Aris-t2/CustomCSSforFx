@@ -1,0 +1,25 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* move content to the right */
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  text-align: right !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) {
+  text-align: left !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar menupopup {
+  text-align: left !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:-moz-locale-dir(rtl) menupopup {
+  text-align: right !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  justify-content: flex-end !important;
+}

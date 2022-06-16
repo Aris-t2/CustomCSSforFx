@@ -1,0 +1,21 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./preferences_alternative_appearance.css";
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+	
+	.navigation, #preferences-body,
+	window > stack > hbox,
+	#preferences-stack,
+	page, page .dialogBox .groupbox-title {
+	  background: #edf6ff !important;
+	}
+	
+	.pane-container {
+	  background: #ffffff !important;
+	}
+
+}

@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* old toolbar padding */
+#navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#navigator-toolbox > #PersonalToolbar {
+  min-height: 28px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}

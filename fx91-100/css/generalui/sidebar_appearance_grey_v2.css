@@ -1,0 +1,82 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* #D1D1D1 = light grey */
+/* #f9f9fa = light grey v2 */
+/* #474749 = dark grey */
+/* #323234 = very dark grey */
+
+
+#sidebar,
+#sidebar-header,
+#bookmarksPanel,
+#bookmarks-view,
+#history-panel,
+#historyTree,
+#sidebar-switcher-target,
+#viewButton {
+  background: #f9f9fa !important;
+  color: #323234 !important;
+}
+
+.sidebar-placesTree treechildren::-moz-tree-row(selected), 
+.sidebar-placesTree treechildren::-moz-tree-row(current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-row(selected, focus), 
+.sidebar-placesTree treechildren::-moz-tree-row(dropOn), 
+.sidebar-placesTree treechildren::-moz-tree-row(selected, current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-row(hover), 
+.sidebar-placesTree treechildren::-moz-tree-row(hover, current), 
+.sidebar-placesTree treechildren::-moz-tree-row(hover, selected),
+#viewButton:hover { 
+  background: Highlight !important; 
+  border: 1px solid Highlight !important; 
+  outer: 1px solid Highlight !important; 
+} 
+
+.sidebar-placesTree treechildren::-moz-tree-twisty(primary, dropOn), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(selected), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(selected, focus), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(dropOn), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(selected, current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(hover), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(hover, current), 
+.sidebar-placesTree treechildren::-moz-tree-twisty(hover, selected),
+.sidebar-placesTree treechildren::-moz-tree-cell-text(primary, dropOn), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(selected), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(selected, focus), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(dropOn), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(selected, current, focus), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(hover), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(hover, current), 
+.sidebar-placesTree treechildren::-moz-tree-cell-text(hover, selected),
+#viewButton:hover { 
+  color: HighlightText !important; 
+}
+
+#sidebar-close:hover,
+#sidebar-switcher-target:hover { 
+  background: Highlight !important; 
+  color: HighlightText !important; 
+}
+   
+/* Fix for remaining hovering borders */
+.sidebar-placesTreechildren::-moz-tree-row {
+ outline: none !important;
+ border: none !important;
+}
+
+/* Hide white splitter (also appears on top right of scrollbar) *//*
+#sidebar-splitter {
+  opacity: 0 !important;
+}
+ 
+/* Add custom splitter between sidebar and content *//*
+#sidebar,
+#sidebar-header {
+  border-inline-end: 3px solid #474749 !important;
+}
+
+/**/

@@ -1,0 +1,134 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+
+	html {
+	  --addon-page-options-width: 340px;
+	}
+	
+	/* <some> locales require adjustments */
+	html[lang="de"] {
+	  --addon-page-options-width: 370px;
+	}
+	
+	html:is([lang="ru"],[lang="it"],[lang="fr"],[lang="el"]) {
+	  --addon-page-options-width: 440px;
+	}
+	
+	html[lang*="es-"] {
+	  --addon-page-options-width: 460px;
+	}
+	/**/
+	
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button {
+	  width: 22px !important;
+	  height: 22px !important;
+	  padding: 0 !important;
+	  padding-inline-end: 0px !important;
+	  background-position: center !important;
+	  background-color: unset !important;
+	}
+	
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label:not([accesskey]) {
+	  visibility: hidden !important;
+	}
+	
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey]:hover {
+	  background: var(--grey-30);
+	}
+	
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	  padding-top: 1px !important;
+	  padding-bottom: 1px !important;
+	}
+	
+	addon-page-options panel-list panel-item[accesskey][checked] {
+	  background: url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
+	}
+
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="remove-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/delete.svg") !important;
+	}
+
+	panel-item[data-l10n-id="install-update-button"] {
+	  --icon: url("chrome://global/skin/icons/update-icon.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="preferences-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/settings.svg") !important; 
+	}
+	
+	panel-item[data-l10n-id="report-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/warning.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="expand-addon-button"],
+	panel-item[data-l10n-id="manage-addon-button"] {
+	  --icon: url("chrome://global/skin/icons/chevron.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="ask-to-activate-button"] {
+	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="always-activate-button"] {
+	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	}
+	
+	panel-item[data-l10n-id="never-activate-button"] {
+	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"]:hover,
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"]:hover,
+	panel-item[data-l10n-id="remove-addon-button"]:hover,
+	panel-item[data-l10n-id="install-update-button"]:hover,
+	panel-item[data-l10n-id="preferences-addon-button"]:hover,
+	panel-item[data-l10n-id="report-addon-button"]:hover,
+	panel-item[data-l10n-id="expand-addon-button"]:hover,
+	panel-item[data-l10n-id="manage-addon-button"]:hover,
+	panel-item[data-l10n-id="ask-to-activate-button"]:hover,
+	panel-item[data-l10n-id="always-activate-button"]:hover,
+	panel-item[data-l10n-id="never-activate-button"]:hover {
+	  background-color: var(--grey-30) !important;
+	}
+
+	addon-page-options panel-list {
+	  min-width: unset !important;
+	  width: auto !important;
+	  max-width: var(--addon-page-options-width) !important;
+	  z-index: 1000 !important;
+	}
+	
+	addon-page-options panel-list panel-item {
+	  min-width: calc(var(--addon-page-options-width) - 20px) !important;
+	  width: 320px !important;
+	}
+
+	link:is([href$="panel-item.css"],[href$="panel-list.css"]) ~ button label[accesskey] {
+	  padding-inline-start: 20px !important;
+	  padding-top: 3px !important;
+	  padding-bottom: 3px !important;
+	  min-width: calc(var(--addon-page-options-width) - 10px) !important;
+	  width: calc(var(--addon-page-options-width) - 10px) !important;
+	}
+
+	addon-page-options panel-list panel-item[accesskey][checked] {
+	  background: url("chrome://global/skin/icons/check.svg") 5px no-repeat !important;
+	}
+
+}

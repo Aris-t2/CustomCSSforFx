@@ -1,0 +1,141 @@
+/* Firefox userContent.css tweaks ***************************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+/*************************************************************************************************
+
+ Full changelog of every version: https://github.com/Aris-t2/CustomCSSforFx/commits/
+  
+ [!] Firefox requires this preference to be enabled or custom styles will not be loaded:
+	 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+
+*************************************************************************************************/
+
+/*************************************************************************************************
+
+  README
+
+  Profile folder: address bar > about:support > Profile Folder > Open Folder
+  
+  CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
+  \chrome\config\
+  \chrome\css\
+  \chrome\image\
+  \chrome\userChrome.css
+  \chrome\userContent.css
+
+  ACTIVE option: remove /* before '@import'
+  DEACTIVATE option: add /* before '@import'
+
+
+*************************************************************************************************/
+
+
+/* addons page appearance - [only use one at a time] (incl. version number & buttons) ***********/
+@import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+
+/* version number for active add-ons ************************************************************/
+@import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
+
+/* compact item lists - [only use one at a time] /* to be used with 'alternative appearance' ****/
+/* @import "./css/aboutaddons/addonlists_compact.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact.css"; /**/
+
+/* button settings (requires aboves 'addons page appearance' settings) **************************/
+/* - buttons instead of menupopup - [only use one at a time] ************************************/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup.css"; /**/
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view.css"; /**/ /* for addonlists_compact.css */
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view.css"; /* for addonlists_compact_more_compact.css */
+
+/* - buttons icons instead of labels  ***********************************************************/
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons.css"; /**/
+
+/* - other button settings **********************************************************************/
+/* @import "./css/aboutaddons/addonlists_hide_buttons_on_details_page.css"; /**/ /* if addonlists_show_buttons_instead_of_menu_popup.css is active */
+/* @import "./css/aboutaddons/addonlists_hide_report_button.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_manage_button.css"; /**/
+/* @import "./css/aboutaddons/addonlists_colorized_button_icons.css"; /**/ /* requires replace_button_labels_with_icons option */
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover.css"; /**/
+
+/* addons page appearance extra [requires one 'alternative appearance option' to be active] *****/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories.css"; /**/
+
+/* other settings *******************************************************************************/
+/* @import "./css/aboutaddons/addonlists_badges_old_size.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_monochromatic_themes.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_recommended_icon.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_allowed_in_private_windows_icon.css"; /**/
+@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+@import "./css/aboutaddons/availableupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_last_category.css"; /**/
+/* @import "./css/aboutaddons/recommendations_category_always_hidden.css"; /**/
+
+
+/************************************************************************************************/
+/* about:preferences ****************************************************************************/
+/************************************************************************************************/
+
+/* preferences page appearance - [only use one at a time] ***************************************/
+@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_v2.css"; /**/
+
+/* other settings *******************************************************************************/
+/* @import "./css/aboutpreferences/category_morefrommozilla_hidden.css"; /**/
+/* @import "./css/aboutpreferences/category_nightlyexperiments_hidden.css"; /**/
+
+/************************************************************************************************/
+/* about:newtab / about:home ********************************************************************/
+/************************************************************************************************/
+
+/* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
+
+/* @import "./css/aboutnewtab/top_sites_larger_favicons.css"; /**/
+
+
+/************************************************************************************************/
+/* about:config *********************************************************************************/
+/************************************************************************************************/
+
+/* @import "./css/aboutconfig/aboutconfig_compact_appearance.css"; /**/
+
+
+/************************************************************************************************/
+/* about:logins *********************************************************************************/
+/************************************************************************************************/
+
+/* logins page appearance - [only use one at a time] ********************************************/
+@import "./css/aboutlogins/aboutlogins_alternative_appearance.css"; /**/
+/* @import "./css/aboutlogins/aboutlogins_alternative_appearance_aero.css"; /**/
+
+
+/************************************************************************************************/
+/* WEB CONTENT **********************************************************************************/
+/************************************************************************************************/
+
+/* top level image on white background - [only use one at a time] *******************************/
+/* [!] these settings can sometimes cause glitches **********************************************/
+/* @import "./css/webcontent/toplevel_image_classic_v1.css"; /**/
+/* @import "./css/webcontent/toplevel_image_classic_v2.css"; /**/
+
+/* CUSTOM SCROLLBARS VARIABLES - EXPERIMENTAL ***************************************************/
+/* [!] Might not work on every page! This issue is for Mozilla to solve. ************************/
+/* [!] Not compatible with custom scrollbar JavaScript userChrome scripts. **********************/
+/* [!] Custom size values only compatible with 'web content' scrollbars at the moment. **********/
+/* [!] More info inside 'custom_scrollbar_appearance.css' file. *********************************/
+/* @import "./config/custom_scrollbar_appearance.css"; /**/		/* <--- EXPERIMENTAL */
+
+/* Autofill forms - disable CSS3 filter background **********************************************/
+/* @import "./css/webcontent/autofill_forms_background_white.css"; /**/	
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+/* Create a new file "my_userContent.css" and add own/custom code to it. ************************/
+@import "./my_userContent.css"; /**/
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/

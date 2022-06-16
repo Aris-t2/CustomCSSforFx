@@ -1,0 +1,84 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* toolbar context menuitem visibility **********/
+/* remove / and * after description to enable ***/
+/* add / and * after description to disable *****/
+
+/* all toolbars share one context menu, but show different items */
+
+/* hide 'Pin to Overflow Menu' menuitem */ /*
+#toolbar-context-menu .customize-context-moveToPanel {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Remove from Toolbar' menuitem */ /*
+#toolbar-context-menu .customize-context-removeFromToolbar {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Reload All Tabs' menuitem */ /*
+#toolbar-context-menu #toolbar-context-reloadAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmarks All Tabs' menuitem */ /*
+#toolbar-context-menu #toolbar-context-bookmarkAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Undo Close Tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-undoCloseTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Undo Close Tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-undoCloseTab + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Reload Selected Tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-reloadSelectedTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmarks Selected tab' menuitem */ /*
+#toolbar-context-menu #toolbar-context-bookmarkSelectedTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Select All Tabs' menuitem */ /*
+#toolbar-context-menu #toolbar-context-selectAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Manage Extension' menuitem */ /*
+#toolbar-context-menu .customize-context-manageExtension {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Remove Extension' menuitem */ /*
+#toolbar-context-menu .customize-context-removeExtension {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Remove Extension' menuitem */ /*
+#toolbar-context-menu .customize-context-removeExtension + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/**/

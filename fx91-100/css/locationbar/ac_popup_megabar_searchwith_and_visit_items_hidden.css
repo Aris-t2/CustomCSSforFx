@@ -1,0 +1,24 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide visit and search items*/
+:is(#urlbar,.megabar) .urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=dynamic]),
+:is(#urlbar,.megabar) .urlbarView-row:not([has-url="true"]) {
+  display: none !important;
+}
+
+#urlbar #urlbar-results {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+:is(#urlbar,.megabar) .urlbarView-row[label] {
+  margin-block-start: 0px !important;
+}
+
+/* hide other unneeded stuff */
+.urlbarView-row[dynamicType="onboardTabToSearch"] {
+  display: none !important;
+}

@@ -1,0 +1,63 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* 'Transparent' colors */
+:root {
+  --general_toolbar_color_toolbars: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --general_toolbar_color_navbar: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --general_toolbar_text_color: white !important;
+  --general_toolbar_text_shadow: black !important;
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --tabs_toolbar_border-tnot_normal_mode_size: 0px !important;
+  --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color) !important;
+  --colored_menubar_background_image: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --colored_menubar_text_color: white !important;
+  --statusbar_background_color: linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)) !important;
+  --statusbar_font_color: black !important;
+  --classic_squared_tabs_active_tab: linear-gradient(to top,rgba(255,255,255,.4),rgba(255,255,255,.9)) !important;
+  --classic_squared_tabs_hovered_tabs: linear-gradient(to top,rgba(255,255,255,.3),rgba(255,255,255,.6)) !important;
+  --classic_squared_tabs_other_tabs: linear-gradient(to top,rgba(255,255,255,.1),rgba(255,255,255,.4)) !important;
+  --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,rgba(255,255,255,.1),rgba(255,255,255,.4)) !important;
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: rgba(0,0,0,.0) !important;
+  --classic_squared_tabs-border2: rgba(0,0,0,.0) !important;
+  --classic_squared_tabs-border3: rgba(0,0,0,.0) !important;
+  --classic_squared_tabs_new_tab_icon_color: white !important;
+  --classic_squared_tabs_tab_text_color: white !important;
+  --classic_squared_tabs_tab_text_shadow: black !important;
+  --classic_squared_tabs_lwt-dark_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
+  --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
+}
+
+/* navigation toolbar background */
+#nav-bar:not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* toolbar background */
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* hide toolbar shadow */
+#nav-bar:not(:-moz-lwtheme),
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  appearance: none !important;
+  box-shadow: unset !important;
+}
+
+/* menubar */
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > :is(label,description) {
+  color: var(--general_toolbar_text_color, inherit) !important;
+  text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow, inherit) !important;
+}

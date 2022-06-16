@@ -1,0 +1,84 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Move "Bookmarks Toolbar Items" element to navigation toolbar in customizing mode 
+   to simulate a second bookmarks toolbar.
+*/
+
+/* create an empty space below navigation toolbar */
+#main-window:not([customizing="true"]) #nav-bar {
+  padding-bottom: 28px !important;
+}
+
+/* reduce maximum width of location bar and search bar on navigation toolbar */
+#main-window:not([customizing="true"]) #nav-bar :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+  min-width: 50px !important;
+}
+
+/* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
+#main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
+  position: absolute !important;
+  display: block !important;
+  bottom: 1px !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 100vw !important;
+}
+
+/* reduce size of bookmarks 'more bookmarks' menu chevron and remove its background color on navigation toolbar */
+#nav-bar #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
+  min-width: 0px !important;
+  min-height: 0px !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+/* set minimum height for bookmarks, when on navigation toolbar */
+#nav-bar #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+  min-height: 24px !important;
+}
+
+/* remove animations */
+#tracking-protection-icon-box[active][animate] #tracking-protection-icon-animatable-image,
+#reload-button:not([displaystop]) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image,
+#reload-button[displaystop] + #stop-button > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  animation-duration: 0ms !important;
+}
+#tracking-protection-icon-animatable-box,
+#reload-button > .toolbarbutton-animatable-box,
+#stop-button > .toolbarbutton-animatable-box {
+  visibility: hidden !important;
+}
+#tracking-protection-icon-box:not([hasException])[active][animationsenabled] > #tracking-protection-icon {
+  display: block !important;
+}
+
+/* hide this projects custom bookmarks label, if used */
+/*
+#main-window[sizemode="fullscreen"] #PersonalToolbar #bookmarks-menu-button::after {
+  visibility: collapse !important;
+  display: none !important;
+}
+*/
+
+/* fix for megabar */
+#urlbar[breakout],
+#urlbar[breakout][breakout-extend] {
+  top: 5px !important;
+}
+
+:root[uidensity="compact"] #urlbar[breakout],
+:root[uidensity="compact"] #urlbar[breakout][breakout-extend] {
+  top: 3px !important;
+}
+
+:root[uidensity="touch"] #urlbar[breakout],
+:root[uidensity="touch"] #urlbar[breakout][breakout-extend] {
+  top: 4px !important;
+}
