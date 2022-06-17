@@ -72,49 +72,52 @@
   padding-right: 0px !important;
   top: 0px !important;
 }
-/*
-#main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
-  top: 0px !important;
-}
 
-#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-  top: 8px !important;
-}
+@media (-moz-platform: windows-win7), (-moz-os-version:windows-win7), (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
 
-@media (min-resolution: 110dpi) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-	  top: 6px !important;
-	}
-}
-
-@media (min-resolution: 120dpi) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-	  top: 5px !important;
-	}
-}
-
-@media (min-resolution: 140dpi) {
 	#main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
 	  top: 0px !important;
 	}
+
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-	  top: 4px !important;
+	  top: 8px !important;
+	}
+
+	@media (min-resolution: 110dpi) {
+		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		  top: 6px !important;
+		}
+	}
+
+	@media (min-resolution: 120dpi) {
+		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		  top: 5px !important;
+		}
+	}
+
+	@media (min-resolution: 140dpi) {
+		#main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
+		  top: 0px !important;
+		}
+		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		  top: 4px !important;
+		}
+	}
+
+	@media (min-resolution: 160dpi) {
+		#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar #PanelUI-button {
+		  top: 2px !important;
+		}
+	}
+
+	@media (-moz-windows-classic) {
+		#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar #PanelUI-button {
+		  top: 2px !important;
+		}
 	}
 }
 
-@media (min-resolution: 160dpi) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-	  top: 2px !important;
-	}
-}
-
-@media (-moz-windows-classic) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
-	  top: 2px !important;
-	}
-}*/
-
-/* code for Unix (macOS/Linux) *//*
+/* code for Unix (macOS/Linux) */
 @media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
 	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
@@ -130,7 +133,7 @@
 #main-window[tabsintitlebar][sizemode="fullscreen"] #PanelUI-button {
   top: 0px !important;
 }
-*/
+
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
   background-clip: padding-box !important;
   padding: 0 4px 0 !important;

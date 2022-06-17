@@ -148,6 +148,9 @@
 }
 
 /* Fx 101+ */
-#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
-  margin-top: -1px !important;
+@media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
+	
+	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	  margin-top: -1px !important;
+	}
 }

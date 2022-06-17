@@ -548,14 +548,17 @@
 }
 
 /* Fx 101+ */
-#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
-  margin-top: -5px !important;
-}
+@media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
+	
+	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	  margin-top: -5px !important;
+	}
 
-#main-window[sizemode="fullscreen"][tabsintitlebar] #titlebar {
-  margin-top: -3px !important;
-}
+	#main-window[sizemode="fullscreen"][tabsintitlebar] #titlebar {
+	  margin-top: -3px !important;
+	}
 
-#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
-  padding-top: 5px !important;
+	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
+	  padding-top: 5px !important;
+	}
 }
