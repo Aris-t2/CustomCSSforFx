@@ -32,20 +32,42 @@
 
 #sidebar-box {
   z-index: 1000 !important;
-  margin-inline-end: calc(-1 * var(--sidebar-hover-width)) !important;
   position: relative !important;
   opacity: 0 !important;
 }
 
 #sidebar-box:hover {
-  margin-inline-end: unset !important;
   opacity: 1.0 !important;
 }
 
-#sidebar-box ~ #appcontent {
+#sidebar-box:not([positionend="true"]) {
+  margin-inline-end: calc(-1 * var(--sidebar-hover-width)) !important;
+}
+
+#sidebar-box:not([positionend="true"]):hover {
+  margin-inline-end: unset !important;
+}
+
+#sidebar-box:not([positionend="true"]) ~ #appcontent {
   margin-inline-start: calc(-1 * var(--sidebar-hover-width)) !important;
 }
 
-#sidebar-box:hover ~ #appcontent {
+#sidebar-box:not([positionend="true"]):hover ~ #appcontent {
   margin-inline-start: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
+}
+
+#sidebar-box[positionend="true"] {
+  margin-inline-start: calc(-1 * var(--sidebar-hover-width)) !important;
+}
+
+#sidebar-box[positionend="true"]:hover {
+  margin-inline-start: unset !important;
+}
+
+#sidebar-box[positionend="true"] ~ #appcontent {
+  margin-inline-end: calc(-1 * var(--sidebar-hover-width)) !important;
+}
+
+#sidebar-box[positionend="true"]:hover ~ #appcontent {
+  margin-inline-end: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
 }

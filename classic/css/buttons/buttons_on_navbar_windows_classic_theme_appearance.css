@@ -2,6 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+:root{
+  --toolbar-start-end-padding: 2px !important;
+}
+
 /* main menu button adjustment */
 #PanelUI-button {
   margin-inline-start: 0px !important;

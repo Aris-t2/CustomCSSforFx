@@ -396,7 +396,7 @@
 }
 
 /* workaround for Firefox 102+ *******************/
-panel[type="arrow"][side="top"],
-panel[type="arrow"][side="bottom"] {
+panel[id="appMenu-popup"][type="arrow"][side="top"],
+panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
   margin-inline: 0 !important;
 }

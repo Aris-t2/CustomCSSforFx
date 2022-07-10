@@ -5,6 +5,7 @@
 
 :root {
   --space_required_for_appbutton_fix: 54px !important;
+  --toolbar-start-end-padding: 2px !important;
 }
 
 /* large button mode */

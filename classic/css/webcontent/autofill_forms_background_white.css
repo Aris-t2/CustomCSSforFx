@@ -3,15 +3,7 @@
 /****************************************************************************************/
 
 
-:-moz-autofill, :autofill, :-moz-autofill-preview {
-  filter: unset;
-}
-
-:root:not(#id) input {
+:autofill {
   filter: unset !important;
-}
-
-/* F94+ compatibility */
-input:autofill {
   background-image: unset !important;
 }

@@ -561,4 +561,9 @@
 	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
 	  padding-top: 5px !important;
 	}
+	
+	#main-window[sizemode="maximized"] #toolbar-menubar[inactive] + #TabsToolbar > .titlebar-buttonbox-container toolbarbutton {
+	  padding-top: 10px !important;
+	  padding-bottom: 6px !important;
+	}
 }

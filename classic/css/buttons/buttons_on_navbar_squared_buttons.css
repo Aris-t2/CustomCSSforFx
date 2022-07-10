@@ -18,6 +18,10 @@
   --space_required_for_appbutton_fix: 50px !important;
 }
 
+:root{
+  --toolbar-start-end-padding: 2px !important;
+}
+
 
 /* compact button mode */
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,

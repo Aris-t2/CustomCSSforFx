@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 101+
-  Current version: 4.1.9v2
+  Custom CSS for Firefox 102+
+  Current version: 4.2.0
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -522,11 +522,16 @@
    
 */
 
+/* Classic tabs appearance known from Firefox 4-28 */
 @import "./css/tabs/classic_squared_tabs.css"; /**/
+
+/* Classic tabs appearance known from Firefox 4-28 for active tab only  */
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
+
+/* Default tabs with increased contrast for non-active tabs */
 /* @import "./css/tabs/default_tabs_enhanced.css"; /**/
 
-/* squared tabs like in Fx 57-88 */
+/* Tab appearance known from Firefox 57 - 88 */
 /* @import "./css/tabs/default_tabs_photon.css"; /**/
 
 
