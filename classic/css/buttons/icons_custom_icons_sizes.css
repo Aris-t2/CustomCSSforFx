@@ -187,12 +187,24 @@ toolbar:not(#nav-bar) :is(#back-button,#forward-button,#home-button,#stop-button
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
 toolbar:not(#nav-bar) #bookmarks-menu-button > .toolbarbutton-icon,
 toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
-  padding: 0px 0px !important;
-  margin: 0px 0px !important;
+  /*padding: 0px 0px !important;
+  margin: 0px 0px !important;*/
   min-width: 18px !important;
   min-height: 18px !important;
-  width: 18px !important;
+  /*width: 18px !important;
   height: 18px !important;
   max-width: 18px !important;
-  max-height: 18px !important;
+  max-height: 18px !important;*/
+}
+
+#customization-palette :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#customization-palette #bookmarks-menu-button > .toolbarbutton-icon,
+#customization-palette :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  min-width: 18px !important;
+  min-height: 18px !important;
 }

@@ -499,5 +499,9 @@
 	.monochromatic-addon-list .addon-name-container {
 	  display: flex !important;
 	}
+	
+	.colorways-section {
+	  display: none !important;
+	}
 
 }

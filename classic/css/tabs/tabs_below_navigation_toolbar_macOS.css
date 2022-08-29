@@ -122,3 +122,12 @@
 /*#main-window[tabsintitlebar]*/ :is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
   -moz-window-dragging: no-drag !important;
 }
+
+/* notification position */
+#tab-notification-deck {
+  position: absolute;
+  display: block;
+  bottom: calc( -2 * var(--tab_below_navigation_toolbar_bottom_padding_macOS) + 8px );
+  width: 100vw;
+}
+

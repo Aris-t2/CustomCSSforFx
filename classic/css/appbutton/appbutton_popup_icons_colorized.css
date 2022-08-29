@@ -44,20 +44,20 @@
 
 /* dark blue */
 :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
-#appMenu-zoom-controls2::before,
+:is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
 #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
   fill: #336699 !important;
 }
 
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-zoom-controls2::before,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
   fill: #64a3e2 !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
 	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #appMenu-zoom-controls2::before,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
 	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
 	  fill: #64a3e2 !important;
 	}

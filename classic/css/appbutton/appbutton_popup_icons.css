@@ -143,7 +143,7 @@
   fill: currentColor;
 }
 
-#appMenu-zoom-controls2::before {
+:is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before {
   content:"" !important;
   display: block !important;
   width: 16px !important;

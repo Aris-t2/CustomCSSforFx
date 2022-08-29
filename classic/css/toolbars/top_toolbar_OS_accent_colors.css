@@ -3,7 +3,6 @@
 /****************************************************************************************/
 
 
-@media (-moz-windows-accent-color-in-titlebar: 0) {
   :root[sizemode=normal][tabsintitlebar] {
 	border-top: 1px solid rgba(0,0,0,.7) !important;
   }
@@ -14,9 +13,7 @@
     background-color: hsl(235,33%,19%) !important;
     color: hsl(240,9%,98%) !important;
   }
-}
 
-@media (-moz-windows-accent-color-in-titlebar) {
   :root[sizemode=normal][tabsintitlebar] {
     border-top: 1px solid -moz-accent-color !important;
   }
@@ -29,5 +26,28 @@
     --toolbarbutton-icon-fill: currentColor !important;
     --toolbarbutton-icon-fill-opacity: .7 !important;
   }
-}
+
+/*
+    :root {
+      background-color: transparent !important;
+      appearance: auto !important;
+      -moz-default-appearance: -moz-win-borderless-glass !important;
+    }
 	
+    :root[sizemode="normal"] .titlebar-buttonbox {
+      margin-inline-end: -3px !important;
+	  color: CurrentColor !important;
+	  fill: CurrentColor !important;
+    }
+	
+    :root[sizemode="maximized"] .titlebar-buttonbox {
+      margin-inline-end: 0px !important;
+	  color: CurrentColor !important;
+	  fill: CurrentColor !important;
+    }
+	
+    #appcontent {
+      appearance: auto !important;
+      -moz-default-appearance: -moz-win-exclude-glass !important;
+    }
+*/

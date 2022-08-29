@@ -9,8 +9,8 @@
 
 
 	/*restore version number */
-	div:not([current-view="updates"]) .addon-name-link[title]:not([data-l10n-args])::after,
-	div:not([current-view="updates"]) .addon-name[title]:not([data-l10n-args])::after {
+	div:not([current-view="updates"]) .addon-name-link[title]:not([data-l10n-args])::after/*,
+	div:not([current-view="updates"]) .addon-name[title]:not([data-l10n-args])::after */{
 	  display: block !important;
 	  content: attr(title) !important;
 	  margin-top: -22px !important;
