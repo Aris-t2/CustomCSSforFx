@@ -73,24 +73,14 @@ Code between `/*` and `*/` won't be used by Firefox unless there are other `/*` 
 
 ## How to find item ids and attributes?
 
-Firefox 57-60  
-
-Enable once:  
-1\. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable browser chrome and add-on debugging toolboxes  
-2\. Tools > WebDeveloper > Toggle Tools > Toolbox Options > Enable remote debugging  
-
-Hit `Ctrl+Alt+Shift+I` or open 'Tools > WebDeveloper > Browser Toolbox'.  
-
-Inspect ui or web content.  
-
-Force popups to stay open for inspection:  
-Click on 'disable popup auto hide' button (= button with four squares) on developer toolbars end.  
-
-Firefox 61+  
-
 Enable once:  
 1\. Tools > WebDeveloper > Toggle Tools > 'Customize Tools and get help button' (= button with three dots) > Settings > Enable browser chrome and add-on debugging toolboxes  
 2\. Tools > WebDeveloper > Toggle Tools > 'Customize Tools and get help button' (= button with three dots) > Settings > Enable remote debugging  
+
+or set these two in about:config to true  
+
+about:config > devtools.chrome.enabled > true  
+about:config > devtools.debugger.remote-enabled > true  
 
 Hit `Ctrl+Alt+Shift+I` or open 'Tools > WebDeveloper > Browser Toolbox'.  
 
