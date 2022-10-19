@@ -1,0 +1,49 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-image: var(--classic_squared_tabs_other_tabs) !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-image: var(--classic_squared_tabs_hovered_tabs) !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab > .tab-stack > .tab-background:is([selected=true], [multiselected]) {
+  background-image: var(--classic_squared_tabs_active_tab) !important;
+}
+
+
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
+  color: var(--classic_squared_tabs_tab_text_color) !important;
+  text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
+}
+
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	.tabbrowser-tab > .tab-stack > .tab-background:is([selected=true], [multiselected]) {
+	  background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
+	}
+	.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+	  background-image: var(--classic_squared_tabs_lwt-bright_other_tabs) !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected])  {
+	  background-image: var(--classic_squared_tabs_lwt-bright_hovered_tabs) !important;
+	}
+
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	.tabbrowser-tab > .tab-stack > .tab-background:is([selected=true], [multiselected]) {
+	  background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
+	}
+	.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+	  background-image: var(--classic_squared_tabs_lwt-dark_other_tabs) !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected])  {
+	  background-image: var(--classic_squared_tabs_lwt-dark_hovered_tabs) !important;
+	}
+
+}

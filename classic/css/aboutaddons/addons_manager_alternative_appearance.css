@@ -251,7 +251,7 @@
 	  max-width: unset !important;
 	  padding-inline-end: 0px !important;
 	}
-
+	
 	.list-view-heading-inner {
 	  -moz-box-flex: 1 !important;
 	  width: unset !important;
@@ -499,9 +499,26 @@
 	.monochromatic-addon-list .addon-name-container {
 	  display: flex !important;
 	}
-	
+
 	.colorways-section {
 	  display: none !important;
+	}
+
+	colorways-card .addon.card {
+	  max-width: unset !important;
+	  padding-inline-end: 0px !important;
+	}
+	
+	colorways-card .card-heading-image {
+	  max-width: 335px !important;
+	}
+
+	#colorways-preview-text-container {
+	  position: unset !important;
+	  display: unset !important;
+	  width: unset !important;
+	  height: unset !important;
+	  margin: unset !important;
 	}
 
 }

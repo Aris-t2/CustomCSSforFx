@@ -131,3 +131,7 @@
   width: 100vw;
 }
 
+/* Fx 106+*/					
+#private-browsing-indicator-with-label {
+  display: none !important;
+}

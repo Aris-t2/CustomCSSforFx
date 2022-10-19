@@ -565,10 +565,23 @@
 /* Fx 105+ - remove Firefox-view-button from tabs toolbar */
 :root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs {
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+
+:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow="true"]) {
   padding-inline-start: 0 !important;
   margin-inline-start: 0 !important;
 }
 
 #firefox-view-button {
   display: none !important;
+}
+
+/* Fx 106+*/					
+#private-browsing-indicator-with-label {
+  display: none !important;
+}
+
+/* center tab label vertically */
+.tab-label-container {
+  padding-bottom: 2px !important
 }
