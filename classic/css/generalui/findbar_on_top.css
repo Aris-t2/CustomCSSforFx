@@ -23,8 +23,6 @@
 
 :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {
   -moz-box-ordinal-group: 0;  /* can't be replace by box-ordinal-group yet */
-  position: fixed !important;
-  display: inherit !important;
   margin-top: -1px !important;
   box-shadow: unset !important;
   border: 1px solid #e1e1e2 !important;

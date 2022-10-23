@@ -115,3 +115,9 @@
 #nav-bar toolbarbutton[disabled=true]{
   opacity: 1.0 !important;
 }
+
+
+
+#main-window box #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon {
+  background-color: #f9f9fa !important;
+}

@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.2
+  Current version: 4.2.3
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -947,14 +947,11 @@
    ------------------
 
    [!] only use one option at a time
-   [!] titlebar colors should be active in your Windows settings for 'top_toolbar_OS_accent_colors.css' to work
-   [!] if 'top_toolbar_OS_accent_colors.css' still refuses to work, customize colors using 'top_toolbar_colors.css'
+   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected and was removed
 */
 
-/* restore window accent color managed by the OS */
-/* @import "./css/toolbars/top_toolbar_OS_accent_colors.css"; /**/ 
 
-/* override titlebars and tab toolbars colors forced by Proton UI */
+/* override titlebars and tab toolbars colors */
 /* @import "./css/toolbars/top_toolbar_colors.css"; /**/ 
 
 

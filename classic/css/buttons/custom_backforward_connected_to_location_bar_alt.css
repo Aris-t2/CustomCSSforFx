@@ -17,10 +17,25 @@
   margin-inline-start: -4px !important;
   margin-inline-end: -7px !important;
 }
-
+/*
 #main-window:not([customizing=true]) #nav-bar #forward-button[disabled] + #urlbar-container {
   margin-inline-start: -3px !important;
-}
+}*/
+
 #main-window:not([customizing=true]) #nav-bar #forward-button[disabled] {
-  visibility: collapse !important;
+  /*visibility: collapse !important;*/
+  opacity: 0 !important;
+  z-index: -100000 !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -37px !important;
+}
+
+#main-window #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -39px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -42px !important;
 }

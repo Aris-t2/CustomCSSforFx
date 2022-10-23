@@ -11,3 +11,6 @@
 .findbar-container {
   height: unset !important;
 }
+:is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {
+  padding-block:  unset !important;
+}

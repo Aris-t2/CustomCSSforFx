@@ -7,12 +7,17 @@
   --status-width: 400px;
 }
 
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  z-index: unset !important;
+  border-top: 1px solid var(--toolbox-border-bottom-color) !important;
+  box-shadow: inset 0px 1px 1px rgba(50, 50, 50, 0.75) !important;
+}
+
 .browserContainer :is(statuspanel,#statuspanel) {
-  -moz-box-ordinal-group: 3 !important;
+  display: flex !important;
   position: fixed !important;
-  display:block !important;
   bottom: 2px !important;
-  z-index: 1001 !important
+  z-index: 1001 !important;
 }
 
 .browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(ltr) {

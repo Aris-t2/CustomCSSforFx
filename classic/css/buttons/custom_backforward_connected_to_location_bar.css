@@ -22,7 +22,7 @@
   height: 100% !important;
   border-radius: 10000px !important;
   padding: 8px !important; 
-  background-color: /*#e6e6e6*/ #f9f9fa !important;
+  background-color: #e6e6e6 /*#f9f9fa*/ !important;
 }
 
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
@@ -47,12 +47,19 @@
 }
 
 #main-window:not([customizing=true]) #nav-bar #forward-button[disabled] {
-  visibility: collapse !important;
+  /*visibility: collapse !important;*/
+  opacity: 0 !important;
+  z-index: -100000 !important;
 }
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container {
-  margin-inline-start: -15px !important;
+  margin-inline-start: -55px !important;
 }
+
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -60px !important;
+}
+
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container #urlbar {
   padding-inline-start: 10px !important;

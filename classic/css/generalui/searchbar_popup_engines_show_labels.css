@@ -17,7 +17,7 @@
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item::after {
   appearance: none !important;
-  display: inline !important; /* Fx102ESR combatibility - better flex or block on Fx 106*/
+  display: inline !important; /* Fx102ESR compatibility - better flex or block on Fx 106*/
   content: attr(tooltiptext) !important;
   position: relative !important;
   padding-inline-start: 6px !important;

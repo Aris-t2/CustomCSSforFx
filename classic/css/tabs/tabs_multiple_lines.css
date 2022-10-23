@@ -8,6 +8,7 @@
 /* https://00.bulog.jp/archives/1476/ ***************************************************/
 /* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
 /* https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/multi-row_tabs.css */
+/* https://github.com/Endor8/userChrome.js/blob/master/Mutirowtabs/ *********************/
 /****************************************************************************************/
 
 
@@ -83,4 +84,8 @@
 
 .tab-background {
   margin-block: unset !important;
+}
+
+box.scrollbox-clip[orient="horizontal"] {
+  display: inline !important;
 }
