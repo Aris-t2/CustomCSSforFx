@@ -3,8 +3,10 @@
 /****************************************************************************************/
 
 
-/* NOTE  ********************************************************************************/
-/* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
+/* NOTE
+   The below variables are overridden by the ones used in files inside ./config/ folder,
+   if this projects full package is used. Set custom color values there in that case.
+*/
 
 :root {
   --classic_squared_tabs_tab_height: 26px;

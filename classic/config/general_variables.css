@@ -31,32 +31,21 @@
   /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
   --tab_min_width_mlt: 100px !important;
   --tab_max_width_mlt: 200px !important;
-  
-  /* for 'tabs_multiple_lines_v2.css' only */
   --tabs-lines: 3 !important; 
 
-  /* for bookmarks_toolbar_multiple_lines.css /_fx66.css / _fx74.css */
+  /* for bookmarks_toolbar_multiple_lines.css */
   --bookmark_items_height: 22px !important; /* <- bookmark items - line height */
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */
   --general_ui_font_size: 10pt !important;
   
-  /* for searchbar_popup_engines_show_labels_scrollbars.css / ..._fx66.css*/
+  /* for searchbar_popup_engines_show_labels_scrollbars.css */
   --search-one-offs_labels_height: 100px !important;
     
-  /* for ac_popup_custom_height.css (location bar popup) */
-  --ac_popup_max_height: 300px !important;
-
   /* for addonbar_move_bookmarks_toolbar_to_bottom.css */
   --addonbar_height: 27px !important;
-  
-  /* for custom_backforward_connected.css */
-  --color_disabled_state: #f9f9fa !important;
-  --color_default_state: #e8e8e8 !important;
-  --color_hover_state: lightblue !important;
-  --color_active_state: lightgrey !important;
-  
+
   /* for ac_popup_result_font_size.css */
   --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
   

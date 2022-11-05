@@ -3,9 +3,11 @@
 /****************************************************************************************/
 
 
-/* The below color variables are overridden by the ones used inside 
-   /general/general_variables.css file, if this projects full package is used.
-   Set custom color values inside /general/general_variables.css in that case. */
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
 
 :root{
   --top_toolbars_background: hsl(235,33%,19%); /* #0063b1 */ /* hsl(235,33%,19%) was used by old accent color option  */ 
