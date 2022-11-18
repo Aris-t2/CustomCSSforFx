@@ -17,15 +17,15 @@
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item::after {
   appearance: none !important;
-  display: block !important;
+  display: inline !important; /* Fx102ESR compatibility - better flex or block on Fx 106*/
   content: attr(tooltiptext) !important;
   position: relative !important;
   padding-inline-start: 6px !important;
   min-width: 0 !important;
   width: 100% !important;
   white-space: nowrap !important;
-  top: 0px !important;
-  bottom: 0px !important;
+  top: -3px !important;
+  bottom: 4px !important;
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs {

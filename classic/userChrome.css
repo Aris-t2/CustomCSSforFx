@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.3
+  Current version: 4.2.4
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -825,9 +825,11 @@
    -------------------
    
    [!] only use one option at a time
+   [!] use *102.css file, if on Firefox 102-106
 */
 
 /* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
+/* @import "./css/generalui/sidebar_show_on_hover102.css"; /**/ /* Firefox 102-106 */
 /* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 
 /* -------------------
@@ -893,11 +895,14 @@
    -------------------------------------------
 
    [!] only use one option at a time
+   [!] use *102.css file, if on Firefox 102-106
 */
 
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels102.css"; /**/  /* Firefox 102-106 */
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars102.css"; /**/  /* Firefox 102-106 */
 
 /* ------------------------
    MENUBARS bookmarks popup

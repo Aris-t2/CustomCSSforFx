@@ -1,0 +1,27 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./searchbar_popup_engines_show_labels102.css";
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  --search-one-offs_labels_height: 200px;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs {
+  min-height: unset !important;
+}
+
+#PopupSearchAutoComplete .search-one-offs  {
+  height: var(--search-one-offs_labels_height) !important;
+  max-height: var(--search-one-offs_labels_height) !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}

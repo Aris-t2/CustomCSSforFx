@@ -7,25 +7,19 @@
   --sidebar-visible-width: 300px;
 }
 
-#sidebar-box {
+#sidebar-box #sidebar {
   min-width: var(--sidebar-hover-width) !important;
   width: var(--sidebar-hover-width) !important;
   max-width: var(--sidebar-hover-width) !important;
-}
-
-#sidebar-box #sidebar {
   opacity: 0 !important;
   position: absolute !important;
   display: block !important;
 }
 
-#sidebar-box:hover {
+#sidebar-box:hover #sidebar {
   min-width: var(--sidebar-visible-width) !important;
   width: var(--sidebar-visible-width) !important;
   max-width: var(--sidebar-visible-width) !important;
-}
-
-#sidebar-box:hover #sidebar {
   opacity: 1.0 !important;
 }
 
