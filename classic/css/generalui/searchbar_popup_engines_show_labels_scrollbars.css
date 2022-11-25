@@ -17,11 +17,12 @@
 
 #PopupSearchAutoComplete .search-panel-one-offs {
   min-height: unset !important;
+  height: unset !important;
 }
 
-#PopupSearchAutoComplete .search-one-offs  {
-  height: var(--search-one-offs_labels_height) !important;
-  max-height: var(--search-one-offs_labels_height) !important;
+#PopupSearchAutoComplete .search-panel-one-offs-container {
   overflow-y: scroll !important;
   overflow-x: hidden !important;
+  height: auto !important;
+  max-height: var(--search-one-offs_labels_height) !important;
 }

@@ -36,7 +36,7 @@
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box {
-  display: inline !important;
+  display: table !important; /* inline */
 }
 
 #PopupSearchAutoComplete  .search-setting-button {

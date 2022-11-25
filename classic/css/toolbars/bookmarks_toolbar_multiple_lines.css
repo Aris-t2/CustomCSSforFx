@@ -86,3 +86,12 @@
 #personal-bookmarks #PlacesChevron {
   display: none !important;
 }
+
+#PlacesToolbarItems {
+  contain: none !important;
+}
+
+#PlacesToolbar hbox[flex="1"] {
+  display: flex !important;
+}
+

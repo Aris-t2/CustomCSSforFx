@@ -26,7 +26,8 @@
 
 #tabbrowser-tabs{
   min-height: unset !important;
-  padding-inline-start: 0px !important
+  padding-inline-start: 0px !important;
+  margin-top: 1px !important;
 }
 
 @-moz-document url(chrome://browser/content/browser.xhtml){
@@ -43,6 +44,7 @@
     max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
     scrollbar-color: currentColor transparent;
     scrollbar-width: thin;
+	contain: none !important;
   }
 }
 

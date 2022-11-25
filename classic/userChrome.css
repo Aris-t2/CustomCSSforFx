@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.4
+  Current version: 4.2.5
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -258,7 +258,8 @@
 /* @import "./css/buttons/buttons_on_navbar_huge_48px_size.css"; /**/
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode
-   [!] 'compact mode' got hidden behind the about:config preference browser.compactmode.show 
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode
 */
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
 
@@ -896,6 +897,7 @@
 
    [!] only use one option at a time
    [!] use *102.css file, if on Firefox 102-106
+   [!] Firefox 107: set about:config > layout.css.moz-box-flexbox-emulation.enabled > true
 */
 
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
@@ -1097,6 +1099,10 @@
 /* ==================================
    LOCATION BAR / MEGABAR - Settings
    ================================== 
+
+
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode  
 */
 
 /* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
