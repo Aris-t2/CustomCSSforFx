@@ -26,7 +26,7 @@
   
   /* for 'tab_maxwidth.css'- unlock 'min width' code inside file first for '--tab_min_width' to work */
   --tab_min_width: 50px !important; 
-  --tab_max_width: 120px !important;
+  --tab_max_width: 250px !important;
   
   /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
   --tab_min_width_mlt: 100px !important;

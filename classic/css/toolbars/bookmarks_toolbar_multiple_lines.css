@@ -32,6 +32,7 @@
   flex-wrap: wrap;
   overflow-x: visible;
   overflow-y: auto;
+  contain: none !important;
 }
 
 #PlacesToolbarItems > .scrollbox-innerbox {
@@ -85,10 +86,6 @@
 
 #personal-bookmarks #PlacesChevron {
   display: none !important;
-}
-
-#PlacesToolbarItems {
-  contain: none !important;
 }
 
 #PlacesToolbar hbox[flex="1"] {

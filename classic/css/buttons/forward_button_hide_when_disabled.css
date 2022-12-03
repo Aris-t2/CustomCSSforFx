@@ -5,11 +5,11 @@
 
 /* hide 'disabled' forward button */
 #forward-button[disabled="true"] {
-  visibility: collapse !important;
-  transition: visibility 150ms ease-out !important;
+  display: none !important;
+  transition: display 150ms ease-out !important;
 }
 
 #forward-button:not([disabled="true"]) {
-  visibility: visible !important;
-  transition: visibility 150ms ease-out !important;
+  display: initial !important;
+  transition: display 150ms ease-out !important;
 }

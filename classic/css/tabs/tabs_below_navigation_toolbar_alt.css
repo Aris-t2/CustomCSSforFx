@@ -52,6 +52,7 @@
 }
 
 /* move menubars / tab toolbars caption buttons to windows top right position */
+#main-window:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   position: fixed !important;
   right: 0 !important;
@@ -79,14 +80,19 @@
 }
 
 #main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #nav-bar {
-  padding-inline-end: 60px !important;
+  padding-inline-end: 140px !important;
+}
+
+
+/* smaller caption buttons and more space on top toolbar *//*
+#main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] #nav-bar {
+  padding-inline-end: 50px !important;
 }
 
 #main-window:not([inDOMFullscreen="true"])[sizemode="fullscreen"] .titlebar-buttonbox-container *{
   padding: 0px !important;
   margin: 0px !important;
-}
-
+}*/
 
 /* tab height */
 #tabbrowser-tabs,
@@ -96,7 +102,6 @@
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
   min-height: var(--tab-min-height_tnot) !important;
 }
-
 
 
 /* toolbar colors */

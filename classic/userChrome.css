@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.5
+  Current version: 4.2.6
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -521,6 +521,8 @@
    
    [!] only use one option at a time
    [!] custom tab colors are set inside color_variablesXXX.css file(s)
+   [!] curved tabs known from Firefox 29-56 will not be restored by the project
+   [!] If issues on Firefox 107 occur try to set 'about:config' > 'layout.css.moz-box-flexbox-emulation.enabled' > 'true'
    
 */
 
@@ -897,7 +899,7 @@
 
    [!] only use one option at a time
    [!] use *102.css file, if on Firefox 102-106
-   [!] Firefox 107: set about:config > layout.css.moz-box-flexbox-emulation.enabled > true
+   [!] If issues on Firefox 107 occur try to set 'about:config' > 'layout.css.moz-box-flexbox-emulation.enabled' > 'true'
 */
 
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
@@ -954,7 +956,7 @@
    ------------------
 
    [!] only use one option at a time
-   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected and was removed
+   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected on current Firefox versions and was removed
 */
 
 

@@ -11,7 +11,7 @@
 
 :root {
   --tab_min_width: 50px;
-  --tab_max_width: 120px;
+  --tab_max_width: 250px;
 }
 
 /* use 'about:config > browser.tabs.tabMinWidth' for tab min-width */
