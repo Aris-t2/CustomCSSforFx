@@ -24,17 +24,15 @@ NO SUPPORT for
 Add all information required in 1-5 and delete this line and everything above it before submitting.
 
 
-1. Issue description & userChrome.css/userContent.css 'settings' the issue occurs with:
+1. Does the issue occur without any files inside /chrome/ folder?
+-> If it does, it might be a Firefox bug not related to this projects files, so the issue report is most likely wrong here.
 
 
-2. Does the issue occur with latest version of CustomCSSforFx (release/test/dev build)?
+2. Issue description, userChrome.css/userContent.css 'settings' the issue occurs with and steps to reproduce the issue:
+
+
+3. Does the issue occur with the most recent version of CustomCSSforFx (release/test/dev build)?
 -> Check here: https://github.com/Aris-t2/CustomCSSforFx/releases <-
-
-
-3. Does the issue occur without any files inside /chrome/ folder?
-
-
-4. Steps to reproduce the issue:
 
 
 4. Screenshots showing the issue (drag & drop images into this post):
