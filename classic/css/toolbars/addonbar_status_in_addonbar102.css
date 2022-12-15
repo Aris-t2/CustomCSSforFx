@@ -8,42 +8,16 @@
 }
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
-  /*z-index: unset !important;*/
+  z-index: unset !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
   box-shadow: inset 0px 1px 1px rgba(50, 50, 50, 0.75) !important;
- 
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar:-moz-lwtheme:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar),
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar:not(:-moz-lwtheme):not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
-   background: transparent !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar:not(:-moz-lwtheme):not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) > * {
-  appearance: none !important;
-  background: var(--general_toolbar_color_toolbars, inherit) !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-top: 1px !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):-moz-lwtheme > * {
-  appearance: none !important;
-  background: var(--lwt-accent-color) !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-top: 1px !important;
 }
 
 .browserContainer :is(statuspanel,#statuspanel) {
   display: flex !important;
-  position: absolute !important;
-  bottom: 0px !important;
-  z-index: 1 !important;
-  visibility: visible !important;
-  opacity: 1.0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
+  position: fixed !important;
+  bottom: 2px !important;
+  z-index: 1001 !important;
 }
 
 .browserContainer :is(statuspanel,#statuspanel):-moz-locale-dir(ltr) {
@@ -63,14 +37,6 @@
   width: var(--status-width) !important;
   max-width: var(--status-width) !important;
   color: black !important;
-  border-top: 0px solid var(--toolbox-border-bottom-color) !important;
-  background: var(--general_toolbar_color_toolbars, inherit) !important;
-  padding: 5px 0px !important;
-  margin: 0 2px !important;
-}
-
-.browserContainer :is(statuspanel,#statuspanel) :is(#statuspanel-label,.statuspanel-label):-moz-lwtheme {
-  background: var(--lwt-accent-color) !important;
 }
 
 .browserContainer :is(statuspanel,#statuspanel):-moz-lwtheme-brighttext :is(#statuspanel-label,.statuspanel-label) {
@@ -85,12 +51,10 @@
 
 /* add space for status text on add-on bar */
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
-  /*margin-left: var(--status-width) !important;*/
   padding-left: var(--status-width) !important;
 }
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar):-moz-locale-dir(rtl) {
-  /*margin-right: var(--status-width) !important;*/
   padding-right: var(--status-width) !important;
 }
 

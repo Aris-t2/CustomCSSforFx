@@ -20,7 +20,6 @@
   background: var(--general_toolbar_color_toolbars, inherit) !important;
 }
 
-/* Fix issue aboves code creates on Fx75+ */
 #nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection {
   background-color: Highlight !important;
   color: HighlightText !important;

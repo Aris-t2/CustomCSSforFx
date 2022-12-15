@@ -460,7 +460,7 @@
 
 /* Fx65+ fixes */
 #main-window[sizemode="maximized"][tabsintitlebar] #TabsToolbar {
-  margin-top: -1px !important;
+  margin-top: -3px !important;
 }
 
 #main-window #navigator-toolbox #titlebar #TabsToolbar > .toolbar-items {
@@ -565,7 +565,8 @@
 }
 
 /* Fx 105+ - remove Firefox-view-button from tabs toolbar */
-:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs {
+:root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
+:root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
 }
 

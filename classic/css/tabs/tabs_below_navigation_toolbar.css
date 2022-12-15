@@ -110,7 +110,18 @@
   width: 100vw;
 }
 
-/* Fx 106+*/					
+/* Fx 105+ */
+:root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
+:root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
+  border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+
+:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow="true"]) {
+  padding-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+/* Fx 106+ */					
 #private-browsing-indicator-with-label {
   display: none !important;
 }

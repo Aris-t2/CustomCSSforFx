@@ -24,7 +24,7 @@
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
 #main-window:not([customizing="true"]) #nav-bar[currentset*="personal-bookmarks"]:not([currentset*="personal-bookmarks-"]) #personal-bookmarks {
   position: absolute !important;
-  display: block !important;
+  display: flex !important;
   bottom: 1px !important;
   min-width: 0 !important;
   width: auto !important;
@@ -66,7 +66,7 @@
   padding-inline-start: 2px !important;
   padding-inline-end: 2px !important;
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
-  z-index: 1000 !important;
+  z-index: 1 !important;
 }
 #navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
   background-repeat: no-repeat !important;

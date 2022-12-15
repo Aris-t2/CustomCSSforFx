@@ -24,3 +24,11 @@
 	  margin-top: 0px !important;
 	}
 }
+
+/* Linux */
+@media (-moz-platform: linux) {
+	/* set to '0', if no menubar is used */
+	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 26px !important;
+	}
+}
