@@ -44,4 +44,4 @@ Add all information required in 1-5 and delete this line and everything above it
 - Firefox version: 
 - Firefox theme (e.g. default, build in light/dark, external theme + link): 
 - Is 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets' set to 'true':
-- Is 'about:config > layout.css.moz-box-flexbox-emulation.enabled' set to 'true' (Fx 107 only):
+- Is 'about:config > layout.css.moz-box-flexbox-emulation.enabled' set to 'false' (Fx 108+):
