@@ -69,11 +69,13 @@
 #toolbar-menubar {
   top: 0 !important;
 }
-
+/*
 .browser-toolbar:not(.titlebar-color):-moz-lwtheme {
   background-color: unset !important;
-}
+}*/
 
+
+#main-window #nav-bar,
 #main-window[tabsintitlebar] #nav-bar {
   box-shadow: unset !important;
   border: unset !important;
@@ -103,7 +105,6 @@
   min-height: var(--tab-min-height_tnot) !important;
 }
 
-
 /* toolbar colors */
 #main-window:not([tabsintitlebar]) #toolbar-menubar:not(:-moz-lwtheme) {
   background-image: var(--colored_menubar_background_image) !important;
@@ -116,15 +117,20 @@
   background: var(--general_toolbar_color_navbar, inherit) !important;
 }
 
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+/*toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)*/ 
+.browser-toolbar:not(.titlebar-color):not(:-moz-lwtheme){
   appearance: none !important;
   background: var(--general_toolbar_color_toolbars, inherit) !important;
 }
+
 #TabsToolbar:not(:-moz-lwtheme){
   appearance: none !important;
   background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 }
 
+#TabsToolbar:-moz-lwtheme {
+  background-color: var(--toolbar-bgcolor) !important;
+}
 
 /* tabs toolbar adjustment */
 #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
@@ -247,4 +253,9 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 :root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow="true"]) {
   padding-inline-start: 0 !important;
   margin-inline-start: 0 !important;
+}
+
+/* Fx 106+ */					
+#private-browsing-indicator-with-label {
+  display: none !important;
 }

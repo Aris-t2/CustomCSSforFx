@@ -10,6 +10,7 @@
 */
 
 :root {
+  /* --tab-min-width: 50px; */
   --tab_min_width: 50px;
   --tab_max_width: 250px;
 }

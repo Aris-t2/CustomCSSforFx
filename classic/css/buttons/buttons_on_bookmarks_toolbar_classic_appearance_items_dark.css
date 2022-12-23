@@ -75,3 +75,12 @@
 #PlacesToolbar toolbarbutton[disabled=true]{
   opacity: 1.0 !important;
 }
+
+#PersonalToolbar toolbarbutton.bookmark-item:not(.subviewbutton, [disabled=true], [open]):hover {
+  background-color: transparent !important;
+}
+
+#PersonalToolbar toolbarbutton.bookmark-item:hover:active:not(.subviewbutton, [disabled="true"]),
+#PersonalToolbar toolbarbutton.bookmark-item[open="true"] {
+  background-color: transparent !important;
+}

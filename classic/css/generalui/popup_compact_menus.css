@@ -100,3 +100,20 @@ menupopup[type=arrow] > menu {
   }
 
 }
+
+#customizationui-widget-multiview #appMenu-libraryView,
+#pageActionPanel panelview,
+#widget-overflow panelview {
+  min-width: 0 !important;
+  padding: var(--item_y_padding) 0 !important;
+}
+
+#unified-extensions-panel .unified-extensions-item {
+  padding-block: 0 !important;
+  padding: 0 !important;
+}
+
+.unified-extensions-item-name,
+.unified-extensions-item-message {
+  padding-inline-start: 0 !important;
+}

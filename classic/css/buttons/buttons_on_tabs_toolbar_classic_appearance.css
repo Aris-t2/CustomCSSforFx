@@ -92,3 +92,15 @@
 #TabsToolbar #TabsToolbar-customization-target > toolbarbutton[disabled=true]{
   opacity: 1.0 !important;
 }
+
+#TabsToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
+#TabsToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
+#TabsToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack {
+  background-color: transparent !important;
+}
+
+#TabsToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,
+#TabsToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-text,
+#TabsToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
+  background-color: transparent !important;
+}

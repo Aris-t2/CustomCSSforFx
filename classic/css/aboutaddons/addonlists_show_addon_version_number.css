@@ -9,11 +9,17 @@
 
 
 	/*restore version number */
-	div:not([current-view="updates"]) .addon-name-link[title]:not([data-l10n-args])::after/*,
-	div:not([current-view="updates"]) .addon-name[title]:not([data-l10n-args])::after */{
+	.addon-name-link[title]::after {
 	  display: block !important;
 	  content: attr(title) !important;
 	  margin-top: -22px !important;
+	}
+	
+	/* hide version number on updates category */
+	div[current-view="updates"] .addon-name-link[title]::after {
+	  display: none !important;
+	  visibility: collapse !important;
+	  opacity: 0 !important;
 	}
 
 }

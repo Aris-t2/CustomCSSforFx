@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* adjust bottom area, or there still will be webcontent behind toolbar */
+/* this currently happens on Nightly builds, so this code be option for now */
+#browser,
+#customization-container {
+  margin-bottom: var(--addonbar_height) !important; 
+}

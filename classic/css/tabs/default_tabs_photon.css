@@ -174,3 +174,8 @@
 #private-browsing-indicator-with-label {
   display: none !important;
 }
+
+/* Fx 110 none-sense - remove line below active tab */
+#nav-bar:not([tabs-hidden="true"]) {
+  position: unset !important;
+}

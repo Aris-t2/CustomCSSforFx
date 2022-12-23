@@ -35,3 +35,7 @@
   height: auto !important;
   max-height: auto !important;
 }
+
+#widget-overflow:not([remote="true"]) .unified-extensions-item .unified-extensions-item-open-menu.subviewbutton {
+  display: none !important;
+}

@@ -29,3 +29,7 @@
 #main-window[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
   margin-inline-end: -5px !important;
 }
+
+#main-window[uidensity=compact] #nav-bar .toolbaritem-combined-buttons {
+	margin-inline: -2px !important;
+}

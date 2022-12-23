@@ -501,6 +501,11 @@
   --tab-label-mask-size: unset !important;
 }
 
+.tabbrowser-tab[selected]:not(:hover) .tab-label-container:not([labeldirection="rtl"]),
+#tabbrowser-tabs:not([closebuttons="activetab"]) .tabbrowser-tab:not(:hover,[pinned]) .tab-label-container:not([labeldirection="rtl"]){
+  margin-inline-end: unset !important;
+}
+
 .tabbrowser-tab {
   padding-inline: initial !important;
 }
@@ -593,4 +598,9 @@
 /* center tab label vertically */
 .tab-label-container {
   padding-bottom: 2px !important
+}
+
+/* Fx 110 none-sense - remove line below active tab */
+#nav-bar:not([tabs-hidden="true"]) {
+  position: unset !important;
 }

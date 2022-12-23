@@ -3,6 +3,15 @@
 /****************************************************************************************/
 
 
+#PersonalToolbar toolbarbutton.bookmark-item:not(.subviewbutton, [disabled=true], [open]):hover {
+  background-color: transparent !important;
+}
+
+#PersonalToolbar toolbarbutton.bookmark-item:hover:active:not(.subviewbutton, [disabled="true"]),
+#PersonalToolbar toolbarbutton.bookmark-item[open="true"]{
+  background-color: transparent !important;
+}
+
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button ,
 #PlacesToolbar .bookmark-item:not(menu):not(menuitem):not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,

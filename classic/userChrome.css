@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.7
+  Current version: 4.2.8
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -634,6 +634,7 @@
    [!] only use one option at a time
    [!] BUG: dragging tabs does not work with multi lined tabs
    [!] not compatible with 'tabs toolbar - below main content' option
+   [!] not compatible with 'newtab button always_visible' option
    [!] only compatible with 'tabs below navigation toolbar alt version'
 */
 
@@ -930,18 +931,17 @@
    ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom
    -------------------------------------------------------------------------
 
+   [!] EXPERIMENTAL
    [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks
    [!] not compatible to 'bookmarks toolbar - multiple lines' option
    [!] not compatible to 'bookmarks toolbar autohide' option
-   [!] EXPERIMENTAL
-   [!] addonbar_status_in_addonbar.css + 108+: addd a flexible space to hide transparent areas
+   [!] use 'addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_webcontent_compatibility.css', if content overlaps with toolbar
 */
 
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
-/* @import "./css/toolbars/addonbar_content_on_the_right.css"; /**/
-/* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/ /* Fx 108+ WIP / buggy*/
-/* @import "./css/toolbars/addonbar_status_in_addonbar102.css"; /**/ /* Fx 102-107 only*/
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_webcontent_compatibility.css"; /**/
+/* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
 
 /* [!] create additional toolbar for 'bookmarks toolbar items' on navigation toolbar */

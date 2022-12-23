@@ -25,6 +25,7 @@
   --tab_close_icons_size: 16px !important; /* 14-20px */
   
   /* for 'tab_maxwidth.css'- unlock 'min width' code inside file first for '--tab_min_width' to work */
+  /* --tab-min-width: 50px !important; */
   --tab_min_width: 50px !important; 
   --tab_max_width: 250px !important;
   
