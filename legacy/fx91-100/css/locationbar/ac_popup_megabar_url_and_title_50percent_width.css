@@ -1,0 +1,53 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "ac_popup_megabar_title_and_url_50percent_width.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+#urlbar .urlbarView-url {
+  position: absolute !important;
+  display: block !important;
+  margin-inline-start: 0px !important;
+  min-width: calc(50% - 18px) !important;
+  width: calc(50% - 18px) !important;
+  left: 24px !important;
+}
+
+#urlbar .urlbarView-title {
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% + 10px) !important;
+  min-width: calc(50% - 18px) !important;
+  width: calc(50% - 18px) !important;
+}
+
+#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  display: block !important;
+  left: 24px !important;
+}
+
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  left: 24px !important;
+}
+
+/* use different width values to go from  50/50 to e.g. 40/60 */
+/*
+#urlbar .urlbarView-url {
+  margin-inline-start: 0px !important;
+  min-width: calc(40% - 18px) !important;
+  width: calc(40% - 18px) !important;
+}
+
+#urlbar .urlbarView-title {
+  min-width: calc(60% - 18px) !important;
+  width: calc(60% - 18px) !important;
+  left: calc(40% + 10px) !important;
+}
+*/

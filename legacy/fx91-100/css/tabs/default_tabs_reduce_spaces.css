@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tabbrowser-tab {
+  padding-inline: 1px !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
+}

@@ -1,0 +1,136 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* tab context menuitem visibility **************/
+/* remove / and * after description to enable ***/
+/* add / and * after description to disable *****/
+
+/* hide 'Reload Tab' menuitem */ /*
+#tabContextMenu #context_reloadTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Mute Tab' menuitem */ /*
+#tabContextMenu #context_toggleMuteTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Mute Tab' menuitem */ /*
+#tabContextMenu #context_toggleMuteTab + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Pin Tab' menuitem */ /*
+#tabContextMenu #context_pinTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Unpin Tab' menuitem */ /*
+#tabContextMenu #context_unpinTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Duplicate Tab' menuitem */ /*
+#tabContextMenu #context_duplicateTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Move to New Window' menuitem */ /*
+#tabContextMenu #context_openTabInWindow {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Move to New Window' menuitem */ /*
+#tabContextMenu #context_sendTabToDevice_separator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Send Tab to Device' menuitem */ /*
+#tabContextMenu #context_sendTabToDevice {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Send Tab to Device' menuitem */ /*
+#tabContextMenu #context_sendTabToDevice + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Reload All Tabs' menuitem */ /*
+#tabContextMenu #context_reloadAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmarks All Tabs...' menuitem */ /*
+#tabContextMenu #context_bookmarkAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Close Tabs to the Right' menuitem */ /*
+#tabContextMenu #context_closeTabsToTheEnd {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Close Other Tabs' menuitem */ /*
+#tabContextMenu #context_closeOtherTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide separator after 'Close Other Tabs' menuitem */ /*
+#tabContextMenu #context_closeOtherTabs + menuseparator {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Reload Selected Tab' menuitem */ /*
+#context_reloadSelectedTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Undo Close Tab' menuitem */ /*
+#tabContextMenu #context_undoCloseTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Close Tab' menuitem */ /*
+#tabContextMenu #context_closeTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Bookmark Tab' menuitem */ /*
+#tabContextMenu #context_bookmarkTab {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Select All Tabs' menuitem */ /*
+#tabContextMenu #context_selectAllTabs {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/* hide 'Move Tab' menuitem */ /*
+#tabContextMenu #context_moveTabOptions {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+/**/

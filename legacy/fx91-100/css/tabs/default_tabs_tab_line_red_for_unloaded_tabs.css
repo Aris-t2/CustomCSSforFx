@@ -1,0 +1,15 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Unload tabs line */
+.tabbrowser-tab .tab-context-line {
+  height: 1px !important;
+  border-radius: 0px !important;
+  margin: -3px 3px 0 !important;
+}
+
+.tabbrowser-tab[pending]:not([usercontextid]) .tab-context-line {
+  background-color: red !important;
+}

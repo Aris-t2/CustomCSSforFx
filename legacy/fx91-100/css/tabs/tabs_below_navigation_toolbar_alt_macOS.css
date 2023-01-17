@@ -1,0 +1,20 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_alt_force_hidden_menubar.css";
+
+
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
+  margin-bottom: unset !important;
+}
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
+  position: fixed !important;
+  display:block !important;
+  top: -2px !important;
+  left: 0 !important;
+  right: unset !important;
+}

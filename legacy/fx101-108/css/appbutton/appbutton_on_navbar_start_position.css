@@ -1,0 +1,41 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* move main menu button to navigation toolbars start */
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
+  box-ordinal-group: 10 !important;
+  margin-inline-start: 3px !important;
+  margin-inline-end: unset !important;
+}
+
+#main-window #PanelUI-button {
+  margin-inline-start: 2px !important;
+  margin-inline-end: 2px !important;
+}
+
+#PanelUI-menu-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#nav-bar-customization-target {
+  padding-inline-start: 0px !important;
+  padding-inline-end: 2px !important;
+}
+
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
+#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+  padding-inline-start: 0px !important;
+}
+
+/* workaround for Firefox 102+ *******************/
+panel[id="appMenu-popup"][type="arrow"][side="top"],
+panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
+  margin-inline: 0 !important;
+}

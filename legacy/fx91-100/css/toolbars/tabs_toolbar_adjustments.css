@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Fx58+ titlebar placeholders */
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
+  min-width: 0 !important;
+  width: 0 !important;
+  max-width: 0 !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  margin-inline-start: 2px !important;
+}
+
+/* tab toolbar position */
+#TabsToolbar{
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+  min-height: unset !important;
+}
+
+/* code for Unix (macOS/Linux) */
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
+	#TabsToolbar .titlebar-placeholder[type="caption-buttons"]:not([ordinal="1000"]) {
+	  margin-inline-start: 24px !important;
+	}
+}
+
+@media not (-moz-platform: windows) {
+	#TabsToolbar .titlebar-placeholder[type="caption-buttons"]:not([ordinal="1000"]) {
+	  margin-inline-start: 24px !important;
+	}
+}

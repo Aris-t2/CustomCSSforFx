@@ -1,0 +1,47 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PanelUI-menu-button {
+  appearance: unset !important;
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+/* force roundness known from CTR *//*
+#PanelUI-menu-button  :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  border-radius: 2.5px !important;
+}
+*/
+
+/* private mode color */
+#main-window[privatebrowsingmode=temporary] #nav-bar #PanelUI-menu-button :is(.toolbarbutton-badge-stack,.toolbarbutton-text){
+  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+}
+#main-window[privatebrowsingmode=temporary] #nav-bar #PanelUI-menu-button:hover:not(:active):not([open]) :is(.toolbarbutton-badge-stack,.toolbarbutton-text){
+  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
+					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
+					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#main-window[privatebrowsingmode=temporary] #nav-bar #PanelUI-menu-button:hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#main-window[privatebrowsingmode=temporary] #nav-bar #PanelUI-menu-button[open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+#nav-bar #PanelUI-menu-button .toolbarbutton-text {
+  color: white !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 1px rgba(0,0,0,.7),
+			   0 1px 1.5px rgba(0,0,0,.5) !important;
+}
+

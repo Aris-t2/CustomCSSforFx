@@ -1,0 +1,72 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
+  --colored_menubar_text_color: inherit;
+}
+
+#toolbar-menubar:not(:-moz-lwtheme) {
+  background-image: var(--colored_menubar_background_image) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar {
+  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window #main-menubar {
+  background: none !important;
+}
+
+@media (-moz-platform: windows-win8),(-moz-platform: windows-win10),(-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+  #main-window[tabsintitlebar] #titlebar-min .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-max .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-close:not(:hover) .toolbarbutton-icon {
+	fill: var(--colored_menubar_text_color) !important;
+	color: var(--colored_menubar_text_color) !important;
+	stroke: var(--colored_menubar_text_color) !important;
+  }
+}
+
+#nav-bar {
+  border-top: 0px !important;
+  box-shadow: unset !important;
+}
+
+#main-window:not(:-moz-lwtheme) #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+  color: var(--colored_menubar_text_color) !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+  color: white !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+	  color: white !important;
+	}
+}
+
+#main-window:not(:-moz-lwtheme) #main-menubar > menu:is(:hover,[open],[_moz-menuactive]) {
+  background: Highlight !important;
+  color: HighlightText !important;
+}
+
+#main-window #toolbar-menubar,
+#main-window #main-menubar > menu,
+#main-window #main-menubar {
+  text-shadow: unset !important;
+}
+
+@media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
+	  visibility: visible !important;
+	}
+  }
+}

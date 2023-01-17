@@ -1,0 +1,8 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#nav-bar :is(#back-button, #forward-button) > menupopup {
+  display: none !important;
+}

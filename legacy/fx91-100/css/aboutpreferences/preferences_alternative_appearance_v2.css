@@ -1,0 +1,524 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+	.category {
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	}
+
+ 	#preferences-stack,.sticky-container,
+	page,
+	.dialogBox .groupbox-title {
+	  appearance: none !important;
+	  background: -moz-Dialog !important;
+	}
+
+	#categories {
+	  background: transparent !important;
+	}
+	
+	#dialogFrame,
+	.main-content{
+	  background-color: -moz-Dialog !important;
+	}
+	
+	.groupbox-body,
+	#dialogFrame{
+	  background-color: -moz-Dialog !important;
+	}
+	
+	.groupbox-body{
+	  padding: 2px !important;
+	  margin: 2px !important;
+	}
+	
+	.sticky-container,
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: unset !important;
+	  margin: 3px 0 !important;
+	}
+	
+	.header-name {
+	  visibility: collapse !important;
+	}
+	
+	/* main colors category items */
+	#categories .category[selected]{
+	  background-color: #c1d2ee !important;
+	  border-inline-start-color: #c1d2ee !important;
+	  -moz-border-start-color:  #c1d2ee !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):hover{
+	  background-color: #e0e8f6 !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):not(:hover){
+	  color: black !important;
+	}
+
+	#categories .category {
+	  transition-duration: unset !important;
+	}
+	
+	/* groupbox */
+	.main-content groupbox{
+	  appearance: groupbox !important;
+	}
+
+	.main-content groupbox caption {
+	  background: -moz-Dialog !important;
+	  margin-inline-start: 2px !important;
+	  padding-inline-start: 2px !important;
+	  margin-inline-end: 2px !important;
+	  padding-inline-end: 2px !important;
+	}
+	
+	.main-content .groupbox-title {
+	  margin-top: 0px !important;
+	}
+	
+	#firefoxAccountCategory {
+	  margin-top: 20px !important;
+	  visibility: hidden !important;
+	}
+	
+	/* category icons */
+	#category-search .category-icon {
+	  list-style-image: url("./../../image/prefs_search.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-general .category-icon {
+	  list-style-image: url("./../../image/prefs_general.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-home .category-icon {
+	  list-style-image: url("./../../image/prefs_home.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-privacy .category-icon {
+	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-sync .category-icon {
+	  list-style-image: url("./../../image/prefs_sync.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#categories .category .category-icon {
+	  height: 32px !important;
+	  width: 32px !important;
+	}
+
+	/* alignment and text/font appearance */
+	#mainPrefPane {
+	  color: black !important;
+	  padding-inline-start: 20px !important;
+	  margin-top: -35px !important;
+	  margin-inline-start: -20px !important;
+	}
+	
+	textbox {
+	  min-height: 24px !important;
+	  height: 24px !important;
+	}
+
+	.main-content {
+	  margin-top: 20px !important;
+	  margin-bottom: 20px !important;
+	  background-color: -moz-Dialog !important;
+	  margin-inline-start: -1px !important;
+	}
+
+	.header label {
+	  font-weight: bold !important;
+	  padding-bottom: 0 !important;
+	}
+
+	.header:not(#header-advanced){
+	  margin-bottom: 0px !important;
+	}
+
+	#advancedPrefs #tabsElement tab {
+	  min-height: 30px !important;
+	}	
+
+	/* treechildren*/
+	#handlersView richlistitem,
+	#engineList treechildren::-moz-tree-row,
+	#blocklistsTree treechildren::-moz-tree-row {
+	  min-height: 24px !important;
+	}
+	
+	treecols,
+	treecol {
+	  min-height: unset !important;
+	  height: 24px !important;
+	}
+	
+	.autocomplete-tree treecols,
+	.autocomplete-tree treecol {
+	  height: unset !important;
+	}
+
+	/* buttons / menulists */
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle),
+	menulist {
+	  min-height: unset !important;
+	  height: unset !important;
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
+	  padding: 0px !important;
+	}
+	menulist{
+	  padding:2px !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
+	  appearance: button !important;
+	}
+
+	menulist{
+	  appearance: menulist !important;
+	}
+	
+	/* menulist popup */
+	@media all and (-moz-windows-theme:aero) {
+		menupopup menuitem {
+		  appearance: menuitem !important;
+		}
+		menupopup menuitem:not([disabled="true"]) {
+		  color: black !important;
+		}
+	}
+	
+	@media all and (-moz-windows-classic) {
+		
+		menupopup menuitem {
+		  background: white !important;
+		  padding-top: unset !important;
+		  padding-bottom: unset !important;
+		}
+		menupopup menuitem:not([disabled="true"]) {
+		  color: black !important;
+		}
+		menupopup menuitem[selected],
+		menupopup menuitem[_moz-menuactive="true"] {
+		  background: highlight !important;
+		}
+		menupopup menuitem:not([disabled="true"])[selected],
+		menupopup menuitem:not([disabled="true"])[_moz-menuactive="true"] {
+		  color: white !important;
+		}
+
+	}
+	
+	/* checkbox and radio items */
+	checkbox .checkbox-check {
+	  appearance: unset  !important;
+	  box-shadow: unset !important;
+	}
+
+	radio .radio-check {
+	  appearance: unset !important;
+	  box-shadow: unset !important;
+	}
+
+	radio,
+	checkbox {
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+	
+	@media not all and (-moz-windows-theme:aero) {
+	
+		checkbox image,
+		radio image {
+		  width: 14px !important;
+		  height: 14px !important;
+		  margin: 0 !important;
+		}
+	
+		#homeContentsGroup checkbox label {
+		  margin-inline-start: 2px !important;
+		}
+		
+		radio *{
+		  outline: unset !important;
+		}
+		
+	  @media all and (-moz-windows-classic) {
+	
+		checkbox image,
+		radio image {
+		  width: 10px !important;
+		  height: 10px !important;
+		}
+		checkbox {
+		  margin-top: 2px !important;
+		  margin-bottom: 2px !important;
+		}
+		
+		#homeContentsGroup checkbox label {
+		  margin-inline-start: 8px !important;
+		}
+
+	  }
+	}
+	
+	@media (min-resolution: 1.1dppx) {
+		checkbox image,
+		radio image {
+		  width: 10px !important;
+		  height: 10px !important;
+		}
+
+		#homeContentsGroup checkbox label {
+		  margin-inline-start: 6px !important;
+		}
+		
+	}
+	
+	@media all and (-moz-windows-theme:aero) {
+		
+	  @media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
+		
+		checkbox .checkbox-check,
+		radio .radio-check,
+		checkbox image,
+		radio image {
+		  width: 10px !important;
+		}
+
+		#homeContentsGroup checkbox label {
+		  margin-inline-start: 6px !important;
+		}
+	  }
+		
+	}
+	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
+	/* advanced category tabs */
+	#advancedPrefs #tabsElement tab:not([selected]):not(:hover),
+	#advancedPrefs #tabsElement {
+	  background-color: white !important;
+	}
+
+	#advancedPrefs #tabsElement tab[selected] {
+	  background-color: #c1d2ee !important;
+	  border-bottom-color: #c1d2ee !important;
+	}
+
+	#advancedPrefs #tabsElement tab:not([selected]):hover {
+	  background-color: #e0e8f6 !important;
+	}
+
+	#advancedPrefs #tabsElement tab,
+	#advancedPrefs #tabsElement {
+	  min-height: unset !important;
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0 !important;
+	}
+	
+}
+
+/* preference sub windows */
+*[subdialog="true"] > vbox,
+*[subdialog="true"] > hbox,
+*[subdialog="true"] .prefWindow-dlgbuttons,
+*[subdialog="true"] prefpane,
+*[subdialog="true"] .contentPane,
+*[subdialog="true"] .dialog-content-box,
+*[subdialog="true"] .largeDialogContainer{
+  color: black !important;
+}
+
+*[subdialog="true"] textbox {
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+/* treechildren */
+*[subdialog="true"] treecols,
+*[subdialog="true"] treecol {
+  min-height: unset !important;
+  height: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+*[subdialog="true"] .autocomplete-tree treecols,
+*[subdialog="true"] .autocomplete-tree treecol {
+  height: unset !important;
+}
+*[subdialog="true"] treechildren {
+  min-height: unset !important;
+}
+
+/* buttons/menulists */
+*[subdialog="true"] button:not(.button-link):not(.spinbuttons-button),
+*[subdialog="true"] menulist{
+  min-height: unset !important;
+  height: unset !important;
+}
+
+*[subdialog="true"] button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
+  appearance: button !important;
+}
+*[subdialog="true"] menulist{
+  appearance: menulist !important;
+}
+
+/* menu popup */
+@media all and (-moz-windows-theme:aero) {
+	*[subdialog="true"] menupopup menuitem {
+	  appearance: menuitem !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"]),
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected] {
+	  color: black !important;
+	}
+}
+@media all and (-moz-windows-classic) {
+    
+	*[subdialog="true"] menupopup menuitem {
+	  background: white !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"]) {
+	  color: black !important;
+	}
+	*[subdialog="true"] menupopup menuitem[selected],
+	*[subdialog="true"] menupopup menuitem[_moz-menuactive="true"] {
+	  background: highlight !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected],
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[_moz-menuactive="true"] {
+	  color: white !important;
+	}
+
+}
+
+/* checkbox / radios */
+*[subdialog="true"] checkbox .checkbox-check {
+  appearance: unset  !important;
+  box-shadow: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+*[subdialog="true"] radio .radio-check {
+  appearance: unset !important;
+  box-shadow: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+*[subdialog="true"] radio,
+*[subdialog="true"] checkbox {
+  padding: unset !important;
+  margin: unset !important;
+}
+
+@media not all and (-moz-windows-theme:aero) {
+
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 14px !important;
+	  height: 14px !important;
+	  margin: 0 !important;
+	}
+	
+	*[subdialog="true"] radio *{
+	  outline: unset !important;
+	}
+	@media all and (-moz-windows-classic) {
+	
+		*[subdialog="true"] checkbox image,
+		*[subdialog="true"] radio image {
+		  width: 10px !important;
+		  height: 10px !important;
+		}
+		*[subdialog="true"] checkbox {
+		  margin-top: 2px !important;
+		  margin-bottom: 2px !important;
+		}
+
+	}
+}
+
+@media (min-resolution: 1.1dppx) {
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox image {
+	  min-width: 10px !important;
+	  min-height: 10px !important;
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox label {
+	  margin-inline-start: -4px !important;
+	}
+}
+
+@media all and (-moz-windows-theme:aero) {
+	
+  @media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
+	
+	*[subdialog="true"] checkbox .checkbox-check,
+	*[subdialog="true"] radio .radio-check,
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 10px !important;
+	}
+
+	#FontsDialog checkbox image {
+	  min-width: 10px !important;
+	  min-height: 10px !important;
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox label {
+	  margin-inline-start: -4px !important;
+	}
+
+  }
+	
+}

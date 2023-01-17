@@ -1,0 +1,51 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item {
+  appearance: none !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  border: unset !important;
+  height: 18px !important;
+  background-image: unset !important;
+  padding-inline-start: 2px !important;
+  margin-inline-start: 5px !important;
+  margin-inline-end: 0 !important;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item::after {
+  appearance: none !important;
+  display: block !important;
+  content: attr(tooltiptext) !important;
+  position: relative !important;
+  padding-inline-start: 6px !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  top: 0px !important;
+  bottom: 0px !important;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs {
+  min-height: unset !important;
+  height: unset !important;
+  max-height: unset !important;
+  line-height: unset !important;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box {
+  display: table !important; /* inline */
+}
+
+#PopupSearchAutoComplete  .search-setting-button {
+  z-index: 1000 !important;
+}
+
+#PopupSearchAutoComplete .search-panel-one-offs .searchbar-engine-one-off-item .button-box .button-icon {
+  margin-top: 1px !important;
+  padding-inline-start: 0px !important;
+  margin-inline-start: 0px !important;
+  position: relative !important;
+}

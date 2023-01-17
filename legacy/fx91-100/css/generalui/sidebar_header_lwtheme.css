@@ -1,0 +1,37 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebar-header:-moz-lwtheme {
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--lwt-header-image) !important;
+  background-position: bottom left !important;
+  background-repeat: no-repeat !important;
+  border-bottom: 0 !important;
+}
+
+#main-window:-moz-lwtheme-darktext #sidebar-box,
+#main-window:-moz-lwtheme-darktext #sidebar-box * {
+  color: black !important;
+}
+
+#main-window:-moz-lwtheme-brighttext #sidebar-box,
+#main-window:-moz-lwtheme-brighttext #sidebar-box * {
+  color: white !important;
+}
+
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window #sidebar-box,
+	#main-window #sidebar-box * {
+	  color: white !important;
+	}
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	#main-window #sidebar-box,
+	#main-window #sidebar-box * {
+	  color: black !important;
+	}
+}

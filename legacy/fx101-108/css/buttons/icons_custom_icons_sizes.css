@@ -1,0 +1,210 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#back-button {
+  -moz-image-region: rect(0px, 54px, 18px, 36px) !important;
+}
+
+#main-window:not([uidensity=compact]) #back-button {
+  -moz-image-region: rect(0px, 36px, 18px, 18px) !important;
+}
+/*
+#main-window:not([uidensity=compact]) #back-button .toolbarbutton-icon {
+  padding: 8px !important;
+}*/
+
+#forward-button	{
+  -moz-image-region: rect(0px, 72px, 18px, 54px) !important;
+}
+#home-button {
+  -moz-image-region: rect(0px, 126px, 18px, 108px) !important;
+}
+#stop-button{
+  -moz-image-region: rect(0px, 108px, 18px, 90px) !important;
+}
+#reload-button{
+  -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
+}
+#bookmarks-toolbar-placeholder,
+#bookmarks-menu-button{
+  -moz-image-region: rect(0px, 162px, 18px, 144px) !important;
+}
+#library-button {
+  -moz-image-region: rect(0px, 630px, 18px, 612px) !important;
+}
+#history-panelmenu{
+  -moz-image-region: rect(0px, 180px, 18px, 162px) !important;
+}
+
+#downloads-indicator-anchor {
+  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
+}
+#add-ons-button	{
+  -moz-image-region: rect(0px, 216px, 18px, 198px) !important;
+}
+#open-file-button {
+  -moz-image-region: rect(0px, 234px, 18px, 216px) !important;
+}
+#save-page-button {
+  -moz-image-region: rect(0px, 252px, 18px, 234px) !important;
+}
+#sync-button {
+  -moz-image-region: rect(0px, 270px, 18px, 252px) !important;
+}
+#feed-button {
+  -moz-image-region: rect(0px, 288px, 18px, 270px) !important;
+}
+#characterencoding-button{
+  -moz-image-region: rect(0px, 324px, 18px, 306px) !important;
+}
+#e10s-button,
+#new-window-button {
+  -moz-image-region: rect(0px, 342px, 18px, 324px) !important;
+}
+#new-tab-button {
+  -moz-image-region: rect(0px, 360px, 18px, 342px) !important;
+}
+#privatebrowsing-button {
+  -moz-image-region: rect(0px, 378px, 18px, 360px) !important;
+}
+#find-button {
+  -moz-image-region: rect(0px, 396px, 18px, 378px) !important;
+}
+#print-button {
+  -moz-image-region: rect(0px, 414px, 18px, 396px) !important;
+}
+#fullscreen-button {
+  -moz-image-region: rect(0px, 432px, 18px, 414px) !important;
+}
+#developer-button {
+  -moz-image-region: rect(0px, 450px, 18px, 432px) !important;
+}
+#preferences-button {
+  -moz-image-region: rect(0px, 468px, 18px, 450px) !important;
+}
+#PanelUI-menu-button {
+  -moz-image-region: rect(1px, 485px, 17px, 469px) !important;
+}
+#cut-button {
+  -moz-image-region: rect(0px, 504px, 18px, 486px) !important;
+}
+#copy-button {
+  -moz-image-region: rect(0px, 522px, 18px, 504px) !important;
+}
+#paste-button {
+  -moz-image-region: rect(0px, 540px, 18px, 522px) !important;
+}
+#zoom-out-button {
+  -moz-image-region: rect(0px, 558px, 18px, 540px) !important;
+}
+#zoom-in-button {
+  -moz-image-region: rect(0px, 576px, 18px, 558px) !important;
+}
+#tabview-button {
+  -moz-image-region: rect(0px, 648px, 18px, 630px) !important;
+}
+#email-link-button {
+  -moz-image-region: rect(0px, 666px, 18px, 648px) !important;
+}
+#sidebar-button {
+  -moz-image-region: rect(0px, 684px, 18px, 666px) !important;
+}
+#panic-button:not([open]) {
+  -moz-image-region: rect(0px, 702px, 18px, 684px) !important;
+}
+#web-apps-button {
+  -moz-image-region: rect(0px, 720px, 18px, 702px) !important;
+}
+#webide-button {
+  -moz-image-region: rect(0px, 738px, 18px, 720px) !important;
+}
+#developer-button {
+  -moz-image-region: rect(0px, 756px, 18px, 738px) !important;
+}
+#pocket-button:not([open]) {
+  -moz-image-region: rect(0px, 774px, 18px, 756px) !important;
+}
+#containers-panelmenu {
+  -moz-image-region: rect(0px, 810px, 18px, 792px) !important;
+}
+#nav-bar-overflow-button {
+  -moz-image-region: rect(0px, 612px, 18px, 594px) !important;
+}
+#alltabs-button {
+  -moz-image-region: rect(0px, 648px, 18px, 630px) !important;
+}
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+/* fix nav-bars overflow menu icon size */
+#main-window #widget-overflow-fixed-list toolbarbutton .toolbarbutton-icon {
+  width: 18px !important;
+}
+
+/* icons adjustment */
+#main-window[uidensity=compact] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  padding: 5px !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  padding: 7px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#main-window[uidensity=touch] #nav-bar #bookmarks-menu-button > .toolbarbutton-icon,
+#main-window[uidensity=touch] #nav-bar :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  padding: 8px !important;
+}
+
+toolbar:not(#nav-bar) :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+toolbar:not(#nav-bar) #bookmarks-menu-button > .toolbarbutton-icon,
+toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  /*padding: 0px 0px !important;
+  margin: 0px 0px !important;*/
+  min-width: 18px !important;
+  min-height: 18px !important;
+  /*width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;*/
+}
+
+#customization-palette :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button) .toolbarbutton-icon,
+#customization-palette #bookmarks-menu-button > .toolbarbutton-icon,
+#customization-palette :is(#panic-button,#pocket-button):not([open]) .toolbarbutton-icon {
+  min-width: 18px !important;
+  min-height: 18px !important;
+}

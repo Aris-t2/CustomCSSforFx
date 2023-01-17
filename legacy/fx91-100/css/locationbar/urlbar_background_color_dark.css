@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:is(#urlbar-background, #urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
+  background-color: black !important;
+  color: lightgrey !important;
+}
+
+:is(#urlbar, #searchbar, .searchbar-textbox) ::-moz-selection {
+  background: white !important;
+  color: black !important;
+}
+
+#identity-icon{
+  opacity: 1 !important;
+}

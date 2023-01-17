@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --urlbar_border_color: var(--chrome-content-separator-color);
+}
+
+#urlbar:not([focused="true"]) #urlbar-background,
+#urlbar[open="true"] #urlbar-background,
+#urlbar[focused="true"][open="true"] #urlbar-background,
+#searchbar:not(:focus-within) {
+  border: 1px solid var(--urlbar_border_color) !important;
+}
+
+#urlbar[focused="true"][suppress-focus-border] > #urlbar-input-container {
+  border-top: 1px solid var(--urlbar_border_color) !important;
+  border-left: 1px solid var(--urlbar_border_color) !important;
+  border-right: 1px solid var(--urlbar_border_color) !important;
+}
+
+#urlbar[focused="true"][suppress-focus-border][open="true"] > #urlbar-input-container {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}

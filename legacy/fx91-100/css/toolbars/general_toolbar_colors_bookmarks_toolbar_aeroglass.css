@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* bookmarks toolbar background */
+#main-window #navigator-toolbox #PersonalToolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme),
+#main-window #navigator-toolbox #PersonalToolbar:not(:-moz-lwtheme),
+#main-window #navigator-toolbox #PersonalToolbar:-moz-lwtheme,
+#main-window #navigator-toolbox #PersonalToolbar {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}

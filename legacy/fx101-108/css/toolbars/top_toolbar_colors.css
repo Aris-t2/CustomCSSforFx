@@ -1,0 +1,81 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root{
+  --top_toolbars_background: hsl(235,33%,19%); /* #0063b1 */ /* hsl(235,33%,19%) was used by old accent color option  */ 
+  --top_toolbars_background_inactive: hsl(235,13%,9%); /* #ffffff */
+  --top_toolbars_text: #ffffff;
+  --top_toolbars_text_inactive: #999999;
+}
+
+#main-window:not(:-moz-lwtheme) #titlebar,
+#main-window:not(:-moz-lwtheme) #toolbar-menubar,
+#main-window:not(:-moz-lwtheme) #TabsToolbar,
+#main-window:not(:-moz-lwtheme) #navigator-toolbox{
+  background: var(--top_toolbars_background) !important;
+  color: var(--top_toolbars_text) !important;
+}
+
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #titlebar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #toolbar-menubar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #TabsToolbar,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #navigator-toolbox {
+  background: var(--top_toolbars_background_inactive) !important;
+  color: var(--top_toolbars_text_inactive) !important;
+}
+
+#main-window:not(:-moz-lwtheme) #main-menubar > menu > label {
+  color: var(--top_toolbars_text) !important;
+}
+
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #main-menubar > menu > label {
+  color: var(--top_toolbars_text_inactive) !important;
+}
+
+
+#TabsToolbar toolbarbutton:not(:-moz-lwtheme),
+#scrollbutton-up:not(:-moz-lwtheme),
+#scrollbutton-down:not(:-moz-lwtheme),
+#main-window:not(:-moz-lwtheme) .titlebar-button,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button,
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover {
+  fill: CurrentColor !important;
+}
+
+
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down) {
+  fill: CurrentColor !important;
+}
+
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up,
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover {
+  fill: CurrentColor !important;
+}
+
+
+/* use caption buttons offered for lw-themes *//*
+.titlebar-button {
+  -moz-context-properties: unset !important;
+}
+.titlebar-min {
+  list-style-image: url(chrome://browser/skin/window-controls/minimize-themes.svg) !important;
+}
+.titlebar-max {
+  list-style-image: url(chrome://browser/skin/window-controls/maximize-themes.svg) !important;
+}
+.titlebar-restore {
+  list-style-image: url(chrome://browser/skin/window-controls/restore-themes.svg) !important;
+}
+.titlebar-close {
+  list-style-image: url(chrome://browser/skin/window-controls/close-themes.svg) !important;
+}
+*/

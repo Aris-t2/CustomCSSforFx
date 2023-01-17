@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* menubar visibility in fullscreen mode */
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
+  visibility: visible !important;
+}

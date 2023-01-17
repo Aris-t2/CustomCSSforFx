@@ -1,0 +1,56 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  --megabar_border_roundness: 20px;
+}
+
+#urlbar #urlbar-background,
+#urlbar, #urlbar-input-container,
+#searchbar, .searchbar-textbox {
+  border-radius: var(--megabar_border_roundness) !important;
+}
+
+#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView,
+#urlbar .search-one-offs,
+#urlbar .search-one-offs .search-panel-header,
+#urlbar .search-one-offs .search-panel-one-offs-container {
+  border-bottom-left-radius: var(--megabar_border_roundness) !important;
+  border-bottom-right-radius: var(--megabar_border_roundness) !important;
+}
+
+#urlbar .search-one-offs .search-setting-button-compact {
+  border-bottom-right-radius: var(--megabar_border_roundness) !important;
+}
+
+#urlbar[focused="true"][open] #urlbar-input-container {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+
+#urlbar[open="true"] #urlbar-background,
+#urlbar[open="true"],
+#urlbar[open="true"] #urlbar-input-container {
+  border-radius: calc(var(--megabar_border_roundness) / 1.5) !important;
+}
+
+#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView,
+#urlbar .search-one-offs,
+#urlbar .search-one-offs .search-panel-header,
+#urlbar .search-one-offs .search-panel-one-offs-container {
+  border-bottom-left-radius: calc(var(--megabar_border_roundness) / 1.5) !important;
+  border-bottom-right-radius: calc(var(--megabar_border_roundness) / 1.5) !important;
+}
+
+#urlbar .search-one-offs .search-setting-button-compact {
+  border-bottom-right-radius: calc(var(--megabar_border_roundness) / 1.5) !important;
+}

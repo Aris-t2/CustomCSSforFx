@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* dropmarker icon / arrow */
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button .toolbarbutton-icon {
+  list-style-image: url("../../image/appbutton_grey.svg") !important;
+}
+
+

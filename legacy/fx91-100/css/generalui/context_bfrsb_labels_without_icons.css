@@ -1,0 +1,44 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./context_bfrsb_labels_with_icons.css";
+
+:root{
+  --y_padding_before_label_cn_no_icon: -24px;
+}
+
+#context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+  opacity: 0 !important;
+}
+
+/* Windows code */
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: var(--y_padding_before_label_cn_no_icon) !important;
+  }
+
+}
+
+@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+
+  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+	margin-inline-start: 0px !important;
+  }
+
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	margin: unset !important;
+	margin-inline-start: 6px !important;
+	margin-inline-end: 10px !important;
+  }
+  
+  @media (-moz-windows-classic){
+	#context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 2px !important;
+	}
+  }
+  
+}

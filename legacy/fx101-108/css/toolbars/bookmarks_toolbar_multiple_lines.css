@@ -1,0 +1,94 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+/* import old button/bookmark size code *************************************************/
+@import "./../buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css";
+
+:root {
+  --bookmark_items_height: 22px; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3; /* <- maximum amount of lines */
+}
+
+#PersonalToolbar {
+  min-height: var(--bookmark_items_height) !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important;
+}
+
+#personal-bookmarks,
+#PlacesToolbar > hbox {
+  display: block;
+}
+
+#PlacesToolbarItems {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  overflow-y: auto;
+  contain: none !important;
+}
+
+#PlacesToolbarItems > .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap; 
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  max-height: calc(var(--bookmark_items_height)*(var(--bookmark_items_lines))) !important
+}
+
+#personal-bookmarks #PlacesToolbar {
+  display: block;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) );
+}
+
+#personal-bookmarks #PlacesToolbar > .bookmark-item{
+  visibility: visible !important;
+}
+
+#personal-bookmarks #PlacesToolbar .chevron{
+  visibility: collapse;
+}
+#personal-bookmarks #PlacesToolbar > hbox > hbox{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#personal-bookmarks #PlacesToolbar #PlacesToolbarDropIndicator[collapsed="true"],
+#personal-bookmarks #PlacesToolbar #PlacesToolbarDropIndicator{
+  display: none;
+}
+
+#personal-bookmarks #PlacesToolbar toolbarbutton.bookmark-item{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  vertical-align: middle;
+}
+
+#personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
+  appearance: toolbarbutton;
+}
+
+#navigator-toolbox #PersonalToolbar { 
+  max-height: calc( var(--bookmark_items_lines) * var(--bookmark_items_height) ) !important;
+}
+
+#personal-bookmarks #PlacesChevron {
+  display: none !important;
+}
+
+#PlacesToolbar hbox[flex="1"] {
+  display: flex !important;
+}
+

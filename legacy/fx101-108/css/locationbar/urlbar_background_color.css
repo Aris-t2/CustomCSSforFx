@@ -1,0 +1,45 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  --urlbar_background_color: white;
+  --urlbar_text_color: black;
+}
+
+#urlbar-search-mode-indicator,
+#page-action-buttons,
+#identity-icon-box,
+#urlbar-background,
+#searchbar {
+  background-color: var(--urlbar_background_color) !important;
+}
+
+#searchbar:-moz-lwtheme,
+#urlbar:-moz-lwtheme #urlbar-input,
+#urlbar:-moz-lwtheme #urlbar-scheme,
+#urlbar:-moz-lwtheme #page-action-buttons,
+#urlbar:-moz-lwtheme #identity-icon-box,
+#urlbar:-moz-lwtheme #urlbar-input-container,
+#urlbar:-moz-lwtheme #urlbar-background,
+#urlbar:-moz-lwtheme .urlbarView,
+#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row-inner[selected] {
+  color: var(--urlbar_text_color) !important;
+  fill: var(--urlbar_text_color) !important;
+}
+
+@media (-moz-content-prefers-color-scheme: light) {
+	#urlbar:-moz-lwtheme .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+	#urlbar:-moz-lwtheme .urlbarView-row-inner[selected] {
+	  color: var(--urlbar_text_color) !important;
+	  fill: var(--urlbar_text_color) !important;
+	}
+}

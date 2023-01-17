@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PopupAutoCompleteRichResult[autocompleteinput="urlbar"],
+.urlbarView:not(.megabar),
+#urlbarView-results {
+  background-image: url(./../../image/fx_logo.png) !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}

@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Back history popup: hide forward items */
+/* Forward history popup: hide back items */
+#back-button menupopup .unified-nav-forward,
+#forward-button menupopup .unified-nav-back  {
+  display: none !important;
+}

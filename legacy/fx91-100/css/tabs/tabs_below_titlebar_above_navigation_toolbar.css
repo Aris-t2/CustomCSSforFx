@@ -1,0 +1,39 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[tabsintitlebar][sizemode="normal"] #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #TabsToolbar{
+  padding-inline-start: 2px !important;
+  margin-top: 3px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar:not([inactive="true"]) ~ #TabsToolbar{
+  margin-top: 3px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 2px !important;
+  margin-top: 24px !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar .private-browsing-indicator,
+#main-window[tabsintitlebar] #TabsToolbar #window-controls,
+#main-window[tabsintitlebar] #TabsToolbar *[type="caption-buttons"],
+#main-window[tabsintitlebar] #TabsToolbar *[type="pre-tabs"],
+#main-window[tabsintitlebar] #TabsToolbar *[type="post-tabs"] {
+  display: none !important;
+}
+
+#main-window[tabsintitlebar][sizemode="normal"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+  position: fixed !important;
+  top: 0px !important;
+  right: 0 !important;
+  visibility: visible !important;
+  display: block !important;
+}

@@ -1,0 +1,63 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window .megabar {
+  z-index: 3 !important;
+}
+
+#main-window #back-button {
+  z-index: 4 !important;
+  position: relative !important;
+}
+
+#main-window #nav-bar #forward-button {
+  --toolbarbutton-border-radius: 0px !important;
+}
+
+#main-window #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
+#main-window #nav-bar #back-button > .toolbarbutton-icon {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 10000px !important;
+  padding: 8px !important; 
+  background-color: #f9f9fa !important;
+}
+
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
+#main-window[uidensity=touch] #nav-bar #back-button > .toolbarbutton-icon {
+  padding: 11px !important;
+}
+
+#main-window #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button .toolbarbutton-icon,
+#main-window #nav-bar #forward-button > .toolbarbutton-icon {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 7px 7px 7px 14px !important;
+}
+
+
+#main-window[uidensity=compact] #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button .toolbarbutton-icon,
+#main-window[uidensity=compact] #nav-bar #forward-button > .toolbarbutton-icon {
+  padding: 5px 5px 5px 12px !important; 
+}
+
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button > .toolbarbutton-icon,
+#main-window[uidensity=touch] #nav-bar #forward-button > .toolbarbutton-icon {
+  padding: 9px 9px 9px 16px !important; 
+}
+
+#main-window #nav-bar #back-button + #forward-button {
+ margin-inline-start: -16px !important;
+}
+
+#main-window #nav-bar #back-button .toolbarbutton-icon {
+  opacity: 1 !important;
+}
+
+/* override classic toolbar buttons code */
+#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true] > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon {
+  background: #efefef !important; /* has to be solid or forward buttons left side will be partly visible */
+}

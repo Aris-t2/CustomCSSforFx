@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+link[href$="arrowscrollbox.css"] ~ .scrollbox-clip scrollbox[orient="vertical"] {
+  overflow-y: auto !important;
+}
+
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-up,
+link[href$="arrowscrollbox.css"] ~ #scrollbutton-down {
+  display: none !important;
+}

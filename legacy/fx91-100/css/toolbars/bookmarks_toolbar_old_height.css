@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* old bookmarks toolbar height */
+#PersonalToolbar {
+  min-height: 26px !important;
+}

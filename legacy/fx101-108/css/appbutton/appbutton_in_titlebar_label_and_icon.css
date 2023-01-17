@@ -1,0 +1,91 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./appbutton_in_titlebar_icon_only.css";
+
+/* gain space before menubar */
+#main-window[tabsintitlebar] #toolbar-menubar {
+  margin-inline-start: 95px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  margin-inline-start: 94px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
+  margin-inline-start: 93px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+  margin-inline-start: 92px !important;
+}
+
+/* gain space before tabs toolbar */
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 95px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 94px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 93px !important;
+}
+
+#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 92px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar {
+ padding-inline-start: 95px !important;
+}
+
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  background-clip: padding-box !important;
+  width: 90px !important;
+}
+
+#main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon {
+  margin-inline-start: -16px !important;
+}
+
+#main-window[tabsintitlebar] #PanelUI-menu-button::after {
+  display: block !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 1px rgba(0,0,0,.7),
+			   0 1px 1.5px rgba(0,0,0,.5) !important;
+  margin-top: 0px !important;
+  margin-bottom: 2px !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+/* 'Firefox' title */
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox"]::after,
+#main-window[tabsintitlebar] #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
+  content: "Firefox" !important;
+}
+
+/* 'DevFox' title */
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox Developer Edition"]::after {
+  content: "DevFox" !important;
+}
+
+/* 'Nightly' title */
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Nightly"]::after,
+#main-window[tabsintitlebar] #PanelUI-menu-button[label="Firefox Nightly"]::after {
+  content: "Nightly" !important;
+}
+
+/* custom button title (remove Firefox/DevFox/Nightly) *//*
+#main-window[tabsintitlebar] #PanelUI-menu-button::after{
+  content: "MyTitle" !important;
+}
+
+/* support for tab title in Firefox titlebar option*/
+#main-window[tabsintitlebar]::after {
+  margin-inline-start: 95px !important;
+}

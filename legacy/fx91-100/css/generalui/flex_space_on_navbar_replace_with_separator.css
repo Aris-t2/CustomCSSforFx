@@ -1,0 +1,25 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([customizing]) #nav-bar toolbarspring {
+  appearance: separator !important;
+  min-width: 1px !important;
+  max-width: 1px !important;
+  margin-inline-start: 1px !important;
+}
+
+/* Recreate a separator manually (disabled the above code first) */
+/*
+#main-window:not([customizing]) #nav-bar toolbarspring {
+  appearance: none !important;
+  min-width: 1px !important;
+  max-width: 1px !important;
+  border-left: 0.5px solid !important;
+  border-right: 0.5px solid !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+*/
+

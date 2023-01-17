@@ -1,0 +1,73 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+
+/* remove background color */
+#urlbar .urlbar-page-action,
+#urlbar #star-button-animatable-box,
+#urlbar #pageAction-panel-bookmark,
+#urlbar #star-button,
+#urlbar #star-button-animatable-box,
+#urlbar .urlbar-icon,
+#searchbar .search-go-button {
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+/* colorize location bar icons (except star button) */
+#urlbar #reader-mode-button-icon {
+  fill: blue !important;
+}
+#urlbar #reader-mode-button-icon:-moz-any(:hover,:hover:active,[open]){
+  fill: #2558ff !important;
+}
+
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar #reader-mode-button-icon{
+  fill: #00d2ff !important;
+}
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #urlbar #reader-mode-button-icon:-moz-any(:hover,:hover:active,[open]) {
+  fill: #00fcff !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar #reader-mode-button-icon{
+	  fill: #00d2ff !important;
+	}
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar #reader-mode-button-icon:-moz-any(:hover,:hover:active,[open]) {
+	  fill: #00fcff !important;
+	}
+
+}
+
+
+/* colorize star button icon */
+#urlbar #star-button:not([starred]) {
+  fill: orange !important;
+  opacity: 1.0 !important;
+}
+#urlbar #star-button-box[open] #star-button,
+#urlbar #star-button:-moz-any(:hover,:hover:active),
+#urlbar #star-button-animatable-box:-moz-any(:hover,:hover:active) {
+  filter: brightness(1.5) !important;
+}
+
+#urlbar #star-button-box[open] #star-button:not([starred]),
+#urlbar #star-button:not([starred]):-moz-any(:hover,:hover:active) {
+  filter: brightness(1.25) !important;
+}
+
+/* increase brightness for search bars go button */
+#searchbar .search-go-button:-moz-any(:hover,:hover:active,[open])  {
+  filter: brightness(1.25) !important;
+}
+
+/* change opacity for WE page action buttons */
+.urlbar-page-action > .urlbar-icon {
+  opacity: 1.0 !important;
+}
+.urlbar-page-action > .urlbar-icon:-moz-any(:hover,:hover:active,[open]){
+  opacity: 0.6 !important;
+}

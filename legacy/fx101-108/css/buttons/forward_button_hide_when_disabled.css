@@ -1,0 +1,15 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide 'disabled' forward button */
+#forward-button[disabled="true"] {
+  display: none !important;
+  transition: display 150ms ease-out !important;
+}
+
+#forward-button:not([disabled="true"]) {
+  display: initial !important;
+  transition: display 150ms ease-out !important;
+}

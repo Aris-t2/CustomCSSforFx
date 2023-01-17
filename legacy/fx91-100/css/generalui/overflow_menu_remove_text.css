@@ -1,0 +1,21 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#widget-overflow-mainView > toolbarseparator,
+#overflowMenu-customize-button,
+#widget-overflow:not([remote="true"]) .widget-overflow-list .subviewbutton-nav::after,
+#widget-overflow:not([remote="true"]) .toolbarbutton-text {
+  display: none !important;
+}
+
+#widget-overflow:not([remote="true"]) toolbarbutton {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#widget-overflow:not([remote="true"]) #widget-overflow-mainView {
+  min-width: 0 !important;
+  width: 30px !important;
+}

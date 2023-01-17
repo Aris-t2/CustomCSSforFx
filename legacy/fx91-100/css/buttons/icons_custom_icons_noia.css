@@ -1,0 +1,25 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "icons_custom_icons_sizes.css";
+
+/*
+   There are no icon set versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+:is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button,#downloads-indicator-anchor),
+#panic-button:not([open]),#pocket-button:not([open]) {
+  list-style-image: url("../../image/toolbar_fx_noia.png") !important;
+}
+
+:is(.tabs-newtab-button,#tabs-newtab-button) {
+  list-style-image: url("../../image/newtabnoia.png") !important;
+  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
+}

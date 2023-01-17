@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PanelUI-button,
+#PanelUI-menu-button {
+  min-width: 0.1px !important;
+  width: 0.1px !important;
+  max-width: 0.1px !important;
+  opacity: 0 !important;
+}
+
+/*
+#PanelUI-button {
+  visibility: collapse !important;
+}
+*/

@@ -1,0 +1,29 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document regexp("((.*\\.(png|apng|jpg|jpeg|gif|tiff|bmp))|(^data:image\\/.*))(\\?([^#]*))?(#(.*))?")  {
+
+  @media not print {
+
+	html > head:first-child + body:not([background]):not([background-image]):not([class]):not([style]):not([id]):last-child {
+      background-image: unset !important;
+	}
+
+	html > head:first-child + body:not([background]):not([background-image]):not([class]):not([style]):not([id]):last-child > img.transparent:first-child:last-child {
+      background: unset !important;
+	}
+
+	html > head:first-child + body:not([background]):not([background-image]):not([class]):not([style]):not([id]):last-child > img:first-child:last-child {
+	  text-align: unset !important;
+	  margin: unset !important;
+	  top: 8px !important;
+	  right: 8px !important;
+	  bottom: 8px !important;
+	  left: 8px !important;
+	}
+
+  }
+
+}

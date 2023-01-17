@@ -1,0 +1,23 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./css/generalui/sidebar_header_lwtheme.css";
+
+/* Fix for remaining hovering borders */
+.sidebar-placesTreechildren::-moz-tree-row {
+  outline: none !important;
+  border: none !important;
+}
+
+#sidebar:-moz-lwtheme {
+  background-image: var(--lwt-header-image) !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell-text {
+  color: black !important;
+}

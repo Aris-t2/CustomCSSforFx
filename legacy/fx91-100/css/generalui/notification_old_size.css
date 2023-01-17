@@ -1,0 +1,22 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+notification {
+  height: 16px !important;
+  font-size: 1em !important;
+}
+.messageImage {
+  width: 16px !important; 
+  height: 16px !important;
+}
+.messageCloseButton > .toolbarbutton-icon {
+  margin-inline-end: 12px !important;
+  padding: 0px !important;
+  width: 20px !important; /*DEFAULT: 20px in close-icon.css*/
+  height: 20px !important; /*DEFAULT: 20px in close-icon.css*/
+}
+.notification-button {
+  height: 16px !important;
+}

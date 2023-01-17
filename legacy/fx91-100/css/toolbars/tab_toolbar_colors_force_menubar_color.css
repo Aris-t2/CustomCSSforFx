@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
+}
+
+#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar {
+  appearance: none !important;
+  background: var(--colored_menubar_background_image, inherit) !important;
+}

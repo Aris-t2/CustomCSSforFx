@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-color: color-mix(in srgb, currentColor 11%, transparent);
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+  background-color: color-mix(in srgb, currentColor 17%, transparent) !important;
+}

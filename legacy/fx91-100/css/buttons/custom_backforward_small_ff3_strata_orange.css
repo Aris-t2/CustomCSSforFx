@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./custom_backforward_small.css";
+
+#main-window toolbox toolbar :is(#back-button, #forward-button) .toolbarbutton-icon {
+  list-style-image: url("./../../image/bf_ff3_strata_small_orange.png") !important;
+}

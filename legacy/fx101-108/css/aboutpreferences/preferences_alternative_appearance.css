@@ -1,0 +1,314 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+	.category {
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	}
+	
+	@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
+
+		#preferences-stack,.sticky-container,
+		page,
+		.dialogBox .groupbox-title {
+		  background: -moz-Dialog !important;
+		}
+
+		#categories {
+		  background: transparent !important;
+		}
+
+		.groupbox-body,
+		#dialogFrame{
+		  background-color: white !important;
+		}
+		
+		#policies-container {
+		  background: transparent !important;
+		}
+		
+		#categories .category:not([selected]):not(:hover){
+		  color: black !important;
+		}
+		
+		.main-content {
+		  background-color: white !important;
+		}
+
+	}
+	
+	.main-content {
+	  padding: 0px !important;
+	}
+
+	.pane-container {
+	  width: 100% !important;
+	  padding: 0px !important;
+	  margin: 0px !important;
+	}
+	
+	.sticky-container,
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	  background: unset !important;
+	}
+
+	.sticky-inner-container {
+	  max-width: unset !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: 0px !important;
+	  margin: 0 5px 5px 5px!important;
+	}
+
+	#searchInput[focused] {
+	  box-shadow: unset !important;
+	}
+	
+	.sticky-container {
+	  position: relative !important;
+	}
+
+	.header-name {
+	  visibility: collapse !important;
+	}
+	
+	#firefoxAccountCategory {
+	  visibility: hidden !important;
+	}
+	
+	/* main colors category items */
+	
+	#categories > .category[selected]:not(:hover),
+	#categories .category[selected]{
+	  background-color: white !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):hover{
+	  background-color: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+
+	#categories .category {
+	  transition-duration: unset !important;
+	}
+
+	/* category icons */
+	#category-search .category-icon {
+	  list-style-image: url("./../../image/prefs_search.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-general .category-icon {
+	  list-style-image: url("./../../image/prefs_general.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-home .category-icon {
+	  list-style-image: url("./../../image/prefs_home.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-privacy .category-icon {
+	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-sync .category-icon {
+	  list-style-image: url("./../../image/prefs_sync.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#categories .category .category-icon {
+	  height: 32px !important;
+	  width: 32px !important;
+	}
+
+	/* alignment and text/font appearance */
+
+	#mainPrefPane {
+	  padding-inline-start: 30px !important;
+	  margin-top: 4px !important;
+	  margin-inline-start: -20px !important;
+	}
+	
+	textbox {
+	  min-height: 24px !important;
+	  height: 24px !important;
+	}
+
+	.main-content {
+	  margin-top: 20px !important;
+	  margin-bottom: 20px !important;
+	  margin-inline-start: -1px !important;
+	}
+
+	.header label {
+	  font-weight: bold !important;
+	  padding-bottom: 0 !important;
+	}
+
+	.header:not(#header-advanced){
+	  margin-bottom: 0px !important;
+	}
+
+	#advancedPrefs #tabsElement tab {
+	  min-height: 30px !important;
+	}	
+
+	/* treechildren*/
+	#handlersView richlistitem,
+	#engineList treechildren::-moz-tree-row,
+	#blocklistsTree treechildren::-moz-tree-row {
+	  min-height: 24px !important;
+	}
+	
+	treecols,
+	treecol {
+	  min-height: unset !important;
+	  height: 24px !important;
+	}
+	
+	.autocomplete-tree treecols,
+	.autocomplete-tree treecol {
+	  height: unset !important;
+	}
+
+	/* buttons / menulists */
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle),
+	menulist{
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
+	  padding:0px !important;
+	}
+	menulist{
+	  padding:2px !important;
+	}
+	
+	/* checkbox and radio items */
+	checkbox image,
+	radio image {
+	  width: 14px !important;
+	  height: 14px !important;
+	  margin: 0 1px !important;
+	}
+	
+	
+	#homeContentsGroup checkbox label {
+	  margin-inline-start: 2px !important;
+	}
+	
+	radio * {
+	  outline: unset !important;
+	}
+	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
+	.sidebar-footer-button .text-link {
+	  margin-inline-start: 0 !important;
+	}
+	
+	#backContainersButton .button-box {
+	  padding-block-end: 20px !important
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0 !important;
+	}
+	
+	#addonsButton {
+	  fill: #63c54f !important;
+	}
+	
+	#helpButton {
+	  fill: #ff0000 !important;
+	}
+	
+	.sidebar-footer-icon {
+	  fill: unset !important;
+	}
+	
+	/*.web-appearance-choice  {
+	  width: 150px !important;
+	}*/
+	
+}
+
+/* preference sub windows */
+
+*[subdialog="true"] button:not(.button-link),
+*[subdialog="true"] menulist{
+  min-height: unset !important;
+  height: unset !important;
+}
+
+*[subdialog="true"] button:not(.button-link):not(.close-icon){
+  padding:0px !important;
+}
+*[subdialog="true"] menulist{
+  padding:2px !important;
+}
+
+*[subdialog="true"] checkbox image,
+*[subdialog="true"] radio image {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+}
+
+*[subdialog="true"] radio *{
+  outline: unset !important;
+}
+
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+
+	*[subdialog="true"] > vbox,
+	*[subdialog="true"] > hbox,
+	*[subdialog="true"] .prefWindow-dlgbuttons,
+	*[subdialog="true"] prefpane,
+	*[subdialog="true"] .contentPane,
+	*[subdialog="true"] .dialog-content-box,
+	*[subdialog="true"] .largeDialogContainer{
+	  background-color: var(--in-content-page-background) !important;
+	  color: var(--in-content-page-color) !important;
+	}
+
+}
+
+*[subdialog="true"] textbox {
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+*[subdialog="true"] treecols,
+*[subdialog="true"] treecol {
+  min-height: unset !important;
+  height: 26px !important;
+}
+
+*[subdialog="true"] .autocomplete-tree treecols,
+*[subdialog="true"] .autocomplete-tree treecol {
+  height: unset !important;
+}

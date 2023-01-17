@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Glass8 ( http://www.glass8.eu/ ) required for 'Windows 7'-like window transparency */
+
+@-moz-document url(chrome://browser/content/browser.xul), url(chrome://browser/content/browser.xhtml) {
+	#main-window {
+	  background-color: transparent !important;
+	  appearance: -moz-win-glass !important;
+	}
+}
+#main-window:not([customizing]) .titlebar-button,
+#main-window:not([customizing]) .titlebar-button:not(#titlebar-close) > .toolbarbutton-icon{
+  opacity: 0.01 !important;
+}
+
+#main-window:not([customizing]) .titlebar-button:hover {
+  opacity: 1 !important;
+}
+
+#main-window:not([customizing]) .titlebar-button:not(#titlebar-close):hover {
+  opacity: 0.1 !important;
+  background: black !important;
+}

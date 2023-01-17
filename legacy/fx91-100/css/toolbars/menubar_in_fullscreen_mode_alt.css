@@ -1,0 +1,33 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* menubar visibility in fullscreen mode */
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
+  visibility: visible !important;
+}
+
+#toolbar-menubar {
+  width: unset !important;
+  -moz-window-dragging: unset !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #navigator-toolbox[style*="margin-top: -"] #toolbar-menubar {
+  visibility: collapse !important;
+  display: none !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
+  -moz-margin-start: 0px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+  margin-top: 26px !important;
+}
+
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7),(-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+	#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+	  margin-top: 18px !important;
+	}
+}

@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#navigator-toolbox #TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) {
+  -moz-box-flex: 100 !important;
+  max-width: 225px !important;
+  width: auto !important;
+  min-width: var(--tab-min-width) !important;
+}

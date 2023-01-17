@@ -1,0 +1,20 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* disable tab border roundness */
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content,
+#TabsToolbar .tabbrowser-tab::after,
+#TabsToolbar .tabbrowser-tab::before,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::before,
+#TabsToolbar .tabbrowser-tab:hover::before,
+#TabsToolbar .tabbrowser-tab[last-visible-tab]:hover::after,
+#TabsToolbar #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
+  border-radius: 0px !important;
+}

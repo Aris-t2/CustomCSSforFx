@@ -1,0 +1,102 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"],
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] {
+  margin-top: unset !important;
+}
+
+#main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
+#main-window[tabsintitlebar] #nav-bar {
+  margin-inline-end: 145px !important;
+  appearance: none !important;
+  background: transparent !important;
+  border-top: unset !important;
+}
+
+#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #nav-bar {
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar:not([autohide="true"]),
+#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"] {
+  margin-bottom: 26px !important;
+}
+
+#main-window[tabsintitlebar] #toolbar-menubar .titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#main-window[tabsintitlebar] #nav-bar,
+#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
+  margin-top: -20px !important;
+}
+
+@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
+	#main-window[tabsintitlebar] #nav-bar,
+	#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar {
+	  margin-top: -28px !important;
+	}
+}
+
+/* move caption buttons to windows top right position */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+  position: fixed !important;
+  right: 0 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* caption button position in maximized mode after moving to the top */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
+  top: -14px !important;
+}
+
+
+/* Windows */
+@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
+	  top: 1px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	  top: 8px !important;
+	}
+}
+
+/* Windows 7 extra tweaks */
+@media (-moz-os-version:windows-win7), (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: none !important;
+	}
+  }
+  @media not all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	  top: -2px !important;
+	}
+	#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	  top: 0px !important;
+	}
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar .titlebar-buttonbox-container {
+	  display: none !important;
+	}
+  }
+}
+
+/* tweaks for fullscreen mode */
+#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button,
+#main-window #TabsToolbar #window-controls {
+  display: none !important;
+}
+
+@media all and (-moz-windows-classic) {
+  #main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
+  #main-window[tabsintitlebar] #nav-bar {
+	margin-inline-end: 0px !important;
+  }
+}

@@ -1,0 +1,95 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/****************************************************************************************/
+/* multirow / multiple tab lines - modified for CustomCSSforFx **************************/
+/* all credits go to the original authors: **********************************************/
+/* https://00.bulog.jp/archives/1476/ ***************************************************/
+/* https://www.reddit.com/r/FirefoxCSS/comments/7dclp7/multirow_tabs_in_ff57/ ***********/
+/* https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/multi-row_tabs.css */
+/* https://github.com/Endor8/userChrome.js/blob/master/Mutirowtabs/ *********************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used in files inside ./config/ folder,
+   if this projects full package is used. Set custom color values there in that case.
+*/
+
+:root{
+  --tabs-lines: 3;
+  --tab_min_width_mlt: 100px;
+  --tab_max_width_mlt: 200px;
+  --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
+}
+
+#tabbrowser-tabs{
+  min-height: unset !important;
+  padding-inline-start: 0px !important;
+  margin-top: 1px !important;
+}
+
+@-moz-document url(chrome://browser/content/browser.xhtml){
+  #scrollbutton-up~spacer,
+  #scrollbutton-up,
+  #scrollbutton-down{
+	display: var(--scrollbutton-display-model,initial);
+  }
+
+  scrollbox[part][orient="horizontal"]{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+    scrollbar-color: currentColor transparent;
+    scrollbar-width: thin;
+	contain: none !important;
+  }
+}
+
+.scrollbox-clip[orient="horizontal"],
+#tabbrowser-arrowscrollbox{
+  overflow: -moz-hidden-unscrollable;
+  display: block;
+  --scrollbutton-display-model: none;
+}
+
+.tabbrowser-tab{
+  height: var(--tab-min-height_mlt);
+}
+
+:is(.tabs-newtab-button,#tabs-newtab-button) {
+  height: var(--tab-min-height_mlt) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]{
+  position: static !important;
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  flex-grow: 1;
+  min-width: var(--tab_min_width_mlt) !important;
+  max-width: var(--tab_max_width_mlt) !important;
+}
+
+.tabbrowser-tab > stack{
+  width: 100%;
+  height: 100%;
+}
+
+#alltabs-button,
+:root:not([customizing]) #TabsToolbar #new-tab-button,
+#tabbrowser-arrowscrollbox > spacer,
+.tabbrowser-tab::after{ 
+  display: none !important;
+}
+
+.tab-background {
+  margin-block: unset !important;
+}
+
+box.scrollbox-clip[orient="horizontal"] {
+  display: inline !important;
+}

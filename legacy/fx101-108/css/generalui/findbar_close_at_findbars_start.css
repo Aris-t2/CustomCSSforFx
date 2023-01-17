@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) :is(.findbar-closebutton,#findbar-close-container) {
+  -moz-box-ordinal-group: 0 !important; /* can't be replaced by box-ordinal-group yet */
+  z-index: 1000 !important;
+}
+
+:is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {
+  overflow: hidden !important;
+}

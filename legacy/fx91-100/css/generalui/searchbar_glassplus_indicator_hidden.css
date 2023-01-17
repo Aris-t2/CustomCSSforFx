@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* remove search indicators '+' sign */
+.searchbar-search-button[addengines=true]::after,
+.searchbar-search-button[addengines=true] > .searchbar-search-icon-overlay {
+  visibility: hidden !important;
+}

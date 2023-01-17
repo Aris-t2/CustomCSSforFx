@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.urlbarView-row + .urlbarView-row {
+  border-top: 1px solid lightgrey !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.urlbarView-body-inner {
+  border-top: 1px solid lightgrey !important;
+}
+
+#urlbar[breakout] #urlbar-results .urlbarView-row-inner {	
+  padding-top: 2px !important;	
+  padding-bottom: 2px !important;	
+}

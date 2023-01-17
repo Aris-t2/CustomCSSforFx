@@ -1,0 +1,8 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#context-setDesktopBackground {
+  display: none !important;
+}

@@ -1,0 +1,60 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* color names, hexcodes, rgb(a) and hsl(a) and gradients can be used */
+
+:root {
+	--default_tabs_bg_selected: linear-gradient(to bottom,#FF8800,#FFCC99);
+	--default_tabs_toolbar_background: linear-gradient(to bottom,#FFCC99,#FFCC99);
+	--default_tabs_bg_default: linear-gradient(to bottom,#FFCC99,#CCCCCC);
+	--default_tabs_bg_hovered: linear-gradient(to bottom,#FF9900,#FF6600);
+	--default_tabs_bg_unloaded: linear-gradient(to bottom,#FFCC99,#CCCCCC);
+	--default_tabs_bg_newtab: linear-gradient(to bottom,#FFCC99,#CCCCCC);
+	--default_tabs_bg_newtab_hovered: linear-gradient(to bottom,#FF9900,#FF6600);
+}
+
+
+/* selected tab ****************************/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[selected] .tab-content {
+  background: var(--default_tabs_bg_selected) !important;
+}
+/* background color on toolbars */
+/*#main-window #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar) {
+  background: var(--default_tabs_toolbar_background) !important;
+}*/
+
+/* background color for 'tabs below navigation toolbar' option */
+/*#main-window #navigator-toolbox #TabsToolbar {
+  background: var(--default_tabs_toolbar_background) !important;
+}*/
+
+/* default tab *****************************/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
+  background: var(--default_tabs_bg_default) !important;
+}
+
+/* hovered tab ****************************/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:hover:not([selected]) .tab-content {
+  background: var(--default_tabs_bg_hovered) !important;
+}
+
+/* unloaded/pending tab ********************/
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content {
+  background: var(--default_tabs_bg_unloaded) !important;
+}
+
+/* new tab *********************************/
+#TabsToolbar #tabbrowser-tabs #tabs-newtab-button .toolbarbutton-icon {
+  background: unset !important;
+}
+
+#TabsToolbar #tabbrowser-tabs #tabs-newtab-button {
+  background: var(--default_tabs_bg_newtab) !important;
+}
+
+/* hovered new tab *************************/
+#TabsToolbar #tabbrowser-tabs #tabs-newtab-button:hover {
+  background: var(--default_tabs_bg_newtab_hovered) !important;
+}

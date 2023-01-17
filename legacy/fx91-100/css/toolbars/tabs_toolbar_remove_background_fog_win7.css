@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
+  @media (-moz-windows-default-theme) {
+    #TabsToolbar:not(:-moz-lwtheme) {
+      background-image: unset !important;
+    }
+  }
+}

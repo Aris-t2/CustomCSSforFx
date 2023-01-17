@@ -1,0 +1,524 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+					
+	:root {
+	  --in-content-category-text-hover: HighlightText !important;
+	  --in-content-category-background-hover: Highlight !important;
+	  --in-content-category-text-selected: black !important;
+	  --in-content-category-background-selected: white !important;
+	  --section-width: unset !important;
+	  --main-margin-start: unset !important;
+	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	}
+	
+	@media (max-width: 830px) {
+	
+	:root {
+	  --section-width: 100% !important;
+	  --in-content-sidebar-width: 49px !important;
+	  --main-margin-start: 0px !important;
+	}
+	
+	}
+	
+	#categories .category:hover {
+	  color: var(--in-content-category-text-hover) !important;
+	  background-color: var(--in-content-category-background-hover) !important;
+	}
+
+	#categories .category[selected],
+	#categories .category.selected,
+	#categories .category[selected]:hover,
+	#categories .category.selected:hover,
+	#categories .category[selected]:hover:active,
+	#categories .category.selected:hover:active {
+	  color: var(--in-content-category-text-selected) !important;
+	  background-color: var(--in-content-category-background-selected) !important;
+	}
+
+	.category {
+	  margin-inline-start: 0px !important;
+	  transition: none !important;
+	}
+	
+	/* dimensions / positioning */
+	#addons-page .main-content{
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+
+	#addons-page #header-search{
+	  min-height: unset !important;
+	}
+
+	#addons-page #header-search .textbox-input-box{
+	  height: 18px !important;
+	}
+
+	#addons-page #addon-list {
+	  margin-inline-start: -1px !important;
+	}
+
+	#addons-page:not(.inSidebar):not([aios-inSidebar="true"]) .view-pane > .list > scrollbox {
+	  padding-right: 0 !important;
+	  padding-left: 0 !important;
+	}
+
+	#addons-page #detail-view,
+	#addons-page #userstyle-sorting,
+	#addons-page .global-warning-container,
+	#addons-page .global-info-container{
+	  margin-inline-start: 0px !important;
+	  margin-inline-end: 1px !important;
+	}
+
+	#addons-page .detail-view-container {
+	  margin-inline-start: 10px !important;
+	}
+
+	#addons-page #view-port{
+	  margin-inline-end: 4px !important;
+	}
+
+	#addons-page #header{
+	  padding: 2px 0 !important;
+	  margin: 0 !important;
+	}
+	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
+	/* colorize category icons */
+	#categories .category[name="search"],
+	#category-search .category-icon {
+	  fill: #8aa8cc !important;
+	}
+	
+	#categories .category[name="discover"],
+	#category-discover .category-icon {
+	  fill: #8b8b8b !important;
+	}
+	
+	#categories .category[name="extension"],
+	#category-extension .category-icon {
+	  fill: #63c54f !important;
+	}
+	
+	#categories .category[name="theme"],
+	#category-theme .category-icon {
+	  fill: #ffba2f !important;
+	}
+
+	#categories .category[name="plugin"],
+	#category-plugin .category-icon {
+	  fill: blue /*#2b63c1*/ !important;
+	}
+	
+	#categories .category[name="dictionary"],
+	#category-dictionary .category-icon {
+	  fill: purple !important;
+	}
+	
+	#categories .category[name="legacy"],
+	#category-legacy .category-icon {
+	  fill: red !important;
+	}
+	#categories .category[name="available-updates"],
+	#category-availableUpdates .category-icon {
+	  fill: orange !important;
+	}
+	#categories .category[name="recent-updates"],
+	#category-recentUpdates .category-icon {
+	  fill: #b99c16 !important;
+	}
+
+	.category:not([selected="true"]):hover .category-icon {
+	  filter: brightness(2.00) !important;
+	}
+	
+	.category[name]:not([selected]):hover,
+	#category-discover:not([selected="true"]):hover .category-icon,
+	#category-theme:not([selected="true"]):hover .category-icon{
+	  filter: brightness(1.5) !important;
+	}
+	
+	#category-plugin:not([selected="true"]):hover .category-icon{
+	  filter: brightness(2.25) !important;
+	}
+	
+	#heading,
+	#list-view-heading {
+	  margin-top: unset !important;
+	  margin-bottom: unset !important;
+	  margin-inline-start: unset !important;
+	  min-width: 100% !important;
+	  margin-top: -26px !important;
+	}
+
+	#heading .header-name,
+	#list-view-heading .header-name {
+	  font-size: inherit !important;
+	  font-weight: unset !important;
+	}
+
+	#nav-header {
+	  min-height: unset !important;
+	}
+	
+	#header-utils-btn {
+	  min-height: 26px !important;
+	  min-width: 50px !important;
+	  -moz-box-ordinal-group: 0 !important;
+	}
+
+	#header-inner {
+	  margin: unset !important;
+	  width: calc(100vw - 246px) !important;
+	}
+
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+		#header-inner {
+		  margin: unset !important;
+		  width: calc(100vw - 120px) !important;
+		}
+		
+		#heading #updates-container {
+		  display: none !important;
+		}
+
+	}
+	
+	#list-view-heading-name {
+	  visibility: hidden !important;
+	}
+	
+	#show-all-extensions,
+	#heading-name,
+	#header-inner #search-label{
+	  display: none !important;
+	}
+
+	#header-search {
+	  padding: 0px 0px !important;
+	  min-width: 200px !important;
+	  width: unset !important;
+	}
+	
+	#header-search .textbox-input {
+	  font-size: 0.96em !important;
+	}
+	
+	#header-inner button,
+	#header-inner button .button-box {
+	  margin: 0 !important;
+	  padding: 0 !important;
+	}
+	
+	#heading .heading-inner {
+	  margin-inline-start: 0 !important;	
+	}
+	
+	.message-bar {
+	  background-color: white !important;
+	}
+	
+	.addon {
+	  padding-top: 7px !important;
+	  padding-bottom: 7px !important;
+	}
+
+	addon-card:not([expanded]) .addon.card {
+	  max-width: unset !important;
+	  padding-inline-end: 0px !important;
+	}
+	
+	.list-view-heading-inner {
+	  -moz-box-flex: 1 !important;
+	  width: unset !important;
+	}
+
+	.list > .addon {
+	  margin: unset !important;
+	}
+
+	.list > .addon,
+	.list > .addon:hover {
+	  box-shadow: unset !important;
+	  border-bottom: 1px solid var(--in-content-box-border-color) !important;
+	}
+
+	.sidebar-footer-button .text-link {
+	  margin-inline-start: 0 !important;
+	}
+	
+	#detail-view .card {
+	  box-shadow: unset !important;
+	}
+
+	#detail-view .detail-view-container {
+	  width: calc(100vw - 300px) !important;
+	}
+
+	#detail-view .detail-view-wrapper > spacer {
+	  display: none !important;
+	}
+	
+	#detail-icon {
+	  min-width: 32px !important;
+	  min-height: 32px !important;
+	  max-width: 32px !important;
+	  max-height: 32px !important;
+	}
+
+	body > div#full {
+	  margin-inline-start: -1px !important;
+	  margin-inline-end: 1px !important;
+	  margin-bottom: 4px !important;
+	  max-width: unset !important;
+	  box-shadow: unset !important;
+	  border: 0 !important;
+	  border-radius: 0 !important;
+	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	  
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		
+	  :root{
+		--in-content-page-background: rgb(28,27,34) !important;
+	  }
+		
+	  body > div#full {
+		background: rgb(28,27,34) !important;
+	  }
+		
+	}
+	
+	.addon.card {
+	  box-shadow: unset !important;
+	  margin-bottom: 1px !important;
+	  border-radius: 0 !important;
+	}
+
+	addon-card:not([expanded]) > .addon.card {
+	  border: 0 !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card:hover {
+	  background: Highlight !important;
+	  box-shadow: unset !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card:hover .card-contents :is(div,span,.addon-name-link) {
+	  color: HighlightText !important;
+	}
+
+	/* remove headers like 'Enabled'/'Disabled' */
+	.list-section-heading {
+	  display: none !important;
+	}
+
+	/* reduce opacity for disabled add-ons */
+	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
+	addon-card:not([expanded]) > .addon.card[active="false"],
+	addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
+	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
+	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
+	  color: grey !important;
+	  transition: unset !important;
+	}
+	
+	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] {
+	  color: inherit !important;
+	  opacity: 1.0 !important;
+	  transition: unset !important;
+	}
+	
+	addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+	  color: dimgray !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
+		addon-card:not([expanded]) > .addon.card[active="false"],
+		addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
+		addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
+		addon-card:not([expanded]) > .addon.card[active="false"]:hover {
+		  color: lightgrey !important;
+		}
+		
+		addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+		  color: lightgrey !important;
+		}
+	
+	}
+	
+	/* remove advertising other add-ons */
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	addon-list message-bar-stack.pending-uninstall {
+	  margin-bottom: 0px !important;
+	}
+
+
+	#addons-page .main-content{
+	  margin-inline-start: -1px !important;
+	}
+
+	.main-heading,
+	.main-search {
+	 /* background: unset !important;*/
+	  max-width: unset !important;
+	  padding-inline-start: unset !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	  margin-inline-start: 0px !important;
+	}
+	.sticky-container {
+	  background: #f9f9fa !important;
+	  z-index: 1000 !important;
+	}
+	
+	.main-search {
+	  margin-top: 1px !important;
+	}
+	
+	.main-heading {
+	  margin-top: -26px !important;
+	}
+	
+	.main-heading .header-name,
+	.main-heading .spacer,
+	.main-search .search-label	{
+	  display: none !important;
+	}
+	
+	.main-search search-textbox {
+	  min-height: unset !important;
+	  width: unset !important;
+	  font-size: 12px !important;
+	}
+	
+	.main-heading .back-button,
+	.page-options-menu > .more-options-button {
+	  margin: 3px 0.5px 2px 0.5px !important;
+	  min-width: unset !important;
+	  width: 58px !important;
+	  min-height: unset !important;
+	  height: 22px !important;
+	}
+	
+	addon-page-options panel-list {
+	  z-index: 1000 !important;
+	}
+	
+	.main-heading .page-options-menu {
+	  order: -1;
+	}
+	
+	button[data-l10n-id="addon-updates-manual-updates-found"] {
+	  min-height: 0 !important;
+	  padding: 0 !important;
+	}
+	
+	.card-heading-image {
+	  margin: unset !important;
+	}
+
+	.category {
+	  margin-inline-end: -4px !important;
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0px !important;
+	}
+
+	#preferencesButton {
+	  fill: #8b8b8b !important;
+	}
+	
+	#help-button {
+	  fill: #ff0000 !important;
+	}
+	
+	#preferencesButton:hover,
+	#help-button:hover {
+	  color: var(--in-content-category-text-hover) !important;
+	  background-color: var(--in-content-category-background-hover) !important;
+	}
+	
+	.sidebar-footer-icon {
+	  fill: unset !important;
+	}
+	
+	.addon-badge {
+	  width: 16px !important;
+	  height: 16px !important;
+	}
+	
+	/* hide 'Colorways' info */
+	section[section="2"] :is(h2,h3),
+	h2[data-l10n-id="theme-monochromatic-heading"],
+	h3[data-l10n-id="theme-monochromatic-subheading"]{
+	  display: none !important;
+	}
+	
+	.monochromatic-addon-list addon-card .card {
+	  width: 350px !important;
+	  box-sizing: inherit !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list .card-heading-image {
+	  max-width: 335px !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container .spacer,
+	.monochromatic-addon-list .addon-name-container {
+	  display: flex !important;
+	}
+
+	.colorways-section {
+	  display: none !important;
+	}
+
+	colorways-card .addon.card {
+	  max-width: unset !important;
+	  padding-inline-end: 0px !important;
+	}
+	
+	colorways-card .card-heading-image {
+	  max-width: 335px !important;
+	}
+
+	#colorways-preview-text-container {
+	  position: unset !important;
+	  display: unset !important;
+	  width: unset !important;
+	  height: unset !important;
+	  margin: unset !important;
+	}
+
+}

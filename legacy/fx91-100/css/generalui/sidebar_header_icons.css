@@ -1,0 +1,40 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebar-switcher-bookmarks > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/bookmark.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#sidebar-switcher-history > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/history.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#sidebar-switcher-tabs > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/tab.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#sidebar-reverse-position > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+  transform: rotate(90deg);
+}
+
+#sidebarMenu-popup toolbarbutton[data-l10n-id="sidebar-menu-close"] > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/close.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}

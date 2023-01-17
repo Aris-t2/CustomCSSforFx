@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./toolbar_mode_icons_and_text.css";
+
+/* fix for macOS */
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  appearance: none !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+  background: var(--toolbarbutton-hover-background,hsla(0,0%,70%,.4)) !important;
+  border-radius: 4px !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:is([open],[checked],:hover:active,:active){
+  background: var(--toolbarbutton-active-background,hsla(0,0%,70%,.6)) !important;
+}

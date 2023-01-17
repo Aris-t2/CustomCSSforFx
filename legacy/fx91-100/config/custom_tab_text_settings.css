@@ -1,0 +1,113 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/*******************************************/
+/* default tab *****************************/
+
+/* text color */
+.tabbrowser-tab .tab-label {
+  color: black !important;
+}
+/* text shadow */
+.tabbrowser-tab .tab-label {
+  text-shadow:	0px 1px 0px white,
+				0px 1px 4px white !important;
+}
+/*bold*//*
+.tabbrowser-tab .tab-label {
+  font-weight: bold !important;
+}
+/* italic *//*
+.tabbrowser-tab .tab-label {
+  font-style: italic !important;
+}
+
+
+/*******************************************/
+/* selected tab ****************************/
+
+/* text color */
+.tabbrowser-tab[selected] .tab-label {
+  color: blue !important;
+}
+/* text shadow */
+.tabbrowser-tab[selected] .tab-label {
+  text-shadow:	0px 1px 0px white,
+				0px 1px 4px white !important;
+}
+/*bold*/
+.tabbrowser-tab[selected] .tab-label {
+  font-weight: bold !important;
+}
+/* italic *//*
+.tabbrowser-tab[selected] .tab-label {
+  font-style: italic !important;
+}
+
+/*******************************************/
+/* busy/loading tab ************************/
+
+/* text color *//*
+.tabbrowser-tab[busy] .tab-label {
+  color: #9933CC !important;
+}
+/* text shadow *//*
+.tabbrowser-tab[busy] .tab-label {
+  text-shadow:	0px 1px 0px #FFCCFF,
+				0px 1px 4px #FFCCFF !important;
+}
+/*bold*//*
+.tabbrowser-tab[busy] .tab-label {
+  font-weight: initial !important;
+}
+/* italic *//*
+.tabbrowser-tab[busy] .tab-label {
+  font-style: italic !important;
+}
+
+
+/*******************************************/
+/* hovered tab ****************************/
+
+/* text color *//*
+.tabbrowser-tab:hover:not([selected]) .tab-label {
+  color: black !important;
+}
+/* text shadow */
+.tabbrowser-tab:hover:not([selected]) .tab-label {
+  text-shadow:	0px 1px 0px white,
+				0px 1px 4px white !important;
+}
+/*bold*/
+.tabbrowser-tab:hover:not([selected]) .tab-label {
+  font-weight: bold !important;
+}
+/* italic *//*
+.tabbrowser-tab:hover:not([selected]) .tab-label {
+  font-style: italic !important;
+}
+
+
+/*******************************************/
+/* unloaded/pending tab ********************/
+
+/* text color */
+.tabbrowser-tab[pending] .tab-label {
+  color: purple !important;
+}
+/* text shadow */
+.tabbrowser-tab[pending] .tab-label {
+  text-shadow:	0px 1px 0px white,
+				0px 1px 4px white !important;
+}
+/*bold*/
+.tabbrowser-tab[pending] .tab-label {
+  font-weight: bold !important;
+}
+/* italic */
+.tabbrowser-tab[pending] .tab-label {
+  font-style: italic !important;
+}
+
+/**/

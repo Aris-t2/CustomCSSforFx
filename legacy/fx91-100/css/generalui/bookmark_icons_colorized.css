@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.folder-icon,
+#editBMPanel_chooseFolderMenuItem .menu-iconic-icon,
+treechildren::-moz-tree-image(title, container),
+treechildren::-moz-tree-image(title, query, hostContainer) {
+ list-style-image: url("./../../image/folder-item.png")!important;
+ -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+
+treechildren::-moz-tree-image(title, open) {
+ -moz-image-region: rect(16px, 32px, 32px, 16px) !important;
+}
+
+treechildren::-moz-tree-image(title, container, livemark) {
+ list-style-image: url("./../../image/feedIcon16.png") !important;
+ -moz-image-region: auto !important;
+}
+
+#editBMPanel_folderMenuList:-moz-any([label="Bookmarks Toolbar"],[label="Lesezeichen-Symbolleiste"]) .menulist-icon,
+#editBMPanel_toolbarFolderItem .menu-iconic-icon,
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar),
+treechildren::-moz-tree-image(container, queryFolder_toolbar_____) {
+ list-style-image: url("./../../image/bookmarksToolbar.png") !important;
+ -moz-image-region: auto !important;
+}
+
+#editBMPanel_folderMenuList:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"]) .menulist-icon,
+#editBMPanel_bmRootItem .menu-iconic-icon,
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu),
+treechildren::-moz-tree-image(container, queryFolder_menu________) {
+ list-style-image: url("./../../image/bookmarksMenu.png") !important;
+ -moz-image-region: auto !important;
+}
+
+#editBMPanel_folderMenuList:-moz-any([label="Other Bookmarks"],[label="Weitere Lesezeichen"]) .menulist-icon,
+#editBMPanel_unfiledRootItem .menu-iconic-icon,
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks),
+treechildren::-moz-tree-image(container, queryFolder_unfiled_____) {
+ list-style-image: url("./../../image/unsortedBookmarks.png") !important;
+ -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(title, query),
+treechildren::-moz-tree-image(query) {
+ list-style-image: url("./../../image/query.png") !important;
+ -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(title, query, dayContainer) {
+  list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(query, OrganizerQuery_History),
+treechildren::-moz-tree-image(query, OrganizerQuery_history____v),
+treechildren::-moz-tree-image(title, query, dayContainer) {
+  list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+
+treechildren::-moz-tree-image(query, OrganizerQuery_allbms_____v) {
+  list-style-image: url("chrome://browser/skin/bookmark.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
+  list-style-image: url("chrome://browser/skin/downloads/downloads.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+toolbarbutton.bookmark-item[container],
+.bookmark-item[container] .menu-iconic-left .menu-iconic-icon {
+  list-style-image: url("./../../image/folder-item.png") !important;
+  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+
+toolbarbutton.bookmark-item[container][open],
+.bookmark-item[container][open] .menu-iconic-left .menu-iconic-icon {
+  -moz-image-region: rect(16px, 32px, 32px, 16px) !important;
+}
+
+.bookmark-item[container][livemark] {
+  list-style-image: url("./../../image/livemark-folder.png") !important;
+  -moz-image-region: auto !important;
+}
+.bookmark-item[container][livemark] .bookmark-item {
+  list-style-image: url("./../../image/livemark-item.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.bookmark-item[container][livemark] .bookmark-item[visited] {
+  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+
+.bookmark-item[container][query],
+.bookmark-item[container][query][open],
+.bookmark-item[container][query] > .menu-iconic-left > .menu-iconic-icon,
+.bookmark-item[container][query][open] > .menu-iconic-left > .menu-iconic-icon {
+  list-style-image: url("./../../image/query.png") !important;
+  -moz-image-region: auto !important;
+}
+
+#scrollbutton-up .toolbarbutton-icon,
+#scrollbutton-down .toolbarbutton-icon {
+  -moz-image-region: auto !important;
+}
+
+treechildren::-moz-tree-image(title, query, tagContainer),
+treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
+.bookmark-item[query][tagContainer] {
+  list-style-image: url("./../../image/tag.png") !important;
+  -moz-image-region: auto !important;
+}
+
+.bookmark-item[query][dayContainer] {
+  list-style-image: url("./../../image/calendar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+.bookmark-item[query][hostContainer] {
+  list-style-image: url("./../../image/folder-item.png") !important;
+  -moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+
+.bookmark-item[query][hostContainer][open] {
+  list-style-image: url("./../../image/folder-item.png") !important;
+  -moz-image-region: rect(16px, 32px, 32px, 16px) !important;
+}
+
+/* Bookmarks roots menu-items */
+#subscribeToPageMenuitem:not([disabled]),
+#subscribeToPageMenupopup {
+  list-style-image: url("./../../image/feedIcon16.png") !important;
+}
+
+#bookmarksToolbarFolderMenu > .menu-iconic-left > .menu-iconic-icon,
+#BMB_bookmarksToolbar > .menu-iconic-left > .menu-iconic-icon,
+#panelMenu_bookmarksToolbar {
+  list-style-image: url("./../../image/bookmarksToolbar.png") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
+#BMB_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
+#panelMenu_unsortedBookmarks {
+  list-style-image: url("./../../image/unsortedBookmarks.png") !important;
+  -moz-image-region: auto !important;
+}

@@ -1,0 +1,68 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@media (prefers-reduced-motion: reduce) {
+	
+	.tab-throbber[busy],
+	.tab-throbber[progress] {
+	  width: 16px !important;
+	  height: 16px !important;
+	  animation: unset !important;
+	  -moz-context-properties: unset !important;
+	  fill: unset !important;
+	  animation: unset !important;
+	  opacity: unset !important;
+	  animation: unset !important;
+	}
+
+	.tab-throbber[busy] {
+	  background-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+	}
+
+	.tab-throbber-fallback[busy] {
+	  list-style-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+	}
+
+	.tab-throbber[progress]{
+	  background-image: url("./../../image/tabthrobber_loading-fx39.png") !important;
+	}
+
+	.tab-throbber-fallback[progress] {
+	  list-style-image: url("./../../image/tabthrobber_loading-fx39.png") !important;
+	}
+	
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	
+	.tab-throbber[busy]::before,
+	.tab-throbber[progress]::before {
+	  width: 16px !important;
+	  height: 16px !important;
+	  animation: unset !important;
+	  -moz-context-properties: unset !important;
+	  fill: unset !important;
+	  animation: unset !important;
+	  opacity: unset !important;
+	  animation: unset !important;
+	}
+
+	.tab-throbber[busy]::before {
+	  background-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+	}
+
+	.tab-throbber-fallback[busy] {
+	  list-style-image: url("./../../image/tabthrobber_fx56_connecting.png") !important;
+	}
+
+	.tab-throbber[progress]::before{
+	  background-image: url("./../../image/tabthrobber_loading-fx39.png") !important;
+	}
+
+	.tab-throbber-fallback[progress] {
+	  list-style-image: url("./../../image/tabthrobber_loading-fx39.png") !important;
+	}
+
+}

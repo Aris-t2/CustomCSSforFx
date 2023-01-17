@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs {
+  border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+  padding-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+#firefox-view-button {
+  display: none !important;
+}

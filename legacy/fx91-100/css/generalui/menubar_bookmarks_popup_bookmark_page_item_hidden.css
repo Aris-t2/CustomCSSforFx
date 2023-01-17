@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* bookmarks this page item */
+#organizeBookmarksSeparator,
+#menu_bookmarkThisPage{
+  display: none !important;
+}

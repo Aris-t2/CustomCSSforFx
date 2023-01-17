@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --panel-background: Menu !important; /* -moz-Dialog */
+  --arrowpanel-background: Menu !important;
+  --panel-color: MenuText !important; /* -moz-DialogText */
+  --arrowpanel-color: MenuText !important;
+}
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --panel-background: Menu !important; /* -moz-Dialog */
+  --arrowpanel-background: Menu !important;
+  --panel-color: MenuText !important; /* -moz-DialogText */
+  --arrowpanel-color: MenuText !important;
+}
+
+
+#main-window menu[disabled="true"]:not([_moz-menuactive="true"]),
+#main-window menuitem[disabled="true"]:not([_moz-menuactive="true"]) {
+  color: inherit !important;
+  opacity: 0.5 !important;
+}

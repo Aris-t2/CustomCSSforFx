@@ -1,0 +1,8 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* hide urlbars go button */
+#urlbar-container :is(.urlbar-go-button, #urlbar-go-button) {
+  visibility: collapse !important;
+}

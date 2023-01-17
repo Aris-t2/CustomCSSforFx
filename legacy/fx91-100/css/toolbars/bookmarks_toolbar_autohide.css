@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PersonalToolbar {
+  opacity: 0 !important;
+  transition: all 0.5s ease 0s !important;
+  margin-top: -32px !important;
+}
+
+#navigator-toolbox:hover #PersonalToolbar {
+  opacity: 1.0 !important;
+  transition-delay: 0s !important;
+  margin-top: inherit !important;
+}
+
+#PersonalToolbar {
+  -moz-window-dragging: no-drag !important;
+}
+
+
+#main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #PersonalToolbar {
+  min-height: 1px !important;
+  height: 1px !important;
+}

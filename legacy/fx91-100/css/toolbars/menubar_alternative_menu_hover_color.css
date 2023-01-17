@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-menubar > menu {
+  appearance: none !important;
+  background-color: transparent !important;
+}
+#main-menubar > menu:is(:hover,[open],[_moz-menuactive]) {
+  background: Highlight !important;
+  color: HighlightText !important;
+}

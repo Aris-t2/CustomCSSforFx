@@ -1,0 +1,509 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --y_padding_before_label_am: 4px !important;
+}
+
+#appMenu-fxa-label2::before,
+#fxa-manage-account-button::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  -moz-context-properties: fill;
+  background-image: url("chrome://browser/skin/fxa/avatar.svg") !important; /* tab.svg */
+  margin-inline-end: 4px !important;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-syncnow-button::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  -moz-context-properties: fill;
+  background-image: url("chrome://browser/skin/sync.svg") !important;
+  background-size: 16px !important;
+  margin-inline-end: 4px !important;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-setup-sync-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-connect-device-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/device-desktop.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-sendtab-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/fxa/send.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-sync-prefs-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/settings.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-fxa-menu-account-signout-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/close.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-new-tab-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/new-tab.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-new-window-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/window.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-new-private-window-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/privateBrowsing.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-bookmarks-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/bookmark.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-history-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/history.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-downloads-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/downloads/downloads.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-passwords-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/login.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-extensions-themes-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-print-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/print.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-save-file-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/save.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-find-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/search-glass.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+:is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  -moz-context-properties: fill;
+  background-image: url("chrome://devtools/skin/images/tool-inspector.svg") !important;
+  margin-inline-end: 4px !important;
+  fill: currentColor;
+}
+
+#appMenu-settings-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/settings.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-more-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-help-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu-quit-button2 > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/close.svg"); /* ../../image/quit.svg */
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appmenu-moreTools-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-bookmarks #panelMenuBookmarkThisPage > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/bookmark.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-bookmarks #panelMenu_searchBookmarks > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/search-glass.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-bookmarks #panelMenu_viewBookmarksToolbar > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/bookmarks-toolbar.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-history #appMenuRecentlyClosedTabs > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/tab.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-history #appMenuRecentlyClosedWindows > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/window.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-history #appMenuClearRecentHistory > .toolbarbutton-icon,
+#PanelUI-history :is(#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/forget.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://global/content/aboutconfig/toggle.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-inspector.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-webconsole.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://global/skin/icons/performance.svg"); /**/
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-debugger.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-styleeditor.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-profiler.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-storage.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-accessibility.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-application.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-dom.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-webconsole.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill, fill-opacity;
+  fill-opacity: 0;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/command-responsivemode.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon { /* Re-using the DOM icon since I expect everyone uses the Inspector instead */
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-dom.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[data-l10n-id="appmenu-developer-tools-extensions"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton  > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_performance"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_storage"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_application"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_dom"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[data-l10n-id="appmenu-developer-tools-extensions"] > label.toolbarbutton-text {
+	padding-inline-start: 8px !important;
+}
+
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+	fill: currentColor !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+		fill: currentColor !important;
+	}
+}
+
+
+/* Eye Dropper & Get More Tools */
+
+#appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] + toolbarbutton image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/command-eyedropper.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] + toolbarbutton image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://browser/skin/developer.svg");
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] + toolbarbutton > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] + toolbarbutton > label.toolbarbutton-text {
+  padding-inline-start: 8px !important;
+}
+
+/* Browser Toolbox (by Key) and Browser Content Toolbox  */
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+  list-style-image: url("../../image/command-tilt.png");
+  filter: grayscale(100%) brightness(10%);
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > label.toolbarbutton-text {
+  padding-inline-start: 8px !important;
+}
+
+#appmenu-developer-tools-view toolbarbutton:-moz-lwtheme-brighttext[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
+#appmenu-developer-tools-view toolbarbutton:-moz-lwtheme-brighttext[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+  list-style-image: url("../../image/command-tilt.png");
+  filter: grayscale(100%) brightness(220%) !important;
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
+	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+	  list-style-image: url("../../image/command-tilt.png");
+	  filter: grayscale(100%) brightness(220%) !important;
+	  -moz-image-region: rect(0px, 48px, 16px, 32px);
+	}
+}
+
+
+
+/* support for restart_item_in_menu.uc.js script */
+#appMenu-restart-button > .toolbarbutton-icon {
+  margin-inline-end: -4px !important; 
+}
+
+/**/
+#panelMenu_showAllBookmarks > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#PanelUI-historyMore > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/chevron.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+/**/
+#appMenu_menu_openHelp > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_feedbackPage > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_helpSafeMode > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_troubleShooting > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_help_reportSiteIssue > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_menu_HelpPopup_reportPhishingtoolmenu > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/info.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
+#appMenu_aboutName > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}

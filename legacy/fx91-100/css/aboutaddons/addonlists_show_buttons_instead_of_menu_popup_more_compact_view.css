@@ -1,0 +1,78 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./addonlists_show_buttons_instead_of_menu_popup.css";
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	:root {
+	  --addon-icon-size: 16px !important;
+	}
+	
+	recommended-themes-section,
+	recommended-extensions-section,
+	addon-list[type="theme"] addon-card > .addon.card .card-heading-image {
+	  display: none !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card {
+	  min-height: 18px !important;
+	  height: 18px !important;
+	  max-height: 18px !important;
+	  margin-top: 0 !important;
+	  margin-bottom: 0 !important;
+	  padding-top: 3px !important;
+	  padding-bottom: 3px !important;
+	  padding-inline-start: 2px !important;
+	}
+	
+	addon-card panel-list {
+	  margin-top: -27px !important;
+	}
+	
+	addon-card[expanded="true"] panel-list {
+	  margin-top: -28px !important;
+	}
+
+	.addon.card .addon-description {
+	  visibility: hidden !important;
+	}
+	
+	addon-card .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+	
+	addon-list[type="theme"] addon-card panel-list {
+	  margin-top: -28px !important;
+	  margin-inline-end: 0px !important;
+	}
+	
+	addon-list[type="theme"] .addon-description {
+	  position: absolute !important;
+	  margin-top: 20px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card {
+	  width: 200px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  display: flex !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card {
+	  min-height: unset !important;
+	  height: unset !important;
+	  max-height: unset !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card .card-contents {
+	  min-height: 20px !important;
+	  height: 40px !important;
+	  max-height: 40px !important;
+	}
+}
