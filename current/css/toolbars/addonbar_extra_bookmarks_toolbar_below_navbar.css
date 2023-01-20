@@ -18,10 +18,22 @@
 #main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
   position: absolute !important;
   display: block !important;
-  bottom: 0px !important;
+  /*bottom: 0px !important;*/
   min-width: 0 !important;
   width: auto !important;
   max-width: 100vw !important;
+}
+
+#main-window:not([customizing="true"]) #nav-bar #personal-bookmarks {
+  margin-top: 37px !important;	
+}
+
+#main-window:not([customizing="true"])[uidensity="compact"] #nav-bar #personal-bookmarks {
+  margin-top: 32px !important;
+}
+
+#main-window:not([customizing="true"])[uidensity="touch"] #nav-bar #personal-bookmarks {
+ margin-top: 41px !important;
 }
 
 /* reduce size of bookmarks 'more bookmarks' menu chevron and remove its background color on navigation toolbar */

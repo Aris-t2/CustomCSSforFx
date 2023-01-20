@@ -332,5 +332,10 @@
 	addon-list[type="theme"].monochromatic-addon-list .card-heading-image {
 	  max-width: 335px !important;
 	}
+	
+	button[part="button"] {
+	  background-image: unset !important;
+	}
+
 
 }

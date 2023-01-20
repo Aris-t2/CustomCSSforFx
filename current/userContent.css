@@ -39,10 +39,10 @@
 /* ==========================
    about:addons - ADDONS PAGE
    ==========================
-*/
 
 
-/* ======================
+
+   ======================
    ADDONS PAGE APPEARANCE
    ======================
    
@@ -114,7 +114,6 @@
 /* ---------------------------
    Other addons page settings
    --------------------------
-
 */
 
 /* @import "./css/aboutaddons/addonlists_badges_old_size.css"; /**/
@@ -131,9 +130,9 @@
 /* ===============================
    about:preferences - PREFERENCES
    ===============================
-*/
 
-/* ===========================
+
+   ===========================
    PREFERENCES PAGE APPEARANCE
    ===========================
    
@@ -148,7 +147,6 @@
 /* ------------------------------
    Other preference page settings
    ------------------------------
-
 */
 
 /* @import "./css/aboutpreferences/category_morefrommozilla_hidden.css"; /**/
@@ -208,6 +206,7 @@
    [!] Not compatible with custom scrollbar JavaScript userChrome scripts.
    [!] Custom size values only compatible with 'web content' scrollbars at the moment.
    [!] More info inside 'custom_scrollbar_appearance.css' file.
+*/
 
 /* @import "./config/custom_scrollbar_appearance.css"; /**/
 

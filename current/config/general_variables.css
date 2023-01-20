@@ -24,12 +24,13 @@
   /* for tab_close_icon_size.css */
   --tab_close_icons_size: 16px !important; /* 14-20px */
   
-  /* for 'tab_maxwidth.css'- unlock 'min width' code inside file first for '--tab_min_width' to work */
+  /* for 'tab_maxwidth.css'
+  - unlock 'min width' code inside file first for '--tab_min_width' to work */
   /* --tab-min-width: 50px !important; */
   --tab_min_width: 50px !important; 
   --tab_max_width: 250px !important;
   
-  /* for tabs_multiple_lines.css and tabs_multiple_lines_v2.css */
+  /* for tabs_multiple_lines.css */
   --tab_min_width_mlt: 100px !important;
   --tab_max_width_mlt: 200px !important;
   --tabs-lines: 3 !important; 
@@ -62,6 +63,9 @@
   /* for urlbar_background_color.css */
   --urlbar_background_color: white !important;
   --urlbar_text_color: black !important;
+  
+  /* for popup_compact_menus_squared.css */
+  --custom_border-radius: 0px !important;
 }
 
 :root[uidensity="touch"] {

@@ -99,3 +99,9 @@
 	  top: -5px !important;
 	}
 }
+
+
+#main-window:not([inDOMFullscreen="true"]) #browser,
+#main-window:not([inDOMFullscreen="true"]) #customization-container {
+  margin-bottom: var(--tab_below_main_content_toolbar_height) !important; 
+}

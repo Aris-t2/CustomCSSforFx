@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 102+
-  Current version: 4.2.8
+  Custom CSS for Firefox 109+
+  Current version: 4.2.9
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -829,11 +829,9 @@
    -------------------
    
    [!] only use one option at a time
-   [!] use *102.css file, if on Firefox 102-106
 */
 
 /* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
-/* @import "./css/generalui/sidebar_show_on_hover102.css"; /**/ /* Firefox 102-106 */
 /* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 
 /* -------------------
@@ -899,15 +897,11 @@
    -------------------------------------------
 
    [!] only use one option at a time
-   [!] use *102.css file, if on Firefox 102-106
-   [!] If issues on Firefox 107 occur, try to set 'about:config' > 'layout.css.moz-box-flexbox-emulation.enabled' > 'true'.
 */
 
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels102.css"; /**/  /* Firefox 102-106 */
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
-/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars102.css"; /**/  /* Firefox 102-106 */
 
 /* ------------------------
    MENUBARS bookmarks popup
@@ -935,12 +929,10 @@
    [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks
    [!] not compatible to 'bookmarks toolbar - multiple lines' option
    [!] not compatible to 'bookmarks toolbar autohide' option
-   [!] use 'addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_webcontent_compatibility.css', if content overlaps with toolbar
 */
 
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
-/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_webcontent_compatibility.css"; /**/
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
 

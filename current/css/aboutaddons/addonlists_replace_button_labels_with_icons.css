@@ -54,43 +54,73 @@
 
 	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
 	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	  background-image: url("chrome://browser/skin/zoom-out.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
 	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-image: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="remove-addon-button"] {
 	  --icon: url("chrome://global/skin/icons/delete.svg") !important;
+	  background-image: url("chrome://global/skin/icons/delete.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 
 	panel-item[data-l10n-id="install-update-button"] {
 	  --icon: url("chrome://global/skin/icons/update-icon.svg") !important;
+	  background-image: url("chrome://global/skin/icons/update-icon.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="preferences-addon-button"] {
-	  --icon: url("chrome://global/skin/icons/settings.svg") !important; 
+	  --icon: url("chrome://global/skin/icons/settings.svg") !important;
+	  background-image: url("chrome://global/skin/icons/settings.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="report-addon-button"] {
 	  --icon: url("chrome://global/skin/icons/warning.svg") !important;
+	  background-image: url("chrome://global/skin/icons/warning.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="expand-addon-button"],
 	panel-item[data-l10n-id="manage-addon-button"] {
 	  --icon: url("chrome://global/skin/icons/chevron.svg") !important;
+	  background-image: url("chrome://global/skin/icons/chevron.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="ask-to-activate-button"] {
 	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-image: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="always-activate-button"] {
 	  --icon: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-image: url("chrome://global/skin/icons/plus.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 	
 	panel-item[data-l10n-id="never-activate-button"] {
 	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	  background-image: url("chrome://browser/skin/zoom-out.svg") !important;
+	  background-position: center center !important;
+	  background-repeat: no-repeat !important;
 	}
 
 	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"]:hover,
