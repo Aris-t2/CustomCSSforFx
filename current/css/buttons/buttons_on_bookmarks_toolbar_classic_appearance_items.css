@@ -85,3 +85,8 @@
 #PersonalToolbar toolbarbutton.bookmark-item[open="true"] {
   background-color: transparent !important;
 }
+
+/* deep Fx 109 bs and nonsense override */
+#PersonalToolbar :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover {
+  background-color: unset !important; 
+}

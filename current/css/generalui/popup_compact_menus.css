@@ -116,4 +116,5 @@ menupopup[type=arrow] > menu {
 .unified-extensions-item-name,
 .unified-extensions-item-message {
   padding-inline-start: 0 !important;
+  width: 28em !important;
 }

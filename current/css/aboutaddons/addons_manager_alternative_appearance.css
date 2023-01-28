@@ -19,11 +19,11 @@
 	
 	@media (max-width: 830px) {
 	
-	:root {
+	 :root {
 	  --section-width: 100% !important;
 	  --in-content-sidebar-width: 49px !important;
 	  --main-margin-start: 0px !important;
-	}
+	 }
 	
 	}
 	
@@ -383,14 +383,12 @@
 	  margin-bottom: 0px !important;
 	}
 
-
 	#addons-page .main-content{
 	  margin-inline-start: -1px !important;
 	}
 
 	.main-heading,
 	.main-search {
-	 /* background: unset !important;*/
 	  max-width: unset !important;
 	  padding-inline-start: unset !important;
 	  padding-top: unset !important;
@@ -519,6 +517,18 @@
 	  width: unset !important;
 	  height: unset !important;
 	  margin: unset !important;
+	}
+	
+	/* fix Firefox bug */
+	#addon-inline-options {
+	  height: unset !important;
+	  min-height: 100% !important;
+	}
+	
+	.inline-options-stack {
+	  height: unset !important;
+	  min-height: calc(100vh - 220px) !important;
+	  max-height: calc(100vh - 220px) !important;
 	}
 
 }

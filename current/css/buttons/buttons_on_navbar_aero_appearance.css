@@ -56,3 +56,8 @@
 #nav-bar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
   background-color: transparent !important;
 }
+
+/* deep Fx 109 bs and nonsense override */
+#nav-bar :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover {
+  background-color: unset !important; 
+}

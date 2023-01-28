@@ -535,6 +535,10 @@
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
 }
 
+#main-window:not(:-moz-lwtheme) #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([selected]) .tab-stack .tab-content {
+  box-shadow: inset 0 -1px 0 0 var(--classic_squared_tabs-border2) !important;
+}
+
 /* remove active tabs left and right tab border color when using lw-themes */
 :root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
 :root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {

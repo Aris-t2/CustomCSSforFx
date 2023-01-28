@@ -41,7 +41,7 @@
 #downloads-indicator-anchor {
   -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
 }
-#add-ons-button	{
+#add-ons-button,#unified-extensions-button	{
   -moz-image-region: rect(0px, 216px, 18px, 198px) !important;
 }
 #open-file-button {
@@ -147,7 +147,7 @@
 
 /* icons adjustment */
 #main-window[uidensity=compact] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
@@ -158,7 +158,7 @@
 }
 
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
@@ -169,7 +169,7 @@
 }
 
 #main-window[uidensity=touch] #nav-bar :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
@@ -180,7 +180,7 @@
 }
 
 toolbar:not(#nav-bar) :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
@@ -198,7 +198,7 @@ toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutt
 }
 
 #customization-palette :is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#history-panelmenu,
-	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
+	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,

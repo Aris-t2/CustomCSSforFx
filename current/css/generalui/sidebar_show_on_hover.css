@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 :root{
   --sidebar-hover-width: 8px;
   --sidebar-visible-width: 300px;
@@ -32,6 +33,7 @@
 #sidebar-box #sidebar-header {
   visibility: collapse !important;
 }
+
 #sidebar-box:hover #sidebar-header {
   visibility: visible !important;
 }
@@ -55,11 +57,11 @@
 }
 
 #sidebar-box:not([positionend="true"]) ~ #appcontent {
-  margin-inline-start: calc(-1 * var(--sidebar-hover-width)) !important;
+  margin-inline-start: 0 !important;
 }
 
 #sidebar-box:not([positionend="true"]):hover ~ #appcontent {
-  margin-inline-start: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
+  margin-inline-start: calc(-1 * var(--sidebar-visible-width)) !important;
 }
 
 #sidebar-box[positionend="true"] {
@@ -71,9 +73,9 @@
 }
 
 #sidebar-box[positionend="true"] ~ #appcontent {
-  margin-inline-end: calc(-1 * var(--sidebar-hover-width)) !important;
+  margin-inline-end: 0 !important;
 }
 
 #sidebar-box[positionend="true"]:hover ~ #appcontent {
-  margin-inline-end: calc(-1 * (var(--sidebar-visible-width) + var(--sidebar-hover-width))) !important;
+  margin-inline-end: calc(-1 * var(--sidebar-visible-width)) !important;
 }

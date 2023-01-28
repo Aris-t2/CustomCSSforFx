@@ -50,7 +50,7 @@
   margin-left: 2px !important;
   margin-right: 2px !important;
 }
-#main-window[uidensity=compact] #nav-bar :is(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+#main-window[uidensity=compact] #nav-bar :is(#add-ons-button,#unified-extensions-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
@@ -103,7 +103,7 @@
   height: 34px !important;
   width: 34px !important;
 }
-#main-window:not([uidensity=compact]):not([uidensity=touch])  #nav-bar :is(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+#main-window:not([uidensity=compact]):not([uidensity=touch])  #nav-bar :is(#add-ons-button,#unified-extensions-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
   padding-left: 11px !important;
   padding-right: 11px !important;
 }
@@ -155,7 +155,7 @@
   height: 40px !important;
   width: 40px !important;
 }
-#main-window[uidensity=touch]  #nav-bar :is(#add-ons-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
+#main-window[uidensity=touch]  #nav-bar :is(#add-ons-button,#unified-extensions-button,#zoom-out-button,#zoom-in-button) .toolbarbutton-icon {
   padding-left: 14px !important;
   padding-right: 14px !important;
 }

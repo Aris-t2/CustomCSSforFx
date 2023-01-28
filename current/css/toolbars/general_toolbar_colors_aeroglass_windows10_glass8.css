@@ -7,8 +7,9 @@
 
 @-moz-document url(chrome://browser/content/browser.xul), url(chrome://browser/content/browser.xhtml) {
 	#main-window {
-	  background-color: transparent !important;
-	  appearance: -moz-win-glass !important;
+      background-color: transparent !important;
+      appearance: auto !important;
+      -moz-default-appearance: -moz-win-borderless-glass !important;
 	}
 }
 #main-window:not([customizing]) .titlebar-button,
