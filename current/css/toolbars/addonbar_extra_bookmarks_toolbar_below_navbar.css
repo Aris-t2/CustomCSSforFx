@@ -3,7 +3,10 @@
 /****************************************************************************************/
 
 
-/* this creates an empty space below navigation toolbar */
+/* This creates an empty space below navigation toolbar.
+   "Bookmarks Toolbar Items" element has to be moved to
+   navigation toolbar in customizing mode.
+*/
 
 #main-window:not([customizing="true"]) #nav-bar {
   padding-bottom: 26px !important;

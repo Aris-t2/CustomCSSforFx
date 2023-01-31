@@ -109,6 +109,11 @@
   bottom: calc( -2 * var(--tab_below_navigation_toolbar_bottom_padding) + 8px );
   width: 100vw;
 }
+/*
+#TabsToolbar #tabbrowser-arrowscrollbox {
+  margin-top: 1px !important;
+  margin-bottom: -1px !important;
+}*/
 
 /* Fx 105+ */
 :root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,

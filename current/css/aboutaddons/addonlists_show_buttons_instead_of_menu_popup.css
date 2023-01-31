@@ -206,11 +206,6 @@
 	  background: green url("chrome://global/skin/icons/check.svg") 2px no-repeat !important;
 	}
 
-	/*addon-card .card-contents {
-	  display: block !important;
-	  height: 40px !important;
-	}*/
-	
 	addon-card .card-contents .addon-description {
 	  display: block !important;
 	  mask-image: linear-gradient(to left, transparent, black 10px) !important;
@@ -219,7 +214,6 @@
 	/* disable short description on expanded add-ons to prevent button jumping */
 	addon-card[expanded="true"] .card-contents .addon-description {
 	  display: none !important;
-	  /*position: absolute !important;*/
 	}
 
 	addon-card .addon.card .theme-enable-button,
@@ -230,14 +224,7 @@
 	.card-contents input[type="checkbox"].toggle-button {
 	  margin-inline-end: 10px !important;
 	}
-	
-	addon-card > .addon.card,
-	addon-card > .addon.card * {
-	  overflow: hidden !important;
-	}
-	
-	
-	/**/	
+
 	#main > div:is([current-view="list"], [current-view="updates"]) .addon.card {
 		position: relative;
 		display: flex;
@@ -276,12 +263,6 @@
 		margin-top: -9px;
 		margin-inline-end: -5px;
 	}
-	/*
-	addon-card panel-list {
-		margin-top: unset !important;
-		right: unset !important;
-		float: unset !important;
-	}*/
 		
 	#main > div[current-view="detail"] addon-details > .tab-group {
 		display: block !important;
@@ -293,28 +274,6 @@
 		right: 0 !important;
 	}
 
-
-	/* small image */ /*
-	addon-list[type="theme"] .card-heading-image {
-	  width: 200px !important;
-	  height: 40px !important;
-	  object-fit: unset !important;
-	  padding-bottom: 50px !important;
-	}
-	/**/
-/*
-	addon-list[type="theme"] .card-heading-image {
-	  position: absolute !important;
-	}
-/*
-	addon-list[type="theme"] addon-card > .addon.card {
-	  height: 144px;
-	}
-
-	addon-list[type="theme"] .card-contents {
-	  margin-top: 100px !important;
-	}
-*/
 	addon-list[type="theme"] addon-card panel-list {
 	  margin-top: -27px !important;
 	  margin-inline-end: 0px !important;
@@ -336,6 +295,5 @@
 	button[part="button"] {
 	  background-image: unset !important;
 	}
-
 
 }

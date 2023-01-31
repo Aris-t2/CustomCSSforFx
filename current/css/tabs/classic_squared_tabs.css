@@ -604,7 +604,7 @@
   padding-bottom: 2px !important
 }
 
-/* Fx 110 none-sense - remove line below active tab */
+/* Fx 110 nonsense - remove line below active tab */
 #nav-bar:not([tabs-hidden="true"]) {
   position: unset !important;
 }

@@ -21,6 +21,7 @@
   border: 0 !important;
   background-color: unset !important;
   padding-top: 4px !important;
+  color: inherit !important;
 }
 
 #statuspanel {

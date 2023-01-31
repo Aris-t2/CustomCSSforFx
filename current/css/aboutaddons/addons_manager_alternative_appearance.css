@@ -129,7 +129,7 @@
 
 	#categories .category[name="plugin"],
 	#category-plugin .category-icon {
-	  fill: blue /*#2b63c1*/ !important;
+	  fill: blue !important;
 	}
 	
 	#categories .category[name="dictionary"],
@@ -249,7 +249,7 @@
 
 	addon-card:not([expanded]) .addon.card {
 	  max-width: unset !important;
-	  padding-inline-end: 0px !important;
+	  padding-inline-end: 2px !important;
 	}
 	
 	.list-view-heading-inner {
@@ -292,8 +292,9 @@
 
 	body > div#full {
 	  margin-inline-start: -1px !important;
-	  margin-inline-end: 1px !important;
-	  margin-bottom: 4px !important;
+	  /*margin-inline-end: 10px !important;*/
+	  padding-inline-end: 12px !important;
+	  /*margin-bottom: 4px !important;*/
 	  max-width: unset !important;
 	  box-shadow: unset !important;
 	  border: 0 !important;
@@ -301,7 +302,7 @@
 	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
 	  
 	}
-	
+
 	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 		
 	  :root{
@@ -519,16 +520,19 @@
 	  margin: unset !important;
 	}
 	
-	/* fix Firefox bug */
+	/* fix Firefox bug */	
 	#addon-inline-options {
-	  height: unset !important;
-	  min-height: 100% !important;
+	  height: 2000px !important;
+	  min-height: unset !important;
+	  max-height: unset !important;
+	  overflow-y: auto !important;
 	}
 	
 	.inline-options-stack {
 	  height: unset !important;
-	  min-height: calc(100vh - 220px) !important;
-	  max-height: calc(100vh - 220px) !important;
+	  min-height: calc(100vh - 200px) !important;
+	  max-height: calc(100vh - 200px) !important;
+	  overflow-y: auto !important;
 	}
 
 }
