@@ -1,8 +1,7 @@
 ## Downloads for Firefox
 
-- **[CustomCSSforFx releases & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)**  
-- **[Custom JavaScript scripts for Firefox](https://github.com/Aris-t2/CustomJSforFx)**  
-- **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
+- **[CustomCSSforFx - current release & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** || **[Last version with 102 ESR support](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/4.2.8)**  
+- **[Custom JavaScript scripts for Firefox](https://github.com/Aris-t2/CustomJSforFx)** || **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
 - **[List of CTR, CTB, GMF & Noia4 CSS tweaks & link to FOXSCAPEuC theme](https://github.com/Aris-t2/CustomCSSforFx/discussions/459)**  
 - **[Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)**   
 
