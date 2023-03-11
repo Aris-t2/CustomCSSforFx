@@ -100,23 +100,18 @@
 	/* category icons */
 	#category-search .category-icon {
 	  list-style-image: url("./../../image/prefs_search.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-general .category-icon {
 	  list-style-image: url("./../../image/prefs_general.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-home .category-icon {
 	  list-style-image: url("./../../image/prefs_home.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-privacy .category-icon {
 	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-sync .category-icon {
 	  list-style-image: url("./../../image/prefs_sync.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#categories .category .category-icon {
 	  height: 32px !important;

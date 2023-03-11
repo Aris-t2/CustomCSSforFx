@@ -58,7 +58,6 @@
 #main-window[uidensity=compact] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
 #main-window #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon {
-  -moz-image-region: rect(0px 23px 23px 0px) !important;
   width: 23px !important;
 }
 
@@ -66,7 +65,6 @@
 #main-window[uidensity=compact] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
 #main-window #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon {
-  -moz-image-region: rect(0px 46px 23px 23px) !important;
   width: 23px !important;
 }
 

@@ -7,12 +7,11 @@
 #reader-mode-button-icon,
 #reader-mode-button {
   list-style-image: url("./../../image/reader.png") !important;
-  -moz-image-region: rect(0, 16px, 16px, 0) !important;
 }
 
 #reader-mode-button[readeractive] #reader-mode-button-icon,
 #reader-mode-button[readeractive] {
-  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+  list-style-image: url("./../../image/reader2.png") !important;
 }
 
 #reader-mode-button-icon:hover,

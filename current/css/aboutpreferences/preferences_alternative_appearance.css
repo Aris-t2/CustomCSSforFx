@@ -107,23 +107,18 @@
 	/* category icons */
 	#category-search .category-icon {
 	  list-style-image: url("./../../image/prefs_search.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-general .category-icon {
 	  list-style-image: url("./../../image/prefs_general.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-home .category-icon {
 	  list-style-image: url("./../../image/prefs_home.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-privacy .category-icon {
 	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#category-sync .category-icon {
 	  list-style-image: url("./../../image/prefs_sync.png") !important;
-	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
 	}
 	#categories .category .category-icon {
 	  height: 32px !important;
@@ -171,13 +166,14 @@
 	
 	treecols,
 	treecol {
-	  min-height: unset !important;
-	  height: 24px !important;
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
 	}
 	
 	.autocomplete-tree treecols,
 	.autocomplete-tree treecol {
-	  height: unset !important;
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
 	}
 
 	/* buttons / menulists */
@@ -197,8 +193,6 @@
 	/* checkbox and radio items */
 	checkbox image,
 	radio image {
-	  width: 14px !important;
-	  height: 14px !important;
 	  margin: 0 1px !important;
 	}
 	
@@ -250,9 +244,6 @@
 	  fill: unset !important;
 	}
 	
-	/*.web-appearance-choice  {
-	  width: 150px !important;
-	}*/
 	
 }
 
@@ -304,11 +295,18 @@
 
 *[subdialog="true"] treecols,
 *[subdialog="true"] treecol {
-  min-height: unset !important;
-  height: 26px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 *[subdialog="true"] .autocomplete-tree treecols,
 *[subdialog="true"] .autocomplete-tree treecol {
-  height: unset !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+:is(.dialogBox,dialog) #siteCol,
+:is(.dialogBox,dialog) #statusCol,
+:is(.dialogBox,dialog) #permissionsBox > richlistitem {
+  min-height: unset !important;
 }

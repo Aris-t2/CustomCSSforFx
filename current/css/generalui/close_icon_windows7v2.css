@@ -7,20 +7,19 @@
 #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
 #sidebar-close .toolbarbutton-icon,
 * > .close-icon{
-  -moz-image-region: rect(0, 16px, 16px, 0) !important;
-  list-style-image: url("./../../image/close_w7v2.png") !important;
+  list-style-image: url("./../../image/close_w7v2_d.png") !important;
 }
 #TabsToolbar #closetab_fmarin_com-browser-action:hover .toolbarbutton-icon,
 #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover .toolbarbutton-icon,
 #sidebar-close:hover .toolbarbutton-icon,
 * > .close-icon:hover{
-  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+  list-style-image: url("./../../image/close_w7v2_h.png") !important;
 }
 #TabsToolbar #closetab_fmarin_com-browser-action:hover:active .toolbarbutton-icon,
 #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover:active .toolbarbutton-icon,
 #sidebar-close:hover:active .toolbarbutton-icon,
 * > .close-icon:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+  list-style-image: url("./../../image/close_w7v2_a.png") !important;
 }
 
 @media (min-resolution: 1.1dppx) {
@@ -28,20 +27,19 @@
   #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
   #sidebar-close .toolbarbutton-icon,
   * > .close-icon {
-	list-style-image: url("./../../image/close_w7v2_2x.png") !important;
-	-moz-image-region: rect(0, 32px, 32px, 0) !important;
+	list-style-image: url("./../../image/close_w7v2_2x_d.png") !important;
   }
   #TabsToolbar #closetab_fmarin_com-browser-action:hover .toolbarbutton-icon,
   #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover .toolbarbutton-icon,
   #sidebar-close:hover .toolbarbutton-icon,
   * > .close-icon:hover{
-	-moz-image-region: rect(0, 64px, 32px, 32px) !important;
+	list-style-image: url("./../../image/close_w7v2_2x_h.png") !important;
   }
   #TabsToolbar #closetab_fmarin_com-browser-action:hover:active .toolbarbutton-icon,
   #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover:active .toolbarbutton-icon,
   #sidebar-close:hover:active .toolbarbutton-icon,
   * > .close-icon:hover:active {
-	-moz-image-region: rect(0, 96px, 32px, 64px) !important;
+	list-style-image: url("./../../image/close_w7v2_2x_a.png") !important;
   }
 }
 

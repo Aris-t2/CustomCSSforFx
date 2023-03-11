@@ -2,24 +2,152 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import "icons_custom_icons_sizes.css";
-
-/*
-   There are no icon set versions for HiDPI modes available, so icons
+/* There are no icon versions for HiDPI modes available, so icons
    will look blurry in those modes.
 */
 
-:is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
-	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button,#downloads-indicator-anchor),
-#panic-button:not([open]),#pocket-button:not([open]) {
-  list-style-image: url("../../image/toolbar_fx_crystal.png") !important;
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
 }
 
-:is(.tabs-newtab-button,#tabs-newtab-button) {
+#tabs-newtab-button {
   list-style-image: url("../../image/newtabmix.png") !important;
-  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
 }
+
+#back-button {
+  list-style-image: url("../../image/icons_fx_crystal/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx_crystal/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx_firebird/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx_firebird/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx_firebird/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx_firebird/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx_firebird/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx_firebird/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx_firebird/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx_firebird/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx_firebird/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx_firebird/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx_firebird/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx_firebird/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx_firebird/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx_firebird/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx_firebird/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx_firebird/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx_firebird/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx_firebird/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx_firebird/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx_firebird/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx_firebird/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx_firebird/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx_firebird/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx_firebird/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx_firebird/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx_firebird/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx_firebird/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx_firebird/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx_firebird/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx_firebird/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_firebird/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_firebird/savetopocket.png") !important;
+}
+

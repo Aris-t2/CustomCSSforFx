@@ -19,7 +19,8 @@
   z-index: 2;
 }
 
-#TabsToolbar:not(:-moz-lwtheme){
+/* overrides other settings too */
+#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
   appearance: none;
   background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 }
@@ -113,7 +114,8 @@
 #TabsToolbar #tabbrowser-arrowscrollbox {
   margin-top: 1px !important;
   margin-bottom: -1px !important;
-}*/
+}
+*/
 
 /* Fx 105+ */
 :root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,

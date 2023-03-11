@@ -170,7 +170,6 @@
 /* dropmarker icon / arrow */
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
   list-style-image: unset !important;
-  -moz-image-region: unset !important;
 }
 
 #main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon {
@@ -180,9 +179,9 @@
 }
 
 /* adjust button badge stack */
-#main-window[tabsintitlebar] :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar] :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar] :-moz-any(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
+#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
   background: unset !important;
   border-color: unset !important;
   border: 0 !important;
@@ -224,7 +223,7 @@
 			  1px 0 0 0px rgba(255,255,255,.5),
 			  -1px 0 0 0px rgba(255,255,255,.5) !important;
 }
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]){
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]){
   background-image: linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
   box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
 			  0 1px 1px rgba(0,0,0,.2) inset,
@@ -243,7 +242,7 @@
 					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
 					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #PanelUI-button #PanelUI-menu-button:-moz-any(:hover:active,[open]) {
+#main-window[privatebrowsingmode=temporary][tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
@@ -283,8 +282,8 @@
   min-width: unset !important;
 }
 
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :-moz-any(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   opacity: 1.0 !important;
   margin-bottom: unset !important;
 }

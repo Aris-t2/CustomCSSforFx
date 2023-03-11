@@ -295,5 +295,19 @@
 	button[part="button"] {
 	  background-image: unset !important;
 	}
+	
+	addon-card > .addon.card,
+	addon-card > .addon.card * {
+	  overflow: hidden !important;
+	}
+	
+	/* fix Firefox bug */	
+	addon-card > .addon.card #addon-inline-options {
+	  overflow-y: auto !important;
+	}
+	
+	addon-card > .addon.card .inline-options-stack {
+	  overflow-y: auto !important;
+	}
 
 }

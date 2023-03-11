@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 109+
-  Current version: 4.3.1
+  Custom CSS for Firefox 110+
+  Current version: 4.3.2
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -182,7 +182,7 @@
 
 @import "./css/buttons/icons_colorized.css"; /**/
 /* @import "./css/buttons/icons_white_icons.css"; /**/
-/* @import "./css/buttons/icons_custom_icons.css"; /**/  
+/* @import "./css/buttons/icons_custom_icons.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx1.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx2.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx3.css"; /**/
@@ -199,6 +199,7 @@
 /* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
+
 
 
 /* -----------------
@@ -345,7 +346,6 @@
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
-/* @import "./css/buttons/custom_backforward_large_ff3_strata_v2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_orange.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_red.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ie8.css"; /**/

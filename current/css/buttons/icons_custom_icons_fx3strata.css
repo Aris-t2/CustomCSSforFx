@@ -2,24 +2,151 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@import "icons_custom_icons_sizes.css";
-
-/*
-   There are no icon set versions for HiDPI modes available, so icons
+/* There are no icon versions for HiDPI modes available, so icons
    will look blurry in those modes.
 */
 
-:is(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-	#add-ons-button,#unified-extensions-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
-	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button,#downloads-indicator-anchor),
-#panic-button:not([open]),#pocket-button:not([open]) {
-  list-style-image: url("../../image/toolbar_fx3_strata.png") !important;
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
 }
 
-:is(.tabs-newtab-button,#tabs-newtab-button) {
+#tabs-newtab-button {
   list-style-image: url("../../image/newtabff3.png") !important;
-  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx3_strata/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx3_strata/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx3_strata/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx3_strata/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx3_strata/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx3_strata/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx3_strata/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx3_strata/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx3_strata/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx3_strata/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx3_strata/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx3_strata/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx3_strata/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx3_strata/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx3_strata/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx3_strata/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx3_strata/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx3_strata/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx3_strata/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx3_strata/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx3_strata/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx3_strata/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx3_strata/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx3_strata/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx3_strata/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx3_strata/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx3_strata/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx3_strata/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx3_strata/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx3_strata/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx3_strata/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx3_strata/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx3_strata/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx3_strata/savetopocket.png") !important;
 }

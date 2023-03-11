@@ -5,7 +5,6 @@
 
 #PanelUI-button #PanelUI-menu-button {
   list-style-image: unset !important;
-  -moz-image-region: unset !important;
 }
 
 #PanelUI-button #PanelUI-menu-button .toolbarbutton-icon {

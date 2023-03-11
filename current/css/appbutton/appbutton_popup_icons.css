@@ -394,12 +394,12 @@
   fill: currentColor;
   list-style-image: url("chrome://devtools/skin/images/command-eyedropper.svg");
 }
-
+/*
 #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] + toolbarbutton image.toolbarbutton-icon {
   -moz-context-properties: fill;
   fill: currentColor;
   list-style-image: url("chrome://browser/skin/developer.svg");
-}
+}*/
 
 #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] + toolbarbutton > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] + toolbarbutton > label.toolbarbutton-text {
@@ -412,7 +412,6 @@
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
   list-style-image: url("../../image/command-tilt.png");
   filter: grayscale(100%) brightness(10%);
-  -moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > label.toolbarbutton-text,
@@ -424,7 +423,6 @@
 #appmenu-developer-tools-view toolbarbutton:-moz-lwtheme-brighttext[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
   list-style-image: url("../../image/command-tilt.png");
   filter: grayscale(100%) brightness(220%) !important;
-  -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
@@ -432,7 +430,6 @@
 	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
 	  list-style-image: url("../../image/command-tilt.png");
 	  filter: grayscale(100%) brightness(220%) !important;
-	  -moz-image-region: rect(0px, 48px, 16px, 32px);
 	}
 }
 

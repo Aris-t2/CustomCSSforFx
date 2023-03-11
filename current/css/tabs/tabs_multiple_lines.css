@@ -94,3 +94,7 @@
 box.scrollbox-clip[orient="horizontal"] {
   display: inline !important;
 }
+
+.tab-label-container {
+  height: unset !important;
+}
