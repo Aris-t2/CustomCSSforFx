@@ -24,130 +24,130 @@
 }
 
 #home-button {
-  list-style-image: url("../../image/icons_fx_firebird/home.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/home.png") !important;
 }
 
 #stop-button {
-  list-style-image: url("../../image/icons_fx_firebird/stop.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/stop.png") !important;
 }
 
 #reload-button {
-  list-style-image: url("../../image/icons_fx_firebird/reload.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/reload.png") !important;
 }
 
 #bookmarks-menu-button,#bookmarks-toolbar-placeholder {
-  list-style-image: url("../../image/icons_fx_firebird/bookmarks.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/bookmarks.png") !important;
 }
 
 #history-panelmenu {
-  list-style-image: url("../../image/icons_fx_firebird/history.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/history.png") !important;
 }
 
 #add-ons-button,#unified-extensions-button {
-  list-style-image: url("../../image/icons_fx_firebird/addons.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/addons.png") !important;
 }
 
 #open-file-button {
-  list-style-image: url("../../image/icons_fx_firebird/openfile.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/openfile.png") !important;
 }
 
 #save-page-button {
-  list-style-image: url("../../image/icons_fx_firebird/savepage.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/savepage.png") !important;
 }
 
 #sync-button {
-  list-style-image: url("../../image/icons_fx_firebird/sync.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/sync.png") !important;
 }
 
 #characterencoding-button {
-  list-style-image: url("../../image/icons_fx_firebird/characterencoding.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/characterencoding.png") !important;
 }
 
 #new-window-button {
-  list-style-image: url("../../image/icons_fx_firebird/newwindow.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/newwindow.png") !important;
 }
 
 #new-tab-button {
-  list-style-image: url("../../image/icons_fx_firebird/newtab.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/newtab.png") !important;
 }
 
 #privatebrowsing-button {
-  list-style-image: url("../../image/icons_fx_firebird/privatebrowsing.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/privatebrowsing.png") !important;
 }
 
 #find-button {
-  list-style-image: url("../../image/icons_fx_firebird/find.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/find.png") !important;
 }
 
 #print-button {
-  list-style-image: url("../../image/icons_fx_firebird/print.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/print.png") !important;
 }
 
 #fullscreen-button {
-  list-style-image: url("../../image/icons_fx_firebird/fullscreen.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/fullscreen.png") !important;
 }
 
 #developer-button {
-  list-style-image: url("../../image/icons_fx_firebird/developer.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/developer.png") !important;
 }
 
 #preferences-button {
-  list-style-image: url("../../image/icons_fx_firebird/preferences.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/preferences.png") !important;
 }
 
 #PanelUI-menu-button {
-  list-style-image: url("../../image/icons_fx_firebird/appmenu.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/appmenu.png") !important;
 }
 
 #cut-button {
-  list-style-image: url("../../image/icons_fx_firebird/edit_cut.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/edit_cut.png") !important;
 }
 
 #copy-button {
-  list-style-image: url("../../image/icons_fx_firebird/edit_copy.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/edit_copy.png") !important;
 }
 
 #paste-button {
-  list-style-image: url("../../image/icons_fx_firebird/edit_paste.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/edit_paste.png") !important;
 }
 
 #zoom-out-button {
-  list-style-image: url("../../image/icons_fx_firebird/zoom_out.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/zoom_out.png") !important;
 }
 
 #zoom-in-button {
-  list-style-image: url("../../image/icons_fx_firebird/zoom_in.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/zoom_in.png") !important;
 }
 
 #email-link-button {
-  list-style-image: url("../../image/icons_fx_firebird/emaillink.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/emaillink.png") !important;
 }
 
 #sidebar-button {
-  list-style-image: url("../../image/icons_fx_firebird/sidebar.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/sidebar.png") !important;
 }
 
 #library-button {
-  list-style-image: url("../../image/icons_fx_firebird/library.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/library.png") !important;
 }
 
 #nav-bar-overflow-button {
-  list-style-image: url("../../image/icons_fx_firebird/overflow_chevron.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/overflow_chevron.png") !important;
 }
 
 #alltabs-button {
-  list-style-image: url("../../image/icons_fx_firebird/alltabs.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/alltabs.png") !important;
 }
 
 #downloads-indicator-anchor {
-  list-style-image: url("../../image/icons_fx_firebird/downloads.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/downloads.png") !important;
 }
 
 #panic-button:not([open]) {
-  list-style-image: url("../../image/icons_fx_firebird/panic.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/panic.png") !important;
 }
 
 #save-to-pocket-button:not([open]) {
-  list-style-image: url("../../image/icons_fx_firebird/savetopocket.png") !important;
+  list-style-image: url("../../image/icons_fx_crystal/savetopocket.png") !important;
 }
 
