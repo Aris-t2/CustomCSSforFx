@@ -6,10 +6,12 @@
 /* move main menu button to navigation toolbars start */
 #PanelUI-button {
   -moz-box-ordinal-group: 0 !important;
+  order: -1 !important;
 }
 
 #PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
-  box-ordinal-group: 10 !important;
+  -moz-box-ordinal-group: 10 !important;
+  order: 10 !important;
   margin-inline-start: 3px !important;
   margin-inline-end: unset !important;
 }
