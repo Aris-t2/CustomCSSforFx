@@ -17,6 +17,7 @@
 
 .tab-close-button {
   -moz-box-ordinal-group: 0 !important;
+  order: -1 !important;
   margin-inline-start: var(--ctb_start_margin) !important;
   margin-inline-end: var(--ctb_end_margin) !important;
 }

@@ -60,7 +60,6 @@
 /* appbutton */
 #main-window[tabsintitlebar] #PanelUI-button {
   appearance: none !important;
-  -moz-box-ordinal-group: 0 !important;
   position: fixed !important;
   display: flex !important;
   height: 22px !important;

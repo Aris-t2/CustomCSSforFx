@@ -24,6 +24,7 @@
 /* move titlebar and its content (menubar, tabs toolbar) below navigation/bookmarks toolbar */
 #titlebar {
   -moz-box-ordinal-group: 100 !important;
+  order: 100 !important;
 }
 
 /* space above tabs toolbar */

@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 110+
-  Current version: 4.3.2
+  Current version: 4.3.3
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -25,7 +25,7 @@
   'Profile Folder > Open Folder'
   
   Create a /chrome/ (chrome) directory btw. folder inside the profile folder you just opened and
-  paste projects files and folders into it so it looks like this:
+  paste projects files and folders into it, so it looks like this:
   
   /chrome/config/
   /chrome/css/
@@ -178,6 +178,7 @@
    
    [!] only use one option at a time
    [!] custom icon quality does not increase in HiDPI modes
+   [!] Firefox 88 icon set uses SVG images
 */
 
 @import "./css/buttons/icons_colorized.css"; /**/
@@ -199,7 +200,8 @@
 /* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
-
+/* @import "./css/buttons/icons_custom_icons_fx88.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx88_colorized.css"; /**/
 
 
 /* -----------------

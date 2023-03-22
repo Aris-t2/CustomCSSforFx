@@ -21,6 +21,8 @@
 	
 #context-navigation > .menuitem-iconic {
   -moz-box-pack: start !important; /* can not be replaced with box-pack yet */
+  flex: unset !important;
+  justify-content: unset !important;
 }
 
 /* fix for German locale */

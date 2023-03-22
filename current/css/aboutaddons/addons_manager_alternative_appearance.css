@@ -187,6 +187,7 @@
 	  min-height: 26px !important;
 	  min-width: 50px !important;
 	  -moz-box-ordinal-group: 0 !important;
+	  order: -1 !important;
 	}
 
 	#header-inner {
