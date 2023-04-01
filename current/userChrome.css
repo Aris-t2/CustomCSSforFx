@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 110+
-  Current version: 4.3.3
+  Current version: 4.3.4
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -689,18 +689,6 @@
 /* @import "./css/tabs/tab_close_icon_size.css"; /**/
 
 
-/* ------------------
-   Tab title settings
-   ------------------
-   
-   [!] only use one option at a time
-*/
-
-/* @import "./css/tabs/tab_title_left.css"; /**/
-/* @import "./css/tabs/tab_title_centered.css"; /**/
-/* @import "./css/tabs/tab_title_right.css"; /**/
-
-
 /* ------------------------------------------------
    DEFAULT TABS - settings for default browser tabs
    ------------------------------------------------
@@ -720,6 +708,7 @@
 */
 
 @import "./css/tabs/tab_icon_colors.css"; /**/
+/* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/tabs_firefox_view_button_hidden.css"; /**/
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/

@@ -321,6 +321,7 @@
 #main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]),
 #main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
   -moz-box-orient: unset !important;
+  flex-direction: unset !important;
   min-width: unset !important;
 }
 

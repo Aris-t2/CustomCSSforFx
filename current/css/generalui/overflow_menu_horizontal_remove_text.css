@@ -21,7 +21,8 @@
   min-width: 0 !important;
   width: auto !important;
   max-width: unset !important;
-  -moz-box-orient: horizontal !important; /* can not be replaced with box-orient yet */
+  -moz-box-orient: horizontal !important;
+  flex-direction: row !important;
 }
 
 #widget-overflow:not([remote="true"]) .panel-arrowcontent,

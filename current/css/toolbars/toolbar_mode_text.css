@@ -20,6 +20,10 @@ toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"
   margin-bottom: -17px !important;
 }
 
+toolbar:not(#nav-bar):not(#TabsToolbar) #PlacesChevron > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+  margin-bottom: 2px !important;
+}
+
 #PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
   visibility: collapse !important;
 }

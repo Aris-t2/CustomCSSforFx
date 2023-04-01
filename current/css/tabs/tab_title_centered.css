@@ -11,7 +11,6 @@
 
 .tab-label,
 .tab-secondary-label {
-  -moz-box-pack: center !important;
   overflow: hidden !important;
 }
 

@@ -129,6 +129,7 @@
 
 #PersonalToolbar #bookmarks-menu-button {
   -moz-box-align: center !important;
+  align-items: center !important;
 }
 
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #browser,

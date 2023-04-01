@@ -255,6 +255,7 @@
 	
 	.list-view-heading-inner {
 	  -moz-box-flex: 1 !important;
+	  display: flex !important;
 	  width: unset !important;
 	}
 
