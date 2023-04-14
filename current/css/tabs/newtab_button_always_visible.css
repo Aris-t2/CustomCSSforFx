@@ -5,7 +5,7 @@
 
 #new-tab-button {
   visibility: visible !important;
-  display: unset !important;
+  display: flex !important;
 }
 
 :is(.tabs-newtab-button,#tabs-newtab-button) {

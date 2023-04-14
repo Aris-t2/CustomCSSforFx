@@ -5,6 +5,6 @@
 
 #alltabs-button{
   visibility: visible !important;
-  display: unset !important;
+  display: flex !important;
 }
 

@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#unified-extensions-view .panel-header,
+#unified-extensions-view toolbarseparator,
+#unified-extensions-manage-extensions,
+.unified-extensions-item-contents,
+.unified-extensions-item-action-button .toolbarbutton-text,
+.unified-extensions-item-menu-button {
+  display: none !important;
+}
+
+.unified-extensions-item-action-button .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#unified-extensions-view .toolbaritem-combined-buttons {
+  margin: 0 !important;
+}
+
+#unified-extensions-panel .unified-extensions-item {
+  padding-block: 0 !important;
+}
+
+#unified-extensions-view toolbarbutton {
+  padding: 4px !important;
+}
+/*
+#unified-extensions-view toolbarbutton:not([badge]) .toolbarbutton-badge-stack {
+  margin-inline-end: 0 !important;
+}*/

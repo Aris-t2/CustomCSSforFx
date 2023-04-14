@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 110+
-  Current version: 4.3.4
+  Current version: 4.3.5
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -324,13 +324,24 @@
 /* @import "./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css"; /**/
 
 
+/* --------------------------------------------------
+   Unified extensions button - Add-ons toolbar button
+   --------------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/buttons/unified_extensions_button_hidden.css"; /**/
+/* @import "./css/buttons/unified_extensions_button_popup_icons_only.css"; /**/
+/* @import "./css/buttons/unified_extensions_button_popup_icons_only_horizontal.css"; /**/
+
+
 /* ----------------------
    Other buttons settings
    ----------------------
 */
 
 @import "./css/buttons/whatnew_button_always_hidden.css"; /**/
-/* @import "./css/buttons/unified_extensions_button_hidden.css"; /**/
 /* @import "./css/buttons/forward_button_hide_when_disabled.css"; /**/
 /* @import "./css/buttons/back_and_forward_separated_history_popups.css"; /**/
 /* @import "./css/buttons/back_and_forward_leftclick_history_popup_hidden.css"; /**/
