@@ -1,17 +1,13 @@
 ## Downloads for Firefox
 
-- **[CustomCSSforFx - current release & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** || **[Last version with 102 ESR support](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/4.2.8)**  
-- **[Custom JavaScript scripts for Firefox](https://github.com/Aris-t2/CustomJSforFx)** || **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
-- **[List of CTR, CTB, GMF & Noia4 CSS tweaks & link to FOXSCAPEuC theme](https://github.com/Aris-t2/CustomCSSforFx/discussions/459)**  
-- **[Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)**   
+- **[CustomCSSforFx - current release & changelog](https://github.com/Aris-t2/CustomCSSforFx/releases)** - **[Last version with 102 ESR support](https://github.com/Aris-t2/CustomCSSforFx/releases/tag/4.2.8)**  
+- **[Custom JavaScript scripts for Firefox](https://github.com/Aris-t2/CustomJSforFx)** - **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
 
 
-## Want to support this project?
-
-**[[ Paypal Me ]](https://www.paypal.me/tkpay)**  
+## If you want to support this project, [Paypal Me](https://www.paypal.me/tkpay)
 
 
-## LICENSE
+## License
 
 This project is dual-licensed under the GPLv3 and MPL 2.0, see the terms of the LICENSE files.  
 
@@ -118,3 +114,8 @@ Open `userChrome.css` file
 Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`  
 Remove `/*` at lines start to enable this popup appearance.  
 The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
+
+
+
+
+**[Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)**  
