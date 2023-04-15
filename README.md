@@ -10,6 +10,12 @@
 
 **[[ Paypal Me ]](https://www.paypal.me/tkpay)**  
 
+
+## LICENSE
+
+This project is dual-licensed under the GPLv3 and MPL 2.0, see the terms of the LICENSE files.  
+
+
 ## Instructions / Howto / Readme
 
 - [Unlock custom CSS usage](#unlock-custom-css-usage)
