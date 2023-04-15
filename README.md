@@ -114,4 +114,4 @@ _Example 3_
 Open `userChrome.css` file    
 Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`  
 Remove `/*` at lines start to enable the alternative reader icon appearance.  
-The result should look like `@import "./css/locationbar/reader_alternative_icon.css"; /**` 
+The result should look like `@import "./css/locationbar/reader_alternative_icon.css"; /**/` 
