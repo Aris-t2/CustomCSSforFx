@@ -107,11 +107,11 @@ Remove `/*` at lines end to make that part of the code active. Save the file and
 _Example 2_  
 Open `userChrome.css` file  
 Look for `@import "./css/tabs/classic_squared_tabs.css"; /**/`  
-Add `/*` at lines start to remove classic squared tabs.  
-The result will look like `/* @import "./css/tabs/classic_squared_tabs.css"; /**/`  
+Add `/*` at lines start to disable 'classic squared tabs' appearance.  
+The result should look like `/* @import "./css/tabs/classic_squared_tabs.css"; /**/`  
   
 _Example 3_  
 Open `userChrome.css` file    
 Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`  
-Remove `/*` at lines start to enable this popup appearance.  
-The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
+Remove `/*` at lines start to enable the alternative reader icon appearance.  
+The result should look like `@import "./css/locationbar/reader_alternative_icon.css"; /**` 
