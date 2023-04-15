@@ -4,7 +4,7 @@
 - **[Custom JavaScript scripts for Firefox](https://github.com/Aris-t2/CustomJSforFx)** - **[NoiaButtons CSS tweaks](https://github.com/Aris-t2/NoiaButtons)**  
 
 
-## If you want to support this project, [Paypal Me](https://www.paypal.me/tkpay)
+## If you want to support this project, [Paypal Me](https://www.paypal.me/tkpay).
 
 
 ## License
@@ -20,6 +20,7 @@ This project is dual-licensed under the GPLv3 and MPL 2.0, see the terms of the 
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
+- [Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)    
 
 ## Unlock custom CSS usage
 
@@ -114,8 +115,3 @@ Open `userChrome.css` file
 Look for `/* @import "./css/locationbar/reader_alternative_icon.css"; /**/`  
 Remove `/*` at lines start to enable this popup appearance.  
 The result will look like `/* @import "./css/locationbar/reader_alternative_icon.css"; /**` 
-
-
-
-
-**[Firefox Color (compatible with default color preset of CustomCSSforFx)](https://color.firefox.com/)**  
