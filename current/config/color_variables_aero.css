@@ -3,13 +3,6 @@
 /****************************************************************************************/
 
 
-/*
- Colors inside  /'*...*'/  are from deprecated 'custom_colors_for_squared_tabs.css' file.
- Example:
- replace 'linear-gradient(#f9f9fa,#f9f9fa)'  with 'linear-gradient(to bottom,#FFCC99,#FFCC99)'
- to use the colors from the above mentioned file.
-*/
-
 /* Aero colors */
 :root {
   --general_toolbar_color_toolbars: linear-gradient(#ddebf9,#ddebf9) !important; /* (to bottom,#FFCC99,#FFCC99) */

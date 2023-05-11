@@ -3,11 +3,13 @@
 /****************************************************************************************/
 
 
-/*
- Colors inside  /'*...*'/  are from deprecated 'custom_colors_for_squared_tabs.css' file.
- Example:
- replace 'linear-gradient(#f9f9fa,#f9f9fa)'  with 'linear-gradient(to bottom,#FFCC99,#FFCC99)'
- to use the colors from the above mentioned file.
+/* Colors inside  / *  ...   * /  are from the old  'custom_colors_for_squared_tabs.css' file.
+   Example: replace 'linear-gradient(#f9f9fa,#f9f9fa)' with 'linear-gradient(to bottom,#FFCC99,#FFCC99)'
+   
+   Tab colors have to be set as gradients.
+   Example: If the active tab has to be blue, the variable has to look like
+   '--classic_squared_tabs_active_tab: linear-gradient(blue,blue) !important;'
+   and not (!) just '--classic_squared_tabs_active_tab: blue !important;'
 */
 
 /* default colors */
@@ -23,6 +25,9 @@
   --colored_menubar_text_color: black !important;
   --statusbar_background_color: linear-gradient(#f9f9fa,#f9f9fa) !important;
   --statusbar_font_color: inherit !important;
+  
+  /* tab colors
+  */
   --classic_squared_tabs_active_tab: linear-gradient(to top,#f9f9fa,#f9f9fa,#f9f9fa) !important; /* (to bottom,#FF8800,#FFCC99) */
   --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#cac7c1,#d5d2cc,#e8e6e2) !important; /* (to bottom,#FF9900,#FF6600) */
   --classic_squared_tabs_other_tabs: linear-gradient(to top,#aeaba5,#c1beb7,#c9c6be) !important; /* (to bottom,#FFCC99,#CCCCCC) */
@@ -34,9 +39,15 @@
   --classic_squared_tabs_new_tab_icon_color: black !important;
   --classic_squared_tabs_tab_text_color: black !important;
   --classic_squared_tabs_tab_text_shadow: transparent !important;
+  
+  /* tab colors - dark text, but bright themes:
+  */
   --classic_squared_tabs_lwt-dark_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
   --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%) !important;
   --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%) !important;
+  
+  /* tab colors - bright text, but dark themes:
+  */
   --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
   --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
   --classic_squared_tabs_lwt-bright_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */

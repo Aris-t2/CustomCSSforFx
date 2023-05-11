@@ -77,7 +77,8 @@
 	
 	/* groupbox */
 	.main-content groupbox{
-	  appearance: groupbox !important;
+	  appearance: auto !important;
+	  -moz-default-appearance: groupbox !important;
 	}
 
 	.main-content groupbox caption {
@@ -185,17 +186,20 @@
 	}
 	
 	button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
-	  appearance: button !important;
+	  appearance: auto !important;
+	  -moz-default-appearance: button !important;
 	}
 
 	menulist{
-	  appearance: menulist !important;
+	  appearance: auto !important;
+	  -moz-default-appearance: menulist !important;
 	}
 	
 	/* menulist popup */
 	@media all and (-moz-windows-theme:aero) {
 		menupopup menuitem {
-		  appearance: menuitem !important;
+		  appearance: auto !important;
+		  -moz-default-appearance: menuitem !important;
 		}
 		menupopup menuitem:not([disabled="true"]) {
 		  color: black !important;
@@ -388,16 +392,19 @@
 }
 
 *[subdialog="true"] button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
-  appearance: button !important;
+  appearance: auto !important;
+  -moz-default-appearance: button !important;
 }
 *[subdialog="true"] menulist{
-  appearance: menulist !important;
+  appearance: auto !important;
+  -moz-default-appearance: menulist !important;
 }
 
 /* menu popup */
 @media all and (-moz-windows-theme:aero) {
 	*[subdialog="true"] menupopup menuitem {
-	  appearance: menuitem !important;
+	  appearance: auto !important;
+	  -moz-default-appearance: menuitem !important;
 	}
 	*[subdialog="true"] menupopup menuitem:not([disabled="true"]),
 	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected] {

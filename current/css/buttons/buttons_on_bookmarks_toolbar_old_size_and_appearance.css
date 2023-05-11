@@ -8,7 +8,8 @@
 	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
 	#PersonalToolbar #PlacesToolbar toolbarbutton,
 	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
-	  appearance: toolbarbutton !important;
+	  appearance: auto !important;
+	 -moz-default-appearance: toolbarbutton !important;
 	  background: unset !important;
 	  box-shadow: unset !important;
 	  padding-left: 3px !important;

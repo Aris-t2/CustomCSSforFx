@@ -94,7 +94,8 @@
 
   #context-navigation :is(menu, menuitem, menucaption),
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-	appearance: menuitem !important;
+	appearance: auto !important;
+    -moz-default-appearance: menuitem !important;
 	min-height: unset !important;
 	padding-inline-start: 15px !important;
   }

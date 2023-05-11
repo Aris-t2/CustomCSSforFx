@@ -77,7 +77,8 @@
 }
 
 #personal-bookmarks toolbarbutton.bookmark-item[dragover][open]{
-  appearance: toolbarbutton;
+  appearance: auto !important;
+  -moz-default-appearance: toolbarbutton;
 }
 
 #navigator-toolbox #PersonalToolbar { 
