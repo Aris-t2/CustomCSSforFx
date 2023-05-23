@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="9" height="7"><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN RQfhCQoJDSDycIWYAAAAQ0lEQVQI103IsQ3AIAxFwRdRuCZLZTpqd2z2N7CyglMgE668i4eb0wtD kZuCAYZXKnAMGp2pyFQw6TTY+Ueln7HSKj6kzSWgWEldNgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAx Ny0wOS0xMFQwOToxMzozMi0wNzowMLn3lFQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDktMTBU MDk6MTM6MzItMDc6MDDIqizoAAAAAElFTkSuQmCC" width="9" height="7"/></svg>
+<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 18 18'>
+  <filter id='shadow' color-interpolation-filters="sRGB">
+    <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-opacity="10"/>
+  </filter>
+  <g filter="url(#shadow)">
+    <path fill='#ffffff' fill-opacity='context-fill-opacity' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/>
+  </g>
+</svg>

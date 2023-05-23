@@ -12,7 +12,7 @@
   display: none !important;
 }
 
-.unified-extensions-item-action-button .toolbarbutton-icon {
+.unified-extensions-item-action-button :is(.toolbarbutton-icon,.unified-extensions-item-icon) {
   width: 16px !important;
   height: 16px !important;
   padding: 0 !important;
