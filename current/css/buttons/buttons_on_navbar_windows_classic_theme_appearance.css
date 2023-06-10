@@ -170,10 +170,10 @@
   border-radius: 0px !important;
 }
 
-#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[disabled=true] > .toolbarbutton-icon,
-#nav-bar #nav-bar-customization-target > toolbarbutton[disabled=true] > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[disabled=true] .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbarbutton[disabled=true] .toolbarbutton-icon,
 #nav-bar > toolbarbutton[disabled=true] > .toolbarbutton-icon {
-  opacity: .6 !important;
+  opacity: .4 !important;
 }
 
 #nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[disabled=true],

@@ -36,6 +36,15 @@
   padding: 4px !important;
 }
 
-#unified-extensions-view toolbarbutton:not([badge]) .toolbarbutton-badge-stack {
-  margin-inline-end: 0 !important;
+#unified-extensions-view .unified-extensions-item-icon,
+#unified-extensions-view .unified-extensions-item .webextension-browser-action.subviewbutton > .toolbarbutton-badge-stack {
+  margin-inline-end: 0px !important;
+}
+
+#unified-extensions-view toolbarbutton menupopup[placespopup] > :is(menu, menuitem),
+#unified-extensions-view .subview-subheader,
+#unified-extensions-view panelview .toolbarbutton-1,
+#unified-extensions-view .subviewbutton,
+#unified-extensions-view .widget-overflow-list .toolbarbutton-1 {
+  margin: 0 !important;
 }

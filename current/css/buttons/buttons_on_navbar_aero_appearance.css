@@ -3,15 +3,10 @@
 /****************************************************************************************/
 
 
-#nav-bar .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
-#nav-bar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
-#nav-bar .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
-#nav-bar .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
-#nav-bar .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+/* hovered state */
+#nav-bar .unified-extensions-item toolbarbutton:not([disabled=true]):hover,
+#nav-bar toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background: transparent !important;
-  background-color: transparent !important;
   background-image:
 	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
 	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
@@ -24,15 +19,10 @@
 			  box-shadow .2s ease-in !important;
 }
 
-#nav-bar toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
-#nav-bar toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
-#nav-bar .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
-#nav-bar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack {
+/* clicked/active state */
+#nav-bar .unified-extensions-item toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active),
+#nav-bar toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background: transparent !important;
-  background-color: transparent !important;
   background-image:
 	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
 	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
@@ -43,4 +33,12 @@
   transition: background-color .3s ease-in,
 			  border-color .2s ease-in,
 			  box-shadow .2s ease-in !important;
+}
+
+#nav-bar .unified-extensions-item toolbarbutton:not([disabled=true]):is(:hover,[open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  background: unset !important;
+  background-image:	unset !important;
+  border-radius: unset !important;
+  outline: unset !important;
+  transition: unset !important;
 }

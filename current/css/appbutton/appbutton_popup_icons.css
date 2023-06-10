@@ -143,6 +143,13 @@
   fill: currentColor;
 }
 
+#appMenu-translate-button  > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://browser/skin/translations.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
 :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before {
   content:"" !important;
   display: block !important;

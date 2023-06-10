@@ -86,7 +86,7 @@
 			  0 0 0 1px rgba(0,0,0,.4) inset !important;
 }
 #TabsToolbar #TabsToolbar-customization-target > toolbarbutton[disabled=true] > .toolbarbutton-icon {
-  opacity: .6 !important;
+  opacity: .4 !important;
 }
 
 #TabsToolbar #TabsToolbar-customization-target > toolbarbutton[disabled=true]{

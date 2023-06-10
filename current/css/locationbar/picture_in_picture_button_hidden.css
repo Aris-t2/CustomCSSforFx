@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide picture in picture button when videos a playing */
+#urlbar-container #picture-in-picture-button {
+  visibility: collapse !important;
+}
