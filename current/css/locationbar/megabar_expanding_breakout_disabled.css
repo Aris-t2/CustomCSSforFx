@@ -18,6 +18,8 @@
   height: var(--urlbar-height) !important;
   padding-block: 1px !important;
   padding-inline: 1px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 /* disable result item roundness */

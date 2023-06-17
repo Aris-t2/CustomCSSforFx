@@ -14,31 +14,23 @@
   --urlbar_text_color: black;
 }
 
-#urlbar-search-mode-indicator,
-#page-action-buttons,
-#identity-icon-box,
-#urlbar-background,
-#searchbar {
+
+#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#page-action-buttons,#identity-icon-box,#urlbar-background,#searchbar) {
   background-color: var(--urlbar_background_color) !important;
 }
 
-#searchbar:-moz-lwtheme,
-#urlbar:-moz-lwtheme #urlbar-input,
-#urlbar:-moz-lwtheme #urlbar-scheme,
-#urlbar:-moz-lwtheme #page-action-buttons,
-#urlbar:-moz-lwtheme #identity-icon-box,
-#urlbar:-moz-lwtheme #urlbar-input-container,
-#urlbar:-moz-lwtheme #urlbar-background,
-#urlbar:-moz-lwtheme .urlbarView,
-#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
-#urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row-inner[selected] {
+
+#main-window:not([privatebrowsingmode]) #searchbar:-moz-lwtheme,
+#main-window:not([privatebrowsingmode]) #urlbar:-moz-lwtheme :is(#urlbar-input,#urlbar-scheme,#page-action-buttons,#identity-icon-box,#urlbar-input-container,#urlbar-background,.urlbarView),
+#main-window:not([privatebrowsingmode]) #urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+#main-window:not([privatebrowsingmode]) #urlbar:-moz-lwtheme:-moz-lwtheme-darktext .urlbarView-row-inner[selected] {
   color: var(--urlbar_text_color) !important;
   fill: var(--urlbar_text_color) !important;
 }
 
 @media (-moz-content-prefers-color-scheme: light) {
-	#urlbar:-moz-lwtheme .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
-	#urlbar:-moz-lwtheme .urlbarView-row-inner[selected] {
+	#main-window:not([privatebrowsingmode]) #urlbar:-moz-lwtheme .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+	#main-window:not([privatebrowsingmode]) #urlbar:-moz-lwtheme .urlbarView-row-inner[selected] {
 	  color: var(--urlbar_text_color) !important;
 	  fill: var(--urlbar_text_color) !important;
 	}

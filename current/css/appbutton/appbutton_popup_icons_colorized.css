@@ -25,18 +25,18 @@
 }
 
 /* purple */
-:is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
+:is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
 #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   fill: #800080 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   fill: #ff00ff !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenu-print-button2) > .toolbarbutton-icon,
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2) > .toolbarbutton-icon,
 	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
 	  fill: #ff00ff !important;
 	}
@@ -97,16 +97,16 @@
 }
 
 /* orange */
-:is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
+:is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
   fill: orange !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
+#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
   fill: orange !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
+	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
 	  fill: orange !important;
 	}
 }

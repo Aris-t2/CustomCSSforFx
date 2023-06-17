@@ -3,16 +3,16 @@
 /****************************************************************************************/
 
 
-:is(#urlbar-background, #urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
+#main-window:not([privatebrowsingmode]) :is(#urlbar-background, #urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
   background-color: black !important;
   color: lightgrey !important;
 }
 
-:is(#urlbar, #searchbar, .searchbar-textbox) ::-moz-selection {
+#main-window:not([privatebrowsingmode]) :is(#urlbar, #searchbar, .searchbar-textbox) ::-moz-selection {
   background: white !important;
   color: black !important;
 }
 
-#identity-icon{
+#main-window:not([privatebrowsingmode]) #identity-icon{
   opacity: 1 !important;
 }

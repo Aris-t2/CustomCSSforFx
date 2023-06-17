@@ -38,6 +38,7 @@
   fill: currentColor;
 }
 
+#appMenu_helpSwitchDevice > .toolbarbutton-icon,
 #PanelUI-fxa-menu-connect-device-button > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/device-desktop.svg");
@@ -94,6 +95,7 @@
   fill: currentColor;
 }
 
+#appMenuSearchHistory > .toolbarbutton-icon,
 #appMenu-history-button > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/history.svg");
@@ -191,7 +193,7 @@
 
 #appmenu-moreTools-button > .toolbarbutton-icon {
   -moz-context-properties: fill;
-  list-style-image: url("chrome://browser/skin/developer.svg");
+  list-style-image: url("chrome://browser/skin/customize.svg");
   padding-inline-end: 4px;
   fill: currentColor;
 }
