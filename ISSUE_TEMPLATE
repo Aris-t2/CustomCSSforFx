@@ -10,6 +10,7 @@ Thanks for your understanding.
 SUPPORT is only offered for features CustomCSSforFx project provides
 - This is not a 'request' area for new stuff or features.
 - Do not open a new issue about something this project does not offer.
+- Make sure 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets' is set to 'true'.
 - Join the discussion threads to chat and ask questions.
 - GENERAL TALK, FEEDBACK & QUESTIONS: --> https://github.com/Aris-t2/CustomCSSforFx/discussions/606
 - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/discussions/455
@@ -25,7 +26,7 @@ Add all information required in 1-5 and delete this line and everything above it
 
 
 1. Does the issue occur without any files inside /chrome/ folder?
--> If it does, it might be a Firefox bug not related to this projects files, so the issue report is most likely wrong here.
+-> If it does, it might be a Firefox bug not related to this projects files, so "the issue report" is most likely wrong here.
 
 
 2. Issue description, userChrome.css/userContent.css 'settings' the issue occurs with and steps to reproduce the issue:
@@ -40,8 +41,6 @@ Add all information required in 1-5 and delete this line and everything above it
 
 5. System information
 - OS & OS version: 
-- DPI / HiDPI (e.g. 100%, 125%...): 
+- DPI/HiDPI/scaling value, if not 100% (e.g. 125%, 150%...): 
 - Firefox version: 
 - Firefox theme (e.g. default, build in light/dark, external theme + link): 
-- Is 'about:config > toolkit.legacyUserProfileCustomizations.stylesheets' set to 'true':
-- Is 'about:config > layout.css.moz-box-flexbox-emulation.enabled' set to 'false' (Fx 108+):
