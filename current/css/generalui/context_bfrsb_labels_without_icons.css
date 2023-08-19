@@ -14,7 +14,7 @@
 }
 
 /* Windows code */
-@media (-moz-platform: windows-win10),(-moz-os-version:windows-win10) {
+@media (-moz-platform: windows) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
 	margin-inline-start: var(--y_padding_before_label_cn_no_icon) !important;

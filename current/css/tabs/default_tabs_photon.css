@@ -94,10 +94,14 @@
 }
 
 /* Tab separators had to be rewritten, because Mozilla removed
-   'beforeselected-visible' and 'before-multiselected' rules. */
-.tabbrowser-tab:not([pinned])::before,
-.tabbrowser-tab:not([pinned]):not([selected],[multiselected]):last-of-type::after,
-#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([pinned])[selected] + .tabbrowser-tab::before {
+   'beforeselected-visible' and 'before-multiselected' rules.
+   
+   Separators show up for pinned tabs, but get hidden by Firefox in overflow mode. 
+   */
+   
+.tabbrowser-tab/*:not([pinned])*/::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab::before {
   border-right: 1px solid transparent;
   margin-block: 5px 4px;
   opacity: 0.3;
@@ -105,32 +109,38 @@
   display: block;
 }
 
-.tabbrowser-tab:not([pinned]):not([selected],[multiselected])::before,
-.tabbrowser-tab:not([pinned]):hover:not([selected]):nth-child(1 of :not([pinned], [hidden]))::before,
-.tabbrowser-tab:not([pinned]):hover:not([selected])[first-visible-unpinned-tab]::before,
-.tabbrowser-tab:not([pinned]):not([selected],[multiselected]):last-of-type::after,
-#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([pinned])[selected] + .tabbrowser-tab::before {
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected])::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab::before {
   border-right: 1px solid var(--lwt-background-tab-separator-color, currentColor);
 }
 
-.tabbrowser-tab:not([pinned]):not([selected]):nth-child(1 of :not([pinned], [hidden]))::before,
-.tabbrowser-tab:not([pinned]):not([selected])[first-visible-unpinned-tab]::before,
-.tabbrowser-tab:not([pinned])[selected] + .tabbrowser-tab:not([selected])::before,
-.tabbrowser-tab:not([pinned])[multiselected]:not([selected]) + .tabbrowser-tab:not([selected])::before {
+.tabbrowser-tab/*:not([pinned])*/:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab:not([selected])::before,
+.tabbrowser-tab/*:not([pinned])*/[multiselected]:not([selected]) + .tabbrowser-tab:not([selected])::before {
   border-right: 1px solid transparent;
 }
 
-.tabbrowser-tab:not([pinned]):not([selected],[multiselected]):last-of-type::after {
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after {
   margin-inline-end: -1px;
 }
 
-.tabbrowser-tab:not([pinned]):hover:not([selected],[multiselected])::before,
-.tabbrowser-tab:not([pinned]):hover:not([selected],[multiselected]):last-of-type::after,
-.tabbrowser-tab:not([pinned]):hover:not([selected]):nth-child(1 of :not([pinned], [hidden]))::before,
-.tabbrowser-tab:not([pinned]):hover:not([selected])[first-visible-unpinned-tab]::before,
-.tabbrowser-tab:not([pinned]):hover + .tabbrowser-tab:not([pinned]):not([selected],[multiselected])::before {
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected],[multiselected])::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected],[multiselected]):last-of-type::after,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/:hover + .tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected])::before {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned]::after,
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned]::before {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* selected / multiselected colors */

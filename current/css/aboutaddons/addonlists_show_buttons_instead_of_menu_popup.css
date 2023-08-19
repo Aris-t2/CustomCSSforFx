@@ -122,6 +122,7 @@
 	  width: auto !important;
 	  max-width: var(--addon-page-options-width) !important;
 	  z-index: 1000 !important;
+	  overflow-x: hidden !important;
 	}
 	
 	addon-page-options panel-list panel-item {

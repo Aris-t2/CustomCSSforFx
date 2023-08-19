@@ -168,6 +168,7 @@
   height: 7px !important;
   background: unset !important;
   box-shadow: unset !important;
+  margin-inline-end: -2px !important;
 }
 
 /* code for Unix (macOS/Linux) *//*
@@ -364,4 +365,18 @@
 panel[id="appMenu-popup"][type="arrow"][side="top"],
 panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
   margin-inline: 0 !important;
+}
+
+/* tweak button badge */
+#main-window[tabsintitlebar] #PanelUI-menu-button[badge-status="update-available"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+#main-window[tabsintitlebar] #PanelUI-menu-button[badge-status="update-downloading"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+#main-window[tabsintitlebar] #PanelUI-menu-button[badge-status="update-manual"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+#main-window[tabsintitlebar] #PanelUI-menu-button[badge-status="update-other-instance"] > .toolbarbutton-badge-stack > .toolbarbutton-badge,
+#main-window[tabsintitlebar] #PanelUI-menu-button[badge-status="update-restart"] > .toolbarbutton-badge-stack > .toolbarbutton-badge {
+  background-image: url(chrome://browser/skin/update-badge.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  -moz-context-properties: fill !important;
+  width: 14px !important;
+  height: 14px !important;
 }

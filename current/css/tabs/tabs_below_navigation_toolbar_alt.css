@@ -38,6 +38,10 @@
   margin-top: 28px !important;
 }
 
+#main-window:not([tabsintitlebar]) #nav-bar {
+  margin-top: 18px !important;
+}
+
 /* add 'drag' feature to space above navigation toolbar */
 #main-window[tabsintitlebar] #navigator-toolbox,
 #main-window[tabsintitlebar] #nav-bar {

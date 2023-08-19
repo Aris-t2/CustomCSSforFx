@@ -82,3 +82,15 @@
 #urlbar .urlbarView-results > .urlbarView-row[has-url="true"]:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
   display: none !important;
 }
+
+.urlbarView-row[rich-suggestion] > .urlbarView-row-inner > .urlbarView-favicon {
+  width: 16px !important;
+  height: 16px !important;
+  flex-basis: 16px !important;
+}
+
+.urlbarView-row:not([rich-suggestion]),
+.urlbarView-row[rich-suggestion][icon-size="16"] {
+  --urlbarView-icon-margin-start: 0px !important;
+  --urlbarView-icon-margin-end: 7px !important;
+}

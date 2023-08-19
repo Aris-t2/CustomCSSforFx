@@ -31,7 +31,7 @@
 }
 
 /* Windows code */
-@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows) {
 
   #context-navigation :is(menu, menuitem, menucaption),
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
@@ -61,21 +61,7 @@
 
 }
 
-/* code for Unix (macOS/Linux) */
-@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
-
-  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
-	margin: 0 !important;
-	width: 16px !important;
-	height: 16px !important;
-  }
-
-  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
-	margin-inline-start: 6px !important;
-  }
-
-}
-
+/* code for Linux */
 @media not (-moz-platform: windows) {
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
@@ -89,6 +75,7 @@
   }
 
 }
+
 
 @media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
 
