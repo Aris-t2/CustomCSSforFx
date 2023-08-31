@@ -4,7 +4,6 @@
 
 
 @media (-moz-platform: windows) {
-  @media not all and (-moz-windows-classic) {
 	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
 	#PersonalToolbar #PlacesToolbar toolbarbutton,
 	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
@@ -35,16 +34,12 @@
 	  padding-right: unset !important;
 	  width: unset !important;
 	}
-  }
 }
 
 #PersonalToolbar toolbarbutton.bookmark-item:not(.subviewbutton, [disabled=true], [open]):hover,
 #PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
 #PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
-#PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack {
-  background-color: transparent !important;
-}
-
+#PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack,
 #PersonalToolbar toolbarbutton.bookmark-item:hover:active:not(.subviewbutton, [disabled="true"]),
 #PersonalToolbar toolbarbutton.bookmark-item[open="true"],
 #PersonalToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,

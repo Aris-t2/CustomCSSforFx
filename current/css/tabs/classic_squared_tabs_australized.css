@@ -333,7 +333,7 @@
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
   min-height: var(--classic_squared_tabs_tab_height) !important;
 }
-#TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+#TabsToolbar #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
   min-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
   max-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
 }
@@ -486,8 +486,8 @@
   min-height: unset !important;
 }
 
-#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
-  min-height: var(--tab-min-height) !important;
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
+  min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 
 .tab-close-button {
@@ -573,7 +573,7 @@
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
 }
 
-:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow="true"]) {
+:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow]) {
   padding-inline-start: 0 !important;
   margin-inline-start: 0 !important;
 }

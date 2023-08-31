@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.4.0
+  Current version: 4.4.1
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -553,6 +553,7 @@
 
 /* Tab appearance based on tabs known from Firefox 57 - 88 */
 /* @import "./css/tabs/default_tabs_photon.css"; /**/
+/* @import "./css/tabs/default_tabs_photon_alt.css"; /**/ /* file from v4.2.7 -no support- */
 
 
 /* ======================================================================================
@@ -721,6 +722,7 @@
 @import "./css/tabs/tab_icon_colors.css"; /**/
 /* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/tabs_firefox_view_button_hidden.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* Has to be used along with 'classic_squared_tabs.css' */
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
@@ -734,6 +736,7 @@
 /* @import "./css/tabs/tab_maxwidth.css"; /**/
 /* @import "./css/tabs/tab_titles_remove_blur.css"; /**/
 /* @import "./css/tabs/alltabs_button_always_visible.css"; /**/  /* hidden, if multiple tab rows are used */
+/* @import "./css/tabs/alltabs_button_always_hidden.css"; /**/ 
 /* @import "./css/tabs/pinnedtab_empty_favicon_hidden.css"; /**/
 
 /* [!] edit target file to select which items to hide */
@@ -747,6 +750,7 @@
 
 @import "./css/generalui/private_mode_indicator_hidden.css"; /**/
 @import "./css/generalui/bookmark_icons_colorized.css"; /**/
+/* @import "./css/generalui/searchbookmarks_hidden.css"; /**/
 /* @import "./css/generalui/bookmarks_smaller_more_bookmarks_icon.css"; /**/
 /* @import "./css/generalui/send_to_device_menuitems_hidden.css"; /**/
 /* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/

@@ -4,6 +4,6 @@
 
 
 #alltabs-button{
-  visibility: visible !important;
-  display: flex !important;
+  visibility: collapse !important;
+  display: none !important;
 }
