@@ -3,11 +3,12 @@
 /****************************************************************************************/
 
 
-.urlbarView-row[label] {
-  margin-top: 0px !important;
+/* dropmarker icon / arrow */
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button .toolbarbutton-icon {
+  list-style-image: url("../../image/nightly.png") !important;
+  width: 16px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }
 
-.urlbarView-row[label],
-.urlbarView-row[label]::before {
-  display: none !important;
-}
+

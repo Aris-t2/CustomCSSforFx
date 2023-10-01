@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.4.1
+  Current version: 4.4.2
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -88,7 +88,7 @@
     
 	- bookmarks toolbar settings
     - BOOKMARKS TOOLBAR - MULTIPLE LINES
-    - AeroGlass TOOLBARS / WIN10 fix for GLASS8
+    - AeroGlass TOOLBARS / WIN10 fix for GLASS8 (not supported by Firefox 117+)
     - TOOLBAR TEXT MODES
       - icons+text / text only
 	
@@ -493,12 +493,13 @@
    -----------------------------------
    
    [!] only use one option at a time
-   [!] requires 'appbutton_in_titlebar_icon_only.css' to be active
+   [!] requires 'appbutton_in_titlebar_icon_only.css' or 'appbutton_in_titlebar_label_and_icon.css' to be active
 */
 
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_browser_logo.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_nightly.css"; /**/
  
 
 /* -------------------------------------------------------------------------
@@ -1073,13 +1074,14 @@
    
    [!] WIN10 fix for GLASS8
    [!] EXPERIMENTAL
+   [!] not supported by Firefox 117+
 */
 
 /* @import "./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css"; /**/
 /* @import "./css/toolbars/general_toolbar_colors_bookmarks_toolbar_aeroglass.css"; /**/
 /* @import "./css/toolbars/general_toolbar_colors_tabs_toolbar_aeroglass.css"; /**/
 
-/* Windows 10 fix for Glass8 - Glass8 required for 'Windows 7'-like window transparency */
+/* Windows 10 fix for Glass8 - Glass8 required for 'Windows 7'-like window transparency (not supported by Firefox 117+) */
 /* @import "./css/toolbars/general_toolbar_colors_aeroglass_windows10_glass8.css"; /**/
 
 

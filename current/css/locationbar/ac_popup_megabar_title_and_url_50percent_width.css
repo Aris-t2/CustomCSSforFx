@@ -13,20 +13,20 @@
   margin-inline-start: 10px !important;
 }
 
-#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap {
+#urlbar .urlbarView-row:not([has-url]) .urlbarView-no-wrap {
   min-width: 100% !important;
   width: 100% !important;
 }
 
-#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
   left: calc(50% + 10px) !important; /* 50% + 10px url space */
 }
 
-#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url]) .urlbarView-no-wrap .urlbarView-action {
   left: calc(50% + 0px) !important;
 }
 
@@ -79,6 +79,11 @@
   display: none !important;
 }
 
+.urlbarView-row[label],
+.urlbarView-row[label]::before {
+  display: none !important;
+}
+
 /* use different width values to go from  50/50 to e.g. 40/60 */
 /*
 #urlbar .urlbarView-no-wrap {
@@ -90,14 +95,14 @@
   width: 60% !important;
 }
 
-#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;
   left: calc(40% + 10px) !important;
 }
-#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
-#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+#urlbar .urlbarView-results[wrap] .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-results[wrap] .urlbarView-row:not([has-url]) .urlbarView-no-wrap .urlbarView-action {
   left: calc(40% + 0px) !important;
 }
 */

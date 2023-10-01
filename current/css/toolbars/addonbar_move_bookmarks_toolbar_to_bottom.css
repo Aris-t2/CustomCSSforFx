@@ -8,7 +8,7 @@
 
 :root {
   --bookmark_items_lines: 1 !important; /* override multiple bookmark lines option */
-  --addonbar_height: 27px;
+  --addonbar_height: 25px;
 }
 
 /* move bookmarks toolbar to bottom + style bookmarks toolbar */
@@ -29,9 +29,6 @@
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--lwt-header-image) !important;
-}
-#PersonalToolbar > *  {
-  min-height: calc( var(--addonbar_height) - 3px) !important;
 }
 
 /* free some space below content */
@@ -110,22 +107,23 @@
   visibility: inherit !important;
 }
 
-#PersonalToolbar .toolbarbutton-1 {
-  margin: 0px !important; 
-}
-
 #PersonalToolbar .toolbaritem-combined-buttons {
   margin-inline: 0px !important;
+}
+
+/*
+#PersonalToolbar .toolbarbutton-1 {
+  margin: 0px !important; 
 }
 
 #PersonalToolbar toolbarbutton {
   padding: 0px !important;
 }
-
+/*
 #PersonalToolbar .toolbarbutton-1 {
   --toolbarbutton-inner-padding: 1px !important;
   --toolbarbutton-outer-padding: 0px !important;
-}
+}*/
 
 #PersonalToolbar #bookmarks-menu-button {
   -moz-box-align: center !important;
@@ -135,4 +133,8 @@
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #browser,
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #customization-container {
   margin-bottom: var(--addonbar_height) !important; 
+}
+
+#PersonalToolbar .toolbarbutton-1 {
+  margin-block: 0px !important; 
 }

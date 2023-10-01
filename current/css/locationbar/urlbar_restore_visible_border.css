@@ -4,7 +4,11 @@
 
 
 :root{
-  --urlbar_border_color: var(--chrome-content-separator-color);
+  --urlbar_border_color: color-mix(in srgb, currentColor 20%, transparent);
+
+  &:-moz-lwtheme {
+    --urlbar_border_color: rgba(0,0,0,.3);
+  }
 }
 
 #urlbar:not([focused="true"]) #urlbar-background,

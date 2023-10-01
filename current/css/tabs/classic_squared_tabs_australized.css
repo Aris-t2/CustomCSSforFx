@@ -328,6 +328,7 @@
 }
 
 /* reduce minimum tab height */
+.tabbrowser-tab,
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {

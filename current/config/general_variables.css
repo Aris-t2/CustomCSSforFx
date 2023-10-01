@@ -49,7 +49,7 @@
   --search-one-offs_labels_height: 100px !important;
     
   /* for addonbar_move_bookmarks_toolbar_to_bottom.css */
-  --addonbar_height: 27px !important;
+  --addonbar_height: 25px !important;
 
   /* for ac_popup_result_font_size.css */
   --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */

@@ -12,7 +12,7 @@
 */
 
 :root {
-  --search-one-offs_labels_height: 200px;
+  --search-one-offs_labels_height: 100px;
 }
 
 #PopupSearchAutoComplete .search-panel-one-offs {

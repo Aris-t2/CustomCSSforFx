@@ -21,31 +21,31 @@
   width: 100% !important;
   height: 100% !important;
   border-radius: 10000px !important;
-  padding: 6px 12px !important; 
+  padding: 12px !important; 
   background-color: #f9f9fa !important;
 }
 
 #main-window[uidensity=compact] #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
 #main-window[uidensity=compact] #nav-bar #back-button > .toolbarbutton-icon {
-  padding: 6px 9px !important; 
+  padding: 10px !important; 
 }
 
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
 #main-window[uidensity=touch] #nav-bar #back-button > .toolbarbutton-icon {
-  padding: 6px 14px !important;
+  padding: 14px !important;
 }
 
 #main-window #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button .toolbarbutton-icon,
 #main-window #nav-bar #forward-button > .toolbarbutton-icon {
   width: 100% !important;
   /*height: 100% !important;*/
-  padding: 7px 7px 7px 14px !important;
+  padding: 8px 8px 8px 14px !important;
 }
 
 
 #main-window[uidensity=compact] #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button .toolbarbutton-icon,
 #main-window[uidensity=compact] #nav-bar #forward-button > .toolbarbutton-icon {
-  padding: 5px 5px 5px 12px !important; 
+  padding: 6px 6px 6px 12px !important; 
 }
 
 #main-window[uidensity=touch] #navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button > .toolbarbutton-icon,
@@ -59,6 +59,10 @@
 
 #main-window #nav-bar #back-button .toolbarbutton-icon {
   opacity: 1 !important;
+}
+
+#main-window #nav-bar #back-button[disabled] .toolbarbutton-icon {
+  filter: brightness(90%);
 }
 
 /* override classic toolbar buttons code */

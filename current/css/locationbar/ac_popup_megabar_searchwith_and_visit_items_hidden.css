@@ -5,7 +5,7 @@
 
 /* hide visit and search items*/
 :is(#urlbar,.megabar) .urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=dynamic]),
-:is(#urlbar,.megabar) .urlbarView-row:not([has-url="true"]) {
+:is(#urlbar,.megabar) .urlbarView-row:not([has-url]) {
   display: none !important;
 }
 

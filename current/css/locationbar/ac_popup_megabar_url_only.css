@@ -17,7 +17,7 @@
   padding-inline-start: 0 !important;
 }
 
-#urlbar .urlbarView-row[type="switchtab"][has-url="true"] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
 #urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
   display: block !important;

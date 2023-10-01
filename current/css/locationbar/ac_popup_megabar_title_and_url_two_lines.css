@@ -14,8 +14,9 @@
 }
 #urlbar .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-top: 2px !important;
-  padding-inline-start: calc(6px + 1px + 16px) !important;
+  /*padding-inline-start: calc(6px + 1px + 16px) !important;*/
 }
+
 #urlbar[actionoverride] .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
 #urlbar .urlbarView-results > .urlbarView-row[has-url]:not([type$=tab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator {
   display: none !important;
@@ -23,28 +24,28 @@
 
 /* support for heuristic items: search, remote tab, switch to tab */
 #urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
-#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator {
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator {
   display: none !important;
 }
-
+/*
 #urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap,
-#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap {
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap {
   padding-bottom: 19px !important;
 }
 
 #urlbar .urlbarView-results > .urlbarView-row:is([type=remotetab]):not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-no-wrap {
   padding-bottom: 15px !important;
-}
+}*/
 
 #urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
-#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
 #urlbar .urlbarView-results > .urlbarView-row:is([type=remotetab]):not([selected]):not(:hover) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
   display: block !important;
   position: absolute !important;
 }
 
 #urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
-#urlbar .urlbarView-results > .urlbarView-row:not([has-url="true"]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+#urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
   margin-bottom: -37px !important;
   padding-inline-start: 24px !important;
 }
@@ -79,7 +80,7 @@
   display: none !important;
 }
 
-#urlbar .urlbarView-results > .urlbarView-row[has-url="true"]:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
+#urlbar .urlbarView-results > .urlbarView-row[has-url]:is([type=remotetab],[sponsored],[type=switchtab],[type=search]) > .urlbarView-row-inner > .urlbarView-url {
   display: none !important;
 }
 
@@ -93,4 +94,9 @@
 .urlbarView-row[rich-suggestion][icon-size="16"] {
   --urlbarView-icon-margin-start: 0px !important;
   --urlbarView-icon-margin-end: 7px !important;
+}
+
+.urlbarView-row[label],
+.urlbarView-row[label]::before {
+  display: none !important;
 }
