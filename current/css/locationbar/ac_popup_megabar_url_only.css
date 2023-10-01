@@ -29,3 +29,7 @@
   visibility: visible !important;
   display: inherit !important;
 }
+
+#urlbar .urlbarView-button-menu {
+  z-index: 1 !important;
+}

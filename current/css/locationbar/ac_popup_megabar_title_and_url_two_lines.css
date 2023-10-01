@@ -100,3 +100,7 @@
 .urlbarView-row[label]::before {
   display: none !important;
 }
+
+#urlbar .urlbarView-button-menu {
+  z-index: 1 !important;
+}

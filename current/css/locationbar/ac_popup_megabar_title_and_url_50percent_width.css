@@ -84,6 +84,11 @@
   display: none !important;
 }
 
+#urlbar .urlbarView-button-menu {
+  z-index: 1 !important;
+}
+
+
 /* use different width values to go from  50/50 to e.g. 40/60 */
 /*
 #urlbar .urlbarView-no-wrap {
