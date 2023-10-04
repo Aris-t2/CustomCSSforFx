@@ -79,9 +79,12 @@
   display: none !important;
 }
 
-.urlbarView-row[label],
 .urlbarView-row[label]::before {
   display: none !important;
+}
+
+.urlbarView-row[label] {
+  margin-block-start: unset !important;
 }
 
 #urlbar .urlbarView-button-menu {

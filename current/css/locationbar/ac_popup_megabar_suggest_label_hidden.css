@@ -3,11 +3,11 @@
 /****************************************************************************************/
 
 
-.urlbarView-row[label] {
-  margin-top: 0px !important;
-}
-
-.urlbarView-row[label],
 .urlbarView-row[label]::before {
   display: none !important;
+}
+
+.urlbarView-row[label] {
+  margin-top: 0px !important;
+  margin-block-start: unset !important;
 }
