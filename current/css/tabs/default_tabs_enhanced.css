@@ -3,10 +3,10 @@
 /************************************************************************************************/
 
 
-.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected], [multiselected]) {
   background-color: color-mix(in srgb, currentColor 11%, transparent);
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true], [multiselected]) {
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
   background-color: color-mix(in srgb, currentColor 17%, transparent) !important;
 }

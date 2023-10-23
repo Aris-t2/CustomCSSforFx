@@ -24,8 +24,8 @@
   margin-block: 0px !important;
 }
 
-.tab-background[multiselected=true],
-.tab-background[selected=true] {
+.tab-background[multiselected],
+.tab-background[selected] {
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--toolbar-bgimage) !important;
 }
@@ -127,8 +127,8 @@
 }
 
 /* remove active tabs left and right tab border color when using lw-themes */
-:root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
-:root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+:root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
+:root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
   box-shadow: unset !important;
 }
 

@@ -286,7 +286,7 @@
 
 /* loading animation color */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab,
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected=true]) {
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected]) {
   --tab-loading-fill: var(--classic_squared_tabs_tab_default_loading_icon_color) !important;
 }
 .tab-throbber[busy]::before,
