@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.4.3
+  Current version: 4.4.4
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -958,11 +958,13 @@
 
    [!] only use one option at a time
    [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected on current Firefox versions and was removed
+   [!] 'top_toolbar_colors_v2.css' mainly for 'tabs below navigation toolbar option'
 */
 
 
 /* override titlebars and tab toolbars colors */
-/* @import "./css/toolbars/top_toolbar_colors.css"; /**/ 
+/* @import "./css/toolbars/top_toolbar_colors.css"; /**/
+/* @import "./css/toolbars/top_toolbar_colors_v2.css"; /**/ 
 
 
 /* ----------------------

@@ -576,14 +576,13 @@
 	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
 	  padding-top: 5px !important;
 	}
-	
 	#main-window[sizemode="maximized"] #toolbar-menubar[inactive] + #TabsToolbar > .titlebar-buttonbox-container toolbarbutton {
 	  padding-top: 10px !important;
 	  padding-bottom: 6px !important;
 	}
 }
 
-/* Fx 105+ - remove Firefox-view-button from tabs toolbar */
+/* Fx 105+ - remove Firefox-view-button from tabs toolbar *//*
 :root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
 :root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
@@ -594,7 +593,7 @@
   margin-inline-start: 0 !important;
 }
 
-#main-window:not([customizing]) #TabsToolbar #firefox-view-button {
+#main-window:not([customizing]) #TabsToolbar :is(#firefox-view-button, #wrapper-firefox-view-button) {
   display: none !important;
 }
 
@@ -602,12 +601,12 @@
   list-style-image: url("chrome://branding/content/about-logo.png") !important;
 }
 
-#main-window[customizing] #TabsToolbar #firefox-view-button image {
+#main-window[customizing]*/ #TabsToolbar #firefox-view-button image {
   width: 16px !important;
   height: 16px !important;
 }
 
-/* Fx 106+*/					
+/* Fx 106+ */
 #private-browsing-indicator-with-label {
   display: none !important;
 }

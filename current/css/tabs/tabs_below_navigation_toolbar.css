@@ -20,13 +20,15 @@
 }
 
 /* overrides other settings too */
-#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
-  appearance: none;
-  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
-}
-
+#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme),
 #main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme){
   appearance: none !important;
+}
+
+@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
+	#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
+	  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
+	}
 }
 
 #tabbrowser-tabs {

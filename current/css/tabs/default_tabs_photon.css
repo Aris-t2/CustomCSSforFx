@@ -28,7 +28,11 @@
   margin-block: 0px !important;
 }
 
-.tab-background:is([selected],[multiselected]) {
+.tab-background:is([selected],[multiselected]):not(:-moz-lwtheme) {
+  background-image: var(--classic_squared_tabs_active_tab) !important;
+}
+
+.tab-background:is([selected],[multiselected]):-moz-lwtheme {
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--toolbar-bgimage) !important;
 }
@@ -86,7 +90,7 @@
 
 /* border between navigation toolbar and tabs toolbar */
 #nav-bar:not(:-moz-lwtheme) {
-  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--chrome-content-separator-color) !important;
+  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
 #nav-bar:-moz-lwtheme {
@@ -196,7 +200,7 @@
 	}
 }
 
-/* Fx 105+ - remove Firefox-view-button from tabs toolbar */
+/* Fx 105+ - remove Firefox-view-button from tabs toolbar *//*
 :root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
 :root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
@@ -207,7 +211,7 @@
   margin-inline-start: 0 !important;
 }
 
-#main-window:not([customizing]) #TabsToolbar #firefox-view-button {
+#main-window:not([customizing]) #TabsToolbar :is(#firefox-view-button, #wrapper-firefox-view-button) {
   display: none !important;
 }
 
@@ -215,10 +219,10 @@
   list-style-image: url("chrome://branding/content/about-logo.png") !important;
 }
 
-#main-window[customizing] #TabsToolbar #firefox-view-button image {
+#main-window[customizing]*//* #TabsToolbar #firefox-view-button image {
   width: 16px !important;
   height: 16px !important;
-}
+}*/
 
 /* Fx 106+ */
 #private-browsing-indicator-with-label {
@@ -255,5 +259,3 @@
 #TabsToolbar .titlebar-spacer[type="post-tabs"] {
   display: none !important;
 }
-
-/**/

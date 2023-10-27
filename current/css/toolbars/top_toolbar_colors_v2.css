@@ -17,17 +17,13 @@
 }
 
 #main-window:not(:-moz-lwtheme) #titlebar,
-#main-window:not(:-moz-lwtheme) #toolbar-menubar,
-#main-window:not(:-moz-lwtheme) #TabsToolbar,
-#main-window:not(:-moz-lwtheme) #navigator-toolbox{
+#main-window:not(:-moz-lwtheme) #toolbar-menubar  {
   background: var(--top_toolbars_background) !important;
   color: var(--top_toolbars_text) !important;
 }
 
 #main-window:not(:-moz-lwtheme):-moz-window-inactive #titlebar,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #toolbar-menubar,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #TabsToolbar,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #navigator-toolbox {
+#main-window:not(:-moz-lwtheme):-moz-window-inactive #toolbar-menubar {
   background: var(--top_toolbars_background_inactive) !important;
   color: var(--top_toolbars_text_inactive) !important;
 }
@@ -40,17 +36,9 @@
   color: var(--top_toolbars_text_inactive) !important;
 }
 
-/* might not work through userChrome */
-#TabsToolbar toolbarbutton:not(:-moz-lwtheme),
-#scrollbutton-up:not(:-moz-lwtheme),
-#scrollbutton-down:not(:-moz-lwtheme),
 #main-window:not(:-moz-lwtheme) .titlebar-button,
 #main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover,
-#tabbrowser-arrowscrollbox::part(scrollbutton-up),
-#tabbrowser-arrowscrollbox::part(scrollbutton-down),
-arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up,
-arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover {
+#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover {
   fill: CurrentColor !important;
 }
 
