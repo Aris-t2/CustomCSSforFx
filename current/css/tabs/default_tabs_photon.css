@@ -235,7 +235,7 @@
 }
 
 /* fix jumping pinned tabs / tabs box */
-#TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+#TabsToolbar #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
   min-height: calc( var(--tab-min-height) - 2px ) !important;
   max-height: calc( var(--tab-min-height) - 2px ) !important;
 }

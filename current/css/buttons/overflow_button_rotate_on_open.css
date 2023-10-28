@@ -3,6 +3,6 @@
 /****************************************************************************************/
 
 
-#nav-bar-overflow-button[open="true"] .toolbarbutton-icon {
+#nav-bar-overflow-button[open] .toolbarbutton-icon {
   transform: rotate(90deg) !important;
 }

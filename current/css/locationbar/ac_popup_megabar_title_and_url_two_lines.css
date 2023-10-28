@@ -14,7 +14,7 @@
 }
 #urlbar .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-url {
   margin-top: 2px !important;
-  /*padding-inline-start: calc(6px + 1px + 16px) !important;*/
+  padding-inline-start: 23px !important;
 }
 
 #urlbar[actionoverride] .urlbarView-results > .urlbarView-row[has-url] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator,
@@ -27,8 +27,12 @@
 #urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-title-separator {
   display: none !important;
 }
+
+#urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap {
+  padding-bottom: 19px !important;
+}
+
 /*
-#urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap,
 #urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap {
   padding-bottom: 19px !important;
 }
@@ -44,7 +48,11 @@
   position: absolute !important;
 }
 
-#urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action,
+#urlbar .urlbarView-results > .urlbarView-row:is([type=search],[type=switchtab]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+  margin-bottom: 30px !important;
+  padding-inline-start: 24px !important;
+}
+
 #urlbar .urlbarView-results > .urlbarView-row:not([has-url]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
   /*margin-bottom: 30px !important;*/
   padding-inline-start: 24px !important;
@@ -114,3 +122,16 @@
 .urlbarView-row[role="presentation"][type="search"] .urlbarView-action {
   display: none !important;
 }
+
+/* Fx 119+ fix*/
+.urlbarView-results[wrap] > .urlbarView-row {
+    &[has-url] > .urlbarView-row-inner > .urlbarView-url {
+      &:-moz-locale-dir(ltr) {
+        margin-left: unset !important;
+      }
+      &:-moz-locale-dir(rtl) {
+        margin-right: unset !important;
+      }
+    }
+}
+  
