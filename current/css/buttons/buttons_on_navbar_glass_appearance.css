@@ -99,7 +99,8 @@
 #nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
 #nav-bar > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-text,
 #nav-bar > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
-#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#PanelUI-menu-button .toolbarbutton-badge-stack {
   background: rgba(151,152,153,.05) linear-gradient(rgba(251,252,253,.55), rgba(246,247,248,.17) 49%, 
 			  rgba(231,232,233,.25) 51%, rgba(225,226,229,.1)) !important;
   border-color: rgba(0,0,0,.10) rgba(0,0,0,.16) rgba(0,0,0,.18) !important;
@@ -128,7 +129,8 @@
 #nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
 #nav-bar > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
 #nav-bar > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
-#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon {
+#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#PanelUI-menu-button:not([open]):not(:active):hover .toolbarbutton-badge-stack {
   background-color: hsla(190,60%,70%,.3) !important;
   border-color: hsla(190,50%,65%,.8) hsla(190,50%,50%,.8) hsla(190,50%,40%,.8) !important;
   box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
@@ -160,7 +162,8 @@
 #nav-bar > .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
 #nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
 #nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
-#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack {
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#PanelUI-menu-button:not([disabled=true]):is([open],[checked],:hover:active,:active) .toolbarbutton-badge-stack {
   background-color: transparent !important;
   border-color: rgba(0,0,0,.65) rgba(0,0,0,.55) rgba(0,0,0,.5) !important;
   box-shadow: 0 0 6.5px rgba(0,0,0,.4) inset,
