@@ -7,6 +7,8 @@
   --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#f9f9fa,#f9f9fa);
   --tab-min-height_tnot: 32px;
   --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height_tnot) + 5px );
+  --tab_below_navigation_toolbar_bottom_padding_macOS: calc( var(--tab-min-height) + 8px );
+  --tab_below_navigation_toolbar_toolbox_top_padding_macOS: calc(-1px + var(--tab-min-height));
 }
 
 #TabsToolbar {
@@ -19,22 +21,11 @@
   z-index: 2;
 }
 
-/* overrides other settings too */
-#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme),
-#main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme){
-  appearance: none !important;
-}
-
-@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
-	#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
-	  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
-	}
-}
-
 #tabbrowser-tabs {
   width: 100%;
 }
 
+@media (-moz-platform: windows),(-moz-platform: linux) {
 #navigator-toolbox {
   position: relative;
   padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding);
@@ -58,6 +49,46 @@
   display: block;
 }
 
+}
+
+@media (-moz-platform: macos) {
+
+#navigator-toolbox {
+  position: relative;
+  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding_macOS);
+}
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+  padding-top: var(--tab_below_navigation_toolbar_toolbox_top_padding_macOS);
+}
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+  position: fixed;
+  top: 3px !important;
+  right: unset;
+  left: 0;
+  visibility: visible;
+  display: block;
+}
+
+#titlebar:-moz-lwtheme {
+  background-image: var(--lwt-header-image, var(--lwt-additional-images));
+  background-repeat: var(--lwt-background-tiling);
+  background-position: var(--lwt-background-alignment);
+}
+
+/* caption button position in maximized mode after moving to the top */
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
+  top: 0;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
+  height: 0px;
+}
+}
+
+/* remove unneeded items */
 #TabsToolbar .titlebar-buttonbox-container,
 #TabsToolbar .private-browsing-indicator,
 #TabsToolbar #window-controls,
@@ -68,6 +99,18 @@
 }
 
 /* lw themes support */
+/* overrides other settings too */
+#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme),
+#main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme){
+  appearance: none !important;
+}
+
+@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
+	#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
+	  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
+	}
+}
+
 #nav-bar {
   box-shadow: unset !important;
 }
@@ -112,12 +155,6 @@
   bottom: calc( -2 * var(--tab_below_navigation_toolbar_bottom_padding) + 8px );
   width: 100vw;
 }
-/*
-#TabsToolbar #tabbrowser-arrowscrollbox {
-  margin-top: 1px !important;
-  margin-bottom: -1px !important;
-}
-*/
 
 /* Fx 105+ */
 :root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
@@ -133,4 +170,19 @@
 /* Fx 106+ */
 #private-browsing-indicator-with-label {
   display: none !important;
+}
+
+@media (-moz-platform: macos) {
+#main-window[tabsintitlebar] #TabsToolbar {
+  padding-inline-end: 0px !important
+}
+
+/* draggable window */
+#main-window[tabsintitlebar] toolbox#navigator-toolbox{
+  -moz-window-dragging: drag !important;
+}
+
+:is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
+  -moz-window-dragging: no-drag !important;
+}	
 }

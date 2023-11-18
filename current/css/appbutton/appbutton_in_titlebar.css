@@ -380,3 +380,20 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
   width: 14px !important;
   height: 14px !important;
 }
+
+/* Force appbutton to the right */
+@media (-moz-platform: macos) {
+	
+#main-window[tabsintitlebar] #PanelUI-button {
+  right: 0 !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar {
+  padding-inline-end: 100px !important;
+}
+
+#main-window[tabsintitlebar] .titlebar-buttonbox-container {
+  padding-inline-end: 20px !important;
+}
+
+}

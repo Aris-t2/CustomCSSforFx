@@ -271,3 +271,29 @@
 #private-browsing-indicator-with-label {
   display: none !important;
 }
+
+@media (-moz-platform: macos) {
+	
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar {
+  visibility: collapse !important;
+}
+
+/* space above navigation toolbar (OS titlebar) */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 0px !important;
+}
+
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
+  margin-bottom: unset !important;
+}
+
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
+  position: fixed !important;
+  display:block !important;
+  top: -2px !important;
+  left: 0 !important;
+  right: unset !important;
+}
+	
+}

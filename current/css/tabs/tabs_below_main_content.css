@@ -29,7 +29,8 @@
   border-bottom: 1px solid threedshadow !important;
 }
 
-#main-window:not([inDOMFullscreen="true"]) #browser-bottombox {
+#main-window:not([inDOMFullscreen="true"]) #browser,
+#main-window:not([inDOMFullscreen="true"]) #customization-container {
   margin-bottom: var(--tab_below_main_content_bottom_margin) !important;
 }
 
@@ -51,7 +52,6 @@
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--lwt-header-image) !important;
 }
-
 
 /* ##### Caption buttons tweaks: min/max/restore/close ##### */
 
@@ -100,8 +100,15 @@
 	}
 }
 
+@media (-moz-platform: macos) {
+	
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+  padding-top: 24px !important;
+}
 
-#main-window:not([inDOMFullscreen="true"]) #browser,
-#main-window:not([inDOMFullscreen="true"]) #customization-container {
-  margin-bottom: var(--tab_below_main_content_toolbar_height) !important; 
+#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #titlebar {
+  height: 0 !important;
+  padding-top: 0 !important;
+}
+
 }

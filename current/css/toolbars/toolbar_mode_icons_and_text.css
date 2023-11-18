@@ -198,3 +198,29 @@ toolbar:not(#nav-bar) :is(#panic-button,#pocket-button):not([open]) .toolbarbutt
   -moz-box-align: center !important;
   align-items: center !important;
 }
+
+@media (-moz-platform: macos) {
+	
+/* fix for macOS */
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+  appearance: none !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+  /*background: var(--toolbarbutton-hover-background,hsla(0,0%,70%,.4)) !important;*/ /* broken in Fx 119, works in Fx 118 and 121 */
+  background: hsla(0,0%,70%,.4) !important;
+  border-radius: 4px !important;
+}
+
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:is([open],[checked],:hover:active,:active){
+  /*background: var(--toolbarbutton-active-background,hsla(0,0%,70%,.6)) !important;*/ /* broken in Fx 119, works in Fx 118 and 121 */
+  background: hsla(0,0%,70%,.65) !important;
+}
+	
+}

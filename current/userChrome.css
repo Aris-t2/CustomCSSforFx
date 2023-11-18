@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.4.6
+  Current version: 4.4.7
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -36,9 +36,6 @@
   ENABLING/DISABLING options:
   To activate an option: remove /* before @import
   To deactivate an option: add /* before @import
-
-  MacOS specific code:
-  Look for 'macOS fix' additions inside this file.
 
   EXPERIMENTAL settings:
   These are for testing purposes only an might get broken by any new browser update.
@@ -502,14 +499,6 @@
 /* @import "./css/appbutton/appbutton_in_titlebar_icon_only_nightly.css"; /**/
  
 
-/* -------------------------------------------------------------------------
-   Button in titlebar: MacOS fix - move 'appbutton in titlebar' to the right
-   -------------------------------------------------------------------------
-*/
-
-/* @import "./css/appbutton/appbutton_in_titlebar_macOS_fix.css"; /**/
-
-
 /* -------------------------
    Button in titlebar: color
    -------------------------
@@ -562,7 +551,7 @@
    ======================================================================================
    
    [!] only use one option at a time
-   [!] only use BELOW TITLEBAR or BELOW NAVIGATION BAR or BELOW MAIN CONTENT
+   [!] only use BELOW TITLEBAR or BELOW NAVIGATION BAR or BELOW MAIN CONTENT  <<<<< !!!
 */
 
 
@@ -582,11 +571,7 @@
    [!] Note: might require overriding url bars 'selection color' --> see corresponding area
 */
 
-/* Windows/Linux */
 /* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
-
-/* MacOS */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/
 
 
 /* Alternative for multi-lined tabs (Glitches might occur with inactive menubar!)
@@ -598,8 +583,6 @@
 /* [!] no menubar when OS titlebar is active */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_alt_force_hidden_menubar.css"; /**/
 
-
-/* @import "./css/tabs/tabs_below_navigation_toolbar_alt_macOS.css"; /**/
 
 /* Move tabs to a higher position 
    [!] not compatible to 'tabs toolbar - multiple tab lines' option
@@ -619,11 +602,7 @@
    [!] not compatible to 'tabs toolbar - multiple tab lines' option
 */
 
-/* Use this when on Windows/Linux */
 /* @import "./css/tabs/tabs_below_main_content.css"; /**/
-
-/* Use this when on MacOS */
-/* @import "./css/tabs/tabs_below_main_content_macOS.css"; /**/
 
 
 /* --------------------------------------------------------------------------------
@@ -914,7 +893,7 @@
    MENUBARS bookmarks popup
    ------------------------
    
-   [!] not compatible to MacOS or Linux
+   [!] not compatible with macOS or Linux
 */
 
 /* @import "./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css"; /**/
@@ -959,6 +938,7 @@
    [!] only use one option at a time
    [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected on current Firefox versions and was removed
    [!] 'top_toolbar_colors_v2.css' mainly for 'tabs below navigation toolbar option'
+   [!] Windows accent colors: about:config > browser.theme.windows.accent-color-in-tabs.enabled > true
 */
 
 
@@ -975,7 +955,6 @@
 @import "./css/toolbars/toolbars_old_padding.css"; /**/
 @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_remove_background_fog_win7.css"; /**/
-/* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/ /*  MacOS fix */
 
 /* [!] Adjustments for the searchbar placed on menubar */
 @import "./css/toolbars/searchbar_on_menubar_fix.css"; /**/
@@ -1092,13 +1071,10 @@
    ------------------
    
    [!] only use one option at a time
-   [!] macOS versions also offer alternative appearance on Linux
 */
 
 /* @import "./css/toolbars/toolbar_mode_icons_and_text.css"; /**/
-/* @import "./css/toolbars/toolbar_mode_icons_and_text_macOS.css"; /**/
 /* @import "./css/toolbars/toolbar_mode_text.css"; /**/
-/* @import "./css/toolbars/toolbar_mode_text_macOS.css"; /**/
 
 
 /* ==================================

@@ -34,3 +34,11 @@
 	  margin-inline-start: 24px !important;
 	}
 }
+
+@media (-moz-platform: macos) {
+	
+#TabsToolbar .titlebar-placeholder[type="caption-buttons"] {
+  margin-inline-start: 20px !important;
+}
+
+}
