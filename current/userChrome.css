@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.4.7
+  Current version: 4.4.8
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -523,9 +523,8 @@
    ==============
    
    [!] only use one option at a time
-   [!] custom tab colors are set inside color_variablesXXX.css file(s)
-   [!] curved tabs known from Firefox 29-56 will not be restored by the project
-   [!] If issues on Firefox 107 occur, try to set 'about:config' > 'layout.css.moz-box-flexbox-emulation.enabled' > 'true'.
+   [!] custom tab colors can be set inside color_variablesXXX.css file(s)
+   [!] curved tabs known from Firefox 29-56 will not be added to this project
    
 */
 
@@ -629,7 +628,7 @@
    [!] BUG: dragging tabs does not work with multi lined tabs
    [!] not compatible with 'tabs toolbar - below main content' option
    [!] not compatible with 'newtab button always_visible' option
-   [!] only compatible with 'tabs below navigation toolbar alt version'
+   [!] only compatible with 'tabs below navigation toolbar >> alt << version'
 */
 
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/
@@ -921,9 +920,6 @@
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
-
-/* [!] create additional toolbar for 'bookmarks toolbar items' on navigation toolbar */
-/* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar.css"; /**/
 
 
 /* ------------------------

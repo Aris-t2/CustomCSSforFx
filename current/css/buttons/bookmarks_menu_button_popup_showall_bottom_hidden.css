@@ -4,6 +4,7 @@
 
 
 /* Show All Bookmarks (bottom entry) */
+menuseparator.hide-if-empty-places-result,
 #BMB_bookmarksShowAll {
   display: none !important;
 }

@@ -72,7 +72,7 @@ toolbar:not(#TabsToolbar):not(:-moz-lwtheme) :is(.scrollbutton-up,.scrollbutton-
 }
 
 /*orange*/
-:is(#open-file-button,#home-button,#feed-button){
+:is(#open-file-button,#home-button,#feed-button,#reset-pbm-toolbar-button){
   fill: orange !important;
 }
 

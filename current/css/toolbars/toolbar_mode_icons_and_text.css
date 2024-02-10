@@ -106,6 +106,23 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   -moz-default-appearance: toolbarbutton !important;
 }
 
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+	toolbar:not(#TabsToolbar) #OtherBookmarks,
+	toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+	  appearance: unset !important;
+	  -moz-default-appearance: toolbarbutton !important;
+	}
+	toolbar:not(#TabsToolbar) #OtherBookmarks:hover,
+	toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:hover,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1:hover,
+	toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:hover{
+	  appearance: auto !important;
+	  -moz-default-appearance: toolbarbutton !important;
+	}
+}
+
 toolbar:not(#TabsToolbar) #OtherBookmarks .toolbarbutton-text,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 .toolbarbutton-text,
 toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,

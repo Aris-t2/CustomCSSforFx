@@ -64,10 +64,8 @@
 /* code for Linux */
 @media not (-moz-platform: windows) {
 
-  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) image {
-	margin: 0 !important;
-	width: 16px !important;
-	height: 16px !important;
+  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
+    padding: 0px !important;
   }
 
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {

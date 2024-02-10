@@ -31,6 +31,19 @@
 	  background-color: -moz-Dialog !important;
 	}
 	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+ 	#preferences-stack,.sticky-container,
+	page,
+	.dialogBox .groupbox-title,
+	#dialogFrame,
+	.main-content,
+	.groupbox-body,
+	#dialogFrame {
+	  color: white !important;
+	}
+	
+	}
+	
 	.groupbox-body{
 	  padding: 2px !important;
 	  margin: 2px !important;
@@ -73,6 +86,13 @@
 
 	#categories .category {
 	  transition-duration: unset !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+
+		#categories .category:not([selected]):not(:hover){
+		  color: white !important;
+		}
 	}
 	
 	/* groupbox */
@@ -125,6 +145,12 @@
 	  padding-inline-start: 20px !important;
 	  margin-top: -35px !important;
 	  margin-inline-start: -20px !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		#mainPrefPane {
+		  color: white !important;
+		}
 	}
 	
 	textbox {
