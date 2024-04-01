@@ -24,16 +24,14 @@
   margin-block: 0px !important;
 }
 
-.tab-background:is([selected],[multiselected]):not(:-moz-lwtheme) {
+:root:not([lwtheme]) .tab-background:is([selected],[multiselected]) {
   background-image: var(--classic_squared_tabs_active_tab) !important;
 }
 
-.tab-background:is([selected],[multiselected]):-moz-lwtheme {
+:root[lwtheme] .tab-background:is([selected],[multiselected]) {
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--toolbar-bgimage) !important;
 }
-
-
 
 /* remove left and right tab spaces */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
@@ -72,7 +70,7 @@
   background-color: Highlight !important;
 }
 
-#main-window:not([lwtheme-image="true"]):not([lwtheme-mozlightdark]):-moz-lwtheme .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+:root[lwtheme]:not([lwtheme-image="true"]):not([lwtheme-mozlightdark]) .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
   background-color: var(--tab-line-color,Highlight) !important;
 }
 
@@ -82,11 +80,11 @@
 }
 
 /* border between navigation toolbar and tabs toolbar */
-#nav-bar:not(:-moz-lwtheme) {
+:root:not([lwtheme])  #nav-bar {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
-#nav-bar:-moz-lwtheme {
+:root[lwtheme] #nav-bar {
   box-shadow: unset !important;
 }
 
@@ -132,12 +130,12 @@
 }
 
 /* remove active tabs left and right tab border color when using lw-themes */
-:root:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme,
-:root:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme {
+:root[lwtheme]:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background,
+:root[lwtheme]:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background {
   box-shadow: unset !important;
 }
 
-.tab-background:is([selected], [multiselected]):-moz-lwtheme {
+:root[lwtheme] .tab-background:is([selected], [multiselected]){
   border: 0 !important;
 }
 
@@ -147,8 +145,8 @@
 }
 
 /* Fx 100+ outline fix */
-#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme,
-.tab-background[selected]:-moz-lwtheme {
+:root[lwtheme] #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon,
+:root[lwtheme] .tab-background[selected] {
   outline: unset !important;
 }
 
@@ -158,30 +156,6 @@
 	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
 	  margin-top: -1px !important;
 	}
-}
-
-/* Fx 105+ - remove Firefox-view-button from tabs toolbar *//*
-:root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
-:root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
-  border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
-}
-
-:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow]) {
-  padding-inline-start: 0 !important;
-  margin-inline-start: 0 !important;
-}
-
-#main-window:not([customizing]) #TabsToolbar :is(#firefox-view-button, #wrapper-firefox-view-button) {
-  display: none !important;
-}
-
-#main-window[customizing] #TabsToolbar #firefox-view-button {
-  list-style-image: url("chrome://branding/content/about-logo.png") !important;
-}
-
-#main-window[customizing] #TabsToolbar #firefox-view-button image {
-  width: 16px !important;
-  height: 16px !important;
 }
 
 /* Fx 106+ */
@@ -195,4 +169,8 @@
 
 .tabbrowser-tab:is([selected],[multiselected]) {
   z-index: 100 !important;
+}
+
+#main-window:-moz-window-inactive #titlebar {
+  opacity: 1.0 !important;
 }

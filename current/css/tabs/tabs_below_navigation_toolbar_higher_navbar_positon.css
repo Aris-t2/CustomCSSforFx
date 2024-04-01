@@ -10,7 +10,7 @@
   margin-top: unset !important;
 }
 
-#main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
+:root:not([lwtheme])[tabsintitlebar] #nav-bar,
 #main-window[tabsintitlebar] #nav-bar {
   margin-inline-end: 145px !important;
   appearance: none !important;
@@ -97,7 +97,7 @@
 }
 
 @media all and (-moz-windows-classic) {
-  #main-window[tabsintitlebar] #nav-bar:not(:-moz-lwtheme),
+  :root:not([lwtheme])[tabsintitlebar] #nav-bar,
   #main-window[tabsintitlebar] #nav-bar {
 	margin-inline-end: 0px !important;
   }

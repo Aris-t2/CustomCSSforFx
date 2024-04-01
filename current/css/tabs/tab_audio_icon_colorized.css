@@ -13,24 +13,24 @@
   fill: #FFE900 !important;/* var(--yellow-50) */
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[soundplaying] {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[soundplaying] {
   fill: lightgreen !important;
 }
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[muted] {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[muted] {
   fill: #ff5a5a !important;
 }
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext .tab-icon-overlay[activemedia-blocked] {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[activemedia-blocked] {
   fill: orange !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[soundplaying] {
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-icon-overlay[soundplaying] {
 	  fill: lightgreen !important;
 	}
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[muted] {
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-icon-overlay[muted] {
 	  fill: #ff5a5a !important;
 	}
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme .tab-icon-overlay[activemedia-blocked] {
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-icon-overlay[activemedia-blocked] {
 	  fill: orange !important;
 	}
 }

@@ -10,10 +10,10 @@
   margin-top: -1px !important;
 }
 
-#PersonalToolbar:not(:-moz-lwtheme) {
+:root:not([lwtheme]) #PersonalToolbar {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
 }
 
-#nav-bar:not(:-moz-lwtheme) {
+:root:not([lwtheme]) #nav-bar {
   box-shadow: unset !important;
 }

@@ -4,15 +4,15 @@
 
 
 /* tabs toolbar background */
-#main-window #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme),
-#main-window #navigator-toolbox #TabsToolbar:-moz-lwtheme,
+:root:not([lwtheme]) #navigator-toolbox #TabsToolbar,
+:root[lwtheme] #navigator-toolbox #TabsToolbar,
 #main-window #navigator-toolbox #TabsToolbar {
   background: unset !important;
   border: unset !important;
   box-shadow: unset !important;
 }
 
-#main-window[sizemode="normal"]  #TabsToolbar:not(:-moz-lwtheme){
+:root:not([lwtheme])[sizemode="normal"] #TabsToolbar {
   border-left: unset !important;
   border-right: unset !important;
 }

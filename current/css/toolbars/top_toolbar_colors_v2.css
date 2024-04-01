@@ -16,29 +16,29 @@
   --top_toolbars_text_inactive: #999999;
 }
 
-#main-window:not(:-moz-lwtheme) #titlebar,
-#main-window:not(:-moz-lwtheme) #toolbar-menubar  {
+:root:not([lwtheme]) #titlebar,
+:root:not([lwtheme]) #toolbar-menubar  {
   background: var(--top_toolbars_background) !important;
   color: var(--top_toolbars_text) !important;
 }
 
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #titlebar,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #toolbar-menubar {
+:root:not([lwtheme]):-moz-window-inactive #titlebar,
+:root:not([lwtheme]):-moz-window-inactive #toolbar-menubar {
   background: var(--top_toolbars_background_inactive) !important;
   color: var(--top_toolbars_text_inactive) !important;
 }
 
-#main-window:not(:-moz-lwtheme) #main-menubar > menu > label {
+:root:not([lwtheme]) #main-menubar > menu > label {
   color: var(--top_toolbars_text) !important;
 }
 
-#main-window:not(:-moz-lwtheme):-moz-window-inactive #main-menubar > menu > label {
+:root:not([lwtheme]):-moz-window-inactive #main-menubar > menu > label {
   color: var(--top_toolbars_text_inactive) !important;
 }
 
-#main-window:not(:-moz-lwtheme) .titlebar-button,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button,
-#main-window:not(:-moz-lwtheme):-moz-window-inactive .titlebar-button.titlebar-close:hover {
+:root:not([lwtheme]) .titlebar-button,
+:root:not([lwtheme]):-moz-window-inactive .titlebar-button,
+:root:not([lwtheme]):-moz-window-inactive .titlebar-button.titlebar-close:hover {
   fill: CurrentColor !important;
 }
 

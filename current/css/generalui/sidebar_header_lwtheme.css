@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#sidebar-header:-moz-lwtheme {
+:root[lwtheme] #sidebar-header {
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--lwt-header-image) !important;
   background-position: bottom left !important;
@@ -11,13 +11,13 @@
   border-bottom: 0 !important;
 }
 
-#main-window:-moz-lwtheme-darktext #sidebar-box,
-#main-window:-moz-lwtheme-darktext #sidebar-box * {
+:root[lwtheme] #sidebar-box,
+:root[lwtheme] #sidebar-box * {
   color: black !important;
 }
 
-#main-window:-moz-lwtheme-brighttext #sidebar-box,
-#main-window:-moz-lwtheme-brighttext #sidebar-box * {
+:root[lwtheme]:-moz-lwtheme-brighttext #sidebar-box,
+:root[lwtheme]:-moz-lwtheme-brighttext #sidebar-box * {
   color: white !important;
 }
 

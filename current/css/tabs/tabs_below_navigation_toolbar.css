@@ -71,7 +71,7 @@
   display: block;
 }
 
-#titlebar:-moz-lwtheme {
+:root[lwtheme] #titlebar {
   background-image: var(--lwt-header-image, var(--lwt-additional-images));
   background-repeat: var(--lwt-background-tiling);
   background-position: var(--lwt-background-alignment);
@@ -100,13 +100,13 @@
 
 /* lw themes support */
 /* overrides other settings too */
-#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme),
-#main-window:not([tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme){
+:root:not([lwtheme]) #navigator-toolbox #TabsToolbar,
+:root:not([lwtheme]):not([tabsintitlebar]) #TabsToolbar{
   appearance: none !important;
 }
 
 @media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
-	#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
+	:root:not([lwtheme]) #navigator-toolbox #TabsToolbar{
 	  background-image: var(--tabs_toolbar_color_tabs_not_on_top) !important;
 	}
 }
@@ -116,12 +116,12 @@
 }
 
 /* remove color overlay for lw-themes */
-#main-window[style*='--lwt-header-image'] :is(#nav-bar,#PersonalToolbar,#TabsToolbar):-moz-lwtheme{
+:root[lwtheme][style*='--lwt-header-image'] :is(#nav-bar,#PersonalToolbar,#TabsToolbar){
   background: unset !important;
 }
 
 /* adjust background color */
-#main-window:not([style*='--lwt-header-image']) #TabsToolbar:-moz-lwtheme {
+:root[lwtheme]:not([style*='--lwt-header-image']) #TabsToolbar {
   appearance: none !important;
   background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
 }
@@ -144,7 +144,7 @@
 }
 
 /* remove restored border between navigation toolbar and tabs toolbar */
-#nav-bar:not(:-moz-lwtheme) {
+:root:not([lwtheme]) #nav-bar{
   box-shadow: unset !important;
 }
 

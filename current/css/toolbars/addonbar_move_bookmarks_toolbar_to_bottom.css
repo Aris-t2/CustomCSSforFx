@@ -24,7 +24,8 @@
   border-top: 1px solid var(--toolbox-border-bottom-color) !important;
   z-index: 1 !important;
 }
-#navigator-toolbox > #PersonalToolbar:-moz-lwtheme {
+
+:root[lwtheme] #navigator-toolbox > #PersonalToolbar {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;

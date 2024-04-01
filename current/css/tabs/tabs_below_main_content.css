@@ -46,7 +46,7 @@
 }
 
 /* lw-theme support */
-#main-window:not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar:-moz-lwtheme {
+:root[lwtheme] :not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar {
   background-repeat: no-repeat !important;
   background-position: bottom left !important;
   background-color: var(--toolbar-bgcolor) !important;
@@ -77,7 +77,7 @@
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: none !important;
 	}
-	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]):-moz-lwtheme #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	:root[lwtheme] [tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
 	  display: flex !important;
 	}
   }

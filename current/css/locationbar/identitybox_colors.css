@@ -147,142 +147,142 @@
 }
 
 /* for dark lw-theme */
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedDomain {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedDomain {
   background: linear-gradient(hsl(215,85%,85%), hsl(215,70%,68%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   color: white !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedDomain:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedDomain:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(215,54%,33%,.7) inset,
 			  0 1px 3px 1px hsla(215,54%,33%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedIdentity {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedIdentity {
   background: linear-gradient(hsl(92,69%,77%), hsl(92,44%,51%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   color: #00771f !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
   color: #00771f !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] .verifiedIdentity:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedIdentity:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(92,81%,16%,.6) inset,
 			  0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent) {
   background: linear-gradient(hsl(6,65%,88%), hsl(0,73%,82%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent):is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent):is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
 			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   background: linear-gradient(hsl(54,85%,67%), hsl(54,90%,50%)) !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
 			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)), 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="invalid"] .chromeUI {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)), 
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage),
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="invalid"] .chromeUI {
   background: linear-gradient(#474749,#414141,#333333) !important;
   color: white !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)):is(:hover,[open="true"],:hover:active),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage):is(:hover,[open="true"],:hover:active),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar[pageproxystate="invalid"] .chromeUI:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)):is(:hover,[open="true"],:hover:active),
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage):is(:hover,[open="true"],:hover:active),
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar[pageproxystate="invalid"] .chromeUI:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
 			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme-brighttext #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) > #identity-box:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage) {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) > #identity-box:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage) {
   background: linear-gradient(rgb(255,100,100), rgb(200,0,0)) !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] .verifiedDomain {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedDomain {
   background: linear-gradient(hsl(215,85%,85%), hsl(215,70%,68%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   color: white !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] .verifiedDomain:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedDomain:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(215,54%,33%,.7) inset,
 			  0 1px 3px 1px hsla(215,54%,33%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] .verifiedIdentity {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedIdentity {
   background: linear-gradient(hsl(92,69%,77%), hsl(92,44%,51%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   color: #00771f !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity > #identity-icon-labels {
   color: #00771f !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] .verifiedIdentity:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] .verifiedIdentity:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(92,81%,16%,.6) inset,
 			  0 1px 3px 1px hsla(92,81%,16%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent) {
   background: linear-gradient(hsl(6,65%,88%), hsl(0,73%,82%)) !important;
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent):is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.insecureLoginForms,.mixedActiveContent):is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
 			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked) {
   box-shadow: 0 1px 1px rgba(0,0,0,1.0) inset !important;
   background: linear-gradient(hsl(54,85%,67%), hsl(54,90%,50%)) !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked):is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,85%,15%,.7) inset,
 			  0 1px 3px 1px hsla(0,85%,15%,.5) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)), 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="invalid"] .chromeUI {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)), 
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage),
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="invalid"] .chromeUI {
   background: linear-gradient(#474749,#414141,#333333) !important;
   color: white !important;
   border-inline-end: 1px solid #262627 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)):is(:hover,[open="true"],:hover:active),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage):is(:hover,[open="true"],:hover:active),
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar[pageproxystate="invalid"] .chromeUI:is(:hover,[open="true"],:hover:active) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) :is(.unknownIdentity,.onionUnknownIdentity):not(:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage)):is(:hover,[open="true"],:hover:active),
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="valid"] :is(.chromeUI,.extensionPage):is(:hover,[open="true"],:hover:active),
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar[pageproxystate="invalid"] .chromeUI:is(:hover,[open="true"],:hover:active) {
   box-shadow: 0 1px 1px hsla(0,0%,48%,1.0) inset,
 			  0 1px 3px 1px hsla(0,0%,48%,1.0) inset !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) > #identity-box:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage) {
+:root[lwtheme]:not([style*='--lwt-header-image']) #urlbar:is([pageproxystate="invalid"],[pageproxystate="valid"]) > #identity-box:is(.mixedDisplayContentLoadedActiveBlocked,.notSecureText,.certErrorPage) {
   background: linear-gradient(rgb(255,100,100), rgb(200,0,0)) !important;
 }
 }

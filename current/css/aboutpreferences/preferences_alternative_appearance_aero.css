@@ -5,7 +5,7 @@
 
 @import "./preferences_alternative_appearance.css";
 
-@-moz-document url(about:preferences),url-prefix(about:preferences){
+@-moz-document url(about:preferences),url-prefix(about:preferences),url(about:settings),url-prefix(about:settings) {
 	
 	.navigation, #preferences-body,
 	window > stack > hbox,

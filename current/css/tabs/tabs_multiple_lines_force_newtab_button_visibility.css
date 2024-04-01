@@ -16,3 +16,6 @@
   visibility: hidden !important;
 }
 
+#new-tab-button {
+  align-self: center;
+}

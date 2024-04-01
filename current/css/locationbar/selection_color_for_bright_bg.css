@@ -3,8 +3,8 @@
 /****************************************************************************************/
 
 
-#nav-bar:-moz-lwtheme #urlbar ::-moz-selection,
-#nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection {
+:root[lwtheme] #nav-bar #urlbar ::-moz-selection,
+:root:not([lwtheme]) #nav-bar #urlbar ::-moz-selection {
   background-color: Highlight !important;
   color: HighlightText !important;
 }

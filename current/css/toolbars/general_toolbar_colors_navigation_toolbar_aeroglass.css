@@ -4,8 +4,8 @@
 
 
 /* navigation toolbar background */
-#main-window #navigator-toolbox #nav-bar:not(:-moz-lwtheme),
-#main-window #navigator-toolbox #nav-bar:-moz-lwtheme,
+:root:not([lwtheme]) #navigator-toolbox #nav-bar,
+:root[lwtheme] #navigator-toolbox #nav-bar,
 #main-window #navigator-toolbox #nav-bar {
   background: unset !important;
   border: unset !important;

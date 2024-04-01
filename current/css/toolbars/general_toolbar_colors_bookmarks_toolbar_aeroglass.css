@@ -4,9 +4,9 @@
 
 
 /* bookmarks toolbar background */
-#main-window #navigator-toolbox #PersonalToolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme),
-#main-window #navigator-toolbox #PersonalToolbar:not(:-moz-lwtheme),
-#main-window #navigator-toolbox #PersonalToolbar:-moz-lwtheme,
+:root:not([lwtheme]) #navigator-toolbox #PersonalToolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar),
+:root:not([lwtheme]) #navigator-toolbox #PersonalToolbar,
+:root[lwtheme] #navigator-toolbox #PersonalToolbar,
 #main-window #navigator-toolbox #PersonalToolbar {
   background: unset !important;
   border: unset !important;

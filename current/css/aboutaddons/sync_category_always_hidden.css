@@ -2,9 +2,12 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
-@-moz-document url(about:preferences),url-prefix(about:preferences),url(about:settings),url-prefix(about:settings) {
-	
-	#category-more-from-mozilla {
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	#categories #category-sync {
 	  display: none !important;
 	}
 

@@ -10,16 +10,16 @@
   fill: #4169e1 !important; 
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #fxa-manage-account-button::before,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #appMenu-fxa-label2::before,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2,#PanelUI-fxa-menu-sync-prefs-button,#appMenu_aboutName) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #fxa-manage-account-button::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #appMenu-fxa-label2::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2,#PanelUI-fxa-menu-sync-prefs-button,#appMenu_aboutName) > .toolbarbutton-icon {
   fill: #00d2ff !important; 
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #fxa-manage-account-button::before,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #appMenu-fxa-label2::before,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2,#PanelUI-fxa-menu-sync-prefs-button,#appMenu_aboutName) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #fxa-manage-account-button::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #appMenu-fxa-label2::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-new-window-button2,#appMenu-downloads-button,#appMenu-save-file-button2,#appMenu-zoomEnlarge-button2,#PanelUI-fxa-menu-sync-prefs-button,#appMenu_aboutName) > .toolbarbutton-icon {
 	  fill: #00d2ff !important; 
 	}
 }
@@ -30,14 +30,14 @@
   fill: #800080 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2,#appMenu-translate-button) > .toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
   fill: #ff00ff !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2) > .toolbarbutton-icon,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-new-private-window-button2,#appMenu-history-button,#appMenuSearchHistory,#appMenu-print-button2) > .toolbarbutton-icon,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #PanelUI-history :is(#appMenuRecentlyClosedTabs,#appMenuRecentlyClosedWindows,#appMenuRestoreSession,#appMenu-restoreSession) > .toolbarbutton-icon {
 	  fill: #ff00ff !important;
 	}
 }
@@ -49,16 +49,16 @@
   fill: #336699 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
   fill: #64a3e2 !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-bookmarks-button,#appMenu-find-button2,#appMenu-more-button2,#appMenu-help-button2,#appmenu-moreTools-button,#panelMenu_showAllBookmarks,#PanelUI-historyMore,#appMenu_menu_openHelp) > .toolbarbutton-icon,
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-zoom-controls,#appMenu-zoom-controls2)::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #PanelUI-bookmarks :is(#panelMenuBookmarkThisPage,#panelMenu_searchBookmarks) > .toolbarbutton-icon {
 	  fill: #64a3e2 !important;
 	}
 }
@@ -69,14 +69,14 @@
   fill: red !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #PanelUI-fxa-menu-syncnow-button::before,
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #PanelUI-fxa-menu-syncnow-button::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
   fill: #ff5a5a !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #PanelUI-fxa-menu-syncnow-button::before,
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #PanelUI-fxa-menu-syncnow-button::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
 	  fill: #ff5a5a !important;
 	}
 }
@@ -86,12 +86,12 @@
   fill: green !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-extensions-themes-button,#PanelUI-fxa-menu-sendtab-button,#appMenu_feedbackPage) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-extensions-themes-button,#PanelUI-fxa-menu-sendtab-button,#appMenu_feedbackPage) > .toolbarbutton-icon {
   fill: lightgreen !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-extensions-themes-button,#PanelUI-fxa-menu-sendtab-button,#appMenu_feedbackPage) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-extensions-themes-button,#PanelUI-fxa-menu-sendtab-button,#appMenu_feedbackPage) > .toolbarbutton-icon {
 	  fill: lightgreen !important;
 	}
 }
@@ -101,12 +101,12 @@
   fill: orange !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
   fill: orange !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-new-tab-button2,#appMenu-fullscreen-button2,#panelMenu_viewBookmarksToolbar,#PanelUI-fxa-menu-connect-device-button,#appMenu_helpSwitchDevice,#appMenu_helpSafeMode,#appMenu_troubleShooting) > .toolbarbutton-icon {
 	  fill: orange !important;
 	}
 }
@@ -116,12 +116,12 @@
   fill: grey !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#appMenu-settings-button,#PanelUI-fxa-menu-setup-sync-button) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-settings-button,#PanelUI-fxa-menu-setup-sync-button) > .toolbarbutton-icon {
   fill: lightgrey !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme :is(#appMenu-settings-button,#PanelUI-fxa-menu-setup-sync-button) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-settings-button,#PanelUI-fxa-menu-setup-sync-button) > .toolbarbutton-icon {
 	  fill: lightgrey !important;
 	}
 }

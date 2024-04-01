@@ -27,45 +27,45 @@
   fill: #336699 !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-back .menu-iconic-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-back .menu-iconic-icon {
   fill: #00d2ff !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-forward .menu-iconic-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-forward .menu-iconic-icon {
   fill: #00d2ff !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-reload .menu-iconic-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-reload .menu-iconic-icon {
   fill: lightgreen !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-stop .menu-iconic-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-stop .menu-iconic-icon {
   fill: #ff5a5a !important;
 }
 
-#main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #context-bookmarkpage .menu-iconic-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-bookmarkpage .menu-iconic-icon {
   fill: #64a3e2 !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
 
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #context-back .menu-iconic-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-back .menu-iconic-icon {
 	  fill: #00d2ff !important;
 	}
 
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #context-forward .menu-iconic-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-forward .menu-iconic-icon {
 	  fill: #00d2ff !important;
 	}
 
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #context-reload .menu-iconic-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-reload .menu-iconic-icon {
 	  fill: lightgreen !important;
 	}
 
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #context-stop .menu-iconic-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-stop .menu-iconic-icon {
 	  fill: #ff5a5a !important;
 	}
 
-	#main-window:not([style*='--lwt-header-image']):-moz-lwtheme #context-bookmarkpage .menu-iconic-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-bookmarkpage .menu-iconic-icon {
 	  fill: #64a3e2 !important;
 	}	
 }

@@ -7,7 +7,7 @@
   --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
 }
 
-#main-window:not(:-moz-lwtheme) #navigator-toolbox #TabsToolbar {
+:root:not([lwtheme]) #navigator-toolbox #TabsToolbar {
   appearance: none !important;
   background: var(--colored_menubar_background_image, inherit) !important;
 }

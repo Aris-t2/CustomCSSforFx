@@ -5,7 +5,7 @@
 
 @media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
   @media (-moz-windows-default-theme) {
-    #TabsToolbar:not(:-moz-lwtheme) {
+    :root:not([lwtheme]) #TabsToolbar {
       background-image: unset !important;
     }
   }

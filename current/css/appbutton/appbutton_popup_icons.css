@@ -359,38 +359,38 @@
 	padding-inline-start: 8px !important;
 }
 
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
-#main-window:-moz-lwtheme:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
 	fill: currentColor !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
-	#main-window:-moz-lwtheme #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"]:not([checked=true]) > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_inspector"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_webconsole"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_jsdebugger"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_netmonitor"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_styleeditor"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_performance"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_storage"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_application"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > image.toolbarbutton-icon,
+	:root[lwtheme] #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > image.toolbarbutton-icon {
 		fill: currentColor !important;
 	}
 }
@@ -428,8 +428,8 @@
   padding-inline-start: 8px !important;
 }
 
-#appmenu-developer-tools-view toolbarbutton:-moz-lwtheme-brighttext[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
-#appmenu-developer-tools-view toolbarbutton:-moz-lwtheme-brighttext[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
+:root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
   list-style-image: url("../../image/command-tilt.png");
   filter: grayscale(100%) brightness(220%) !important;
 }
