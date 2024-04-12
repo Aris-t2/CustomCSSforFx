@@ -28,7 +28,7 @@
 #urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
 #urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
-  display: block !important;
+  /*display: block !important;*/
   left: 24px !important;
 }
 

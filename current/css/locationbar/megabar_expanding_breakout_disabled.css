@@ -5,7 +5,7 @@
 
 /* Megabar: disable breakout / expanding onto toolbar *********************************************/
 #urlbar[breakout][breakout-extend] {
-  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  top: calc((var(--urlbar-container-height,--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
   left: 0px !important;
   width: calc(100% - 0px) !important;
 }
