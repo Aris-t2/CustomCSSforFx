@@ -9,7 +9,7 @@
 }
 
 :root[lwtheme] #toolbar-menubar {
-  background-image: var(--colored_menubar_background_image) !important;
+  /*background-image: var(--colored_menubar_background_image) !important;*/
   border: 0px !important;
   margin-bottom: -1px !important;
 }

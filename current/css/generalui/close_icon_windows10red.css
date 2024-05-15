@@ -59,6 +59,7 @@
   }
 }
 
+/*
 #closetab_fmarin_com-BAP,
 #tabmix-tabs-closebutton,
 #TabsToolbar #closetab_fmarin_com-browser-action .toolbarbutton-icon,
@@ -86,8 +87,14 @@
 #TabsToolbar .tabbrowser-tab .tab-content .close-icon {
   background: unset !important;
 }
+*/
 
-.tab-close-button {
+* .close-icon {
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+.tabbrowser-tab .tab-close-button {
   width: 16px !important;
   height: 16px !important;
   padding: unset !important;

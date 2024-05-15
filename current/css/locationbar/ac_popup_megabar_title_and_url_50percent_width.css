@@ -45,7 +45,7 @@
 }
 
 #urlbar .urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=dynamic],[sponsored]) .urlbarView-title {
-  width: calc(50% - 26px) !important;
+  width: calc(100% - 26px) !important;
 }
 
 /* do not hide actiontype item */
