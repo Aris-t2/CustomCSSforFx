@@ -321,7 +321,6 @@
   box-shadow: unset !important;
 }
 
-
 /*tab favicon position*/
 .tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
 .tabbrowser-tab:not([pinned]) .tab-icon-image{
@@ -536,7 +535,7 @@
 
 /* restore border between navigation toolbar and tabs toolbar */
 :root:not([lwtheme]) #nav-bar {
-  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
+  box-shadow: 0 calc(-1 * var(--classic_squared_tabs-border_size)) 0 var(--classic_squared_tabs-border2) !important;
 }
 
 :root:not([lwtheme]) #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([selected],[multiselected]) .tab-stack .tab-content {
@@ -582,26 +581,7 @@
 	}
 }
 
-/* Fx 105+ - remove Firefox-view-button from tabs toolbar *//*
-:root:not([privatebrowsingmode=temporary]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs,
-:root[privatebrowsingmode=temporary] :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
-  border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
-}
-
-:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow]) {
-  padding-inline-start: 0 !important;
-  margin-inline-start: 0 !important;
-}
-
-#main-window:not([customizing]) #TabsToolbar :is(#firefox-view-button, #wrapper-firefox-view-button) {
-  display: none !important;
-}
-
-#main-window[customizing] #TabsToolbar #firefox-view-button {
-  list-style-image: url("chrome://branding/content/about-logo.png") !important;
-}
-
-#main-window[customizing]*/ #TabsToolbar #firefox-view-button image {
+#TabsToolbar #firefox-view-button image {
   width: 16px !important;
   height: 16px !important;
 }
@@ -623,4 +603,17 @@
 
 #main-window:-moz-window-inactive #titlebar {
   opacity: 1.0 !important;
+}
+
+/* Fx 126+ */
+:root[lwtheme] #nav-bar {
+  border-top: 0px !important;
+}
+
+.tabbrowser-tab {
+  overflow-clip-margin: 0px !important;
+}
+
+:root {
+  --tab-selected-bgcolor: unset !important;
 }

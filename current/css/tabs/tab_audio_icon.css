@@ -12,7 +12,6 @@
 .tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]) {
   grid-area: s;
 }
-
 .tab-icon-overlay {
   padding: 0 !important;
 }

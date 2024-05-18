@@ -89,8 +89,8 @@
 }
 
 /* border between navigation toolbar and tabs toolbar */
-:root:not([lwtheme])  #nav-bar {
-  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
+:root:not([lwtheme]) #nav-bar {
+  box-shadow: 0 calc(-1 * 1px) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
 :root[lwtheme] #nav-bar {
@@ -239,3 +239,13 @@
 #main-window:-moz-window-inactive #titlebar {
   opacity: 1.0 !important;
 }
+
+/* Fx 126+ */
+:root[lwtheme] #nav-bar {
+  border-top: 0px !important;
+}
+
+:root {
+  --tab-selected-bgcolor: unset !important;
+}
+
