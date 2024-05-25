@@ -14,7 +14,7 @@
   margin-inline-start: 0px !important;
   min-width: calc(50% - 18px) !important;
   width: calc(50% - 18px) !important;
-  left: 24px !important;
+  left: 32px !important;
 }
 
 #urlbar .urlbarView-title {
@@ -28,7 +28,6 @@
 #urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
 #urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
   position: absolute !important;
-  /*display: block !important;*/
   left: 24px !important;
 }
 

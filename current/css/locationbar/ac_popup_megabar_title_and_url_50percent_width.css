@@ -11,6 +11,9 @@
 
 #urlbar .urlbarView-url {
   margin-inline-start: 10px !important;
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% + 0px) !important;
 }
 
 #urlbar .urlbarView-row:not([has-url]) .urlbarView-no-wrap {
@@ -30,7 +33,7 @@
   left: calc(50% + 0px) !important;
 }
 
-.urlbarView-row:is([type="switchtab"], [type="remotetab"], [type="clipboard"]) {
+.urlbarView-row:is([type="switchtab"],[type="remotetab"],[type="clipboard"]) {
   & > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
     margin-inline-start: 0px !important;
   }
