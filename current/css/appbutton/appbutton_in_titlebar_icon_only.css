@@ -184,6 +184,7 @@
   border-color: unset !important;
   border: 0 !important;
   box-shadow: unset !important;
+  outline: unset !important;
 }
 
 /* adjust button badge */
@@ -260,6 +261,7 @@
   padding: 0px !important;
   width: 16px !important;
   height: 16px !important;
+  outline: unset !important;
 }
 
 /* fix for toolbar + text mode */

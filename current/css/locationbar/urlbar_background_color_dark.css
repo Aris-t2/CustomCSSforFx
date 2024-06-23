@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#main-window:not([privatebrowsingmode]) :is(#urlbar-background, #urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
+#main-window:not([privatebrowsingmode]) :is(#urlbar-background, #urlbar-input-container,.urlbar-input-container,.urlbarView-body-inner, #searchbar, .searchbar-textbox) {
   background-color: black !important;
   color: lightgrey !important;
 }

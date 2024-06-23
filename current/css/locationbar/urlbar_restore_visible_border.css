@@ -12,9 +12,9 @@
 }
 
 #urlbar[breakout][breakout-extend] #urlbar-background,
-#urlbar:not([focused="true"]) #urlbar-background,
-#urlbar[open="true"] #urlbar-background,
-#urlbar[focused="true"][open="true"] #urlbar-background,
+#urlbar:not([focused]) #urlbar-background,
+#urlbar[open] #urlbar-background,
+#urlbar[focused][open] #urlbar-background,
 #searchbar:not(:focus-within) {
   /*box-shadow: inset 0 0 0 1px var(--urlbar_border_color) !important;*/
   border: 1px solid var(--urlbar_border_color) !important;

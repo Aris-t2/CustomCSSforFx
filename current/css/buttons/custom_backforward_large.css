@@ -28,12 +28,13 @@
 #nav-bar :is(#back-button, #forward-button)[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
 #nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
 #nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
-#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack  {
+#nav-bar :is(#back-button, #forward-button):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack {
   background: unset !important;
   border-color: unset !important;
   box-shadow: unset !important;
   transition: unset !important;
   fill: unset !important;
+  outline: unset !important;
 }
 
 /* custom large back-forward buttons */
@@ -47,6 +48,7 @@
   box-shadow: unset !important;
   border: unset !important;
   border-radius: unset !important;
+  outline: unset !important;
 }
 
 #main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,

@@ -14,12 +14,12 @@
 }
 
 #urlbar #urlbar-background,
-#urlbar, #urlbar-input-container,
+#urlbar, :is(#urlbar-input-container,.urlbar-input-container),
 #searchbar, .searchbar-textbox {
   border-radius: var(--megabar_border_roundness) !important;
 }
 
-#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView,
+#urlbar[focused]:not([usertyping]) .urlbarView,
 #urlbar .search-one-offs,
 #urlbar .search-one-offs .search-panel-header,
 #urlbar .search-one-offs .search-panel-one-offs-container {
@@ -31,19 +31,19 @@
   border-bottom-right-radius: var(--megabar_border_roundness) !important;
 }
 
-#urlbar[focused="true"][open] #urlbar-input-container {
+#urlbar[focused="true"][open] :is(#urlbar-input-container,.urlbar-input-container) {
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 
 
-#urlbar[open="true"] #urlbar-background,
-#urlbar[open="true"],
-#urlbar[open="true"] #urlbar-input-container {
+#urlbar[open] #urlbar-background,
+#urlbar[open],
+#urlbar[open] :is(#urlbar-input-container,.urlbar-input-container) {
   border-radius: calc(var(--megabar_border_roundness) / 1.5) !important;
 }
 
-#urlbar[focused="true"]:not([usertyping="true"]) .urlbarView,
+#urlbar[focused]:not([usertyping]) .urlbarView,
 #urlbar .search-one-offs,
 #urlbar .search-one-offs .search-panel-header,
 #urlbar .search-one-offs .search-panel-one-offs-container {

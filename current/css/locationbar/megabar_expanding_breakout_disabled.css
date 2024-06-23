@@ -14,7 +14,7 @@
   animation-name: unset !important;
 }
 
-#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+#urlbar[breakout][breakout-extend] > :is(#urlbar-input-container,.urlbar-input-container) {
   height: var(--urlbar-height) !important;
   padding-block: 1px !important;
   padding-inline: 1px !important;

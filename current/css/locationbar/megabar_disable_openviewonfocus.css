@@ -3,11 +3,11 @@
 /****************************************************************************************/
 
 
-#urlbar[focused="true"]:not([usertyping]) .urlbarView {
+#urlbar[focused]:not([usertyping]) .urlbarView {
   display: none !important;
 }
 
-#urlbar[focused="true"]:not([usertyping]) #urlbar-input-container {
+#urlbar[focused]:not([usertyping]) :is(#urlbar-input-container,.urlbar-input-container) {
   border: 1px solid var(--urlbar_border_color) !important;
   border-radius: var(--toolbarbutton-border-radius) !important;
 }

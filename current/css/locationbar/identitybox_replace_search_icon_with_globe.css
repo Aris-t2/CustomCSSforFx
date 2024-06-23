@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon {
+#urlbar:not(.searchButton) > :is(#urlbar-input-container,.urlbar-input-container) > #identity-box[pageproxystate="invalid"] #identity-icon {
   list-style-image:url('./../../image/globe.svg') !important;
   filter: unset !important;
   fill: unset !important;

@@ -35,10 +35,19 @@
 			  box-shadow .2s ease-in !important;
 }
 
+#nav-bar toolbarbutton:not([disabled=true]):hover .toolbarbutton-badge-stack .toolbarbutton-icon,
+#nav-bar toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) .toolbarbutton-badge-stack .toolbarbutton-icon,
 #nav-bar .unified-extensions-item toolbarbutton:not([disabled=true]):is(:hover,[open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background: unset !important;
   background-image:	unset !important;
   border-radius: unset !important;
   outline: unset !important;
   transition: unset !important;
+}
+
+#nav-bar :is(panel,.panel-viewcontainer,.panel-subview-body,.popup,popup) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active,:hover),
+#nav-bar :is(panel,.panel-viewcontainer,.panel-subview-body,.popup,popup) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active,:hover) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  outline: unset !important;
+  border-radius: unset !important;
+  background-image:	unset !important;
 }
