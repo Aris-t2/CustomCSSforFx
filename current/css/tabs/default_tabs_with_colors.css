@@ -3,19 +3,19 @@
 /************************************************************************************************/
 
 
-:root:not([lwtheme]) #TabsToolbar .tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected], [multiselected]) {
+:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:not(:hover) > .tab-stack > .tab-background:not([selected], [multiselected]) {
   background-image: var(--classic_squared_tabs_other_tabs) !important;
 }
 
-:root:not([lwtheme]) #TabsToolbar .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
+:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]) {
   background-image: var(--classic_squared_tabs_hovered_tabs) !important;
 }
 
-:root:not([lwtheme]) #TabsToolbar .tabbrowser-tab > .tab-stack > .tab-background:is([selected], [multiselected]) {
+:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab > .tab-stack > .tab-background:is([selected], [multiselected]) {
   background-image: var(--classic_squared_tabs_active_tab) !important;
 }
 
-:root:not([lwtheme]) #TabsToolbar .tabbrowser-tab {
+:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab {
   color: var(--classic_squared_tabs_tab_text_color) !important;
   text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
 }

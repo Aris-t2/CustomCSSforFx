@@ -3,20 +3,20 @@
 /****************************************************************************************/
 
 
-notification {
-  height: 16px !important;
-  font-size: 1em !important;
+notification-message[message-bar-type="infobar"] {
+	--close-icon-size: 24px !important;
 }
-.messageImage {
-  width: 16px !important; 
-  height: 16px !important;
-}
-.messageCloseButton > .toolbarbutton-icon {
-  margin-inline-end: 12px !important;
-  padding: 0px !important;
-  width: 20px !important; /*DEFAULT: 20px in close-icon.css*/
-  height: 20px !important; /*DEFAULT: 20px in close-icon.css*/
+.notification-content, .container {
+	padding-block: inherit !important;
 }
 .notification-button {
-  height: 16px !important;
+	font-size: 0.9em !important;
+	min-height: 24px !important;
+}
+.infobar > .icon {
+	margin: 8px 0 !important;
+	margin-inline-start: 16px !important;
+}
+button[type~="icon"] {
+	background-size: 12px !important;
 }

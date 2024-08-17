@@ -70,3 +70,19 @@
 .urlbar-page-action > .urlbar-icon:-moz-any(:hover,:hover:active,[open]){
   opacity: 0.6 !important;
 }
+
+/* tracking protection icon */
+:is(#urlbar-input-container,.urlbar-input-container)[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
+  -moz-context-properties: fill !important;
+  fill: #40AA40 !important; /* rgb(64,170,64) */
+}
+
+:is(#urlbar-input-container,.urlbar-input-container)[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box[hasException] > #tracking-protection-icon {
+  -moz-context-properties: fill !important;
+  fill: orangered !important;
+}
+
+:is(#urlbar-input-container,.urlbar-input-container)[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box:not([hasException])[active] > #tracking-protection-icon {
+  -moz-context-properties: fill !important;
+  fill: #40AA40 !important; /* rgb(64,170,64) */
+}

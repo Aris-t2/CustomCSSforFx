@@ -105,7 +105,7 @@
   margin-inline-start: -1px;
 }
 
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] + #TabsToolbar .tabbrowser-tab::after,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] + :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::after,
 .tabbrowser-tab:hover::after,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[beforehovered]::after,
 .tabbrowser-tab[multiselected]::after,
@@ -130,8 +130,8 @@
 }
 
 /* remove active tabs left and right tab border color when using lw-themes */
-:root[lwtheme]:not([lwtheme-mozlightdark]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background,
-:root[lwtheme]:not([lwtheme-mozlightdark]) #TabsToolbar[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background {
+:root[lwtheme]:not([lwtheme-mozlightdark]) :is(#TabsToolbar,#vertical-tabs):not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background,
+:root[lwtheme]:not([lwtheme-mozlightdark]) :is(#TabsToolbar,#vertical-tabs)[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background {
   box-shadow: unset !important;
 }
 
@@ -145,7 +145,7 @@
 }
 
 /* Fx 100+ outline fix */
-:root[lwtheme] #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon,
+:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) #firefox-view-button[open] > .toolbarbutton-icon,
 :root[lwtheme] .tab-background[selected] {
   outline: unset !important;
 }

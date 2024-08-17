@@ -235,7 +235,8 @@
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
   position: fixed !important;
   left: 10px !important;
-  top: 5px !important;
+  top: 7px !important;
+  height: 14px !important;
 }
 
 /* button color/border */

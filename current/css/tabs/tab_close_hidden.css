@@ -7,7 +7,7 @@
   --tab-label-mask-size: 0 !important;
 }
 
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
   visibility: hidden !important;
   opacity: 0 !important;
   min-width: 0.5px !important;

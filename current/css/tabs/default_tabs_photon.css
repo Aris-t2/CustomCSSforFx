@@ -187,7 +187,7 @@
 }
 
 /* Fx 100+ outline fix */
-:root[lwtheme] #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon,
+:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) #firefox-view-button[open] > .toolbarbutton-icon,
 :root[lwtheme] .tab-background[selected] {
   outline: unset !important;
 }
@@ -211,7 +211,7 @@
 }
 
 /* fix jumping pinned tabs / tabs box */
-#TabsToolbar #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
   min-height: calc( var(--tab-min-height) - 2px ) !important;
   max-height: calc( var(--tab-min-height) - 2px ) !important;
 }
@@ -227,12 +227,12 @@
   margin-inline-start: 0 !important;
 }
 
-#TabsToolbar .toolbarbutton-1 {
+:is(#TabsToolbar,#vertical-tabs) .toolbarbutton-1 {
   margin: unset !important;
 }
 
-#TabsToolbar .titlebar-spacer[type="pre-tabs"],
-#TabsToolbar .titlebar-spacer[type="post-tabs"] {
+:is(#TabsToolbar,#vertical-tabs) .titlebar-spacer[type="pre-tabs"],
+:is(#TabsToolbar,#vertical-tabs) .titlebar-spacer[type="post-tabs"] {
   display: none !important;
 }
 

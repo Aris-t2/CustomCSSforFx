@@ -3,12 +3,12 @@
 /****************************************************************************************/
 
 
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
   visibility: collapse !important;
   display: none !important;
 }
 
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]):hover .tab-close-button {
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs .tabbrowser-tab:not([pinned]):hover .tab-close-button {
   visibility: visible !important;
   display: block !important;
 }

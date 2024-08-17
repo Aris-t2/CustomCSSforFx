@@ -5,14 +5,14 @@
 
 /* Has to be used along with 'classic_squared_tabs.css' */
 
-:root[lwtheme]:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
 }
 
-:root[lwtheme]:-moz-lwtheme-brighttext #TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
-:root[lwtheme]:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab .tab-content {
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button),
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-content {
   border-top: 1px solid rgba(255,255,255,.6) !important;
   border-left: 1px solid rgba(255,255,255,.2) !important; 
   border-right: 1px solid rgba(255,255,255,.2) !important; 
@@ -24,7 +24,7 @@
 	  border-left: 1px solid rgba(255,255,255,.2) !important; 
 	  border-right: 1px solid rgba(255,255,255,.2) !important; 
 	}
-	:root[lwtheme] #TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
+	:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button),
 	:root[lwtheme] .tabbrowser-tab .tab-content {
 	  border-top: 1px solid rgba(255,255,255,.6) !important;
 	  border-left: 1px solid rgba(255,255,255,.2) !important; 

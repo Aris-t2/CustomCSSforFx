@@ -102,13 +102,19 @@
 
 @media (-moz-platform: macos) {
 	
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  padding-top: 24px !important;
-}
+  #main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+    padding-top: 24px !important;
+  }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #titlebar {
-  height: 0 !important;
-  padding-top: 0 !important;
-}
+  #main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #titlebar {
+    height: 0 !important;
+    padding-top: 0 !important;
+    z-index:  1 !important;
+  }
+
+  #main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #browser,
+  #main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #customization-container {
+    margin-bottom: 0 !important;
+  }
 
 }

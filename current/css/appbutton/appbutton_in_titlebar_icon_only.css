@@ -189,9 +189,10 @@
 
 /* adjust button badge */
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
-  margin-inline-end: 2px !important;
-  margin-top: 0px !important;
-  margin-inline-start: -30px !important;
+  position: fixed !important;
+  left: 0px !important;
+  top: 6px !important;
+  height: 14px !important;
 }
 
 /* button color/border */

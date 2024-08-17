@@ -3,38 +3,37 @@
 /****************************************************************************************/
 
 
-#sidebar-switcher-bookmarks > .toolbarbutton-icon {
+#sidebar-switcher-bookmarks::before,
+#sidebar-switcher-history::before,
+#sidebar-switcher-tabs::before,
+#sidebar-reverse-position::before,
+#sidebar-menu-close::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
   -moz-context-properties: fill;
-  list-style-image: url("chrome://browser/skin/bookmark.svg");
-  padding-inline-end: 4px;
+  margin-inline-end: 4px !important;
   fill: currentColor;
 }
 
-#sidebar-switcher-history > .toolbarbutton-icon {
-  -moz-context-properties: fill;
-  list-style-image: url("chrome://browser/skin/history.svg");
-  padding-inline-end: 4px;
-  fill: currentColor;
+
+#sidebar-switcher-bookmarks::before {
+  background-image: url("chrome://browser/skin/bookmark.svg") !important;
 }
 
-#sidebar-switcher-tabs > .toolbarbutton-icon {
-  -moz-context-properties: fill;
-  list-style-image: url("chrome://browser/skin/tab.svg");
-  padding-inline-end: 4px;
-  fill: currentColor;
+#sidebar-switcher-history::before {
+  background-image: url("chrome://browser/skin/history.svg") !important;
 }
 
-#sidebar-reverse-position > .toolbarbutton-icon {
-  -moz-context-properties: fill;
-  list-style-image: url("chrome://devtools/skin/images/tool-network.svg");
-  padding-inline-end: 4px;
-  fill: currentColor;
-  transform: rotate(90deg);
+#sidebar-switcher-tabs::before {
+  background-image: url("chrome://browser/skin/tab.svg") !important;
 }
 
-#sidebarMenu-popup toolbarbutton[data-l10n-id="sidebar-menu-close"] > .toolbarbutton-icon {
-  -moz-context-properties: fill;
-  list-style-image: url("chrome://global/skin/icons/close.svg");
-  padding-inline-end: 4px;
-  fill: currentColor;
+#sidebar-reverse-position::before {
+  background-image: url("chrome://devtools/skin/images/tool-network.svg") !important;
+}
+
+#sidebar-menu-close::before {
+  background-image: url("chrome://global/skin/icons/close.svg") !important;
 }
