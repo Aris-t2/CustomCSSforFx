@@ -190,8 +190,8 @@
 /* adjust button badge */
 #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
   position: fixed !important;
-  left: 0px !important;
-  top: 6px !important;
+  left: 2px !important;
+  top: 4px !important;
   height: 14px !important;
 }
 
@@ -318,6 +318,13 @@
 panel[id="appMenu-popup"][type="arrow"][side="top"],
 panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
   margin-inline: 0 !important;
+}
+
+/* aero appearance fix */
+#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  background-image:	unset !important;
+  outline: 0px !important;
 }
 
 /* Force appbutton to the right */

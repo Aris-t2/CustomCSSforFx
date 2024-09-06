@@ -70,3 +70,17 @@
 #main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon {
   background: #efefef !important; /* has to be solid or forward buttons left side will be partly visible */
 }
+
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+
+	#main-window #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button > .toolbarbutton-icon,
+	#main-window #nav-bar #back-button > .toolbarbutton-icon {
+	  background-color: #383740 !important;
+	}
+
+	#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true] > .toolbarbutton-icon,
+	#main-window:not([customizing]) #nav-bar #back-button:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon {
+	  background: #383740 !important; /* has to be solid or forward buttons left side will be partly visible */
+	}
+
+}

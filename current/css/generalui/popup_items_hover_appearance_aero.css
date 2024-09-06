@@ -11,7 +11,6 @@
 }
 
 :is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):not(#appMenu-fxa-status2):hover {
-  color: inherit !important;
   background: transparent !important;
   background-color: transparent !important;
   background-image:
@@ -23,4 +22,12 @@
   outline: 1px solid rgba(124,163,206,0.7) !important;
   outline-radius: 3px !important;
   outline-offset: -1px !important;
+}
+
+:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):not(#appMenu-fxa-status2):not([disabled]):hover {
+  color: inherit !important;
+}
+
+:is(popup,menupopup,panel,panelmultiview,.panel-subview-body) :is(menuitem,menu,.subviewbutton,toolbarbutton):not(#appMenu-fxa-status2)[disabled]:hover {
+  filter: grayscale(75%) !important;
 }

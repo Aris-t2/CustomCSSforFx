@@ -131,6 +131,13 @@
   fill: currentColor;
 }
 
+#appMenu-report-broken-site-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/trending.svg");
+  padding-inline-end: 4px;
+  fill: currentColor;
+}
+
 #appMenu-save-file-button2 > .toolbarbutton-icon {
   -moz-context-properties: fill;
   list-style-image: url("chrome://browser/skin/save.svg");
@@ -512,4 +519,18 @@
   list-style-image: url("chrome://global/skin/icons/help.svg");
   padding-inline-end: 4px;
   fill: currentColor;
+}
+
+
+/* JS restart button*/
+#appMenu-restart-button > .toolbarbutton-icon {
+  -moz-context-properties: fill;
+  list-style-image: url("chrome://global/skin/icons/reload.svg");
+  padding-inline-start: 4px;
+  fill: currentColor;
+  transform: scaleX(-1);
+}
+
+#appMenu-restart-button > .toolbarbutton-text {
+  margin-inline-start: 4px !important;
 }

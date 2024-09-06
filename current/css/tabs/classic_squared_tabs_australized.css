@@ -236,6 +236,30 @@
 
 }
 
+/* dark OS theme + no lwtheme off*/
+@media (-moz-content-prefers-color-scheme: dark),(-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+
+	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab {
+	  color: white !important;
+	  text-shadow: 1px 1px 1px black !important;
+	}
+
+	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-content:is([selected],[multiselected]) {
+	  background-image: linear-gradient(to top, var(--toolbar-bgcolor), var(--toolbar-bgcolor)) !important;
+	}
+	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button):hover,
+	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:hover .tab-content:not([selected],[multiselected]) {
+	  background-image: var(--classic_squared_tabs_lwt-bright_hovered_tabs) !important;
+	}
+
+	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
+	  border-top: 1px solid rgba(255,255,255,.2) !important;
+	  border-left: 1px solid rgba(255,255,255,.1) !important; 
+	  border-right: 1px solid rgba(255,255,255,.1) !important; 
+	}
+
+}
+
 /* Fx 100+ outline fix */
 :root[lwtheme] :is(#TabsToolbar,#vertical-tabs) #firefox-view-button[open] > .toolbarbutton-icon,
 :root[lwtheme] .tab-background[selected] {

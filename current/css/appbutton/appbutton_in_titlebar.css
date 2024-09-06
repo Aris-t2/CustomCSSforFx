@@ -382,6 +382,13 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
   height: 14px !important;
 }
 
+/* aero appearance fix */
+#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  background-image:	unset !important;
+  outline: 0px !important;
+}
+
 /* Force appbutton to the right */
 @media (-moz-platform: macos) {
 	

@@ -65,18 +65,18 @@
 
 /* red */
 #PanelUI-fxa-menu-syncnow-button::before,
-:is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
+:is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu,#appMenu-report-broken-site-button,#appMenu-restart-button) > .toolbarbutton-icon {
   fill: red !important;
 }
 
 :root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #PanelUI-fxa-menu-syncnow-button::before,
-:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu,#appMenu-report-broken-site-button,#appMenu-restart-button) > .toolbarbutton-icon {
   fill: #ff5a5a !important;
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
 	:root[lwtheme]:not([style*='--lwt-header-image']) #PanelUI-fxa-menu-syncnow-button::before,
-	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu) > .toolbarbutton-icon {
+	:root[lwtheme]:not([style*='--lwt-header-image']) :is(#appMenu-passwords-button,#appMenu-quit-button2,#appMenu-zoomReduce-button2,#appMenuClearRecentHistory,#PanelUI-fxa-menu-account-signout-button,#appMenu_help_reportSiteIssue,#appMenu_menu_HelpPopup_reportPhishingtoolmenu,#appMenu-report-broken-site-button,#appMenu-restart-button) > .toolbarbutton-icon {
 	  fill: #ff5a5a !important;
 	}
 }
