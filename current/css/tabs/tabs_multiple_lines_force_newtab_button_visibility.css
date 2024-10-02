@@ -9,6 +9,7 @@
 :root:not([customizing]) #navigator-toolbox #TabsToolbar #new-tab-button {
   display: unset !important;
   visibility: visible !important;
+  margin: -1px !important;
 }
 
 :is(.tabs-newtab-button,#tabs-newtab-button) {

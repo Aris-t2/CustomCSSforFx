@@ -214,3 +214,9 @@
 #nav-bar > :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover {
   background-color: unset !important; 
 }
+
+/* fix hover outline effect on extension buttons */
+#nav-bar #nav-bar-customization-target > toolbaritem .unified-extensions-item-action-button {
+  padding: 3px !important;
+  margin: -3px !important
+}

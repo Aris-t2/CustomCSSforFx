@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.5.6
+  Current version: 4.5.7
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -1110,9 +1110,9 @@
 /* @import "./css/locationbar/identitybox_padlock_icon_hidden.css"; /**/
 
 
-/* -----------------------------------------------------------------------
-   Additional icons/buttons and tweaks for third party page action buttons
-   -----------------------------------------------------------------------
+/* -----------------------------------------------------------
+   Additional icons/buttons and tweaks for page action buttons
+   -----------------------------------------------------------
 */
 
 /* @import "./css/locationbar/icons_colorized.css"; /**/
@@ -1122,6 +1122,7 @@
 /* @import "./css/locationbar/zoom_button_hidden.css"; /**/
 /* @import "./css/locationbar/go_button_in_location_bar_hidden.css"; /**/
 /* @import "./css/locationbar/tracking_protection_alternative_icon.css"; /**/
+/* @import "./css/locationbar/urlbar_icons_aero_appearance.css"; /**/
 
 
 /* ----------------------------

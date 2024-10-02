@@ -56,11 +56,11 @@
   margin-inline-end: unset !important;
 }
 
-#sidebar-box:not([positionend="true"]) ~ #appcontent {
+#sidebar-box:not([positionend="true"]) ~ :is(#appcontent,#tabbrowser-tabbox) {
   margin-inline-start: 0 !important;
 }
 
-#sidebar-box:not([positionend="true"]):hover ~ #appcontent {
+#sidebar-box:not([positionend="true"]):hover ~ :is(#appcontent,#tabbrowser-tabbox) {
   margin-inline-start: calc(-1 * var(--sidebar-visible-width)) !important;
 }
 
@@ -72,10 +72,10 @@
   margin-inline-start: unset !important;
 }
 
-#sidebar-box[positionend="true"] ~ #appcontent {
+#sidebar-box[positionend="true"] ~ :is(#appcontent,#tabbrowser-tabbox) {
   margin-inline-end: 0 !important;
 }
 
-#sidebar-box[positionend="true"]:hover ~ #appcontent {
+#sidebar-box[positionend="true"]:hover ~ :is(#appcontent,#tabbrowser-tabbox) {
   margin-inline-end: calc(-1 * var(--sidebar-visible-width)) !important;
 }

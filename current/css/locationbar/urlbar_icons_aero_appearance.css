@@ -1,0 +1,31 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar-container :is(#tracking-protection-icon-container,.identity-box-button,.urlbar-page-action):hover {
+  background: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+  outline: 1px solid rgba(124,163,206,0.7) !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}
+
+/* clicked/active state */
+#urlbar-container :is(#tracking-protection-icon-container,.identity-box-button,.urlbar-page-action):is([open],[checked],:hover:active,:active) {
+  background: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.6), rgba(122,180,246,0.6)) !important;
+  outline: 1px solid rgba(124,163,206,0.99) !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}

@@ -38,6 +38,7 @@
 	display: var(--scrollbutton-display-model,initial);
   }
 
+  scrollbox[part][orient="horizontal"] > slot,
   scrollbox[part][orient="horizontal"]{
     display: flex;
     flex-wrap: wrap;

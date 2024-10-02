@@ -211,3 +211,8 @@
   background-color: unset !important; 
 }
 
+/* fix hover outline effect on extension buttons */
+#nav-bar #nav-bar-customization-target > toolbaritem .unified-extensions-item-action-button {
+  padding: 3px !important;
+  margin: -3px !important
+}

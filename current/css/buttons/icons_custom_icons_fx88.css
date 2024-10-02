@@ -163,3 +163,44 @@
   list-style-image: url("../../image/icons_fx88/logins.svg") !important;
 }
 
+/* identity box extra*/
+
+#identity-box[pageproxystate="valid"].localResource #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_page-portrait.svg") !important;
+}
+
+#identity-box[pageproxystate="invalid"] {
+
+  #identity-icon {
+    list-style-image: url("../../image/icons_fx88/ib_search-glass.svg") !important;
+  }
+}
+
+#urlbar[actiontype="extension"] > .urlbar-input-container > #identity-box #identity-icon,
+#identity-box[pageproxystate="valid"].extensionPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_extension.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"].weakCipher #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon,
+#identity-box[pageproxystate="valid"].certUserOverridden #identity-icon,
+#identity-box[pageproxystate="valid"].certErrorPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security-warning.svg") !important;
+}
+
+
+#identity-box[pageproxystate="valid"].notSecure #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
+#identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security-broken.svg") !important;
+}
+
+#permissions-granted-icon {
+  list-style-image: url("../../image/icons_fx88/ib_permissions.svg") !important;
+}

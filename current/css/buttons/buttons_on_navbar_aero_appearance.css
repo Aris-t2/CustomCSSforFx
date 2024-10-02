@@ -4,7 +4,7 @@
 
 
 /* hovered state */
-#nav-bar :is(#nav-bar-customization-target,#PanelUI-menu-button) .unified-extensions-item toolbarbutton:not([disabled=true]):hover,
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-menu-button) .unified-extensions-item toolbarbutton:not([disabled=true]):hover,*/
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
 #nav-bar #nav-bar-overflow-button:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background: transparent !important;
@@ -21,7 +21,7 @@
 }
 
 /* clicked/active state */
-#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active),
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active),*/
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
 #nav-bar #nav-bar-overflow-button:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon)  {
   background: transparent !important;
@@ -39,7 +39,7 @@
 
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):hover .toolbarbutton-badge-stack .toolbarbutton-icon,
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) .toolbarbutton-badge-stack .toolbarbutton-icon,
-#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is(:hover,[open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is(:hover,[open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),*/
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) #activity_throbber:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
 #nav-bar :is(#nav-bar-customization-target,#PanelUI-button) #activity_throbber:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background: unset !important;
