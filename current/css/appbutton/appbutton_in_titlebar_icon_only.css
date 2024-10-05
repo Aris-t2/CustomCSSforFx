@@ -9,22 +9,22 @@
 
 /* tabs toolbar adjustments */
 #main-window[tabsintitlebar] #toolbar-menubar {
-  margin-inline-start: 43px !important;
+  padding-inline-start: 43px !important;
 }
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 41px !important;
+  padding-inline-start: 41px !important;
 }
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
-  margin-inline-start: 40px !important;
+  padding-inline-start: 40px !important;
 }
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 39px !important;
+  padding-inline-start: 39px !important;
 }
 #main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar {
-  margin-inline-start: 48px !important;
+  padding-inline-start: 48px !important;
 }
 #main-window[uidensity=touch][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 47px !important;
+  padding-inline-start: 47px !important;
 }
 
 /* tabs toolbar adjustments */

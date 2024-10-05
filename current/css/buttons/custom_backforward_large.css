@@ -4,6 +4,9 @@
 
 
 /* override custom button shapes */
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > :is(#back-button, #forward-button):not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
 #main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
 #main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
 #main-window:not([customizing]) #nav-bar :is(#back-button, #forward-button)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,

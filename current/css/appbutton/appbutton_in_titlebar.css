@@ -9,19 +9,19 @@
 
 /* menubar adjustments */
 #main-window[tabsintitlebar] #toolbar-menubar {
-  margin-inline-start: 95px !important;
+  padding-inline-start: 95px !important;
 }
 
 #main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 94px !important;
+  padding-inline-start: 94px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
-  margin-inline-start: 93px !important;
+  padding-inline-start: 93px !important;
 }
 
 #main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 92px !important;
+  padding-inline-start: 92px !important;
 }
 
 /* tabs toolbar adjustments */

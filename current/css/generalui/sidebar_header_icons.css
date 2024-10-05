@@ -3,11 +3,7 @@
 /****************************************************************************************/
 
 
-#sidebar-switcher-bookmarks::before,
-#sidebar-switcher-history::before,
-#sidebar-switcher-tabs::before,
-#sidebar-reverse-position::before,
-#sidebar-menu-close::before {
+#sidebarMenu-popup menuitem::before {
   content:"" !important;
   display: block !important;
   width: 16px !important;
@@ -15,8 +11,8 @@
   -moz-context-properties: fill;
   margin-inline-end: 4px !important;
   fill: currentColor;
+  background-repeat: no-repeat;
 }
-
 
 #sidebar-switcher-bookmarks::before {
   background-image: url("chrome://browser/skin/bookmark.svg") !important;
@@ -32,6 +28,7 @@
 
 #sidebar-reverse-position::before {
   background-image: url("chrome://devtools/skin/images/tool-network.svg") !important;
+  transform: rotate(90deg);
 }
 
 #sidebar-menu-close::before {

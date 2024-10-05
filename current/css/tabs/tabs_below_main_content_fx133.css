@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_main_content.css";
+
+/* [!] NOT A STANDALONE FILE! */
+/* [!] This code does not achieve the requested result without above files content! */
+
+
+#toolbar-menubar[inactive] ~ #nav-bar {
+  padding-top: 26px !important;
+}
+
+#toolbar-menubar {
+  padding-inline-end: 140px;
+}
+
+#toolbar-menubar:not([inactive]) {
+  height: 26px !important;
+}
+
+#main-window[sizemode="maximized"] #toolbar-menubar {
+  margin-top: -5px !important;
+}
