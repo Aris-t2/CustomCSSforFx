@@ -116,10 +116,10 @@
 */
 
 /* default 'grey' colors */
-@import "./config/color_variables.css"; /**/
+/* @import "./config/color_variables.css"; /**/
 
 /* 'AeroBlue' colors (Win 7 Aero) */
-/* @import "./config/color_variables_aero.css"; /**/
+@import "./config/color_variables_aero.css"; /**/
 
 /* 'Classic grey' colors (Win Classic) */
 /* @import "./config/color_variables_classic-grey.css"; /**/
@@ -178,14 +178,14 @@
    [!] Firefox 88 icon set uses SVG images
 */
 
-@import "./css/buttons/icons_colorized.css"; /**/
+/* @import "./css/buttons/icons_colorized.css"; /**/
 /* @import "./css/buttons/icons_white_icons.css"; /**/
 /* @import "./css/buttons/icons_custom_icons.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx1.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx2.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx3.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx3strata.css"; /**/
-/* @import "./css/buttons/icons_custom_icons_fx12_colorized.css"; /**/
+@import "./css/buttons/icons_custom_icons_fx12_colorized.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_crystal.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_firebird.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_kempelton.css"; /**/
@@ -207,7 +207,7 @@
 */
 
 /* 'Classic' pre-Proton button padding */
-/* @import "./css/buttons/classic_button_padding.css"; /**/
+@import "./css/buttons/classic_button_padding.css"; /**/
 
 
 /* -------------------------------------
@@ -529,7 +529,7 @@
 */
 
 /* Classic tabs appearance known from Firefox 4-28 */
-@import "./css/tabs/classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs.css"; /**/
 
 /* Classic tabs appearance known from Firefox 4-28 for active tab only  */
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
@@ -637,7 +637,7 @@
    [!] only compatible with 'tabs below navigation toolbar >> alt << version'
 */
 
-/* @import "./css/tabs/tabs_multiple_lines.css"; /**/
+@import "./css/tabs/tabs_multiple_lines.css"; /**/
 /* @import "./css/tabs/tabs_multiple_lines_force_newtab_button_visibility.css"; /**/
 
 
@@ -677,9 +677,9 @@
    [!] only use one option at a time
 */
 
-@import "./css/tabs/tab_close_always_visible.css"; /**/
+/* @import "./css/tabs/tab_close_always_visible.css"; /**/
 /* @import "./css/tabs/tab_close_on_active_tab_only.css"; /**/
-/* @import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
+@import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
 /* @import "./css/tabs/tab_close_hidden.css"; /**/
 /* @import "./css/tabs/tab_close_hidden_for_only_one_visible_tab.css"; /**/
 /* @import "./css/tabs/tab_close_at_tabs_start.css"; /**/
@@ -710,14 +710,14 @@
 /* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* Has to be used along with 'classic_squared_tabs.css' */
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/
-/* @import "./css/tabs/tab_audio_icon.css"; /**/
+@import "./css/tabs/tab_audio_icon.css"; /**/
 /* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
 /* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/tabs_active_tab_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
 /* @import "./css/tabs/newtab_button_always_visible.css"; /**/
 /* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
-/* @import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
+@import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
 /* @import "./css/tabs/tab_maxwidth.css"; /**/
 /* @import "./css/tabs/tab_titles_remove_blur.css"; /**/
 /* @import "./css/tabs/alltabs_button_always_visible.css"; /**/  /* hidden, if multiple tab rows are used */

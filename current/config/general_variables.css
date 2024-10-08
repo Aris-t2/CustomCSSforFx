@@ -34,16 +34,16 @@
   --tab_max_width: 250px !important;
   
   /* for tabs_multiple_lines.css */
-  --tab_min_width_mlt: 100px !important;
-  --tab_max_width_mlt: 200px !important;
-  --tabs-lines: 3 !important; 
+  --tab_min_width_mlt: 220px !important;
+  --tab_max_width_mlt: 220px !important;
+  --tabs-lines: 10 !important; 
 
   /* for bookmarks_toolbar_multiple_lines.css */
-  --bookmark_items_height: 22px !important; /* <- bookmark items - line height */
+  --bookmark_items_height: 26px !important; /* <- bookmark items - line height */
   --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
   
   /* for increase_ui_font_size.css */
-  --general_ui_font_size: 10pt !important;
+  --general_ui_font_size: 12pt !important;
   
   /* for searchbar_popup_engines_show_labels_scrollbars.css */
   --search-one-offs_labels_height: 100px !important;
