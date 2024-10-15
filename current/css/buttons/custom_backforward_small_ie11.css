@@ -1,0 +1,24 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./custom_backforward_small.css";
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window[uidensity=compact] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon,
+#main-window #navigator-toolbox #nav-bar #back-button .toolbarbutton-icon {
+  list-style-image: url("./../../image/bf_ie11_small_b.png") !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]) #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window[uidensity=compact] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window[uidensity=touch] #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon,
+#main-window #navigator-toolbox #nav-bar #forward-button .toolbarbutton-icon {
+  list-style-image: url("./../../image/bf_ie11_small_f.png") !important;
+}
+
+#main-window #navigator-toolbox #nav-bar :is(#back-button, #forward-button)[disabled] .toolbarbutton-icon {
+  filter: grayscale(100%) contrast(100%) brightness(1.5) !important;
+}

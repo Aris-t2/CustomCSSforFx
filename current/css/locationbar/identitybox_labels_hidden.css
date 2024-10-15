@@ -8,6 +8,11 @@
   display: none !important;
 }
 
+#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > .identity-box-button,
+#urlbar-label-box {
+  padding-inline: 6px !important;
+}
+
 #identity-box {
   padding-inline-end: 4px !important;
   margin-inline-end: 4px !important;

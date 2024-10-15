@@ -41,6 +41,10 @@ menupopup[type=arrow] > menu {
   padding: 0px !important;
 }
 
+menuseparator {
+  padding-block: 0 !important;
+}
+
 * menupopup[type=arrow],
 :is(menupopup, panel)[type=arrow] {
   --panel-padding: 0px !important;

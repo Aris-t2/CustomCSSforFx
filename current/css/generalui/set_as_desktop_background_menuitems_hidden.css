@@ -3,6 +3,7 @@
 /****************************************************************************************/
 
 
-#context-setDesktopBackground {
+#context-setDesktopBackground,
+#context-setDesktopBackground + menuseparator {
   display: none !important;
 }

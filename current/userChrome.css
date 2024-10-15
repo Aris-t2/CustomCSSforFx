@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 115+
-  Current version: 4.5.8
+  Current version: 4.5.9
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -360,7 +360,9 @@
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_red.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ie8.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ie9.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ie11.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_kempelton.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_phoenix.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_noia.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ff3_strata.css"; /**/
@@ -368,7 +370,9 @@
 /* @import "./css/buttons/custom_backforward_small_ff3_strata_red.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ie8.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_ie9.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ie11.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_phoenix.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */
 /* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared*/

@@ -464,8 +464,8 @@
   height: 16px !important;
 }
 
-:is(#TabsToolbar,#vertical-tabs)-customization-target > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
-:is(#TabsToolbar,#vertical-tabs)-customization-target > toolbarbutton .toolbarbutton-icon {
+#TabsToolbar-customization-target > toolbarpaletteitem toolbarbutton .toolbarbutton-icon,
+#TabsToolbar-customization-target > toolbarbutton .toolbarbutton-icon {
   padding: unset !important;
   height: unset !important;
   width: unset !important;
