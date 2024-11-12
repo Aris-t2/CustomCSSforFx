@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 115+
-  Current version: 4.5.9
+  Custom CSS for Firefox 128+
+  Current version: 4.6.0
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -570,18 +570,18 @@
    TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP
    --------------------------------------------------------------
 
-   [!] Note: only 'alt' works with multi-tab lines option.
+   [!] Note: 'alt' works with multi-tab lines option up to Fx 132.
+   [!] Note: '_fx133.css' version works with multi-tab lines option for Fx 133+.
    [!] Note: might require overriding url bars 'selection color' --> see corresponding area
+   [!] only use one option at a time
 */
 
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
-
-/* ########################################### Test for Firefox 133+ ########################################### */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx133.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* for Firefox 132 and below */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx133.css"; /**/ /* for Firefox 133+ */
 
 
 /* Alternative for multi-lined tabs (Glitches might occur with inactive menubar!)
-   [!] use option below for multiple tab lines support
+   [!] use option below for multiple tab lines support (up to Fx 132 only !)
 */
 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_alt.css"; /**/
@@ -606,12 +606,11 @@
    ----------------------------------------
   
    [!] not compatible to 'tabs toolbar - multiple tab lines' option
+   [!] only use one option at a time
 */
 
-/* @import "./css/tabs/tabs_below_main_content.css"; /**/
- 
-/* ########################################### Test for Firefox 133+ ########################################### */
-/* @import "./css/tabs/tabs_below_main_content_fx133.css"; /**/
+/* @import "./css/tabs/tabs_below_main_content.css"; /**/ /* for Firefox 132 and below */
+/* @import "./css/tabs/tabs_below_main_content_fx133.css"; /**//* for Firefox 133+ */
 
 
 /* --------------------------------------------------------------------------------
@@ -638,7 +637,8 @@
    [!] BUG: dragging tabs does not work with multi lined tabs
    [!] not compatible with 'tabs toolbar - below main content' option
    [!] not compatible with 'newtab button always_visible' option
-   [!] only compatible with 'tabs below navigation toolbar >> alt << version'
+   [!] up to Firefox 132: only compatible with 'tabs below navigation toolbar >> alt << version'
+   [!] Fx 133+: compatible with tabs_below_navigation_toolbar_fx133.css
 */
 
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/
@@ -1179,10 +1179,22 @@
    --------------------------------------------------
 */
 
-@import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
+
 /* @import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
 /* @import "./css/locationbar/urlbar_border_roundness.css"; /**/
 @import "./css/locationbar/urlbar_restore_visible_border.css"; /**/
+
+/* -------------------------------------
+   Megabar expanding_breakout_disabled
+   -------------------------------------
+   
+   [!] only use one option at a time
+   [!] _fx133.css for Firefox 133+
+   
+*/
+
+/* @import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
+/* @import "./css/locationbar/megabar_expanding_breakout_disabled_fx133.css"; /**/
 
 
 /* -------------------------------------

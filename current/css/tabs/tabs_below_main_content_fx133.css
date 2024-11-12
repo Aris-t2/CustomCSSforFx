@@ -24,3 +24,7 @@
 #main-window[sizemode="maximized"] #toolbar-menubar {
   margin-top: -5px !important;
 }
+
+#navigator-toolbox {
+  z-index: 3 !important;
+}

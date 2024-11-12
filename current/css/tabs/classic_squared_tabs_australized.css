@@ -643,3 +643,9 @@
 	margin-inline-end: 4px !important; 
   }
 }
+
+/*Fx 132+ */
+.tab-content {
+  padding: 0 8px !important;
+}
+

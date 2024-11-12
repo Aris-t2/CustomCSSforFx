@@ -13,13 +13,13 @@
   fill: #FFE900 !important;/* var(--yellow-50) */
 }
 
-:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[soundplaying] {
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-icon-overlay[soundplaying] {
   fill: lightgreen !important;
 }
-:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[muted] {
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-icon-overlay[muted] {
   fill: #ff5a5a !important;
 }
-:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) .tab-icon-overlay[activemedia-blocked] {
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-icon-overlay[activemedia-blocked] {
   fill: orange !important;
 }
 

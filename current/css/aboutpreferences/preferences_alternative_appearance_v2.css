@@ -256,7 +256,7 @@
 	}
 	
 	/* checkbox and radio items */
-	checkbox .checkbox-check {
+	/*checkbox .checkbox-check {
 	  appearance: unset  !important;
 	  box-shadow: unset !important;
 	}
@@ -264,7 +264,7 @@
 	radio .radio-check {
 	  appearance: unset !important;
 	  box-shadow: unset !important;
-	}
+	}*/
 
 	radio,
 	checkbox {

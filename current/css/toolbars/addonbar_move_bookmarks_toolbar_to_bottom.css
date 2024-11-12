@@ -130,14 +130,18 @@
   -moz-box-align: center !important;
   align-items: center !important;
 }
-
+/*
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #browser,
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #customization-container {
   margin-bottom: var(--addonbar_height) !important; 
-}
+}*/
 
 #PersonalToolbar .toolbarbutton-1 {
   margin-block: 0px !important; 
+}
+
+#navigator-toolbox {
+  z-index: 3 !important;
 }
 
 

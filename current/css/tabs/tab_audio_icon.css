@@ -14,9 +14,15 @@
 }
 .tab-icon-overlay {
   padding: 0 !important;
+  border: 0 !important;
+  background-color: transparent !important;
+  background-position: right !important;
+  fill: currentColor !important;
 }
 .tab-icon-overlay:hover {
-  background: none !important;
+  /*background-color: transparent !important;*/
+  filter: brightness(1.10)!important;
+  opacity: 0.8 !important;
 }
 .tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) > * {
   opacity: 1 !important;

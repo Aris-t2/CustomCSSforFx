@@ -28,11 +28,11 @@
   padding-bottom: 0px !important;
   border-bottom: 1px solid threedshadow !important;
 }
-
+/*
 #main-window:not([inDOMFullscreen="true"]) #browser,
 #main-window:not([inDOMFullscreen="true"]) #customization-container {
   margin-bottom: var(--tab_below_main_content_bottom_margin) !important;
-}
+}*/
 
 #TabsToolbar {
   min-height: 0 !important;
