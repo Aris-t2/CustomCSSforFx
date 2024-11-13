@@ -1,0 +1,11 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url(about:preferences),url-prefix(about:preferences),url(about:settings),url-prefix(about:settings) {
+	
+	#category-experimental {
+	  display: none !important;
+	}
+
+}

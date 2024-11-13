@@ -1,0 +1,19 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#toolbar-menubar .toolbarbutton-1 .toolbarbutton-icon {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar #searchbar {
+  min-height: 22px !important;
+}
+
+#toolbar-menubar #search-container {
+  padding-block: 0.5px !important;
+}

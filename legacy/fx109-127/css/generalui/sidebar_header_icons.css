@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#sidebarMenu-popup menuitem::before {
+  content:"" !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  -moz-context-properties: fill;
+  margin-inline-end: 4px !important;
+  fill: currentColor;
+  background-repeat: no-repeat;
+}
+
+#sidebar-switcher-bookmarks::before {
+  background-image: url("chrome://browser/skin/bookmark.svg") !important;
+}
+
+#sidebar-switcher-history::before {
+  background-image: url("chrome://browser/skin/history.svg") !important;
+}
+
+#sidebar-switcher-tabs::before {
+  background-image: url("chrome://browser/skin/tab.svg") !important;
+}
+
+#sidebar-reverse-position::before {
+  background-image: url("chrome://devtools/skin/images/tool-network.svg") !important;
+  transform: rotate(90deg);
+}
+
+#sidebar-menu-close::before {
+  background-image: url("chrome://global/skin/icons/close.svg") !important;
+}

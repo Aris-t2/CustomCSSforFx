@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hide private mode indicators / private masks */
+#main-window[privatebrowsingmode=temporary]:not([inDOMFullscreen="true"]) #navigator-toolbox #TabsToolbar .private-browsing-indicator,
+* #private-browsing-indicator-titlebar,
+* #private-browsing-indicator,
+* .private-browsing-indicator {
+  visibility: collapse !important;
+}
+
+#private-browsing-indicator-with-label {
+  display: none !important;
+}

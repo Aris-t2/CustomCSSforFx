@@ -1,0 +1,29 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --status-width: 400px;
+}
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar::before {
+  appearance: none; 
+  display: flex;
+  content: "";
+  min-width: var(--status-width);
+  width: var(--status-width);
+  background-image: -moz-element(#statuspanel-label);
+  background-repeat: no-repeat;
+}
+
+#statuspanel-label {
+  border: 0 !important;
+  background-color: unset !important;
+  padding-top: 4px !important;
+  color: inherit !important;
+}
+
+#statuspanel {
+  opacity: 0 !important;
+}

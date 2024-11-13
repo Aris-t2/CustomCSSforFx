@@ -1,0 +1,42 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  --urlbar_background_color: white;
+  --urlbar_text_color: black;
+}
+
+
+#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#page-action-buttons,#identity-icon-box,#urlbar-background,#searchbar) {
+  background-color: var(--urlbar_background_color) !important;
+}
+
+
+:root[lwtheme]:not([privatebrowsingmode]) #searchbar,
+:root[lwtheme]:not([privatebrowsingmode]) #urlbar :is(#urlbar-input,#urlbar-scheme,#page-action-buttons,#identity-icon-box,#urlbar-input-container,.urlbar-input-container,#urlbar-background,.urlbarView),
+:root[lwtheme]:not(:-moz-lwtheme-brighttext):not([privatebrowsingmode]) #urlbar .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+:root[lwtheme]:not(:-moz-lwtheme-brighttext):not([privatebrowsingmode]) #urlbar .urlbarView-row-inner[selected] {
+  color: var(--urlbar_text_color) !important;
+  fill: var(--urlbar_text_color) !important;
+}
+
+@media (-moz-content-prefers-color-scheme: light), (prefers-color-scheme: light),
+		(-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+	:root[lwtheme]:not([privatebrowsingmode]) #urlbar .urlbarView-row:not([type=tip], [type=dynamic])[selected] > .urlbarView-row-inner,
+	:root[lwtheme]:not([privatebrowsingmode]) #urlbar .urlbarView-row-inner[selected] {
+	  color: var(--urlbar_text_color) !important;
+	  fill: var(--urlbar_text_color) !important;
+	}
+	#main-window:not([privatebrowsingmode]) :is(#urlbar,#urlbar-search-mode-indicator,#page-action-buttons,#identity-icon-box,#urlbar-background,#searchbar) {
+	  color: var(--urlbar_text_color) !important;
+	  fill: var(--urlbar_text_color) !important;
+	}
+}

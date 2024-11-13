@@ -1,0 +1,25 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+
+	/*restore version number */
+	.addon-name-link[title]::after {
+	  display: block !important;
+	  content: attr(title) !important;
+	  margin-top: -22px !important;
+	}
+	
+	/* hide version number on updates category */
+	div[current-view="updates"] .addon-name-link[title]::after {
+	  display: none !important;
+	  visibility: collapse !important;
+	  opacity: 0 !important;
+	}
+
+}

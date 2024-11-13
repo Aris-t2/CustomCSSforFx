@@ -1,0 +1,20 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* disable tab border roundness */
+:is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button),
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-stack,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-background,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-content,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::after,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::before,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::before,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:hover::before,
+:is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab[last-visible-tab]:hover::after,
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
+  border-radius: 0px !important;
+}

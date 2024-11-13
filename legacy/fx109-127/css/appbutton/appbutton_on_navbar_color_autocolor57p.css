@@ -1,0 +1,113 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./appbutton_on_navbar_color_base.css";
+
+/* autocolor 57+ - orange */
+#nav-bar #PanelUI-menu-button :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background: linear-gradient(rgb(247,182,82), rgb(215,98,10) 95%) !important;
+  border-color: rgba(0,0,0,.12) rgba(0,0,0,.19) rgba(0,0,0,.38) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 2px rgba(255,255,255,.1) inset,
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+#nav-bar #PanelUI-menu-button:hover:not(:active):not([open]) > :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: radial-gradient(farthest-side at center bottom, rgba(252,240,89,.5) 10%, rgba(252,240,89,0) 70%),
+				  radial-gradient(farthest-side at center bottom, rgb(236,133,0), rgba(255,229,172,0)),
+				  linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#nav-bar #PanelUI-menu-button:hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#nav-bar #PanelUI-menu-button[open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+/* aurora */
+#nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background: linear-gradient(#0067de, #2398ff,#03daff) !important;
+  border-color: hsla(214,89%,21%,.9) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 2px rgba(255,255,255,.1) inset,
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+#nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:not(:active):not([open]) > :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+					linear-gradient(#0067de, #2398ff,#03daff) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"]:hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#nav-bar #PanelUI-menu-button[label="Firefox Developer Edition"][open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(#0067de, #2398ff,#03daff) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+/* nightly */
+#nav-bar #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]) :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+  border-color: hsla(210,59%,13%,.9) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 2px rgba(255,255,255,.1) inset,
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+#nav-bar #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]):hover:not(:active):not([open]) > :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+					linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#nav-bar #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"]):hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#nav-bar #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"])[open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(to right, #b539f9, #42acff,#00dd68) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+
+/* Tor-Browser */
+#nav-bar #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]) :is(.toolbarbutton-badge-stack,.toolbarbutton-text){
+  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+}
+#nav-bar #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]):hover:not(:active):not([open]) :is(.toolbarbutton-badge-stack,.toolbarbutton-text){
+  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
+					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
+					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset,
+			  0 0 0 1.5px rgba(255,255,255,.1) inset,
+			  0 0 3.5px hsl(190,90%,80%),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}
+#nav-bar #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"]):hover:active :is(.toolbarbutton-badge-stack,.toolbarbutton-text),
+#nav-bar #PanelUI-menu-button:is([label="Tor Browser"],[label="Tor-Browser"])[open] :is(.toolbarbutton-badge-stack,.toolbarbutton-text) {
+  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset,
+			  0 0 2px rgba(0,0,0,.3) inset,
+			  0 1px 0 hsla(210,54%,20%,0),
+			  0 0 2px hsla(210,54%,20%,0),
+			  0 0 0 1px rgba(0,0,0,.8) inset !important;
+}

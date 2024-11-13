@@ -1,0 +1,95 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --colored_menubar_background_image: linear-gradient(#f9f9fa,#f9f9fa);
+  --colored_menubar_text_color: inherit;
+}
+
+:root:not([lwtheme]) #toolbar-menubar {
+  background-image: var(--colored_menubar_background_image) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+:root[lwtheme]:not([style*='--lwt-header-image']) #toolbar-menubar {
+  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  border: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window #main-menubar {
+  background: none !important;
+}
+
+@media (-moz-platform: windows) {
+  #main-window[tabsintitlebar] #titlebar-min .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-max .toolbarbutton-icon,
+  #main-window[tabsintitlebar] #titlebar-close:not(:hover) .toolbarbutton-icon {
+	fill: var(--colored_menubar_text_color) !important;
+	color: var(--colored_menubar_text_color) !important;
+	stroke: var(--colored_menubar_text_color) !important;
+  }
+}
+
+#nav-bar {
+  border-top: 0px !important;
+  box-shadow: unset !important;
+}
+
+@media (-moz-platform: windows) {
+	:root:not([lwtheme]) #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+	  color: var(--colored_menubar_text_color) !important;
+	}
+	:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+	  color: white !important;
+	}
+
+	@media (-moz-content-prefers-color-scheme: dark) {
+		:root[lwtheme]:not([style*='--lwt-header-image']) #main-menubar > menu:not(:is(:hover,[open],[_moz-menuactive])) > :is(label,description) {
+		  color: white !important;
+		}
+	}
+
+	:root:not([lwtheme]) #main-menubar > menu:is(:hover,[open],[_moz-menuactive]) {
+	  background: Highlight !important;
+	  color: HighlightText !important;
+	}
+}
+
+@media not (-moz-platform: windows) {
+	:root:not([lwtheme]) #main-menubar > menu[open] {
+	  color: var(--colored_menubar_text_color) !important;
+	}
+	:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #main-menubar > menu:not([open]) > :is(label,description) {
+	  color: white !important;
+	}
+
+	@media (-moz-content-prefers-color-scheme: dark) {
+		:root:not([lwtheme]):not([style*='--lwt-header-image']) #main-menubar > menu[open] > :is(label,description) {
+		  color: white !important;
+		}
+	}
+
+	:root:not([lwtheme]) #main-menubar > menu[open] {
+	  background: Highlight !important;
+	  color: HighlightText !important;
+	}
+}
+
+
+#main-window #toolbar-menubar,
+#main-window #main-menubar > menu,
+#main-window #main-menubar {
+  text-shadow: unset !important;
+}
+
+@media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
+	  visibility: visible !important;
+	}
+  }
+}

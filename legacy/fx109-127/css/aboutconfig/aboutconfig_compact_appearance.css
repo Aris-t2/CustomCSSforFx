@@ -1,0 +1,87 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:config) {
+
+	* {
+	  font-size: 9pt !important;
+	}
+
+	#prefs,
+	#prefs * {
+	  min-height: unset !important;
+	  padding-left: unset !important;
+	  padding-right: unset !important;
+	  margin: unset !important;
+	}
+	
+	#prefs > tr,
+	#prefs > tr > td,
+	#prefs > tr > th {
+	  min-height: unset !important;
+	  height: unset !important;
+	  padding-left: unset !important;
+	  padding-right: unset !important;
+	  margin: unset !important;
+	}
+	
+	#prefs {
+	  width: 100% !important;
+	  border-radius: 0 !important;
+	}
+	
+	#prefs button {
+	  min-height: 16px !important;
+	  height: unset !important;
+	  min-width: 16px !important;
+	  width: unset !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+
+	#prefs button {
+	  margin-inline-start: 1px !important;
+	}
+
+	#prefs #form-edit > * {
+	  margin-inline-end: 2px !important;
+	}
+	
+	input[type="radio"] {
+	  transform: scale(0.8) !important;
+	}
+
+	#search-container * {
+	  min-height: unset !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	  margin-top: unset !important;
+	  margin-bottom: unset !important;
+	}
+
+	#search-container {
+	  padding: 0 !important;
+	}
+	
+	#search-container, #about-config-search:focus,
+	#search-container, #about-config-search[focused] {
+	  box-shadow: unset !important;
+	}
+
+	#search-container, #about-config-search:-moz-ui-invalid:focus {
+	  box-shadow: unset !important;
+	}
+	
+	.cell-edit,
+	.cell-reset {
+	  width: 20px !important;
+	}
+	
+	#about-config-search {
+	  padding-top: 0 !important;
+	  padding-bottom: 0 !important;
+	}
+
+}

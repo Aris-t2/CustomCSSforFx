@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PlacesToolbarDropIndicator:not(image) {
+  background: url(../../image/toolbar-drag-indicator.png) no-repeat bottom !important;
+}
+
+.tab-drop-indicator:not(image) {
+  background: url(../../image/tab-drag-indicator.png) no-repeat bottom !important;
+}

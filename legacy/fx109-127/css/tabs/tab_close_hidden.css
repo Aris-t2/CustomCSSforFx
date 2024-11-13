@@ -1,0 +1,19 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --tab-label-mask-size: 0 !important;
+}
+
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  min-width: 0.5px !important;
+  width: 0.5px !important;
+  max-width: 0.5px !important;
+  padding-inline-start: unset !important;
+  margin-inline-end: unset !important;
+  padding: 0px !important;
+}

@@ -1,0 +1,15 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+toolbar #zoom-controls > separator,
+toolbar #zoom-controls > #zoom-reset-button{
+  visibility: collapse !important;
+}
+#nav-bar #zoom-in-button{
+  padding-inline-start: 2px !important;
+}
+#nav-bar #zoom-out-button{
+  padding-inline-end: 2px !important;
+}

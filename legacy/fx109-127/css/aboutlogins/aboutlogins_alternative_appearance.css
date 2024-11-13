@@ -1,0 +1,76 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:logins) {
+	
+  @media not (-moz-toolbar-prefers-color-scheme: dark) {
+	html, body {
+	  background: white !important;
+	  color: black !important;
+	}
+	
+	header,
+	.container ol[role="listbox"],
+	login-list,
+	div.meta {
+	  background: #f5f5f5 !important;
+	}
+	
+	.login-list-item.keyboard-selected,
+	.login-list-item.selected {
+	  background: white !important;
+	  color: black !important;
+	  border-inline-start-color: white !important;
+	}
+	
+  }	
+
+	.login-list-item {
+	  background: unset !important;
+	}
+
+	.login-list-item:hover,
+	.login-list-item:hover:active,
+	.login-list-item:hover:not(.selected):not(.keyboard-selected) .username {
+	  background: Highlight !important;
+	  color: HighlightText !important;
+	}
+	
+	.login-list-item, .meta{
+	  border-bottom: unset !important;
+	}
+	
+	header {
+	  padding-inline-end: unset !important;
+	  border-bottom: unset !important;
+	}
+	
+	login-list {
+	  border-inline-end: unset !important;
+	}
+	
+	.create-login-button-container {
+	  box-shadow: unset !important;
+	}
+	
+	#branding-logo {
+	  height: unset !important;
+	}
+	
+	.column {
+	  max-width: unset !important;
+	}
+	
+	.container button:not(:hover),
+	.create-login-button-container button:not(:hover) {
+	  background-color: rgba(0,0,0,0.1) !important;
+	}
+
+	.container button:hover,
+	.create-login-button-container button:hover {
+	  background-color: rgba(0,0,0,0.2) !important;
+	}
+
+}

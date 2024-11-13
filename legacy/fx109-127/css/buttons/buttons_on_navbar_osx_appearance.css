@@ -1,0 +1,218 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/****************************
+******* BUTTONS *************
+****************************/
+
+/*******************************************/
+/* Classic Button ui on navigation toolbar */
+/*******************************************/
+
+
+:root{
+  --toolbar-start-end-padding: 2px !important;
+}
+
+/* main menu button adjustment */
+#PanelUI-button {
+  margin-inline-start: 0px !important;
+  border-inline-start: 0px solid !important;
+  border-image-slice: 0 !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+#PanelUI-menu-button {
+  appearance: unset !important;
+  background: unset !important;
+  box-shadow: unset !important;
+  border-image: unset !important;
+  border: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+  min-width: unset !important;
+  width: unset !important;
+  max-width: unset !important;
+  min-height: unset !important;
+  height: unset !important;
+  max-height: unset !important;
+}
+
+#PanelUI-button #whats-new-menu-button:not([hidden="true"]) {
+  margin-inline-end: 3px !important;
+}
+
+/* back button adjustment */
+#nav-bar #nav-bar-customization-target > toolbaritem #back-button .toolbarbutton-icon 
+#nav-bar #nav-bar-customization-target > #back-button .toolbarbutton-icon,
+#nav-bar > #back-button .toolbarbutton-icon {
+  border: 0 !important;
+}
+
+/* adjust zoom reset and copy buttons position */
+#nav-bar #nav-bar-customization-target > toolbaritem :is(#copy-button,#zoom-reset-button),
+#nav-bar #nav-bar-customization-target > :is(#copy-button,#zoom-reset-button),
+#nav-bar > :is(#copy-button,#zoom-reset-button) {
+  margin-inline-start: -1px !important;
+  margin-inline-end: -1px !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem :is(#edit-controls, #zoom-controls) separator,
+#nav-bar #nav-bar-customization-target > :is(#edit-controls, #zoom-controls) separator,
+#nav-bar > :is(#edit-controls, #zoom-controls) separator {
+  visibility: collapse !important;
+}
+
+/* classic button style */
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[type="menu-button"] > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not(#PlacesChevron):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > .toolbarbutton-1:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar #nav-bar-customization-target > .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > toolbarbutton[type="menu-button"] > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not(#PlacesChevron):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#main-window:not([customizing]) #nav-bar > .toolbarbutton-1:not(#PlacesChevron)[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar > .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#main-window:not([customizing]) #nav-bar > .toolbarbutton-1[disabled=true]:is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar > toolbarbutton[type="menu-button"] > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1 > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1[open] > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-text,
+#nav-bar > .toolbarbutton-1:not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active) > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+  background: hsla(0,0%,100%,.1) linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.5)) !important;
+  border-color: hsla(0,0%,0%,1.0) !important;
+  box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+              0 1px 0 hsla(0,0%,100%,.5) inset,
+			  0 0 0 1px hsla(0,0%,0%,1.0) inset !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is(:hover,[open]) > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#nav-bar > .toolbarbutton-1:not([buttonover]):not([open]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled]) > .dropmarker-icon,
+#PanelUI-menu-button:not([open]):not(:active):hover .toolbarbutton-badge-stack {
+  background-color: rgba(0,0,0,.1) !important;
+  border-color: hsla(190,50%,65%,.8) hsla(190,50%,50%,.8) hsla(190,50%,40%,.8) !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#nav-bar > toolbarbutton:not(#PlacesChevron)[type="menu"][open]:not([disabled]):not(.bookmark-item):not([container="true"]) > .toolbarbutton-icon,
+#nav-bar > toolbarbutton:not(#PlacesChevron)[type="menu-button"]:not([open]):hover:not([disabled]):not(.bookmark-item):active > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):is(:hover:active,:active, [open]) > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
+#nav-bar > .toolbarbutton-1:not(#PlacesChevron):not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-text,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active,:active) > .toolbarbutton-badge-stack,
+#PanelUI-menu-button:not([disabled=true]):is([open],[checked],:hover:active,:active) .toolbarbutton-badge-stack {
+  background: hsla(0,0%,0%,.02) linear-gradient(hsla(0,0%,0%,.12), hsla(0,0%,0%,0)) border-box !important;
+  border-color: hsla(0,0%,0%,.3) !important;
+  box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+              0 1px 0 hsla(0,0%,0%,.05) inset,
+              0 1px 1px hsla(0,0%,0%,.2) inset,
+			  0 0 0 1px hsla(0,0%,0%,.3) inset !important;
+  transition-duration: 10ms !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[disabled=true] .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbarbutton[disabled=true] .toolbarbutton-icon,
+#nav-bar > toolbarbutton[disabled=true] > .toolbarbutton-icon {
+  opacity: .4 !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem toolbarbutton[disabled=true],
+#nav-bar #nav-bar-customization-target > toolbarbutton[disabled=true],
+#nav-bar > toolbarbutton[disabled=true] {
+  opacity: 1.0 !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack,
+#nav-bar > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
+#nav-bar > .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack {
+  background-color: transparent !important;
+}
+
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > toolbaritem .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-text,
+#nav-bar #nav-bar-customization-target > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-text,
+#nav-bar > .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
+  background-color: transparent !important;
+}
+
+/* deep Fx 109 bs and nonsense override */
+#nav-bar #nav-bar-customization-target > toolbaritem :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover,
+#nav-bar #nav-bar-customization-target > :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover,
+#nav-bar > :is(toolbarbutton.subviewbutton,.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]),[overflowedItem=true]) > toolbarbutton):not([disabled]):hover {
+  background-color: unset !important; 
+}
+
+/* fix hover outline effect on extension buttons */
+#nav-bar #nav-bar-customization-target > toolbaritem .unified-extensions-item-action-button {
+  padding: 3px !important;
+  margin: -3px !important
+}

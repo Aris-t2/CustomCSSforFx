@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtabmix.png") !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx_mix/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx_mix/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx_mix/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx_mix/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx_mix/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx_mix/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx_mix/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx_mix/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx_mix/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx_mix/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx_mix/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx_mix/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx_mix/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx_mix/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx_mix/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx_mix/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx_mix/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx_mix/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx_mix/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx_mix/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx_mix/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx_mix/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx_mix/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx_mix/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx_mix/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx_mix/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx_mix/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx_mix/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx_mix/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx_mix/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx_mix/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx_mix/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_mix/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_mix/savetopocket.png") !important;
+}

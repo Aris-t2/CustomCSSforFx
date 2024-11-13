@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* dropmarker icon / arrow */
+#main-window[tabsintitlebar] #navigator-toolbox #PanelUI-button .toolbarbutton-icon {
+  list-style-image: url("chrome://branding/content/about-logo.png") !important;
+  width: 16px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+

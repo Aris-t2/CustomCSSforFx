@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtabff1.png") !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx12colorized/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx12colorized/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx12colorized/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx12colorized/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx12colorized/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx12colorized/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx12colorized/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx12colorized/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx12colorized/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx12colorized/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx12colorized/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx12colorized/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx12colorized/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx12colorized/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx12colorized/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx12colorized/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx12colorized/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx12colorized/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx12colorized/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx12colorized/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx12colorized/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx12colorized/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx12colorized/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx12colorized/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx12colorized/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx12colorized/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx12colorized/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx12colorized/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx12colorized/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx12colorized/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx12colorized/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx12colorized/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx12colorized/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx12colorized/savetopocket.png") !important;
+}

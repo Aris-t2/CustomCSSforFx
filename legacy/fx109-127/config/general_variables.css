@@ -1,0 +1,77 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* general settings */
+:root {
+
+  /* custom height for default tabs [disabled by default] */
+  /*--tab-min-height: 24px !important; /**/
+  
+  /* custom height for 'photon tabs' only */
+  --photon_tabs_tab_height: 28px !important;
+	
+  /* custom height for 'classic squared tabs' only */
+  --classic_squared_tabs_tab_height: 26px !important;
+  
+  /* set to '0px' for fully classic squared tabs */
+  --classic_squared_tabs-border-radius: 3px !important;
+  
+  /* set to '0px' for fully squared tabs */
+  --default_tab_border_roundness: 5px !important;
+ 
+  /* for default icon only */
+  --classic_squared_tabs_tab_default_loading_icon_color: #0A84FF !important;
+  
+  /* for tab_close_icon_size.css */
+  --tab_close_icons_size: 16px !important; /* 14-20px */
+  
+  /* for 'tab_maxwidth.css'
+  - unlock 'min width' code inside file first for '--tab_min_width' to work */
+  /* --tab-min-width: 50px !important; */
+  --tab_min_width: 50px !important; 
+  --tab_max_width: 250px !important;
+  
+  /* for tabs_multiple_lines.css */
+  --tab_min_width_mlt: 100px !important;
+  --tab_max_width_mlt: 200px !important;
+  --tabs-lines: 3 !important; 
+
+  /* for bookmarks_toolbar_multiple_lines.css */
+  --bookmark_items_height: 22px !important; /* <- bookmark items - line height */
+  --bookmark_items_lines: 3 !important; /* <- maximum amount of lines */
+  
+  /* for increase_ui_font_size.css */
+  --general_ui_font_size: 10pt !important;
+  
+  /* for searchbar_popup_engines_show_labels_scrollbars.css */
+  --search-one-offs_labels_height: 100px !important;
+    
+  /* for addonbar_move_bookmarks_toolbar_to_bottom.css */
+  --addonbar_height: 25px !important;
+
+  /* for ac_popup_result_font_size.css */
+  --results_font_size: var(--general_ui_font_size,10pt) !important; /* 10pt */
+  
+  /* for urlbar_border_roundness.css */
+  --megabar_border_roundness: 20px !important;
+  
+  /* for top_toolbar_colors.css and top_toolbar_colors_v2.css */
+  --top_toolbars_background: hsl(235,33%,19%) !important; /* #0063b1 */ /* hsl(235,33%,19%) was used by old accent color option  */ 
+  --top_toolbars_background_inactive: hsl(235,13%,9%) !important; /* #ffffff */
+  --top_toolbars_text: hsl(240,9%,98%) !important;
+  --top_toolbars_text_inactive: #999999 !important;
+  
+  /* for urlbar_background_color.css */
+  --urlbar_background_color: white !important;
+  --urlbar_text_color: black !important;
+  
+  /* for popup_compact_menus_squared.css */
+  --custom_border-radius: 0px !important;
+}
+
+:root[uidensity="touch"] {
+  /* custom height for 'classic squared tabs' only */
+  --classic_squared_tabs_tab_height: 36px !important;
+}

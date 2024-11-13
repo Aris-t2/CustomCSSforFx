@@ -1,0 +1,1233 @@
+/*===============================================================================
+  Firefox userChrome.css tweaks: main file
+  
+  Custom CSS for Firefox 115+
+  Current version: 4.5.9
+
+  Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
+  Github: https://github.com/aris-t2/customcssforfx
+  Change-log: https://github.com/aris-t2/customcssforfx/commits/
+
+  
+  Firefox requires the following preference to be enabled for custom styles to be loaded:
+  
+    'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+  
+  Firefox preferences can be accessed by typing `about:config` into the url bar.
+  
+  ===============================================================================
+  
+  ======
+  README
+  ======
+
+  To find the profile folder type `about:support` into url bar and navigate to: 
+  'Profile Folder > Open Folder'
+  
+  Create a /chrome/ (chrome) directory btw. folder inside the profile folder you just opened and
+  paste projects files and folders into it, so it looks like this:
+  
+  /chrome/config/
+  /chrome/css/
+  /chrome/image/
+  /chrome/userChrome.css
+  /chrome/userContent.css
+
+  ENABLING/DISABLING options:
+  To activate an option: remove /* before @import
+  To deactivate an option: add /* before @import
+
+  EXPERIMENTAL settings:
+  These are for testing purposes only an might get broken by any new browser update.
+
+
+  /=========================\
+  |    TABLE OF CONTENTS    |
+  \=========================/
+  
+  CONFIGURATION FILES
+    - general variables / color variables (default browser theme only)
+	- edit target files to change general values
+  
+  TOOLBAR BUTTONS
+    - toolbar button / icon appearance
+    - bookmarks menu button / popup
+    - other button settings
+    - custom BACK and FORWARD buttons appearance
+    - APPLICATION/HAMBURGER BUTTON
+      - visibility / popup
+      - buttons appearance on navigation toolbar / in Firefox titlebar
+  
+  TABS
+    - custom tab appearance / old squared tabs
+    - TABS TOOLBAR POSITION
+      - below titlebar / navigation and bookmarks toolbar / main content
+    - TAB TEXT - colors/shadow/weight/style for default/active/hovered/pending tabs
+    - MULTIROW / multi lined tabs
+    - empty tab favicon / custom tab loading animation / tab close icon settings
+    - settings for DEFAULT TABS / other tab settings
+	
+  GENERAL UI
+    - general settings / close icons / page context menu items
+	
+    - overflow menu / sidebar / findbar
+    
+	- SEARCHBAR
+      - general settings for default search
+  
+  TOOLBARS
+    - ADDONS BAR (simulated bottoms toolbar)
+    
+	- GENERAL TOOLBAR settings
+      - toolbar context menu settings
+    
+	- MENUBAR settings
+    
+	- bookmarks toolbar settings
+    - BOOKMARKS TOOLBAR - MULTIPLE LINES
+    - AeroGlass TOOLBARS / WIN10 fix for GLASS8 (not supported by Firefox 117+)
+    - TOOLBAR TEXT MODES
+      - icons+text / text only
+	
+  LOCATION BAR / urlbar / mega bar
+    - general location bar tweaks / identity box / padlock icons icon/button tweaks
+    - 'autocomplete popup' appearance / result item settings/appearance
+
+*/
+
+
+/* ==========================
+   GENERAL / GLOBAL VARIABLES
+   ==========================
+   
+   [!] set global variables for font and tab size options and more inside target file 
+*/
+
+@import "./config/general_variables.css"; /**/
+
+/* -------------------------
+   MAIN UI / COLOR VARIABLES
+   -------------------------
+   
+   [!] only use one option at a time
+   [!] For default browser theme only!
+   [!] Set own colors for tabs & toolbars inside 'color_variables.css' or use available presets.
+   [!] An enabled 'menubar_color.css' and 'statusbar_color.css' might be required in some cases.
+*/
+
+/* default 'grey' colors */
+@import "./config/color_variables.css"; /**/
+
+/* 'AeroBlue' colors (Win 7 Aero) */
+/* @import "./config/color_variables_aero.css"; /**/
+
+/* 'Classic grey' colors (Win Classic) */
+/* @import "./config/color_variables_classic-grey.css"; /**/
+
+/* 'Firefox 3-like' blueish colors */
+/* @import "./config/color_variables_fx3.css"; /**/
+
+/* (Semi-)'transparent' colors */
+/* @import "./config/color_variables_transparent.css"; /**/
+
+/* 'AeroGlass' colors / Win10+Glass8 fix can be found in 'toolbars' area */
+/* @import "./config/color_variables_aeroglass.css"; /**/
+
+/* Based on Firefox 'Developer Edition' colors */
+/* @import "./config/color_variables_deved.css"; /**/
+
+/* Based on 'Noia 4 themes' grey colors */
+/* @import "./config/color_variables_noia4_grey.css"; /**/
+
+/* Based on 'Noia 4 themes' lightgrey colors */
+/* @import "./config/color_variables_noia4_lightgrey.css"; /**/
+
+/* Based on 'Noia 4 themes' dark colors */
+/* @import "./config/color_variables_noia4_dark.css"; /**/  
+
+/* Darker "Dark" default theme v1 */
+/* @import "./css/toolbars/default_dark_theme_darker.css"; /**/
+
+/* Darker "Dark" default theme v2 */
+/* @import "./css/toolbars/default_dark_theme_darker_v2.css"; /**/
+
+
+/* ------------------------------------------
+   CUSTOM SCROLLBARS VARIABLES - EXPERIMENTAL 
+   ------------------------------------------
+   
+   [!] Might not work on every page! This issue is for Mozilla to solve.
+   [!] Not compatible with custom scrollbar JavaScript userChrome scripts.
+   [!] Custom size values only compatible with 'web content' scrollbars at the moment.
+   [!] More info inside 'custom_scrollbar_appearance.css' file.
+
+/* @import "./config/custom_scrollbar_appearance.css"; /**/
+
+
+/* ==========================================
+   TOOLBAR BUTTONS (shape, appearance, icons)
+   ==========================================
+*/
+
+/* ---------------
+   ICON APPEARANCE
+   --------------- 
+   
+   [!] only use one option at a time
+   [!] custom icon quality does not increase in HiDPI modes
+   [!] Firefox 88 icon set uses SVG images
+*/
+
+@import "./css/buttons/icons_colorized.css"; /**/
+/* @import "./css/buttons/icons_white_icons.css"; /**/
+/* @import "./css/buttons/icons_custom_icons.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx1.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx2.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx3.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx3strata.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx12_colorized.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_crystal.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_firebird.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_kempelton.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_noia.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_ie6.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_seamonkey.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_old_chrome.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_old_osx.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx88.css"; /**/
+/* @import "./css/buttons/icons_custom_icons_fx88_colorized.css"; /**/
+
+
+/* -----------------
+   BUTTON APPEARANCE
+   -----------------
+*/
+
+/* 'Classic' pre-Proton button padding */
+/* @import "./css/buttons/classic_button_padding.css"; /**/
+
+
+/* -------------------------------------
+   Navigation toolbar buttons appearance
+   -------------------------------------
+   
+   [!] only use one option at a time
+   [!] good for Dark themes: buttons_on_navbar_classic_appearance_dark.css
+   [!] good for Dark themes: buttons_on_navbar_glass_appearance.css
+*/
+
+@import "./css/buttons/buttons_on_navbar_classic_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_classic_appearance_v2.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_classic_appearance_dark.css"; /**/		
+/* @import "./css/buttons/buttons_on_navbar_aero_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_windows_classic_theme_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_glass_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_navbar_osx_appearance.css"; /**/
+
+
+/* -------------------------------------
+   Navigation toolbar buttons: roundness
+   -------------------------------------
+   
+   [!] edit file to set roundness
+*/
+
+/* @import "./css/buttons/buttons_on_navbar_button_roundness.css"; /**/
+
+
+/* -----------------------------
+   Squared buttons / button size
+   -----------------------------
+   
+   [!] edit file to set roundness
+*/
+
+/* 'rectangular shape' - normal size */
+/* @import "./css/buttons/buttons_on_navbar_squared_buttons.css"; /**/
+
+/* 'normal shape' - large size (huge 48x48px buttons with 36x36px icons)
+   [!] EXPERIMENTAL
+   [!] not compatible with 'custom icon' options
+   [!] not compatible with 'custom back & forward buttons' appearance options
+   [!] not compatible with 'text mode' option
+   [!] partly compatible with 'icons+text' option, if in 'compact mode'
+*/
+/* @import "./css/buttons/buttons_on_navbar_huge_48px_size.css"; /**/
+
+/* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode
+*/
+/* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
+
+
+/* ------------------------------------
+   Bookmarks toolbar: button appearance
+   ------------------------------------
+   
+   [!] only use one option at a time
+   [!] Windows 7-10 only: buttons_on_bookmarks_toolbar_old_size_and_appearance.css
+*/
+
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_dark.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_aero_appearance.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_old_size_and_appearance.css"; /**/
+
+
+/* ---------------------------------------------
+   Bookmarks toolbar: bookmarks items appearance
+   ---------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_items.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance_items_dark.css"; /**/
+/* @import "./css/buttons/buttons_on_bookmarks_toolbar_aero_appearance_items.css"; /**/
+
+
+/* -------------------------------
+   Menu toolbar: button appearance
+   -------------------------------
+*/
+
+/* @import "./css/buttons/buttons_on_menubar_toolbar_classic_appearance.css"; /**/
+
+
+/* -------------------------------
+   Tabs toolbar: button appearance
+   -------------------------------
+   
+   [!] EXPERIMENTAL
+*/
+
+/* @import "./css/buttons/buttons_on_tabs_toolbar_classic_appearance.css"; /**/
+
+
+/* ---------------------------------------------------
+   Bookmarks menu button - 'button & popup' appearance
+   ---------------------------------------------------
+*/
+
+@import "./css/buttons/bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_showall_top_hidden.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_showall_bottom_hidden.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_sidebar_item_hidden.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_toolbar_item_hidden.css"; /**/
+/* @import "./css/buttons/bookmarks_menu_button_popup_other_item_hidden.css"; /**/
+
+
+/* --------------------------------------------------
+   Unified extensions button - Add-ons toolbar button
+   --------------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/buttons/unified_extensions_button_hidden.css"; /**/
+/* @import "./css/buttons/unified_extensions_button_popup_icons_only.css"; /**/
+/* @import "./css/buttons/unified_extensions_button_popup_icons_only_horizontal.css"; /**/
+
+
+/* ----------------------
+   Other buttons settings
+   ----------------------
+*/
+
+@import "./css/buttons/whatnew_button_always_hidden.css"; /**/
+/* @import "./css/buttons/forward_button_hide_when_disabled.css"; /**/
+/* @import "./css/buttons/back_and_forward_separated_history_popups.css"; /**/
+/* @import "./css/buttons/back_and_forward_leftclick_history_popup_hidden.css"; /**/
+/* @import "./css/buttons/zoom_buttons_hide_reset.css"; /**/
+/* @import "./css/buttons/overflow_button_rotate_on_open.css"; /**/
+
+
+/* ----------------------------------------
+   CUSTOM BACK & FORWARD BUTTONS appearance
+   ----------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ff3_strata_orange.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ff3_strata_red.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ie8.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ie9.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_ie11.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_kempelton.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_phoenix.css"; /**/
+/* @import "./css/buttons/custom_backforward_large_noia.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ff3.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ff3_strata.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ff3_strata_orange.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ff3_strata_red.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ie8.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ie9.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_ie11.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
+/* @import "./css/buttons/custom_backforward_small_phoenix.css"; /**/
+/* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */
+/* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared*/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared*/
+
+
+/* ==========================================
+   APPLICATION / HAMBURGER / MAIN MENU BUTTON
+   ==========================================
+*/
+
+
+/* -----------------------------------
+   Application/hamburger button hidden
+   -----------------------------------
+   
+   [!] disable all other appbutton options when using this option
+*/
+
+/* @import "./css/appbutton/appbutton_hidden.css"; /**/
+
+
+/* ----------------------------------
+   Application/hamburger button popup
+   ----------------------------------
+*/
+
+@import "./css/appbutton/appbutton_popup_icons.css"; /**/
+@import "./css/appbutton/appbutton_popup_icons_colorized.css"; /**/
+/* @import "./css/appbutton/appbutton_popup_sync_hidden.css"; /**/
+/* @import "./css/appbutton/appbutton_popup_logins_and_passwords_hidden.css"; /**/
+
+
+/* ----------------------------------------------------------------
+   Application / hamburger / main menu button on navigation toolbar
+   ----------------------------------------------------------------
+
+   [!] disable all 'button in Firefox titlebar' options for
+       'button on navigation toolbar' options to work properly
+*/
+
+
+/* -----------------------------------
+   Button on navigation toolbars start
+   -----------------------------------
+*/
+
+/* @import "./css/appbutton/appbutton_on_navbar_start_position.css"; /**/
+
+
+/* -----------------------------------
+   Button on navigation toolbar: color
+   -----------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/appbutton/appbutton_on_navbar_color_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_autocolor57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_orange.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_aurora.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_nightly.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_deved57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_nightly57p.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_color_palemoon.css"; /**/
+
+
+/* -----------
+   Button icon
+   -----------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/appbutton/appbutton_on_navbar_icon_white.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_dark.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_grey.css"; /**/
+/* @import "./css/appbutton/appbutton_on_navbar_icon_browser_logo.css"; /**/
+
+
+/* ------------
+   Button label
+   ------------
+   
+   [!] show label and icon
+*/
+
+/* @import "./css/appbutton/appbutton_on_navbar_icon_and_label.css"; /**/
+
+
+/* --------------------------------------------------------------
+   Application / hamburger / main menu button in Firefox titlebar
+   --------------------------------------------------------------
+   
+   [!] disable all 'button on navigation toolbar' options for
+       'button in Firefox titlebar' options to work properly
+*/
+
+
+/* -----------------------------------------------
+   Button in titlebar: label / icon / label + icon
+   -----------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* label only */
+@import "./css/appbutton/appbutton_in_titlebar.css"; /**/
+
+/* icon only */
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only.css"; /**/
+
+/* label + icon */
+/* @import "./css/appbutton/appbutton_in_titlebar_label_and_icon.css"; /**/
+
+
+/* -----------------------------------
+   Button in titlebar: icon appearance
+   -----------------------------------
+   
+   [!] only use one option at a time
+   [!] requires 'appbutton_in_titlebar_icon_only.css' or 'appbutton_in_titlebar_label_and_icon.css' to be active
+*/
+
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_dark.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_grey.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_browser_logo.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_icon_only_nightly.css"; /**/
+ 
+
+/* -------------------------
+   Button in titlebar: color
+   -------------------------
+   
+   [!] only use one option at a time
+*/
+
+@import "./css/appbutton/appbutton_in_titlebar_autocolor.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_autocolor57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_transparent.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_semi_transparent.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_aurora.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_nightly.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_deved57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_nightly57p.css"; /**/
+/* @import "./css/appbutton/appbutton_in_titlebar_palemoon.css"; /**/
+
+
+
+/* ==============
+   TAB appearance
+   ==============
+   
+   [!] only use one option at a time
+   [!] custom tab colors can be set inside color_variablesXXX.css file(s)
+   [!] curved tabs known from Firefox 29-56 will not be added to this project
+   
+*/
+
+/* Classic tabs appearance known from Firefox 4-28 */
+@import "./css/tabs/classic_squared_tabs.css"; /**/
+
+/* Classic tabs appearance known from Firefox 4-28 for active tab only  */
+/* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
+
+/* Default tab appearance with increased contrast for non-active tabs */
+/* @import "./css/tabs/default_tabs_enhanced.css"; /**/
+
+/* Default tab appearance with colors set by color variables */
+/* @import "./css/tabs/default_tabs_with_colors.css"; /**/
+
+/* Tab appearance based on tabs known from Firefox 57 - 88 */
+/* @import "./css/tabs/default_tabs_photon.css"; /**/
+/* @import "./css/tabs/default_tabs_photon_alt.css"; /**/ /* file from v4.2.7 -no support- */
+
+
+/* ======================================================================================
+   TABS TOOLBAR POSITION (below titlebar / below navigation toolbar / below main content)
+   ======================================================================================
+   
+   [!] only use one option at a time
+   [!] only use BELOW TITLEBAR or BELOW NAVIGATION BAR or BELOW MAIN CONTENT  <<<<< !!!
+*/
+
+
+/* ---------------------------------------------
+   TABS BELOW TITLEBAR (Fx56-like tabs position)
+   ---------------------------------------------
+*/
+
+/* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
+
+
+/* --------------------------------------------------------------
+   TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS / TABS NOT ON TOP
+   --------------------------------------------------------------
+
+   [!] Note: only 'alt' works with multi-tab lines option.
+   [!] Note: might require overriding url bars 'selection color' --> see corresponding area
+*/
+
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
+
+/* ########################################### Test for Firefox 133+ ########################################### */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx133.css"; /**/
+
+
+/* Alternative for multi-lined tabs (Glitches might occur with inactive menubar!)
+   [!] use option below for multiple tab lines support
+*/
+
+/* @import "./css/tabs/tabs_below_navigation_toolbar_alt.css"; /**/
+
+/* [!] no menubar when OS titlebar is active */
+/* @import "./css/tabs/tabs_below_navigation_toolbar_alt_force_hidden_menubar.css"; /**/
+
+
+/* Move tabs to a higher position 
+   [!] not compatible to 'tabs toolbar - multiple tab lines' option
+   [!] only use one option at a time
+   [!] EXPERIMENTAL
+*/
+
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/
+
+
+/* ----------------------------------------
+   TABS BELOW MAIN CONTENT (TABS ON BOTTOM)
+   ----------------------------------------
+  
+   [!] not compatible to 'tabs toolbar - multiple tab lines' option
+*/
+
+/* @import "./css/tabs/tabs_below_main_content.css"; /**/
+ 
+/* ########################################### Test for Firefox 133+ ########################################### */
+/* @import "./css/tabs/tabs_below_main_content_fx133.css"; /**/
+
+
+/* --------------------------------------------------------------------------------
+   TAB BACKGROUND COLORS for default/active/hovered/unloaded tabs and 'new tab' tab
+   --------------------------------------------------------------------------------
+*/
+
+/* Edit target file to set own custom colors */
+/* @import "./config/custom_tab_color_settings.css"; /**/
+
+/* TAB TEXT colors/shadow/weight/style for default/active/hovered/unloaded tabs
+
+   [!] Edit target file to set own custom colors
+*/
+ 
+/* @import "./config/custom_tab_text_settings.css"; /**/
+
+
+/* ------------------------------------------
+   MULTIROW / multi lined tabs - EXPERIMENTAL
+   ------------------------------------------
+   
+   [!] only use one option at a time
+   [!] BUG: dragging tabs does not work with multi lined tabs
+   [!] not compatible with 'tabs toolbar - below main content' option
+   [!] not compatible with 'newtab button always_visible' option
+   [!] only compatible with 'tabs below navigation toolbar >> alt << version'
+*/
+
+/* @import "./css/tabs/tabs_multiple_lines.css"; /**/
+/* @import "./css/tabs/tabs_multiple_lines_force_newtab_button_visibility.css"; /**/
+
+
+/* ---------------------------------
+   Restore empty/missing tab favicon
+   ---------------------------------
+   
+   [!] only use one option at a time
+*/
+
+@import "./css/tabs/missing_tab_favicon_restored_default.css"; /**/
+/* @import "./css/tabs/missing_tab_favicon_restored_globe_v2.css"; /**/
+/* @import "./css/tabs/missing_tab_favicon_restored_sheet.css"; /**/
+/* @import "./css/tabs/missing_tab_favicon_restored_dotted.css"; /**/
+/* @import "./css/tabs/missing_tab_favicon_restored_dotted_white.css"; /**/
+/* @import "./css/tabs/missing_tab_favicon_restored_brand_logo.css"; /**/
+
+
+/* ----------------------------
+   Custom tab loading animation
+   ----------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/tabs/tab_throbber_blue_fx56.css"; /**/
+/* @import "./css/tabs/tab_throbber_blue.css"; /**/
+/* @import "./css/tabs/tab_throbber_grey_classic.css"; /**/
+/* @import "./css/tabs/tab_throbber_green.css"; /**/
+/* @import "./css/tabs/tab_throbber_orange_ubuntu.css"; /**/
+
+
+/* -----------------------
+   Tab close icon settings
+   -----------------------
+   
+   [!] only use one option at a time
+*/
+
+@import "./css/tabs/tab_close_always_visible.css"; /**/
+/* @import "./css/tabs/tab_close_on_active_tab_only.css"; /**/
+/* @import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
+/* @import "./css/tabs/tab_close_hidden.css"; /**/
+/* @import "./css/tabs/tab_close_hidden_for_only_one_visible_tab.css"; /**/
+/* @import "./css/tabs/tab_close_at_tabs_start.css"; /**/
+/* @import "./css/tabs/tab_close_icon_size.css"; /**/
+
+
+/* ------------------------------------------------
+   DEFAULT TABS - settings for default browser tabs
+   ------------------------------------------------
+   
+   [!] only use one option at a time
+   [!] use only, if 'classic squared tabs' are disabled
+*/
+
+/* @import "./css/tabs/default_tabs_no_tab_line.css"; /**/
+/* @import "./css/tabs/default_tabs_tab_line_red_for_unloaded_tabs.css"; /**/
+/* @import "./css/tabs/default_tabs_tab_line_purple_in_private_mode.css"; /**/
+
+
+/* ------------------
+   OTHER TAB SETTINGS
+   ------------------
+*/
+
+@import "./css/tabs/tab_icon_colors.css"; /**/
+/* @import "./css/tabs/tab_title_centered.css"; /**/
+/* @import "./css/tabs/tabs_firefox_view_button_hidden.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* Has to be used along with 'classic_squared_tabs.css' */
+/* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
+/* @import "./css/tabs/tabs_fully_squared.css"; /**/
+/* @import "./css/tabs/tab_audio_icon.css"; /**/
+/* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
+/* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/tabs_active_tab_indicator_for_classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
+/* @import "./css/tabs/newtab_button_always_visible.css"; /**/
+/* @import "./css/tabs/tab_icon_inactive_tabs_lower_opacity.css"; /**/
+/* @import "./css/tabs/tab_icon_unloaded_tabs_lower_opacity.css"; /**/
+/* @import "./css/tabs/tab_maxwidth.css"; /**/
+/* @import "./css/tabs/tab_titles_remove_blur.css"; /**/
+/* @import "./css/tabs/alltabs_button_always_visible.css"; /**/  /* hidden, if multiple tab rows are used */
+/* @import "./css/tabs/alltabs_button_only_visible_in_overflow_mode.css"; /**/ 
+/* @import "./css/tabs/alltabs_button_always_hidden.css"; /**/ 
+/* @import "./css/tabs/alltabs_button_old_icon.css"; /**/ 
+/* @import "./css/tabs/pinnedtab_empty_favicon_hidden.css"; /**/
+
+/* [!] edit target file to select which items to hide */
+/* @import "./css/tabs/tab_context_menuitems_visibility.css"; /**/
+
+
+/* ==========
+   GENERAL UI
+   ==========
+*/
+
+@import "./css/generalui/private_mode_indicator_hidden.css"; /**/
+@import "./css/generalui/bookmark_icons_colorized.css"; /**/
+/* @import "./css/generalui/searchbookmarks_hidden.css"; /**/
+/* @import "./css/generalui/bookmarks_smaller_more_bookmarks_icon.css"; /**/
+/* @import "./css/generalui/send_to_device_menuitems_hidden.css"; /**/
+/* @import "./css/generalui/set_as_desktop_background_menuitems_hidden.css"; /**/
+/* @import "./css/generalui/increase_ui_font_size.css"; /**/
+/* @import "./css/generalui/flex_space_on_navbar_replace_with_separator.css"; /**/
+/* @import "./css/generalui/statusbar_color.css"; /**/
+/* @import "./css/generalui/classic_drop_indicator.css"; /**/
+/* @import "./css/generalui/notification_old_size.css"; /**/
+
+
+/* ----------------------------------------
+   '>>' Overflow menu in navigation toolbar
+   ----------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/generalui/overflow_menu_remove_text.css"; /**/
+/* @import "./css/generalui/overflow_menu_horizontal_remove_text.css"; /**/
+
+
+/* -------------------------------------------
+   Context menu / menupopup / panel appearance
+   -------------------------------------------
+   
+   [!] not for macOS
+   [!] affects context menus, popup menus and panel menus on Windows 10
+   [!] affects panel menus on Windows 7 and 8 and on Linux
+*/
+
+/* @import "./css/generalui/popup_compact_menus.css"; /**/
+/* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
+/* @import "./css/generalui/popup_menus_space_before_label.css"; /**/
+/* @import "./css/generalui/popup_menus_menu_background.css"; /**/
+
+
+/* ---------------------------
+   Other context menu settings
+   ---------------------------
+*/
+
+/* @import "./css/generalui/popup_items_hover_appearance_aero.css"; /**/
+/* @import "./css/generalui/popup_animation_fade_time_reduced.css"; /**/
+
+/* This removes tab scroll buttons, no CSS fix possible atm */
+/* @import "./css/generalui/popup_menupopup_with_scrollbars.css"; /**/  
+
+
+/* -------------------------------------------------------------------------
+   Page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks'
+   -------------------------------------------------------------------------
+*/
+
+/* @import "./css/generalui/context_bfrsb_icons_colorized.css"; /**/
+
+
+/* ------------------------------------------------------------------------------------------
+   Page context menu items: 'back', 'forward', 'reload', 'stop', 'bookmarks': menuitem labels
+   ------------------------------------------------------------------------------------------
+
+   [!] only use one option at a time
+*/
+
+@import "./css/generalui/context_bfrsb_labels_without_icons.css"; /**/
+/* @import "./css/generalui/context_bfrsb_labels_with_icons.css"; /**/
+
+
+/* -------
+   SIDEBAR
+   -------
+   
+   [!] sidebar_header_icons.css adds icons to the popup
+*/
+
+/* @import "./css/generalui/sidebar_items_compact.css"; /**/
+/* @import "./css/generalui/sidebar_header_icons.css"; /**/
+/* @import "./css/generalui/sidebar_header_icons_colorized.css"; /**/
+/* @import "./css/generalui/sidebar_header_lwtheme.css"; /**/
+
+/* -------------------
+   SIDEBAR: dimensions
+   -------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
+/* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
+
+/* -------------------
+   SIDEBAR: appearance
+   -------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/generalui/sidebar_appearance_grey.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_grey_v2.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_dark.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_dark_v2.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_lwtheme_bright.css"; /**/
+/* @import "./css/generalui/sidebar_appearance_lwtheme_dark.css"; /**/
+
+
+/* -------
+   FINDBAR
+   -------
+*/
+
+/* @import "./css/generalui/findbar_on_top.css"; /**/
+/* @import "./css/generalui/findbar_close_at_findbars_start.css"; /**/
+/* @import "./css/generalui/findbar_compact.css"; /**/
+
+/* -----------------------------------
+   Close icons for general ui and tabs
+   -----------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/generalui/close_icon_windows7.css"; /**/
+/* @import "./css/generalui/close_icon_windows7inverted.css"; /**/
+/* @import "./css/generalui/close_icon_windows7v2.css"; /**/
+/* @import "./css/generalui/close_icon_gchrome.css"; /**/
+/* @import "./css/generalui/close_icon_red.css"; /**/
+/* @import "./css/generalui/close_icon_windows10.css"; /**/
+/* @import "./css/generalui/close_icon_windows10inverted.css"; /**/
+/* @import "./css/generalui/close_icon_windows10red.css"; /**/
+/* @import "./css/generalui/close_icon_windows10redv2.css"; /**/
+/* @import "./css/generalui/close_icon_firefox3.css"; /**/
+
+/* -----------------------------
+   SEARCHBAR / SEARCH ON TOOLBAR
+   -----------------------------
+*/
+
+@import "./css/generalui/searchbar_glassplus_indicator_hidden.css"; /**/
+/* @import "./css/generalui/searchbar_go_button_hidden.css"; /**/
+
+
+/* -------------------------------------------
+   SEARCHBAR popup - search engine settings v1
+   -------------------------------------------
+*/
+
+/* @import "./css/generalui/searchbar_popup_current_engine_hidden.css"; /**/
+
+/* -------------------------------------------
+   SEARCHBAR popup - search engine settings v2
+   -------------------------------------------
+
+   [!] only use one option at a time
+*/
+
+/* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
+
+/* ------------------------
+   MENUBARS bookmarks popup
+   ------------------------
+   
+   [!] not compatible with macOS or Linux
+*/
+
+/* @import "./css/generalui/menubar_bookmarks_popup_bookmark_page_item_hidden.css"; /**/
+/* @import "./css/generalui/menubar_bookmarks_popup_subscribe_item_hidden.css"; /**/
+/* @import "./css/generalui/menubar_bookmarks_popup_toolbar_item_hidden.css"; /**/
+/* @import "./css/generalui/menubar_bookmarks_popup_other_item_hidden.css"; /**/
+
+
+/* ========
+   TOOLBARS
+   ========
+*/
+
+/* -------------------------------------------------------------------------
+   ADDON BAR - simulate add-on bar by moving bookmarks toolbar to the bottom
+   -------------------------------------------------------------------------
+
+   [!] EXPERIMENTAL
+   [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks
+   [!] not compatible to 'bookmarks toolbar - multiple lines' option
+   [!] not compatible to 'bookmarks toolbar autohide' option
+*/
+
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
+/* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
+/* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
+
+
+/* ------------------------
+   GENERAL TOOLBAR SETTINGS
+   ------------------------
+
+
+   ------------------
+   Top toolbar colors
+   ------------------
+
+   [!] only use one option at a time
+   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected on current Firefox versions and was removed
+   [!] 'top_toolbar_colors_v2.css' mainly for 'tabs below navigation toolbar option'
+   [!] Windows accent colors: about:config > browser.theme.windows.accent-color-in-tabs.enabled > true
+*/
+
+
+/* override titlebars and tab toolbars colors */
+/* @import "./css/toolbars/top_toolbar_colors.css"; /**/
+/* @import "./css/toolbars/top_toolbar_colors_v2.css"; /**/ 
+
+
+/* ----------------------
+   Other toolbar settings
+   ----------------------
+*/
+
+@import "./css/toolbars/toolbars_old_padding.css"; /**/
+@import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
+/* @import "./css/toolbars/tabs_toolbar_remove_background_fog_win7.css"; /**/
+
+/* [!] Adjustments for the searchbar placed on menubar */
+@import "./css/toolbars/searchbar_on_menubar_fix.css"; /**/
+
+
+/* ----------------------
+   Other toolbar settings
+   ----------------------
+   
+   [!] edit target file to select which items to hide
+*/
+
+/* @import "./css/toolbars/toolbar_context_menuitems_visibility.css"; /**/
+
+
+/* -------
+   MENUBAR
+   -------
+*/
+
+/* @import "./css/toolbars/menubar_fog_hidden.css"; /**/
+
+/* @import "./css/toolbars/menubar_alternative_menu_hover_color.css"; /**/
+
+/* @import "./css/toolbars/menubar_in_fullscreen_mode.css"; /**/
+
+/* for 'tabs not on top alt' */
+/* @import "./css/toolbars/menubar_in_fullscreen_mode_alt.css"; /**/
+
+
+/* -------------
+   Menubar color
+   -------------
+*/
+
+/* @import "./css/toolbars/menubar_color.css"; /**/
+
+
+/* -----------------
+   BOOKMARKS TOOLBAR
+   -----------------
+*/
+
+@import "./css/toolbars/bookmarks_toolbar_old_height.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_fixed_width.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_autohide.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
+
+
+/* ----------------------------------------------------
+   BOOKMARKS TOOLBAR: simulate second bookmarks toolbar
+   ----------------------------------------------------
+
+   [!] "Bookmarks Toolbar Items" element has to be moved to navigation toolbar in customizing mode
+*/
+
+/* @import "./css/toolbars/additional_bookmarks_toolbar_below_navbar.css"; /**/
+
+   
+/* ------------------------------------------
+   BOOKMARKS TOOLBAR above navigation toolbar
+   ------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar.css"; /**/
+/* @import "./css/toolbars/bookmarks_toolbar_above_navigation_toolbar_when_tab_not_top.css"; /**/
+
+
+/* ----------------------------------
+   BOOKMARKS TOOLBAR - MULTIPLE LINES
+   ----------------------------------
+   
+   [!] only use one option at a time
+   [!] the amount of visible bookmark items is limited internally to ~90-110 bookmarks
+   [!] not compatible to 'bookmarks toolbar autohide' option
+   [!] not compatible to 'simulated second bookmarks toolbar' option
+   [!] not compatible to 'simulated addon-bar' option
+   [!] EXPERIMENTAL
+*/
+
+/* @import "./css/toolbars/bookmarks_toolbar_multiple_lines.css"; /**/
+
+
+/* -----------------
+   TOOLBAR COLORS
+   -----------------
+*/
+
+@import "./css/toolbars/general_toolbar_colors.css"; /**/
+/* @import "./css/toolbars/tab_toolbar_colors_force_menubar_color.css"; /**/
+
+
+/* ------------------
+   AeroGlass TOOLBARS
+   ------------------
+   
+   [!] WIN10 fix for GLASS8
+   [!] EXPERIMENTAL
+   [!] not supported by Firefox 117+
+*/
+
+/* @import "./css/toolbars/general_toolbar_colors_navigation_toolbar_aeroglass.css"; /**/
+/* @import "./css/toolbars/general_toolbar_colors_bookmarks_toolbar_aeroglass.css"; /**/
+/* @import "./css/toolbars/general_toolbar_colors_tabs_toolbar_aeroglass.css"; /**/
+
+/* Windows 10 fix for Glass8 - Glass8 required for 'Windows 7'-like window transparency (not supported by Firefox 117+) */
+/* @import "./css/toolbars/general_toolbar_colors_aeroglass_windows10_glass8.css"; /**/
+
+
+/* ------------------
+   TOOLBAR TEXT MODES
+   ------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/toolbars/toolbar_mode_icons_and_text.css"; /**/
+/* @import "./css/toolbars/toolbar_mode_text.css"; /**/
+
+
+/* ==================================
+   LOCATION BAR / MEGABAR - Settings
+   ================================== 
+
+
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode  
+*/
+
+/* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/
+
+
+/* -----------------------------------
+   Identity box / page identity button
+   -----------------------------------
+*/
+
+/* @import "./css/locationbar/identitybox_colors.css"; /**/
+/* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
+/* @import "./css/locationbar/identitybox_replace_search_icon_with_globe.css"; /**/
+
+/* ----------------------------------------------------
+   Padlock icons in identity box / page identity button
+   ----------------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/locationbar/identitybox_padlock_icon_classic.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_classic2.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_modern.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_modern2.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_hidden.css"; /**/
+/* @import "./css/locationbar/identitybox_padlock_icon_arrow.css"; /**/
+
+
+/* -----------------------------------------------------------
+   Additional icons/buttons and tweaks for page action buttons
+   -----------------------------------------------------------
+*/
+
+/* @import "./css/locationbar/icons_colorized.css"; /**/
+/* @import "./css/locationbar/reader_alternative_icon.css"; /**/
+/* @import "./css/locationbar/popup_blocked_button_hidden.css"; /**/
+/* @import "./css/locationbar/picture_in_picture_button_hidden.css"; /**/
+/* @import "./css/locationbar/zoom_button_hidden.css"; /**/
+/* @import "./css/locationbar/go_button_in_location_bar_hidden.css"; /**/
+/* @import "./css/locationbar/tracking_protection_alternative_icon.css"; /**/
+/* @import "./css/locationbar/urlbar_icons_aero_appearance.css"; /**/
+
+
+/* ----------------------------
+   Star button / bookmarks star
+   ----------------------------
+*/
+
+/* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
+
+
+/* -----------------------------------------------------------
+   Star button / bookmarks star - alternative yellow star icon
+   -----------------------------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/locationbar/starbutton_alternative_icon.css"; /**/
+/* @import "./css/locationbar/starbutton_alternative_icon_v2.css"; /**/
+
+
+/* ------------------------------
+   General popup/results settings
+   ------------------------------
+*/
+
+@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
+/* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
+
+
+/* ------------------------------------------------------------------------------------
+   Selection color / force selection color on themes without predefined selection color
+   ------------------------------------------------------------------------------------
+*/
+
+/* @import "./css/locationbar/selection_color_for_dark_bg.css"; /**/
+/* @import "./css/locationbar/selection_color_for_bright_bg.css"; /**/
+
+
+/* --------------------------------------------------
+   MEGABAR - settings for 'megabar' & 'megabar popup'
+   --------------------------------------------------
+*/
+
+@import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
+/* @import "./css/locationbar/megabar_disable_openviewonfocus.css"; /**/
+/* @import "./css/locationbar/urlbar_border_roundness.css"; /**/
+@import "./css/locationbar/urlbar_restore_visible_border.css"; /**/
+
+
+/* -------------------------------------
+   Megabar/location bar background color
+   -------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+/* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* default white background color */
+/* @import "./css/locationbar/urlbar_background_color_dark.css"; /**/ /* force dark color for e.g. dark lw-themes */
+
+
+/* ---------------------------------------
+   Megabar: popup content order/appearance
+   ---------------------------------------
+   
+   [!] only use one option at a time
+*/
+
+@import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_url_and_title_50percent_width.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_title_and_url_two_lines_fx115.css"; /**/ /* for Fx115 ESR*/
+/* @import "./css/locationbar/ac_popup_megabar_url_only.css"; /**/
+
+
+/* --------------------------------------------
+   MEGABAR: result menuitem settings/appearance
+   --------------------------------------------
+*/
+
+@import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_searchwith_and_visit_items_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_suggest_label_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_search_engines_hidden.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_result_highlighting_aero.css"; /**/
+/* @import "./css/locationbar/ac_popup_megabar_result_separator.css"; /**/
+
+
+/* ---------------------
+   Custom / own CSS code
+   ---------------------
+   
+   [!] Create a "my_userChrome.css" file and add own/custom code to it.
+*/
+
+@import "./my_userChrome.css"; /**/

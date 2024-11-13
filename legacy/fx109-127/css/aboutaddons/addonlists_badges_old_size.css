@@ -1,0 +1,31 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	
+  .addon-badge {
+	width: 16px !important;
+	height: 16px !important;
+	background-size: 16px !important;
+	border-radius: 8px !important;
+  }
+  
+  .addon-badge-recommended {
+	background-size: 10px !important;
+	background-radius: 8px !important;
+  }
+  
+  .addon-badge-line {
+	border: none !important;
+  }
+  
+  .addon-badge-verified {
+	background-size: 10px !important;
+  }
+
+}

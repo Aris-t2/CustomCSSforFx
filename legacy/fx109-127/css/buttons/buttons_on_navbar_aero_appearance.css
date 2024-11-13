@@ -1,0 +1,57 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* hovered state */
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-menu-button) .unified-extensions-item toolbarbutton:not([disabled=true]):hover,*/
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#nav-bar #nav-bar-overflow-button:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  background: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+  border-radius: 6px !important;
+  outline: 1px solid rgba(124,163,206,0.7) !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}
+
+/* clicked/active state */
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active),*/
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#nav-bar #nav-bar-overflow-button:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon)  {
+  background: transparent !important;
+  background-image:
+	linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+	linear-gradient(to bottom, rgba(163,196,247,0.6), rgba(122,180,246,0.6)) !important;
+  border-radius: 6px !important;
+  outline: 1px solid rgba(124,163,206,0.99) !important;
+  transition: background-color .3s ease-in,
+			  border-color .2s ease-in,
+			  box-shadow .2s ease-in !important;
+}
+
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):hover .toolbarbutton-badge-stack .toolbarbutton-icon,
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) .toolbarbutton-badge-stack .toolbarbutton-icon,
+/*#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) .unified-extensions-item toolbarbutton:not([disabled=true]):is(:hover,[open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),*/
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) #activity_throbber:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) #activity_throbber:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  background: unset !important;
+  background-image:	unset !important;
+  border-radius: unset !important;
+  outline: unset !important;
+  transition: unset !important;
+}
+
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) :is(panel,.panel-viewcontainer,.panel-subview-body,.popup,popup) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active,:hover),
+#nav-bar :is(#nav-bar-customization-target,#PanelUI-button) :is(panel,.panel-viewcontainer,.panel-subview-body,.popup,popup) toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active,:hover) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+  outline: unset !important;
+  border-radius: unset !important;
+  background-image:	unset !important;
+}

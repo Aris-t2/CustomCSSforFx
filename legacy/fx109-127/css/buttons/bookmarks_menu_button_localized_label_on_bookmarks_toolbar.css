@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#PersonalToolbar #bookmarks-menu-button .toolbarbutton-text {
+  visibility: visible !important;
+  display: flex !important;
+}

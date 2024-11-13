@@ -1,0 +1,190 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+:root {
+  /* variable for tabs below navigation toolbar option */
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 0.5px ) !important;
+  
+  /* variable for tabs below navigation toolbar option on macOS */
+  --tab_below_navigation_toolbar_bottom_padding_macOS: calc( var(--tab-min-height) + 1px ) !important;
+  --tab_below_navigation_toolbar_toolbox_top_padding_macOS: calc(-1px + var(--tab-min-height)) !important;
+  
+  /* variable for tabs below main content option */
+  --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height)) !important;
+  --tab_below_main_content_toolbar_height: calc(2px + var(--tab-min-height)) !important;
+  --tab_below_main_content_top_margin: 0px !important;
+
+}
+
+/* make tabs look like tabs again */
+.tab-background {
+  border-radius: 0px !important;
+  margin-block: 0px !important;
+}
+
+:root:not([lwtheme]) .tab-background:is([selected],[multiselected]) {
+  background-image: var(--classic_squared_tabs_active_tab) !important;
+}
+
+:root[lwtheme] .tab-background:is([selected],[multiselected]) {
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--toolbar-bgimage) !important;
+}
+
+/* remove left and right tab spaces */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+  border-radius: 0px !important;
+}
+
+/* adjust 'new tab' tab */
+#tabs-newtab-button {
+  padding-inline: 1px !important;
+  border-radius: 0px !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  border-radius: 0px !important;
+}
+
+/* reduce scrollbuttons size */
+#scrollbutton-up,
+#scrollbutton-down {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/*tab line for active tab */
+.tabbrowser-tab .tab-context-line {
+  height: 2px !important;
+  border-radius: 0px !important;
+}
+
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: Highlight !important;
+}
+
+:root[lwtheme]:not([lwtheme-image="true"]):not([lwtheme-mozlightdark]) .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: var(--tab-line-color,Highlight) !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  margin: unset !important;
+  background-color: var(--identity-icon-color) !important;
+}
+
+/* border between navigation toolbar and tabs toolbar */
+:root:not([lwtheme]) #nav-bar {
+  box-shadow: 0 calc(-1 * 1px) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
+}
+
+:root[lwtheme] #nav-bar {
+  box-shadow: unset !important;
+}
+
+/* Tab separators: modified Fx88s browser.css code */
+.titlebar-spacer[type="pre-tabs"] {
+  border-inline-end: 1px solid var(--lwt-background-tab-separator-color, currentColor);
+  opacity: 0.2;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: 1px solid var(--lwt-background-tab-separator-color, currentColor);
+  margin-block: 5px 4px;
+  opacity: 0.3;
+}
+
+.tabbrowser-tab::before {
+  margin-inline-start: -1px;
+}
+
+:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] + :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::after,
+.tabbrowser-tab:hover::after,
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[beforehovered]::after,
+.tabbrowser-tab[multiselected]::after,
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[before-multiselected]::after {
+  margin-top: var(--tabs-top-border-width);
+  margin-bottom: 0;
+}
+
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[beforeselected-visible]::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+  border-color: var(--tabs-border-color);
+  margin-top: 0;
+  margin-bottom: var(--tabs-navbar-shadow-size);
+  opacity: 0.1;
+}
+
+.tabbrowser-tab::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[visuallyselected]::before {
+  content: "";
+  display: block;
+}
+
+/* remove active tabs left and right tab border color when using lw-themes */
+:root[lwtheme]:not([lwtheme-mozlightdark]) :is(#TabsToolbar,#vertical-tabs):not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background,
+:root[lwtheme]:not([lwtheme-mozlightdark]) :is(#TabsToolbar,#vertical-tabs)[brighttext] #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected], [multiselected]) > .tab-stack > .tab-background {
+  box-shadow: unset !important;
+}
+
+:root[lwtheme] .tab-background:is([selected], [multiselected]){
+  border: 0 !important;
+}
+
+/* tab height fix ESR 91.6, 96.0.2, 97+ */
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}
+
+/* Fx 100+ outline fix */
+:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) #firefox-view-button[open] > .toolbarbutton-icon,
+:root[lwtheme] .tab-background[selected] {
+  outline: unset !important;
+}
+
+/* Fx 101+ */
+@media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
+	
+	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	  margin-top: -1px !important;
+	}
+}
+
+/* Fx 106+ */
+#private-browsing-indicator-with-label {
+  display: none !important;
+}
+
+/* Fx 110+ - remove line below active tab */
+#nav-bar:not([tabs-hidden="true"]) {
+  position: unset !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab:is([selected],[multiselected]) {
+  z-index: 100 !important;
+}
+
+#main-window:-moz-window-inactive #titlebar {
+  opacity: 1.0 !important;
+}
+
+/* Fx 126+ */
+:root[lwtheme] #nav-bar {
+  border-top: 0px !important;
+}
+
+:root {
+  --tab-selected-bgcolor: unset !important;
+}

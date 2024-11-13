@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtabff1.png") !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx1/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx1/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx1/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx1/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx1/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx1/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx1/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx1/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx1/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx1/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx1/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx1/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx1/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx1/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx1/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx1/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx1/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx1/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx1/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx1/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx1/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx1/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx1/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx1/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx1/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx1/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx1/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx1/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx1/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx1/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx1/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx1/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx1/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx1/savetopocket.png") !important;
+}

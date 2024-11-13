@@ -1,0 +1,39 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar .urlbarView-title-separator,
+.urlbarView-title {
+  display: none !important;
+}
+
+#urlbar .urlbarView-url {
+  position: absolute !important;
+  display: block !important;
+  min-width: calc(100% - 24px) !important;
+  width: calc(100% - 24px) !important;
+  left: 24px !important;
+  padding-inline-start: 10px !important;
+}
+
+#urlbar .urlbarView-row[type="switchtab"][has-url] .urlbarView-no-wrap .urlbarView-action,
+#urlbar .urlbarView-row:not([has-url="true"]) .urlbarView-no-wrap .urlbarView-action {
+  position: absolute !important;
+  /*display: block !important;*/
+  left: 24px !important;
+}
+
+/* do not hide actiontype item */
+#urlbar .urlbarView-row[type=search] .urlbarView-action{
+  visibility: visible !important;
+  display: inherit !important;
+}
+
+#urlbar .urlbarView-row:not([rich-suggestion]) .urlbarView-action{
+  padding-inline-start: 10px !important;
+}
+
+#urlbar .urlbarView-button-menu {
+  z-index: 1 !important;
+}

@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Aero colors */
+:root {
+  --general_toolbar_color_toolbars: linear-gradient(#ddebf9,#ddebf9) !important; /* (to bottom,#FFCC99,#FFCC99) */
+  --general_toolbar_color_navbar: linear-gradient(#eaf2fb,#ddebf9) !important; /* (to bottom,#FFCC99,#FFCC99) */
+  --general_toolbar_text_color: black !important;
+  --general_toolbar_text_shadow: transparent !important;
+  --tabs_toolbar_color_tabs_not_on_top: linear-gradient(#ddebf9,#ddebf9) !important; /* (to bottom,#FFCC99,#FFCC99) */
+  --tabs_toolbar_border-tnot_normal_mode_size: 1px !important;
+  --tabs_toolbar_border-tnot_normal_mode: var(--tabs-border-color) !important;
+  --colored_menubar_background_image: linear-gradient(#ddebf9,#ddebf9) !important; /* (to bottom,#FFCC99,#FFCC99) */
+  --colored_menubar_text_color: black !important;
+  --statusbar_background_color: linear-gradient(#ddebf9,#ddebf9) !important;
+  --statusbar_font_color: black !important;
+  --classic_squared_tabs_active_tab: linear-gradient(to top,#eaf2fb,#eef5fc,#fbfdff) !important; /* (to bottom,#FF8800,#FFCC99) */
+  --classic_squared_tabs_hovered_tabs: linear-gradient(to top,#d0dce8,#dce7f3,#e5effa) !important; /* (to bottom,#FF9900,#FF6600) */
+  --classic_squared_tabs_other_tabs: linear-gradient(to top,#b4c0cc,#c8d4e1,#d1deec) !important; /* (to bottom,#FFCC99,#CCCCCC) */
+  --classic_squared_tabs_unloaded_tabs: linear-gradient(to top,#b4c0cc,#c8d4e1,#d1deec) !important; /* (to bottom,#FFCC99,#CCCCCC) */
+  --classic_squared_tabs-border_size: 1px;
+  --classic_squared_tabs-border1: #5f7181 !important;
+  --classic_squared_tabs-border2: rgba(0,0,0,.2) !important;
+  --classic_squared_tabs-border3: rgba(0,0,0,.5) !important;
+  --classic_squared_tabs_new_tab_icon_color: black !important;
+  --classic_squared_tabs_tab_text_color: black !important;
+  --classic_squared_tabs_tab_text_shadow: transparent !important;
+  --classic_squared_tabs_lwt-dark_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
+  --classic_squared_tabs_lwt-dark_hovered_tabs: linear-gradient(hsla(0,0%,80%,.5), hsla(0,0%,60%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-dark_other_tabs: linear-gradient(hsla(0,0%,60%,.5), hsla(0,0%,45%,.5) 80%) !important;
+  --classic_squared_tabs_lwt-bright_hovered_tabs: linear-gradient(hsla(0,0%,60%,.6), hsla(0,0%,45%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_other_tabs: linear-gradient(hsla(0,0%,40%,.6), hsla(0,0%,30%,.6) 80%) !important;
+  --classic_squared_tabs_lwt-bright_active_tab: inherit !important; /* linear-gradient(blue, hsla(0,0%,60%,.5) 80%) */
+}

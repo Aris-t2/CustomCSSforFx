@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#panelMenu_searchBookmarks,
+#BMB_searchBookmarks,
+#menu_searchBookmarks {
+  display: none !important;
+}

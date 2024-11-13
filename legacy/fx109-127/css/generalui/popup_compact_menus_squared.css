@@ -1,0 +1,23 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  --custom_border-radius: 0px;
+  --arrowpanel-border-radius: var(--custom_border-radius) !important;
+  --panel-border-radius: var(--custom_border-radius) !important;
+}
+
+* menupopup,
+:is(menupopup, panel)[type=arrow] {
+  --arrowpanel-border-radius: var(--custom_border-radius) !important;
+  --panel-border-radius: var(--custom_border-radius) !important;
+  border-radius: var(--custom_border-radius) !important;
+}

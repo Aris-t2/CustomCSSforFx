@@ -1,0 +1,68 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@media (-moz-platform: windows) {
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron),
+	#PersonalToolbar #PlacesToolbar toolbarbutton,
+	#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
+	  appearance: auto !important;
+	  -moz-default-appearance: toolbarbutton !important;
+	  background: unset !important;
+	  box-shadow: unset !important;
+	  padding-left: 3px !important;
+	  padding-right: 3px !important;
+	  margin-left: 0px !important;
+	  margin-right: 0px !important;
+	}
+
+	#PersonalToolbar .toolbarbutton-badge-stack,
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
+	  background: unset !important;
+	  box-shadow: unset !important;
+	}
+
+	#PersonalToolbar toolbarbutton:not(#PlacesChevron) .toolbarbutton-icon {
+	  padding-left: 0px !important;
+	  padding-right: 0px !important;
+	  width: 16px !important;
+	}
+	#PersonalToolbar .scrollbutton-up .toolbarbutton-icon,
+	#PersonalToolbar .scrollbutton-down .toolbarbutton-icon {
+	  padding-left: unset !important;
+	  padding-right: unset !important;
+	  width: unset !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+		#PersonalToolbar toolbarbutton:not(#PlacesChevron),
+		#PersonalToolbar #PlacesToolbar toolbarbutton,
+		#PlacesToolbar toolbarbutton:not(#PlacesChevron) {
+		  appearance: unset !important;
+		}
+		#PersonalToolbar toolbarbutton:not(#PlacesChevron):hover,
+		#PersonalToolbar #PlacesToolbar toolbarbutton:hover,
+		#PlacesToolbar toolbarbutton:not(#PlacesChevron):hover {
+		  /*appearance: auto !important;*/
+		  background-color: transparent !important;
+		  background-image:
+			linear-gradient(to right, rgba(255,255,255,0.4) 0px, transparent 0px),
+			linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
+			linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
+			linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
+		}
+	}
+}
+
+#PersonalToolbar toolbarbutton.bookmark-item:not(.subviewbutton, [disabled=true], [open]):hover,
+#PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-icon,
+#PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-text,
+#PersonalToolbar .toolbarbutton-1:not([disabled=true], [checked], [open], :active):hover > .toolbarbutton-badge-stack,
+#PersonalToolbar toolbarbutton.bookmark-item:hover:active:not(.subviewbutton, [disabled="true"]),
+#PersonalToolbar toolbarbutton.bookmark-item[open="true"],
+#PersonalToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-icon,
+#PersonalToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-text,
+#PersonalToolbar .toolbarbutton-1:not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
+  background-color: transparent !important;
+}

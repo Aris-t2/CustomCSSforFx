@@ -1,0 +1,71 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/***********************************************************/
+/* context menu items and icons instead of just huge icons */
+/***********************************************************/
+
+#context-back .menu-iconic-icon {
+  fill: #4169e1 !important;
+}
+
+#context-forward .menu-iconic-icon {
+  fill: #4169e1 !important;
+}
+
+#context-reload .menu-iconic-icon {
+  fill: green !important;
+}
+
+#context-stop .menu-iconic-icon {
+  fill: red !important;
+}
+
+#context-bookmarkpage .menu-iconic-icon {
+  fill: #336699 !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-back .menu-iconic-icon {
+  fill: #00d2ff !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-forward .menu-iconic-icon {
+  fill: #00d2ff !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-reload .menu-iconic-icon {
+  fill: lightgreen !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-stop .menu-iconic-icon {
+  fill: #ff5a5a !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #context-bookmarkpage .menu-iconic-icon {
+  fill: #64a3e2 !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-back .menu-iconic-icon {
+	  fill: #00d2ff !important;
+	}
+
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-forward .menu-iconic-icon {
+	  fill: #00d2ff !important;
+	}
+
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-reload .menu-iconic-icon {
+	  fill: lightgreen !important;
+	}
+
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-stop .menu-iconic-icon {
+	  fill: #ff5a5a !important;
+	}
+
+	:root[lwtheme]:not([style*='--lwt-header-image']) #context-bookmarkpage .menu-iconic-icon {
+	  fill: #64a3e2 !important;
+	}	
+}

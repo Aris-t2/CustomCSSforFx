@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+.tabbrowser-tab[usercontextid] .tab-content {
+  border-bottom: 2px solid var(--identity-icon-color) !important;
+}
+
+.tabbrowser-tab[usercontextid] .tab-content > * {
+  margin-bottom: -2px !important
+}

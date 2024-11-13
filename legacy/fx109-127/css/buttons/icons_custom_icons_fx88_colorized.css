@@ -1,0 +1,55 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "icons_custom_icons_fx88.css";
+@import "icons_colorized.css";
+
+/* identity box extra*/
+
+#identity-box[pageproxystate="valid"].localResource #identity-icon {
+  -moz-context-properties: fill !important;
+  fill: #4169e1 !important;
+}
+
+#identity-box[pageproxystate="invalid"] {
+
+  #identity-icon {
+    -moz-context-properties: fill !important;
+	fill: red !important;
+  }
+}
+
+#urlbar[actiontype="extension"] > .urlbar-input-container > #identity-box #identity-icon,
+#identity-box[pageproxystate="valid"].extensionPage #identity-icon {
+  -moz-context-properties: fill !important;
+  fill: green !important;
+}
+
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
+  -moz-context-properties: fill !important;
+  fill: green !important;
+}
+
+#identity-box[pageproxystate="valid"].weakCipher #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon,
+#identity-box[pageproxystate="valid"].certUserOverridden #identity-icon,
+#identity-box[pageproxystate="valid"].certErrorPage #identity-icon {
+  -moz-context-properties: fill !important;
+  fill: yellow !important;
+}
+
+
+#identity-box[pageproxystate="valid"].notSecure #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
+#identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
+  -moz-context-properties: fill !important;
+  fill: red !important;
+}
+
+#permissions-granted-icon {
+  -moz-context-properties: fill !important;
+  fill: #4169e1 !important;
+}

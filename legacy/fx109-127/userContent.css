@@ -1,0 +1,234 @@
+/*===============================================================================
+  Firefox userContent.css tweaks: main file
+
+  Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
+  Github: https://github.com/aris-t2/customcssforfx
+  Change-log: https://github.com/aris-t2/customcssforfx/commits/
+
+  
+  Firefox requires the following preference to be enabled for custom styles to be loaded:
+  
+    'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+  
+  Firefox preferences can be accessed by typing `about:config` into the url bar.
+  
+  ===============================================================================
+  
+  ======
+  README
+  ======
+
+  To find the profile folder type `about:support` into url bar and navigate to: 
+  'Profile Folder > Open Folder'
+  
+  Create a /chrome/ (chrome) directory btw. folder inside the profile folder you just opened and
+  paste projects files and folders into it so it looks like this:
+  
+  /chrome/config/
+  /chrome/css/
+  /chrome/image/
+  /chrome/userChrome.css
+  /chrome/userContent.css
+
+  ENABLING/DISABLING options:
+  To activate an option: remove /* before @import
+  To deactivate an option: add /* before @import
+*/
+
+
+/* ==========================
+   about:addons - ADDONS PAGE
+   ==========================
+
+
+
+   ======================
+   ADDONS PAGE APPEARANCE
+   ======================
+   
+   [!] only use one at a time 
+*/
+
+@import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_compact_categories.css"; /**/
+
+
+/* -------------
+   Compact lists
+   --------------
+   
+   [!] only use one option at a time
+   [!] to be used with 'alternative appearance'
+*/
+
+/* @import "./css/aboutaddons/addonlists_compact.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact.css"; /**/
+
+
+/* ---------------------------------------------
+   Button settings: buttons instead of menupopup
+   ---------------------------------------------
+   
+   [!] only use one option at a time
+   [!] requires aboves 'addons page appearance' settings
+*/
+
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup.css"; /**/
+
+/* for 'addonlists_compact.css' */
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_compact_view.css"; /**/
+
+/* for 'addonlists_compact_more_compact.css' */
+/* @import "./css/aboutaddons/addonlists_show_buttons_instead_of_menu_popup_more_compact_view.css"; /**/
+
+
+/* @import "./css/aboutaddons/addonlists_hide_buttons_on_details_page.css"; /**/ 
+/* @import "./css/aboutaddons/addonlists_hide_report_button.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_manage_button.css"; /**/
+/* @import "./css/aboutaddons/addonlists_only_show_buttons_on_hover.css"; /**/
+
+
+/* ------------------------------------------------
+   Button settings: buttons icons instead of labels
+   ------------------------------------------------
+   
+   [!] requires buttons instead of menupopup
+*/
+
+/* @import "./css/aboutaddons/addonlists_replace_button_labels_with_icons.css"; /**/
+/* @import "./css/aboutaddons/addonlists_colorized_button_icons.css"; /**/
+
+
+/* --------------------------------------
+   Version number for active add-ons
+   --------------------------------------
+   
+   [!] requires buttons instead of menupopup
+*/
+
+@import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
+
+
+/* ---------------------------
+   Other addons page settings
+   --------------------------
+*/
+
+/* @import "./css/aboutaddons/addonlists_badges_old_size.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_monochromatic_themes.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_recommended_icon.css"; /**/
+/* @import "./css/aboutaddons/addonlists_hide_allowed_in_private_windows_icon.css"; /**/
+@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+@import "./css/aboutaddons/availableupdates_category_always_visible.css"; /**/
+/* @import "./css/aboutaddons/availableupdates_category_last_category.css"; /**/
+/* @import "./css/aboutaddons/recommendations_category_always_hidden.css"; /**/
+/* @import "./css/aboutaddons/addons_support_always_hidden.css"; /**/
+
+
+
+/* ===============================
+   about:preferences - PREFERENCES
+   ===============================
+
+
+   ===========================
+   PREFERENCES PAGE APPEARANCE
+   ===========================
+   
+   [!] only use one at a time 
+*/
+
+@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_v2.css"; /**/
+
+
+/* ------------------------------
+   Other preference page settings
+   ------------------------------
+*/
+
+/* @import "./css/aboutpreferences/category_morefrommozilla_hidden.css"; /**/
+/* @import "./css/aboutpreferences/category_nightlyexperiments_hidden.css"; /**/
+/* @import "./css/aboutpreferences/sync_category_always_hidden.css"; /**/
+/* @import "./css/aboutpreferences/firefox_support_always_hidden.css"; /**/
+
+
+/* =========================
+   about:newtab / about:home
+   =========================
+*/
+
+
+/* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
+
+/* @import "./css/aboutnewtab/top_sites_larger_favicons.css"; /**/
+
+
+/* ============
+   about:config
+   ============
+*/
+
+/* @import "./css/aboutconfig/aboutconfig_compact_appearance.css"; /**/
+
+
+/* ============
+   about:logins
+   ============
+   
+   [!] only use one at a time
+*/
+
+@import "./css/aboutlogins/aboutlogins_alternative_appearance.css"; /**/
+/* @import "./css/aboutlogins/aboutlogins_alternative_appearance_aero.css"; /**/
+
+
+
+/* ============
+   WEB CONTENT
+   ============
+   
+   [!] only use one at a time
+   [!] top level image on white background
+   [!] these settings can sometimes cause glitches
+*/
+
+/* @import "./css/webcontent/toplevel_image_classic_v1.css"; /**/
+/* @import "./css/webcontent/toplevel_image_classic_v2.css"; /**/
+
+
+/* ------------------------------------------
+   CUSTOM SCROLLBARS VARIABLES - EXPERIMENTAL 
+   ------------------------------------------
+   
+   [!] Might not work on every page! This issue is for Mozilla to solve.
+   [!] Not compatible with custom scrollbar JavaScript userChrome scripts.
+   [!] Custom size values only compatible with 'web content' scrollbars at the moment.
+   [!] More info inside 'custom_scrollbar_appearance.css' file.
+*/
+
+/* @import "./config/custom_scrollbar_appearance.css"; /**/
+
+
+/* -----------------------------------------------
+   Autofill forms - disable CSS3 filter background 
+   -----------------------------------------------
+
+*/
+
+/* @import "./css/webcontent/autofill_forms_background_white.css"; /**/	
+
+
+/* ---------------------
+   Custom / own CSS code
+   ---------------------
+   
+   [!] Create a "my_userContent.css" file and add own/custom code to it.
+*/
+
+@import "./my_userContent.css"; /**/
+

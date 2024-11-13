@@ -1,0 +1,19 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#nav-bar {
+  box-shadow: unset !important;
+  -moz-box-ordinal-group: 10 !important;
+  order: 10 !important;
+  margin-top: -1px !important;
+}
+
+:root:not([lwtheme]) #PersonalToolbar {
+  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--classic_squared_tabs-border2) !important;
+}
+
+:root:not([lwtheme]) #nav-bar {
+  box-shadow: unset !important;
+}

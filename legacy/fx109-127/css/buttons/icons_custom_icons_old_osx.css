@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtabmac.png") !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx3_old_osx/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx3_old_osx/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx3_old_osx/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx3_old_osx/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx3_old_osx/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx3_old_osx/savetopocket.png") !important;
+}

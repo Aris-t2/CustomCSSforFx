@@ -1,0 +1,130 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --space_required_for_appbutton_fix: 54px !important;
+  --toolbar-start-end-padding: 2px !important;
+}
+
+/* large button mode */
+#main-window:not([customizing]) #nav-bar-customization-target > toolbaritem.chromeclass-toolbar-additional toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar > toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack .toolbarbutton-icon {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton :is(.scrollbutton-up,.scrollbutton-down) .toolbarbutton-icon {
+  width: unset !important;
+  height: unset !important;
+}
+
+/* compact */
+#main-window[uidensity=compact]:not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 36px !important;
+  height: 36px !important;
+}
+#main-window[uidensity=compact]:not([customizing]) #nav-bar-customization-target #downloads-indicator-icon {
+  background-size: 36px 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+#main-window[uidensity=compact]:not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-inner {
+  background-size: 36px 36px !important;
+  animation-name: indicatorArrowProgressN !important;
+}
+#downloads-indicator-progress-inner:-moz-locale-dir(rtl) {
+  animation-name: indicatorArrowProgressRTLN !important;
+}
+#main-window[uidensity=compact]:not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-outer {
+  background-size: 36px 36px !important;
+}
+
+
+/* normal */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 36x !important;
+  height: 36px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target #downloads-indicator-icon {
+  background-size: 36px 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-inner {
+  background-size: 36px 36px !important;
+  animation-name: indicatorArrowProgressN !important;
+}
+#downloads-indicator-progress-inner:-moz-locale-dir(rtl) {
+  animation-name: indicatorArrowProgressRTLN !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]):not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-outer {
+  background-size: 36px 36px !important;
+}
+
+/* touch */
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target #downloads-indicator-icon {
+  background-size: 30px 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-inner {
+  background-size: 30px 30px !important;
+  animation-name: indicatorArrowProgressTN !important;
+}
+#downloads-indicator-progress-inner:-moz-locale-dir(rtl) {
+  animation-name: indicatorArrowProgressTRTLN !important;
+}
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target #downloads-indicator-progress-outer {
+  background-size: 30px 30px !important;
+}
+
+
+/**/
+@keyframes indicatorArrowProgressN {
+  0% {
+    margin-right: 35px;
+  }
+  100% {
+    margin-right: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressRTLN {
+  0% {
+    margin-left: 35px;
+  }
+  100% {
+    margin-left: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressTN {
+  0% {
+    margin-right: 30px;
+  }
+  100% {
+    margin-right: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressTRTLN {
+  0% {
+    margin-left: 30px;
+  }
+  100% {
+    margin-left: 1px;
+  }
+}

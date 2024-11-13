@@ -1,0 +1,14 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tabbrowser-tab .tab-context-line {
+  height: 1px !important;
+  border-radius: 0px !important;
+  margin: -3px 3px 0 !important;
+}
+
+#main-window[privatebrowsingmode=temporary] .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: purple !important;
+}

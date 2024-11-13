@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --toolbarbutton-inner-padding: 8px !important;
+}
+
+:root[uidensity="compact"]{
+  --toolbarbutton-inner-padding: 6px !important;
+}
+
+:root[uidensity="touch"]{
+  --toolbarbutton-inner-padding: 9px !important;
+}

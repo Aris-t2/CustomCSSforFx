@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* remove search go button */
+#searchbar .search-go-button,
+.searchbar-textbox .search-go-button {
+  visibility: hidden !important;
+}

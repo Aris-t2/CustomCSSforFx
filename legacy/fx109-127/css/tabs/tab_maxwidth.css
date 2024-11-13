@@ -1,0 +1,30 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+:root {
+  /* --tab-min-width: 50px; */
+  --tab_min_width: 50px;
+  --tab_max_width: 250px;
+}
+
+/* use 'about:config > browser.tabs.tabMinWidth' for tab min-width */
+/*
+.tabbrowser-tab:not([pinned]) {
+  min-width: var(--tab_min_width) !important;
+  clip-width: var(--tab_min_width) !important;
+}
+*/
+
+/* tab max-width */
+#tabbrowser-tabs:not([overflow]):not([using-closing-tabs-spacer="true"]) .tabbrowser-tab[fadein]:not([pinned]) {
+  max-width: var(--tab_max_width) !important;
+  overflow: hidden !important;
+}

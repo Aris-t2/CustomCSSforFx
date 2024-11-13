@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Semi - transparent */
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+  background-image: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0.5) 70%),
+					radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0.5)) !important;
+}
+#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) !important;
+}

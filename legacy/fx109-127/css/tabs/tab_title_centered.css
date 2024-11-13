@@ -1,0 +1,28 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.tab-label-container {
+  display: grid !important;
+  justify-items: safe center !important;
+  justify-content: safe center !important;
+}
+
+.tab-label,
+.tab-secondary-label {
+  overflow: hidden !important;
+}
+
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}
+
+.tab-secondary-label {
+  display: none !important;
+}
+
+.tabbrowser-tab[selected]:not(:hover) .tab-label-container:not([labeldirection="rtl"]),
+#tabbrowser-tabs:not([closebuttons="activetab"]) .tabbrowser-tab:not(:hover,[pinned]) .tab-label-container:not([labeldirection="rtl"]){
+  margin-inline-end: 7px;
+}

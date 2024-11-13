@@ -1,0 +1,25 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* NOTE
+   The below variables are overridden by the ones used inside 
+   ./config/general_variables.css file, if this projects full package is used.
+   Set custom values inside ./config/general_variables.css in that case.
+*/
+
+
+:root {
+  --tab_close_icons_size: 16px;
+}
+
+#main-window #navigator-toolbox :is(#TabsToolbar,#vertical-tabs) #closetab_fmarin_com-browser-action .toolbarbutton-icon,
+#main-window #navigator-toolbox :is(#TabsToolbar,#vertical-tabs) #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
+#main-window #navigator-toolbox :is(#TabsToolbar,#vertical-tabs) .close-icon > .toolbarbutton-icon,
+#main-window #navigator-toolbox :is(#TabsToolbar,#vertical-tabs) .tab-content .close-icon  {
+  min-width: var(--tab_close_icons_size) !important;
+  width: var(--tab_close_icons_size) !important;
+  min-height: var(--tab_close_icons_size) !important;
+  height: var(--tab_close_icons_size) !important;
+}

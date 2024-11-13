@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+  bottom: 27px !important;
+}
+
+#main-window:not([chromehidden*="toolbar"]) :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar){
+  margin-bottom: 27px !important;
+}

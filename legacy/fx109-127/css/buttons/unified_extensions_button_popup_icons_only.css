@@ -1,0 +1,45 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#unified-extensions-view .panel-header,
+#unified-extensions-view toolbarseparator,
+#unified-extensions-manage-extensions,
+.unified-extensions-item-contents,
+.unified-extensions-item-action-button .toolbarbutton-text,
+.unified-extensions-item-menu-button {
+  display: none !important;
+}
+
+.unified-extensions-item-action-button :is(.toolbarbutton-icon,.unified-extensions-item-icon) {
+  width: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#unified-extensions-view .toolbaritem-combined-buttons {
+  margin: 0 !important;
+}
+
+#unified-extensions-panel .unified-extensions-item {
+  padding-block: 0 !important;
+}
+
+#unified-extensions-view toolbarbutton {
+  padding: 4px !important;
+}
+
+#unified-extensions-view .unified-extensions-item-icon,
+#unified-extensions-view .unified-extensions-item .webextension-browser-action.subviewbutton > .toolbarbutton-badge-stack {
+  margin-inline-end: 0px !important;
+}
+
+#unified-extensions-view toolbarbutton menupopup[placespopup] > :is(menu, menuitem),
+#unified-extensions-view .subview-subheader,
+#unified-extensions-view panelview .toolbarbutton-1,
+#unified-extensions-view .subviewbutton,
+#unified-extensions-view .widget-overflow-list .toolbarbutton-1 {
+  margin: 0 !important;
+}

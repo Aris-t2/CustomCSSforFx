@@ -1,0 +1,11 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_higher_navbar_positon.css";
+
+#main-window[tabsintitlebar] #nav-bar #nav-bar-customization-target {
+  padding-inline-start: 110px !important;
+}
+/**/

@@ -1,0 +1,206 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+/*
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}*/
+/*
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtab.png") !important;
+}*/
+
+#back-button {
+  list-style-image: url("../../image/icons_fx88/back.svg") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx88/forward.svg") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx88/home.svg") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx88/stop.svg") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx88/reload.svg") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx88/bookmarks.svg") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx88/history.svg") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx88/addons.svg") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx88/openfile.svg") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx88/savepage.svg") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx88/sync.svg") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx88/characterencoding.svg") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx88/newwindow.svg") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx88/newtab.svg") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx88/privatebrowsing.svg") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx88/find.svg") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx88/print.svg") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx88/fullscreen.svg") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx88/developer.svg") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx88/preferences.svg") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx88/appmenu.svg") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx88/edit_cut.svg") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx88/edit_copy.svg") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx88/edit_paste.svg") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx88/zoom_out.svg") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx88/zoom_in.svg") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx88/emaillink.svg") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx88/sidebar.svg") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx88/library.svg") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx88/overflow_chevron.svg") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx88/alltabs.svg") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx88/downloads.svg") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx88/panic.svg") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx88/savetopocket.svg") !important;
+}
+
+#import-button {
+  list-style-image: url("../../image/icons_fx88/import.svg") !important;
+}
+
+#screenshot-button {
+  list-style-image: url("../../image/icons_fx88/screenshot.svg") !important;
+}
+
+#logins-button {
+  list-style-image: url("../../image/icons_fx88/logins.svg") !important;
+}
+
+/* identity box extra*/
+
+#identity-box[pageproxystate="valid"].localResource #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_page-portrait.svg") !important;
+}
+
+#identity-box[pageproxystate="invalid"] {
+
+  #identity-icon {
+    list-style-image: url("../../image/icons_fx88/ib_search-glass.svg") !important;
+  }
+}
+
+#urlbar[actiontype="extension"] > .urlbar-input-container > #identity-box #identity-icon,
+#identity-box[pageproxystate="valid"].extensionPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_extension.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"].verifiedDomain #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"].weakCipher #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContent #identity-icon,
+#identity-box[pageproxystate="valid"].mixedDisplayContentLoadedActiveBlocked #identity-icon,
+#identity-box[pageproxystate="valid"].certUserOverridden #identity-icon,
+#identity-box[pageproxystate="valid"].certErrorPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security-warning.svg") !important;
+}
+
+
+#identity-box[pageproxystate="valid"].notSecure #identity-icon,
+#identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
+#identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
+  list-style-image: url("../../image/icons_fx88/ib_security-broken.svg") !important;
+}
+
+#permissions-granted-icon {
+  list-style-image: url("../../image/icons_fx88/ib_permissions.svg") !important;
+}

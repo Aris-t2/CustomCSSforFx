@@ -1,0 +1,52 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* #D1D1D1 = light grey */
+/* #f9f9fa = light grey v2 */
+/* #474749 = dark grey */
+/* #323234 = very dark grey */
+
+
+#sidebar,
+#sidebar-header,
+#bookmarksPanel,
+#bookmarks-view,
+#history-panel,
+#historyTree,
+#sidebar-switcher-target,
+#viewButton {
+  background: #f9f9fa !important;
+  color: #323234 !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-twisty(hover),
+.sidebar-placesTreechildren::-moz-tree-twisty(selected),
+.sidebar-placesTreechildren::-moz-tree-cell(hover),
+.sidebar-placesTreechildren::-moz-tree-row(selected),
+.sidebar-placesTreechildren::-moz-tree-cell-text(hover),
+.sidebar-placesTreechildren::-moz-tree-cell-text(selected),
+#sidebar-switcher-target:hover,
+#viewButton:hover {
+ background: #D1D1D1 !important;
+ color: #323234 !important;
+}
+   
+/* Fix for remaining hovering borders */
+.sidebar-placesTreechildren::-moz-tree-row {
+ outline: none !important;
+ border: none !important;
+}
+
+/* Hide white splitter (also appears on top right of scrollbar) *//*
+#sidebar-splitter {
+  opacity: 0 !important;
+}
+ 
+/* Add custom splitter between sidebar and content *//*
+#sidebar,
+#sidebar-header {
+  border-inline-end: 3px solid #474749 !important;
+}
+
+/**/

@@ -1,0 +1,18 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* tabs toolbar background */
+:root:not([lwtheme]) #navigator-toolbox #TabsToolbar,
+:root[lwtheme] #navigator-toolbox #TabsToolbar,
+#main-window #navigator-toolbox #TabsToolbar {
+  background: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+:root:not([lwtheme])[sizemode="normal"] #TabsToolbar {
+  border-left: unset !important;
+  border-right: unset !important;
+}

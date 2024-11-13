@@ -1,0 +1,22 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+notification-message[message-bar-type="infobar"] {
+	--close-icon-size: 24px !important;
+}
+.notification-content, .container {
+	padding-block: inherit !important;
+}
+.notification-button {
+	font-size: 0.9em !important;
+	min-height: 24px !important;
+}
+.infobar > .icon {
+	margin: 8px 0 !important;
+	margin-inline-start: 16px !important;
+}
+button[type~="icon"] {
+	background-size: 12px !important;
+}

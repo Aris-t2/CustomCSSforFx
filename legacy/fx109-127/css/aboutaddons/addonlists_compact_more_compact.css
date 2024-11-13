@@ -1,0 +1,67 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addonlists_compact.css";
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	
+	:root {
+	  --addon-icon-size: 16px !important;
+	}
+
+	.addon.card .addon-description {
+	  display: none !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-bottom: 0px !important;
+	  min-height: 19px !important;
+	}
+	
+	addon-list[type="theme"] .addon.card {
+	  min-height: 0px !important;
+	}
+
+	.addon.card div.more-options-menu {
+	  height: 20px !important;
+	}
+	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) .addon.card .addon-card-collapsed > img {
+	  display: none !important;
+	}
+	
+	addon-list[type="theme"] addon-card:not([expanded="true"]) .addon.card .card-contents {
+	  min-height: 20px !important;
+	  height: 20px !important;
+	  max-height: 20px !important;
+	}
+	
+	/* hide 'Colorways' info */
+	section[section="2"] :is(h2,h3),
+	h2[data-l10n-id="theme-monochromatic-heading"],
+	h3[data-l10n-id="theme-monochromatic-subheading"]{
+	  display: none !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container {
+	  grid-template-rows: unset !important;
+	  row-gap: 0px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  min-height: 20px !important;
+	  height: 20px !important;
+	  max-height: 20px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .addon.card .card-contents {
+	  min-height: 20px !important;
+	  height: 60px !important;
+	  max-height: 60px !important;
+	}
+
+}

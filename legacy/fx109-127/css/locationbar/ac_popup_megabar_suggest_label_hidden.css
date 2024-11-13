@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.urlbarView-row[label] {
+  margin-block-start: 0 !important;
+
+  &::before {
+    content: unset !important;
+    display: none !important;
+  }
+}

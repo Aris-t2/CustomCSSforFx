@@ -1,0 +1,151 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* based on [wrap]-code from browsers default css files */
+
+.urlbarView-results > .urlbarView-row {
+    &:where(:not([rich-suggestion])) > .urlbarView-row-inner {
+      flex-wrap: wrap !important;
+
+      > .urlbarView-no-wrap {
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+      }
+    }
+
+    &[has-url] > .urlbarView-row-inner > .urlbarView-url {
+      margin-top: 2px !important;
+
+      &:-moz-locale-dir(ltr) {
+        margin-left: var(--urlbarView-second-line-indent) !important;
+      }
+      &:-moz-locale-dir(rtl) {
+        margin-right: var(--urlbarView-second-line-indent) !important;
+      }
+    }
+
+    .urlbarView[action-override] &[has-url]:not([restyled-search]),
+    &[has-url]:not([type$=tab], [sponsored], [restyled-search]),
+    &[has-url]:is([type=remotetab], [sponsored]):is(:hover, [selected]),
+    &[type=tabtosearch] {
+
+      .urlbarView-title-separator {
+        display: none !important;
+      }
+    }
+
+    &[type=tabtosearch] > .urlbarView-row-inner > .urlbarView-no-wrap {
+      flex-wrap: wrap !important;
+
+      > .urlbarView-action {
+        flex-basis: 100% !important;
+        margin-inline-start: var(--urlbarView-second-line-indent) !important;
+      }
+    }
+
+    &[rich-suggestion] > .urlbarView-row-inner > .urlbarView-row-body > .urlbarView-row-body-top {
+      flex-wrap: wrap !important;
+
+      > .urlbarView-row-body-top-no-wrap {
+        flex-basis: 100% !important;
+      }
+
+      > .urlbarView-url {
+        margin-top: 2px !important;
+      }
+    }
+}
+
+.urlbarView-row[label] {
+  margin-block-start: 0 !important;
+
+  &::before {
+    content: unset !important;
+    display: none !important;
+  }
+}
+
+.urlbarView-row[dynamicType=onboardTabToSearch] > .urlbarView-row-inner {
+  min-height: unset !important;
+  align-items: center;
+
+  > .urlbarView-no-wrap {
+    align-items: center;
+
+    > .urlbarView-favicon {
+      min-width: unset !important;
+      height: unset !important;
+      -moz-context-properties: fill;
+    }
+  }
+
+  &:not([selected]) > .urlbarView-no-wrap > .urlbarView-favicon {
+    color: var(--link-color);
+  }
+}
+ 
+.urlbarView-row[rich-suggestion] > .urlbarView-row-inner > .urlbarView-favicon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.urlbarView-title:empty + .urlbarView-tags:empty + &,
+.urlbarView-row:is([type=search], [restyled-search]):not([selected], [show-action-text], :hover) &,
+.urlbarView-row:not([has-action], [has-url], [restyled-search]) & {
+  display: flex !important;
+}
+
+
+.urlbarView-row[has-url]:is([type=remotetab], [sponsored]):is([selected], :hover) > .urlbarView-row-inner > .urlbarView-no-wrap > &,
+.urlbarView-row:is([type=search], [restyled-search]):not([selected], [show-action-text], :hover) &,
+.urlbarView-row:not([has-action], [has-url], [restyled-search]) > .urlbarView-row-inner > .urlbarView-no-wrap > &,
+.urlbarView[action-override] .urlbarView-row[type=switchtab] > .urlbarView-row-inner > .urlbarView-no-wrap > & {
+  display: flex !important;
+}
+  
+
+.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-row-inner,
+.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap {
+  display: unset !important;
+  flex-wrap: wrap !important;
+}
+
+.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action  {
+  display: unset !important;
+  flex-wrap: wrap !important;
+  appearance: none !important;
+  background: unset !important;
+  margin-inline-start: var(--urlbarView-second-line-indent) !important;
+}
+
+.urlbarView-row[type=autofill_origin][has-url]:not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action  {
+  margin-inline-start: 0 !important;
+}
+
+.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) {
+  > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+    padding: 0px !important;
+  }
+}
+
+.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-title-separator {
+  display: none !important;
+}
+
+.urlbarView-row-inner {
+  padding-block: 3px !important;
+}
+
+.urlbarView-favicon {
+  margin-bottom: -4px !important;
+}
+.urlbarView-row[rich-suggestion] :is(.urlbarView-row-body-description, .urlbarView-row-body-bottom) {
+  font-size: unset !important;
+}
+
+.urlbarView-row[rich-suggestion] .urlbarView-title-separator::before,
+.urlbarView-row[rich-suggestion] .urlbarView-action {
+  display: none !important;
+}

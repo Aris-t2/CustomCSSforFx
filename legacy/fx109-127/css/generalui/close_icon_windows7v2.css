@@ -1,0 +1,102 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#closetab_fmarin_com-BAP,
+#tabmix-tabs-closebutton,
+#TabsToolbar #closetab_fmarin_com-browser-action .toolbarbutton-icon,
+#TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
+#sidebar-close .toolbarbutton-icon,
+* > .close-icon{
+  list-style-image: url("./../../image/close_w7v2_d.png") !important;
+}
+
+#closetab_fmarin_com-BAP:hover,
+#tabmix-tabs-closebutton:hover,
+#TabsToolbar #closetab_fmarin_com-browser-action:hover .toolbarbutton-icon,
+#TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover .toolbarbutton-icon,
+#sidebar-close:hover .toolbarbutton-icon,
+* > .close-icon:hover{
+  list-style-image: url("./../../image/close_w7v2_h.png") !important;
+}
+
+#closetab_fmarin_com-BAP:hover:active,
+#tabmix-tabs-closebutton:hover:active,
+#TabsToolbar #closetab_fmarin_com-browser-action:hover:active .toolbarbutton-icon,
+#TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover:active .toolbarbutton-icon,
+#sidebar-close:hover:active .toolbarbutton-icon,
+* > .close-icon:hover:active {
+  list-style-image: url("./../../image/close_w7v2_a.png") !important;
+}
+
+@media (min-resolution: 1.1dppx) {
+  #closetab_fmarin_com-BAP,
+  #tabmix-tabs-closebutton,
+  #TabsToolbar #closetab_fmarin_com-browser-action .toolbarbutton-icon,
+  #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
+  #sidebar-close .toolbarbutton-icon,
+  * > .close-icon {
+	list-style-image: url("./../../image/close_w7v2_2x_d.png") !important;
+  }
+
+  #closetab_fmarin_com-BAP:hover,
+  #tabmix-tabs-closebutton:hover,
+  #TabsToolbar #closetab_fmarin_com-browser-action:hover .toolbarbutton-icon,
+  #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover .toolbarbutton-icon,
+  #sidebar-close:hover .toolbarbutton-icon,
+  * > .close-icon:hover{
+	list-style-image: url("./../../image/close_w7v2_2x_h.png") !important;
+  }
+
+  #closetab_fmarin_com-BAP:hover:active,
+  #tabmix-tabs-closebutton:hover:active,
+  #TabsToolbar #closetab_fmarin_com-browser-action:hover:active .toolbarbutton-icon,
+  #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action:hover:active .toolbarbutton-icon,
+  #sidebar-close:hover:active .toolbarbutton-icon,
+  * > .close-icon:hover:active {
+	list-style-image: url("./../../image/close_w7v2_2x_a.png") !important;
+  }
+}
+
+/*
+#closetab_fmarin_com-BAP,
+#tabmix-tabs-closebutton,
+#TabsToolbar #closetab_fmarin_com-browser-action .toolbarbutton-icon,
+#TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action .toolbarbutton-icon,
+#sidebar-close .toolbarbutton-icon,
+* > .close-icon > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#sidebar-close {
+  background: unset !important;
+}
+
+#closetab_fmarin_com-BAP,
+#tabmix-tabs-closebutton,
+#TabsToolbar #closetab_fmarin_com-browser-action *,
+#TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action * {
+  background: unset !important;
+  box-shadow: unset !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#TabsToolbar .tabbrowser-tab .tab-content .close-icon {
+  background: unset !important;
+}
+*/
+
+* .close-icon {
+  background: unset !important;
+  box-shadow: unset !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  width: 16px !important;
+  height: 16px !important;
+  padding: unset !important;
+  border-radius: unset !important;
+}

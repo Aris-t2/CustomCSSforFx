@@ -1,0 +1,67 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	
+	:root {
+	  --addon-icon-size: 20px !important;
+	}
+	
+	addon-card:not([expanded="true"]) .addon.card {
+	  margin-top: 0 !important;
+	  margin-bottom: -2px !important;
+	  padding-top: 3px !important;
+	  padding-bottom: 0px !important;
+	  padding-inline-start: 2px !important;
+	  min-height: 40px !important;
+	}
+	
+	addon-list[type="theme"] .addon.card {
+	  min-height: 40px !important;
+	}
+
+	addon-card:not([expanded="true"]) .addon.card .more-options-button {
+	  width: 16px !important;
+	  height: 16px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-icon {
+	  margin-inline-end: 2px !important;
+	}
+
+	addon-card:not([expanded="true"]) .card-heading-image {
+	  display: none !important;
+	}
+
+	/* remove advertising other add-ons */
+	recommended-themes-section,
+	recommended-extensions-section {
+	  display: none !important;
+	}
+	
+	.addon-description {
+      min-height: 20px !important;
+	}
+	
+	/* hide 'Colorways' info */
+	section[section="2"] :is(h2,h3),
+	h2[data-l10n-id="theme-monochromatic-heading"],
+	h3[data-l10n-id="theme-monochromatic-subheading"]{
+	  display: none !important;
+	}
+	
+	.monochromatic-addon-list .addon-name-container {
+	  grid-template-rows: unset !important;
+	  row-gap: 0px !important;
+	}
+	
+	addon-list[type="theme"].monochromatic-addon-list addon-card:not([expanded="true"]) .card-heading-image {
+	  display: flex !important;
+	}
+
+}

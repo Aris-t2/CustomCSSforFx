@@ -1,0 +1,17 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* filter: unset and background-image: unset refuse to remove default colors */
+
+:autofill {
+  filter: grayscale(100%) brightness(1.1) !important;
+}
+
+/* stopped working in Firefox 131 *//*
+:autofill {
+  filter: unset !important;
+  background-image: unset !important;
+}
+
+*/

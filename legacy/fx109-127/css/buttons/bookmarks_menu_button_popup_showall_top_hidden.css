@@ -1,0 +1,10 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Show All Bookmarks (top entry) */
+#BMB_bookmarksShowAllTop,
+#BMB_bookmarksShowAllTop + menuseparator{
+  display: none !important;
+}

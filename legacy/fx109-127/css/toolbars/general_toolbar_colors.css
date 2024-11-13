@@ -1,0 +1,79 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --general_toolbar_color_toolbars: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_color_navbar: linear-gradient(#f9f9fa,#f9f9fa);
+  --general_toolbar_text_color: inherit;
+  --general_toolbar_text_shadow: transparent;
+}
+
+:root:not([lwtheme]) #nav-bar,
+:root:not([lwtheme]) toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
+  appearance: none !important;
+}
+
+@media not (-moz-toolbar-prefers-color-scheme: dark), not (prefers-color-scheme: dark) {
+	:root:not([lwtheme]) #nav-bar {
+	  background: var(--general_toolbar_color_navbar, inherit) !important;
+	}
+
+	:root:not([lwtheme]) toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
+	  background: var(--general_toolbar_color_toolbars, inherit) !important;
+	}
+}
+
+:root:not([lwtheme]) #nav-bar #urlbar ::-moz-selection {
+  background-color: Highlight !important;
+  color: HighlightText !important;
+}
+
+/**/
+
+:root:not([lwtheme]) #PersonalToolbar #bookmarks-menu-button::after,
+:root:not([lwtheme]) toolbar > toolbarbutton > .toolbarbutton-text,
+:root:not([lwtheme]) toolbar #stop-reload-button toolbarbutton > .toolbarbutton-text,
+:root:not([lwtheme]) toolbar #PanelUI-button toolbarbutton > .toolbarbutton-text,
+:root:not([lwtheme]) toolbar > toolbarbutton >.toolbarbutton-badge-stack .toolbarbutton-text,
+:root:not([lwtheme]) #nav-bar-customization-target > toolbarbutton > .toolbarbutton-text,
+:root:not([lwtheme]) #PlacesToolbarItems toolbarbutton > :is(label,description) {
+  color: var(--general_toolbar_text_color, inherit) !important;
+  text-shadow: 1px 1px 1px var(--general_toolbar_text_shadow, inherit) !important;
+}
+
+/* findbar */
+:root:not([lwtheme]) :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {
+  background: var(--general_toolbar_color_toolbars, inherit) !important;
+}
+
+:root:not([lwtheme])[style*='--lwt-header-image'] :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) {
+  background: var(--lwt-header-image) !important;
+  background-position: calc(100vw - 5px) !important;
+}
+
+:root:not([lwtheme])[style*='--lwt-header-image'] :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) :is(.toolbarbutton-icon,.toolbarbutton-text) {
+  color: var(--lwt-text-color) !important;
+  fill: var(--lwt-text-color) !important;
+}
+:root[lwtheme][style*='--lwt-header-image']:-moz-lwtheme-brighttext :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) :is(.toolbarbutton-icon,.toolbarbutton-text) {
+  text-shadow: 1px 1px 1px black !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root:not([lwtheme])[style*='--lwt-header-image'] :is(.browserContainer,#viewSource) :is(findbar,#FindToolbar) :is(.toolbarbutton-icon,.toolbarbutton-text) {
+	  text-shadow: 1px 1px 1px black !important;
+	}
+}
+
+.browserContainer > findbar > #findbar-close-container {
+  background-color: unset !important;
+}
+
+/* fix Firefox + Windows 8.1 + lw-theme bug (occurring without custom code too) */
+@media (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
+	:root:not([lwtheme]) #navigator-toolbox {
+	  border: unset !important;
+	}
+}

@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@import "./tabs_below_navigation_toolbar_alt.css";
+
+
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar {
+  visibility: collapse !important;
+}
+
+/* space above navigation toolbar (OS titlebar) */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 0px !important;
+}

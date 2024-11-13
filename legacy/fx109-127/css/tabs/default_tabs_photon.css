@@ -1,0 +1,251 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+:root {
+	
+  --photon_tabs_tab_height: 28px;
+  --tab-min-height: var(--photon_tabs_tab_height) !important;
+ 
+  /* variable for tabs below navigation toolbar option */
+  --tab_below_navigation_toolbar_bottom_padding: calc( var(--tab-min-height) + 0px ) !important;
+  
+  /* variable for tabs below navigation toolbar option on macOS */
+  --tab_below_navigation_toolbar_bottom_padding_macOS: calc( var(--tab-min-height) + 1px ) !important;
+  --tab_below_navigation_toolbar_toolbox_top_padding_macOS: calc(-1px + var(--tab-min-height)) !important;
+  
+  /* variable for tabs below main content option */
+  --tab_below_main_content_bottom_margin: calc(3px + var(--tab-min-height)) !important;
+  --tab_below_main_content_toolbar_height: calc(2px + var(--tab-min-height)) !important;
+  --tab_below_main_content_top_margin: 0px !important;
+
+}
+
+/* make tabs look like tabs again */
+.tab-background {
+  border-radius: 0px !important;
+  margin-block: 0px !important;
+}
+
+:root:not([lwtheme]) .tab-background:is([selected],[multiselected]) {
+  background-image: var(--classic_squared_tabs_active_tab) !important;
+}
+
+:root[lwtheme] .tab-background:is([selected],[multiselected]) {
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--toolbar-bgimage) !important;
+}
+
+/* remove left and right tab spaces */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])),
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+  border-radius: 0px !important;
+}
+
+/* adjust 'new tab' tab */
+#tabs-newtab-button {
+  padding-inline: 1px !important;
+  border-radius: 0px !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  border-radius: 0px !important;
+}
+
+/* reduce scrollbuttons size */
+#scrollbutton-up,
+#scrollbutton-down {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/*tab line for [selected] and [multiselected] tabs */
+.tabbrowser-tab .tab-context-line {
+  height: 2px !important;
+  border-radius: 0px !important;
+}
+
+.tabbrowser-tab:is([selected],[multiselected]):not([usercontextid]) .tab-context-line {
+  background-color: Highlight !important;
+}
+
+.tabbrowser-tab:not([selected])[multiselected] .tab-context-line {
+  background-color: color-mix(in srgb,Highlight, white 40%) !important;
+}
+
+:root[lwtheme]:not([lwtheme-image="true"]):not([lwtheme-mozlightdark]) .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: var(--tab-line-color,Highlight) !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  margin: unset !important;
+  background-color: var(--identity-icon-color) !important;
+}
+
+/* border between navigation toolbar and tabs toolbar */
+:root:not([lwtheme]) #nav-bar {
+  box-shadow: 0 calc(-1 * 1px) 0 color-mix(in srgb, currentColor 20%, transparent) !important;
+}
+
+:root[lwtheme] #nav-bar {
+  box-shadow: unset !important;
+}
+
+/* Tab separators had to be rewritten, because Mozilla removed
+   'beforeselected-visible' and 'before-multiselected' rules.
+   
+   Separators show up for pinned tabs, but get hidden by Firefox in overflow mode. 
+   */
+   
+.tabbrowser-tab/*:not([pinned])*/::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab::before {
+  border-right: 1px solid transparent;
+  margin-block: 5px 4px;
+  opacity: 0.3;
+  content: "";
+  display: block;
+}
+
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected])::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab::before {
+  border-right: 1px solid var(--lwt-background-tab-separator-color, currentColor);
+}
+
+.tabbrowser-tab/*:not([pinned])*/:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/[selected] + .tabbrowser-tab:not([selected])::before,
+.tabbrowser-tab/*:not([pinned])*/[multiselected]:not([selected]) + .tabbrowser-tab:not([selected])::before {
+  border-right: 1px solid transparent;
+}
+
+.tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected]):last-of-type::after {
+  margin-inline-end: -1px;
+}
+
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected],[multiselected])::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected],[multiselected]):last-of-type::after,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected]):nth-child(1 of :not(/*[pinned],*/ [hidden]))::before,
+.tabbrowser-tab/*:not([pinned])*/:hover:not([selected])[first-visible-unpinned-tab]::before,
+.tabbrowser-tab/*:not([pinned])*/:hover + .tabbrowser-tab/*:not([pinned])*/:not([selected],[multiselected])::before {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned]::after,
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned]::before {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* selected / multiselected colors */
+:root:not([lwtheme]) .tabbrowser-tab:is([selected],[multiselected]) > .tab-stack > .tab-background {
+  box-shadow: 0 0 1px rgba(0,0,0,.5) !important;
+}
+
+.tab-background:is([selected],[multiselected]) {
+  box-shadow: inset -1px 0 0 0 var(--chrome-content-separator-color),
+			  inset 1px 0 0 0 var(--chrome-content-separator-color) !important;
+}
+
+:root[lwtheme] .tab-background:is([selected],[multiselected]),
+:root[lwtheme] .tab-background:is([selected],[multiselected]){
+  box-shadow: inset -1px 0 0 0 rgba(255,255,255,.01),
+			  inset 1px 0 0 0 rgba(255,255,255,.01) !important;
+}
+
+.tab-background[multiselected] {
+  outline: unset !important;
+  outline-offset: unset !important;
+}
+
+.tab-background[selected],[multiselected] {
+  outline-width: unset !important;
+  outline-offset: unset !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background:not([selected])[multiselected] {
+  background-color: color-mix(in srgb, currentColor 11%, transparent) !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected])[multiselected] {
+  background-color: color-mix(in srgb, currentColor 16%, transparent) !important;
+}
+
+/* tab height fix ESR 91.6, 96.0.2, 97+ */
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+  height: unset !important;
+}
+
+/* Fx 100+ outline fix */
+:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) #firefox-view-button[open] > .toolbarbutton-icon,
+:root[lwtheme] .tab-background[selected] {
+  outline: unset !important;
+}
+
+/* Fx 101+ */
+@media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
+	
+	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	  margin-top: -3px !important;
+	}
+}
+
+/* Fx 106+ */
+#private-browsing-indicator-with-label {
+  display: none !important;
+}
+
+/* Fx 110+ - remove line below active tab */
+#nav-bar:not([tabs-hidden="true"]) {
+  position: unset !important;
+}
+
+/* fix jumping pinned tabs / tabs box */
+:is(#TabsToolbar,#vertical-tabs) #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
+  min-height: calc( var(--tab-min-height) - 2px ) !important;
+  max-height: calc( var(--tab-min-height) - 2px ) !important;
+}
+
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
+  min-height: calc( var(--tab-min-height) - 0px ) !important;
+}
+
+#tabbrowser-tabs {
+  padding-inline: 0 !important;
+  padding-inline-start: calc(var(--tab-overflow-pinned-tabs-width) + 0px) !important;
+  border: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+:is(#TabsToolbar,#vertical-tabs) .toolbarbutton-1 {
+  margin: unset !important;
+}
+
+:is(#TabsToolbar,#vertical-tabs) .titlebar-spacer[type="pre-tabs"],
+:is(#TabsToolbar,#vertical-tabs) .titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+
+#main-window:-moz-window-inactive #titlebar {
+  opacity: 1.0 !important;
+}
+
+/* Fx 126+ */
+:root[lwtheme] #nav-bar {
+  border-top: 0px !important;
+}
+
+:root {
+  --tab-selected-bgcolor: unset !important;
+}
+

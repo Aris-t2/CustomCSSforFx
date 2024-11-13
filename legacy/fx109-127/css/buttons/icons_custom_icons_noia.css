@@ -1,0 +1,152 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* There are no icon versions for HiDPI modes available, so icons
+   will look blurry in those modes.
+*/
+
+
+#stop-reload-button .toolbarbutton-animatable-box {
+  display: none !important;
+}
+
+#tabs-newtab-button {
+  list-style-image: url("../../image/newtabnoia.png") !important;
+}
+
+#back-button {
+  list-style-image: url("../../image/icons_fx_noia/back.png") !important;
+}
+
+#forward-button {
+  list-style-image: url("../../image/icons_fx_noia/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("../../image/icons_fx_noia/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("../../image/icons_fx_noia/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("../../image/icons_fx_noia/reload.png") !important;
+}
+
+#bookmarks-menu-button,#bookmarks-toolbar-placeholder {
+  list-style-image: url("../../image/icons_fx_noia/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("../../image/icons_fx_noia/history.png") !important;
+}
+
+#add-ons-button,#unified-extensions-button {
+  list-style-image: url("../../image/icons_fx_noia/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("../../image/icons_fx_noia/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("../../image/icons_fx_noia/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("../../image/icons_fx_noia/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("../../image/icons_fx_noia/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("../../image/icons_fx_noia/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("../../image/icons_fx_noia/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("../../image/icons_fx_noia/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("../../image/icons_fx_noia/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("../../image/icons_fx_noia/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("../../image/icons_fx_noia/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("../../image/icons_fx_noia/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("../../image/icons_fx_noia/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../../image/icons_fx_noia/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("../../image/icons_fx_noia/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("../../image/icons_fx_noia/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("../../image/icons_fx_noia/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("../../image/icons_fx_noia/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("../../image/icons_fx_noia/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("../../image/icons_fx_noia/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("../../image/icons_fx_noia/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("../../image/icons_fx_noia/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("../../image/icons_fx_noia/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("../../image/icons_fx_noia/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("../../image/icons_fx_noia/downloads.png") !important;
+}
+
+#panic-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_noia/panic.png") !important;
+}
+
+#save-to-pocket-button:not([open]) {
+  list-style-image: url("../../image/icons_fx_noia/savetopocket.png") !important;
+}

@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-content {
+  border-bottom: 2px solid Highlight !important;
+}
+
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-content > * {
+  margin-bottom: -2px !important
+}

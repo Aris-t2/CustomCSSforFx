@@ -1,0 +1,8 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+.top-site-outer .tile .icon-wrapper {
+  position: unset !important;
+}

@@ -1,0 +1,30 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	#categories .category[name="recent-updates"][disabled],
+	#category-recentUpdates[disabled] {
+	  overflow: visible !important;
+	  height: 48px !important;
+	  min-height: 48px !important;
+	  opacity: 1 !important;
+	  transition-property: unset !important;
+	  transition-duration: unset !important;
+	  -moz-user-input: unset !important;
+	}
+	
+	#categories .category[name="recent-updates"][hidden],
+	#category-recentUpdates[hidden] {
+	  opacity: 1 !important;
+	  min-height: 48px !important;
+	  height: 48px !important;
+	  display: inherit !important;
+	  transition: unset !important;
+	}
+
+}

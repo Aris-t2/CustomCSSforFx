@@ -1,0 +1,13 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar[focused]:not([usertyping]) .urlbarView {
+  display: none !important;
+}
+
+#urlbar[focused]:not([usertyping]) :is(#urlbar-input-container,.urlbar-input-container) {
+  border: 1px solid var(--urlbar_border_color) !important;
+  border-radius: var(--toolbarbutton-border-radius) !important;
+}

@@ -1,0 +1,41 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* toolbar contents order has to be '... back button, forward button, location bar ...' */
+
+#main-window:not([customizing=true])[uidensity=compact] #nav-bar #back-button + #forward-button:not([disabled]) {
+  margin-inline-start: -6px !important;
+  margin-inline-end: -8px !important;
+}
+#main-window:not([customizing=true]):not([uidensity=compact]):not([uidensity=touch]) #nav-bar #back-button + #forward-button:not([disabled]) {
+  margin-inline-start: -4px !important;
+  margin-inline-end: -7px !important;
+}
+#main-window:not([customizing=true])[uidensity=touch] #nav-bar #back-button + #forward-button:not([disabled]) {
+  margin-inline-start: -4px !important;
+  margin-inline-end: -7px !important;
+}
+/*
+#main-window:not([customizing=true]) #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -3px !important;
+}*/
+
+#main-window:not([customizing=true]) #nav-bar #forward-button[disabled] {
+  /*visibility: collapse !important;*/
+  opacity: 0 !important;
+  z-index: -100000 !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -37px !important;
+}
+
+#main-window #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -39px !important;
+}
+
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -42px !important;
+}

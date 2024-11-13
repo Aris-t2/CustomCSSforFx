@@ -1,0 +1,9 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar #tracking-protection-icon-container:not([hidden]) ~ #identity-box #identity-icon-box,
+#urlbar #connection-icon {
+  display: none !important;
+}

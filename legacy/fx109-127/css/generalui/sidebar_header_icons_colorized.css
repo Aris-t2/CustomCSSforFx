@@ -1,0 +1,97 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* dark blue */
+#sidebar-switcher-bookmarks::before,
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #336699 !important;
+  fill: #336699 !important;
+  opacity: 1.0 !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-switcher-bookmarks::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #64a3e2 !important;
+  fill: #64a3e2 !important;
+  opacity: 1.0 !important;
+}
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-switcher-bookmarks::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #64a3e2 !important;
+	  fill: #64a3e2 !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+/* purple */
+#sidebar-switcher-history::before,
+#sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #800080 !important;
+  fill: #800080 !important;
+  opacity: 1.0 !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-switcher-history::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #ff00ff !important;
+  fill: #ff00ff !important;
+  opacity: 1.0 !important;
+}
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-switcher-history::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #ff00ff !important;
+	  fill: #ff00ff !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+/* blue */
+#sidebar-reverse-position::before,
+#sidebar-switcher-tabs::before,
+#sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #4169e1 !important;
+  fill: #4169e1 !important;
+  opacity: 1.0 !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-reverse-position::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-switcher-tabs::before,
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+  color: #00d2ff !important;
+  fill: #00d2ff !important;
+  opacity: 1.0 !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-reverse-position::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-switcher-tabs::before,
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
+	  color: #00d2ff !important;
+	  fill: #00d2ff !important;
+	  opacity: 1.0 !important;
+	}
+}
+
+#sidebar-menu-close::before {
+  color: red !important;
+  fill: red !important;
+  opacity: 1.0 !important;
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext:not([style*='--lwt-header-image']) #sidebar-menu-close::before {
+  color: #ff5a5a !important;
+  fill: #ff5a5a !important;
+  opacity: 1.0 !important;
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root[lwtheme]:not([style*='--lwt-header-image']) #sidebar-menu-close::before {
+	  color: #ff5a5a !important;
+	  fill: #ff5a5a !important;
+	  opacity: 1.0 !important;
+	}
+}

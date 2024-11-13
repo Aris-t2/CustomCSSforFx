@@ -1,0 +1,22 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#statuspanel-label {
+  --statusbar_background_color: lightgrey;
+  --statusbar_font_color: black;
+}
+
+#statuspanel {
+  appearance: none !important;
+  background: unset !important;
+  border: 0 !important;
+}
+
+#statuspanel #statuspanel-label {
+  appearance: none !important;
+  background: var(--statusbar_background_color) !important;
+  color: var(--statusbar_font_color) !important;
+  border: 0 !important;
+}

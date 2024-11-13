@@ -1,0 +1,62 @@
+/* Firefox userContent.css tweaks *******************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+	
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="disable-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: red !important;
+	}
+	
+	panel-item[action="toggle-disabled"][data-l10n-id="enable-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: green !important;
+	}
+	
+	panel-item[data-l10n-id="remove-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: red !important;
+	}
+
+	panel-item[data-l10n-id="install-update-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: blue !important;
+	}
+	
+	panel-item[data-l10n-id="preferences-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: grey !important;
+	}
+	
+	panel-item[data-l10n-id="report-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: orange !important;
+	}
+	
+	panel-item[data-l10n-id="expand-addon-button"],
+	panel-item[data-l10n-id="manage-addon-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: blue !important;
+	}
+	
+	panel-item[data-l10n-id="ask-to-activate-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: red !important;
+	}
+	
+	panel-item[data-l10n-id="always-activate-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: green !important;
+	}
+	
+	panel-item[data-l10n-id="never-activate-button"] {
+	  -moz-context-properties: fill !important;
+	  fill: red !important;
+	}
+
+}

@@ -1,0 +1,33 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* Has to be used along with 'classic_squared_tabs.css' */
+
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
+  border-top: 1px solid rgba(255,255,255,.6) !important;
+  border-left: 1px solid rgba(255,255,255,.2) !important; 
+  border-right: 1px solid rgba(255,255,255,.2) !important; 
+}
+
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button),
+:root[lwtheme]:-moz-lwtheme-brighttext :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab .tab-content {
+  border-top: 1px solid rgba(255,255,255,.6) !important;
+  border-left: 1px solid rgba(255,255,255,.2) !important; 
+  border-right: 1px solid rgba(255,255,255,.2) !important; 
+}
+
+@media (-moz-content-prefers-color-scheme: dark) {
+	:root[lwtheme] .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+	:root[lwtheme] :is(#TabsToolbar,#vertical-tabs) :is(.tabs-newtab-button,#tabs-newtab-button),
+	:root[lwtheme] .tabbrowser-tab .tab-content {
+	  border-top: 1px solid rgba(255,255,255,.6) !important;
+	  border-left: 1px solid rgba(255,255,255,.2) !important; 
+	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	}
+}
