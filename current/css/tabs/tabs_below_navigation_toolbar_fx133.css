@@ -16,7 +16,7 @@
   color: var(--toolbar-color);
 }
 
-#toolbar-menubar[inactive] ~ #nav-bar {
+#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[inactive] ~ #nav-bar {
   padding-top: 26px !important;
 }
 
@@ -44,6 +44,10 @@
 #main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
 #main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar {
   margin-top: 0px !important;
+}
+
+#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+  padding-inline-end: 140px !important;
 }
 
 @media (-moz-platform: macos) {
