@@ -1,0 +1,17 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --tab-min-height: 29px !important;
+
+  &[uidensity=compact] {
+    --tab-min-height: unset !important;
+  }
+
+  &[uidensity=touch] {
+    --tab-min-height: 36px !important;
+  }
+}
+

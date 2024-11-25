@@ -12,7 +12,7 @@
 }
 
 /* move bookmarks toolbar to bottom + style bookmarks toolbar */
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox > #PersonalToolbar {
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar {
   -moz-window-dragging: no-drag;
   display: flex !important;
   position: fixed !important;
@@ -32,7 +32,7 @@
   background-image: var(--lwt-header-image) !important;
 }
 
-/* free some space below content */
+/* free some space below content *//*
 #main-window:not([chromehidden*="toolbar"]):not([sizemode="fullscreen"]) #browser-bottombox  {
   margin-bottom: calc( var(--addonbar_height) - 1px);
 }
@@ -130,11 +130,11 @@
   -moz-box-align: center !important;
   align-items: center !important;
 }
-/*
+
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #browser,
 #main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #customization-container {
   margin-bottom: var(--addonbar_height) !important; 
-}*/
+}
 
 #PersonalToolbar .toolbarbutton-1 {
   margin-block: 0px !important; 

@@ -665,7 +665,6 @@
 }
 
 /*Fx 127+ */
-
 .tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
 .tabbrowser-tab:not([pinned]) .tab-icon-pending,
 .tabbrowser-tab:not([pinned]) .tab-icon-image,
@@ -681,4 +680,10 @@
 /*Fx 132+ */
 .tab-content {
   padding: 0 8px !important;
+}
+
+/* Fx 133+ */
+#tabbrowser-tabs[orient="horizontal"] .tab-background,
+#tabbrowser-tabs[orient="horizontal"] {
+  min-height: unset !important;
 }

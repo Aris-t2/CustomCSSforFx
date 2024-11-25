@@ -10,7 +10,7 @@
 
 
 #toolbar-menubar[inactive] ~ #nav-bar {
-  padding-top: 26px !important;
+  padding-top: 28px !important;
 }
 
 #toolbar-menubar {
@@ -18,7 +18,7 @@
 }
 
 #toolbar-menubar:not([inactive]) {
-  height: 26px !important;
+  height: 28px !important;
 }
 
 #main-window[sizemode="maximized"] #toolbar-menubar {

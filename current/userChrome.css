@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 128+
-  Current version: 4.6.0
+  Current version: 4.6.1
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -573,6 +573,7 @@
    [!] Note: 'alt' works with multi-tab lines option up to Fx 132.
    [!] Note: '_fx133.css' version works with multi-tab lines option for Fx 133+.
    [!] Note: might require overriding url bars 'selection color' --> see corresponding area
+   [!] _fx133.css for Firefox 133+
    [!] only use one option at a time
 */
 
@@ -580,7 +581,7 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx133.css"; /**/ /* for Firefox 133+ */
 
 
-/* Alternative for multi-lined tabs (Glitches might occur with inactive menubar!)
+/* Alternative for multi-lined tabs (Possible glitches with inactive menubar!)
    [!] use option below for multiple tab lines support (up to Fx 132 only !)
 */
 
@@ -591,14 +592,18 @@
 
 
 /* Move tabs to a higher position 
-   [!] not compatible to 'tabs toolbar - multiple tab lines' option
+   [!] not compatible to 'tabs toolbar - multiple tab lines' option up to Fx132, works with Fx133+
+   [!] _fx133.css for Firefox 133+
    [!] only use one option at a time
    [!] EXPERIMENTAL
 */
 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_fx133.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_fx133.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only_fx133.css"; /**/
 
 
 /* ----------------------------------------
@@ -711,7 +716,8 @@
 @import "./css/tabs/tab_icon_colors.css"; /**/
 /* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/tabs_firefox_view_button_hidden.css"; /**/
-/* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* Has to be used along with 'classic_squared_tabs.css' */
+/* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* has to be used along with 'classic_squared_tabs.css' */
+/* @import "./css/tabs/default_tabs_reduce_height.css"; /**/ /* Fx133 introduced new tab dimensions this setting tries to bybass */
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/
 /* @import "./css/tabs/tab_audio_icon.css"; /**/
@@ -926,9 +932,12 @@
    [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks
    [!] not compatible to 'bookmarks toolbar - multiple lines' option
    [!] not compatible to 'bookmarks toolbar autohide' option
+   [!] "addonbar_move_bookmarks_toolbar_to_bottom.css" is currently broken on Fx 132, but works on Fx 128ESR and 133+
+   [!] use "addonbar_move_bookmarks_toolbar_to_bottom_temp_fix_fx132.css" on Fx 132
 */
 
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_temp_fix_fx132.css"; /**/ /* Fx 132 only */
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
@@ -1135,6 +1144,7 @@
 /* @import "./css/locationbar/go_button_in_location_bar_hidden.css"; /**/
 /* @import "./css/locationbar/tracking_protection_alternative_icon.css"; /**/
 /* @import "./css/locationbar/urlbar_icons_aero_appearance.css"; /**/
+/* @import "./css/locationbar/urlbar_searchmode_switcher_hidden.css"; /**/ /* Fx 134+ */
 
 
 /* ----------------------------

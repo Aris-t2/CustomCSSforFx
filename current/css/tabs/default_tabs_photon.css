@@ -249,3 +249,8 @@
   --tab-selected-bgcolor: unset !important;
 }
 
+/* Fx 133+ */
+#tabbrowser-tabs[orient="horizontal"] .tab-background,
+#tabbrowser-tabs[orient="horizontal"] {
+  min-height: unset !important;
+}

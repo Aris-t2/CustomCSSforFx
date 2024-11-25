@@ -1,0 +1,12 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#urlbar-searchmode-switcher {
+  display: none !important;
+}
+
+#urlbar[pageproxystate="invalid"] #identity-box {
+  display: flex !important;
+}
