@@ -507,7 +507,7 @@
 }
 
 /* Fx65+ fixes */
-#main-window[sizemode="maximized"][tabsintitlebar] :is(#TabsToolbar,#vertical-tabs) {
+#main-window[sizemode="maximized"][tabsintitlebar] #TabsToolbar {
   margin-top: -3px !important;
 }
 
@@ -607,7 +607,7 @@
   height: unset !important;
 }
 
-/* Fx 101+ */
+/* Fx 101+ *//*
 @media (-moz-platform: windows) {
 	
 	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {

@@ -460,7 +460,7 @@
 
 }
 
-/* checkbox / radios */
+/* checkbox / radios *//*
 *[subdialog="true"] checkbox .checkbox-check {
   appearance: unset  !important;
   box-shadow: unset !important;
@@ -551,4 +551,4 @@
 
   }
 	
-}
+}*/

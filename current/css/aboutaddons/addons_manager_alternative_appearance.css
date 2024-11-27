@@ -47,6 +47,10 @@
 	  transition: none !important;
 	}
 	
+	#main {
+	  max-width: unset !important;
+	}
+	
 	/* dimensions / positioning */
 	#addons-page .main-content{
 	  padding: 0 !important;

@@ -118,7 +118,7 @@
 	
 	panel-item[data-l10n-id="never-activate-button"] {
 	  --icon: url("chrome://browser/skin/zoom-out.svg") !important;
-	  background-image: url("chrome://browser/skin/zoom-out.svg") !important;
+	  background-image: url("chrome://global/skin/icons/minus.svg") !important;
 	  background-position: center center !important;
 	  background-repeat: no-repeat !important;
 	}

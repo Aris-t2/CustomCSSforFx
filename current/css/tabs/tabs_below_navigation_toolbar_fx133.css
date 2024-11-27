@@ -20,11 +20,11 @@
   padding-top: 28px !important;
 }
 
-#toolbar-menubar {
+#main-window[tabsintitlebar] #toolbar-menubar {
   padding-inline-end: 140px;
 }
 
-#toolbar-menubar:not([inactive]) {
+#main-window[tabsintitlebar] #toolbar-menubar:not([inactive]) {
   height: 28px !important;
 }
 

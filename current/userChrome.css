@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 128+
-  Current version: 4.6.1
+  Current version: 4.6.2
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -351,6 +351,7 @@
    ----------------------------------------
    
    [!] only use one option at a time
+   [!] custom_backforward_connected_to_location_bar.css not working on Fx 133+
 */
 
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
@@ -374,9 +375,9 @@
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_phoenix.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */
-/* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared*/
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared*/
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */ /* not working on Fx 133+ */
+/* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared */
 
 
 /* ==========================================
@@ -953,13 +954,13 @@
    ------------------
 
    [!] only use one option at a time
-   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected on current Firefox versions and was removed
    [!] 'top_toolbar_colors_v2.css' mainly for 'tabs below navigation toolbar option'
-   [!] Windows accent colors: about:config > browser.theme.windows.accent-color-in-tabs.enabled > true
+   [!] Windows accent colors for top_toolbar_system_accent_colors.css: about:config > browser.theme.windows.accent-color-in-tabs.enabled > true
 */
 
 
 /* override titlebars and tab toolbars colors */
+/* @import "./css/top_toolbar_system_accent_colors.css"; /**/ 
 /* @import "./css/toolbars/top_toolbar_colors.css"; /**/
 /* @import "./css/toolbars/top_toolbar_colors_v2.css"; /**/ 
 
