@@ -370,7 +370,7 @@
 	  padding-top: 6px !important;
 	  padding-bottom: 6px !important;
 	}
-	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) .titlebar-button {
+	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) .titlebar-button {
 	  padding-top: 4px !important;
 	  padding-bottom: 4px !important;
 	}
@@ -412,8 +412,8 @@
   border-top-right-radius: 3px !important;
 }
 
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::after,
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::before,
+:root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::before,
 .tabbrowser-tab:hover::before,
 .tabbrowser-tab[last-visible-tab]:hover::after,
 #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
@@ -485,7 +485,7 @@
 }
 
 /* Fx65+ fixes */
-#main-window[sizemode="maximized"][tabsintitlebar] #TabsToolbar {
+#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
   margin-top: -3px !important;
 }
 
@@ -576,15 +576,15 @@
 /* Fx 101+ *//*
 @media (-moz-platform: windows) {
 	
-	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
 	  margin-top: -5px !important;
 	}
 
-	#main-window[sizemode="fullscreen"][tabsintitlebar] #titlebar {
+	#main-window[sizemode="fullscreen"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
 	  margin-top: -3px !important;
 	}
 
-	#main-window[sizemode="maximized"][tabsintitlebar] #toolbar-menubar {
+	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
 	  padding-top: 5px !important;
 	}
 	#main-window[sizemode="maximized"] #toolbar-menubar[inactive] + :is(#TabsToolbar,#vertical-tabs) > .titlebar-buttonbox-container toolbarbutton {

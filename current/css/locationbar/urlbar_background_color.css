@@ -15,7 +15,7 @@
 }
 
 
-#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#page-action-buttons,#identity-icon-box,#urlbar-background,#searchbar) {
+#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#page-action-buttons,#urlbar-background,#searchbar) {
   background-color: var(--urlbar_background_color) !important;
 }
 

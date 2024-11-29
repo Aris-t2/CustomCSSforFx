@@ -10,7 +10,7 @@
   height: 16px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar #searchbar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar #searchbar {
   min-height: 22px !important;
 }
 

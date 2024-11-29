@@ -28,23 +28,23 @@
 }
 
 /* space above tabs toolbar */
-#main-window[tabsintitlebar][sizemode="maximized"] * #titlebar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] * #titlebar {
   margin-top: -8px !important;
 }
 
 /* space for menubar above navigation toolbar (Firefox titlebar) */
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #nav-bar,
-#main-window[tabsintitlebar][sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #nav-bar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([sizemode="fullscreen"]) #nav-bar {
   margin-top: 28px !important;
 }
 
-#main-window:not([tabsintitlebar]) #nav-bar {
+#main-window:not(:is([tabsintitlebar],[customtitlebar])) #nav-bar {
   margin-top: 18px !important;
 }
 
 /* add 'drag' feature to space above navigation toolbar */
-#main-window[tabsintitlebar] #navigator-toolbox,
-#main-window[tabsintitlebar] #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar]) #navigator-toolbox,
+#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar {
   -moz-window-dragging: drag !important;
 }
 
@@ -58,7 +58,7 @@
 
 /* move menubars / tab toolbars caption buttons to windows top right position */
 #main-window:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
   position: fixed !important;
   right: 0 !important;
   top: 0 !important;
@@ -66,7 +66,7 @@
   display: block !important;
 }
 
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
+#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
   opacity: 0 !important;
 }
 
@@ -77,7 +77,7 @@
 
 
 #main-window #nav-bar,
-#main-window[tabsintitlebar] #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar {
   box-shadow: unset !important;
   border: unset !important;
 }
@@ -97,7 +97,7 @@
 }
 
 /* toolbar colors */
-:root:not([lwtheme]):not([tabsintitlebar]) #toolbar-menubar {
+:root:not([lwtheme]):not(:is([tabsintitlebar],[customtitlebar])) #toolbar-menubar {
   background-image: var(--colored_menubar_background_image) !important;
   border: 0px !important;
   margin-bottom: -1px !important;
@@ -123,72 +123,72 @@
 }
 
 /* tabs toolbar adjustment */
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #TabsToolbar {
   padding-inline-start: 2px !important;
 }
 
-:root[lwtheme][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
-:root[lwtheme][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-:root[lwtheme][uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-:root[lwtheme][uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
+:root[lwtheme]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme][uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme][uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 :root[lwtheme] #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
 #main-window[sizemode="maximized"] #TabsToolbar,
-:root[lwtheme][tabsintitlebar]:not([style*='--lwt-header-image']) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
-:root[lwtheme][tabsintitlebar][sizemode="maximized"]:not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-:root[lwtheme][uidensity=compact][tabsintitlebar]:not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-:root[lwtheme][uidensity=compact][tabsintitlebar][sizemode="maximized"]:not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-:root[lwtheme][tabsintitlebar]:not([style*='--lwt-header-image']) #TabsToolbar {
+:root[lwtheme]:is([tabsintitlebar],[customtitlebar]):not([style*='--lwt-header-image']) #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar, 
+:root[lwtheme]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme][uidensity=compact]:is([tabsintitlebar],[customtitlebar]):not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme][uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([style*='--lwt-header-image']) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+:root[lwtheme]:is([tabsintitlebar],[customtitlebar]):not([style*='--lwt-header-image']) #TabsToolbar {
   padding-inline-start: 2px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"]:not([sizemode="fullscreen"]) #TabsToolbar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"]:not([sizemode="fullscreen"]) #TabsToolbar {
   margin-top: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="normal"][chromehidden~="menubar"] #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="normal"] #toolbar-menubar[autohide="true"][inactive] + #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"][chromehidden~="menubar"] #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive] + #TabsToolbar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"][chromehidden~="menubar"] #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #toolbar-menubar[autohide="true"][inactive] + #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"][chromehidden~="menubar"] #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive] + #TabsToolbar {
   padding-top: 0px !important;
 }
 
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
   margin-top: 0px !important;
 }
 
 /* tab title in titlebar support */
-#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #navigator-toolbox #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   margin-top: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #TabsToolbar,
-#main-window[tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #navigator-toolbox #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   margin-top: 4px !important;
 }
 
 /* titlebar button support */
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar{
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #nav-bar{
   margin-top: 2px !important;
 }
 
 /* fix for application/hamburger button in titlebar */
-#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar #PanelUI-button {
   visibility: collapse !important;
 }
 
@@ -197,11 +197,11 @@
 }
 
 /* tweaks for fullscreen mode */
-#main-window[tabsintitlebar][sizemode="fullscreen"] * #TabsToolbar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] * #TabsToolbar {
   padding-inline-start: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #navigator-toolbox #PanelUI-button {
   display: none !important;
 }
 
@@ -228,7 +228,7 @@
 /* Windows */
 @media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	/* set to '0', if no menubar is used */
-	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+	#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 18px !important;
 	}
 }
@@ -236,7 +236,7 @@
 /* Linux */
 @media (-moz-platform: linux) {
 	/* set to '0', if no menubar is used */
-	#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+	#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 26px !important;
 	}
 }
@@ -259,12 +259,12 @@
 
 @media (-moz-platform: macos) {
 	
-#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar {
+#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #toolbar-menubar {
   visibility: collapse !important;
 }
 
 /* space above navigation toolbar (OS titlebar) */
-#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
   margin-top: 0px !important;
 }
 
@@ -272,8 +272,8 @@
   margin-bottom: unset !important;
 }
 
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
-#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
   position: fixed !important;
   display:block !important;
   top: -2px !important;

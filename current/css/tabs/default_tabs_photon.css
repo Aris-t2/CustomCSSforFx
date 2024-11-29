@@ -195,7 +195,7 @@
 /* Fx 101+ */
 @media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
 	
-	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
 	  margin-top: -3px !important;
 	}
 }

@@ -2,6 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
 .tabbrowser-tab:only-of-type .tab-close-button,
 .tabbrowser-tab[first-visible-tab][last-visible-tab] .tab-close-button {
   visibility: collapse !important;

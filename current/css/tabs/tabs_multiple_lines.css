@@ -99,3 +99,10 @@ box.scrollbox-clip[orient="horizontal"] {
 .tab-label-container {
   height: unset !important;
 }
+
+/* Fx 133+ */
+#tabbrowser-tabs[orient="horizontal"] .tab-background,
+#tabbrowser-tabs[orient="horizontal"] {
+  min-height: unset !important;
+}
+

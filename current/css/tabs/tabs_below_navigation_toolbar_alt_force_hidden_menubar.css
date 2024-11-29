@@ -6,11 +6,11 @@
 @import "./tabs_below_navigation_toolbar_alt.css";
 
 
-#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar {
+#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #toolbar-menubar {
   visibility: collapse !important;
 }
 
 /* space above navigation toolbar (OS titlebar) */
-#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
   margin-top: 0px !important;
 }

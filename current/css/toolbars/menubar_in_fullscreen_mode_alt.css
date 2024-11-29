@@ -13,21 +13,21 @@
   -moz-window-dragging: unset !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #navigator-toolbox[style*="margin-top: -"] #toolbar-menubar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #navigator-toolbox[style*="margin-top: -"] #toolbar-menubar {
   visibility: collapse !important;
   display: none !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #toolbar-menubar {
   -moz-margin-start: 0px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
   margin-top: 26px !important;
 }
 
 @media (-moz-platform: windows) {
-	#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
 	  margin-top: 18px !important;
 	}
 }

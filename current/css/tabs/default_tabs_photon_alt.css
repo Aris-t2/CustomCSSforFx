@@ -105,7 +105,7 @@
   margin-inline-start: -1px;
 }
 
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] + :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::after,
+:root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] + :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab::after,
 .tabbrowser-tab:hover::after,
 #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[beforehovered]::after,
 .tabbrowser-tab[multiselected]::after,
@@ -153,7 +153,7 @@
 /* Fx 101+ */
 @media (-moz-platform: windows-win10), (-moz-os-version:windows-win10) {
 	
-	#main-window[sizemode="maximized"][tabsintitlebar] #titlebar {
+	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
 	  margin-top: -1px !important;
 	}
 }

@@ -29,10 +29,10 @@
   z-index: 3 !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
   padding-inline-end: 140px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #toolbar-menubar[inactive] ~ #nav-bar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #toolbar-menubar[inactive] ~ #nav-bar {
   padding-top: initial !important;
 }

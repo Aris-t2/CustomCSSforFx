@@ -8,56 +8,56 @@
 /************************************************/
 
 /* tabs toolbar adjustments */
-#main-window[tabsintitlebar] #toolbar-menubar {
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
   padding-inline-start: 43px !important;
 }
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
   padding-inline-start: 41px !important;
 }
-#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar {
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
   padding-inline-start: 40px !important;
 }
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
   padding-inline-start: 39px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar {
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
   padding-inline-start: 48px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar][sizemode="maximized"] #toolbar-menubar {
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
   padding-inline-start: 47px !important;
 }
 
 /* tabs toolbar adjustments */
-#main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 43px !important;
 }
-#main-window[tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 41px !important;
 }
-#main-window[uidensity=compact][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 40px !important;
 }
-#main-window[uidensity=compact][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 39px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 48px !important;
 }
-#main-window[uidensity=touch][tabsintitlebar][sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
   padding-inline-start: 47px !important;
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #TabsToolbar {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #TabsToolbar {
  padding-inline-start: 43px !important;
 }
 
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
-#main-window[tabsintitlebar]:not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
   margin-top: 4px !important;
 }
 
 /* appbutton */
-#main-window[tabsintitlebar] #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button {
   appearance: none !important;
   position: fixed !important;
   display: flex !important;
@@ -73,43 +73,43 @@
 
 @media (-moz-platform: windows-win7), (-moz-os-version:windows-win7), (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
 
-	#main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #PanelUI-button {
 	  top: 0px !important;
 	}
 
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 	  top: 8px !important;
 	}
 
 	@media (min-resolution: 110dpi) {
-		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 		  top: 6px !important;
 		}
 	}
 
 	@media (min-resolution: 120dpi) {
-		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 		  top: 5px !important;
 		}
 	}
 
 	@media (min-resolution: 140dpi) {
-		#main-window[tabsintitlebar][sizemode="normal"] #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #PanelUI-button {
 		  top: 0px !important;
 		}
-		#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 		  top: 4px !important;
 		}
 	}
 
 	@media (min-resolution: 160dpi) {
-		#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar #PanelUI-button {
 		  top: 2px !important;
 		}
 	}
 
 	@media (-moz-windows-classic) {
-		#main-window[tabsintitlebar][sizemode="maximized"] #nav-bar #PanelUI-button {
+		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar #PanelUI-button {
 		  top: 2px !important;
 		}
 	}
@@ -117,22 +117,22 @@
 
 /* code for Unix (macOS/Linux) */
 @media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
 	}  
 }
 
 @media not (-moz-platform: windows) {
-	#main-window[tabsintitlebar][sizemode="maximized"] #PanelUI-button {
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
 	  top: 0px !important;
 	}  
 }
 
-#main-window[tabsintitlebar][sizemode="fullscreen"] #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #PanelUI-button {
   top: 0px !important;
 }
 
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
   background-clip: padding-box !important;
   padding: 0 4px 0 !important;
   padding-top: 0 !important;
@@ -149,37 +149,37 @@
 
 /* code for Unix (macOS/Linux) */
 @media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
-  #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
 	max-width: 40px !important;
   }	  
 }
 
 @media not (-moz-platform: windows) {
-  #main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+  #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
 	max-width: 40px !important;
   }
 }
 
 /* hide button in fullscreen mode, if toolbars get automatically hidden */
-#main-window[tabsintitlebar][sizemode="fullscreen"] #navigator-toolbox[style*="margin-top: -"] #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #navigator-toolbox[style*="margin-top: -"] #PanelUI-button {
   visibility: collapse !important;
 }
 
 /* dropmarker icon / arrow */
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
   list-style-image: unset !important;
 }
 
-#main-window[tabsintitlebar] #PanelUI-button .toolbarbutton-icon {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button .toolbarbutton-icon {
   list-style-image: url("../../image/appbutton-inv.svg") !important;
   background: unset !important;
   box-shadow: unset !important;
 }
 
 /* adjust button badge stack */
-#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar] :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
   background: unset !important;
   border-color: unset !important;
   border: 0 !important;
@@ -188,7 +188,7 @@
 }
 
 /* adjust button badge */
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button .toolbarbutton-badge-stack .toolbarbutton-badge  {
   position: fixed !important;
   left: 2px !important;
   top: 4px !important;
@@ -198,7 +198,7 @@
 /* button color/border */
 
 /* orange (default) */
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
   background-image: linear-gradient(rgb(247,182,82), rgb(215,98,10) 95%) !important;
   border-right-color:hsla(214,89%,21%,.5) !important;
   border-left-color: hsla(214,89%,21%,.5) !important;
@@ -210,7 +210,7 @@
 			  1px 0 0 0px rgba(255,255,255,.5),
 			  -1px 0 0 0px rgba(255,255,255,.5) !important;
 }
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(252,240,89,.5) 10%, rgba(252,240,89,0) 70%),
 					radial-gradient(farthest-side at center bottom, rgb(236,133,0), rgba(255,229,172,0)),
 					linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
@@ -223,7 +223,7 @@
 			  1px 0 0 0px rgba(255,255,255,.5),
 			  -1px 0 0 0px rgba(255,255,255,.5) !important;
 }
-#main-window[tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]){
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]){
   background-image: linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
   box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
 			  0 1px 1px rgba(0,0,0,.2) inset,
@@ -234,31 +234,31 @@
 }
 
 /*private browsing - purple */
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #PanelUI-button #PanelUI-menu-button{
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button{
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
 					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
 					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary][tabsintitlebar] #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
 /* fix for 'buttons_on_navbar_squared_buttons.css' */
-#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-badge-stack {
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=touch] #PanelUI-menu-button .toolbarbutton-badge-stack {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   width: unset !important;
   height: 22px !important;
 }
 
-#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
-#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
-#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
   padding: 0px !important;
   width: 16px !important;
   height: 16px !important;
@@ -266,32 +266,32 @@
 }
 
 /* fix for toolbar + text mode */
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button,
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button,
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button,
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button,
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
   appearance: unset !important;
 }
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button .toolbarbutton-text,
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]) .toolbarbutton-text,
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button .toolbarbutton-text{
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button .toolbarbutton-text,
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]) .toolbarbutton-text,
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button .toolbarbutton-text{
   display: none !important;
 }
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not([type="menu-button"]),
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]),
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not([type="menu-button"]),
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]),
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] #PanelUI-menu-button{
   -moz-box-orient: unset !important;
   flex-direction: unset !important;
   min-width: unset !important;
 }
 
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
-#main-window[tabsintitlebar] toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) toolbaritem #PanelUI-menu-button:not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack),
+#main-window:is([tabsintitlebar],[customtitlebar]) toolbox toolbar:not(#TabsToolbar) #PanelUI-menu-button:not([type="menu-button"]):not(#nav-bar-overflow-button):not(#PlacesChevron) > :is(.toolbarbutton-icon,.toolbarbutton-badge-stack) {
   opacity: 1.0 !important;
   margin-bottom: unset !important;
 }
 
 /* support for tab title in Firefox titlebar option*/
-#main-window[tabsintitlebar]::after {
+#main-window:is([tabsintitlebar],[customtitlebar])::after {
   margin-inline-start: 45px !important;
 }
 
@@ -301,16 +301,16 @@
 }
 
 /* workaround for Firefox 71+ *******************/
-#main-window[tabsintitlebar] #PanelUI-button > *:not(#PanelUI-menu-button) {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button > *:not(#PanelUI-menu-button) {
   display: none !important;
 }
 
-#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-badge-stack,
-#main-window[tabsintitlebar][uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
-#main-window[tabsintitlebar]:not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
-#main-window[tabsintitlebar][uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=compact] #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=touch] #PanelUI-menu-button .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=compact] #PanelUI-menu-button .toolbarbutton-icon,
+#main-window:is([tabsintitlebar],[customtitlebar]):not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
+#main-window:is([tabsintitlebar],[customtitlebar])[uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
   height: unset !important;
 }
 
@@ -321,8 +321,8 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
 }
 
 /* aero appearance fix */
-#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
-#main-window[tabsintitlebar] #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
+#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):hover :is(.toolbarbutton-badge-stack,.toolbarbutton-icon),
+#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar #PanelUI-button toolbarbutton:not([disabled=true]):is([open],[checked],:hover:active,:active) :is(.toolbarbutton-badge-stack,.toolbarbutton-icon) {
   background-image:	unset !important;
   outline: 0px !important;
 }
@@ -330,15 +330,15 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
 /* Force appbutton to the right */
 @media (-moz-platform: macos) {
 	
-#main-window[tabsintitlebar] #PanelUI-button {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button {
   right: 0 !important;
 }
 
-#main-window[tabsintitlebar] #TabsToolbar {
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
   padding-inline-end: 100px !important;
 }
 
-#main-window[tabsintitlebar] .titlebar-buttonbox-container {
+#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {
   padding-inline-end: 20px !important;
 }
 

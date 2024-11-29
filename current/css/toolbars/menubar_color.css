@@ -25,9 +25,9 @@
 }
 
 @media (-moz-platform: windows) {
-  #main-window[tabsintitlebar] #titlebar-min .toolbarbutton-icon,
-  #main-window[tabsintitlebar] #titlebar-max .toolbarbutton-icon,
-  #main-window[tabsintitlebar] #titlebar-close:not(:hover) .toolbarbutton-icon {
+  #main-window:is([tabsintitlebar],[customtitlebar]) #titlebar-min .toolbarbutton-icon,
+  #main-window:is([tabsintitlebar],[customtitlebar]) #titlebar-max .toolbarbutton-icon,
+  #main-window:is([tabsintitlebar],[customtitlebar]) #titlebar-close:not(:hover) .toolbarbutton-icon {
 	fill: var(--colored_menubar_text_color) !important;
 	color: var(--colored_menubar_text_color) !important;
 	stroke: var(--colored_menubar_text_color) !important;
@@ -88,7 +88,7 @@
 
 @media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
-	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar .titlebar-buttonbox-container {
 	  visibility: visible !important;
 	}
   }
