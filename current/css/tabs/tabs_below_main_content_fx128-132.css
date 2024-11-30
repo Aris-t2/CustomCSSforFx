@@ -82,25 +82,3 @@
 #navigator-toolbox {
   z-index: 3 !important;
 }
-
-/* Fx 133+ adjustments */
-#toolbar-menubar[inactive] ~ #nav-bar {
-  padding-top: 28px !important;
-}
-
-#toolbar-menubar {
-  padding-inline-end: 140px;
-}
-
-#toolbar-menubar:not([inactive]) {
-  height: 28px !important;
-}
-
-
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
-  padding-inline-end: 140px !important;
-}
-
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #toolbar-menubar[inactive] ~ #nav-bar {
-  padding-top: initial !important;
-}

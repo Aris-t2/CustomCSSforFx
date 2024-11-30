@@ -105,16 +105,6 @@ menuseparator {
 
 }
 
-@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8),(-moz-os-version: windows-win7)  {
-
-	#context-navigation :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage) {
-	  padding: var(--item_y_padding) 2px !important;
-	  margin-inline-start: 0px !important;
-	  padding-inline-start: 15px !important;
-	}
-
-}
-
 #customizationui-widget-multiview #appMenu-libraryView,
 #pageActionPanel panelview,
 #widget-overflow panelview {

@@ -70,10 +70,3 @@
 .browserContainer > findbar > #findbar-close-container {
   background-color: unset !important;
 }
-
-/* fix Firefox + Windows 8.1 + lw-theme bug (occurring without custom code too) */
-@media (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
-	:root:not([lwtheme]) #navigator-toolbox {
-	  border: unset !important;
-	}
-}

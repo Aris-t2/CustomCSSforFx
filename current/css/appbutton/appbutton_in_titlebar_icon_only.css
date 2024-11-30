@@ -71,56 +71,7 @@
   top: 0px !important;
 }
 
-@media (-moz-platform: windows-win7), (-moz-os-version:windows-win7), (-moz-platform: windows-win8), (-moz-os-version:windows-win8) {
-
-	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #PanelUI-button {
-	  top: 0px !important;
-	}
-
-	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-	  top: 8px !important;
-	}
-
-	@media (min-resolution: 110dpi) {
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-		  top: 6px !important;
-		}
-	}
-
-	@media (min-resolution: 120dpi) {
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-		  top: 5px !important;
-		}
-	}
-
-	@media (min-resolution: 140dpi) {
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #PanelUI-button {
-		  top: 0px !important;
-		}
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-		  top: 4px !important;
-		}
-	}
-
-	@media (min-resolution: 160dpi) {
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar #PanelUI-button {
-		  top: 2px !important;
-		}
-	}
-
-	@media (-moz-windows-classic) {
-		#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar #PanelUI-button {
-		  top: 2px !important;
-		}
-	}
-}
-
-/* code for Unix (macOS/Linux) */
-@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
-	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-	  top: 0px !important;
-	}  
-}
+/* code for macOS/Linux */
 
 @media not (-moz-platform: windows) {
 	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
@@ -147,13 +98,7 @@
   border-bottom: 1px solid !important;
 }
 
-/* code for Unix (macOS/Linux) */
-@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7)) {
-  #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
-	max-width: 40px !important;
-  }	  
-}
-
+/* code for macOS/Linux */
 @media not (-moz-platform: windows) {
   #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
 	max-width: 40px !important;
@@ -330,16 +275,16 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
 /* Force appbutton to the right */
 @media (-moz-platform: macos) {
 	
-#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button {
-  right: 0 !important;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button {
+	  right: 0 !important;
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
-  padding-inline-end: 100px !important;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
+	  padding-inline-end: 100px !important;
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {
-  padding-inline-end: 20px !important;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {
+	  padding-inline-end: 20px !important;
+	}
 
 }

@@ -5,7 +5,7 @@
 
 @import "./tabs_below_navigation_toolbar_higher_navbar_positon.css";
 
-#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar #nav-bar-customization-target {
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide][inactive] ~ #nav-bar #nav-bar-customization-target {
   padding-inline-start: 110px !important;
 }
 /**/

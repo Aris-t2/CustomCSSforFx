@@ -387,7 +387,7 @@
 }
 
 /* Windows 10 fix */
-@media (-moz-platform: windows-win10), (-moz-os-version: windows-win10) {
+@media (-moz-platform: windows) {
 	#toolbar-menubar .titlebar-button {
 	  padding-top: 6px !important;
 	  padding-bottom: 6px !important;
@@ -594,43 +594,10 @@
   box-shadow: unset !important;
 }
 
-@media (-moz-platform: windows-win7), (-moz-os-version:windows-win7) {
-	:root[lwtheme] #tabs-newtab-button,
-	:root[lwtheme] .tabbrowser-tab {
-	  color: var(--lwt-tab-text, var(--toolbar-color)) !important;
-	  fill: var(--lwt-tab-text, var(--toolbar-color)) !important;
-	}
-}
-
 /* Fx 97+ height fix */
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
   height: unset !important;
 }
-
-/* Fx 101+ *//*
-@media (-moz-platform: windows) {
-	
-	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
-	  margin-top: -5px !important;
-	}
-
-	#main-window[sizemode="fullscreen"]:is([tabsintitlebar],[customtitlebar]) #titlebar {
-	  margin-top: -3px !important;
-	}
-
-	#main-window[sizemode="maximized"]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-	  padding-top: 5px !important;
-	}
-	#main-window[sizemode="maximized"] #toolbar-menubar[inactive] + :is(#TabsToolbar,#vertical-tabs) > .titlebar-buttonbox-container toolbarbutton {
-	  padding-top: 10px !important;
-	  padding-bottom: 6px !important;
-	}
-}
-/*
-:is(#TabsToolbar,#vertical-tabs) #firefox-view-button image {
-  width: 16px !important;
-  height: 16px !important;
-}*/
 
 /* Fx 106+ */
 #private-browsing-indicator-with-label {

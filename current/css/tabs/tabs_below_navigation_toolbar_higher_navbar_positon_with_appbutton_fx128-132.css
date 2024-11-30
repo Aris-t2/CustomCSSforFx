@@ -3,10 +3,9 @@
 /****************************************************************************************/
 
 
-@media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
-  @media (-moz-windows-default-theme) {
-    :root:not([lwtheme]) #TabsToolbar {
-      background-image: unset !important;
-    }
-  }
+@import "./tabs_below_navigation_toolbar_higher_navbar_positon_fx128-132.css";
+
+#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar #nav-bar-customization-target {
+  padding-inline-start: 110px !important;
 }
+/**/

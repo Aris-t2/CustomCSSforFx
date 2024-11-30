@@ -32,15 +32,15 @@
 	}
 	
 	@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
- 	#preferences-stack,.sticky-container,
-	page,
-	.dialogBox .groupbox-title,
-	#dialogFrame,
-	.main-content,
-	.groupbox-body,
-	#dialogFrame {
-	  color: white !important;
-	}
+		#preferences-stack,.sticky-container,
+		page,
+		.dialogBox .groupbox-title,
+		#dialogFrame,
+		.main-content,
+		.groupbox-body,
+		#dialogFrame {
+		  color: white !important;
+		}
 	
 	}
 	
@@ -321,23 +321,6 @@
 		
 	}
 	
-	@media all and (-moz-windows-theme:aero) {
-		
-	  @media (-moz-platform: windows-win7),(-moz-os-version: windows-win7) {
-		
-		checkbox .checkbox-check,
-		radio .radio-check,
-		checkbox image,
-		radio image {
-		  width: 10px !important;
-		}
-
-		#homeContentsGroup checkbox label {
-		  margin-inline-start: 6px !important;
-		}
-	  }
-		
-	}
 	
 	/* tweaks for small windows */
 	@media (max-width: 830px) {
@@ -459,96 +442,3 @@
 	}
 
 }
-
-/* checkbox / radios *//*
-*[subdialog="true"] checkbox .checkbox-check {
-  appearance: unset  !important;
-  box-shadow: unset !important;
-  padding: unset !important;
-  margin: unset !important;
-}
-
-*[subdialog="true"] radio .radio-check {
-  appearance: unset !important;
-  box-shadow: unset !important;
-  padding: unset !important;
-  margin: unset !important;
-}
-
-*[subdialog="true"] radio,
-*[subdialog="true"] checkbox {
-  padding: unset !important;
-  margin: unset !important;
-}
-
-@media not all and (-moz-windows-theme:aero) {
-
-	*[subdialog="true"] checkbox image,
-	*[subdialog="true"] radio image {
-	  width: 14px !important;
-	  height: 14px !important;
-	  margin: 0 !important;
-	}
-	
-	*[subdialog="true"] radio *{
-	  outline: unset !important;
-	}
-	@media all and (-moz-windows-classic) {
-	
-		*[subdialog="true"] checkbox image,
-		*[subdialog="true"] radio image {
-		  width: 10px !important;
-		  height: 10px !important;
-		}
-		*[subdialog="true"] checkbox {
-		  margin-top: 2px !important;
-		  margin-bottom: 2px !important;
-		}
-
-	}
-}
-
-@media (min-resolution: 1.1dppx) {
-	*[subdialog="true"] checkbox image,
-	*[subdialog="true"] radio image {
-	  width: 10px !important;
-	  height: 10px !important;
-	}
-	
-	#FontsDialog checkbox image {
-	  min-width: 10px !important;
-	  min-height: 10px !important;
-	  width: 10px !important;
-	  height: 10px !important;
-	}
-	
-	#FontsDialog checkbox label {
-	  margin-inline-start: -4px !important;
-	}
-}
-
-@media all and (-moz-windows-theme:aero) {
-	
-  @media (-moz-platform: windows-win7), (-moz-os-version: windows-win7) {
-	
-	*[subdialog="true"] checkbox .checkbox-check,
-	*[subdialog="true"] radio .radio-check,
-	*[subdialog="true"] checkbox image,
-	*[subdialog="true"] radio image {
-	  width: 10px !important;
-	}
-
-	#FontsDialog checkbox image {
-	  min-width: 10px !important;
-	  min-height: 10px !important;
-	  width: 10px !important;
-	  height: 10px !important;
-	}
-	
-	#FontsDialog checkbox label {
-	  margin-inline-start: -4px !important;
-	}
-
-  }
-	
-}*/

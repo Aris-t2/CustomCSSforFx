@@ -5,9 +5,16 @@
 
 /* Megabar: disable breakout / expanding onto toolbar *********************************************/
 #urlbar[breakout][breakout-extend] {
-  top: calc((var(--urlbar-container-height,--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-  left: 0px !important;
-  width: calc(100% - 0px) !important;
+  margin-left: 0 !important;
+  width: var(--urlbar-width) !important;
+  margin-top: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2) !important;
+
+
+  > .urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding-block: var(--urlbar-container-padding) !important;
+    padding-inline: var(--urlbar-container-padding) !important;
+  }
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {

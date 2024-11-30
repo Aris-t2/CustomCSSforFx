@@ -1,0 +1,15 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* restore correct location bar colors, known from pre-Fx133 versions */
+
+:root {
+  --toolbar-field-background-color: Field !important;
+  --toolbar-field-color: FieldText !important;
+  --toolbar-field-border-color: var(--input-border-color) !important;
+  --toolbar-field-focus-background-color: Field !important;
+  --toolbar-field-focus-color: FieldText !important;
+  --toolbar-field-focus-border-color: color-mix(in srgb, var(--focus-outline-color) 50%, transparent) !important;
+}

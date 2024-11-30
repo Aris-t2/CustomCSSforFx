@@ -205,8 +205,6 @@
   display: none !important;
 }
 
-
-
 /* Simple Close Tab button */
 :root:not([lwtheme]) #TabsToolbar #_fe8cab45-aaee-45f8-8765-781e0ebea300_-browser-action {
   --webextension-toolbar-image-light: url("moz-extension://7904448c-2319-4f6f-aac9-a1f701258098/icons/Close-dark.svg") !important;
@@ -226,7 +224,7 @@
 
 
 /* Windows */
-@media (-moz-platform: windows-win10), (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
+@media (-moz-platform: windows) {
 	/* set to '0', if no menubar is used */
 	#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
 	  margin-top: 18px !important;
@@ -259,26 +257,26 @@
 
 @media (-moz-platform: macos) {
 	
-#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #toolbar-menubar {
-  visibility: collapse !important;
-}
+	#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #toolbar-menubar {
+	  visibility: collapse !important;
+	}
 
-/* space above navigation toolbar (OS titlebar) */
-#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
-  margin-top: 0px !important;
-}
+	/* space above navigation toolbar (OS titlebar) */
+	#main-window:not(:is([tabsintitlebar],[customtitlebar])):not([sizemode="fullscreen"]) #nav-bar {
+	  margin-top: 0px !important;
+	}
 
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
-  margin-bottom: unset !important;
-}
+	#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
+	  margin-bottom: unset !important;
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
-#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
-  position: fixed !important;
-  display:block !important;
-  top: -2px !important;
-  left: 0 !important;
-  right: unset !important;
-}
-	
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container,
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container  {
+	  position: fixed !important;
+	  display:block !important;
+	  top: -2px !important;
+	  left: 0 !important;
+	  right: unset !important;
+	}
+
 }

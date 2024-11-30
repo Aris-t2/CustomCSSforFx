@@ -21,24 +21,3 @@
   }
 
 }
-
-@media (-moz-platform: windows-win8), (-moz-platform: windows-win7), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
-
-  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
-	margin-inline-start: 0px !important;
-  }
-
-  #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
-	margin: unset !important;
-	margin-inline-start: 6px !important;
-	margin-inline-end: 10px !important;
-  }
-  
-  @media (-moz-windows-classic){
-	#context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
-	  margin-inline-start: 0px !important;
-	  margin-inline-end: 2px !important;
-	}
-  }
-  
-}
