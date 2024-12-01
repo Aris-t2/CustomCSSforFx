@@ -85,3 +85,9 @@
 	margin-inline-end: 0px !important;
   }
 }
+
+#main-window :is(#TabsToolbar,#nav-bar,#PersonalToolbar,#toolbar-menubar,.browser-toolbar) {
+  appearance: none !important;
+  background: transparent !important;
+  border-top: unset !important;
+}

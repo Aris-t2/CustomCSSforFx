@@ -30,10 +30,15 @@
   display: none !important;
 }
 
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"]:not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
   position: fixed !important;
-  top: 0px !important;
+  top: 0 !important;
   right: 0 !important;
   visibility: visible !important;
   display: block !important;
+}
+
+#navigator-toolbox {
+  -moz-window-dragging: drag !important;
 }

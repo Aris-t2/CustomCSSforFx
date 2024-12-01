@@ -3,8 +3,9 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_navigation_toolbar_higher_navbar_positon.css";
+@import "./tabs_below_navigation_toolbar_higher_navbar_position.css";
 
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide][inactive] ~ #nav-bar #nav-bar-customization-target {
-  padding-inline-start: 60px !important;
+  padding-inline-start: 110px !important;
 }
+/**/

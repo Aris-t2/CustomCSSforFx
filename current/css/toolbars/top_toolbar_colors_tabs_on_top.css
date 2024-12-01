@@ -17,13 +17,17 @@
 }
 
 :root:not([lwtheme]) #titlebar,
-:root:not([lwtheme]) #toolbar-menubar  {
+:root:not([lwtheme]) #toolbar-menubar,
+:root:not([lwtheme]) #TabsToolbar,
+:root:not([lwtheme]) #navigator-toolbox {
   background: var(--top_toolbars_background) !important;
   color: var(--top_toolbars_text) !important;
 }
 
 :root:not([lwtheme]):-moz-window-inactive #titlebar,
-:root:not([lwtheme]):-moz-window-inactive #toolbar-menubar {
+:root:not([lwtheme]):-moz-window-inactive #toolbar-menubar,
+:root:not([lwtheme]):-moz-window-inactive #TabsToolbar,
+:root:not([lwtheme]):-moz-window-inactive #navigator-toolbox {
   background: var(--top_toolbars_background_inactive) !important;
   color: var(--top_toolbars_text_inactive) !important;
 }
@@ -36,9 +40,17 @@
   color: var(--top_toolbars_text_inactive) !important;
 }
 
+/* might not work through userChrome */
+:root:not([lwtheme]) #TabsToolbar toolbarbutton,
+:root:not([lwtheme]) #scrollbutton-up,
+:root:not([lwtheme]) #scrollbutton-down,
 :root:not([lwtheme]) .titlebar-button,
 :root:not([lwtheme]):-moz-window-inactive .titlebar-button,
-:root:not([lwtheme]):-moz-window-inactive .titlebar-button.titlebar-close:hover {
+:root:not([lwtheme]):-moz-window-inactive .titlebar-button.titlebar-close:hover,
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down),
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up,
+arrowscrollbox:not([clicktoscroll="true"]) > .scrollbutton-up:not([disabled="true"]):hover {
   fill: CurrentColor !important;
 }
 

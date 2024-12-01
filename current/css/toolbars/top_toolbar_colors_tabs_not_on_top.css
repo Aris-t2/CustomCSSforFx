@@ -16,6 +16,16 @@
   --top_toolbars_text_inactive: #999999;
 }
 
+:root:not([lwtheme]) #navigator-toolbox  .browser-toolbar:not(.browser-titlebar),
+:root:not([lwtheme]) #navigator-toolbox #nav-bar,
+:root:not([lwtheme]) #navigator-toolbox toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar),
+:root:not([lwtheme]) #navigator-toolbox #PersonalToolbar,
+:root:not([lwtheme]) #navigator-toolbox #TabsToolbar {
+  background-image: unset !important;
+  background: unset !important;
+  color: unset !important;
+}
+
 :root:not([lwtheme]) #titlebar,
 :root:not([lwtheme]) #toolbar-menubar,
 :root:not([lwtheme]) #TabsToolbar,

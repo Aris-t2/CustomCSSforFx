@@ -170,7 +170,7 @@
   border-right: 1px solid transparent !important; 
 }
 
-@media (-moz-content-prefers-color-scheme: dark) {
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 	:root[lwtheme] .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
 	  background-image: var(--classic_squared_tabs_lwt-bright_active_tab) !important;
 	}
@@ -202,7 +202,7 @@
 
 }
 
-@media (-moz-content-prefers-color-scheme: light) {
+@media (-moz-toolbar-prefers-color-scheme: light), (prefers-color-scheme: light) {
 	:root[lwtheme] .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
 	  background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
 	}
@@ -237,7 +237,7 @@
 }
 
 /* dark OS theme + no lwtheme off*/
-@media (-moz-content-prefers-color-scheme: dark),(-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
 
 	:root:not([lwtheme]) :is(#TabsToolbar,#vertical-tabs) .tabbrowser-tab {
 	  color: white !important;

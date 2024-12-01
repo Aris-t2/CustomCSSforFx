@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.6.4
+  Current version: 4.6.5
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -597,13 +597,13 @@
    [!] only use one option at a time
 */
 
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_icon_only.css"; /**/
 
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_fx128-132.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_fx128-132.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_positon_with_appbutton_icon_only_fx128-132.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_fx128-132.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_fx128-132.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_icon_only_fx128-132.css"; /**/
 
 
 /* ----------------------------------------
@@ -960,15 +960,15 @@
    ------------------
 
    [!] only use one option at a time
-   [!] 'top_toolbar_colors_v2.css' mainly for 'tabs below navigation toolbar option'
    [!] Windows accent colors for top_toolbar_system_accent_colors.css: about:config > browser.theme.windows.accent-color-in-tabs.enabled > true
 */
 
 
 /* override titlebars and tab toolbars colors */
 /* @import "./css/top_toolbar_system_accent_colors.css"; /**/ 
-/* @import "./css/toolbars/top_toolbar_colors.css"; /**/
-/* @import "./css/toolbars/top_toolbar_colors_v2.css"; /**/ 
+/* @import "./css/toolbars/top_toolbar_colors_tabs_on_top.css"; /**/
+/* @import "./css/toolbars/top_toolbar_colors_tabs_not_on_top.css"; /**/
+/* @import "./css/toolbars/top_toolbar_colors_tabs_not_on_top_v2.css"; /**/ 
 
 
 /* ----------------------

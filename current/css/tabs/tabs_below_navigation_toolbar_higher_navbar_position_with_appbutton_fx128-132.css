@@ -3,8 +3,9 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_navigation_toolbar_higher_navbar_positon_fx128-132.css";
+@import "./tabs_below_navigation_toolbar_higher_navbar_position_fx128-132.css";
 
 #main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar #nav-bar-customization-target {
-  padding-inline-start: 60px !important;
+  padding-inline-start: 110px !important;
 }
+/**/
