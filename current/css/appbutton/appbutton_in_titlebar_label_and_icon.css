@@ -4,42 +4,46 @@
 
 @import "./appbutton_in_titlebar_icon_only.css";
 
+:root {
+  --appbutton_in_titlebar: 95px !important;
+}
+
 /* gain space before menubar */
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  margin-inline-start: 95px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 94px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  margin-inline-start: 93px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  margin-inline-start: 92px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 /* gain space before tabs toolbar */
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 95px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 94px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 93px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 92px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #TabsToolbar {
- padding-inline-start: 95px !important;
+ padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
@@ -63,9 +67,10 @@
   box-shadow: unset !important;
 }
 
+
 /* 'Firefox' title */
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button[label="Firefox"]::after,
-#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button:not([label="Nightly"]):not([label="Firefox Nightly"]):not([label="Firefox Developer Edition"]):not([label="Firefox"])::after {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button:not([label="Nightly"],[label="Firefox Nightly"],[label="Firefox Developer Edition"],[label="Firefox"],[label="Tor Browser"],[label="Tor-Browser"])::after {
   content: "Firefox" !important;
 }
 
@@ -75,17 +80,34 @@
 }
 
 /* 'Nightly' title */
-#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button[label="Nightly"]::after,
-#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button[label="Firefox Nightly"]::after {
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button:is([label="Nightly"],[label="Firefox Nightly"])::after {
   content: "Nightly" !important;
 }
 
-/* custom button title (remove Firefox/DevFox/Nightly) *//*
-#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button::after{
-  content: "MyTitle" !important;
+/* 'Tor-Browser' title */
+#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-menu-button:-moz-any([label="Tor Browser"],[label="Tor-Browser"])::after {
+  content: "TorFox" !important;
 }
 
 /* support for tab title in Firefox titlebar option*/
 #main-window:is([tabsintitlebar],[customtitlebar])::after {
-  margin-inline-start: 95px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
+
+/* Force appbutton to the right */
+@media (-moz-platform: macos) {
+	
+	#main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button {
+	  right: 0 !important;
+	}
+
+	#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
+	  padding-inline-end: calc(var(--appbutton_in_titlebar) + 5px) !important;
+	}
+
+	#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {
+	  padding-inline-end: 20px !important;
+	}
+
+}
+

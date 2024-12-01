@@ -7,52 +7,56 @@
 /* cheat main menu button into title bar ********/
 /************************************************/
 
-/* tabs toolbar adjustments */
+:root {
+  --appbutton_in_titlebar: 45px !important;
+}
+
+/* menubar adjustments */
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-start: 43px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  padding-inline-start: 41px !important;
+  padding-inline-start:var(--appbutton_in_titlebar) !important;
 }
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-start: 40px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  padding-inline-start: 39px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 #main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-start: 48px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 #main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  padding-inline-start: 47px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 /* tabs toolbar adjustments */
-#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 43px !important;
+#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 41px !important;
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 40px !important;
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 39px !important;
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 48px !important;
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
-  padding-inline-start: 47px !important;
+#main-window[uidensity=touch]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #TabsToolbar {
- padding-inline-start: 43px !important;
+ padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
-#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar{
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="false"] ~ #TabsToolbar {
   margin-top: 4px !important;
 }
 
@@ -75,12 +79,12 @@
 
 @media not (-moz-platform: windows) {
 	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-	  top: 0px !important;
+	  top: 0 !important;
 	}  
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #PanelUI-button {
-  top: 0px !important;
+  top: 0 !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
@@ -101,7 +105,7 @@
 /* code for macOS/Linux */
 @media not (-moz-platform: windows) {
   #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
-	max-width: 40px !important;
+	max-width: var(--appbutton_in_titlebar) !important;
   }
 }
 
@@ -122,9 +126,9 @@
 }
 
 /* adjust button badge stack */
-#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack,
-#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack,
-#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([checked],[open],:active) > .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true],[checked],[open],:active):hover > .toolbarbutton-badge-stack,
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
   background: unset !important;
   border-color: unset !important;
   border: 0 !important;
@@ -150,10 +154,10 @@
   border-bottom-color: hsla(214,89%,21%,.5) !important;
   box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
 			  0 0 2px 1px hsla(0,0%,100%,.25) inset,
-			  0 1px 0 0px rgba(255,255,255,.5),
-			  0 -1px 0 0px rgba(255,255,255,.5),
-			  1px 0 0 0px rgba(255,255,255,.5),
-			  -1px 0 0 0px rgba(255,255,255,.5) !important;
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(252,240,89,.5) 10%, rgba(252,240,89,0) 70%),
@@ -163,31 +167,31 @@
   box-shadow: 0 1px 0 hsla(0,0%,100%,.15) inset,
 			  0 0 2px 1px hsla(0,0%,100%,.5) inset,
 			  0 -1px 0 hsla(0,0%,100%,.2),
-			  0 1px 0 0px rgba(255,255,255,.5),
-			  0 -1px 0 0px rgba(255,255,255,.5),
-			  1px 0 0 0px rgba(255,255,255,.5),
-			  -1px 0 0 0px rgba(255,255,255,.5) !important;
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]){
   background-image: linear-gradient(rgb(246,170,69), rgb(209,74,0) 95%) !important;
   box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
 			  0 1px 1px rgba(0,0,0,.2) inset,
-			  0 1px 0 0px rgba(255,255,255,.5),
-			  0 -1px 0 0px rgba(255,255,255,.5),
-			  1px 0 0 0px rgba(255,255,255,.5),
-			  -1px 0 0 0px rgba(255,255,255,.5) !important;
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
 
 /*private browsing - purple */
-#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button{
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #navigator-toolbox #PanelUI-button #PanelUI-menu-button{
   background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #navigator-toolbox #PanelUI-button #PanelUI-menu-button:hover:not(:active):not([open]){
   background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
 					radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
 					linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
-#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
+#main-window[privatebrowsingmode=temporary]:is([tabsintitlebar],[customtitlebar]) #navigator-toolbox #PanelUI-button #PanelUI-menu-button:is(:hover:active,[open]) {
   background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
 }
 
@@ -237,7 +241,7 @@
 
 /* support for tab title in Firefox titlebar option*/
 #main-window:is([tabsintitlebar],[customtitlebar])::after {
-  margin-inline-start: 45px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 /* remove this nonsense button, a menuitem is inside menu button anyways */
@@ -257,6 +261,10 @@
 #main-window:is([tabsintitlebar],[customtitlebar]):not([uidensity=compact]):not([uidensity=touch]) #PanelUI-menu-button .toolbarbutton-icon,
 #main-window:is([tabsintitlebar],[customtitlebar])[uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon {
   height: unset !important;
+}
+
+#TabsToolbar .titlebar-spacer[type="pre-tabs"] {
+  display: none !important;
 }
 
 /* workaround for Firefox 102+ *******************/
@@ -280,7 +288,7 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
 	}
 
 	#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
-	  padding-inline-end: 100px !important;
+	  padding-inline-end: calc(var(--appbutton_in_titlebar) + 5px) !important;
 	}
 
 	#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {

@@ -7,42 +7,43 @@
 /* cheat main menu button into title bar ********/
 /************************************************/
 
+:root {
+  --appbutton_in_titlebar: 95px !important;
+}
+
 /* menubar adjustments */
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-start: 95px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  padding-inline-start: 94px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-start: 93px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
-
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar {
-  padding-inline-start: 92px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 /* tabs toolbar adjustments */
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
-  padding-inline-start: 95px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
-  padding-inline-start: 94px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
-  padding-inline-start: 93px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar {
-  padding-inline-start: 92px !important;
+  padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #TabsToolbar {
- padding-inline-start: 95px !important;
+ padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]) #toolbar-menubar[autohide="true"]:not([inactive="true"]) ~ #TabsToolbar,
@@ -65,17 +66,16 @@
   top: 0px !important;
 }
 
-
 /* code for macOS/Linux */
 
 @media not (-moz-platform: windows) {
 	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #PanelUI-button {
-	  top: 0px !important;
+	  top: 0 !important;
 	}  
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #PanelUI-button {
-  top: 0px !important;
+  top: 0 !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
@@ -94,11 +94,10 @@
 }
 
 /* code for macOS/Linux */
-
 @media not (-moz-platform: windows) {
   #main-window:is([tabsintitlebar],[customtitlebar]) #PanelUI-button #PanelUI-menu-button {
-	max-width: 90px !important;
-  }	  
+	max-width: var(--appbutton_in_titlebar) !important;
+  }
 }
 
 /* hide button in fullscreen mode, if toolbars get automatically hidden */
@@ -158,11 +157,12 @@
 /* adjust button badge stack */
 #main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([checked],[open],:active) > .toolbarbutton-badge-stack,
 #main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true],[checked],[open],:active):hover > .toolbarbutton-badge-stack,
-#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack{
+#main-window:is([tabsintitlebar],[customtitlebar]) :is(#PanelUI-button,#PanelUI-menu-button):not([disabled=true]):is([open],[checked],:hover:active) > .toolbarbutton-badge-stack {
   background: unset !important;
   border-color: unset !important;
   border: 0 !important;
   box-shadow: unset !important;
+  outline: unset !important;				
 }
 
 /* adjust button badge */
@@ -240,6 +240,7 @@
   padding: 6px !important;
   width: 9px !important;
   height: 7px !important;
+  outline: unset !important;
 }
 
 /* fix for toolbar + text mode */
@@ -269,7 +270,7 @@
 
 /* support for tab title in Firefox titlebar option*/
 #main-window:is([tabsintitlebar],[customtitlebar])::after {
-  margin-inline-start: 95px !important;
+  margin-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
 /* remove this nonsense button, a menuitem is inside menu button anyways */
@@ -331,7 +332,7 @@ panel[id="appMenu-popup"][type="arrow"][side="bottom"] {
 	}
 
 	#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
-	  padding-inline-end: 100px !important;
+	  padding-inline-end: calc(var(--appbutton_in_titlebar) + 5px) !important;
 	}
 
 	#main-window:is([tabsintitlebar],[customtitlebar]) .titlebar-buttonbox-container {

@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.6.5
+  Current version: 4.6.6
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -593,17 +593,13 @@
 
 /* Move tabs to a higher position 
    [!] not compatible to 'tabs toolbar - multiple tab lines' option up to Fx132, works with Fx133+
-   [!] _fx128-132.css settings are for Firefox 128-132
+   [!] _fx128-132.css is for Firefox 128-132 only
    [!] only use one option at a time
 */
 
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_icon_only.css"; /**/
-
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_fx128-132.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_fx128-132.css"; /**/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_higher_navbar_position_with_appbutton_icon_only_fx128-132.css"; /**/
+
 
 
 /* ----------------------------------------
