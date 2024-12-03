@@ -11,6 +11,6 @@
   visibility: collapse !important;
 }
 
-#TabsToolbar :is(#private-browsing-indicator-with-label,.private-browsing-indicator-with-label) {
+#TabsToolbar :is(#private-browsing-indicator-with-label,.private-browsing-indicator-with-label, .private-browsing-indicator-icon,.private-browsing-indicator-label) {
   display: none !important;
 }

@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.6.6
+  Current version: 4.6.7
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -1205,7 +1205,7 @@
    
 */
 
- @import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
+@import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
 /* @import "./css/locationbar/megabar_expanding_breakout_disabled_fx128-fx132.css"; /**/
 
 
@@ -1213,12 +1213,17 @@
    Megabar/location bar background color
    -------------------------------------
    
+   [!] _old_colors.css restores colors known from Firefox 132 and older
+   [!] _old_colors_lwtheme.css restores colors known from Firefox 132 and older for lwthemes
+   [!] _color.cs forces a white background color
+   [!] _color_dark.cs forces a dark background color
    [!] only use one option at a time
 */
 
-@import "./css/locationbar/urlbar_background_old_colors.css"; /**/ /* colors from Firefox 132 and older */
-/* @import "./css/locationbar/urlbar_background_color.css"; /**/ /* default white background color */
-/* @import "./css/locationbar/urlbar_background_color_dark.css"; /**/ /* force dark color for e.g. dark lw-themes */
+@import "./css/locationbar/urlbar_background_old_colors.css"; /**/
+/* @import "./css/locationbar/urlbar_background_old_colors_lwtheme.css"; /**/
+/* @import "./css/locationbar/urlbar_background_color.css"; /**/
+/* @import "./css/locationbar/urlbar_background_color_dark.css"; /**/
 
 
 /* ---------------------------------------

@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-@import "./tabs_below_navigation_toolbar_fx128-132.css";
+@import "./tabs_below_navigation_toolbar.css";
 
 /* [!] NOT A STANDALONE FILE! */
 /* [!] This code does not achieve the requested result without above files content! */
@@ -15,34 +15,48 @@
   --tab_below_main_content_top_margin: -3px;
 }
 
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: 1px !important;
-}
 
 #main-window:not([inDOMFullscreen="true"]) #TabsToolbar {
-  position: fixed !important;
-  display: block !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: 0px !important;
-  border-bottom: 1px solid threedshadow !important;
-}
-/*
-#main-window:not([inDOMFullscreen="true"]) #browser,
-#main-window:not([inDOMFullscreen="true"]) #customization-container {
-  margin-bottom: var(--tab_below_main_content_bottom_margin) !important;
-}*/
-
-#TabsToolbar {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  width: 100vw;
+  background-clip: padding-box;
+  color: var(--toolbar-color);
   min-height: 0 !important;
   height: var(--tab_below_main_content_toolbar_height) !important;
   max-height: unset !important;
   border-top: 1px solid ThreeDShadow !important;
 }
 
-#main-window:not([inDOMFullscreen="true"]) #TabsToolbar-customization-target {
-  margin-top: var(--tab_below_main_content_top_margin) !important;
+#tabbrowser-tabs {
+  width: 100%;
+}
+
+#main-window:not([inDOMFullscreen="true"]) #browser,
+#main-window:not([inDOMFullscreen="true"]) #customization-container {
+  margin-bottom: var(--tab_below_main_content_bottom_margin) !important;
+}
+
+#navigator-toolbox {
+  z-index: 3 !important;
+}
+
+#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #toolbar-menubar[inactive] ~ #nav-bar {
+  padding-top: 24px !important;
+}
+
+#toolbar-menubar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
+  padding-inline-end: 140px !important;
+}
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #toolbar-menubar[inactive] ~ #nav-bar {
+  padding-top: initial !important;
+}
+
+#toolbar-menubar:not([inactive]) {
+  height: 24px !important;
 }
 
 /* lw-theme support */
@@ -56,20 +70,14 @@
 /* caption button position in maximized mode after moving to the top */
 #main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: 0px !important;
+  top: 0 !important;
 }
 
-
+/* macOS support*/
 @media (-moz-platform: macos) {
 	
   #main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
     padding-top: 24px !important;
-  }
-
-  #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #titlebar {
-    height: 0 !important;
-    padding-top: 0 !important;
-    z-index:  1 !important;
   }
 
   #main-window[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) #browser,
@@ -77,30 +85,4 @@
     margin-bottom: 0 !important;
   }
 
-}
-
-#navigator-toolbox {
-  z-index: 3 !important;
-}
-
-/* Fx 133+ adjustments */
-#toolbar-menubar[inactive] ~ #nav-bar {
-  padding-top: 28px !important;
-}
-
-#toolbar-menubar {
-  padding-inline-end: 140px;
-}
-
-#toolbar-menubar:not([inactive]) {
-  height: 28px !important;
-}
-
-
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #nav-bar {
-  padding-inline-end: 140px !important;
-}
-
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="fullscreen"] #toolbar-menubar[inactive] ~ #nav-bar {
-  padding-top: initial !important;
 }

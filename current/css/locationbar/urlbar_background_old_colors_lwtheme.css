@@ -5,7 +5,7 @@
 
 /* restore correct location bar colors, known from pre-Fx133 versions */
 
-:root:not([lwtheme]) {
+:root[lwtheme] {
   --toolbar-field-background-color: Field !important;
   --toolbar-field-color: FieldText !important;
   --toolbar-field-border-color: var(--input-border-color) !important;

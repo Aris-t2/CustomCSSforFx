@@ -13,16 +13,9 @@
   padding-inline-start: var(--appbutton_in_titlebar) !important;
 }
 
-:root:not([lwtheme]):is([tabsintitlebar],[customtitlebar]) #nav-bar,
-#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar {
-  appearance: none !important;
-  background: transparent !important;
-  border-top: unset !important;
-}
-
 :root:not([lwtheme]):is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide][inactive] ~ #nav-bar,
 #main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar[autohide][inactive] ~ #nav-bar {
-  margin-inline-end: 145px !important;
+  padding-inline-end: 145px !important;
 }
 
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #navigator-toolbox #nav-bar {
@@ -44,13 +37,12 @@
 #main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar,
 #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar {
   margin-top: -20px !important;
-  z-index: 1000 !important;
 }
 
 @media (-moz-platform: windows) {
 	#main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar,
 	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #nav-bar {
-	  margin-top: -24px !important;
+	  margin-top: -26px !important;
 	}
 }
 
@@ -71,12 +63,10 @@
 
 /* Windows */
 @media (-moz-platform: windows) {
-	#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container	{
-	  top: 1px !important;
-	}
-	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
-	  top: 0px !important;
-	}
+  #main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container,
+  #main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #toolbar-menubar ~ #TabsToolbar .titlebar-buttonbox-container {
+	top: 0px !important;
+  }
 }
 
 /* tweaks for fullscreen mode */
@@ -86,14 +76,7 @@
   display: none !important;
 }
 
-@media all and (-moz-windows-classic) {
-  :root:not([lwtheme]):is([tabsintitlebar],[customtitlebar]) #nav-bar,
-  #main-window:is([tabsintitlebar],[customtitlebar]) #nav-bar {
-	margin-inline-end: 0px !important;
-  }
-}
-
-#main-window :is(#TabsToolbar,#nav-bar,#PersonalToolbar,#toolbar-menubar,.browser-toolbar) {
+:root:not([lwtheme]) :is(#TabsToolbar,#nav-bar,#PersonalToolbar,#toolbar-menubar,.browser-toolbar) {
   appearance: none !important;
   background: transparent !important;
   border-top: unset !important;

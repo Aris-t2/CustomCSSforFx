@@ -26,66 +26,66 @@
 }
 
 @media (-moz-platform: windows),(-moz-platform: linux) {
-#navigator-toolbox {
-  position: relative;
-  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding);
-}
+	#navigator-toolbox {
+	  position: relative;
+	  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding);
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #titlebar,
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
-  height: 26px;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #titlebar,
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
+	  height: 26px;
+	}
 
-/* prevent possible item overlapping with caption buttons */
-#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
-  padding-inline-end: 140px;
-}
+	/* prevent possible item overlapping with caption buttons */
+	#main-window:is([tabsintitlebar],[customtitlebar]) #toolbar-menubar {
+	  padding-inline-end: 140px;
+	}
 
-/* move caption buttons to windows top right position */
-.titlebar-buttonbox-container {
-  position: fixed;
-  right: 0;
-  visibility: visible;
-  display: block;
-}
+	/* move caption buttons to windows top right position */
+	.titlebar-buttonbox-container {
+	  position: fixed;
+	  right: 0;
+	  visibility: visible;
+	  display: block;
+	}
 
 }
 
 @media (-moz-platform: macos) {
 
-#navigator-toolbox {
-  position: relative;
-  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding_macOS);
-}
+	#navigator-toolbox {
+	  position: relative;
+	  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding_macOS);
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
-  padding-top: var(--tab_below_navigation_toolbar_toolbox_top_padding_macOS);
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
+	  padding-top: var(--tab_below_navigation_toolbar_toolbox_top_padding_macOS);
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
-  position: fixed;
-  top: 3px !important;
-  right: unset;
-  left: 0;
-  visibility: visible;
-  display: block;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) .titlebar-buttonbox-container {
+	  position: fixed;
+	  top: 3px !important;
+	  right: unset;
+	  left: 0;
+	  visibility: visible;
+	  display: block;
+	}
 
-:root[lwtheme] #titlebar {
-  background-image: var(--lwt-header-image, var(--lwt-additional-images));
-  background-repeat: var(--lwt-background-tiling);
-  background-position: var(--lwt-background-alignment);
-}
+	:root[lwtheme] #titlebar {
+	  background-image: var(--lwt-header-image, var(--lwt-additional-images));
+	  background-repeat: var(--lwt-background-tiling);
+	  background-position: var(--lwt-background-alignment);
+	}
 
-/* caption button position in maximized mode after moving to the top */
-#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: 0;
-}
+	/* caption button position in maximized mode after moving to the top */
+	#main-window:is([tabsintitlebar],[customtitlebar]):not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
+	  top: 0;
+	}
 
-#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
-  height: 0px;
-}
+	#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
+	  height: 0px;
+	}
 }
 
 /* remove unneeded items */
@@ -174,17 +174,17 @@
 
 @media (-moz-platform: macos) {
 #main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
-  padding-inline-end: 0px !important
-}
+	  padding-inline-end: 0px !important
+	}
 
-/* draggable window */
-#main-window:is([tabsintitlebar],[customtitlebar]) toolbox#navigator-toolbox{
-  -moz-window-dragging: drag !important;
-}
+	/* draggable window */
+	#main-window:is([tabsintitlebar],[customtitlebar]) toolbox#navigator-toolbox{
+	  -moz-window-dragging: drag !important;
+	}
 
-:is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
-  -moz-window-dragging: no-drag !important;
-}	
+	:is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
+	  -moz-window-dragging: no-drag !important;
+	}	
 }
 
 /* Fx 126+ */
