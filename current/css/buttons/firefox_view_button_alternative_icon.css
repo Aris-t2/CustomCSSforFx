@@ -1,0 +1,8 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#firefox-view-button {
+  list-style-image: url(./../../image/firefox_view_monitor.svg) !important;
+}

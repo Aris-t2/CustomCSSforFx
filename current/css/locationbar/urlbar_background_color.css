@@ -15,7 +15,7 @@
 }
 
 
-#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#page-action-buttons,#urlbar-background,#searchbar) {
+#main-window:not([privatebrowsingmode]) :is(#urlbar-search-mode-indicator,#urlbar-background,#searchbar) {
   background-color: var(--urlbar_background_color) !important;
 }
 
@@ -35,7 +35,7 @@
 	  color: var(--urlbar_text_color) !important;
 	  fill: var(--urlbar_text_color) !important;
 	}
-	#main-window:not([privatebrowsingmode]) :is(#urlbar,#urlbar-search-mode-indicator,#page-action-buttons,#identity-icon-box,#urlbar-background,#searchbar) {
+	#main-window:not([privatebrowsingmode]) :is(#urlbar,#urlbar-search-mode-indicator,#urlbar-background,#searchbar) {
 	  color: var(--urlbar_text_color) !important;
 	  fill: var(--urlbar_text_color) !important;
 	}

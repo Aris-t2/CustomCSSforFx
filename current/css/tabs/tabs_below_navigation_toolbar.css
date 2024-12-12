@@ -53,11 +53,6 @@
 
 @media (-moz-platform: macos) {
 
-	#navigator-toolbox {
-	  position: relative;
-	  padding-bottom: var(--tab_below_navigation_toolbar_bottom_padding_macOS);
-	}
-
 	#main-window:is([tabsintitlebar],[customtitlebar]):not([sizemode="fullscreen"]):not([inDOMFullscreen="true"]) #navigator-toolbox {
 	  padding-top: var(--tab_below_navigation_toolbar_toolbox_top_padding_macOS);
 	}
@@ -90,15 +85,10 @@
 
 /* remove unneeded items */
 #TabsToolbar .titlebar-buttonbox-container,
-#TabsToolbar .private-browsing-indicator,
 #TabsToolbar #window-controls,
 #TabsToolbar *[type="caption-buttons"],
 #TabsToolbar *[type="pre-tabs"],
-#TabsToolbar *[type="post-tabs"],
-#private-browsing-indicator-with-label,
-.private-browsing-indicator-with-label,
-.private-browsing-indicator-icon,
-.private-browsing-indicator-label {
+#TabsToolbar *[type="post-tabs"] {
   display: none;
 }
 
@@ -153,11 +143,13 @@
 }
 
 /* notification position */
-#tab-notification-deck {
-  position: absolute;
+#tab-notification-deck,
+#tab-notification-deck-template {
+  order: 101;
+  /*position: absolute;
   display: block;
   bottom: calc( -2 * var(--tab_below_navigation_toolbar_bottom_padding) + 8px );
-  width: 100vw;
+  width: 100vw;*/
 }
 
 /* Fx 105+ */
@@ -171,24 +163,25 @@
   margin-inline-start: 0 !important;
 }
 
-/* Fx 106+ */
+/* Fx 106+ *//*
 #private-browsing-indicator-with-label {
   display: none !important;
 }
+*/
 
 @media (-moz-platform: macos) {
-#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
-  padding-inline-end: 0px !important
-}
+	#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar {
+	  padding-inline-end: 0px !important
+	}
 
-/* draggable window */
-#main-window:is([tabsintitlebar],[customtitlebar]) toolbox#navigator-toolbox{
-  -moz-window-dragging: drag !important;
-}
+	/* draggable window */
+	#main-window:is([tabsintitlebar],[customtitlebar]) toolbox#navigator-toolbox{
+	  -moz-window-dragging: drag !important;
+	}
 
-:is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
-  -moz-window-dragging: no-drag !important;
-}	
+	:is(#TabsToolbar, #nav-bar, #PlacesToolbar) {
+	  -moz-window-dragging: no-drag !important;
+	}	
 }
 
 /* Fx 126+ */
