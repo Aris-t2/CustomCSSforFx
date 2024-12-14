@@ -161,6 +161,7 @@
 #main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
   position: absolute !important;
   display: block !important;
+  /*bottom: 0px !important;*/
   min-width: 0 !important;
   width: auto !important;
   max-width: 100vw !important;
@@ -175,11 +176,11 @@
 }
 
 #main-window:not([customizing])[uidensity="touch"] #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
-  margin-top: 41px !important;
+ margin-top: 41px !important;
 }
 
 /* reduce size of bookmarks 'more bookmarks' menu chevron and remove its background color on navigation toolbar */
-#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
+#nav-bar:has(#personal-bookmarks) #personal-bookmarks #PlacesChevron .toolbarbutton-icon {
   min-width: 0px !important;
   min-height: 0px !important;
   width: 16px !important;
@@ -191,23 +192,23 @@
 }
 
 /* set minimum height for bookmarks, when on navigation toolbar */
-#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
+#nav-bar:has(#personal-bookmarks) #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   min-height: 24px !important;
 }
 
 /* adjustments */
-#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
+#nav-bar:has(#personal-bookmarks) #personal-bookmarks {
   min-width: 40px !important;
   width: auto !important;
   max-width: 50vw !important;
 }
 
-/* workaround for megabar_expanding_breakout_disabled.css *//*
+/* workaround for megabar_expanding_breakout_disabled.css */
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout],
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout][breakout-extend] {
   top: calc(0px + ((var(--urlbar-container-height,--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
 }
-*/
+
 #nav-bar:has(#personal-bookmarks) #personal-toolbar-empty-description,
 #nav-bar:has(#personal-bookmarks) #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   padding: 0 2px !important; 

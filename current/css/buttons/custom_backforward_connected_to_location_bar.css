@@ -3,7 +3,7 @@
 /****************************************************************************************/
 
 
-#main-window .megabar {
+#main-window :is(.megabar,#urlbar-container) {
   z-index: 3 !important;
 }
 
@@ -53,14 +53,14 @@
   padding: 9px 9px 9px 16px !important; 
 }
 
-#main-window:not([customizing=true]) #nav-bar #forward-button[disabled] {
+#main-window:not([customizing]) #nav-bar #forward-button[disabled] {
   /*visibility: collapse !important;*/
   opacity: 0 !important;
   z-index: -100000 !important;
 }
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container {
-  margin-inline-start: -55px !important;
+  margin-inline-start: -45px !important;
 }
 
 #main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {

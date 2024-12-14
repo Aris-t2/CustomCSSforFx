@@ -58,12 +58,12 @@
   max-width: 50vw !important;
 }
 
-/* workaround for megabar_expanding_breakout_disabled.css *//*
+/* workaround for megabar_expanding_breakout_disabled.css */
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout],
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout][breakout-extend] {
   top: calc(0px + ((var(--urlbar-container-height,--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
 }
-*/
+
 #nav-bar:has(#personal-bookmarks) #personal-toolbar-empty-description,
 #nav-bar:has(#personal-bookmarks) #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   padding: 0 2px !important; 

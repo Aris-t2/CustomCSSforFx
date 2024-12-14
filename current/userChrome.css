@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.6.8
+  Current version: 4.6.9
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -377,7 +377,7 @@
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_phoenix.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */ /* not working on Fx 133+ */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */ /* not working on Fx 133+ as before */
 /* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared */
 
@@ -939,9 +939,11 @@
    [!] move 'Bookmarks Toolbar Items' to navigation bar to get a top toolbar with bookmarks
    [!] not compatible to 'bookmarks toolbar - multiple lines' option
    [!] not compatible to 'bookmarks toolbar autohide' option
+   [!] addonbar_move_bookmarks_toolbar_to_bottom_fx128-fx132.css is for Firefox 128 ESR
 */
 
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom.css"; /**/
+/* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_fx128-fx132.css"; /**/
 /* @import "./css/toolbars/addonbar_move_bookmarks_toolbar_to_bottom_tabs_on_bottom_compatibility.css"; /**/
 /* @import "./css/toolbars/addonbar_status_in_addonbar.css"; /**/
 /* @import "./css/toolbars/addonbar_fullscreen_autohide.css"; /**/
@@ -1030,9 +1032,11 @@
    ----------------------------------------------------
 
    [!] "Bookmarks Toolbar Items" element has to be moved to navigation toolbar in customizing mode
+   [!] additional_bookmarks_toolbar_below_navbar_fx128-132.css is for Firefox 128 ESR
 */
 
 /* @import "./css/toolbars/additional_bookmarks_toolbar_below_navbar.css"; /**/
+/* @import "./css/toolbars/additional_bookmarks_toolbar_below_navbar_fx128-132.css"; /**/
 
    
 /* ------------------------------------------
