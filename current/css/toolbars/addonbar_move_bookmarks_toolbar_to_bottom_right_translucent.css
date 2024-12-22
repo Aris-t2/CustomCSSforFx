@@ -1,0 +1,26 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@import "./addonbar_move_bookmarks_toolbar_to_bottom.css";
+
+/* move bookmarks toolbar to bottom right */
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar {
+  opacity:0.25!important;
+  z-index: 2147483647 !important;
+	
+  right: 0 !important;
+  width: unset !important;
+  border-top: unset !important;
+}
+
+/* set visibility 100% on mouse over */
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar:hover {
+  opacity:1!important;
+}
+
+/* remove added bottom space */
+#main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #browser,
+#main-window:not([inDOMFullscreen="true"],[sizemode="fullscreen"]) #customization-container {
+  margin-bottom: unset !important; 
+}
