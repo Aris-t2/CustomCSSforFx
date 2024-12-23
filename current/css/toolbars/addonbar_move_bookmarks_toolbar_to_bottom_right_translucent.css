@@ -6,7 +6,7 @@
 
 /* move bookmarks toolbar to bottom right */
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox #PersonalToolbar {
-  opacity:0.25!important;
+  opacity:0.40!important;
   z-index: 2147483647 !important;
 	
   right: 0 !important;
