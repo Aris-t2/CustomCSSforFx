@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discussions
+    url: https://github.com/Aris-t2/CustomCSSforFx/discussions
+    about: View discussions or start one yourself
+  - name: GENERAL TALK, FEEDBACK & QUESTIONS
+    url: https://github.com/Aris-t2/CustomCSSforFx/discussions/722
+    about: Post all questions and feedback into this discussion thread
+  - name: MULTIROW TABS SUPPORT THREAD
+    url: https://github.com/Aris-t2/CustomCSSforFx/discussions/455
+    about: multiple tab lines
