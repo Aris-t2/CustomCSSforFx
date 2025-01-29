@@ -1,0 +1,90 @@
+name: Bug Report
+description: Report an issue or unexpected behavior
+body:
+
+- type: markdown
+  attributes:
+    value: |
+      **!!! READ THIS BEFORE OPENING A NEW ISSUE REPORT !!!**
+
+      INVALID REPORTS WILL BE CLOSED WITHOUT FURTHER NOTICE TO KEEP ISSUE AREA CLEAN.
+      By submitting a new issue you confirm having read and understood [how to report a new issue](https://github.com/Aris-t2/CustomCSSforFx/issues/4).
+      Thanks for your understanding.
+
+      SUPPORT is only offered for features CustomCSSforFx project provides
+      - This is not a **request** area for new stuff or features.
+      - Do not open a new issue about something this project does not offer.
+      - Make sure `about:config > toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true`.
+      - Join the discussion threads to chat and ask questions.
+      - GENERAL TALK, FEEDBACK & QUESTIONS --> https://github.com/Aris-t2/CustomCSSforFx/discussions/722
+      - MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/discussions/455
+
+      NO SUPPORT for
+      - outdated versions of CustomCSSforFx
+      - deprecated features of (legacy) add-ons
+      - visual issues without offering screenshots
+      ---
+
+- type: checkboxes
+  attributes:
+    label: Guidelines
+    description: Please ensure you've completed all of the following.
+    options:
+      - label: I have read [how to report a new issue](https://github.com/Aris-t2/CustomCSSforFx/issues/4)
+        required: true
+      - label: I have used the [latest release](https://github.com/Aris-t2/CustomCSSforFx/releases/latest)
+        required: true
+      - label: I have set the `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config` to `true`
+        required: true
+
+- type: dropdown
+  attributes:
+    label: Does the issue occur without any files inside /chrome/ folder?
+    description: If it does, it might be a Firefox bug not related to this projects files, so 'the issue report' is most likely wrong here.
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Description of the Issue
+    description: Provide a concise description to the issue itself
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Issue description, userChrome.css/userContent.css 'settings' the issue occurs with and steps to reproduce the issue
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Does the issue occur with the most recent version of CustomCSSforFx (release/test/dev build)?
+    options:
+      - Yes, with the latest release
+      - Yes, with the test release
+      - Yes, with the dev/pre release
+      - "No"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Screenshots showing the issue
+    description: Drag & drop images into this post
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: System information
+    value: |
+      - OS & OS version: 
+      - DPI/HiDPI/scaling value, if not 100% (e.g. 125%, 150%...): 
+      - Firefox version: 
+      - Firefox theme (e.g. default, build in light/dark, external theme + link): 
+  validations:
+    required: true
