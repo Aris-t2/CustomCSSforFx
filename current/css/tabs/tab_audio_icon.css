@@ -30,3 +30,13 @@
   margin-inline-start: -2px !important;
   margin-inline-end: 2px !important; 
 }
+
+/* adds transparent background to icon*/
+.tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {
+  background-color: rgba(0,0,0,0.1) !important
+}
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+  .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {
+    background-color: rgba(255,255,255,0.1) !important
+  }
+}

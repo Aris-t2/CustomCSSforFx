@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.6.9
+  Current version: 4.7.0
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -1178,7 +1178,7 @@
    ------------------------------
 */
 
-@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
+/* @import "./css/locationbar/ac_popup_result_font_size.css"; /**/
 /* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
 
 
@@ -1211,7 +1211,7 @@
 */
 
 @import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
-/* @import "./css/locationbar/megabar_expanding_breakout_disabled_fx128-fx132.css"; /**/
+/* @import "./css/locationbar/megabar_expanding_breakout_disabled_fx128-132.css"; /**/
 
 
 /* -------------------------------------

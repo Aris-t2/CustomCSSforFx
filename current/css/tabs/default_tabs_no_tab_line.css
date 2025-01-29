@@ -2,6 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+
+.tab-group-line,
 .tab-context-line {
   display: none !important;
 }
