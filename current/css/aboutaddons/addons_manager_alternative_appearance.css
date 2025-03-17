@@ -9,7 +9,9 @@
 					
 	:root {
 	  --in-content-category-text-hover: HighlightText !important;
+	  --in-content-button-text-color-hover: HighlightText !important;
 	  --in-content-category-background-hover: Highlight !important;
+	  --in-content-button-background-hover: Highlight !important;
 	  --in-content-category-text-selected: black !important;
 	  --in-content-category-background-selected: white !important;
 	  --section-width: unset !important;
@@ -158,7 +160,7 @@
 	  filter: brightness(2.00) !important;
 	}
 	
-	.category[name]:not([selected]):hover,
+	/*.category[name]:not([selected]):hover,*/
 	#category-discover:not([selected="true"]):hover .category-icon,
 	#category-theme:not([selected="true"]):hover .category-icon{
 	  filter: brightness(1.5) !important;

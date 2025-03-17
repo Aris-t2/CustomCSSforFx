@@ -2,7 +2,42 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+/* See https://github.com/Aris-t2/CustomCSSforFx/discussions/722#discussioncomment-12420116 by Speravir */
 
+/* Fx 136+ */ 
+.tab-audio-button[soundplaying] {
+  --button-icon-fill: #058B00 !important;/* var(--green-70) */
+}
+.tab-audio-button[muted] {
+  --button-icon-fill: #D70022 !important;/* var(--red-60) */
+}
+.tab-audio-button[activemedia-blocked] {
+  --button-icon-fill: #FFE900 !important;/* var(--yellow-50) */
+}
+
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[soundplaying] {
+  --button-icon-fill: lightgreen !important;
+}
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[muted] {
+  --button-icon-fill: #ff5a5a !important;
+}
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[activemedia-blocked] {
+  --button-icon-fill: orange !important;
+}
+
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-audio-button[soundplaying] {
+	  --button-icon-fill: lightgreen !important;
+	}
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-audio-button[muted] {
+	  --button-icon-fill: #ff5a5a !important;
+	}
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-audio-button[activemedia-blocked] {
+	  --button-icon-fill: orange !important;
+	}
+}
+
+/* Fx 128-135 */
 .tab-icon-overlay[soundplaying] {
   fill: #058B00 !important;/* var(--green-70) */
 }

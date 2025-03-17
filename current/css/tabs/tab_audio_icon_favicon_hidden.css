@@ -1,0 +1,16 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* See https://github.com/Aris-t2/CustomCSSforFx/discussions/722#discussioncomment-12481547 and
+   https://github.com/Aris-t2/CustomCSSforFx/discussions/722#discussioncomment-12505305
+*/
+
+.tabbrowser-tab:not([pinned]):not([crashed]):is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
+  display: none !important;
+}
+
+.tab-audio-button {
+  margin-inline-start: -4.5px !important;
+}

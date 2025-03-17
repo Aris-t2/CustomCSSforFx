@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.7.0
+  Current version: 4.7.1
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -719,6 +719,20 @@
 /* @import "./css/tabs/default_tabs_reduce_spaces.css"; /**/
 
 
+/* ---------------------------------------
+   TAB AUDIO ICON settings
+   ---------------------------------------
+   [!] only use one option at a time
+*/
+
+/* @import "./css/tabs/tab_audio_icon.css"; /**/
+/* @import "./css/tabs/tab_audio_hidden.css"; /**/
+/* @import "./css/tabs/tab_audio_favicon_hidden.css"; /**/
+
+
+/* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
+
+
 /* ------------------
    OTHER TAB SETTINGS
    ------------------
@@ -728,8 +742,7 @@
 /* @import "./css/tabs/tab_title_centered.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_old_bordercolor_for_lwthemes.css"; /**/ /* has to be used along with 'classic_squared_tabs.css' */
 /* @import "./css/tabs/tabs_fully_squared.css"; /**/
-/* @import "./css/tabs/tab_audio_icon.css"; /**/
-/* @import "./css/tabs/tab_audio_icon_colorized.css"; /**/
+
 /* @import "./css/tabs/tabs_container_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/tabs_active_tab_indicator_for_classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/newtab_tab_size_equals_tab_size.css"; /**/
@@ -842,6 +855,7 @@
 */
 
 /* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
+/* @import "./css/generalui/sidebar_show_on_hover_fx128.css"; /**/ /* Fx 128-135*/
 /* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 
 /* -------------------
