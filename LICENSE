@@ -1,4 +1,4 @@
-# My Custom Firefox Theme
+# GlassyFOX Firefox Theme
 
 A personal redesign based on:
 
@@ -41,3 +41,7 @@ Thank you to both projects for the foundation and inspiration.
 ## 🛠 How to Install
 
 Follow standard `userChrome.css` setup for Firefox. Copy desired files into your profile’s `chrome` folder.
+
+1.) about:config -> "toolkit.legacyUserProfileCustomizations.stylesheets" set to true 
+
+2.) about:profiles -> click "Open Folder" on Root Directory and make a new folder and name it "chrome" and paste the latest release into the folder and restart firefox witht eh buttion in about:profiles.
