@@ -46,7 +46,7 @@ Follow standard `userChrome.css` setup for Firefox. Copy desired files into your
 
 2.) about:profiles -> click "Open Folder" on Root Directory and make a new folder and name it "chrome" and paste the latest release into the folder and restart firefox witht eh buttion in about:profiles.
 
-## NEED ADDONS (I AM NOT PROMOTING THESE, USE AT OWN RISK)
+## Needed ADDONS (I AM NOT PROMOTING THESE, USE AT OWN RISK)
 
 For the best exaperance possibile with GlassyFOX there are add ons needed.
 1.) StarDock Windows Blinds 11 !PAYWARE (FREE 30 DAY FREE TRIAL) and donload the "Aero 11 theme by SimplexDesigns"
