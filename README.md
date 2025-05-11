@@ -37,7 +37,6 @@ To apply this theme:
 
 These aren't strictly necessary but enhance the Aero/Glassy effects:
 
-- **[GlassyFOX](https://github.com/glassyfox)** (or similar)
   - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available)*.
   - Use the **"Aero 11"** theme by *SimplexDesigns*.
 
