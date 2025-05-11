@@ -33,7 +33,7 @@ To apply this theme:
 
 ---
 
-## 🧩 Required Add-ons (Optional Enhancements)
+## 🧩 Required Add-ons (Optional Enhancements. Some addons are not watched by firefox, use at own risk)
 
 These aren't strictly necessary but enhance the Aero/Glassy effects:
 
