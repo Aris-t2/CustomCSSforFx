@@ -4,8 +4,7 @@
 
 A personal redesign of Firefox’s UI, inspired by and built upon:
 
-- [Aris-t2’s CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
-- [Echelon Firefox Theme](https://github.com/echelon-theme/echelon)
+- [Aris-t2’s CustomCSSforFx](https://github.com/Firefox4Guy/AEROGlassyFOX/blob/master/showcase.PNG?raw=true)
 
 ![image alt](https://github.com/Firefox4Guy/AEROGlassyFOX/blob/master/5.PNG?raw=true](https://github.com/Firefox4Guy/AEROGlassyFOX/blob/master/showcase.PNG?raw=true)
 
