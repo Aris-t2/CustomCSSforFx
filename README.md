@@ -49,9 +49,10 @@ To apply this theme:
 
 ---
 
-## 🧩 Required Add-ons (Optional Enhancements. Some addons are not watched by firefox, use at own risk)
-
+## 🧩 Required Add-ons (Optional Enhancements)
 These aren't strictly necessary but for the Aero/Glassy effects behind the tabs:
+
+⚠️(Some addons are not watched by firefox, use at own risk)
 
   - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available, with email)*.
   - and Use the **"Aero 11"** theme by *SimplexDesigns* in **Windows blinds 11 by Stardock**.
