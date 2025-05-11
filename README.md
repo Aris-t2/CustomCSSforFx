@@ -56,10 +56,10 @@ These aren't strictly necessary but are for the Aero/Glassy effects behind the t
 
   - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available, with email)*.
   - and Use the **"Aero 11"** theme by *SimplexDesigns* in **Windows blinds 11 by Stardock**.
-
-### Recommended Firefox Add-ons
-
-- ✅ **Reload in address bar** – brings back the reload button inside the URL bar.
+  
+## 🧩 FireFox Addons needed
+  
+  -  **Reload in address bar** – brings back the reload button inside the URL bar.
 
 ---
 
