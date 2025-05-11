@@ -50,7 +50,7 @@ To apply this theme:
 ---
 
 ## 🧩 Required Add-ons (Optional Enhancements)
-These aren't strictly necessary but for the Aero/Glassy effects behind the tabs:
+These aren't strictly necessary but are for the Aero/Glassy effects behind the tabs:
 
 ⚠️(Some addons are not watched by firefox, use at own risk)
 
