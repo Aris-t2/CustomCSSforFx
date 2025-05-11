@@ -2,7 +2,7 @@
 
 > ⚠️ **Please read the [Installation Instructions](#️-how-to-install) and [Required Add-ons](#-required-add-ons-optional-enhancements) sections carefully to ensure the theme works correctly.**
 
-A personal redesign of Firefox’s UI, inspired by and built upon:
+A personal FireFox CSS theme for Aris-t2. bringing back the fun FireFox 4:
 
 - [Aris-t2’s CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
 - [Echelon Firefox Theme](https://github.com/echelon-theme/echelon)
