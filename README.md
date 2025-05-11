@@ -72,16 +72,18 @@ These aren't strictly necessary but are for the Aero/Glassy effects behind the t
 
 ## 🧑‍💻 Contributing
 
-Anyone is welcome to suggest improvements or contribute to the project!
+Contributions are welcome!
 
-**How to contribute:**
+If you’d like to suggest a change or add your own styles:
 
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Make your edits.
-4. Submit a pull request with a brief description of what you changed and why.
+1. **Fork** this repository.
+2. Create a **new branch** for your changes.
+3. Make your edits (recommended: in the `css/custom/` folder).
+4. Submit a **pull request** with a clear description of what you changed and why.
 
-Don't know what to edit? Start with the `css/custom/` folder for your own style tweaks!
+Once reviewed, your contribution can be merged into the main project.
+
+> Note: Direct edits to the main branch are not allowed unless you're a trusted collaborator.
 
 ---
 ## 📁 Project Structure
