@@ -1,64 +1,174 @@
-# AeroFox Theme
+# 🌌 AeroFox Theme
 
-A personal redesign based on:
+> ⚠️ **Please read the [Installation Instructions](#-how-to-install) carefully to ensure the theme works correctly.**
+
+A personal redesign of Firefox’s UI, inspired by and built upon:
 
 - [Aris-t2’s CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
 - [Echelon Firefox Theme](https://github.com/echelon-theme/echelon)
 
-This is a mashup of multiple open-source themes with my own tweaks and new styles.
+This is a mashup of multiple open-source themes with my own custom tweaks and new styles for a more modern, glassy aesthetic.
 
 ---
 
-## 📄 Licensing
+## 📁 Project Structure
 
-This project includes code under:
-
-- 🧩 **GPL v3** – from Aris-t2. (See `LICENSE-GPL-v3`)
-- 🧩 **MPL v2** – from Aris-t2 and Echelon. (See `LICENSE-MPL-v2` and `LICENSE`)
-- 🛠️ My original work is licensed under **GPL v3** for compatibility.
-
-All reused files retain their original licenses. Where required, MPL-licensed files are re-licensed under GPL v3 for combination purposes.
 
 ---
 
-## 🧾 Credits
+## 🛠️ How to Install
+
+To apply this theme:
+
+1. Go to `about:config` in Firefox.
+   - Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+
+2. Go to `about:profiles`.
+   - Click **"Open Folder"** under the *Root Directory*.
+   - Inside that directory, create a folder called `chrome`.
+   - Paste the theme files (from the latest release) into the `chrome` folder.
+   - Restart Firefox using the **"Restart"** button in `about:profiles`.
+
+---
+
+## 🧩 Required Add-ons (Optional Enhancements)
+
+These aren't strictly necessary but enhance the Aero/Glassy effects:
+
+- **[GlassyFOX](https://github.com/glassyfox)** (or similar)
+  - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available)*.
+  - Use the **"Aero 11"** theme by *SimplexDesigns*.
+
+### Recommended Firefox Add-ons
+
+- ✅ **Reload in address bar** – brings back the reload button inside the URL bar.
+
+---
+
+## 🎉 Fun Add-ons (Totally Optional)
+
+- 🎬 **YouTube Redux** – classic YouTube layout.
+- 🔍 **Old Google** – retro Google search UI.
+
+---
+
+## 📜 Licensing
+
+This project includes and modifies code under the following licenses:
+
+- **GPL v3** – from Aris-t2. (See `LICENSE-GPL-v3`)
+- **MPL v2** – from Aris-t2 and Echelon. (See `LICENSE-MPL-v2`, `LICENSE`)
+- My original modifications are under **GPL v3** for compatibility.
+
+> All reused files retain their original licenses. MPL-licensed files are re-licensed under GPL v3 where required for combination.
+
+---
+
+## 🙏 Credits
 
 - [Aris-t2 / CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
 - [Echelon Theme](https://github.com/echelon-theme/echelon)
 
-Thank you to both projects for the foundation and inspiration.
+Thanks to both for laying the groundwork and inspiration.
 
 ---
 
-## 📁 Structure
+## 🧑‍💻 Contributing
 
-- `css/aris/` → GPL or MPL licensed code from Aris-t2
-- `css/echelon/` → MPL v2 licensed code from Echelon
-- `css/custom/` → My own files and modifications
+Anyone is welcome to suggest improvements or contribute to the project!
+
+> **How to contribute:**  
+> Fork the repository, make your changes, and open a pull request.  
+> (Specific instructions will be added here soon.)
+
+---
+# 🌌 AeroFox Theme
+
+> ⚠️ **Please read the [Installation Instructions](#️-how-to-install) carefully to ensure the theme works correctly.**
+
+A personal redesign of Firefox’s UI, inspired by and built upon:
+
+- [Aris-t2’s CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
+- [Echelon Firefox Theme](https://github.com/echelon-theme/echelon)
+
+This is a mashup of multiple open-source themes with my own custom tweaks and new styles for a more modern, glassy aesthetic.
 
 ---
 
-## 🛠 How to Install
+## 📁 Project Structure
 
-Follow standard `userChrome.css` setup for Firefox. Copy desired files into your profile’s `chrome` folder.
 
-1.) about:config -> "toolkit.legacyUserProfileCustomizations.stylesheets" set to true 
+---
 
-2.) about:profiles -> click "Open Folder" on Root Directory and make a new folder and name it "chrome" and paste the latest release into the folder and restart firefox witht eh buttion in about:profiles.
+## 🛠️ How to Install
 
-## Needed ADDONS (I AM NOT PROMOTING THESE, USE AT OWN RISK)
+To apply this theme:
 
-If you want Aero effects with GlassyFOX (not needed, if you dont want glass/aero)
-1.) StarDock Windows Blinds 11 !PAYWARE (FREE 30 DAY FREE TRIAL) and donload the "Aero 11 theme by SimplexDesigns"
+1. Go to `about:config` in Firefox.
+   - Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 
--Firefox addons (needed but wont break anything if not used, just makes it tlook like the theme)
+2. Go to `about:profiles`.
+   - Click **"Open Folder"** under the *Root Directory*.
+   - Inside that directory, create a folder called `chrome`.
+   - Paste the theme files (from the latest release) into the `chrome` folder.
+   - Restart Firefox using the **"Restart"** button in `about:profiles`.
 
-2.) Reload in adress bar
+---
 
-## For fun addons not required
+## 🧩 Required Add-ons (Optional Enhancements)
 
-3.) Youtube Redux
+These aren't strictly necessary but enhance the Aero/Glassy effects:
 
-4.) Old Google
+- **GlassyFOX** (or similar)
+  - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available)*.
+  - Use the **"Aero 11"** theme by *SimplexDesigns*.
 
-5.) 
+### Recommended Firefox Add-ons
+
+- ✅ **Reload in address bar** – brings back the reload button inside the URL bar.
+
+---
+
+## 🎉 Fun Add-ons (Totally Optional)
+
+- 🎬 **YouTube Redux** – classic YouTube layout.
+- 🔍 **Old Google** – retro Google search UI.
+
+---
+
+## 📜 Licensing
+
+This project includes and modifies code under the following licenses:
+
+- **GPL v3** – from Aris-t2. (See `LICENSE-GPL-v3`)
+- **MPL v2** – from Aris-t2 and Echelon. (See `LICENSE-MPL-v2`, `LICENSE`)
+- My original modifications are under **GPL v3** for compatibility.
+
+> All reused files retain their original licenses. MPL-licensed files are re-licensed under GPL v3 where required for combination.
+
+---
+
+## 🙏 Credits
+
+- [Aris-t2 / CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
+- [Echelon Theme](https://github.com/echelon-theme/echelon)
+
+Thanks to both for laying the groundwork and inspiration.
+
+---
+
+## 🧑‍💻 Contributing
+
+Anyone is welcome to suggest improvements or contribute to the project!
+
+**How to contribute:**
+
+1. Fork this repository.
+2. Create a new branch for your changes.
+3. Make your edits.
+4. Submit a pull request with a brief description of what you changed and why.
+
+Don't know what to edit? Start with the `css/custom/` folder for your own style tweaks!
+
+---
+
