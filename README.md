@@ -48,10 +48,10 @@ Follow standard `userChrome.css` setup for Firefox. Copy desired files into your
 
 ## Needed ADDONS (I AM NOT PROMOTING THESE, USE AT OWN RISK)
 
-For the best exaperance possibile with GlassyFOX there are add ons needed.
+If you want Aero effects with GlassyFOX (not needed, if you dont want glass/aero)
 1.) StarDock Windows Blinds 11 !PAYWARE (FREE 30 DAY FREE TRIAL) and donload the "Aero 11 theme by SimplexDesigns"
 
--Firefox addons
+-Firefox addons (needed but wont break anything if not used, just makes it tlook like the theme)
 
 2.) Reload in adress bar
 
