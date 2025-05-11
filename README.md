@@ -14,46 +14,47 @@ This is a mashup of multiple open-source themes with my own custom tweaks and ne
 ---
 
 ## 📁 Project Structure
+```
 chrome/
 ├── AEROGlassyFOX/ # 💠
-|
+│
 ├── config/ # ⚙️ Aris-t2 config variables
-│ ├── general_variables
-│ ├── color_variables_aero
-│ ├── color_variables_aeroglass
-| ├── color_variables_classic-grey
-| ├── color_variables_deved
-| ├── color_variables_fx3
-| ├── color_variables_noia4_dark
-| ├── color_variables_noia4_grey
-| ├── color_variables_noia4_lightgrey
-| ├── color_variables_transparent
-| ├── custom_scrollbar_appearance
-| ├── custom_tab_color_settings
-| ├── custom_tab_text_settings
-| └── general_variables
+│   ├── general_variables
+│   ├── color_variables_aero
+│   ├── color_variables_aeroglass
+│   ├── color_variables_classic-grey
+│   ├── color_variables_deved
+│   ├── color_variables_fx3
+│   ├── color_variables_noia4_dark
+│   ├── color_variables_noia4_grey
+│   ├── color_variables_noia4_lightgrey
+│   ├── color_variables_transparent
+│   ├── custom_scrollbar_appearance
+│   ├── custom_tab_color_settings
+│   ├── custom_tab_text_settings
+│   └── general_variables
 │
 ├── css/ # 🎨 Aris-t2 UI modules (tabs, buttons, etc.)
-│ ├── aboutaddons
-│ ├── aboutconfig
-│ ├── aboutlogins
-| ├── aboutnewtab
-| ├── aboutpreferences
-| ├── appbutton
-| ├── buttons
-| ├── generalui
-| ├── locationbar
-| ├── tabs
-| ├── toolbars
-| └── webcontent
+│   ├── aboutaddons
+│   ├── aboutconfig
+│   ├── aboutlogins
+│   ├── aboutnewtab
+│   ├── aboutpreferences
+│   ├── appbutton
+│   ├── buttons
+│   ├── generalui
+│   ├── locationbar
+│   ├── tabs
+│   ├── toolbars
+│   └── webcontent
 │
 ├── image/ # 📸 Aris-t2 image assets
-│ └── ...
+│   └── ...
 │
 ├── img/ # 🖼️ image assets for AEROGlassyFOX
-│ └── ...
+│   └── ...
 │
-├── AEROGlassyFOX.css # Main CSS file from (AEROGlassyFOX) 
+├── AEROGlassyFOX.css # Main CSS file from AEROGlassyFOX
 ├── my_userChrome.css # 📝 (Optional) file for user’s custom tweaks
 ├── userChrome.css # 🔧 CSS loader (from Aris-t2)
 └── userContent.css # (Optional) Web content (from Aris-t2)
