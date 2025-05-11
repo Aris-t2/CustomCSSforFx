@@ -66,7 +66,7 @@ These aren't strictly necessary but for the Aero/Glassy effects behind the tabs:
 
 - 🎬 **YouTube Redux** – classic YouTube layout.
 - 🔍 **Old Google** – retro Google search UI.
-
+- ✨ **FaviconSwwitcher - change websites tab favicons
 ---
 
 ## 🧑‍💻 Contributing
