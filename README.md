@@ -1,4 +1,4 @@
-# 🌌 AeroFox Theme
+# 🌌 AEROGlassyFOX 
 
 > ⚠️ **Please read the [Installation Instructions](#-how-to-install) carefully to ensure the theme works correctly.**
 
@@ -82,7 +82,7 @@ Anyone is welcome to suggest improvements or contribute to the project!
 > (Specific instructions will be added here soon.)
 
 ---
-# 🌌 AeroFox Theme
+# 🌌 AeroGlassyFOX 
 
 > ⚠️ **Please read the [Installation Instructions](#️-how-to-install) carefully to ensure the theme works correctly.**
 
