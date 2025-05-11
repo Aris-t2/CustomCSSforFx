@@ -1,16 +1,35 @@
-<b>READ THIS BEFORE POSTING A NEW ISSUE REPORT</b>  
+# 🧑‍💻 Contributing to AeroGlassyFOX
 
+Thanks for your interest in improving AeroGlassyFOX! Contributions are welcome and appreciated.
 
-1. This is a SUPPORT AREA for features CustomCSSforFx provides.
-2. This is not a 'request' area for new stuff or legacy add-on features. Do not open a new issue about something this project does not offer. Instead join the 'General discussions, feedback, questions belong here' thread to ask questions about what is or could be possible with CSS.
-3. Read 'how to report issues properly' before posting a new issue.
---> https://github.com/Aris-t2/CustomCSSforFx/issues/4
-4. Verify there are no '@namespace' references anywhere in your custom code.
-5. Use available support threads:
-- GENERAL DISCUSSIONS, FEEDBACK, QUESTIONS --> https://github.com/Aris-t2/CustomCSSforFx/discussions/722
-- MULTIROW TABS SUPPORT THREAD --> https://github.com/Aris-t2/CustomCSSforFx/discussions/455
+## 📋 How to Contribute
 
-<b>IMPORTANT</b>   
-By submitting a new issue you confirm having read and understood the above and all 'how to report a new issue' instructions.
-Invalid issue reports will get closed without further notice to keep this projects support area clean.  
-Thanks for understanding.
+1. **Fork** this repository.
+2. Create a **new branch** for your changes (e.g. `fix-tab-color`, `add-button-style`).
+3. Make your changes. You can:
+   - Add new styles to the `css/` or `AEROGlassyFOX/` folders.
+   - Customize assets inside `img/` if needed.
+4. **Test** your changes locally in Firefox (via `userChrome.css`).
+5. Commit your changes with a clear message.
+6. Submit a **pull request** to the `main` branch.
+
+---
+
+## ✅ Requirements Before Pull Request Can Be Merged
+
+> These are enforced by GitHub's branch rules to keep the project clean and consistent:
+
+- ✅ Pull requests must be **reviewed and approved**.
+- ✅ If someone comments or requests changes, all **conversations must be resolved**.
+- ✅ If new commits are pushed, approvals from reviewers will be **dismissed automatically** until re-approved.
+- ❌ Direct commits to the `main` branch are **not allowed**.
+
+---
+
+## 🧠 Tips
+
+- Keep changes focused. One feature/fix per pull request is best.
+- Use clear commit messages (`fix: adjust tab shadow`, `feat: add glass blur effect`, etc.).
+- If you're unsure, open an issue first and ask!
+
+Happy customizing ✨
