@@ -1,6 +1,6 @@
 # 🌌 AeroGlassyFOX 
 
-> ⚠️ **Please read the [Installation Instructions](#️-how-to-install) carefully to ensure the theme works correctly.**
+> ⚠️ **Please read the [Installation Instructions](#️-how-to-install) and [Required Add-ons](#-required-add-ons-optional-enhancements) sections carefully to ensure the theme works correctly.**
 
 A personal redesign of Firefox’s UI, inspired by and built upon:
 
