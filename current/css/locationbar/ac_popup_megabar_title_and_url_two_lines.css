@@ -106,13 +106,14 @@
 }
   
 
-.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-row-inner,
-.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap {
+.urlbarView-row:is([type=url],[type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-row-inner,
+.urlbarView-row:is([type=url],[type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap {
   display: unset !important;
   flex-wrap: wrap !important;
 }
 
-.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action  {
+.urlbarView-row:is([type=url],[type=search],[type=remotetab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action,
+.urlbarView:not([action-override]) .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action {
   display: unset !important;
   flex-wrap: wrap !important;
   appearance: none !important;
@@ -124,13 +125,13 @@
   margin-inline-start: 0 !important;
 }
 
-.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) {
+.urlbarView-row:is([type=url],[type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) {
   > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
     padding: 0px !important;
   }
 }
 
-.urlbarView-row:is([type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-title-separator {
+.urlbarView-row:is([type=url],[type=search],[type=remotetab],[type=switchtab],[type=autofill_origin]):not([rich-suggestion]) .urlbarView-title-separator {
   display: none !important;
 }
 
@@ -148,4 +149,35 @@
 .urlbarView-row[rich-suggestion] .urlbarView-title-separator::before,
 .urlbarView-row[rich-suggestion] .urlbarView-action {
   display: none !important;
+}
+
+/*for cross-container tab search */
+.urlbarView:not([action-override]) .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action  {
+  display: unset !important;
+}
+
+/* switch to tab tweaks*/
+.urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action.urlbarView-userContext  {
+  border-top: inherit !important;
+}
+
+.urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action .urlbarView-userContext-iconMode .urlbarView-userContext-icon  {
+  color: var(--identity-icon-color);
+}
+
+/* support for container tabs */
+.urlbarView-results[wrap] .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action.urlbarView-userContext .urlbarView-userContext-iconMode {
+  display: none !important;
+}
+
+.urlbarView-results[wrap] .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action.urlbarView-userContext .urlbarView-userContext-textMode {
+  display: unset !important;
+}
+
+.urlbarView-results[wrap] .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action .urlbarView-userContext-textMode span  {
+  color: var(--identity-tab-color);
+}
+
+.urlbarView[action-override] .urlbarView-row:is([type=switchtab]):not([rich-suggestion]) .urlbarView-no-wrap .urlbarView-action {
+  display: none !important
 }

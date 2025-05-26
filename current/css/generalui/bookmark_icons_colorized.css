@@ -4,7 +4,7 @@
 
 
 .folder-icon,
-#editBMPanel_chooseFolderMenuItem .menu-iconic-icon,
+#editBMPanel_chooseFolderMenuItem :is(.menu-icon,.menu-iconic-icon),
 treechildren::-moz-tree-image(title, container),
 treechildren::-moz-tree-image(title, query, hostContainer) {
  list-style-image: url("./../../image/folder-item.png")!important;
@@ -19,21 +19,21 @@ treechildren::-moz-tree-image(title, container, livemark) {
 }
 
 #editBMPanel_folderMenuList:-moz-any([label="Bookmarks Toolbar"],[label="Lesezeichen-Symbolleiste"]) .menulist-icon,
-#editBMPanel_toolbarFolderItem .menu-iconic-icon,
+#editBMPanel_toolbarFolderItem :is(.menu-icon,.menu-iconic-icon),
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar),
 treechildren::-moz-tree-image(container, queryFolder_toolbar_____) {
  list-style-image: url("./../../image/bookmarksToolbar.png") !important;
 }
 
 #editBMPanel_folderMenuList:-moz-any([label="Bookmarks Menu"],[label="Lesezeichen-Menü"]) .menulist-icon,
-#editBMPanel_bmRootItem .menu-iconic-icon,
+#editBMPanel_bmRootItem :is(.menu-icon,.menu-iconic-icon),
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu),
 treechildren::-moz-tree-image(container, queryFolder_menu________) {
  list-style-image: url("./../../image/bookmarksMenu.png") !important;
 }
 
 #editBMPanel_folderMenuList:-moz-any([label="Other Bookmarks"],[label="Weitere Lesezeichen"]) .menulist-icon,
-#editBMPanel_unfiledRootItem .menu-iconic-icon,
+#editBMPanel_unfiledRootItem :is(.menu-icon,.menu-iconic-icon),
 treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks),
 treechildren::-moz-tree-image(container, queryFolder_unfiled_____) {
  list-style-image: url("./../../image/unsortedBookmarks.png") !important;
@@ -63,12 +63,12 @@ treechildren::-moz-tree-image(query, OrganizerQuery_downloads__v) {
 }
 
 toolbarbutton.bookmark-item[container],
-.bookmark-item[container] .menu-iconic-left .menu-iconic-icon {
+.bookmark-item[container] .menu-iconic-left :is(.menu-icon,.menu-iconic-icon) {
   list-style-image: url("./../../image/folder-item.png") !important;
 }
 
 toolbarbutton.bookmark-item[container][open],
-.bookmark-item[container][open] .menu-iconic-left .menu-iconic-icon {
+.bookmark-item[container][open] .menu-iconic-left :is(.menu-icon,.menu-iconic-icon) {
  list-style-image: url("./../../image/folder-item2.png")!important;
 }
 
@@ -84,8 +84,8 @@ toolbarbutton.bookmark-item[container][open],
 
 .bookmark-item[container][query],
 .bookmark-item[container][query][open],
-.bookmark-item[container][query] > .menu-iconic-left > .menu-iconic-icon,
-.bookmark-item[container][query][open] > .menu-iconic-left > .menu-iconic-icon {
+.bookmark-item[container][query] > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon),
+.bookmark-item[container][query][open] > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon) {
   list-style-image: url("./../../image/query.png") !important;
 }
 
@@ -113,14 +113,14 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
   list-style-image: url("./../../image/feedIcon16.png") !important;
 }
 
-#bookmarksToolbarFolderMenu > .menu-iconic-left > .menu-iconic-icon,
-#BMB_bookmarksToolbar > .menu-iconic-left > .menu-iconic-icon,
+#bookmarksToolbarFolderMenu > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon),
+#BMB_bookmarksToolbar > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon),
 #panelMenu_bookmarksToolbar {
   list-style-image: url("./../../image/bookmarksToolbar.png") !important;
 }
 
-#menu_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
-#BMB_unsortedBookmarks > .menu-iconic-left > .menu-iconic-icon,
+#menu_unsortedBookmarks > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon),
+#BMB_unsortedBookmarks > .menu-iconic-left > :is(.menu-icon,.menu-iconic-icon),
 #panelMenu_unsortedBookmarks {
   list-style-image: url("./../../image/unsortedBookmarks.png") !important;
 }

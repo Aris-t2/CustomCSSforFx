@@ -9,6 +9,7 @@
   --y_padding_before_label_cn_no_icon: -24px;
 }
 
+#context-navigation > .menuitem-iconic > .menu-icon,
 #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
   opacity: 0 !important;
 }

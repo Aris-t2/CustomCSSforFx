@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.7.1
+  Current version: 4.7.2
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -978,7 +978,7 @@
 
 
 /* override titlebars and tab toolbars colors */
-/* @import "./css/top_toolbar_system_accent_colors.css"; /**/ 
+/* @import "./css/toolbars/top_toolbar_system_accent_colors.css"; /**/ 
 /* @import "./css/toolbars/top_toolbar_colors_tabs_on_top.css"; /**/
 /* @import "./css/toolbars/top_toolbar_colors_tabs_not_on_top.css"; /**/
 /* @import "./css/toolbars/top_toolbar_colors_tabs_not_on_top_v2.css"; /**/ 

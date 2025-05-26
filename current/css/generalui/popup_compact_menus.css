@@ -96,6 +96,7 @@ menuseparator {
   }
 
   /* support for context_bfrsb_labels_with_icons.css */
+  menugroup#context-navigation > menuitem.menuitem-iconic > .menu-icon,
   menugroup#context-navigation > menuitem.menuitem-iconic > hbox.menu-iconic-left > .menu-iconic-icon {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;

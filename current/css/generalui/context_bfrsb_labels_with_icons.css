@@ -43,12 +43,15 @@
   :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):not([disabled="true"]):hover {
 	background-color:  var(--menuitem-hover-background-color,-moz-menuhover) !important;
   }
-  
+
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-icon,
+  #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-icon,
   #context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon,
   #context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 	background-color: unset !important;
   }
 
+  #context-navigation > .menuitem-iconic > .menu-icon,
   #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
     width: 16px !important;
     height: 16px !important;
@@ -64,6 +67,7 @@
 /* code for Linux */
 @media not (-moz-platform: windows) {
 
+  #context-navigation > .menuitem-iconic > .menu-icon,
   #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
     padding: 0px !important;
   }
