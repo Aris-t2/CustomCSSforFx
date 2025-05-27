@@ -125,11 +125,24 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
   list-style-image: url("./../../image/unsortedBookmarks.png") !important;
 }
 
+/* Fx 139+*/
 .bookmark-item {
   &[container] {
     list-style-image: url("./../../image/folder-item.png")!important;
   }
   &[hostContainer] {
     list-style-image: url("./../../image/folder-item.png")!important;
+  }
+}
+
+:is(#bookmarksToolbarFolderMenu,#BMB_bookmarksToolbar,#panelMenu_bookmarksToolbar).bookmark-item {
+  &[container] {
+    list-style-image: url("./../../image/bookmarksToolbar.png")!important;
+  }
+}
+
+:is(#menu_unsortedBookmarks,#BMB_unsortedBookmarks,#panelMenu_unsortedBookmarks).bookmark-item {
+  &[container] {
+    list-style-image: url("./../../image/unsortedBookmarks.png")!important;
   }
 }
