@@ -124,3 +124,12 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v),
 #panelMenu_unsortedBookmarks {
   list-style-image: url("./../../image/unsortedBookmarks.png") !important;
 }
+
+.bookmark-item {
+  &[container] {
+    list-style-image: url("./../../image/folder-item.png")!important;
+  }
+  &[hostContainer] {
+    list-style-image: url("./../../image/folder-item.png")!important;
+  }
+}
