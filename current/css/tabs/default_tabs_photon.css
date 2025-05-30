@@ -39,7 +39,9 @@
 
 /* remove left and right tab spaces */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])),
-#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])),
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab],
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0px !important;
 }
 
@@ -105,7 +107,8 @@
    
 .tabbrowser-tab::before,
 .tabbrowser-tab:not([selected],[multiselected]):last-of-type::after,
-#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[selected] + .tabbrowser-tab::before {
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[selected] + .tabbrowser-tab::before,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox .tabbrowser-tab[selected] + .tabbrowser-tab::before {
   border-right: 1px solid transparent;
   margin-block: 5px 4px;
   opacity: 0.3;
@@ -117,7 +120,8 @@
 .tabbrowser-tab:hover:not([selected]):nth-child(1 of :not([hidden]))::before,
 .tabbrowser-tab:hover:not([selected])[first-visible-unpinned-tab]::before,
 .tabbrowser-tab:not([selected],[multiselected]):last-of-type::after,
-#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[selected] + .tabbrowser-tab::before {
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[selected] + .tabbrowser-tab::before,
+#tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox .tabbrowser-tab[selected] + .tabbrowser-tab::before {
   border-right: 1px solid var(--lwt-background-tab-separator-color, currentColor);
 }
 

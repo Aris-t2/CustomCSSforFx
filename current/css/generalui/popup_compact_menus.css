@@ -75,6 +75,11 @@ menuseparator {
   margin-inline-end: -2px !important;
 }
 
+.menu-icon{
+  margin-inline-start: 2px !important;
+  margin-inline-end: 2px !important;
+}
+
 @media (-moz-platform: windows) {
 	
   menupopup > menuitem,
@@ -82,10 +87,12 @@ menuseparator {
 	padding-block: 0 !important;
 	padding: var(--item_y_padding) 0 !important;
 	padding-inline-start: 4px !important;
+	padding-inline-end: 4px !important;
   }
 
   * menupopup {
 	--panel-padding: 0px !important;
+	
   }
   :is(menupopup, panel) :is(.menu-accel,.menu-iconic-accel) {
 	margin-inline-end: 8px !important;

@@ -67,13 +67,17 @@
 /* code for Linux */
 @media not (-moz-platform: windows) {
 
-  #context-navigation > .menuitem-iconic > .menu-icon,
+  #context-navigation > .menuitem-iconic > .menu-icon {
+    padding-top: 4px !important;
+	padding-bottom: 4px !important;
+  }
+  
   #context-navigation > .menuitem-iconic > .menu-iconic-left > .menu-iconic-icon {
     padding: 0px !important;
   }
 
-  :is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
+  /*:is(#context-back,#context-forward,#context-reload,#context-stop,#context-bookmarkpage):after {
 	margin-inline-start: 6px !important;
-  }
+  }*/
 
 }

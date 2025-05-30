@@ -377,7 +377,8 @@
 .tabbrowser-tab,
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
-.tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
+.tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned],
+.tabbrowser-tabs[positionpinnedtabs] .tabbrowser-tab[pinned] {
   min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 
@@ -419,8 +420,10 @@
 }
 
 #tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
+#tabbrowser-tabs[movingtab] .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
 .tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
-#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected],[multiselected]):not([beforehovered]):not(:hover)::after {
+#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected],[multiselected]):not([beforehovered]):not(:hover)::after,
+#tabbrowser-tabs:not([overflow]) .tabbrowser-tab[last-visible-tab]:not([selected],[multiselected]):not([beforehovered]):not(:hover)::after {
   content: unset !important;
   display: unset !important;
 }
@@ -435,10 +438,13 @@
 }
 
 :root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::after,
+:root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs .tabbrowser-tab::after,
 :root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs > .tabbrowser-tab::before,
+:root:is([tabsintitlebar],[customtitlebar]):not([extradragspace]) #toolbar-menubar[autohide=true] ~ :is(#TabsToolbar,#vertical-tabs) > #tabbrowser-tabs .tabbrowser-tab::before,
 .tabbrowser-tab:hover::before,
 .tabbrowser-tab[last-visible-tab]:hover::after,
-#tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
+#tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before,
+#tabbrowser-tabs:not([movingtab]) .tabbrowser-tab[afterhovered]::before {
   border-image: unset !important;
   border-image-slice: unset !important;
   border-top-left-radius: 3px !important;
@@ -548,7 +554,8 @@
 }
 
 .tabbrowser-tab:is([selected],[multiselected]):hover,
-#tabbrowser-tabs:not([closebuttons=activetab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([selected],[multiselected]):hover {
+#tabbrowser-tabs:not([closebuttons=activetab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([selected],[multiselected]):hover,
+#tabbrowser-tabs:not([closebuttons=activetab]) > #tabbrowser-arrowscrollbox .tabbrowser-tab:not([selected],[multiselected]):hover {
   --tab-label-mask-size: unset !important;
 }
 
@@ -571,11 +578,13 @@
 }
 
 /* Lightweight theme on tabs */
-:root[lwtheme] #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]) {
+:root[lwtheme] #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]),
+:root[lwtheme] #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]) {
   background-color: var(--tab-selected-bgcolor, var(--toolbar-bgcolor)) !important;
 }
 
-:root[lwtheme]:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]) {
+:root[lwtheme]:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]),
+:root[lwtheme]:not([lwtheme-image="true"]) #tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox .tabbrowser-tab > .tab-stack > .tab-background:is([selected],[multiselected]) {
   background-image: var(--toolbar-bgimage) !important;
 }
 

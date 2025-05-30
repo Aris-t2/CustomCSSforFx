@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.7.2
+  Current version: 4.7.3
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -800,7 +800,8 @@
 
 /* @import "./css/generalui/popup_compact_menus.css"; /**/
 /* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
-/* @import "./css/generalui/popup_menus_space_before_label.css"; /**/
+/* @import "./css/generalui/popup_menus_space_before_label.css"; /**/ /* for Fx 139 and older only */
+/* @import "./css/generalui/popup_menus_space_before_label_fx140.css"; /**/ /* for Fx 140+ (test only) */
 /* @import "./css/generalui/popup_menus_menu_background.css"; /**/
 
 
