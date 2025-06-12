@@ -1,0 +1,6 @@
+{
+  "style": {
+    "chrome": "https://raw.githubusercontent.com/Aris-t2/CustomCSSforFx/master/current/userChrome.css",
+    "content": "https://raw.githubusercontent.com/Aris-t2/CustomCSSforFx/master/current/userContent.css"
+  }
+}
