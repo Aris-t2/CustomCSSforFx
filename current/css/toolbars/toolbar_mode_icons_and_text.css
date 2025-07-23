@@ -98,12 +98,26 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :is
   box-shadow: unset !important;
 }
 
-toolbar:not(#TabsToolbar) #OtherBookmarks,
+/*toolbar:not(#TabsToolbar) #OtherBookmarks,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1,
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   appearance: auto !important;
   -moz-default-appearance: toolbarbutton !important;
+}*/
+
+toolbar:not(#TabsToolbar) #OtherBookmarks:not([disabled=true]):hover,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([disabled=true]):hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([disabled=true]):hover,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:not([disabled=true]):hover{
+  background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+toolbar:not(#TabsToolbar) #OtherBookmarks:not([disabled=true]):not([disabled=true]):is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([disabled=true]):not([disabled=true]):is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1:not([disabled=true]):not([disabled=true]):is([open],[checked],:hover:active,:active),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton:not([disabled=true]):not([disabled=true]):is([open],[checked],:hover:active,:active) {
+  background-color: var(--toolbarbutton-active-background) !important;
 }
 
 @media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {

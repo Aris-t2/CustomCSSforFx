@@ -660,3 +660,12 @@
 #tabbrowser-tabs[orient="horizontal"] {
   min-height: unset !important;
 }
+
+/* Fx 141+ */
+#pinned-tabs-container[orient="horizontal"] {
+  margin-inline-end: 0 !important;
+}
+
+#tabbrowser-tabs[orient="horizontal"] {
+  padding-top: 1px !important;
+}

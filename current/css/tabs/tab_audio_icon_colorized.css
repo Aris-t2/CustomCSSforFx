@@ -15,6 +15,10 @@
   --button-icon-fill: #FFE900 !important;/* var(--yellow-50) */
 }
 
+.tab-audio-button[soundplaying-scheduledremoval]:not([muted]) {
+  --button-icon-fill: #0060df !important;/* var(--color-blue-60) */
+}
+
 :root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[soundplaying] {
   --button-icon-fill: lightgreen !important;
 }
@@ -23,6 +27,9 @@
 }
 :root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[activemedia-blocked] {
   --button-icon-fill: orange !important;
+}
+:root[lwtheme-brighttext]:not([style*='--lwt-header-image']) .tab-audio-button[soundplaying-scheduledremoval]:not([muted]) {
+	--button-icon-fill: 4d9aff !important;
 }
 
 @media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
@@ -34,6 +41,9 @@
 	}
 	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-audio-button[activemedia-blocked] {
 	  --button-icon-fill: orange !important;
+	}
+	:root[lwtheme]:not([style*='--lwt-header-image']) .tab-audio-button[soundplaying-scheduledremoval]:not([muted]) {
+	  --button-icon-fill: 4d9aff !important;
 	}
 }
 

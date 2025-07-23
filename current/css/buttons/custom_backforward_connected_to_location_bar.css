@@ -9,7 +9,7 @@
 
 #main-window #back-button {
   z-index: 4 !important;
-  position: relative !important;
+  /*position: relative !important;*/
 }
 
 #main-window #nav-bar #forward-button {
@@ -60,11 +60,15 @@
 }
 
 #main-window #nav-bar #forward-button[disabled] + #urlbar-container {
-  margin-inline-start: -45px !important;
+  margin-inline-start: -55px !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container {
+  margin-inline-start: -53px !important;
 }
 
 #main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container {
-  margin-inline-start: -60px !important;
+  margin-inline-start: -59px !important;
 }
 
 
@@ -122,4 +126,20 @@
 	  background: #383740 !important; /* has to be solid or forward buttons left side will be partly visible */
 	}
 
+}
+
+/* fix for Fx 133+ */
+#main-window #nav-bar #forward-button[disabled] + #urlbar-container #urlbar:not([breakout-extend]) #urlbar-background {
+  mask-image: linear-gradient(to right, transparent, transparent 4px, currentColor 0px) !important;
+  background-color: unset !important;
+}
+
+#main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container #urlbar:not([breakout-extend]) #urlbar-background {
+  mask-image: linear-gradient(to right, transparent, transparent 5px, currentColor 0px) !important;
+  background-color: unset !important;
+}
+
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container #urlbar:not([breakout-extend]) #urlbar-background {
+  mask-image: linear-gradient(to right, transparent, transparent 5px, currentColor 0px) !important;
+  background-color: unset !important;
 }

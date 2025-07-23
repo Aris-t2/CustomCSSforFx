@@ -212,7 +212,20 @@
 }
 
 /* fix hover outline effect on extension buttons */
+:root[uidensity="compact"] {
+	#nav-bar #nav-bar-customization-target > toolbaritem .unified-extensions-item-action-button {
+	  padding: 3px !important;
+	  margin: -2px !important
+	}
+}
+
 #nav-bar #nav-bar-customization-target > toolbaritem .unified-extensions-item-action-button {
   padding: 3px !important;
   margin: -3px !important
+}
+
+/* adjust distance between buttons and urlbar/serachbar */
+#urlbar-container,
+#search-container {
+  margin-inline: 3px !important
 }

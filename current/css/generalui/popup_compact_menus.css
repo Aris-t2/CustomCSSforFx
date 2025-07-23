@@ -5,8 +5,9 @@
 
 :root{
   --item_y_padding: 3px; /* old value: 2px */
-  --y_padding_before_label: 28px !important; /* for popup_menus_space_before_label.css */
-  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 2px ) !important; /* for popup_menus_space_before_label.css */
+  --y_padding_before_label: 24px !important; /* for popup_menus_space_before_label.css */
+  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 12px ) !important; /* for popup_menus_space_before_label.css */
+  --y_padding_before_label_sep: calc(var(--y_padding_before_label) - 12px ) !important; /* for popup_menus_space_before_label.css */
   --panel-padding: 0px !important;
   --arrowpanel-menuitem-margin: 0px !important;
   --arrowpanel-menuitem-padding: calc( var(--item_y_padding) + 1px) 2px !important;
@@ -95,7 +96,7 @@ menuseparator {
 	
   }
   :is(menupopup, panel) :is(.menu-accel,.menu-iconic-accel) {
-	margin-inline-end: 8px !important;
+	margin-inline-end: 4px !important;
   }
 
   :is(menupopup, panel) .menu-right {

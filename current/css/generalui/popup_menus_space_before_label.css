@@ -6,8 +6,9 @@
 :root{
   --y_padding_before_label: 36px;
   --y_padding_before_label_cn_no_icon: 0px !important; /* for context_bfrsb_labels_without_icons.css */
-  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 4px );
-  --y_padding_before_label_am: calc(var(--y_padding_before_label) - 4px );
+  --y_padding_before_label_bm: calc(var(--y_padding_before_label) - 12px );
+  --y_padding_before_label_am: calc(var(--y_padding_before_label) - 12px );
+  --y_padding_before_label_sep: calc(var(--y_padding_before_label) - 22px );
 }
 
 :is(popup,menupopup)[type=arrow] :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
@@ -18,10 +19,6 @@
   appearance: none;
   margin: 2px !important;
   margin-inline-start: var(--y_padding_before_label) !important;
-}
-
-:is(popup,menupopup)[type=arrow] menuitem[checked="false"] {
-  padding-inline-start: var(--y_padding_before_label) !important;
 }
 
 .PanelUI-subView .subviewbutton:not(#appMenu-fxa-status2):not(.menuitem-iconic):not(.menu-iconic):not(.subviewbutton-iconic) {
@@ -35,17 +32,27 @@
 }
 
 @media (-moz-platform: windows) {
-	:is(popup,menupopup) :is(menu,menuitem):not(:is([checked],.menu-iconic,.menuitem-iconic)) {
+	:is(popup,menupopup) :is(menu,menuitem):not(:is([checked]),.bookmark-item,.menu-iconic,.menuitem-iconic) {
 	  padding-inline-start: var(--y_padding_before_label) !important;
+	}
+
+	:is(popup,menupopup) :is(menu,menuitem):not([data-usercontextid]):not(.bookmark-item,.menu-iconic,.menuitem-iconic) .menu-icon:not([src]) {
+	  display: none !important;
+	}
+	
+	:is(popup,menupopup) :is(menu,menuitem):not([data-usercontextid])[checked]:not(.bookmark-item,.menu-iconic,.menuitem-iconic) .menu-icon:not([src]) {
+	  display: block !important;
 	}
 
 	:is(popup,menupopup) :is(menuseparator,.bookmarks-actions-menuseparator) {
 	  appearance: none;
 	  margin: 2px !important;
-	  margin-inline-start: var(--y_padding_before_label) !important;
+	  margin-inline-start: var(--y_padding_before_label_bm) !important;
 	}
-
-	:is(popup,menupopup) menuitem[checked="false"] {
-	  padding-inline-start: var(--y_padding_before_label) !important;
+	:is(popup,menupopup) menuseparator#context-sep-navigation {
+	  appearance: none;
+	  margin: 2px !important;
+	  margin-inline-start: var(--y_padding_before_label) !important;
+	  margin-inline-end: var(--y_padding_before_label_sep) !important;
 	}
 }

@@ -322,6 +322,12 @@
   list-style-image: url("chrome://devtools/skin/images/tool-dom.svg");
 }
 
+#appmenu-developer-tools-view toolbarbutton[key="key_browserToolbox"] > image.toolbarbutton-icon {
+  -moz-context-properties: fill;
+  fill: currentColor;
+  list-style-image: url("chrome://devtools/skin/images/tool-debugger.svg");
+}
+
 #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > image.toolbarbutton-icon {
   -moz-context-properties: fill;
   fill: currentColor;
@@ -359,6 +365,7 @@
 #appmenu-developer-tools-view toolbarbutton[key="key_accessibility"] > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_application"] > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_dom"] > label.toolbarbutton-text,
+#appmenu-developer-tools-view toolbarbutton[key="key_browserToolbox"] > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_browserConsole"] > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_responsiveDesignMode"] > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_viewSource"] > label.toolbarbutton-text,
@@ -423,31 +430,31 @@
 }
 
 /* Browser Toolbox (by Key) and Browser Content Toolbox  */
-
+/*
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
   list-style-image: url("../../image/command-tilt.png");
   filter: grayscale(100%) brightness(10%);
-}
+}*/
 
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > label.toolbarbutton-text,
 #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > label.toolbarbutton-text {
   padding-inline-start: 8px !important;
 }
-
+/*
 :root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
 :root[lwtheme]:-moz-lwtheme-brighttext #appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
   list-style-image: url("../../image/command-tilt.png");
   filter: grayscale(100%) brightness(220%) !important;
-}
-
+}*/
+/*
 @media (-moz-content-prefers-color-scheme: dark) {
 	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon,
 	#appmenu-developer-tools-view toolbarbutton[key="key_toggleToolbox"] + toolbarbutton + toolbarbutton + toolbarbutton + toolbarbutton > image.toolbarbutton-icon {
 	  list-style-image: url("../../image/command-tilt.png");
 	  filter: grayscale(100%) brightness(220%) !important;
 	}
-}
+}*/
 
 
 
