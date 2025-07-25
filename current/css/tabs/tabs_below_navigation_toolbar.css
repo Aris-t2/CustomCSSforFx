@@ -184,7 +184,18 @@
 	}	
 }
 
+/* Fx 110 nonsense - remove line below active tab */
+#nav-bar:not([tabs-hidden="true"]) {
+  position: unset !important;
+}
+
 /* Fx 126+ */
 :root[lwtheme] #nav-bar {
   border-top: 0 !important;
 }
+
+#main-window[inDOMFullscreen] .titlebar-buttonbox-container {
+  display: none !important;
+  opacity: 0 !important;
+}
+

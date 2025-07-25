@@ -30,7 +30,7 @@
 	linear-gradient(to left, rgba(255,255,255,0.4) 0px, transparent 0px),
 	linear-gradient(to top, rgba(255,255,255,0.3) 0px, transparent 0px),
 	linear-gradient(to bottom, rgba(163,196,247,0.2), rgba(122,180,246,0.2)) !important;
-  border-radius: 6px !important;
+  border-radius: 3px !important;
   outline: 1px solid rgba(124,163,206,0.7) !important;
   transition: background-color .3s ease-in,
 			  border-color .2s ease-in,

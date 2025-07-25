@@ -405,7 +405,7 @@
 }
 
 /* remove top line above tabs for lw-themes */
-:root[lwtheme]  #browser-panel{
+:root[lwtheme] #browser-panel{
   border: unset !important;
   box-shadow: unset !important;
 }

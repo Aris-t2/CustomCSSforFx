@@ -3,13 +3,13 @@
 /****************************************************************************************/
 
 
-#main-window :is(.megabar,#urlbar-container) {
+#main-window :is(.megabar,#urlbar,#urlbar-container) {
   z-index: 3 !important;
 }
 
 #main-window #back-button {
   z-index: 4 !important;
-  /*position: relative !important;*/
+  position: relative !important;
 }
 
 #main-window #nav-bar #forward-button {
@@ -133,13 +133,28 @@
   mask-image: linear-gradient(to right, transparent, transparent 4px, currentColor 0px) !important;
   background-color: unset !important;
 }
+#main-window #nav-bar #forward-button[disabled] + #urlbar-container:has(#urlbar:not([breakout-extend])) {
+  background-image: linear-gradient(to bottom, transparent, transparent 4px, var(--toolbar-field-background-color) 0px, var(--toolbar-field-background-color) 36px, transparent 36px, transparent) !important;
+  border-top-right-radius: 11px !important;
+  border-bottom-right-radius: 11px !important;
+}
 
 #main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container #urlbar:not([breakout-extend]) #urlbar-background {
   mask-image: linear-gradient(to right, transparent, transparent 5px, currentColor 0px) !important;
   background-color: unset !important;
 }
+#main-window[uidensity=compact] #nav-bar #forward-button[disabled] + #urlbar-container:has(#urlbar:not([breakout-extend])) {
+  background-image: linear-gradient(to bottom, transparent, transparent 5px, var(--toolbar-field-background-color) 0px, var(--toolbar-field-background-color) 31px, transparent 31px, transparent) !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
 
 #main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container #urlbar:not([breakout-extend]) #urlbar-background {
   mask-image: linear-gradient(to right, transparent, transparent 5px, currentColor 0px) !important;
   background-color: unset !important;
+}
+#main-window[uidensity=touch] #nav-bar #forward-button[disabled] + #urlbar-container:has(#urlbar:not([breakout-extend])) {
+  background-image: linear-gradient(to bottom, transparent, transparent 5px, var(--toolbar-field-background-color) 0px, var(--toolbar-field-background-color) 39px, transparent 39px, transparent) !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
 }

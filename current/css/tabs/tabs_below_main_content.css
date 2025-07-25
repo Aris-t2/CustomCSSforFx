@@ -73,9 +73,9 @@
   top: 0 !important;
 }
 
-#main-window[inDOMFullscreen="true"] .titlebar-buttonbox-container {
+#main-window[inDOMFullscreen] .titlebar-buttonbox-container {
   display: none !important;
-  /*opacity: 0 !important;*/
+  opacity: 0 !important;
 }
 
 /* macOS support*/

@@ -25,30 +25,27 @@
   --tab-min-height_mlt: var(--tab-min-height,32px); /* set own value here, if used without configuration files */
 }
 
-#tabbrowser-tabs[orient="horizontal"]{
+#tabbrowser-tabs{
   min-height: unset !important;
   padding-inline-start: 0px !important;
   margin-top: 1px !important;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
-  scrollbar-color: currentColor transparent;
-  scrollbar-width: thin;
 }
 
 @-moz-document url(chrome://browser/content/browser.xhtml){
   #scrollbutton-up~spacer,
   #scrollbutton-up,
-  #scrollbutton-down {
-	display: none;
+  #scrollbutton-down{
+	display: var(--scrollbutton-display-model,initial);
   }
-  
-  #pinned-tabs-container[orient="horizontal"],
-  #tabbrowser-arrowscrollbox[orient="horizontal"],
+
   scrollbox[part][orient="horizontal"] > slot,
-  scrollbox[part="scrollbox"][orient="horizontal"]{
-    display: contents !important;
+  scrollbox[part][orient="horizontal"]{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(var(--tab-min-height_mlt) * var(--tabs-lines));
+    scrollbar-color: currentColor transparent;
+    scrollbar-width: thin;
 	contain: none !important;
   }
 }
@@ -68,11 +65,10 @@
   height: var(--tab-min-height_mlt) !important;
 }
 
-/*
 #tabbrowser-tabs .tabbrowser-tab[pinned]{
   position: static !important;
   margin-inline-start: 0px !important;
-}*/
+}
 
 .tabbrowser-tab[fadein]:not([pinned]) {
   flex-grow: 1;
@@ -109,3 +105,4 @@ box.scrollbox-clip[orient="horizontal"] {
 #tabbrowser-tabs[orient="horizontal"] {
   min-height: unset !important;
 }
+
