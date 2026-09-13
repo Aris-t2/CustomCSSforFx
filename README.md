@@ -1,6 +1,6 @@
-# 🌌 AeroGlassyFOX 
+#  AeroGlassyFOX 
 
-> ⚠️ **Please read the [Installation Instructions](#️-how-to-install) and [Required Add-ons](#-required-add-ons-optional-enhancements) sections carefully to ensure the theme works correctly.**
+>  **Please read the [Installation Instructions](#️-how-to-install) and [Required Add-ons](#-required-add-ons-optional-enhancements) sections carefully to ensure the theme works correctly.**
 
 A personal FireFox CSS theme for Aris-t2. bringing back the fun FireFox 4:
 
@@ -12,7 +12,7 @@ This is a mashup of multiple open-source themes with my own custom tweaks and st
 ![image alt](https://github.com/Firefox4Guy/AEROGlassyFOX/blob/69bbd86475fc6b99af016687194dbadde6d9a86a/showcase.PNG)
 
 ---
-## 📜 Licensing
+##  Licensing
 
 This project includes and modifies code under the following licenses:
 
@@ -24,7 +24,7 @@ This project includes and modifies code under the following licenses:
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 - [Aris-t2 / CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx)
 - [Echelon Theme](https://github.com/echelon-theme/echelon)
@@ -49,28 +49,28 @@ To apply this theme:
 
 ---
 
-## 🧩 Required Add-ons (Optional Enhancements)
+##  Required Add-ons (Optional Enhancements)
 These aren't strictly necessary but are for the Aero/Glassy effects behind the tabs:
 
-⚠️(Some addons are not watched by firefox, use at own risk)
+(Some addons are not watched by firefox, use at own risk)
 
   - For Aero effects, use **StarDock WindowBlinds 11** *(Payware; 30-day trial available, with email)*.
   - and Use the **"Aero 11"** theme by *SimplexDesigns* in **Windows blinds 11 by Stardock**.
   
-## 🧩 FireFox Addons needed
+##  FireFox Addons needed
   
   -  **Reload in address bar** – brings back the reload button inside the URL bar.
 
 ---
 
-## 🎉 Fun Add-ons (Totally Optional)
+##  Fun Add-ons (Optional)
 
-- 🎬 **YouTube Redux** – classic YouTube layout.
-- 🔍 **Old Google** – retro Google search UI.
-- ✨ **FaviconSwwitcher** - change websites tab favicons
+- **YouTube Redux** – classic YouTube layout.
+- **Old Google** – retro Google search UI.
+- **FaviconSwwitcher** - change websites tab favicons
 ---
 
-## 🧑‍💻 Contributing
+##  Contributing
 
 Contributions are welcome!
 
@@ -86,12 +86,12 @@ Once reviewed, your contribution can be merged into the main project.
 > Note: Direct edits to the main branch are not allowed unless you're a trusted collaborator.
 
 ---
-## 📁 Project Structure
+##  Project Structure
 ```
 chrome/
-├── AEROGlassyFOX/ # 💠
+├── AEROGlassyFOX/ # 
 │
-├── config/ # ⚙️ Aris-t2 config variables
+├── config/ #  Aris-t2 config variables
 │   ├── general_variables
 │   ├── color_variables_aero
 │   ├── color_variables_aeroglass
@@ -107,7 +107,7 @@ chrome/
 │   ├── custom_tab_text_settings
 │   └── general_variables
 │
-├── css/ # 🎨 Aris-t2 UI modules (tabs, buttons, etc.)
+├── css/ #  Aris-t2 UI modules (tabs, buttons, etc.)
 │   ├── aboutaddons
 │   ├── aboutconfig
 │   ├── aboutlogins
@@ -121,13 +121,13 @@ chrome/
 │   ├── toolbars
 │   └── webcontent
 │
-├── image/ # 📸 Aris-t2 image assets
+├── image/ #  Aris-t2 image assets
 │   └── ...
 │
-├── img/ # 🖼️ image assets for AEROGlassyFOX
+├── img/ #  image assets for AEROGlassyFOX
 │   └── ...
 │
 ├── AEROGlassyFOX.css # Main CSS file from AEROGlassyFOX
-├── my_userChrome.css # 📝 (Optional) file for user’s custom tweaks
-├── userChrome.css # 🔧 CSS loader (from Aris-t2)
+├── my_userChrome.css #  (Optional) file for user’s custom tweaks
+├── userChrome.css #  CSS loader (from Aris-t2)
 └── userContent.css # (Optional) Web content (from Aris-t2)
